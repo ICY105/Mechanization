@@ -1,0 +1,10 @@
+entitydata @s[score_rotX_min=40,score_rotX=40] {Motion:[0.0,-0.50,0.0]}
+entitydata @s[score_rotX_min=41,score_rotX=41] {Motion:[0.0,-0.52,0.0]}
+entitydata @s[score_rotX_min=42,score_rotX=42] {Motion:[0.0,-0.54,0.0]}
+entitydata @s[score_rotX_min=43,score_rotX=43] {Motion:[0.0,-0.56,0.0]}
+entitydata @s[score_rotX_min=44,score_rotX=44] {Motion:[0.0,-0.58,0.0]}
+entitydata @s[score_rotX_min=45,score_rotX=45] {Motion:[0.0,-0.60,0.0]}
+entitydata @s[score_rotX_min=46,score_rotX=46] {Motion:[0.0,-0.62,0.0]}
+entitydata @s[score_rotX_min=47,score_rotX=47] {Motion:[0.0,-0.64,0.0]}
+entitydata @s[score_rotX_min=48,score_rotX=48] {Motion:[0.0,-0.66,0.0]}
+entitydata @s[score_rotX_min=49,score_rotX=49] {Motion:[0.0,-0.68,0.0]}

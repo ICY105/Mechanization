@@ -1,0 +1,11 @@
+execute @s 0 ~ ~ execute @s[rm=10001] ~ ~ ~ scoreboard players remove @s cord 10000
+execute @s[score_checks_min=1] ~ ~ ~ tp @s ~10000 ~ ~
+execute @s 0 ~ ~ execute @s[rm=1001] ~ ~ ~ scoreboard players remove @s cord 1000
+execute @s[score_checks_min=1] ~ ~ ~ tp @s ~1000 ~ ~
+execute @s 0 ~ ~ execute @s[rm=101] ~ ~ ~ scoreboard players remove @s cord 100
+execute @s[score_checks_min=1] ~ ~ ~ tp @s ~100 ~ ~
+execute @s 0 ~ ~ execute @s[rm=11] ~ ~ ~ scoreboard players remove @s cord 10
+execute @s[score_checks_min=1] ~ ~ ~ tp @s ~10 ~ ~
+execute @s 0 ~ ~ execute @s[rm=1] ~ ~ ~ scoreboard players remove @s cord 1
+execute @s[score_checks_min=1] ~ ~ ~ tp @s ~1 ~ ~
+execute @s 0 ~ ~ execute @s[rm=2] ~ ~ ~ function mechanization_base:position_scoreboard/search_x_neg
