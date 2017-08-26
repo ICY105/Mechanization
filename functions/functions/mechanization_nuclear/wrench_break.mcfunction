@@ -1,0 +1,7 @@
+execute @e[tag=fissionReactor,c=1,r=2] ~ ~ ~ setblock ~ ~ ~ minecraft:air 0
+execute @e[tag=fissionReactor,c=1,r=2] ~ ~ ~ summon item ~ ~1 ~ {CustomName:"§4Fission Reactor Core",CustomNameVisible:1,Item:{id:"minecraft:skull",Count:1b,tag:{SkullOwner:{Id:"206a8059-f5fb-41e7-8b33-233b5c72f932",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2ZhZjNlZmJmZjZkN2VmNDY1ZWNhY2JjNTE3ZjRkYWQ1Y2MxYTIyNjFlYTdhNjA5ZjIxNmFhZTQ4Nzg0In19fQ=="}]}},display:{Name:"§4Fission Reactor Core",Lore:["§fBoils water around the reactor into steam.","§fCareful! Explodes if it overheats."]}},Damage:3s}}
+kill @e[tag=fissionReactor,c=1,r=2]
+
+execute @e[tag=Turbine,c=1,r=2] ~ ~ ~ setblock ~ ~ ~ minecraft:air 0
+execute @e[tag=Turbine,c=1,r=2] ~ ~ ~ summon item ~ ~1 ~ {CustomName:"§4Steam Turbine",CustomNameVisible:1,Item:{id:"minecraft:skull",Count:1b,tag:{SkullOwner:{Id:"a2264edb-7dd6-460a-9826-6d6bd9f30bbf",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGQ4YjUxZGM5NTljMzNjMjUxNWJhZDY1ODk5N2Y2Y2VlOWY4NmRmMGU3ODdiNmM2ZjhkNTA3MDY0N2JkYyJ9fX0="}]}},display:{Name:"§4Steam Turbine",Lore:["§fConverts steam from reactors into energy.","§fProduces 24 kJ/steam"]}},Damage:3s}}
+kill @e[tag=Turbine,c=1,r=2]
