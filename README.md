@@ -1,7 +1,7 @@
 # Mechanization
 Mechanization is a Minecraft function script aimed at recreating popular tech mods like IC2 and Thermal Expansion. Check out the wiki for more information about the script.
 
-## Videos
+## Wiki
 Want to know more? Check out the wiki: https://github.com/ImCoolYeah105/Mechanization/wiki
 
 The wiki has overview videos, recipes, and in-depth descriptions of all items.
