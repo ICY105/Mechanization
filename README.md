@@ -16,7 +16,7 @@ Installation Instructions: https://github.com/ImCoolYeah105/Mechanization/wiki/I
 
 v1.3.2 The Progression Update https://www.dropbox.com/s/z895rnqzrk25np1/mechanization_v1.3.2.zip?dl=1
 
-#### Minecraft 1.23
+#### Minecraft 1.13
 
 v2 Prerelease 1: https://www.dropbox.com/s/5z0as8q95zuoyqa/Mechanization_Prerelease_v1.1.zip?dl=1
 
