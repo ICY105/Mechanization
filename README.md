@@ -18,6 +18,6 @@ v1.3.2 The Progression Update https://www.dropbox.com/s/z895rnqzrk25np1/mechaniz
 
 #### Minecraft 1.13
 
-v2 Prerelease 2: https://drive.google.com/file/d/1KHe8czfXi1AWLxtmDg5Lyxb9FbXWLVsI/view?usp=sharing
+v2 Prerelease 2: [Download](https://www.dropbox.com/s/93g2h5y8cxdswsr/Mechanization2_Pre_v2.0.zip?dl=1)
 
-* v2 Prerelease 2 Resource Pack: https://drive.google.com/file/d/15zYinVODTvDAgnFvuPK9SlprMrz8XZAU/view?usp=sharing
+* v2 Prerelease 2 Resource Pack: [Download](https://www.dropbox.com/s/kb2fch8hn2f2qz4/MechanizationResourcePack.zip?dl=1)
