@@ -4,17 +4,17 @@ Mechanization is a Minecraft function script aimed at recreating popular tech mo
 1.13 is now in prerelease phase! Try out all the new features. Please report any bugs you might find.
 
 ## Wiki
-Want to know more? Check out the wiki: https://github.com/ImCoolYeah105/Mechanization/wiki
+Want to know more? Check out the [wiki](https://github.com/ImCoolYeah105/Mechanization/wiki).
 
 The wiki has overview videos, recipes, and in-depth descriptions of all items.
 
 ## Downloads
 
-Installation Instructions: https://github.com/ImCoolYeah105/Mechanization/wiki/Installion
+[Installation Instructions](https://github.com/ImCoolYeah105/Mechanization/wiki/Installion)
 
 #### Minecraft 1.12
 
-v1.3.2 The Progression Update https://www.dropbox.com/s/z895rnqzrk25np1/mechanization_v1.3.2.zip?dl=1
+v1.3.2 The Progression Update [Download](https://www.dropbox.com/s/z895rnqzrk25np1/mechanization_v1.3.2.zip?dl=1)
 
 #### Minecraft 1.13
 
