@@ -24,4 +24,4 @@ v2 Prerelease 2: [Download](https://www.dropbox.com/s/93g2h5y8cxdswsr/Mechanizat
 
 * v2 Prerelease 2 Resource Pack: [Download](https://www.dropbox.com/s/kb2fch8hn2f2qz4/MechanizationResourcePack.zip?dl=1)
 
-![prerelease](https://i.imgur.com/eyVjkGu.png)
+![prerelease](https://i.imgur.com/eoGEV61.png)
