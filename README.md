@@ -20,8 +20,8 @@ v1.3.2 The Progression Update [Download](https://www.dropbox.com/s/z895rnqzrk25n
 
 Prereleases are incomplete and prone to bugs, please report any issues you find or suggestions you have.
 
-v2 Prerelease 2: [Download](https://www.dropbox.com/s/93g2h5y8cxdswsr/Mechanization2_Pre_v2.0.zip?dl=1)
+v2 Prerelease 3: [Download](https://drive.google.com/open?id=1sYtPiZa6gvk5yfE_gfrv7Ug1xjU0KURA)
 
-* v2 Prerelease 2 Resource Pack: [Download](https://www.dropbox.com/s/kb2fch8hn2f2qz4/MechanizationResourcePack.zip?dl=1)
+* v2 Prerelease 3 Resource Pack: [Download](https://drive.google.com/open?id=1Pzr9wCSNvWipcwGA6sKXC3WBAq-4eCuU)
 
 ![prerelease](https://i.imgur.com/eoGEV61.png)
