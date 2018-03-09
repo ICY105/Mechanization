@@ -1,5 +1,5 @@
 # Mechanization
-Mechanization is a Minecraft datapack aimed at recreating popular tech mods like IC2 and Thermal Expansion. It has been in development for over 2 years, with the first version being released a few months after Minecraft 1.9 using command blocks.
+Mechanization is a Minecraft datapack aimed at recreating popular tech mods like IC2 and Thermal Expansion. It has been in development for over 2 years, with the first version being released in March 2016.
 
 1.13 is now in prerelease phase! Try out all the new features. Please report any bugs you might find.
 
