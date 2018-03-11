@@ -3,6 +3,8 @@ Mechanization is a Minecraft datapack aimed at recreating popular tech mods like
 
 1.13 is now in prerelease phase! Try out all the new features. Please report any bugs you might find.
 
+Want to stay up-to-date with everything Mechanization? Join the discord server: https://discord.gg/6uJ4eJH
+
 ## Wiki
 Want to know more? Check out the [wiki](https://github.com/ImCoolYeah105/Mechanization/wiki).
 
