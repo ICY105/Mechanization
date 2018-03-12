@@ -22,10 +22,10 @@ v1.3.2 The Progression Update [Download](https://www.dropbox.com/s/z895rnqzrk25n
 
 Prereleases are incomplete and prone to bugs, please report any issues you find or suggestions you have.
 
-v2 Prerelease 4.0.6: [Download](https://www.dropbox.com/s/vdotuswujswwebz/Mechanization2_pre4.0.6.zip?dl=1)
+v2 Prerelease 4.1.0: [Download](https://www.dropbox.com/s/owyscuv2uysbjui/Mechanization_pre4.1.0.zip?dl=1)
 
 v2 Prerelease 4 Resource Pack :
-* x32 bit, Official: [Download](https://www.dropbox.com/s/qnhcksq4bk02l0w/MechanizationResources.zip?dl=1)
+* x32 bit, Official: [Download](https://www.dropbox.com/s/gzdzh27gbl8nolm/MechanizationResources.zip?dl=1)
 * x16 bit, Curtisy of Eclipsion13 (WIP): [Download](https://www.dropbox.com/s/hn6evbndf34vw7z/MechanizationResourcesx16.zip?dl=1)
 
 ![prerelease](https://i.imgur.com/l24m8kg.png)
