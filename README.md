@@ -22,10 +22,10 @@ v1.3.2 The Progression Update [Download](https://www.dropbox.com/s/z895rnqzrk25n
 
 Prereleases are incomplete and prone to bugs, please report any issues you find or suggestions you have.
 
-v2 Prerelease 4.1.3: [Download](https://www.dropbox.com/s/vae410w0v4d5gzz/Mechanization_pre4.1.3.zip?dl=1)
+v2 Prerelease 4.1.4: [Download](https://www.dropbox.com/s/4y5ov0s5vtwa837/Mechanization_pre1.1.4.zip?dl=1)
 
-v2 Prerelease 4.1 Resource Pack :
-* Resourcepack: [Download](https://www.dropbox.com/s/gvrddts0c8p9sn2/MechanizationResources.zip?dl=1)
-* x32 Bit Version (install with the normal version): [Download](https://www.dropbox.com/s/gvrddts0c8p9sn2/MechanizationResources.zip?dl=1)
+v2 Prerelease 4.1.4 Resource Pack :
+* Resourcepack: [Download](https://www.dropbox.com/s/qumk60tqgyx6jji/MechanizationResources.zip?dl=1)
+* x32 Bit Version (install with the normal version): [Download](https://www.dropbox.com/s/jypci973hpgl2rm/Mechanization_x32.zip?dl=1)
 
 ![prerelease](https://i.imgur.com/l24m8kg.png)
