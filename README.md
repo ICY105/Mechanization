@@ -28,4 +28,4 @@ v2 Prerelease 4.2.0 Resource Pack :
 * Resourcepack: [Download](https://www.dropbox.com/s/rq646frqxrrktzv/MechanizationResources.zip?dl=1)
 * x32 Bit Version (install with the normal version): [Download](https://www.dropbox.com/s/rq646frqxrrktzv/MechanizationResources.zip?dl=1)
 
-![prerelease](https://i.imgur.com/l24m8kg.png)
+![prerelease](https://i.imgur.com/S04DKyE.png)
