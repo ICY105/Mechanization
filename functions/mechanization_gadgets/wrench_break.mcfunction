@@ -1,5 +1,0 @@
-execute @e[tag=device,r=1,c=1] ~ ~ ~ setblock ~ ~ ~ minecraft:air
-
-execute @e[tag=device,r=1,c=1] ~ ~ ~ execute @s[tag=tinkertable] ~ ~ ~ summon item ~ ~1 ~ {Item:{id:"minecraft:skull",Count:1b,tag:{SkullOwner:{Id:"719b952b-6a23-49a8-90af-4b4ae854030b",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWRjMzA2MGNmNzUyNGFlM2ViNGRmZDJiNTg5ODAzOTVkMjNmN2UzNjk1NTE0MTU0YjFlNGE4MGQyOWM5ZjNmIn19fQ=="}]}},display:{Name:"§aTinkering Table",Lore:["§fUsed to put special modifiers on weapons and armor."]}},Damage:3s}}
-
-execute @e[tag=device,r=1,c=1] ~ ~ ~ execute @s[tag=chargepad] ~ ~ ~ summon item ~ ~1 ~ {Item:{id:"minecraft:skull",Count:1b,tag:{SkullOwner:{Id:"551d5e4a-a877-8fe7-c964-2acb77d25a31",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmM0MTlhNDRjNWI5NjdmNDczMTZkMWJlZDNjYzYzMmJkZWQxOTlhNWMzNDIxMTc5MWM3MGY5OThmZGJkNiJ9fX0="}]}},display:{Name:"§3Player Charging Pad",Lore:["§fStand on charge pad to charge internal player energy."]}},Damage:3s}}

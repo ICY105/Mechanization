@@ -1,0 +1,10 @@
+{
+	"values":[
+		"mechanization:base/placement/place_object",
+		"mechanization:machines/machines/place_object",
+		"mechanization:nuclear/machines/place_object",
+		"mechanization:gadgets/machines/place_object",
+		"mechanization:assembly/machines/place_object",
+		"mechanization:tempist/machines/place_object"
+	]
+}

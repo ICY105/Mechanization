@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§8Getting Another Upgrade",
+		"description": "§3Create a Tier 2 Machine Frame.",
+		"icon": {
+            "item": "minecraft:gray_concrete"
+        },
+		"frame": "goal"
+    },
+    "criteria": {
+        "have_frame_2": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+						"nbt":"{OreDict:[\"blockMachineFrame2\"]}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:machines/alloy_furnace"
+}

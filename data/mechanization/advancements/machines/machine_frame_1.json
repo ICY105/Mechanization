@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§7The Bases of it All",
+		"description": "§3Create a Tier 1 Machine Frame.",
+		"icon": {
+            "item": "minecraft:white_concrete"
+        },
+		"frame": "goal"
+    },
+    "criteria": {
+        "have_frame_1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+						"nbt":"{OreDict:[\"blockMachineFrame1\"]}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:machines/copper_ore"
+}

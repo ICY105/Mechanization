@@ -1,0 +1,10 @@
+{
+	"key":{
+		"0":{"item":"minecraft:iron_ingot"},
+		"1":{"item":"minecraft:crafting_table"},
+		"2":{"item":"minecraft:iron_block"}
+	},
+	"pattern":["000","010","020"],
+	"type":"crafting_shaped",
+	"result":{"item":"minecraft:structure_void"}
+}

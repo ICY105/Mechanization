@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4408, OreDict:["upgradeSuperCharger"],Unbreakable:1,Damage:71,HideFlags:6,display:{Lore:["§fMax 4 Upgrades","§fIncreases weapon damage.",],Name:"{\"text\":\"Super Charger Grip\",\"color\":\"dark_red\",\"italic\":false}"}}}}

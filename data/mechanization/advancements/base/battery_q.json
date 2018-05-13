@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§5This is safe, right?!",
+		"description": "§3Create a Quantum Battery.",
+		"icon": {
+            "item": "minecraft:black_stained_glass"
+        },
+		"frame": "task"
+    },
+    "criteria": {
+        "have_battery_q": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+						"nbt":"{Damage:249,Unbreakable:1}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:base/battery_2"
+}

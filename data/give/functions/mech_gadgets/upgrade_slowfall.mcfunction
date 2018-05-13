@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4323, OreDict:["upgradeSlowfall"],Unbreakable:1,Damage:42,HideFlags:6,display:{Lore:["§fMax 1 Upgrade","§fFall Slowly & Negate Fall Damage"],Name:"{\"text\":\"Slowfall Upgrade\",\"color\":\"blue\",\"italic\":false}"}}}}

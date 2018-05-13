@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 6000, du_click_detect:1b,Unbreakable:1,Damage:214,HideFlags:6,display:{Name:"{\"text\":\"Tempite Converter\",\"color\":\"dark_purple\",\"italic\":false}",Lore:["§fConverts between","§fTTB tempite and kJ."]}}}}

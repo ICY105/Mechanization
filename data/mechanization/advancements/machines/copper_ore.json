@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "It's Not That Easy, Bein' Green",
+		"description": "§3Find some copper ore.",
+		"icon": {
+            "item": "minecraft:iron_ore"
+        },
+		"frame": "task"
+    },
+    "criteria": {
+        "have_copper_ore": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:player_head",
+						"nbt":"{OreDict:[\"oreCopper\"]}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:mechanization"
+}

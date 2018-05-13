@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4300, OreDict:["upgradeBase"],Unbreakable:1,Damage:22,HideFlags:6,display:{Name:"{\"text\":\"Upgrade Base\",\"color\":\"dark_red\",\"italic\":false}"}}}}

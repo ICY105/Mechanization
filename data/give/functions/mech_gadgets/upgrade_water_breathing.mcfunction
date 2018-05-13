@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4326, OreDict:["upgradeWaterBreathing"],Unbreakable:1,Damage:44,HideFlags:6,display:{Lore:["§fMax 1 Upgrade","§fGrants water breathing."],Name:"{\"text\":\"Water Breathing Upgrade\",\"color\":\"blue\",\"italic\":false}"}}}}

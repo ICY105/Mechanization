@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {CustomName:"{\"text\":\"Tier 2 Machine Frame\",\"color\":\"red\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 2201, Unbreakable:1,OreDict: ["blockMachineFrame2"],Damage:8s,HideFlags:6,display:{Name:"{\"text\":\"Tier 2 Machine Frame\",\"color\":\"red\",\"italic\":false}"}}}}

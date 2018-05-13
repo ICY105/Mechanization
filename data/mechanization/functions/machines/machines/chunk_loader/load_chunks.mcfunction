@@ -1,0 +1,9 @@
+execute at @s run spreadplayers ~ ~ 0 1 false @s
+execute at @s run spreadplayers ~16 ~ 0 1 false @s
+execute at @s run spreadplayers ~ ~-16 0 1 false @s
+execute at @s run spreadplayers ~-16 ~ 0 1 false @s
+execute at @s run spreadplayers ~-16 ~ 0 1 false @s
+execute at @s run spreadplayers ~ ~16 0 1 false @s
+execute at @s run spreadplayers ~ ~16 0 1 false @s
+execute at @s run spreadplayers ~16 ~ 0 1 false @s
+execute at @s run spreadplayers ~16 ~ 0 1 false @s

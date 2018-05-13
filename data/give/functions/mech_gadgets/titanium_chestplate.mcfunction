@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:diamond_chestplate",Count:1b,tag:{mech_itemid: 4206, modified:1,display:{Name:"{\"text\":\"Titanium Chestplate\",\"color\":\"light_purple\",\"italic\":false}",Lore:["§fModifiable"]}}}}

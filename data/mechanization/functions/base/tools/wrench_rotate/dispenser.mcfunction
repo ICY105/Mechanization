@@ -1,0 +1,6 @@
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:dispenser[facing=up] store success score @s mech_data run setblock ~ ~ ~ minecraft:dispenser[facing=down]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:dispenser[facing=down] store success score @s mech_data run setblock ~ ~ ~ minecraft:dispenser[facing=north]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:dispenser[facing=north] store success score @s mech_data run setblock ~ ~ ~ minecraft:dispenser[facing=east]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:dispenser[facing=east] store success score @s mech_data run setblock ~ ~ ~ minecraft:dispenser[facing=south]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:dispenser[facing=south] store success score @s mech_data run setblock ~ ~ ~ minecraft:dispenser[facing=west]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:dispenser[facing=west] store success score @s mech_data run setblock ~ ~ ~ minecraft:dispenser[facing=up]

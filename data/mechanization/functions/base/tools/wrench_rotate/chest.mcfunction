@@ -1,0 +1,4 @@
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:chest[type=single,facing=south] store success score @s mech_data run setblock ~ ~ ~ minecraft:chest[facing=west]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:chest[type=single,facing=west] store success score @s mech_data run setblock ~ ~ ~ minecraft:chest[facing=north]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:chest[type=single,facing=north] store success score @s mech_data run setblock ~ ~ ~ minecraft:chest[facing=east]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:chest[type=single,facing=east] store success score @s mech_data run setblock ~ ~ ~ minecraft:chest[facing=south]

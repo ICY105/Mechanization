@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{mech_itemid: 4202, modified:1,display:{Name:"{\"text\":\"Titanium Shovel\",\"color\":\"light_purple\",\"italic\":false}",Lore:["§fModifiable"]}}}}

@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§4I only grow stronger...",
+		"description": "§3Create a Tier 2 Battery.",
+		"icon": {
+            "item": "minecraft:red_stained_glass"
+        },
+		"frame": "task"
+    },
+    "criteria": {
+        "have_battery_2": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+						"nbt":"{Damage:247,Unbreakable:1}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:base/battery_1"
+}

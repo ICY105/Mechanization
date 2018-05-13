@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§7Tools of the Trade",
+		"description": "§3Create a Machine Wrench.",
+		"icon": {
+            "item": "minecraft:iron_pickaxe"
+        },
+		"frame": "task"
+    },
+    "criteria": {
+        "have_wrench": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+						"nbt":"{Damage:1,Unbreakable:1}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:base/machine_crafter"
+}

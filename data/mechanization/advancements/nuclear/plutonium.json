@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "Reduce, Reuse, Recycle",
+		"description": "§3Refine spent fuel into plutonium.",
+		"icon": {
+            "item": "minecraft:light_blue_stained_glass"
+        },
+		"frame": "task"
+    },
+    "criteria": {
+        "have_battery_1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:firework_star",
+						"nbt":"{OreDict:[\"ingotPlutonium\"]}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:nuclear/spent_fuel"
+}

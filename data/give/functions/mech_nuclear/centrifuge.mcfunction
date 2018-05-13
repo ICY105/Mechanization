@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {CustomName:"{\"text\":\"Centrifuge\",\"color\":\"gray\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 3000, du_click_detect:1b,Unbreakable:1,Damage:222,HideFlags:6,display:{Name:"{\"text\":\"Centrifuge\",\"color\":\"gray\",\"italic\":false}",Lore:["§fRefines nuclear fuels.","§fUses: 64 kW"]}}}}

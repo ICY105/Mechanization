@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4410, OreDict:["upgradeFluidActuator"],Unbreakable:1,Damage:73,HideFlags:6,display:{Lore:["§fMax 1 Upgrades","§fIncreases projectile speed.",],Name:"{\"text\":\"Fluid Actuator\",\"color\":\"dark_aqua\",\"italic\":false}"}}}}

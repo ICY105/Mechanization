@@ -1,0 +1,1 @@
+give @p diamond{mech_itemid: 2112, HideFlags:1,ench:[{id:0,lvl:0}],display: {Name: "{\"text\":\"Crystal Composite\",\"color\":\"dark_aqua\",\"italic\":false}"}, OreDict: ["gemCrystalComposite"]}

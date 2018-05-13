@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§1Going Green",
+		"description": "§3Create a Solar Panel.",
+		"icon": {
+            "item": "minecraft:daylight_detector"
+        },
+		"frame": "task"
+    },
+    "criteria": {
+        "have_battery_1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+						"nbt":"{Damage:243,Unbreakable:1}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:machines/machine_frame_2"
+}

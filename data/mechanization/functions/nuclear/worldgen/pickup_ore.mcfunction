@@ -1,0 +1,2 @@
+execute store success score temp_0 mech_data run clear @s minecraft:player_head{SkullOwner:{Id:"00000000-0000-0000-ee69-000000000005"}} 1
+execute if score temp_0 mech_data matches 1.. run function give:mech_nuclear/uranium_ore

@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4305, OreDict:["upgradeSmash"],Unbreakable:1,Damage:27,HideFlags:6,display:{Lore:["§fMax 1 Upgrade","§fMines a 3x3 area of stone."],Name:"{\"text\":\"Smash Upgrade\",\"color\":\"gray\",\"italic\":false}"}}}}

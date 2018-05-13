@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4309, OreDict:["upgradeWither"],Unbreakable:1,Damage:31,HideFlags:6,display:{Lore:["§fMax 1 Upgrade","§fWithers target."],Name:"{\"text\":\"Wither Upgrade\",\"color\":\"gray\",\"italic\":false}"}}}}

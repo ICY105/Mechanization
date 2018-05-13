@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§1A Wrinkle in §1Space-Time",
+		"description": "§3Create a Teleporter.",
+		"icon": {
+            "item": "minecraft:ender_eye"
+        },
+		"frame": "task"
+    },
+    "criteria": {
+        "have_battery_1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+						"nbt":"{Damage:233,Unbreakable:1}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:machines/machine_frame_3"
+}

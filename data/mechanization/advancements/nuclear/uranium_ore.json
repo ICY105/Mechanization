@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§2Uh, This is Safe, §2Right?",
+		"description": "§3Find some uranium ore.",
+		"icon": {
+            "item": "minecraft:slime_block"
+        },
+		"frame": "task"
+    },
+    "criteria": {
+        "have_copper_ore": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:player_head",
+						"nbt":"{OreDict:[\"oreUranium\"]}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:mechanization"
+}

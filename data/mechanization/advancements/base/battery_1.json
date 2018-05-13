@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§7Can you feel the power!",
+		"description": "§3Create a Tier 1 Battery.",
+		"icon": {
+            "item": "minecraft:blue_stained_glass"
+        },
+		"frame": "task"
+    },
+    "criteria": {
+        "have_battery_1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+						"nbt":"{Damage:246,Unbreakable:1}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:base/machine_crafter"
+}

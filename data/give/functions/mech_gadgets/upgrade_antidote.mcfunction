@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4321, OreDict:["upgradeAntidote"],Unbreakable:1,Damage:48,HideFlags:6,display:{Lore:["§fMax 1 Upgrade","§fCures effects for power."],Name:"{\"text\":\"Antidote Upgrade\",\"color\":\"light_purple\",\"italic\":false}"}}}}

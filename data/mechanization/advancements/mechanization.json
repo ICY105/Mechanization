@@ -1,0 +1,18 @@
+{
+	"display": {
+		"title": "§4Mechanization",
+		"description": "§3Mechanization advancement tree.",
+		"icon": {
+            "item": "minecraft:hopper"
+        },
+        "background": "mechanization:textures/base/2_plate_panel.png",
+		"frame": "goal",
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+        "always": {
+			"trigger": "minecraft:tick"
+		}
+    }
+}

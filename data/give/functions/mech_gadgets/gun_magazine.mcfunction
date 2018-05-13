@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4401, OreDict:["itemGunMagazine"],Unbreakable:1,Damage:76,HideFlags:6,display:{Lore:["§fGun part."],Name:"{\"text\":\"Gun Magazine\",\"color\":\"gray\",\"italic\":false}"}}}}

@@ -1,0 +1,183 @@
+Standard Format: [2 digit author code][2 digit module code][1 digit set code][2 digit item code]
+
+Author Code: [00]
+
+Base Module [01]: {
+	Blocks [0]: {
+		Tier 1 Battery		[00]
+		Tier 2 Battery		[01]
+		Tier 3 Battery		[02]
+		Quantum Battery		[03]
+		Energy Relay		[04]
+		Machine Crafter		[05]
+		Network Reformer	[06]
+	}
+	Items [1]: {
+		Wrench				[00]
+		Multimeter			[01]
+		Machine Upgrade		[02]
+	}
+}
+
+Age of Machine [02]: {
+	Machines [0]: {
+		Alloy Furnace		[00]
+		Furnace Generator	[01]
+		Tree Feller			[02]
+		Electric furnace	[03]
+		Growth Accelerator	[04]
+		Auto Farm			[05]
+		Auto Fisher			[06]
+		Bio Generator		[07]
+		Block Breaker		[08]
+		Grinder				[09]
+		Item Reformer		[10]
+		Lava Fabricator		[11]
+		Mob Grinder			[12]
+		Quarry				[13]
+		Solar Panel			[14]
+		Ender Generator		[15]
+		Disenchanter		[16]
+		Teleporter			[17]
+		Chunk Loader		[18]
+		
+		Super Piston		[20]
+		Super Sticky Piston	[21]
+		Turn Table			[22]
+	}
+	Resources [1]: {
+		Copper Ore			[00]
+		Copper Ingot		[01]
+		Tin Ore				[02]
+		Tin Ingot			[03]
+		Titanium Ore		[04]
+		Titanium Ingot		[05]
+		Steel Ingot			[06]
+		Structural Ingot	[07]
+		Conductive Ingot	[08]
+		Titanium Steel Ingot		[09]
+		Reinforced Structural Ingot	[10]
+		Super Conductive Ingot		[11]
+		Crystal Composite			[12]
+		Ender Ingot			[13]
+		Nether Ingot		[14]
+	}
+	Misc [2]: {
+		Tier 1 Machine Frame	[00]
+		Tier 2 Machine Frame	[01]
+		Tier 3 Machine Frame	[02]
+		Spawner Mover			[03]
+		Spawner Mover (used)	[04]
+		Spawner Controller		[05]
+	}
+}
+
+Nuclear [03]: {
+	Machines [0]: {
+		Centrifuge				[00]
+		Control Rod				[01]
+		Fission Reactor			[02]
+		Reaction Rate Observer	[03]
+		Steam Turbine			[04]
+		Temperature Observer	[05]
+	}
+	Resources [1]: {
+		Uranium Cell 		[00]
+		Plutonium Cell 		[01]
+		Spent Fuel Cell 	[02]
+		Uranium Ore			[03]
+		Uranium Ingot		[04]
+		Plutonium Ingot		[05]	
+	}
+}
+
+Gadgets [04]: {
+	Machines [0]: {
+		Charging Station	[00]
+		Tinker Table		[01]
+		XP Tank				[02]
+	}
+	Click Tools [1]: {
+		Iron Echolocator	[00]
+		Diamond Echolocater	[01]
+		SMG					[02]
+		Rifle				[03]
+		Pistol				[04]
+		Sniper				[05]
+	}
+	Items [2]: {
+		Pickaxe		[00]
+		Axe			[01]
+		Shovel		[02]
+		Sword		[03]
+		Trident		[04]
+		Helmet		[05]
+		Chestplate	[06]
+		Leggings	[07]
+		Boots		[08]
+		Portable Battery [09]
+	}
+	Upgrades [3]: {
+		Base		[00]
+		Auto Smelt	[01]
+		Empowered	[02]
+		Magnetic	[03]
+		Trash		[04]
+		Smash		[05]
+		Damage			[06]
+		Attack Speed	[07]
+		Poison			[08]
+		Wither			[09]
+		Vamparic		[10]
+		Slowness		[11]
+		Glow			[12]
+		Weakness		[13]
+		Armor		[14]
+		Toughness	[15]
+		Health		[16]
+		KB Resist	[17]
+		Speed		[18]
+		Auto Eater	[19]
+		Flight		[20]
+		Antidote	[21]
+		Vision		[22]
+		Slowfall	[23]
+		Shield		[24]
+		True Invis	[25]
+		Water		[26]
+	}
+	Gun Parts [04]: {
+		Barrel			[00]
+		Magazine		[01]
+		Stock			[02]
+		Trigger			[03]
+		Angled Grip		[04]
+		Vertical Grip	[05]
+		Sight			[06]
+		Scope			[07]
+		Super Charger	[08]
+		Cryo Unit		[09]
+		Fluid Actuator	[10]
+		Plamsa Pump		[11]
+		Bouncy Proj.	[12]
+	}
+}
+
+Assembly [05]: {
+	Machines [00]: {
+		Compressor		[00]
+		Decompressor	[01]
+		Stone Cutter	[02]
+		Dye Machine		[03]
+		Ender Hopper	[04]
+		Fast Hopper		[05]
+		Auto Jukebox	[06]
+		Unlimited Storage Unit [07]
+	}
+}
+
+Tempist [06]: {
+	Machines [00]: {
+		TTB COnverter [00]
+	}
+}

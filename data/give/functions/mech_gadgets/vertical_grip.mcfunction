@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4405, OreDict:["upgradeVerticalGrip"],Unbreakable:1,Damage:69,HideFlags:6,display:{Lore:["§fMax 1 Upgrades","§fDecreases vertical recoil."],Name:"{\"text\":\"Vertical Grip\",\"color\":\"gray\",\"italic\":false}"}}}}

@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§7Geology rocks!",
+		"description": "§3Find some tin ore.",
+		"icon": {
+            "item": "minecraft:diorite"
+        },
+		"frame": "task"
+    },
+    "criteria": {
+        "have_tin_ore": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:player_head",
+						"nbt":"{OreDict:[\"oreTin\"]}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:mechanization"
+}

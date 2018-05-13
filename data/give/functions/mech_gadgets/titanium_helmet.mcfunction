@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:diamond_helmet",Count:1b,tag:{mech_itemid: 4205, modified:1,display:{Name:"{\"text\":\"Titanium Helmet\",\"color\":\"light_purple\",\"italic\":false}",Lore:["§fModifiable"]}}}}

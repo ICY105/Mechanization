@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§2No Illegal Uranium §2Centrifuges §2Here...",
+		"description": "§3Create an centrifuge.",
+		"icon": {
+            "item": "minecraft:hopper"
+        },
+		"frame": "task"
+    },
+    "criteria": {
+        "have_battery_1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+						"nbt":"{Damage:222,Unbreakable:1}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:nuclear/uranium_ore"
+}

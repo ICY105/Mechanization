@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {CustomName:"{\"text\":\"Depleted Plutonium Cell\",\"color\":\"gray\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 3101, Unbreakable:1,FuelGrade:0,OreDict:["cellDepletedPlutonium"],Damage:12s,HideFlags:6,display:{Name:"{\"text\":\"Depleted Plutonium Cell\",\"color\":\"gray\",\"italic\":false}"}}}}

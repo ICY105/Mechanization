@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:firework_star",Count:1,tag:{mech_itemid: 2114, Explosion: {Colors: [I; 9175040]}, HideFlags: 32, display: {Name: "{\"text\":\"Nether Ingot\",\"color\":\"dark_red\",\"italic\":false}"}, OreDict: ["ingotNether"]}}}

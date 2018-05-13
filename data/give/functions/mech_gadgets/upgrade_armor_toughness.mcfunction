@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4315, OreDict:["upgradeToughness"],Unbreakable:1,Damage:37,HideFlags:6,display:{Lore:["§fMax 2 Upgrades per Armor","§f+1 Armor Thoughness"],Name:"{\"text\":\"Armor Toughness Upgrade\",\"color\":\"gray\",\"italic\":false}"}}}}

@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:diamond_boots",Count:1b,tag:{mech_itemid: 4208, modified:1,display:{Name:"{\"text\":\"Titanium Boots\",\"color\":\"light_purple\",\"italic\":false}",Lore:["§fModifiable"]}}}}

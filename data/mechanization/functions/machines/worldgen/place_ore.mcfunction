@@ -1,0 +1,3 @@
+execute if block ~ ~ ~ minecraft:player_head{Owner:{Id:"00000000-0000-0000-ee69-000000000002"}} run data merge block ~ ~ ~ {Owner:{Id:"00000000-0000-0000-ee69-000000000001"}}
+execute if block ~ ~ ~ minecraft:player_head{Owner:{Id:"00000000-0000-0000-ee69-000000000004"}} run data merge block ~ ~ ~ {Owner:{Id:"00000000-0000-0000-ee69-000000000003"}}
+execute if block ~ ~ ~ minecraft:player_head{Owner:{Id:"00000000-0000-0000-ee69-000000000008"}} run data merge block ~ ~ ~ {Owner:{Id:"00000000-0000-0000-ee69-000000000007"}}

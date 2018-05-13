@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:diamond_leggings",Count:1b,tag:{mech_itemid: 4207, modified:1,display:{Name:"{\"text\":\"Titanium Leggings\",\"color\":\"light_purple\",\"italic\":false}",Lore:["§fModifiable"]}}}}

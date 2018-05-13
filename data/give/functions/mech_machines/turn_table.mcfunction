@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {CustomName:"{\"text\":\"Turn Table\",\"color\":\"dark_gray\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 2022, du_click_detect:1b,Unbreakable:1,Damage:227s,HideFlags:6,display:{Name:"{\"text\":\"Turn Table\",\"color\":\"dark_gray\",\"italic\":false}",Lore:["§fRotates machines placed on top."]}}}}

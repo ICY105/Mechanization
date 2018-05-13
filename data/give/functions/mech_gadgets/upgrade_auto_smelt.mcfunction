@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4301, OreDict:["upgradeAutoSmelt"],Unbreakable:1,Damage:23,HideFlags:6,display:{Lore:["§fMax 1 Upgrade.","§fSmelts mined Blocks."],Name:"{\"text\":\"Auto Smelt Upgrade\",\"color\":\"dark_red\",\"italic\":false}"}}}}

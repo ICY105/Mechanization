@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:diamond_sword",Count:1b,tag:{mech_itemid: 4203, modified:1,display:{Name:"{\"text\":\"Titanium Sword\",\"color\":\"light_purple\",\"italic\":false}",Lore:["§fModifiable"]}}}}

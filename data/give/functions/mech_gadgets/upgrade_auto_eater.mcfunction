@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4319, OreDict:["upgradeEater"],Unbreakable:1,Damage:45,HideFlags:6,display:{Lore:["§fMax 1 Upgrade","§fConsumes food for you when hungry."],Name:"{\"text\":\"Auto-Eater Upgrade\",\"color\":\"red\",\"italic\":false}"}}}}

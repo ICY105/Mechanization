@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§2Faster than a §2speeding bullet...",
+		"description": "§3Create a Energy Relay.",
+		"icon": {
+            "item": "minecraft:lime_stained_glass"
+        },
+		"frame": "task"
+    },
+    "criteria": {
+        "have_battery_3": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+						"nbt":"{Damage:250,Unbreakable:1}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:base/battery_2"
+}

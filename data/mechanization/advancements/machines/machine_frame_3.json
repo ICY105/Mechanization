@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§5Not Even My Final Form!",
+		"description": "§3Create a Tier 3 Machine Frame.",
+		"icon": {
+            "item": "minecraft:purple_concrete"
+        },
+		"frame": "goal"
+    },
+    "criteria": {
+        "have_frame_3": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+						"nbt":"{OreDict:[\"blockMachineFrame3\"]}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:machines/grinder"
+}

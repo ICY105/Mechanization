@@ -1,0 +1,9 @@
+{
+	"values":[
+		"mechanization:machines/machines/machine_crafter/machine_crafter",
+		"mechanization:nuclear/machines/machine_crafter",
+		"mechanization:gadgets/machines/machine_crafter",
+		"mechanization:assembly/machines/machine_crafter",
+		"mechanization:tempist/machines/machine_crafter"
+	]
+}

@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4100, du_click_detect:1b,Unbreakable:1,Damage:80,HideFlags:6,display:{Lore:["§fDetects caves.","§fRange: 16 blocks."],Name:"{\"text\":\"Iron Echo-Locater\",\"color\":\"dark_gray\",\"italic\":false}"}}}}

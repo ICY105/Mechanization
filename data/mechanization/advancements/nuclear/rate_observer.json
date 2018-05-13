@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§6Tick, Tock. Tick, Tock.",
+		"description": "§3Create a reaction rate observer.",
+		"icon": {
+            "item": "minecraft:clock"
+        },
+		"frame": "task"
+    },
+    "criteria": {
+        "have_battery_1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+						"nbt":"{Damage:218,Unbreakable:1}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:nuclear/fission_reactor"
+}

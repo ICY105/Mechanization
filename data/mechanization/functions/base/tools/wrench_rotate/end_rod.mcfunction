@@ -1,0 +1,6 @@
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:end_rod[facing=up] store success score @s mech_data run setblock ~ ~ ~ minecraft:end_rod[facing=down]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:end_rod[facing=down] store success score @s mech_data run setblock ~ ~ ~ minecraft:end_rod[facing=north]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:end_rod[facing=north] store success score @s mech_data run setblock ~ ~ ~ minecraft:end_rod[facing=east]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:end_rod[facing=east] store success score @s mech_data run setblock ~ ~ ~ minecraft:end_rod[facing=south]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:end_rod[facing=south] store success score @s mech_data run setblock ~ ~ ~ minecraft:end_rod[facing=west]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:end_rod[facing=west] store success score @s mech_data run setblock ~ ~ ~ minecraft:end_rod[facing=up]

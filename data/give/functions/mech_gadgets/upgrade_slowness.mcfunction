@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4311, OreDict:["upgradeSlowness"],Unbreakable:1,Damage:33,HideFlags:6,display:{Lore:["§fMax 1 Upgrade","§fSlows target."],Name:"{\"text\":\"Slowness Upgrade\",\"color\":\"blue\",\"italic\":false}"}}}}

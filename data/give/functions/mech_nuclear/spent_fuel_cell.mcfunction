@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {CustomName:"{\"text\":\"Spent Fuel Cell\",\"color\":\"gray\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 3102, Unbreakable:1,OreDict:["cellSpentFuel"],Damage:11s,HideFlags:6,display:{Name:"{\"text\":\"Spent Fuel Cell\",\"color\":\"gray\",\"italic\":false}"}}}}

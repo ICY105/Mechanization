@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:diamond_axe",Count:1b,tag:{mech_itemid: 4201, modified:1,display:{Name:"{\"text\":\"Titanium Axe\",\"color\":\"light_purple\",\"italic\":false}",Lore:["§fModifiable"]}}}}

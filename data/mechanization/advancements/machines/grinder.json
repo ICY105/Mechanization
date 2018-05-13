@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§2More for the Dollar",
+		"description": "§3Create a Grinder.",
+		"icon": {
+            "item": "minecraft:furnace"
+        },
+		"frame": "task"
+    },
+    "criteria": {
+        "have_battery_1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+						"nbt":"{Damage:242,Unbreakable:1}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:machines/machine_frame_2"
+}

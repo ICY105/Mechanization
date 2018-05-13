@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4318, OreDict:["upgradeSpeed"],Unbreakable:1,Damage:38,HideFlags:6,display:{Lore:["§fMax 2 Upgrades per Armor","§f+10% Speed"],Name:"{\"text\":\"Speed Upgrade\",\"color\":\"blue\",\"italic\":false}"}}}}

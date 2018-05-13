@@ -1,0 +1,25 @@
+{
+	"display": {
+		"title": "§6Congrats, You §6Didn't Blow Up! (yet)",
+		"description": "§3Collect spent nuclear fuel.",
+		"icon": {
+            "item": "minecraft:black_stained_glass"
+        },
+		"frame": "task",
+		"hidden": true
+    },
+    "criteria": {
+        "have_battery_1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+						"nbt":"{Damage:11,Unbreakable:1}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:nuclear/fission_reactor"
+}

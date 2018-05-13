@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4325, OreDict:["upgradeInvisibility"],Unbreakable:1,Damage:46,HideFlags:6,display:{Lore:["§fMax 1 Upgrade","§fLook down and hold shift+space."],Name:"{\"text\":\"True Invisibility Upgrade\",\"color\":\"blue\",\"italic\":false}"}}}}

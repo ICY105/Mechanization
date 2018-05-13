@@ -1,0 +1,25 @@
+{
+	"display": {
+		"title": "§dBetter Than Diamond :O",
+		"description": "§3Find some titanium ore.",
+		"icon": {
+            "item": "minecraft:purpur_block"
+        },
+		"frame": "goal",
+		"hidden": true
+    },
+    "criteria": {
+        "have_titanium_ore": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:player_head",
+						"nbt":"{OreDict:[\"oreTitanium\"]}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:mechanization"
+}

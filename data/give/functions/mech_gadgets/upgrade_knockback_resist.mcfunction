@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_nerf:1b, mech_itemid: 4317, OreDict:["upgradeKnockResist"],Unbreakable:1,Damage:39,HideFlags:6,display:{Lore:["§fMax 1 Upgrade per Armor","§f+0.5 Knockback Resistance"],Name:"{\"text\":\"Knockback Resist Upgrade\",\"color\":\"blue\",\"italic\":false}"}}}}

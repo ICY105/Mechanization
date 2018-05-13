@@ -1,0 +1,1 @@
+summon item ~ ~ ~ {CustomName:"{\"text\":\"Filter Hopper\",\"color\":\"blue\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:iron_hoe",Count:1b,tag:{du_click_detect:1b,Unbreakable:1,Damage:208,HideFlags:6,display:{Name:"{\"text\":\"Filter Hopper\",\"color\":\"blue\",\"italic\":false}",Lore:["§fAlways keeps an item","§fin the first inv slot."]}}}}

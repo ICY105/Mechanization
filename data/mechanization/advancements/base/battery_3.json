@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§5§oUnlimited, Power!",
+		"description": "§3Create a Tier 3 Battery.",
+		"icon": {
+            "item": "minecraft:purple_stained_glass"
+        },
+		"frame": "goal"
+    },
+    "criteria": {
+        "have_battery_3": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+						"nbt":"{Damage:248,Unbreakable:1}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:base/battery_2"
+}

@@ -1,0 +1,24 @@
+{
+	"display": {
+		"title": "§4Nothing Could §4Possibly Go Wrong",
+		"description": "§3Create a fission reactor.",
+		"icon": {
+            "item": "minecraft:magma_block"
+        },
+		"frame": "task"
+    },
+    "criteria": {
+        "have_battery_1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "minecraft:iron_hoe",
+						"nbt":"{Damage:221,Unbreakable:1}"
+                    }
+                ]
+            }
+        }
+    },
+	"parent":"mechanization:nuclear/centrifuge"
+}

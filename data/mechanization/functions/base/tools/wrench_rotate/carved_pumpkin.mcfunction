@@ -1,0 +1,4 @@
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:carved_pumpkin[facing=south] store success score @s mech_data run setblock ~ ~ ~ minecraft:carved_pumpkin[facing=west]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:carved_pumpkin[facing=west] store success score @s mech_data run setblock ~ ~ ~ minecraft:carved_pumpkin[facing=north]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:carved_pumpkin[facing=north] store success score @s mech_data run setblock ~ ~ ~ minecraft:carved_pumpkin[facing=east]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:carved_pumpkin[facing=east] store success score @s mech_data run setblock ~ ~ ~ minecraft:carved_pumpkin[facing=south]

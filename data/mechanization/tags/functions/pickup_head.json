@@ -1,0 +1,6 @@
+{
+	"values":[
+		"mechanization:machines/worldgen/pickup_ore",
+		"mechanization:nuclear/worldgen/pickup_ore"
+	]
+}

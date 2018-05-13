@@ -1,0 +1,4 @@
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:jack_o_lantern[facing=south] store success score @s mech_data run setblock ~ ~ ~ minecraft:jack_o_lantern[facing=west]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:jack_o_lantern[facing=west] store success score @s mech_data run setblock ~ ~ ~ minecraft:jack_o_lantern[facing=north]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:jack_o_lantern[facing=north] store success score @s mech_data run setblock ~ ~ ~ minecraft:jack_o_lantern[facing=east]
+execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:jack_o_lantern[facing=east] store success score @s mech_data run setblock ~ ~ ~ minecraft:jack_o_lantern[facing=south]
