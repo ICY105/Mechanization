@@ -18,7 +18,7 @@ The wiki has overview videos, recipes, and in-depth descriptions of all items.
 
 v1.3.2 The Progression Update [Download](https://www.dropbox.com/s/z895rnqzrk25np1/mechanization_v1.3.2.zip?dl=1)
 
-#### Minecraft 1.13
+#### Minecraft 1.13 Prerelease
 
 Prereleases are incomplete and prone to bugs, please report any issues you find or suggestions you have.
 
