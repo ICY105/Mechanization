@@ -28,4 +28,6 @@ v2 Prerelease 5.1.0 Resource Pack :
 * Resourcepack: [Download](https://www.dropbox.com/s/ajpq908hga2oh96/MechanizationResources.zip?dl=1)
 * x32 Bit Version (install with the normal version): [Download](https://www.dropbox.com/s/rq646frqxrrktzv/MechanizationResources.zip?dl=1)
 
+[widget]minecraft/customization/mechanization-datapack[/widget]
+
 ![prerelease](https://i.imgur.com/S04DKyE.png)
