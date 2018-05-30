@@ -14,18 +14,12 @@ The wiki has overview videos, recipes, and in-depth descriptions of all items.
 
 [Installation Instructions](https://github.com/ImCoolYeah105/Mechanization/wiki/Installion)
 
+Now on curseforge! https://minecraft.curseforge.com/projects/mechanization-datapack
+
+(cannot embed curseforge wigit on github :/)
+
 #### Minecraft 1.12
 
 v1.3.2 The Progression Update [Download](https://www.dropbox.com/s/z895rnqzrk25np1/mechanization_v1.3.2.zip?dl=1)
-
-#### Minecraft 1.13 Prerelease
-
-Prereleases are incomplete and prone to bugs, please report any issues you find or suggestions you have.
-
-v2 Prerelease 5.1.2: [Download](https://www.dropbox.com/s/vw8jgp7e0w5jioj/MechanizationPre_5.1.2.zip?dl=1)
-
-v2 Prerelease 5.1.0 Resource Pack :
-* Resourcepack: [Download](https://www.dropbox.com/s/ajpq908hga2oh96/MechanizationResources.zip?dl=1)
-* x32 Bit Version (install with the normal version): [Download](https://www.dropbox.com/s/rq646frqxrrktzv/MechanizationResources.zip?dl=1)
 
 ![prerelease](https://i.imgur.com/S04DKyE.png)
