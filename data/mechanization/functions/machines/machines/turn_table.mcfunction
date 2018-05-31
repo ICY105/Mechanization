@@ -8,5 +8,4 @@ execute if score temp_1 mech_data matches 1 if entity @s[tag=!mech_active] if bl
 execute if score temp_1 mech_data matches 1 run tag @s add mech_active
 execute if score temp_1 mech_data matches 0 run tag @s remove mech_active
 
-execute unless block ~ ~ ~ dropper run function give:mech_machines/machine_frame_tier_2
 execute unless block ~ ~ ~ dropper run kill @s

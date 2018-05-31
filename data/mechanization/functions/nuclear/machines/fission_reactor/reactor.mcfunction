@@ -15,9 +15,9 @@ execute if entity @s[nbt={HandItems:[{tag:{OreDict:["cellPlutonium"]}},{}]}] run
 tag @s[tag=mech_uranium] add mech_active
 tag @s[tag=mech_plutonium] add mech_active
 
-execute if entity @s[tag=!mech_active] store success entity @s ArmorItems[3].tag.Damage short 74 if entity @s
-execute if entity @s[tag=mech_uranium] store success entity @s ArmorItems[3].tag.Damage short 75 if entity @s
-execute if entity @s[tag=mech_plutonium] store success entity @s ArmorItems[3].tag.Damage short 76 if entity @s
+execute if entity @s[tag=!mech_active] store success entity @s ArmorItems[3].tag.Damage short 87 if entity @s
+execute if entity @s[tag=mech_uranium] store success entity @s ArmorItems[3].tag.Damage short 88 if entity @s
+execute if entity @s[tag=mech_plutonium] store success entity @s ArmorItems[3].tag.Damage short 89 if entity @s
 
 execute if entity @s[tag=mech_active] run function mechanization:nuclear/machines/fission_reactor/heat_process
 

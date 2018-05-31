@@ -11,4 +11,4 @@ execute store result entity @s ArmorItems[3].tag.mech_power int 1 run scoreboard
 execute store result entity @s ArmorItems[3].tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
 
 #cleanup
-execute at @s unless block ~ ~ ~ minecraft:barrier run kill @s
+execute unless block ~ ~ ~ barrier run kill @s

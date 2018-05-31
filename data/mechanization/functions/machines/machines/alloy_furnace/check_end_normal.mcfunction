@@ -1,7 +1,7 @@
-replaceitem block ~ ~ ~ container.3 diamond_shovel{Unbreakable:1,UIPart:1,display:{Name:"{\"text\":\" \",\"italic\":false}"},Damage:67,HideFlags:63}
-replaceitem block ~ ~ ~ container.4 diamond_shovel{Unbreakable:1,UIPart:1,display:{Name:"{\"text\":\" \",\"italic\":false}"},Damage:49,HideFlags:63}
-replaceitem block ~ ~ ~ container.5 diamond_shovel{Unbreakable:1,UIPart:1,display:{Name:"{\"text\":\" \",\"italic\":false}"},Damage:67,HideFlags:63}
-replaceitem block ~ ~ ~ container.6 diamond_shovel{Unbreakable:1,UIPart:1,display:{Name:"{\"text\":\" \",\"italic\":false}"},Damage:67,HideFlags:63}
+replaceitem block ~ ~ ~ container.3 diamond_shovel{Unbreakable:1,UIPart:1,display:{Name:"{\"text\":\" \",\"italic\":false}"},Damage:43,HideFlags:63}
+replaceitem block ~ ~ ~ container.4 diamond_shovel{Unbreakable:1,UIPart:1,display:{Name:"{\"text\":\" \",\"italic\":false}"},Damage:50,HideFlags:63}
+replaceitem block ~ ~ ~ container.5 diamond_shovel{Unbreakable:1,UIPart:1,display:{Name:"{\"text\":\" \",\"italic\":false}"},Damage:43,HideFlags:63}
+replaceitem block ~ ~ ~ container.6 diamond_shovel{Unbreakable:1,UIPart:1,display:{Name:"{\"text\":\" \",\"italic\":false}"},Damage:43,HideFlags:63}
 replaceitem block ~ ~ ~ container.8 air
 
 scoreboard players set temp_0 mech_data 0

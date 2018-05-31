@@ -5,7 +5,7 @@ execute unless score @s mech_power matches -2147483648.. store result score @s m
 execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s ArmorItems[3].tag.mech_gridid
 
 #main
-execute store success entity @s ArmorItems[3].tag.Damage short 65 if entity @s
+execute store success entity @s ArmorItems[3].tag.Damage short 67 if entity @s
 execute if entity @s[tag=!mech_upgraded,scores={mech_power=..3000}] run function mechanization:machines/machines/bio_generator/fuel_normal
 execute if entity @s[tag=mech_upgraded,scores={mech_power=..3000}] run function mechanization:machines/machines/bio_generator/fuel_upgraded
 

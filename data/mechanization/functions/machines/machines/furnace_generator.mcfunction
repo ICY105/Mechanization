@@ -10,8 +10,8 @@ execute store success score temp_0 mech_data if block ~ ~ ~ minecraft:furnace[li
 execute if score temp_0 mech_data matches 1 if entity @s[scores={mech_power=..2000},tag=!mech_upgraded] run scoreboard players add @s mech_power 16
 execute if score temp_0 mech_data matches 1 if entity @s[scores={mech_power=..2000},tag=mech_upgraded] run scoreboard players add @s mech_power 24
 execute if score temp_0 mech_data matches 1 if entity @s[scores={mech_power=..2000}] run playsound minecraft:block.fire.ambient block @a[distance=..6] ~ ~ ~ 0.5 1
-execute if score temp_0 mech_data matches 1 if entity @s[scores={mech_power=..2000}] store success entity @s ArmorItems[3].tag.Damage short 39 if entity @s
-execute if score temp_0 mech_data matches 0 store success entity @s ArmorItems[3].tag.Damage short 53 if entity @s
+execute if score temp_0 mech_data matches 1 if entity @s[scores={mech_power=..2000}] store success entity @s ArmorItems[3].tag.Damage short 45 if entity @s
+execute if score temp_0 mech_data matches 0 store success entity @s ArmorItems[3].tag.Damage short 44 if entity @s
 data merge block ~ ~ ~ {CookTime:-1000}
 
 #store scoreboard values

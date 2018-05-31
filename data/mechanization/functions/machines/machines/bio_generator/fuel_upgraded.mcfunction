@@ -20,7 +20,7 @@ execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:red_mushroom"}]} run scoreb
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:chorus_flower"}]} run scoreboard players add temp_0 mech_data 8
 
 scoreboard players operation @s mech_power += temp_0 mech_data
-execute if score temp_0 mech_data matches 1.. store success entity @s ArmorItems[3].tag.Damage short 66 if entity @s
+execute if score temp_0 mech_data matches 1.. store success entity @s ArmorItems[3].tag.Damage short 68 if entity @s
 execute if score temp_0 mech_data matches 1.. run particle minecraft:smoke ~ ~1.2 ~ 0.1 0 0.1 0 15
 
 execute store result score temp_0 mech_data run data get block ~ ~ ~ Items[0].Count

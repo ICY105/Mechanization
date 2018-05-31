@@ -30,9 +30,9 @@ scoreboard players set @a[scores={mech_firerate=..-1}] mech_firerate 0
 scoreboard players remove @a[tag=!du_right_click] mech_weaponheat 6
 scoreboard players set @a[scores={mech_weaponheat=..-1}] mech_weaponheat 0
 
-execute as @a[tag=mech_fire_cont,scores={mech_usedid=4102..4104,mech_firerate=2,mech_weaponheat=..1000}] at @s run function mechanization:gadgets/guns/fire_gun
-execute as @a[tag=du_right_click,scores={mech_usedid=4102..4104,mech_firerate=0,mech_weaponheat=..1000}] at @s run function mechanization:gadgets/guns/fire_gun
-execute as @a[tag=du_left_click,scores={mech_usedid=4102..4104}] run function mechanization:gadgets/guns/switch_ads
+execute as @a[tag=mech_fire_cont,scores={mech_usedid=4102..4105,mech_firerate=2,mech_weaponheat=..1000}] at @s run function mechanization:gadgets/guns/fire_gun
+execute as @a[tag=du_right_click,scores={mech_usedid=4102..4105,mech_firerate=0,mech_weaponheat=..1000}] at @s run function mechanization:gadgets/guns/fire_gun
+execute as @a[tag=du_left_click,scores={mech_usedid=4102..4105}] run function mechanization:gadgets/guns/switch_ads
 
 execute as @a[scores={mech_weaponheat=1..}] run function mechanization:gadgets/guns/display_heat
 

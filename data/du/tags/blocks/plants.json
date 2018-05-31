@@ -17,13 +17,13 @@
 		"minecraft:grass",
 		"minecraft:fern",
 		"minecraft:dead_bush",
-		"minecraft:sea_grass",
 		"minecraft:brown_mushroom",
 		"minecraft:red_mushroom",
 		"minecraft:cactus",
 		"minecraft:vine",
 		"minecraft:lily_pad",
 		"minecraft:tall_grass",
+		"minecraft:seagrass",
 		"minecraft:large_fern"
 	]
 }

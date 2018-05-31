@@ -13,8 +13,7 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "minecraft:iron_hoe",
-						"nbt":"{OreDict:[\"blockMachineFrame2\"]}"
+						"nbt":"{mech_itemid:2201}"
                     }
                 ]
             }

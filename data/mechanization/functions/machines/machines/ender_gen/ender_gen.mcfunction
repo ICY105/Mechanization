@@ -9,8 +9,8 @@ execute unless score @s mech_data matches -2147483648.. store result score @s me
 execute if entity @s[scores={mech_power=..4000,mech_data=..0},tag=!mech_upgraded] run function mechanization:machines/machines/ender_gen/fuel_normal
 execute if entity @s[scores={mech_power=..4000,mech_data=..0},tag=mech_upgraded] run function mechanization:machines/machines/ender_gen/fuel_upgraded
 
-execute store success entity @s ArmorItems[3].tag.Damage short 70 if entity @s
-execute if entity @s[scores={mech_power=..4000,mech_data=1..}] store success entity @s ArmorItems[3].tag.Damage short 71 if entity @s
+execute store success entity @s ArmorItems[3].tag.Damage short 73 if entity @s
+execute if entity @s[scores={mech_power=..4000,mech_data=1..}] store success entity @s ArmorItems[3].tag.Damage short 74 if entity @s
 
 execute if entity @s[scores={mech_power=..4000,mech_data=1..}] run playsound mechanization:machines.ender_generator block @a[distance=..16] ~ ~ ~ 0.2 1
 execute if entity @s[scores={mech_power=..4000,mech_data=1..}] run scoreboard players add @s mech_power 32

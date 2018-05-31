@@ -16,8 +16,8 @@ execute if score temp_0 mech_data matches 1 if entity @s[scores={mech_power=80..
 execute if score temp_0 mech_data matches 1 if entity @s[scores={mech_power=20..}] run playsound mechanization:machines.electric_furnace block @a[distance=..16] ~ ~ ~ 0.3 1
 execute if score temp_0 mech_data matches 1 if entity @s[scores={mech_power=..19}] run data merge block ~ ~ ~ {BurnTime:0}
 
-execute if score temp_0 mech_data matches 0 store success entity @s ArmorItems[3].tag.Damage short 43 if entity @s
-execute if score temp_0 mech_data matches 1 if entity @s[scores={mech_power=20..}] store success entity @s ArmorItems[3].tag.Damage short 44 if entity @s
+execute if score temp_0 mech_data matches 0 store success entity @s ArmorItems[3].tag.Damage short 46 if entity @s
+execute if score temp_0 mech_data matches 1 if entity @s[scores={mech_power=20..}] store success entity @s ArmorItems[3].tag.Damage short 47 if entity @s
 
 #store scoreboard values
 execute store result entity @s ArmorItems[3].tag.mech_power int 1 run scoreboard players get @s mech_power

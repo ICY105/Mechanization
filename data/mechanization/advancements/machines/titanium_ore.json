@@ -14,8 +14,7 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "minecraft:player_head",
-						"nbt":"{OreDict:[\"oreTitanium\"]}"
+						"nbt":"{mech_itemid:2104}"
                     }
                 ]
             }

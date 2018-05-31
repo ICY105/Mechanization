@@ -11,8 +11,8 @@ execute if entity @s[tag=!mech_active,scores={mech_power=180..}] run function me
 scoreboard players add @s[tag=mech_active] mech_timer 1
 execute if entity @s[tag=mech_active] run playsound mechanization:machines.electric_furnace block @a[distance=..16] ~ ~ ~ 0.3 1
 
-execute store success entity @s[tag=!mech_active] ArmorItems[3].tag.Damage short 47 if entity @s
-execute store success entity @s[tag=mech_active] ArmorItems[3].tag.Damage short 48 if entity @s
+execute store success entity @s[tag=!mech_active] ArmorItems[3].tag.Damage short 48 if entity @s
+execute store success entity @s[tag=mech_active] ArmorItems[3].tag.Damage short 49 if entity @s
 
 execute if entity @s[tag=mech_active,scores={mech_timer=6..}] run function mechanization:machines/machines/alloy_furnace/check_end_normal
 execute if entity @s[tag=mech_active,tag=mech_upgraded,scores={mech_timer=3..}] run function mechanization:machines/machines/alloy_furnace/check_end_normal

@@ -5,8 +5,8 @@ execute unless score @s mech_gridid matches -2147483648.. store result score @s 
 
 #main
 execute store result entity @s Pose.Head[0] float 0.0075 run scoreboard players get temp_0 mech_data
-execute if block ~ ~ ~ daylight_detector[inverted=false] store success entity @s ArmorItems[3].tag.Damage short 41 if entity @s
-execute if block ~ ~ ~ daylight_detector[inverted=true] store success entity @s ArmorItems[3].tag.Damage short 42 if entity @s
+execute if block ~ ~ ~ daylight_detector[inverted=false] store success entity @s ArmorItems[3].tag.Damage short 58 if entity @s
+execute if block ~ ~ ~ daylight_detector[inverted=true] store success entity @s ArmorItems[3].tag.Damage short 59 if entity @s
 execute unless block ~ ~ ~ daylight_detector run kill @s
 
 execute if entity @s[tag=!mech_upgraded,scores={mech_power=..2000}] run function mechanization:machines/machines/solar_panel/solar_panel_normal

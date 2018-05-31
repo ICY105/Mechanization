@@ -13,8 +13,7 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "minecraft:iron_hoe",
-						"nbt":"{Damage:235,Unbreakable:1}"
+						"nbt":"{mech_itemid:2013}"
                     }
                 ]
             }

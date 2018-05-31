@@ -49,7 +49,7 @@ execute if score temp_0 mech_data matches 1.. run tag @e[type=item,tag=mech_new_
 
 #Melon
 scoreboard players set temp_0 mech_data 0
-execute store result score temp_0 mech_data run fill ~-3 ~ ~-3 ~3 ~ ~3 minecraft:air replace minecraft:melon_block
+execute store result score temp_0 mech_data run fill ~-3 ~ ~-3 ~3 ~ ~3 minecraft:air replace minecraft:melon
 execute if score temp_0 mech_data matches 1.. run summon item ~ ~1 ~ {Tags:["mech_new_crop"],Item:{id:"minecraft:melon",Count:1b}}
 execute if score temp_0 mech_data matches 1.. store result entity @e[tag=mech_new_crop,limit=1] Item.Count int 3 run scoreboard players get temp_0 mech_data
 execute if score temp_0 mech_data matches 1.. run tag @e[type=item,tag=mech_new_crop] remove mech_new_crop

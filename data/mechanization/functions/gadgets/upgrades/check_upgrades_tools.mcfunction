@@ -27,7 +27,7 @@ scoreboard players operation temp_5 mech_data += @s mech_usetrident
 execute if score timer_20 du_data matches 10 if entity @s[tag=mech_upgrade_empower_1] run function mechanization:gadgets/upgrades/tools/empowered_1
 execute if score timer_20 du_data matches 10 if entity @s[tag=mech_upgrade_empower_2] run function mechanization:gadgets/upgrades/tools/empowered_2
 execute if score temp_4 mech_data matches 1.. if entity @s[tag=mech_upgrade_magnetic] at @s run function mechanization:gadgets/upgrades/tools/magnetic
-execute if entity @s[tag=mech_upgrade_smash,tag=!mech_sneaking] at @s run function mechanization:gadgets/upgrades/tools/smash
+execute if entity @s[tag=mech_upgrade_smash,tag=!du_sneaking] at @s run function mechanization:gadgets/upgrades/tools/smash
 execute if score temp_4 mech_data matches 1.. if entity @s[tag=mech_upgrade_trash] at @s run function mechanization:gadgets/upgrades/tools/trash
 
 execute if score temp_4 mech_data matches 1.. if entity @s[tag=mech_upgrade_autosmelt] run scoreboard players set in_0 mech_data 40

@@ -13,8 +13,7 @@
             "conditions": {
                 "items": [
                     {
-                        "item": "minecraft:firework_star",
-						"nbt":"{OreDict:[\"ingotPlutonium\"]}"
+						"nbt":"{mech_itemid:3105}"
                     }
                 ]
             }

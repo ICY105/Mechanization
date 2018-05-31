@@ -1,31 +1,29 @@
 tag @s remove mech_fire_cont
 
-scoreboard players set temp_0 mech_data -1
-execute store result score temp_0 mech_data run data get entity @s SelectedItemSlot
+#consume energy
+execute store result score in_0 mech_data run data get entity @s SelectedItem.tag.mech_gun.energy
+function mechanization:base/tools/player_energy/use_energy
 
-execute store result score temp_1 mech_data run data get entity @s Inventory[0].Slot
-execute if score temp_0 mech_data = temp_1 mech_data run function mechanization:gadgets/guns/shoot/shoot_0
+execute if score out_0 mech_data matches 1 run playsound mechanization:gadgets.laser_gun player @a[distance=..24] ~ ~1 ~ 4
 
-execute store result score temp_1 mech_data run data get entity @s Inventory[1].Slot
-execute if score temp_0 mech_data = temp_1 mech_data run function mechanization:gadgets/guns/shoot/shoot_1
+#summon bullet
+execute if score out_0 mech_data matches 1 store result score temp_1 mech_data run data get entity @s SelectedItem.tag.mech_gun.damage
+execute if score out_0 mech_data matches 1 store result score temp_2 mech_data run data get entity @s SelectedItem.tag.mech_gun.velocity
+execute if score out_0 mech_data matches 1 store result score temp_3 mech_data run data get entity @s SelectedItem.tag.mech_gun.bouncy
+execute if score out_0 mech_data matches 1 run function mechanization:gadgets/guns/bullet/spawn_bullet
 
-execute store result score temp_1 mech_data run data get entity @s Inventory[2].Slot
-execute if score temp_0 mech_data = temp_1 mech_data run function mechanization:gadgets/guns/shoot/shoot_2
+#recoil
+execute if score out_0 mech_data matches 1 store result score temp_1 mech_data run data get entity @s SelectedItem.tag.mech_gun.recoil_x
+execute if score out_0 mech_data matches 1 store result score temp_2 mech_data run data get entity @s SelectedItem.tag.mech_gun.recoil_y
+execute if score out_0 mech_data matches 1 run function mechanization:gadgets/guns/recoil
 
-execute store result score temp_1 mech_data run data get entity @s Inventory[3].Slot
-execute if score temp_0 mech_data = temp_1 mech_data run function mechanization:gadgets/guns/shoot/shoot_3
+#weapon heat
+execute if score out_0 mech_data matches 1 store result score temp_1 mech_data run data get entity @s SelectedItem.tag.mech_gun.heat
+execute if score out_0 mech_data matches 1 run scoreboard players operation @s mech_weaponheat += temp_1 mech_data
 
-execute store result score temp_1 mech_data run data get entity @s Inventory[4].Slot
-execute if score temp_0 mech_data = temp_1 mech_data run function mechanization:gadgets/guns/shoot/shoot_4
-
-execute store result score temp_1 mech_data run data get entity @s Inventory[5].Slot
-execute if score temp_0 mech_data = temp_1 mech_data run function mechanization:gadgets/guns/shoot/shoot_5
-
-execute store result score temp_1 mech_data run data get entity @s Inventory[6].Slot
-execute if score temp_0 mech_data = temp_1 mech_data run function mechanization:gadgets/guns/shoot/shoot_6
-
-execute store result score temp_1 mech_data run data get entity @s Inventory[7].Slot
-execute if score temp_0 mech_data = temp_1 mech_data run function mechanization:gadgets/guns/shoot/shoot_7
-
-execute store result score temp_1 mech_data run data get entity @s Inventory[8].Slot
-execute if score temp_0 mech_data = temp_1 mech_data run function mechanization:gadgets/guns/shoot/shoot_8
+#set fire rate
+execute if score @s mech_firerate matches 1.. run scoreboard players set out_0 mech_data 0
+execute if score out_0 mech_data matches 1 store result score temp_1 mech_data run data get entity @s SelectedItem.tag.mech_gun.fire_rate
+execute if score out_0 mech_data matches 1 run scoreboard players operation @s mech_firerate = temp_1 mech_data
+execute if score out_0 mech_data matches 1 if score @s mech_firerate matches 1..3 run tag @s add mech_fire_cont
+execute if score out_0 mech_data matches 1 if score @s mech_firerate matches 1..3 run scoreboard players set @s mech_firerate 4
