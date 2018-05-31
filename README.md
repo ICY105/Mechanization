@@ -18,8 +18,4 @@ Now on curseforge! https://minecraft.curseforge.com/projects/mechanization-datap
 
 (cannot embed curseforge wigit on github :/)
 
-#### Minecraft 1.12
-
-v1.3.2 The Progression Update [Download](https://www.dropbox.com/s/z895rnqzrk25np1/mechanization_v1.3.2.zip?dl=1)
-
 ![prerelease](https://i.imgur.com/S04DKyE.png)
