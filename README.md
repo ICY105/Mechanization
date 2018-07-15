@@ -1,5 +1,5 @@
 # Mechanization
-Mechanization is a Minecraft datapack aimed at recreating popular tech mods like IC2 and Thermal Expansion. It has been in development for over 2 years, with the first version being released in March 2016. Mechanization has over 45 machines and 60 items with a feature set ranging from an extensive power system to custom ore generation to plasma guns. And best of all? All this with little or no noticable lag.
+Mechanization is a Minecraft datapack aimed at recreating popular tech mods like IC2 and Thermal Expansion. It has been in development for over 2 years, with the first version being released in March 2016. Mechanization has over 45 machines and 110 items with a feature set ranging from an extensive power system to custom ore generation to plasma guns. And best of all? All this with little or no noticable lag.
 
 Want to stay up-to-date with everything Mechanization? Join the discord server: https://discord.gg/6uJ4eJH
 
