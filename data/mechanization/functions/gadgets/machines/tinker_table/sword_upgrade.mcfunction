@@ -3,7 +3,7 @@ replaceitem block ~ ~ ~ container.2 air
 replaceitem block ~ ~ ~ container.6 air
 replaceitem block ~ ~ ~ container.8 air
 
-replaceitem block ~ ~ ~ container.4 diamond_sword{mech_itemid: 4203, mech_upgrades:{poison:0,wither:0,vamparic:0,slowness:0,weakness:0,glow:0},modified:2,display:{Lore:["§7Modified"],Name:"{\"text\":\"Titanium Sword\",\"color\":\"light_purple\",\"italic\":false}"},AttributeModifiers:[{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:4.0,Operation:0,UUIDLeast:100004,UUIDMost:100004,Slot:"mainhand"},{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:-3.0,Operation:0,UUIDLeast:100005,UUIDMost:100005,Slot:"mainhand"}]}
+replaceitem block ~ ~ ~ container.4 diamond_sword{mech_itemid: 4203, Damage:1561, HideFlags:36, du_durability:1b, durability_max:2048, Unbreakable:1b, mech_upgrades:{poison:0,wither:0,vamparic:0,slowness:0,weakness:0,glow:0},modified:2,display:{Lore:["§7Modified"],Name:"{\"text\":\"Titanium Sword\",\"color\":\"light_purple\",\"italic\":false}"},AttributeModifiers:[{AttributeName:"mech.durability",Name:"mech.durability",Amount:2048,Operation:0,UUIDLeast:12345,UUIDMost:12345,Slot:"offhand"},{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:4.0,Operation:0,UUIDLeast:100004,UUIDMost:100004,Slot:"mainhand"},{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:-3.0,Operation:0,UUIDLeast:100005,UUIDMost:100005,Slot:"mainhand"}]}
 
 
 execute if block ~ ~ ~ dropper{Items:[{tag:{OreDict:["upgradePoison"]}}]} store success block ~ ~ ~ Items[2].tag.mech_upgrades.poison int 1 if entity @s
@@ -18,14 +18,14 @@ execute if block ~ ~ ~ dropper{Items:[ {Slot:1b,tag:{OreDict:["upgradeDamage"]}}
 execute if block ~ ~ ~ dropper{Items:[ {Slot:3b,tag:{OreDict:["upgradeDamage"]}} ]} run scoreboard players add temp_0 mech_data 20
 execute if block ~ ~ ~ dropper{Items:[ {Slot:5b,tag:{OreDict:["upgradeDamage"]}} ]} run scoreboard players add temp_0 mech_data 20
 execute if block ~ ~ ~ dropper{Items:[ {Slot:7b,tag:{OreDict:["upgradeDamage"]}} ]} run scoreboard players add temp_0 mech_data 20
-execute store result block ~ ~ ~ Items[2].tag.AttributeModifiers[0].Amount double 0.1 run scoreboard players get temp_0 mech_data
+execute store result block ~ ~ ~ Items[2].tag.AttributeModifiers[1].Amount double 0.1 run scoreboard players get temp_0 mech_data
 
 scoreboard players set temp_0 mech_data -300
 execute if block ~ ~ ~ dropper{Items:[ {Slot:1b,tag:{OreDict:["upgradeAttackSpeed"]}} ]} run scoreboard players add temp_0 mech_data 50
 execute if block ~ ~ ~ dropper{Items:[ {Slot:3b,tag:{OreDict:["upgradeAttackSpeed"]}} ]} run scoreboard players add temp_0 mech_data 50
 execute if block ~ ~ ~ dropper{Items:[ {Slot:5b,tag:{OreDict:["upgradeAttackSpeed"]}} ]} run scoreboard players add temp_0 mech_data 50
 execute if block ~ ~ ~ dropper{Items:[ {Slot:7b,tag:{OreDict:["upgradeAttackSpeed"]}} ]} run scoreboard players add temp_0 mech_data 50
-execute store result block ~ ~ ~ Items[2].tag.AttributeModifiers[1].Amount double 0.01 run scoreboard players get temp_0 mech_data
+execute store result block ~ ~ ~ Items[2].tag.AttributeModifiers[2].Amount double 0.01 run scoreboard players get temp_0 mech_data
 
 
 

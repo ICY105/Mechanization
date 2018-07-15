@@ -4,4 +4,4 @@ setblock ~ 2 ~ minecraft:redstone_block
 setblock ~ 1 ~ bedrock
 setblock ~ 2 ~ bedrock
 
-execute positioned ~ 32 ~ run kill @e[type=item,distance=..48,nbt={Item:{id:"minecraft:skull"}}]
+execute positioned ~ 32 ~ run kill @e[type=item,distance=..40]

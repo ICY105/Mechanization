@@ -27,8 +27,10 @@ execute if score temp_0 mech_data matches 0..58 if block ~ ~ ~ furnace{Items:[{S
 execute if score temp_0 mech_data matches 0..58 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:acacia_log"}]} run tag @s add mech_active
 
 #Extra
+execute if score temp_0 mech_data matches 0..63 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:cobblestone"}]} run tag @s add mech_active
 execute if score temp_0 mech_data matches 0..63 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:gravel"}]} run tag @s add mech_active
 execute if score temp_0 mech_data matches 0..61 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:blaze_rod"}]} run tag @s add mech_active
+execute if score temp_0 mech_data matches 0..60 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:bone"}]} run tag @s add mech_active
 
 
 #TTB Compat

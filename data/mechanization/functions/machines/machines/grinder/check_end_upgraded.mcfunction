@@ -60,10 +60,14 @@ execute if score temp_0 mech_data matches 0 if block ~ ~ ~ furnace{Items:[{Slot:
 execute if score temp_0 mech_data matches 1.. if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:acacia_log"},{Slot:2b,id:"minecraft:acacia_planks"}]} run scoreboard players add temp_0 mech_data 8
 
 #Extra
+execute if score temp_0 mech_data matches 0 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:cobblestone"}]} run replaceitem block ~ ~ ~ container.2 sand 2
+execute if score temp_0 mech_data matches 1.. if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:cobblestone"},{Slot:2b,id:"minecraft:sand"}]} run scoreboard players add temp_0 mech_data 2
 execute if score temp_0 mech_data matches 0 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:gravel"}]} run replaceitem block ~ ~ ~ container.2 flint 1
 execute if score temp_0 mech_data matches 1.. if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:gravel"},{Slot:2b,id:"minecraft:flint"}]} run scoreboard players add temp_0 mech_data 1
 execute if score temp_0 mech_data matches 0 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:blaze_rod"}]} run replaceitem block ~ ~ ~ container.2 blaze_powder 4
 execute if score temp_0 mech_data matches 1.. if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:blaze_rod"},{Slot:2b,id:"minecraft:blaze_powder"}]} run scoreboard players add temp_0 mech_data 4
+execute if score temp_0 mech_data matches 0 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:bone"}]} run replaceitem block ~ ~ ~ container.2 bone_meal 6
+execute if score temp_0 mech_data matches 1.. if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:bone"},{Slot:2b,id:"minecraft:bone_meal"}]} run scoreboard players add temp_0 mech_data 6
 
 #TTB Compat
 execute if score temp_0 mech_data matches 0 if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{amethyst_ore:1b}}]} run replaceitem block ~ ~ ~ container.2 command_block 5

@@ -13,10 +13,17 @@ scoreboard objectives add du_jump minecraft.custom:minecraft.jump
 
 scoreboard objectives add du_talked minecraft.custom:minecraft.talked_to_villager
 scoreboard objectives add du_damage minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add du_hurt minecraft.custom:minecraft.damage_taken
 
 scoreboard objectives add du_placehead minecraft.used:minecraft.player_head
 
 #tool objectives
+scoreboard objectives add du_wpick minecraft.used:minecraft.wooden_pickaxe
+scoreboard objectives add du_gpick minecraft.used:minecraft.golden_pickaxe
+scoreboard objectives add du_spick minecraft.used:minecraft.stone_pickaxe
+scoreboard objectives add du_ipick minecraft.used:minecraft.iron_pickaxe
+scoreboard objectives add du_dpick minecraft.used:minecraft.diamond_pickaxe
+
 scoreboard objectives add du_waxe minecraft.used:minecraft.wooden_axe
 scoreboard objectives add du_gaxe minecraft.used:minecraft.golden_axe
 scoreboard objectives add du_saxe minecraft.used:minecraft.stone_axe
@@ -37,7 +44,7 @@ scoreboard objectives add du_dhoe minecraft.used:minecraft.diamond_hoe
 
 
 team add du_nopush
-team option du_nopush collisionRule never
+team modify du_nopush collisionRule never
 
 #marks spawn chunks
 kill @e[type=area_effect_cloud,tag=du_spawn_chunks]
@@ -47,6 +54,12 @@ summon area_effect_cloud ~ 0 ~ {Tags:["du_spawn_chunks"],Duration:2000000000}
 execute store result score in_0 du_data run data get entity @e[tag=du_spawn_chunks,limit=1] UUIDLeast 0.0000000001
 function du:math/abs
 scoreboard players operation rng_seed du_data = out_0 du_data
+
+#scores
+scoreboard players set timer_2 du_timer 0
+scoreboard players set timer_10 du_timer 0
+scoreboard players set timer_20 du_timer 0
+scoreboard players set timer_100 du_timer 0
 
 #ID stuff
 scoreboard players add incr_id du_uuid 1

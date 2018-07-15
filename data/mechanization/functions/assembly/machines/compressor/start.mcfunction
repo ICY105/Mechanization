@@ -63,10 +63,10 @@ execute if score temp_3 mech_data matches 1 run scoreboard players add temp_2 me
 execute if score temp_3 mech_data matches 1 run function mechanization:assembly/machines/compressor/get_item_count
 execute if score temp_3 mech_data matches 1 if score out_0 mech_data matches 4.. run function mechanization:assembly/machines/compressor/recipes_8
 
-execute if entity @s[nbt={Rotation:[0.01f,0.0f]}] run tp @e[type=item,tag=mech_comp_new] ~ ~ ~1
-execute if entity @s[nbt={Rotation:[90f,0.0f]}] run tp @e[type=item,tag=mech_comp_new] ~-1 ~ ~
-execute if entity @s[nbt={Rotation:[180f,0.0f]}] run tp @e[type=item,tag=mech_comp_new] ~ ~ ~-1
-execute if entity @s[nbt={Rotation:[270f,0.0f]}] run tp @e[type=item,tag=mech_comp_new] ~1 ~ ~
+execute if entity @s[nbt={Rotation:[0.01f,0.0f]}] run tp @e[type=item,distance=..0.1] ~ ~ ~1
+execute if entity @s[nbt={Rotation:[90f,0.0f]}] run tp @e[type=item,distance=..0.1] ~-1 ~ ~
+execute if entity @s[nbt={Rotation:[180f,0.0f]}] run tp @e[type=item,distance=..0.1] ~ ~ ~-1
+execute if entity @s[nbt={Rotation:[270f,0.0f]}] run tp @e[type=item,distance=..0.1] ~1 ~ ~
 
 execute store result score temp_0 mech_data if entity @e[type=item,tag=mech_comp_new]
 scoreboard players set temp_1 mech_data 16

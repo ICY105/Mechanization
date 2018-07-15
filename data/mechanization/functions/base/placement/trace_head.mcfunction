@@ -9,7 +9,7 @@ execute if entity @s[tag=mech_operator] run tag @e[tag=mech_ray_start] add mech_
 
 execute as @e[tag=mech_ray_start] at @s run function mechanization:machines/worldgen/place_ore
 execute as @e[tag=mech_ray_start] at @s run function mechanization:nuclear/worldgen/place_ore
-
+execute as @e[tag=mech_ray_start] at @s run function mechanization:assembly/machines/place_block
 
 
 #cleanup

@@ -24,5 +24,5 @@ execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot
 execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:6b,id:"minecraft:nether_brick"}]} run function mechanization:assembly/machines/compressor/remove_items
 execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:6b,id:"minecraft:magma_cream"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:magma_block",Count:4b}}
 execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:6b,id:"minecraft:magma_cream"}]} run function mechanization:assembly/machines/compressor/remove_items
-execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:6b,id:"minecraft:chorus_fruit_popped"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:purpur_block",Count:4b}}
-execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:6b,id:"minecraft:chorus_fruit_popped"}]} run function mechanization:assembly/machines/compressor/remove_items
+execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:6b,id:"minecraft:popped_chorus_fruit"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:purpur_block",Count:4b}}
+execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:6b,id:"minecraft:popped_chorus_fruit"}]} run function mechanization:assembly/machines/compressor/remove_items

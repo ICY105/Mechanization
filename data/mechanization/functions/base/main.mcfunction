@@ -20,6 +20,13 @@ execute as @a[tag=du_right_click,scores={mech_usedid=4000..4099}] at @s run func
 execute as @a[tag=du_right_click,scores={mech_usedid=5000..5099}] at @s run function mechanization:base/placement/trace_spot
 execute as @a[tag=du_right_click,scores={mech_usedid=6000..6099}] at @s run function mechanization:base/placement/trace_spot
 
+#manual
+execute as @a[tag=du_right_click,scores={mech_usedid=1103}] at @s run function mechanization:base/tools/manual/manual
+execute as @a[tag=du_left_click,scores={mech_usedid=1103}] at @s run function mechanization:base/tools/manual/manual
+execute as @a[tag=mech_manual_open] if entity @s[nbt=!{SelectedItem:{ tag:{mech_itemid: 1103} }}] run function mechanization:base/tools/manual/close
+execute as @a[tag=mech_manual_open,tag=du_jumping] run function mechanization:base/tools/manual/open_menu
+execute as @a[tag=mech_manual_open,scores={mech_manual=1..9}] if entity @s[nbt={SelectedItem:{ tag:{mech_itemid: 1103} }}] run function mechanization:base/tools/manual/menu
+
 #Removes GUI Parts from Players
 clear @a minecraft:diamond_shovel{UIPart:1}
 
@@ -31,9 +38,7 @@ execute as @e[scores={mech_power=-10000..},tag=!mech_has_gridid] run function me
 
 #Machine Crafter
 execute if score timer_20 du_data matches 0 as @e[type=armor_stand,tag=mech_machine_crafter] at @s run function mechanization:base/machines/machine_crafter
-clear @a[scores={mech_craftvoid=1..}] structure_void
-execute as @a[scores={mech_craftvoid=1..}] at @s run function give:mech_base/machine_crafter
-scoreboard players set @a[scores={mech_craftvoid=1..}] mech_craftvoid 0
+execute as @a[scores={mech_crafter=1..}] at @s run function mechanization:base/machines/crafter
 
 #Energy Storages
 execute if score timer_20 du_data matches 1 as @e[type=armor_stand,tag=mech_storage1] at @s run function mechanization:base/machines/battery_1/battery

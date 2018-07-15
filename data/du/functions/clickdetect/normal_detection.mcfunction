@@ -6,8 +6,7 @@ execute if entity @s[tag=du_moving] run tp @e[tag=du_click_villager,type=village
 
 tag @s remove du_right_click
 tag @s[scores={du_talked=1..}] add du_right_click
-scoreboard players set @s du_talked 0
 
 tag @s remove du_left_click
 tag @s[scores={du_damage=1..}] add du_left_click
-scoreboard players set @s du_damage 0
+

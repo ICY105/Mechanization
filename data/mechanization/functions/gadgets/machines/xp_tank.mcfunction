@@ -13,9 +13,9 @@ execute if score temp_0 mech_data matches 31.. if score @s mech_data matches ..2
 
 #pickup xp orbs
 scoreboard players set temp_0 mech_data 0
-execute if score @s mech_data matches ..2047 store result score temp_0 mech_data run data get entity @e[type=xp_orb,distance=..8,limit=1] Value
+execute if score @s mech_data matches ..2047 store result score temp_0 mech_data run data get entity @e[type=experience_orb,distance=..8,limit=1] Value
 execute if score temp_0 mech_data matches 1.. run scoreboard players operation @s mech_data += temp_0 mech_data
-execute if score temp_0 mech_data matches 1.. run kill @e[type=xp_orb,distance=..8,limit=1]
+execute if score temp_0 mech_data matches 1.. run kill @e[type=experience_orb,distance=..8,limit=1]
 
 #display
 execute if score @s mech_data matches 0..255 store success entity @s ArmorItems[3].tag.Damage int 114 if entity @s

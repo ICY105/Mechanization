@@ -16,6 +16,7 @@ Base Module [01]: {
 		Wrench				[00]
 		Multimeter			[01]
 		Machine Upgrade		[02]
+		Manual				[03]
 	}
 }
 
@@ -161,10 +162,36 @@ Gadgets [04]: {
 		Plamsa Pump		[11]
 		Bouncy Proj.	[12]
 	}
+	Tool Sets [05]: {
+		Copper Helmet		[00]
+		Copper Chestplate	[01]
+		Copper Leggings		[02]
+		Copper Boots		[03]
+		Tin Helmet		[04]
+		Tin Chestplate	[05]
+		Tin Leggings	[06]
+		Tin Boots		[07]
+		Steel Helmet		[08]
+		Steel Chestplate	[09]
+		Steel Leggings		[10]
+		Steel Boots			[11]
+		Structural Helmet		[12]
+		Structural Chestplate	[13]
+		Structural Leggings		[14]
+		Structural Boots		[15]
+		Conductive Sword		[16]
+		Conductive Pickaxe		[17]
+		Conductive Axe			[18]
+		Conductive Shovel		[19]
+		Crystal Sword		[20]
+		Crystal Pickaxe		[21]
+		Crystal Axe			[22]
+		Crystal Shovel		[23]
+	}
 }
 
 Assembly [05]: {
-	Machines [00]: {
+	Machines [0]: {
 		Compressor		[00]
 		Decompressor	[01]
 		Stone Cutter	[02]
@@ -173,6 +200,20 @@ Assembly [05]: {
 		Fast Hopper		[05]
 		Auto Jukebox	[06]
 		Unlimited Storage Unit [07]
+	}
+	Blocks [1] {
+		Copper Block		[00]
+		Tin Block			[01]
+		Titanium Block		[02]
+		Crystal Block		[03]
+		Uranium Block		[04]
+		Plutonium Block		[05]
+		Flint Block			[06]
+		Charcoal Block		[07]
+		Nether Star Block	[08]
+		Ender Block			[09]
+		Flesh Block			[10]
+		Sugar Cane Block	[11]
 	}
 }
 

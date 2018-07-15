@@ -9,12 +9,13 @@ scoreboard objectives add mech_x dummy
 scoreboard objectives add mech_y dummy
 scoreboard objectives add mech_z dummy
 scoreboard objectives add mech_usedid dummy
+scoreboard objectives add mech_manual trigger
 
 scoreboard objectives add mech_talked minecraft.custom:minecraft.talked_to_villager
 scoreboard objectives add mech_placehead minecraft.used:minecraft.player_head
 scoreboard objectives add mech_pickuphead minecraft.picked_up:minecraft.player_head
 
-scoreboard objectives add mech_craftvoid minecraft.crafted:minecraft.structure_void
+scoreboard objectives add mech_crafter minecraft.crafted:minecraft.damaged_anvil
 
 scoreboard objectives add mech_itemslot dummy
 scoreboard objectives add mech_firerate dummy
@@ -48,7 +49,7 @@ scoreboard objectives add mech_breakdiorit minecraft.mined:minecraft.diorite
 scoreboard objectives add mech_breakandesi minecraft.mined:minecraft.andesite
 
 team add mech_nopush
-team option mech_nopush collisionRule never
+team modify mech_nopush collisionRule never
 
 #scoreboard values setup
 scoreboard players set con_10 mech_data 10
@@ -58,7 +59,7 @@ scoreboard players set worldgen du_data 1
 
 #sets up dimensional chunk loading
 fill ~-2 0 ~-2 ~2 1 ~2 bedrock
-setblock ~1 1 ~ portal
+setblock ~1 1 ~ nether_portal
 setblock ~-1 1 ~ end_portal
 
 #Installation message

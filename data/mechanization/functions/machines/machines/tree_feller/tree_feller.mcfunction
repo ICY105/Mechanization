@@ -14,4 +14,5 @@ execute store result entity @s ArmorItems[3].tag.mech_power int 1 run scoreboard
 execute store result entity @s ArmorItems[3].tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
 
 #cleanup
+execute at @s unless block ~ ~ ~ barrier run kill @e[tag=mech_tree_feller_model,distance=..0.75]
 execute at @s unless block ~ ~ ~ barrier run kill @s
