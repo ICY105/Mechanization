@@ -3,7 +3,8 @@
 		"title": "§1Going Green",
 		"description": "§3Create a Solar Panel.",
 		"icon": {
-            "item": "minecraft:daylight_detector"
+			"item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:56,Unbreakable:1b}"
         },
 		"frame": "task"
     },

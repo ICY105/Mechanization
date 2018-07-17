@@ -33,7 +33,7 @@ execute if score heat_0 mech_data matches 10.. if score temp_0 mech_data matches
 #reduce fuel durability
 execute store result score temp_0 mech_data run data get entity @s HandItems[0].tag.FuelGrade
 execute store result score temp_1 mech_data run data get entity @s HandItems[0].tag.FuelSpent
-execute if score temp_0 mech_data < temp_1 mech_data run replaceitem entity @s weapon.mainhand diamond_shovel{du_nerf:1b, mech_itemid: 3102, Unbreakable:1, OreDict:["cellSpentFuel"], Damage:97, HideFlags:6, display: {Name: "{\"text\":\"Spent Fuel Cell\",\"color\":\"gray\",\"italic\":false}"}}
+execute if score temp_0 mech_data < temp_1 mech_data run replaceitem entity @s weapon.mainhand diamond_shovel{du_nerf:1b, mech_itemid: 3102, Unbreakable:1, OreDict:["cellSpentFuel"], Damage:97, HideFlags:6, display: {Name: "{\"translate\":\"mech.item.spent_fuel_cell\",\"color\":\"gray\",\"italic\":false}"}}
 scoreboard players add temp_1 mech_data 1
 execute store result entity @s HandItems[0].tag.FuelSpent int 1 run scoreboard players get temp_1 mech_data
 

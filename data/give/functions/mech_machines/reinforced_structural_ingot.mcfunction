@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:firework_star",Count:1,tag:{mech_itemid: 2110, Explosion: {Colors: [I; 5258420]}, HideFlags: 32, display: {Name: "{\"text\":\"Reinforced Structural Ingot\",\"color\":\"dark_aqua\",\"italic\":false}"}, OreDict: ["ingotReinforcedStructural"]}}}
+summon item ~ ~ ~ {Item:{id:"minecraft:firework_star",Count:1,tag:{mech_itemid: 2110, Explosion: {Colors: [I; 5258420]}, HideFlags: 32, display: {Name: "{\"translate\":\"mech.item.reinforced_structural_ingot\",\"color\":\"dark_aqua\",\"italic\":false}"}, OreDict: ["ingotReinforcedStructural"]}}}

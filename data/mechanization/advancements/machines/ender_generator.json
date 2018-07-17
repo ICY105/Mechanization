@@ -3,7 +3,8 @@
 		"title": "§5Well, It's Not §5Emitting CO2..",
 		"description": "§3Create an Ender Generator.",
 		"icon": {
-            "item": "minecraft:end_stone"
+			"item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:73,Unbreakable:1b}"
         },
 		"frame": "task"
     },

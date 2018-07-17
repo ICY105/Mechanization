@@ -3,7 +3,8 @@
 		"title": "§6New Furnace Tech",
 		"description": "§3Create an Electric Furnace.",
 		"icon": {
-            "item": "minecraft:furnace"
+			"item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:46,Unbreakable:1b}"
         },
 		"frame": "task"
     },

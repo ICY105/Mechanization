@@ -3,7 +3,8 @@
 		"title": "Reduce, Reuse, Recycle",
 		"description": "§3Refine spent fuel into plutonium.",
 		"icon": {
-            "item": "minecraft:light_blue_stained_glass"
+            "item": "minecraft:firework_star",
+			"nbt":"{Explosion: {Colors: [I; 11187400]}}"
         },
 		"frame": "task"
     },

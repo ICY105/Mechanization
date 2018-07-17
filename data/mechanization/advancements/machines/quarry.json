@@ -3,7 +3,8 @@
 		"title": "§8Dwarf, Dwarf, Dige- §8Dige- Hole.",
 		"description": "§3Create a Quarry.",
 		"icon": {
-            "item": "minecraft:diamond_pickaxe"
+			"item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:62,Unbreakable:1b}"
         },
 		"frame": "task"
     },

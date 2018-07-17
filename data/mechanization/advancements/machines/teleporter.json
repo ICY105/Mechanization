@@ -3,7 +3,8 @@
 		"title": "§1A Wrinkle in §1Space-Time",
 		"description": "§3Create a Teleporter.",
 		"icon": {
-            "item": "minecraft:ender_eye"
+			"item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:76,Unbreakable:1b}"
         },
 		"frame": "task"
     },

@@ -3,7 +3,8 @@
 		"title": "§cIs it Hot in Here, Or is it Just You?",
 		"description": "§3Create a temperature observer.",
 		"icon": {
-            "item": "minecraft:compass"
+            "item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:93,Unbreakable:1b}"
         },
 		"frame": "task"
     },

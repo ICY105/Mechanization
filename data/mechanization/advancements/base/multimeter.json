@@ -3,7 +3,8 @@
 		"title": "§6Now I can Feel the §6Power ;)",
 		"description": "§3Create a Multimeter.",
 		"icon": {
-            "item": "minecraft:golden_pickaxe"
+            "item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:41,Unbreakable:1b}"
         },
 		"frame": "task"
     },

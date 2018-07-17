@@ -3,7 +3,8 @@
 		"title": "§5§oUnlimited, Power!",
 		"description": "§3Create a Tier 3 Battery.",
 		"icon": {
-            "item": "minecraft:purple_stained_glass"
+            "item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:19,Unbreakable:1b}"
         },
 		"frame": "goal"
     },

@@ -3,7 +3,8 @@
 		"title": "§6Let's get it started!",
 		"description": "§3Create a Machine Crafter.",
 		"icon": {
-            "item": "minecraft:crafting_table"
+            "item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:38,Unbreakable:1b}"
         },
 		"frame": "task"
     },

@@ -3,7 +3,8 @@
 		"title": "§cYer Comin' With Me!",
 		"description": "§3Create a Spawner Mover.",
 		"icon": {
-            "item": "minecraft:iron_bars"
+			"item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:82,Unbreakable:1b}"
         },
 		"frame": "task"
     },

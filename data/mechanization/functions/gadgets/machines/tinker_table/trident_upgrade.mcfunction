@@ -3,7 +3,7 @@ replaceitem block ~ ~ ~ container.2 air
 replaceitem block ~ ~ ~ container.6 air
 replaceitem block ~ ~ ~ container.8 air
 
-replaceitem block ~ ~ ~ container.4 trident{mech_itemid: 4204, mech_upgrades:{poison:0,wither:0,vamparic:0,slowness:0,weakness:0,glow:0},modified:2,display:{Lore:["§7Modified"],Name:"{\"text\":\"Titanium Trident\",\"color\":\"light_purple\",\"italic\":false}"},AttributeModifiers:[{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:8.0,Operation:0,UUIDLeast:100004,UUIDMost:100004,Slot:"mainhand"},{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:-3.5,Operation:0,UUIDLeast:100005,UUIDMost:100005,Slot:"mainhand"}]}
+replaceitem block ~ ~ ~ container.4 trident{mech_itemid: 4204, mech_upgrades:{poison:0,wither:0,vamparic:0,slowness:0,weakness:0,glow:0},modified:2,display:{Lore:["§7Modified"],Name:"{\"translate\":\"mech.item.titanium_trident\",\"color\":\"light_purple\",\"italic\":false}"},AttributeModifiers:[{AttributeName:"generic.attackDamage",Name:"generic.attackDamage",Amount:8.0,Operation:0,UUIDLeast:100004,UUIDMost:100004,Slot:"mainhand"},{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:-3.5,Operation:0,UUIDLeast:100005,UUIDMost:100005,Slot:"mainhand"}]}
 
 
 execute if block ~ ~ ~ dropper{Items:[{tag:{OreDict:["upgradePoison"]}}]} store success block ~ ~ ~ Items[2].tag.mech_upgrades.poison int 1 if entity @s

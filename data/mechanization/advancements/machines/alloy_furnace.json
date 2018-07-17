@@ -3,7 +3,8 @@
 		"title": "§6Unlocking Metal's True Potential",
 		"description": "§3Create an Alloy Furnace.",
 		"icon": {
-            "item": "minecraft:furnace"
+			"item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:48,Unbreakable:1b}"
         },
 		"frame": "task"
     },

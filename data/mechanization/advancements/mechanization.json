@@ -3,7 +3,8 @@
 		"title": "§4Mechanization",
 		"description": "§3Mechanization advancement tree.",
 		"icon": {
-            "item": "minecraft:hopper"
+            "item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:38,Unbreakable:1b}"
         },
         "background": "mechanization:textures/base/2_plate_panel.png",
 		"frame": "goal",

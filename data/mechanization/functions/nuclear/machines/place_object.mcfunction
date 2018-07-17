@@ -18,12 +18,12 @@ execute if score @s mech_data matches 3004 run setblock ~ ~ ~ minecraft:barrier
 
 #Temp Observer
 execute if score @s mech_data matches 3005 run summon armor_stand ~ ~ ~ {Tags:["mech_temp_observer"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,ShowArms:1,DisabledSlots:2039583,Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{Unbreakable:1,Damage:93}}]}
-execute if score @s mech_data matches 3005 run setblock ~ ~ ~ minecraft:dropper{Lock:"afhoigbioasbas",CustomName:"{\"text\":\"Temperature Observer\",\"color\":\"dark_gray\",\"italic\":false}"}
+execute if score @s mech_data matches 3005 run setblock ~ ~ ~ minecraft:dropper{Lock:"afhoigbioasbas",CustomName:"{\"translate\":\"mech.block.temperature_observer\",\"color\":\"dark_gray\",\"italic\":false}"}
 
 #Rate Observer
 execute if score @s mech_data matches 3003 run summon armor_stand ~ ~ ~ {Tags:["mech_rate_observer"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,ShowArms:1,DisabledSlots:2039583,Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{Unbreakable:1,Damage:94}}]}
-execute if score @s mech_data matches 3003 run setblock ~ ~ ~ minecraft:dropper{Lock:"afhoigbioasbas",CustomName:"{\"text\":\"Reaction Rate Observer\",\"color\":\"dark_gray\",\"italic\":false}"}
+execute if score @s mech_data matches 3003 run setblock ~ ~ ~ minecraft:dropper{Lock:"afhoigbioasbas",CustomName:"{\"translate\":\"mech.block.reaction_rate_observer\",\"color\":\"dark_gray\",\"italic\":false}"}
 
 #Control Rod
 execute if score @s mech_data matches 3001 run summon armor_stand ~ ~ ~ {Tags:["mech_control_rod"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,ShowArms:1,DisabledSlots:2039583,Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{Unbreakable:1,Damage:95}}]}
-execute if score @s mech_data matches 3001 run setblock ~ ~ ~ minecraft:dropper{Lock:"afhoigbioasbas",CustomName:"{\"text\":\"Control Rod\",\"color\":\"dark_gray\",\"italic\":false}"}
+execute if score @s mech_data matches 3001 run setblock ~ ~ ~ minecraft:dropper{Lock:"afhoigbioasbas",CustomName:"{\"translate\":\"mech.block.control_rod\",\"color\":\"dark_gray\",\"italic\":false}"}

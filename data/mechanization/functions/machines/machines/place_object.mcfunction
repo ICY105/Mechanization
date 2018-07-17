@@ -5,7 +5,7 @@ execute if score @s mech_data matches 2001 if entity @s[tag=mech_rot_1] run summ
 execute if score @s mech_data matches 2001 if entity @s[tag=mech_rot_2] run summon armor_stand ~ ~ ~ {Tags:["mech_furnace_gen","mech_transmitter","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[180f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:44}}]}
 execute if score @s mech_data matches 2001 if entity @s[tag=mech_rot_3] run summon armor_stand ~ ~ ~ {Tags:["mech_furnace_gen","mech_transmitter","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[270f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:44}}]}
 execute if score @s mech_data matches 2001 run scoreboard players set @e[tag=mech_furnace_gen,distance=..0.25] mech_power 0
-execute if score @s mech_data matches 2001 run setblock ~ ~ ~ minecraft:furnace[facing=south]{CustomName:"{\"text\":\"Furnace Generator\",\"color\":\"gold\",\"italic\":false}",Items:[{Slot:0,Count:1,id:"minecraft:cobblestone",tag:{UIPart:1}}]}
+execute if score @s mech_data matches 2001 run setblock ~ ~ ~ minecraft:furnace[facing=south]{CustomName:"{\"translate\":\"mech.block.furnace_generator\",\"color\":\"gold\",\"italic\":false}",Items:[{Slot:0,Count:1,id:"minecraft:cobblestone",tag:{UIPart:1}}]}
 
 #Solar Panel
 execute if score @s mech_data matches 2014 run summon armor_stand ~ ~ ~ {Tags:["mech_solar_panel_model"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[90f,0.0f],ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:57}}]}
@@ -19,7 +19,7 @@ execute if score @s mech_data matches 2003 if entity @s[tag=mech_rot_1] run summ
 execute if score @s mech_data matches 2003 if entity @s[tag=mech_rot_2] run summon armor_stand ~ ~ ~ {Tags:["mech_ele_furnace","mech_reciever","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[180f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:46}}]}
 execute if score @s mech_data matches 2003 if entity @s[tag=mech_rot_3] run summon armor_stand ~ ~ ~ {Tags:["mech_ele_furnace","mech_reciever","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[270f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:46}}]}
 execute if score @s mech_data matches 2003 run scoreboard players set @e[tag=mech_ele_furnace,distance=..0.25] mech_power 0
-execute if score @s mech_data matches 2003 run setblock ~ ~ ~ minecraft:furnace[facing=south]{CustomName:"{\"text\":\"Electric Furnace\",\"color\":\"dark_blue\",\"italic\":false}"}
+execute if score @s mech_data matches 2003 run setblock ~ ~ ~ minecraft:furnace[facing=south]{CustomName:"{\"translate\":\"mech.block.electric_furnace\",\"color\":\"dark_blue\",\"italic\":false}"}
 
 #Grinder
 execute if score @s mech_data matches 2009 if entity @s[tag=mech_rot_0] run summon armor_stand ~ ~ ~ {Tags:["mech_grinder","mech_reciever","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[0.01f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:60}}]}
@@ -27,7 +27,7 @@ execute if score @s mech_data matches 2009 if entity @s[tag=mech_rot_1] run summ
 execute if score @s mech_data matches 2009 if entity @s[tag=mech_rot_2] run summon armor_stand ~ ~ ~ {Tags:["mech_grinder","mech_reciever","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[180f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:60}}]}
 execute if score @s mech_data matches 2009 if entity @s[tag=mech_rot_3] run summon armor_stand ~ ~ ~ {Tags:["mech_grinder","mech_reciever","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[270f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:60}}]}
 execute if score @s mech_data matches 2009 run scoreboard players set @e[tag=mech_grinder,distance=..0.25] mech_power 0
-execute if score @s mech_data matches 2009 run setblock ~ ~ ~ minecraft:furnace[facing=south]{CustomName:"{\"text\":\"Grinder\",\"color\":\"dark_gray\",\"italic\":false}"}
+execute if score @s mech_data matches 2009 run setblock ~ ~ ~ minecraft:furnace[facing=south]{CustomName:"{\"translate\":\"mech.block.grinder\",\"color\":\"dark_gray\",\"italic\":false}"}
 
 #Alloy Furnace
 execute if score @s mech_data matches 2000 if entity @s[tag=mech_rot_0] run summon armor_stand ~ ~ ~ {Tags:["mech_alloy_furnace","mech_reciever","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[0.01f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:48}}]}
@@ -35,7 +35,7 @@ execute if score @s mech_data matches 2000 if entity @s[tag=mech_rot_1] run summ
 execute if score @s mech_data matches 2000 if entity @s[tag=mech_rot_2] run summon armor_stand ~ ~ ~ {Tags:["mech_alloy_furnace","mech_reciever","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[180f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:48}}]}
 execute if score @s mech_data matches 2000 if entity @s[tag=mech_rot_3] run summon armor_stand ~ ~ ~ {Tags:["mech_alloy_furnace","mech_reciever","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[270f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:48}}]}
 execute if score @s mech_data matches 2000 run scoreboard players set @e[tag=mech_alloy_furnace,distance=..0.25] mech_power 0
-execute if score @s mech_data matches 2000 run setblock ~ ~ ~ minecraft:dropper[facing=south]{CustomName:"{\"text\":\"Alloy Furnace\",\"color\":\"gold\",\"italic\":false}",Items:[{Slot:4b,id:"minecraft:diamond_shovel",tag:{Unbreakable:1,UIPart:1,display:{Name:"{\"text\":\" \",\"italic\":false}"},Damage:50,HideFlags:63},Count:1b}]}
+execute if score @s mech_data matches 2000 run setblock ~ ~ ~ minecraft:dropper[facing=south]{CustomName:"{\"translate\":\"mech.block.alloy_furnace\",\"color\":\"gold\",\"italic\":false}",Items:[{Slot:4b,id:"minecraft:diamond_shovel",tag:{Unbreakable:1,UIPart:1,display:{Name:"{\"translate\":\" \",\"italic\":false}"},Damage:50,HideFlags:63},Count:1b}]}
 
 #Tree Feller
 execute if score @s mech_data matches 2002 if entity @s[tag=mech_rot_0] run summon armor_stand ~ ~ ~ {Tags:["mech_tree_feller","mech_reciever","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[90f,0.0f],ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:52}}]}
@@ -110,33 +110,33 @@ execute if score @s mech_data matches 2020 if entity @s[tag=mech_rot_0] run summ
 execute if score @s mech_data matches 2020 if entity @s[tag=mech_rot_1] run summon armor_stand ~ ~ ~ {Tags:["mech_super_piston","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[270f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{Unbreakable:1,Damage:70}}]}
 execute if score @s mech_data matches 2020 if entity @s[tag=mech_rot_2] run summon armor_stand ~ ~ ~ {Tags:["mech_super_piston","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[0.01f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{Unbreakable:1,Damage:70}}]}
 execute if score @s mech_data matches 2020 if entity @s[tag=mech_rot_3] run summon armor_stand ~ ~ ~ {Tags:["mech_super_piston","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[90f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{Unbreakable:1,Damage:70}}]}
-execute if score @s mech_data matches 2020 run setblock ~ ~ ~ minecraft:dropper{Lock:"afhoigbioasbas",CustomName:"{\"text\":\"Super Piston\",\"color\":\"dark_gray\",\"italic\":false}"}
+execute if score @s mech_data matches 2020 run setblock ~ ~ ~ minecraft:dropper{Lock:"afhoigbioasbas",CustomName:"{\"translate\":\"mech.block.super_piston\",\"color\":\"dark_gray\",\"italic\":false}"}
 
 #Super Sticky Piston
 execute if score @s mech_data matches 2021 if entity @s[tag=mech_rot_0] run summon armor_stand ~ ~ ~ {Tags:["mech_super_sticky_piston","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[180f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{Unbreakable:1,Damage:71}}]}
 execute if score @s mech_data matches 2021 if entity @s[tag=mech_rot_1] run summon armor_stand ~ ~ ~ {Tags:["mech_super_sticky_piston","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[270f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{Unbreakable:1,Damage:71}}]}
 execute if score @s mech_data matches 2021 if entity @s[tag=mech_rot_2] run summon armor_stand ~ ~ ~ {Tags:["mech_super_sticky_piston","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[0.01f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{Unbreakable:1,Damage:71}}]}
 execute if score @s mech_data matches 2021 if entity @s[tag=mech_rot_3] run summon armor_stand ~ ~ ~ {Tags:["mech_super_sticky_piston","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[90f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{Unbreakable:1,Damage:71}}]}
-execute if score @s mech_data matches 2021 run setblock ~ ~ ~ minecraft:dropper{Lock:"afhoigbioasbas",CustomName:"{\"text\":\"Super Sticky Piston\",\"color\":\"dark_gray\",\"italic\":false}"}
+execute if score @s mech_data matches 2021 run setblock ~ ~ ~ minecraft:dropper{Lock:"afhoigbioasbas",CustomName:"{\"translate\":\"mech.block.super_sticky_piston\",\"color\":\"dark_gray\",\"italic\":false}"}
 
 #Turn Table
 execute if score @s mech_data matches 2022 run summon armor_stand ~ ~ ~ {Tags:["mech_turn_table"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{Unbreakable:1,Damage:69}}]}
-execute if score @s mech_data matches 2022 run setblock ~ ~ ~ minecraft:dropper{Lock:"afhoigbioasbas",CustomName:"{\"text\":\"Turn Table\",\"color\":\"dark_gray\",\"italic\":false}"}
+execute if score @s mech_data matches 2022 run setblock ~ ~ ~ minecraft:dropper{Lock:"afhoigbioasbas",CustomName:"{\"translate\":\"mech.block.turn_table\",\"color\":\"dark_gray\",\"italic\":false}"}
 
 #Bio Generator
 execute if score @s mech_data matches 2007 run summon armor_stand ~ ~ ~ {Tags:["mech_bio_gen","mech_transmitter"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:67}}]}
 execute if score @s mech_data matches 2007 run scoreboard players set @e[tag=mech_bio_gen,distance=..0.25] mech_power 0
-execute if score @s mech_data matches 2007 run setblock ~ ~ ~ minecraft:dropper{CustomName:"{\"text\":\"Bio Generator\",\"color\":\"dark_green\",\"italic\":false}"}
+execute if score @s mech_data matches 2007 run setblock ~ ~ ~ minecraft:dropper{CustomName:"{\"translate\":\"mech.block.bio_generator\",\"color\":\"dark_green\",\"italic\":false}"}
 
 #Item Reformer
 execute if score @s mech_data matches 2010 run summon armor_stand ~ ~ ~ {Tags:["mech_reformer","mech_reciever"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:72}}]}
 execute if score @s mech_data matches 2010 run scoreboard players set @e[tag=mech_reformer,distance=..0.25] mech_power 0
-execute if score @s mech_data matches 2010 run setblock ~ ~ ~ minecraft:dropper{CustomName:"{\"text\":\"Item Reformer\",\"color\":\"dark_blue\",\"italic\":false}"}
+execute if score @s mech_data matches 2010 run setblock ~ ~ ~ minecraft:dropper{CustomName:"{\"translate\":\"mech.block.item_reformer\",\"color\":\"dark_blue\",\"italic\":false}"}
 
 #Disenchanter
 execute if score @s mech_data matches 2016 run summon armor_stand ~ ~ ~ {Tags:["mech_disenchanter","mech_reciever"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:78}}]}
 execute if score @s mech_data matches 2016 run scoreboard players set @e[tag=mech_disenchanter,distance=..0.25] mech_power 0
-execute if score @s mech_data matches 2016 run setblock ~ ~ ~ minecraft:dropper{CustomName:"{\"text\":\"Disenchanter\",\"color\":\"dark_purple\",\"italic\":false}"}
+execute if score @s mech_data matches 2016 run setblock ~ ~ ~ minecraft:dropper{CustomName:"{\"translate\":\"mech.block.disenchanter\",\"color\":\"dark_purple\",\"italic\":false}"}
 
 #Ender Generator
 execute if score @s mech_data matches 2015 if entity @s[tag=mech_rot_0] run summon armor_stand ~ ~ ~ {Tags:["mech_end_generator","mech_transmitter","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[0.01f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:73}}]}
@@ -145,7 +145,7 @@ execute if score @s mech_data matches 2015 if entity @s[tag=mech_rot_2] run summ
 execute if score @s mech_data matches 2015 if entity @s[tag=mech_rot_3] run summon armor_stand ~ ~ ~ {Tags:["mech_end_generator","mech_transmitter","mech_rotatable"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Rotation:[270f,0.0f],Fire:32676,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:73}}]}
 execute if score @s mech_data matches 2015 run scoreboard players set @e[tag=mech_end_generator,distance=..0.25] mech_power 0
 execute if score @s mech_data matches 2015 run scoreboard players set @e[tag=mech_end_generator,distance=..0.25] mech_data 0
-execute if score @s mech_data matches 2015 run setblock ~ ~ ~ minecraft:furnace{CustomName:"{\"text\":\"Ender Generator\",\"color\":\"dark_purple\",\"italic\":false}"}
+execute if score @s mech_data matches 2015 run setblock ~ ~ ~ minecraft:furnace{CustomName:"{\"translate\":\"mech.block.ender_generator\",\"color\":\"dark_purple\",\"italic\":false}"}
 
 
 

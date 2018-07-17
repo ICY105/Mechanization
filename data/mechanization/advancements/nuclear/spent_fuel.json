@@ -3,7 +3,8 @@
 		"title": "§6Congrats, You §6Didn't Blow Up! (yet)",
 		"description": "§3Collect spent nuclear fuel.",
 		"icon": {
-            "item": "minecraft:black_stained_glass"
+            "item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:97,Unbreakable:1b}"
         },
 		"frame": "task",
 		"hidden": true

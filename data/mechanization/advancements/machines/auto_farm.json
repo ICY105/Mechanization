@@ -3,7 +3,8 @@
 		"title": "The Ultimate Wheat §2Farm",
 		"description": "§3Create an Auto Farm.",
 		"icon": {
-            "item": "minecraft:diamond_hoe"
+			"item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:64,Unbreakable:1b}"
         },
 		"frame": "task"
     },

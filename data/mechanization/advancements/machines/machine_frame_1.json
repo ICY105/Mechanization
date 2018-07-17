@@ -3,7 +3,8 @@
 		"title": "§7The Bases of it All",
 		"description": "§3Create a Tier 1 Machine Frame.",
 		"icon": {
-            "item": "minecraft:white_concrete"
+			"item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:79,Unbreakable:1b}"
         },
 		"frame": "goal"
     },

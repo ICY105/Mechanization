@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:trident",Count:1b,tag:{mech_itemid: 4204, modified:1,display:{Name:"{\"text\":\"Titanium Trident\",\"color\":\"light_purple\",\"italic\":false}",Lore:["§fModifiable"]}}}}
+summon item ~ ~ ~ {Item:{id:"minecraft:trident",Count:1b,tag:{mech_itemid: 4204, modified:1,display:{Name:"{\"translate\":\"mech.item.titanium_trident\",\"color\":\"light_purple\",\"italic\":false}",Lore:["§fModifiable"]}}}}

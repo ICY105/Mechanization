@@ -21,9 +21,9 @@ execute if score @s mech_data matches 1004 run scoreboard players set @e[tag=mec
 #machine crafter
 execute if score @s mech_data matches 1005 run summon armor_stand ~ ~ ~ {Tags:["mech_machine_crafter"],Marker:1b,Fire:32676,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{Unbreakable:1,Damage:38}}]}
 execute if score @s mech_data matches 1005 run scoreboard players set @e[tag=mech_machine_crafter,distance=..0.5] mech_data 0
-execute if score @s mech_data matches 1005 run setblock ~ ~ ~ minecraft:dropper{CustomName:"{\"text\":\"Machine Crafting Table\",\"color\":\"dark_red\",\"italic\":false}"}
+execute if score @s mech_data matches 1005 run setblock ~ ~ ~ minecraft:dropper{CustomName:"{\"translate\":\"mech.block.machine_crafting_table\",\"color\":\"dark_red\",\"italic\":false}"}
 
 #Network Reformer
 execute if score @s mech_data matches 1006 run summon armor_stand ~ ~ ~ {Tags:["mech_network_reformer"],Marker:1b,Fire:32676,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{Unbreakable:1,Damage:39}}]}
-execute if score @s mech_data matches 1006 run setblock ~ ~ ~ minecraft:dropper{CustomName:"{\"text\":\"Network Reformer\",\"color\":\"white\",\"italic\":false}",Lock:"adsd"}
+execute if score @s mech_data matches 1006 run setblock ~ ~ ~ minecraft:dropper{CustomName:"{\"translate\":\"mech.block.network_reformer\",\"color\":\"white\",\"italic\":false}",Lock:"adsd"}
 

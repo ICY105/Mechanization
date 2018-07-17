@@ -3,7 +3,8 @@
 		"title": "§4I only grow stronger...",
 		"description": "§3Create a Tier 2 Battery.",
 		"icon": {
-            "item": "minecraft:red_stained_glass"
+            "item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:10,Unbreakable:1b}"
         },
 		"frame": "task"
     },

@@ -3,7 +3,8 @@
 		"title": "§5This is safe, right?!",
 		"description": "§3Create a Quantum Battery.",
 		"icon": {
-            "item": "minecraft:black_stained_glass"
+            "item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:28,Unbreakable:1b}"
         },
 		"frame": "task"
     },

@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 4402, OreDict:["itemGunStock"],Unbreakable:1,Damage:189,HideFlags:6,display:{Lore:["§fGun part."],Name:"{\"text\":\"Gun Stock\",\"color\":\"gray\",\"italic\":false}"}}}}
+summon item ~ ~ ~ {Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 4402, OreDict:["itemGunStock"],Unbreakable:1,Damage:189,HideFlags:6,display:{Lore:["§fGun part."],Name:"{\"translate\":\"mech.item.gun_stock\",\"color\":\"gray\",\"italic\":false}"}}}}

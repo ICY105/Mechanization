@@ -3,7 +3,8 @@
 		"title": "§2Faster than a §2speeding bullet...",
 		"description": "§3Create a Energy Relay.",
 		"icon": {
-            "item": "minecraft:lime_stained_glass"
+            "item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:37,Unbreakable:1b}"
         },
 		"frame": "task"
     },

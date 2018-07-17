@@ -3,7 +3,8 @@
 		"title": "§6Tick, Tock. Tick, Tock.",
 		"description": "§3Create a reaction rate observer.",
 		"icon": {
-            "item": "minecraft:clock"
+            "item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:94,Unbreakable:1b}"
         },
 		"frame": "task"
     },

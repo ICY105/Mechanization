@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:firework_star",Count:1,tag:{mech_itemid: 2111, Explosion: {Colors: [I; 6268160]}, HideFlags: 32, display: {Name: "{\"text\":\"Super Conductive Ingot\",\"color\":\"green\",\"italic\":false}"}, OreDict: ["ingotSuperConductive"]}}}
+summon item ~ ~ ~ {Item:{id:"minecraft:firework_star",Count:1,tag:{mech_itemid: 2111, Explosion: {Colors: [I; 6268160]}, HideFlags: 32, display: {Name: "{\"translate\":\"mech.item.super_conductive_ingot\",\"color\":\"green\",\"italic\":false}"}, OreDict: ["ingotSuperConductive"]}}}

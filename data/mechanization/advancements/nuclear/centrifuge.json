@@ -3,7 +3,8 @@
 		"title": "§2No Illegal Uranium §2Centrifuges §2Here...",
 		"description": "§3Create an centrifuge.",
 		"icon": {
-            "item": "minecraft:hopper"
+            "item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:84,Unbreakable:1b}"
         },
 		"frame": "task"
     },

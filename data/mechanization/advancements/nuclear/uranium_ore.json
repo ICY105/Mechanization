@@ -3,7 +3,8 @@
 		"title": "§2Uh, This is Safe, §2Right?",
 		"description": "§3Find some uranium ore.",
 		"icon": {
-            "item": "minecraft:slime_block"
+            "item": "minecraft:player_head",
+			"nbt":"{SkullOwner:{Id:\"00000000-0000-0000-ee69-000000000006\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTZmMTIzNWJiMGMwMzgzMDIwZWY2MmViZTUyMmMxOWY0YmUxNjhkNDcyZTg4ODY5NDkwN2UzYzFlZTQifX19\"}]}}}"
         },
 		"frame": "task"
     },

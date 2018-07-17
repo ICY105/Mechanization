@@ -3,7 +3,8 @@
 		"title": "§6Fuel for the Masses",
 		"description": "§3Create a Furnace Generator.",
 		"icon": {
-            "item": "minecraft:furnace"
+			"item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:44,Unbreakable:1b}"
         },
 		"frame": "task"
     },

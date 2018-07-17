@@ -3,7 +3,8 @@
 		"title": "§4Nothing Could §4Possibly Go Wrong",
 		"description": "§3Create a fission reactor.",
 		"icon": {
-            "item": "minecraft:magma_block"
+            "item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:87,Unbreakable:1b}"
         },
 		"frame": "task"
     },

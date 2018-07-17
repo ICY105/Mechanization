@@ -3,7 +3,8 @@
 		"title": "§7Tools of the Trade",
 		"description": "§3Create a Machine Wrench.",
 		"icon": {
-            "item": "minecraft:iron_pickaxe"
+            "item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:40,Unbreakable:1b}"
         },
 		"frame": "task"
     },

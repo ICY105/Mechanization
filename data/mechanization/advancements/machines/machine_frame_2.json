@@ -3,7 +3,8 @@
 		"title": "§8Getting Another Upgrade",
 		"description": "§3Create a Tier 2 Machine Frame.",
 		"icon": {
-            "item": "minecraft:gray_concrete"
+			"item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:80,Unbreakable:1b}"
         },
 		"frame": "goal"
     },

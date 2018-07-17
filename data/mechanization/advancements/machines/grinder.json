@@ -3,7 +3,8 @@
 		"title": "§2More for the Dollar",
 		"description": "§3Create a Grinder.",
 		"icon": {
-            "item": "minecraft:furnace"
+			"item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:60,Unbreakable:1b}"
         },
 		"frame": "task"
     },

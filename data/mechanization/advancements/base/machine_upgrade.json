@@ -3,7 +3,8 @@
 		"title": "§cPush it to the Limit",
 		"description": "§3Create a Machine Upgrade.",
 		"icon": {
-            "item": "minecraft:diamond"
+            "item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:42,Unbreakable:1b}"
         },
 		"frame": "task"
     },

@@ -3,7 +3,8 @@
 		"title": "§7Can you feel the power!",
 		"description": "§3Create a Tier 1 Battery.",
 		"icon": {
-            "item": "minecraft:blue_stained_glass"
+            "item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:1,Unbreakable:1b}"
         },
 		"frame": "task"
     },

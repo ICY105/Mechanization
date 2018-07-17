@@ -3,7 +3,8 @@
 		"title": "§8Saftey First!",
 		"description": "§3Create a control rod.",
 		"icon": {
-            "item": "minecraft:iron_block"
+            "item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:95,Unbreakable:1b}"
         },
 		"frame": "task"
     },

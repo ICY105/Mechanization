@@ -3,7 +3,8 @@
 		"title": "§5Not Even My Final Form!",
 		"description": "§3Create a Tier 3 Machine Frame.",
 		"icon": {
-            "item": "minecraft:purple_concrete"
+			"item": "minecraft:diamond_shovel",
+			"nbt":"{Damage:81,Unbreakable:1b}"
         },
 		"frame": "goal"
     },
@@ -13,7 +14,7 @@
             "conditions": {
                 "items": [
                     {
-						"nbt":"{mech_itemid:2002}"
+						"nbt":"{mech_itemid:2202}"
                     }
                 ]
             }
