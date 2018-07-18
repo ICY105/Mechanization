@@ -17,3 +17,5 @@ Now on curseforge! https://minecraft.curseforge.com/projects/mechanization-datap
 (cannot embed curseforge wigit on github :/)
 
 ![prerelease](https://i.imgur.com/S04DKyE.png)
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=XR63ABEFNYDZU&lc=US&item_name=ICY%20Projects&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted)
