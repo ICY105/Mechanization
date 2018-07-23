@@ -32,3 +32,6 @@ tag @s[tag=!du_has_id] add du_has_id
 
 #reset scores
 function du:player/reset_scores
+
+#ui clear
+clear @s gray_stained_glass_pane{du_gui:1b}

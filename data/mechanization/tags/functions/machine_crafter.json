@@ -1,9 +1,8 @@
 {
 	"values":[
-		"mechanization:machines/machines/machine_crafter/machine_crafter",
-		"mechanization:nuclear/machines/machine_crafter",
-		"mechanization:gadgets/machines/machine_crafter",
-		"mechanization:assembly/machines/machine_crafter",
-		"mechanization:tempist/machines/machine_crafter"
+		"mechanization:machines/recipes/main",
+		"mechanization:nuclear/recipes/main",
+		"mechanization:gadgets/recipes/main",
+		"mechanization:assembly/recipes/main"
 	]
 }

@@ -1,5 +1,5 @@
-data merge entity @s {Fire:32676}
+function #mechanization:machine_crafter
+execute unless block ~ ~ ~ minecraft:trapped_chest run kill @s
+execute unless block ~ ~ ~ minecraft:trapped_chest run kill @e[type=item,nbt={Item:{tag:{du_gui:1b}}}]
 
-execute if block ~ ~ ~ dropper{Items:[{}]} run function #mechanization:machine_crafter
-
-execute at @s unless block ~ ~ ~ minecraft:dropper run kill @s
+replaceitem block ~ ~ ~ container.0 minecraft:diamond_shovel{Unbreakable:1b,UIPart:1,Damage:207,HideFlags:63,display:{Name:"\"\""}}

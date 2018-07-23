@@ -37,7 +37,6 @@ tag @p[tag=!mech_has_id] add mech_has_id
 execute as @e[scores={mech_power=-10000..},tag=!mech_has_gridid] run function mechanization:base/machines/assign_id
 
 #Machine Crafter
-execute if score timer_20 du_data matches 0 as @e[type=armor_stand,tag=mech_machine_crafter] at @s run function mechanization:base/machines/machine_crafter
 execute as @a[scores={mech_crafter=1..}] at @s run function mechanization:base/machines/crafter
 
 #Energy Storages

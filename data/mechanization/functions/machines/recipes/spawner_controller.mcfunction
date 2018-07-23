@@ -1,0 +1,3 @@
+replaceitem block ~ ~ ~ container.16 diamond_shovel{du_nerf:1b, mech_itemid: 2205, du_click_detect:1b, Unbreakable:1, Damage:77, HideFlags:6, display: {Name: "{\"translate\":\"mech.block.spawner_controller\",\"color\":\"dark_red\",\"italic\":false}", Lore: ["§fRegulates mob spawners,","§fdecreasing spawn time.","§fUses: 64 kW"]}}
+scoreboard players set out_3 du_data 2
+scoreboard players set out_5 du_data 2
