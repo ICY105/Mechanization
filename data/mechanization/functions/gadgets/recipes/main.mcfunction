@@ -29,9 +29,7 @@ execute if block ~ ~ ~ trapped_chest{Items:[{tag:{OreDict:["ingotTitanium"]}}]} 
 
 
 #Upgrades
-scoreboard players set temp_0 du_data 0
-execute if score in_4 du_data matches 16.. if block ~ ~ ~ trapped_chest{Items:[{Slot:2b, tag:{OreDict:["ingotSteel"]}},{Slot:3b, tag:{OreDict:["ingotStructural"]}},{Slot:4b, tag:{OreDict:["ingotSteel"]}},{Slot:11b, tag:{OreDict:["ingotStructural"]}},{Slot:12b, id:"minecraft:paper"},{Slot:13b, tag:{OreDict:["ingotStructural"]}},{Slot:20b, tag:{OreDict:["ingotSteel"]}},{Slot:21b, tag:{OreDict:["ingotStructural"]}},{Slot:22b, tag:{OreDict:["ingotSteel"]}}]} store success score temp_0 du_data run replaceitem block ~ ~ ~ container.16 diamond_shovel{du_nerf:1b, mech_itemid: 4300, OreDict:["upgradeBase"],Unbreakable:1,Damage:158,HideFlags:6,display:{Name:"{\"translate\":\"mech.item.upgade_base\",\"color\":\"dark_red\",\"italic\":false}"}} 4
-execute if score temp_0 du_data matches 1 run scoreboard players set out_4 du_data 16
+execute if score in_4 du_data matches 16.. if block ~ ~ ~ trapped_chest{Items:[{Slot:2b, tag:{OreDict:["ingotSteel"]}},{Slot:3b, tag:{OreDict:["ingotStructural"]}},{Slot:4b, tag:{OreDict:["ingotSteel"]}},{Slot:11b, tag:{OreDict:["ingotStructural"]}},{Slot:12b, id:"minecraft:paper"},{Slot:13b, tag:{OreDict:["ingotStructural"]}},{Slot:20b, tag:{OreDict:["ingotSteel"]}},{Slot:21b, tag:{OreDict:["ingotStructural"]}},{Slot:22b, tag:{OreDict:["ingotSteel"]}}]} run function mechanization:gadgets/recipes/base_upgrade
 
 scoreboard players set temp_0 mech_data 0
 execute store result score temp_0 mech_data run data get block ~ ~ ~ Items[20].Count
