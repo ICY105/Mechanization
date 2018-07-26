@@ -11,7 +11,7 @@ function du:math/random
 scoreboard players operation temp_2 mech_data = out_0 du_data
 scoreboard players add temp_2 mech_data 2
 
-scoreboard players set in_0 du_data 4
+scoreboard players set in_0 du_data 5
 function du:math/random
 scoreboard players operation temp_3 mech_data = out_0 du_data
 

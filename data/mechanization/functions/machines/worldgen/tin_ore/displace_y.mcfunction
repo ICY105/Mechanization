@@ -1,3 +1,11 @@
+execute if score temp_2 mech_data matches 16 positioned ~ ~16 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
+execute if score temp_2 mech_data matches 17 positioned ~ ~17 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
+execute if score temp_2 mech_data matches 18 positioned ~ ~18 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
+execute if score temp_2 mech_data matches 19 positioned ~ ~19 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
+execute if score temp_2 mech_data matches 20 positioned ~ ~20 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
+execute if score temp_2 mech_data matches 21 positioned ~ ~21 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
+execute if score temp_2 mech_data matches 22 positioned ~ ~22 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
+execute if score temp_2 mech_data matches 23 positioned ~ ~23 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
 execute if score temp_2 mech_data matches 24 positioned ~ ~24 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
 execute if score temp_2 mech_data matches 25 positioned ~ ~25 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
 execute if score temp_2 mech_data matches 26 positioned ~ ~26 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
@@ -23,11 +31,3 @@ execute if score temp_2 mech_data matches 45 positioned ~ ~45 ~ run function mec
 execute if score temp_2 mech_data matches 46 positioned ~ ~46 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
 execute if score temp_2 mech_data matches 47 positioned ~ ~47 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
 execute if score temp_2 mech_data matches 48 positioned ~ ~48 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
-execute if score temp_2 mech_data matches 49 positioned ~ ~49 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
-execute if score temp_2 mech_data matches 50 positioned ~ ~50 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
-execute if score temp_2 mech_data matches 51 positioned ~ ~51 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
-execute if score temp_2 mech_data matches 52 positioned ~ ~52 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
-execute if score temp_2 mech_data matches 53 positioned ~ ~53 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
-execute if score temp_2 mech_data matches 54 positioned ~ ~54 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
-execute if score temp_2 mech_data matches 55 positioned ~ ~55 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein
-execute if score temp_2 mech_data matches 56 positioned ~ ~56 ~ run function mechanization:machines/worldgen/tin_ore/gen_vein

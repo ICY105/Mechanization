@@ -6,13 +6,13 @@ scoreboard players set in_0 du_data 14
 function du:math/random
 scoreboard players operation temp_1 mech_data = out_0 du_data
 
-scoreboard players set in_0 du_data 31
+scoreboard players set in_0 du_data 22
 function du:math/random
 scoreboard players operation temp_2 mech_data = out_0 du_data
-scoreboard players add temp_2 mech_data 24
+scoreboard players add temp_2 mech_data 2
 
-scoreboard players set in_0 du_data 10
+scoreboard players set in_0 du_data 5
 function du:math/random
 scoreboard players operation temp_3 mech_data = out_0 du_data
 
-function mechanization:machines/worldgen/copper_ore/displace_x
+function mechanization:nuclear/worldgen/uranium_ore/displace_x
