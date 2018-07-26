@@ -17,6 +17,8 @@ scoreboard objectives add mech_pickuphead minecraft.picked_up:minecraft.player_h
 
 scoreboard objectives add mech_crafter minecraft.crafted:minecraft.damaged_anvil
 
+scoreboard objectives add mech_mineore minecraft.mined:minecraft.petrified_oak_slab
+
 scoreboard objectives add mech_itemslot dummy
 scoreboard objectives add mech_firerate dummy
 scoreboard objectives add mech_weaponheat dummy
