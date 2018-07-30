@@ -39,5 +39,5 @@ execute as @a[tag=du_right_click,scores={mech_usedid=2205}] at @s run function m
 
 #ores
 execute as @a[scores={mech_mineore=1..}] at @s as @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:petrified_oak_slab",Count:1b},Age:0s}] at @s run function mechanization:machines/worldgen/mine_ore
-scoreboard players set @a[scores={mech_mineore=1..}] mech_mineore 0\
+scoreboard players set @a[scores={mech_mineore=1..}] mech_mineore 0
 clear @a[gamemode=!creative] minecraft:petrified_oak_slab
