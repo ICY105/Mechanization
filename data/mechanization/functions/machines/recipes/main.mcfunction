@@ -48,6 +48,8 @@ execute if block ~ ~ ~ trapped_chest{Items:[{tag:{OreDict:["blockMachineFrame1"]
 execute if block ~ ~ ~ trapped_chest{Items:[{tag:{OreDict:["blockMachineFrame2"]}}]} run function mechanization:machines/recipes/recipes_t2
 execute if block ~ ~ ~ trapped_chest{Items:[{tag:{OreDict:["blockMachineFrame3"]}}]} run function mechanization:machines/recipes/recipes_t3
 
+#Spawner Mover
+execute if score in_0 du_data matches 4.. if score in_2 du_data matches 4.. if score in_6 du_data matches 4.. if score in_8 du_data matches 4.. if block ~ ~ ~ trapped_chest{Items:[{Slot:2b, id:"minecraft:iron_bars"},{Slot:3b, id:"minecraft:shulker_shell"},{Slot:4b, id:"minecraft:iron_bars"},{Slot:11b, tag:{OreDict:["ingotEnder"]}},{Slot:12b, tag:{OreDict:["ingotNether"]}},{Slot:13b, tag:{OreDict:["ingotEnder"]}},{Slot:20b, id:"minecraft:iron_bars"},{Slot:21b, id:"minecraft:shulker_shell"},{Slot:22b, id:"minecraft:iron_bars"}]} run function mechanization:machines/recipes/spawner_mover
 
 
 

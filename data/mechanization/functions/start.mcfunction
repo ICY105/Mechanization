@@ -56,7 +56,8 @@ team modify mech_nopush collisionRule never
 #scoreboard values setup
 scoreboard players set con_10 mech_data 10
 
-#marks spawn chunks
+#set up ore gen
+scoreboard objectives add du_data dummy
 scoreboard players set worldgen du_data 1
 
 #sets up dimensional chunk loading
