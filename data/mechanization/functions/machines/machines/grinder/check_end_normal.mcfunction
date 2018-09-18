@@ -28,16 +28,16 @@ execute if score temp_0 mech_data matches 1.. if block ~ ~ ~ furnace{Items:[{Slo
 
 
 
-execute if score temp_0 mech_data matches 0 if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{OreDict:["oreCopper"]}}]} run replaceitem block ~ ~ ~ container.2 firework_star{mech_itemid: 2101, Explosion: {Colors: [I; 12414020]}, HideFlags: 32, display: {Name: "{\"text\":\"Copper Ingot\",\"color\":\"gold\",\"italic\":false}"}, OreDict: ["ingotCopper"]} 2
+execute if score temp_0 mech_data matches 0 if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{OreDict:["oreCopper"]}}]} run replaceitem block ~ ~ ~ container.2 firework_star{mech_itemid: 2101, Explosion: {Colors: [I; 12414020]}, HideFlags: 32, display: {Name: "{\"translate\":\"mech.item.copper_ingot\",\"color\":\"gold\",\"italic\":false}"}, OreDict: ["ingotCopper"]} 2
 execute if score temp_0 mech_data matches 1.. if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{OreDict:["oreCopper"]}},{Slot:2b,tag:{OreDict:["ingotCopper"]}}]} run scoreboard players add temp_0 mech_data 2
 
-execute if score temp_0 mech_data matches 0 if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{OreDict:["oreTin"]}}]} run replaceitem block ~ ~ ~ container.2 firework_star{mech_itemid: 2103, Explosion: {Colors: [I; 16777215]}, HideFlags: 32, display: {Name: "{\"text\":\"Tin Ingot\",\"color\":\"gray\",\"italic\":false}"}, OreDict: ["ingotTin"]} 2
+execute if score temp_0 mech_data matches 0 if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{OreDict:["oreTin"]}}]} run replaceitem block ~ ~ ~ container.2 firework_star{mech_itemid: 2103, Explosion: {Colors: [I; 16777215]}, HideFlags: 32, display: {Name: "{\"translate\":\"mech.item.tin_ingot\",\"color\":\"gray\",\"italic\":false}"}, OreDict: ["ingotTin"]} 2
 execute if score temp_0 mech_data matches 1.. if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{OreDict:["oreTin"]}},{Slot:2b,tag:{OreDict:["ingotTin"]}}]} run scoreboard players add temp_0 mech_data 2
 
-execute if score temp_0 mech_data matches 0 if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{OreDict:["oreTitanium"]}}]} run replaceitem block ~ ~ ~ container.2 firework_star{mech_itemid: 2105, Explosion: {Colors: [I; 13216198]}, HideFlags: 32, display: {Name: "{\"text\":\"Titanium Ingot\",\"color\":\"light_purple\",\"italic\":false}"}, OreDict: ["ingotTitanium"]} 2
+execute if score temp_0 mech_data matches 0 if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{OreDict:["oreTitanium"]}}]} run replaceitem block ~ ~ ~ container.2 firework_star{mech_itemid: 2105, Explosion: {Colors: [I; 13216198]}, HideFlags: 32, display: {Name: "{\"translate\":\"mech.item.titanium_ingot\",\"color\":\"light_purple\",\"italic\":false}"}, OreDict: ["ingotTitanium"]} 2
 execute if score temp_0 mech_data matches 1.. if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{OreDict:["oreTitanium"]}},{Slot:2b,tag:{OreDict:["ingotTitanium"]}}]} run scoreboard players add temp_0 mech_data 2
 
-execute if score temp_0 mech_data matches 0 if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{OreDict:["oreUranium"]}}]} run replaceitem block ~ ~ ~ container.2 firework_star{mech_itemid: 3104, Explosion: {Colors: [I; 8978176]}, HideFlags: 32, display: {Name: "{\"text\":\"Uranium Ingot\",\"color\":\"dark_green\",\"italic\":false}"}, OreDict: ["ingotUranium"]} 2
+execute if score temp_0 mech_data matches 0 if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{OreDict:["oreUranium"]}}]} run replaceitem block ~ ~ ~ container.2 firework_star{mech_itemid: 3104, Explosion: {Colors: [I; 8978176]}, HideFlags: 32, display: {Name: "{\"translate\":\"mech.item.uranium_ingot\",\"color\":\"dark_green\",\"italic\":false}"}, OreDict: ["ingotUranium"]} 2
 execute if score temp_0 mech_data matches 1.. if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{OreDict:["oreUranium"]}},{Slot:2b,tag:{OreDict:["ingotUranium"]}}]} run scoreboard players add temp_0 mech_data 2
 
 

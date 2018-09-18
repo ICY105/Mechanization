@@ -10,6 +10,8 @@ execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 403
 execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 402 run scoreboard players set temp_0 mech_data 403
 execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 401 run scoreboard players set temp_0 mech_data 402
 
-execute store result entity @s SelectedItem.tag.manual.page int 1 run scoreboard players get temp_0 mech_data
-execute store result entity @s SelectedItem.tag.Damage int 1 run scoreboard players get temp_0 mech_data
+#execute store result entity @s SelectedItem.tag.manual.page int 1 run scoreboard players get temp_0 mech_data
+#execute store result entity @s SelectedItem.tag.Damage int 1 run scoreboard players get temp_0 mech_data
+function mechanization:base/tools/manual/set_manual
+
 tag @s add mech_manual_open

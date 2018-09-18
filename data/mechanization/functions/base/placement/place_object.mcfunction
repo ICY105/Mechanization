@@ -6,7 +6,7 @@ execute if score @s mech_data matches 1001 run summon armor_stand ~ ~ ~ {Tags:["
 execute if entity @s[scores={mech_data=1002},tag=!mech_operator] run summon armor_stand ~ ~ ~ {Tags:["mech_storage3","mech_power_storage"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,Unbreakable:1,Damage:19}}]}
 execute if entity @s[scores={mech_data=1002},tag=mech_operator] run summon armor_stand ~ ~ ~ {Tags:["mech_storage3","mech_power_storage","mech_storage_creative"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,Unbreakable:1,Enchantments:[{id:1,lvl:1}],Damage:19}}]}
 
-execute if score @s mech_data matches 1003 run summon armor_stand ~ ~ ~ {Tags:["mech_storageq","mech_power_storage"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{Enchantments:[{id:1,lvl:1}],Unbreakable:1,Damage:28}}]}
+execute if score @s mech_data matches 1003 run summon armor_stand ~ ~ ~ {Tags:["mech_storageq","mech_power_storage"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],Unbreakable:1,Damage:28}}]}
 execute if score @s mech_data matches 1003 run scoreboard players set @e[tag=mech_storageq,distance=..0.5] mech_data 0
 
 execute if score @s mech_data matches 1000..1003 run setblock ~ ~ ~ minecraft:barrier
