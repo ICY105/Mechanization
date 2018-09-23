@@ -17,6 +17,9 @@ scoreboard objectives add du_hurt minecraft.custom:minecraft.damage_taken
 
 scoreboard objectives add du_placehead minecraft.used:minecraft.player_head
 
+scoreboard objectives add du_health dummy
+scoreboard objectives add du_armor armor
+
 #tool objectives
 scoreboard objectives add du_wpick minecraft.used:minecraft.wooden_pickaxe
 scoreboard objectives add du_gpick minecraft.used:minecraft.golden_pickaxe

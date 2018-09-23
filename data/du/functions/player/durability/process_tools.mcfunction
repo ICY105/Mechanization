@@ -11,6 +11,7 @@ execute if score temp_5 du_data matches 2 if score out_0 du_data matches ..66 ru
 execute if score temp_5 du_data matches 3 if score out_0 du_data matches ..75 run scoreboard players set temp_4 du_data 1
 
 
+scoreboard players set in_0 du_data 1
 
 execute if score temp_4 du_data matches 0 if score @s du_wpick matches 1.. run function du:player/durability/damage_held_item
 execute if score temp_4 du_data matches 0 if score @s du_gpick matches 1.. run function du:player/durability/damage_held_item

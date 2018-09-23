@@ -83,7 +83,8 @@ execute if score @s mech_data matches 2018 run scoreboard players set @e[tag=mec
 execute if score @s mech_data matches 2018 run setblock ~ ~ ~ minecraft:barrier
 
 #Teleporter
-execute if score @s mech_data matches 2017 run summon armor_stand ~ ~ ~ {Tags:["mech_teleporter","mech_reciever"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,Unbreakable:1,Damage:76}}]}
+execute if score @s mech_data matches 2017 run summon armor_stand ~ ~ ~ {Tags:["mech_teleporter","mech_reciever"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,du_uuid:0,Unbreakable:1,Damage:76}}]}
+execute if score @s mech_data matches 2017 as @e[type=armor_stand,tag=mech_teleporter,distance=..0.25] at @s run function mechanization:machines/machines/teleporter/place
 execute if score @s mech_data matches 2017 run scoreboard players set @e[tag=mech_teleporter,distance=..0.25] mech_power 0
 execute if score @s mech_data matches 2017 run setblock ~ ~ ~ minecraft:barrier
 

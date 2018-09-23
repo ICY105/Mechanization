@@ -1,3 +1,7 @@
 
-execute if entity @s[nbt={SelectedItem:{ tag:{du_click_detect:1b} }}] run function du:clickdetect/normal_detection
-execute if entity @s[tag=du_click_normal_active] if entity @s[nbt=!{SelectedItem:{ tag:{du_click_detect:1b} }}] run function du:clickdetect/normal_detection_end
+execute store result score temp_0 du_data run data get entity @s SelectedItem.tag.du_click_detect
+
+execute if score temp_0 du_data matches 1 run function du:clickdetect/click_detection
+execute if score temp_0 du_data matches 3 run function du:clickdetect/click_detection_3
+execute if score temp_0 du_data matches 5 run function du:clickdetect/click_detection_5
+execute if score temp_0 du_data matches 0 if entity @s[tag=du_click_active] run function du:clickdetect/click_detection_end

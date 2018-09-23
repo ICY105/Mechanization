@@ -54,10 +54,10 @@ execute as @e[tag=mech_chunk_loader,distance=..0.5] run function give:mech_machi
 execute as @e[tag=mech_chunk_loader,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
 kill @e[tag=mech_chunk_loader,distance=..0.5]
 
-#Teleporer
+#Teleporter
 execute as @e[tag=mech_teleporter,distance=..0.5] run function give:mech_machines/teleporter
 execute as @e[tag=mech_teleporter,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_teleporter,distance=..0.5]
+execute as @e[tag=mech_teleporter,distance=..0.5] at @s run function mechanization:machines/machines/teleporter/remove
 
 #Lava Fabricator
 execute as @e[tag=mech_lava_fabricator,distance=..0.5] run function give:mech_machines/lava_fabricator
