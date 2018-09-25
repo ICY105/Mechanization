@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "plains","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "plains": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "plains"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/plains"
+	}
+}

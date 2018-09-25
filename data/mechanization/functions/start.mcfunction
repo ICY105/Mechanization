@@ -12,7 +12,6 @@ scoreboard objectives add mech_usedid dummy
 scoreboard objectives add mech_manual trigger
 
 scoreboard objectives add mech_talked minecraft.custom:minecraft.talked_to_villager
-scoreboard objectives add mech_placehead minecraft.used:minecraft.player_head
 scoreboard objectives add mech_pickuphead minecraft.picked_up:minecraft.player_head
 
 scoreboard objectives add mech_crafter minecraft.crafted:minecraft.damaged_anvil

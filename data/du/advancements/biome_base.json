@@ -1,0 +1,12 @@
+{
+	"display": {
+		"title": "","description": "","icon": {"item": "minecraft:stone"},
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+        "always": {
+			"trigger": "minecraft:impossible"
+		}
+    }
+}

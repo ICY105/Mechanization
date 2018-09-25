@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "nether","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "nether": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "nether"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/nether"
+	}
+}

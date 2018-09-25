@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "ice_spikes","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "ice_spikes": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "ice_spikes"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/ice_spikes"
+	}
+}

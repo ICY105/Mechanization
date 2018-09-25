@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "giant_tree_taiga_hills","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "giant_tree_taiga_hills": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "giant_tree_taiga_hills"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/giant_tree_taiga"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "badlands","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "badlands": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "badlands"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/badlands"
+	}
+}

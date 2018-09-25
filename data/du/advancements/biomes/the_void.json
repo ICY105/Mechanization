@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "the_void","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "the_void": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "the_void"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/the_void"
+	}
+}

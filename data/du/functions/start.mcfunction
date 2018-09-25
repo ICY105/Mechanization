@@ -45,6 +45,7 @@ scoreboard objectives add du_shoe minecraft.used:minecraft.stone_hoe
 scoreboard objectives add du_ihoe minecraft.used:minecraft.iron_hoe
 scoreboard objectives add du_dhoe minecraft.used:minecraft.diamond_hoe
 
+scoreboard objectives add du_furnace minecraft.used:minecraft.furnace
 
 team add du_nopush
 team modify du_nopush collisionRule never
@@ -57,12 +58,6 @@ summon area_effect_cloud ~ 0 ~ {Tags:["du_spawn_chunks"],Duration:2000000000}
 execute store result score in_0 du_data run data get entity @e[tag=du_spawn_chunks,limit=1] UUIDLeast 0.0000000001
 function du:math/abs
 scoreboard players operation rng_seed du_data = out_0 du_data
-
-#scores
-scoreboard players set timer_2 du_timer 0
-scoreboard players set timer_10 du_timer 0
-scoreboard players set timer_20 du_timer 0
-scoreboard players set timer_100 du_timer 0
 
 #ID stuff
 scoreboard players add incr_id du_uuid 1

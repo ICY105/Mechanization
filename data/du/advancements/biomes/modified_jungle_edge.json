@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "modified_jungle_edge","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "modified_jungle_edge": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "modified_jungle_edge"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/jungle"
+	}
+}

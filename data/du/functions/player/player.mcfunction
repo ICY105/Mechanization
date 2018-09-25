@@ -8,6 +8,10 @@ tag @s remove du_jumping
 tag @s[scores={du_jump=1..}] add du_jumping
 scoreboard players set @s du_jump 0
 
+#place furnace
+scoreboard players set in_0 du_data 120
+execute if score @s du_furnace matches 1.. positioned ~ ~1.61 ~ run function du:custom_furnace/place
+
 #moving
 execute if score timer_2 du_data matches 0 run function du:player/get_moving
 

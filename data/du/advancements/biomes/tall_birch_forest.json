@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "tall_birch_forest","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "tall_birch_forest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "tall_birch_forest"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/birch_forest"
+	}
+}

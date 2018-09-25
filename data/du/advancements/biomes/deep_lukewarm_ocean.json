@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "deep_lukewarm_ocean","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "deep_lukewarm_ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "deep_lukewarm_ocean"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/lukewarm_ocean"
+	}
+}

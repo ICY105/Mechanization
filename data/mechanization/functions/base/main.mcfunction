@@ -1,8 +1,5 @@
 #### Begin API ####
 
-#Indicates Placed Head
-execute as @a[scores={mech_placehead=1..}] at @s run function mechanization:base/placement/trace_head
-
 #Indicates Picked Up Head
 execute as @a[scores={mech_pickuphead=1..}] at @s run function #mechanization:pickup_head
 scoreboard players remove @a[scores={mech_pickuphead=1..}] mech_pickuphead 1

@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "mushroom_field_shore","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "mushroom_field_shore": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "mushroom_field_shore"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/mushroom_field"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "flower_forest","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "flower_forest": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "flower_forest"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/flower_forest"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "ocean","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "ocean": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "ocean"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/ocean"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "end_highlands","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "end_highlands": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "end_highlands"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/the_end"
+	}
+}

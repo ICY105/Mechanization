@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "river","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "river": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "river"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/river"
+	}
+}

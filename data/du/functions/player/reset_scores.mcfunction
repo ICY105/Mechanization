@@ -25,3 +25,5 @@ scoreboard players set @s du_dhoe 0
 scoreboard players set @s du_damage 0
 scoreboard players set @s du_talked 0
 scoreboard players set @s du_hurt 0
+
+scoreboard players set @s du_furnace 0

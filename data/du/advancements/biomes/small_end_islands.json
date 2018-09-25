@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "small_end_islands","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "small_end_islands": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "small_end_islands"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/the_end"
+	}
+}

@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "desert_hills","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "desert_hills": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "desert_hills"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/desert"
+	}
+}

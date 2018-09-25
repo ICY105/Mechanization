@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "modified_badlands_plateau","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "modified_badlands_plateau": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "modified_badlands_plateau"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/badlands"
+	}
+}

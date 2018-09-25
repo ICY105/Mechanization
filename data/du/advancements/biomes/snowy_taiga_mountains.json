@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "snowy_taiga_mountains","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "snowy_taiga_mountains": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "snowy_taiga_mountains"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/taiga"
+	}
+}

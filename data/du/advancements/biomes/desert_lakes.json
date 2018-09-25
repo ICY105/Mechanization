@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "desert_lakes","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "desert_lakes": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "desert_lakes"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/desert"
+	}
+}

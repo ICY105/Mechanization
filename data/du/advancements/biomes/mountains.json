@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "mountains","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "mountains": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "mountains"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/mountains"
+	}
+}

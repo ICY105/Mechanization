@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "end_midlands","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "end_midlands": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "end_midlands"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/the_end"
+	}
+}

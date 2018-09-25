@@ -1,0 +1,20 @@
+{
+	"display": {
+		"title": "mountain_edge","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:biome_base"
+    },
+	"criteria": {
+        "mountain_edge": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"biome": "mountain_edge"
+			}
+		}
+    },
+	"rewards":{ 
+		"function":"du:biomes/mountain"
+	}
+}
