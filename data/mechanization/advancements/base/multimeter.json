@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§6Now I can Feel the §6Power ;)",
-		"description": "§3Create a Multimeter.",
-		"icon": {
-            "item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:41,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.base.multimeter.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.base.multimeter.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:41,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_multimeter": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:1101}"
+                "items": [{
+                        "nbt": "{mech_itemid:1101}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:base/wrench"
+    "parent": "mechanization:base\/wrench"
 }
