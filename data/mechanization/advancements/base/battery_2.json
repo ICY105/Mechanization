@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§4I only grow stronger...",
-		"description": "§3Create a Tier 2 Battery.",
-		"icon": {
-            "item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:10,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.base.battery_2.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.base.battery_2.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:10,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_2": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:1001}"
+                "items": [{
+                        "nbt": "{mech_itemid:1001}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:base/battery_1"
+    "parent": "mechanization:base\/battery_1"
 }
