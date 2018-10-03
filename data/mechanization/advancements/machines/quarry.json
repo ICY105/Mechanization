@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§8Dwarf, Dwarf, Dige- §8Dige- Hole.",
-		"description": "§3Create a Quarry.",
-		"icon": {
-			"item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:62,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.machines.quarry.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.machines.quarry.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:62,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:2013}"
+                "items": [{
+                        "nbt": "{mech_itemid:2013}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:machines/machine_frame_2"
+    "parent": "mechanization:machines\/machine_frame_2"
 }
