@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§1A Wrinkle in §1Space-Time",
-		"description": "§3Create a Teleporter.",
-		"icon": {
-			"item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:76,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.machines.teleporter.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.machines.teleporter.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:76,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:2017}"
+                "items": [{
+                        "nbt": "{mech_itemid:2017}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:machines/machine_frame_3"
+    "parent": "mechanization:machines\/machine_frame_3"
 }
