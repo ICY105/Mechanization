@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§2Faster than a §2speeding bullet...",
-		"description": "§3Create a Energy Relay.",
-		"icon": {
-            "item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:37,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.base.energy_relay.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.base.energy_relay.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:37,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_3": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:1004}"
+                "items": [{
+                        "nbt": "{mech_itemid:1004}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:base/battery_2"
+    "parent": "mechanization:base\/battery_2"
 }
