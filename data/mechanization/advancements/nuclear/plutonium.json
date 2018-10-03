@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "Reduce, Reuse, Recycle",
-		"description": "§3Refine spent fuel into plutonium.",
-		"icon": {
-            "item": "minecraft:firework_star",
-			"nbt":"{Explosion: {Colors: [I; 11187400]}}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.nuclear.plutonium.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.nuclear.plutonium.description"
+        },
+        "icon": {
+            "item": "minecraft:firework_star",
+            "nbt": "{Explosion: {Colors: [I; 11187400]}}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:3105}"
+                "items": [{
+                        "nbt": "{mech_itemid:3105}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:nuclear/spent_fuel"
+    "parent": "mechanization:nuclear\/spent_fuel"
 }
