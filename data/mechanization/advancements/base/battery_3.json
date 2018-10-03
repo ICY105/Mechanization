@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§5§oUnlimited, Power!",
-		"description": "§3Create a Tier 3 Battery.",
-		"icon": {
-            "item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:19,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.base.battery_3.title"
         },
-		"frame": "goal"
+        "description": {
+            "translate": "mech.advancements.base.battery_3.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:19,Unbreakable:1b}"
+        },
+        "frame": "goal"
     },
     "criteria": {
         "have_battery_3": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:1002}"
+                "items": [{
+                        "nbt": "{mech_itemid:1002}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:base/battery_2"
+    "parent": "mechanization:base\/battery_2"
 }
