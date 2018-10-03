@@ -1,25 +1,28 @@
 {
-	"display": {
-		"title": "§6Congrats, You §6Didn't Blow Up! (yet)",
-		"description": "§3Collect spent nuclear fuel.",
-		"icon": {
-            "item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:97,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.nuclear.spent_fuel.title"
         },
-		"frame": "task",
-		"hidden": true
+        "description": {
+            "translate": "mech.advancements.nuclear.spent_fuel.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:97,Unbreakable:1b}"
+        },
+        "frame": "task",
+        "hidden": true
     },
     "criteria": {
         "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:3102}"
+                "items": [{
+                        "nbt": "{mech_itemid:3102}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:nuclear/fission_reactor"
+    "parent": "mechanization:nuclear\/fission_reactor"
 }
