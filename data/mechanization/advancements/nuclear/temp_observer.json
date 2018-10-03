@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§cIs it Hot in Here, Or is it Just You?",
-		"description": "§3Create a temperature observer.",
-		"icon": {
-            "item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:93,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.nuclear.temp_observer.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.nuclear.temp_observer.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:93,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:3005}"
+                "items": [{
+                        "nbt": "{mech_itemid:3005}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:nuclear/fission_reactor"
+    "parent": "mechanization:nuclear\/fission_reactor"
 }
