@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§7The Bases of it All",
-		"description": "§3Create a Tier 1 Machine Frame.",
-		"icon": {
-			"item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:79,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.machines.machine_frame_1.title"
         },
-		"frame": "goal"
+        "description": {
+            "translate": "mech.advancements.machines.machine_frame_1.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:79,Unbreakable:1b}"
+        },
+        "frame": "goal"
     },
     "criteria": {
         "have_frame_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:2200}"
+                "items": [{
+                        "nbt": "{mech_itemid:2200}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:machines/copper_ore"
+    "parent": "mechanization:machines\/copper_ore"
 }
