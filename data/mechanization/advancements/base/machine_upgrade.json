@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§cPush it to the Limit",
-		"description": "§3Create a Machine Upgrade.",
-		"icon": {
-            "item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:42,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.base.machine_upgrade.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.base.machine_upgrade.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:42,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_wrench": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:1102}"
+                "items": [{
+                        "nbt": "{mech_itemid:1102}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:base/battery_3"
+    "parent": "mechanization:base\/battery_3"
 }
