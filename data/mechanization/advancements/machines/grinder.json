@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§2More for the Dollar",
-		"description": "§3Create a Grinder.",
-		"icon": {
-			"item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:60,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.machines.grinder.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.machines.grinder.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:60,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:2009}"
+                "items": [{
+                        "nbt": "{mech_itemid:2009}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:machines/machine_frame_2"
+    "parent": "mechanization:machines\/machine_frame_2"
 }
