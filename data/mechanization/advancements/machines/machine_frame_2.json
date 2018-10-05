@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§8Getting Another Upgrade",
-		"description": "§3Create a Tier 2 Machine Frame.",
-		"icon": {
-			"item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:80,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.machines.machine_frame_2.title"
         },
-		"frame": "goal"
+        "description": {
+            "translate": "mech.advancements.machines.machine_frame_2.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:80,Unbreakable:1b}"
+        },
+        "frame": "goal"
     },
     "criteria": {
         "have_frame_2": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:2201}"
+                "items": [{
+                        "nbt": "{mech_itemid:2201}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:machines/alloy_furnace"
+    "parent": "mechanization:machines\/alloy_furnace"
 }

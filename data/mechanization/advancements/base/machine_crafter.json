@@ -1,27 +1,30 @@
 {
-	"display": {
-		"title": "§6Let's get it started!",
-		"description": "§3Create a Machine Crafter.",
-		"icon": {
-            "item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:38,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.base.machine_crafter.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.base.machine_crafter.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:38,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
-	"criteria": {
+    "criteria": {
         "have_machine_crafter": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:1005}"
+                "items": [{
+                        "nbt": "{mech_itemid:1005}"
                     }
                 ]
             }
         }
     },
-	"rewards": {
-		"function":"give:mech_base/mechanical_manual"
-	},
-	"parent":"mechanization:mechanization"
+    "rewards": {
+        "function": "give:mech_base\/mechanical_manual"
+    },
+    "parent": "mechanization:mechanization"
 }

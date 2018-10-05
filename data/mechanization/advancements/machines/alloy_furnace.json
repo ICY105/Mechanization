@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§6Unlocking Metal's True Potential",
-		"description": "§3Create an Alloy Furnace.",
-		"icon": {
-			"item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:48,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.machines.alloy_furnace.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.machines.alloy_furnace.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:48,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:2000}"
+                "items": [{
+                        "nbt": "{mech_itemid:2000}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:machines/machine_frame_1"
+    "parent": "mechanization:machines\/machine_frame_1"
 }

@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§5Not Even My Final Form!",
-		"description": "§3Create a Tier 3 Machine Frame.",
-		"icon": {
-			"item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:81,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.machines.machine_frame_3.title"
         },
-		"frame": "goal"
+        "description": {
+            "translate": "mech.advancements.machines.machine_frame_3.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:81,Unbreakable:1b}"
+        },
+        "frame": "goal"
     },
     "criteria": {
         "have_frame_3": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:2202}"
+                "items": [{
+                        "nbt": "{mech_itemid:2202}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:machines/grinder"
+    "parent": "mechanization:machines\/grinder"
 }

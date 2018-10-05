@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§7Can you feel the power!",
-		"description": "§3Create a Tier 1 Battery.",
-		"icon": {
-            "item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:1,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.base.battery_1.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.base.battery_1.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:1,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:1000}"
+                "items": [{
+                        "nbt": "{mech_itemid:1000}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:base/machine_crafter"
+    "parent": "mechanization:base\/machine_crafter"
 }

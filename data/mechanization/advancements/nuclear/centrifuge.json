@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§2No Illegal Uranium §2Centrifuges §2Here...",
-		"description": "§3Create an centrifuge.",
-		"icon": {
-            "item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:84,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.nuclear.centrifuge.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.nuclear.centrifuge.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:84,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:3000}"
+                "items": [{
+                        "nbt": "{mech_itemid:3000}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:nuclear/uranium_ore"
+    "parent": "mechanization:nuclear\/uranium_ore"
 }

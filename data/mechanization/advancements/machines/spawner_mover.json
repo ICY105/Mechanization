@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§cYer Comin' With Me!",
-		"description": "§3Create a Spawner Mover.",
-		"icon": {
-			"item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:82,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.machines.spawner_mover.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.machines.spawner_mover.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:82,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:2203}"
+                "items": [{
+                        "nbt": "{mech_itemid:2203}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:machines/machine_frame_3"
+    "parent": "mechanization:machines\/machine_frame_3"
 }

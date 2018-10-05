@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§6Fuel for the Masses",
-		"description": "§3Create a Furnace Generator.",
-		"icon": {
-			"item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:44,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.machines.furnace_generator.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.machines.furnace_generator.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:44,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:2001}"
+                "items": [{
+                        "nbt": "{mech_itemid:2001}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:machines/machine_frame_1"
+    "parent": "mechanization:machines\/machine_frame_1"
 }

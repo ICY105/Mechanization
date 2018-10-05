@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§7Tools of the Trade",
-		"description": "§3Create a Machine Wrench.",
-		"icon": {
-            "item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:40,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.base.wrench.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.base.wrench.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:40,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_wrench": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:1100}"
+                "items": [{
+                        "nbt": "{mech_itemid:1100}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:base/machine_crafter"
+    "parent": "mechanization:base\/machine_crafter"
 }

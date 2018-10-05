@@ -1,19 +1,23 @@
 {
-	"display": {
-		"title": "§4Mechanization",
-		"description": "§3Mechanization advancement tree.",
-		"icon": {
-            "item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:38,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.mechanization.title"
         },
-        "background": "mechanization:textures/base/2_plate_panel.png",
-		"frame": "goal",
-		"show_toast": false,
-		"announce_to_chat": false
+        "description": {
+            "translate": "mech.advancements.mechanization.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:38,Unbreakable:1b}"
+        },
+        "background": "mechanization:textures\/base\/2_plate_panel.png",
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": false
     },
-	"criteria": {
+    "criteria": {
         "always": {
-			"trigger": "minecraft:tick"
-		}
+            "trigger": "minecraft:tick"
+        }
     }
 }

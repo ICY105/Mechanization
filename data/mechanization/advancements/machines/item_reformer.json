@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "Make Mending Great Again",
-		"description": "§3Create an Item Reformer.",
-		"icon": {
-			"item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:72,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.machines.item_reformer.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.machines.item_reformer.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:72,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:2010}"
+                "items": [{
+                        "nbt": "{mech_itemid:2010}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:machines/machine_frame_2"
+    "parent": "mechanization:machines\/machine_frame_2"
 }

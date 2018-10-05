@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§5This is safe, right?!",
-		"description": "§3Create a Quantum Battery.",
-		"icon": {
-            "item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:28,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.base.battery_q.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.base.battery_q.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:28,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_q": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:1003}"
+                "items": [{
+                        "nbt": "{mech_itemid:1003}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:base/battery_2"
+    "parent": "mechanization:base\/battery_2"
 }

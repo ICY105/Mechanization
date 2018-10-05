@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§4Nothing Could §4Possibly Go Wrong",
-		"description": "§3Create a fission reactor.",
-		"icon": {
-            "item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:87,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.nuclear.fission_reactor.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.nuclear.fission_reactor.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:87,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:3002}"
+                "items": [{
+                        "nbt": "{mech_itemid:3002}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:nuclear/centrifuge"
+    "parent": "mechanization:nuclear\/centrifuge"
 }

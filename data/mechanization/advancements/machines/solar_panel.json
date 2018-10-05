@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§1Going Green",
-		"description": "§3Create a Solar Panel.",
-		"icon": {
-			"item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:56,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.machines.solar_panel.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.machines.solar_panel.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:56,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:2014}"
+                "items": [{
+                        "nbt": "{mech_itemid:2014}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:machines/machine_frame_2"
+    "parent": "mechanization:machines\/machine_frame_2"
 }

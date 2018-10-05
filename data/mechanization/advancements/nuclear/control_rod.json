@@ -1,24 +1,27 @@
 {
-	"display": {
-		"title": "§8Saftey First!",
-		"description": "§3Create a control rod.",
-		"icon": {
-            "item": "minecraft:diamond_shovel",
-			"nbt":"{Damage:95,Unbreakable:1b}"
+    "display": {
+        "title": {
+            "translate": "mech.advancements.nuclear.control_rod.title"
         },
-		"frame": "task"
+        "description": {
+            "translate": "mech.advancements.nuclear.control_rod.description"
+        },
+        "icon": {
+            "item": "minecraft:diamond_shovel",
+            "nbt": "{Damage:95,Unbreakable:1b}"
+        },
+        "frame": "task"
     },
     "criteria": {
         "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
-                "items": [
-                    {
-						"nbt":"{mech_itemid:3001}"
+                "items": [{
+                        "nbt": "{mech_itemid:3001}"
                     }
                 ]
             }
         }
     },
-	"parent":"mechanization:nuclear/fission_reactor"
+    "parent": "mechanization:nuclear\/fission_reactor"
 }
