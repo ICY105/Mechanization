@@ -36,21 +36,17 @@ execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ #mechanization:glazed_
 
 #mechanization devices
 tag @e[tag=mech_energy_relay,distance=..0.5] remove mech_reciever
-tag @e[tag=mech_energy_relay,distance=..0.5] remove mech_transmitter 
+tag @e[tag=mech_energy_relay,distance=..0.5] remove mech_transmitter
 execute as @e[tag=mech_energy_relay,distance=..0.5] run scoreboard players add @s mech_data 1
 execute as @e[tag=mech_energy_relay,distance=..0.5,scores={mech_data=4..}] run scoreboard players set @s mech_data 0
 
 tag @e[tag=mech_energy_relay,distance=..0.5,scores={mech_data=0}] add mech_reciever
 tag @e[tag=mech_energy_relay,distance=..0.5,scores={mech_data=1..2}] add mech_transmitter
 tag @e[tag=mech_energy_relay,distance=..0.5,scores={mech_data=3}] add mech_reciever
-execute as @e[tag=mech_energy_relay,distance=..0.5,scores={mech_data=0}] run title @p actionbar ["",{"text":"Transmittion Mode","color":"dark_aqua","bold":false}]
-execute as @e[tag=mech_energy_relay,distance=..0.5,scores={mech_data=1}] run title @p actionbar ["",{"text":"Collection Mode","color":"dark_aqua","bold":false}]
-execute as @e[tag=mech_energy_relay,distance=..0.5,scores={mech_data=2}] run title @p actionbar ["",{"text":"Import Mode","color":"dark_aqua","bold":false}]
-execute as @e[tag=mech_energy_relay,distance=..0.5,scores={mech_data=3}] run title @p actionbar ["",{"text":"Export Mode","color":"dark_aqua","bold":false}]
+execute as @e[tag=mech_energy_relay,distance=..0.5,scores={mech_data=0}] run title @p actionbar ["",{"translate":"mech.text.function.base.tools.wrench_function.1","color":"dark_aqua","bold":false}]
+execute as @e[tag=mech_energy_relay,distance=..0.5,scores={mech_data=1}] run title @p actionbar ["",{"translate":"mech.text.function.base.tools.wrench_function.2","color":"dark_aqua","bold":false}]
+execute as @e[tag=mech_energy_relay,distance=..0.5,scores={mech_data=2}] run title @p actionbar ["",{"translate":"mech.text.function.base.tools.wrench_function.3","color":"dark_aqua","bold":false}]
+execute as @e[tag=mech_energy_relay,distance=..0.5,scores={mech_data=3}] run title @p actionbar ["",{"translate":"mech.text.function.base.tools.wrench_function.4","color":"dark_aqua","bold":false}]
 
 #rotate API
 execute as @e[tag=mech_rotatable,distance=..0.75] run function mechanization:base/tools/wrench_function_rotate
-
-
-
-
