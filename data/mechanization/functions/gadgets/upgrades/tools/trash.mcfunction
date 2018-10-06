@@ -1,5 +1,5 @@
 scoreboard players set temp_0 mech_data 0
-execute if entity @s[nbt={SelectedItem:{ tag:{ench:[{id:33s,lvl:1s}]} }}] run scoreboard players set temp_2 mech_data 1
+execute if entity @s[nbt={SelectedItem:{ tag:{Enchantments:[{id:"minecraft:silk_touch",lvl:1s}]} }}] run scoreboard players set temp_0 mech_data 1
 
 
 

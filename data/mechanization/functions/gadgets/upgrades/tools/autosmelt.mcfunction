@@ -1,8 +1,8 @@
 scoreboard players set temp_1 mech_data 0
-execute if entity @s[nbt={SelectedItem:{ tag:{ench:[{id:35s,lvl:2s}]} }}] run scoreboard players set temp_1 mech_data 1
-execute if entity @s[nbt={SelectedItem:{ tag:{ench:[{id:35s,lvl:3s}]} }}] run scoreboard players set temp_1 mech_data 1
+execute if entity @s[nbt={SelectedItem:{ tag:{ench:[{id:"minecraft:fortune",lvl:2s}]} }}] run scoreboard players set temp_1 mech_data 1
+execute if entity @s[nbt={SelectedItem:{ tag:{ench:[{id:"minecraft:fortune",lvl:3s}]} }}] run scoreboard players set temp_1 mech_data 1
 scoreboard players set temp_2 mech_data 0
-execute if entity @s[nbt={SelectedItem:{ tag:{ench:[{id:33s,lvl:1s}]} }}] run scoreboard players set temp_2 mech_data 1
+execute if entity @s[nbt={SelectedItem:{ tag:{ench:[{id:"minecraft:silk_touch",lvl:1s}]} }}] run scoreboard players set temp_2 mech_data 1
 
 
 
