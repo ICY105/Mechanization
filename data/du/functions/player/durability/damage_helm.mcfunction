@@ -1,8 +1,8 @@
 scoreboard players set temp_5 du_data 0
 scoreboard players set temp_4 du_data 0
-execute if entity @s[nbt={Inventory:[ {Slot: 100b, tag: {Enchantments: [{lvl: 1s, id: "minecraft:unbreaking"}]}} ]}] run scoreboard players set temp_5 du_data 1
-execute if entity @s[nbt={Inventory:[ {Slot: 100b, tag: {Enchantments: [{lvl: 2s, id: "minecraft:unbreaking"}]}} ]}] run scoreboard players set temp_5 du_data 2
-execute if entity @s[nbt={Inventory:[ {Slot: 100b, tag: {Enchantments: [{lvl: 3s, id: "minecraft:unbreaking"}]}} ]}] run scoreboard players set temp_5 du_data 3
+execute if entity @s[nbt={Inventory:[ {Slot: 103b, tag: {Enchantments: [{lvl: 1s, id: "minecraft:unbreaking"}]}} ]}] run scoreboard players set temp_5 du_data 1
+execute if entity @s[nbt={Inventory:[ {Slot: 103b, tag: {Enchantments: [{lvl: 2s, id: "minecraft:unbreaking"}]}} ]}] run scoreboard players set temp_5 du_data 2
+execute if entity @s[nbt={Inventory:[ {Slot: 103b, tag: {Enchantments: [{lvl: 3s, id: "minecraft:unbreaking"}]}} ]}] run scoreboard players set temp_5 du_data 3
 
 execute if score temp_5 du_data matches 1..3 run scoreboard players set in_0 du_data 100
 execute if score temp_5 du_data matches 1..3 run function du:math/random

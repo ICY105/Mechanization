@@ -30,7 +30,7 @@ execute if score @s du_health matches 12.. if entity @s[nbt={HurtTime:0s}] run f
 
 #custom blocks
 execute if entity @s[scores={du_placehead=1..}] run function du:player/place_head
-execute if entity @s[tag=du_right_click] run function du:custom_blocks/place_custom_block
+execute if entity @s[tag=du_right_click,gamemode=!adventure] run function du:custom_blocks/place_custom_block
 
 #Assign Player IDs
 scoreboard players operation @s[tag=!du_has_id] du_uuid = incr_id du_uuid

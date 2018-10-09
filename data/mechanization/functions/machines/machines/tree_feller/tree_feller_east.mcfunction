@@ -33,7 +33,4 @@ execute if score temp_0 mech_data matches 1 run setblock ~1 ~ ~ birch_sapling
 scoreboard players set temp_0 mech_data 0
 execute store success score temp_0 mech_data if block ~1 ~ ~ air if entity @s[tag=!mech_active] run kill @e[type=item,sort=nearest,limit=1,distance=..12,nbt={Item:{id:"minecraft:jungle_sapling"}}]
 execute if score temp_0 mech_data matches 1 run setblock ~1 ~ ~ jungle_sapling
-scoreboard players set temp_0 mech_data 0
-execute store success score temp_0 mech_data if block ~1 ~ ~ air if entity @s[tag=!mech_active] run kill @e[type=item,sort=nearest,limit=1,distance=..12,nbt={Item:{id:"minecraft:acacia_sapling"}}]
-execute if score temp_0 mech_data matches 1 run setblock ~1 ~ ~ acacia_sapling
 

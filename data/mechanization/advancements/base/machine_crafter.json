@@ -24,7 +24,7 @@
         }
     },
     "rewards": {
-        "function": "give:mech_base\/mechanical_manual"
+        "function": "give:mech_base/mechanical_manual"
     },
     "parent": "mechanization:mechanization"
 }

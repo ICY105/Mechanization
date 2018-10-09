@@ -22,10 +22,10 @@ execute if score @s mech_power matches 1280.. if block ~ ~1 ~ #mechanization:lav
 execute if score @s mech_power matches 1280.. if score @s mech_data matches 1.. run scoreboard players remove @s mech_power 1280
 
 scoreboard players set temp_0 mech_data 0
-execute if entity @s[tag=mech_upgraded] if score @s mech_power matches 60.. store success score temp_0 mech_data run fill ~3 ~1 ~3 ~-3 ~2 ~-3 water replace #mechanization:lava_fab_water
+execute if entity @s[tag=mech_upgraded] if score @s mech_power matches 60.. store success score temp_0 mech_data run fill ~5 ~1 ~5 ~-5 ~2 ~-5 water replace #mechanization:lava_fab_water
 execute if score temp_0 mech_data matches 1 run scoreboard players remove @s mech_power 60
 scoreboard players set temp_0 mech_data 0
-execute if entity @s[tag=mech_upgraded] if score @s mech_power matches 60.. store success score temp_0 mech_data run fill ~3 ~1 ~3 ~-3 ~2 ~-3 air replace #mechanization:lava_fab_air
+execute if entity @s[tag=mech_upgraded] if score @s mech_power matches 60.. store success score temp_0 mech_data run fill ~5 ~1 ~5 ~-5 ~2 ~-5 air replace #mechanization:lava_fab_air
 execute if score temp_0 mech_data matches 1 run scoreboard players remove @s mech_power 60
 
 #store scoreboard values

@@ -26,3 +26,4 @@ tag @s remove du_the_void
 tag @s remove du_sunflower_plains
 tag @s remove du_flower_forest
 tag @s remove du_ice_spikes
+tag @s remove du_tundra

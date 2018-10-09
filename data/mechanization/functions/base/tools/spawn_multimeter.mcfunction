@@ -4,7 +4,7 @@ scoreboard players set in_0 mech_data 120
 tp @e[tag=mech_ray_start] ~ ~1.61 ~ ~ ~
 execute as @e[tag=mech_ray_start] at @s run function mechanization:base/raytrace/manage_ray_invis
 
-execute if entity @s[tag=!mech_tut_multimeter,tag=du_sneaking] run tellraw @s ["",{"text":"To edit the grid id, use the command /trigger mech_gridid set [id]. \nThen shift+right click on machines with the multimeter to change the id.","color":"dark_green"}]
+execute if entity @s[tag=!mech_tut_multimeter,tag=du_sneaking] run tellraw @s ["",{"translate":"mech.text.multimeter.id_tutorial","color":"dark_green"}]
 tag @s[tag=du_sneaking] add mech_tut_multimeter
 
 scoreboard players operation temp_0 mech_data = @s mech_gridid

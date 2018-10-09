@@ -65,5 +65,5 @@ setblock ~1 1 ~ nether_portal
 setblock ~-1 1 ~ end_portal
 
 #Installation message
-tellraw @a[tag=!mech_installation] ["",{"text":"Thank you for installing Mechanization: by ImCoolYeah105.","color":"dark_red"},{"text":"\nThe Data Pack has been successfully installed.","color":"blue"}]
+tellraw @a[tag=!mech_installation] ["",{"translate":"mech.text.load_1","color":"dark_red"},{"text":"mech.text.load_2","color":"blue"}]
 tag @a add mech_installation

@@ -5,11 +5,11 @@ execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 402
 execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 403 run scoreboard players set temp_0 mech_data 402
 execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 404..412 run scoreboard players set temp_0 mech_data 403
 execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 413..420 run scoreboard players set temp_0 mech_data 412
-execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 421..431 run scoreboard players set temp_0 mech_data 420
-execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 432..438 run scoreboard players set temp_0 mech_data 431
-execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 439..448 run scoreboard players set temp_0 mech_data 438
-execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 449..475 run scoreboard players set temp_0 mech_data 448
-execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 476.. run scoreboard players set temp_0 mech_data 475
+execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 421..432 run scoreboard players set temp_0 mech_data 420
+execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 433..440 run scoreboard players set temp_0 mech_data 432
+execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 441..451 run scoreboard players set temp_0 mech_data 440
+execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 452..476 run scoreboard players set temp_0 mech_data 451
+execute if entity @s[tag=mech_manual_open] if score temp_0 mech_data matches 477.. run scoreboard players set temp_0 mech_data 476
 
 #execute store result entity @s SelectedItem.tag.manual.page int 1 run scoreboard players get temp_0 mech_data
 #execute store result entity @s SelectedItem.tag.Damage int 1 run scoreboard players get temp_0 mech_data
