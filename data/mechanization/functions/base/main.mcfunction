@@ -7,15 +7,15 @@ scoreboard players remove @a[scores={mech_pickuphead=1..}] mech_pickuphead 1
 #Click Detect
 execute as @a[tag=du_right_click] run function mechanization:base/utils/get_item_id
 execute as @a[tag=du_left_click] run function mechanization:base/utils/get_item_id
-execute as @a[tag=du_right_click,scores={mech_usedid=1100}] at @s run function mechanization:base/tools/spawn_wrench
-execute as @a[tag=du_right_click,scores={mech_usedid=1101}] at @s run function mechanization:base/tools/spawn_multimeter
-execute as @a[tag=du_right_click,scores={mech_usedid=1102}] at @s run function mechanization:base/tools/machine_upgrade
-execute as @a[tag=du_right_click,scores={mech_usedid=1000..1099}] at @s run function mechanization:base/placement/trace_spot
-execute as @a[tag=du_right_click,scores={mech_usedid=2000..2099}] at @s run function mechanization:base/placement/trace_spot
-execute as @a[tag=du_right_click,scores={mech_usedid=3000..3099}] at @s run function mechanization:base/placement/trace_spot
-execute as @a[tag=du_right_click,scores={mech_usedid=4000..4099}] at @s run function mechanization:base/placement/trace_spot
-execute as @a[tag=du_right_click,scores={mech_usedid=5000..5099}] at @s run function mechanization:base/placement/trace_spot
-execute as @a[tag=du_right_click,scores={mech_usedid=6000..6099}] at @s run function mechanization:base/placement/trace_spot
+execute as @a[gamemode=!adventure,tag=du_right_click,scores={mech_usedid=1100}] at @s run function mechanization:base/tools/spawn_wrench
+execute as @a[gamemode=!adventure,tag=du_right_click,scores={mech_usedid=1101}] at @s run function mechanization:base/tools/spawn_multimeter
+execute as @a[gamemode=!adventure,tag=du_right_click,scores={mech_usedid=1102}] at @s run function mechanization:base/tools/machine_upgrade
+execute as @a[gamemode=!adventure,tag=du_right_click,scores={mech_usedid=1000..1099}] at @s run function mechanization:base/placement/trace_spot
+execute as @a[gamemode=!adventure,tag=du_right_click,scores={mech_usedid=2000..2099}] at @s run function mechanization:base/placement/trace_spot
+execute as @a[gamemode=!adventure,tag=du_right_click,scores={mech_usedid=3000..3099}] at @s run function mechanization:base/placement/trace_spot
+execute as @a[gamemode=!adventure,tag=du_right_click,scores={mech_usedid=4000..4099}] at @s run function mechanization:base/placement/trace_spot
+execute as @a[gamemode=!adventure,tag=du_right_click,scores={mech_usedid=5000..5099}] at @s run function mechanization:base/placement/trace_spot
+execute as @a[gamemode=!adventure,tag=du_right_click,scores={mech_usedid=6000..6099}] at @s run function mechanization:base/placement/trace_spot
 
 #manual
 execute as @a[tag=du_right_click,scores={mech_usedid=1103}] at @s run function mechanization:base/tools/manual/manual

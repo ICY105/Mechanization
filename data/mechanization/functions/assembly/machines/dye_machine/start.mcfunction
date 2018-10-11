@@ -32,8 +32,8 @@ execute if score temp_1 mech_data matches 8.. if block ~ ~ ~ dropper{Items:[{Slo
 
 scoreboard players remove temp_0 mech_data 1
 scoreboard players remove temp_1 mech_data 8
-execute if entity @e[type=item,tag=mech_comp_new] store result block ~ ~ ~ Items[1].Count byte 1 run scoreboard players get temp_0 mech_data
 execute if entity @e[type=item,tag=mech_comp_new] store result block ~ ~ ~ Items[7].Count byte 1 run scoreboard players get temp_1 mech_data
+execute if entity @e[type=item,tag=mech_comp_new] store result block ~ ~ ~ Items[1].Count byte 1 run scoreboard players get temp_0 mech_data
 
 execute if entity @s[nbt={Rotation:[0.01f,0.0f]}] run tp @e[type=item,tag=mech_comp_new] ~ ~ ~1
 execute if entity @s[nbt={Rotation:[90f,0.0f]}] run tp @e[type=item,tag=mech_comp_new] ~-1 ~ ~

@@ -33,9 +33,9 @@ execute if score timer_100 du_data matches 80 as @e[tag=mech_fisher] at @s run f
 execute if score timer_100 du_data matches 90 as @e[tag=mech_spawner_controller] at @s run function mechanization:machines/machines/spawner_controller
 
 #Spawner Pickup
-execute as @a[tag=du_right_click,scores={mech_usedid=2203}] at @s run function mechanization:machines/tools/spawner_mover/spawner_box
-execute as @a[tag=du_right_click,scores={mech_usedid=2204}] at @s run function mechanization:machines/tools/spawner_mover/spawner_place
-execute as @a[tag=du_right_click,scores={mech_usedid=2205}] at @s run function mechanization:machines/tools/spawner_mover/place_spawner_controller
+execute as @a[gamemode=!adventure,tag=du_right_click,scores={mech_usedid=2203}] at @s run function mechanization:machines/tools/spawner_mover/spawner_box
+execute as @a[gamemode=!adventure,tag=du_right_click,scores={mech_usedid=2204}] at @s run function mechanization:machines/tools/spawner_mover/spawner_place
+execute as @a[gamemode=!adventure,tag=du_right_click,scores={mech_usedid=2205}] at @s run function mechanization:machines/tools/spawner_mover/place_spawner_controller
 
 #ores
 execute as @a[scores={mech_mineore=1..}] at @s as @e[type=item,limit=1,sort=nearest,nbt={Item:{id:"minecraft:petrified_oak_slab",Count:1b},Age:0s}] at @s run function mechanization:machines/worldgen/mine_ore
