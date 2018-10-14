@@ -13,7 +13,7 @@ execute if score temp_0 mech_data matches 2.. run scoreboard players remove temp
 execute if score temp_0 mech_data matches 2.. if entity @s[tag=mech_upgraded] run scoreboard players remove temp_0 mech_data 1
 execute if score temp_0 mech_data matches 1.. store result block ~ ~ ~ Items[0].tag.Damage int 1 run scoreboard players get temp_0 mech_data
 
-scoreboard players set temp_0 mech_data 0
+scoreboard players set temp_0 mech_data -1
 scoreboard players set temp_1 mech_data 0
 execute if score @s mech_power matches 128.. if block ~ ~ ~ dropper{Items:[{tag:{Unbreakable:1b, du_durability:1b}}]} store result score temp_0 mech_data run data get block ~ ~ ~ Items[0].tag.durability_max
 execute if score temp_0 mech_data matches 1.. store result score temp_1 mech_data run data get block ~ ~ ~ Items[0].tag.AttributeModifiers[0].Amount

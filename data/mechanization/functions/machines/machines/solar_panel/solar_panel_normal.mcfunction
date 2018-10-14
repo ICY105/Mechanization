@@ -1,7 +1,7 @@
-execute if block ~ ~ ~ minecraft:daylight_detector[power=15] run scoreboard players add @s mech_power 10
-execute if block ~ ~ ~ minecraft:daylight_detector[power=14] run scoreboard players add @s mech_power 10
-execute if block ~ ~ ~ minecraft:daylight_detector[power=13] run scoreboard players add @s mech_power 8
-execute if block ~ ~ ~ minecraft:daylight_detector[power=12] run scoreboard players add @s mech_power 8
+execute if block ~ ~ ~ minecraft:daylight_detector[power=15,inverted=false] run scoreboard players add @s mech_power 10
+execute if block ~ ~ ~ minecraft:daylight_detector[power=14,inverted=false] run scoreboard players add @s mech_power 10
+execute if block ~ ~ ~ minecraft:daylight_detector[power=13,inverted=false] run scoreboard players add @s mech_power 8
+execute if block ~ ~ ~ minecraft:daylight_detector[power=12,inverted=false] run scoreboard players add @s mech_power 8
 execute if block ~ ~ ~ minecraft:daylight_detector[power=11] run scoreboard players add @s mech_power 6
 execute if block ~ ~ ~ minecraft:daylight_detector[power=10] run scoreboard players add @s mech_power 6
 execute if block ~ ~ ~ minecraft:daylight_detector[power=9] run scoreboard players add @s mech_power 4

@@ -1,7 +1,7 @@
 #Machine Ticks
 execute if score timer_20 du_data matches 6 as @e[tag=mech_furnace_gen] at @s run function mechanization:machines/machines/furnace_generator
 execute if score timer_20 du_data matches 7 as @e[tag=mech_ele_furnace] at @s run function mechanization:machines/machines/electric_furnace
-execute if score timer_20 du_data matches 8 run function mechanization:machines/machines/solar_panel/solar_panel
+execute if score timer_20 du_data matches 8 as @e[tag=mech_solar_panel] at @s run function mechanization:machines/machines/solar_panel/solar_panel
 execute if score timer_20 du_data matches 9 as @e[tag=mech_grinder] at @s run function mechanization:machines/machines/grinder/grinder
 execute if score timer_20 du_data matches 10 as @e[tag=mech_alloy_furnace] at @s run function mechanization:machines/machines/alloy_furnace/alloy_furnace
 execute if score timer_20 du_data matches 11 as @e[tag=mech_block_breaker] at @s run function mechanization:machines/machines/block_breaker
