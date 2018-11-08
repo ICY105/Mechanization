@@ -1,3 +1,4 @@
+advancement revoke @s only du:triggers/player_head
 
 scoreboard players set @s du_placehead 0
 

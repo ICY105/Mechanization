@@ -16,5 +16,5 @@ tag @s remove du_right_click
 tag @s[scores={du_talked=1..}] add du_right_click
 
 tag @s remove du_left_click
-tag @s[scores={du_damage=1..}] add du_left_click
+tag @s[tag=du_hit_entity] add du_left_click
 

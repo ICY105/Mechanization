@@ -12,10 +12,6 @@ scoreboard objectives add du_sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add du_jump minecraft.custom:minecraft.jump
 
 scoreboard objectives add du_talked minecraft.custom:minecraft.talked_to_villager
-scoreboard objectives add du_damage minecraft.custom:minecraft.damage_dealt
-scoreboard objectives add du_hurt minecraft.custom:minecraft.damage_taken
-
-scoreboard objectives add du_placehead minecraft.used:minecraft.player_head
 
 scoreboard objectives add du_health dummy
 scoreboard objectives add du_armor armor
@@ -45,8 +41,6 @@ scoreboard objectives add du_shoe minecraft.used:minecraft.stone_hoe
 scoreboard objectives add du_ihoe minecraft.used:minecraft.iron_hoe
 scoreboard objectives add du_dhoe minecraft.used:minecraft.diamond_hoe
 
-scoreboard objectives add du_furnace minecraft.used:minecraft.furnace
-
 team add du_nopush
 team modify du_nopush collisionRule never
 
@@ -60,4 +54,6 @@ function du:math/abs
 scoreboard players operation rng_seed du_data = out_0 du_data
 
 #ID stuff
-scoreboard players add incr_id du_uuid 1
+execute unless score incr_id du_uuid matches ..2147483647 run scoreboard players set incr_id du_uuid 0
+
+say [Loaded Datapack Utils vX by ImCoolYeah105]

@@ -37,4 +37,4 @@ execute if score temp_4 du_data matches 0 if score @s du_shoe matches 1.. run fu
 execute if score temp_4 du_data matches 0 if score @s du_ihoe matches 1.. run function du:player/durability/damage_held_item
 execute if score temp_4 du_data matches 0 if score @s du_dhoe matches 1.. run function du:player/durability/damage_held_item
 
-execute if score temp_4 du_data matches 0 if score @s du_damage matches 1.. run function du:player/durability/damage_held_item
+execute if score temp_4 du_data matches 0 if entity @s[tag=du_hit_entity] run function du:player/durability/damage_held_item

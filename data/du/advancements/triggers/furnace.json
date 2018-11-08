@@ -1,0 +1,22 @@
+{
+	"display": {
+		"title": "furnace","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:base"
+    },
+	"criteria": {
+        "furnace": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+                "item": {
+                    "item": "minecraft:furnace"
+                }
+            }
+		}
+    },
+	"rewards":{ 
+		"function":"du:player/triggers/place_furnace"
+	}
+}

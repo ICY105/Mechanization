@@ -49,12 +49,6 @@ scoreboard objectives add mech_breakgranit minecraft.mined:minecraft.granite
 scoreboard objectives add mech_breakdiorit minecraft.mined:minecraft.diorite
 scoreboard objectives add mech_breakandesi minecraft.mined:minecraft.andesite
 
-team add mech_nopush
-team modify mech_nopush collisionRule never
-
-#scoreboard values setup
-scoreboard players set con_10 mech_data 10
-
 #set up ore gen
 scoreboard objectives add du_data dummy
 scoreboard players set worldgen du_data 1
@@ -67,3 +61,5 @@ setblock ~-1 1 ~ end_portal
 #Installation message
 tellraw @a[tag=!mech_installation] ["",{"translate":"mech.text.load_1","color":"dark_red"},{"text":"mech.text.load_2","color":"blue"}]
 tag @a add mech_installation
+
+say [Loaded Mechanization vX by ImCoolYeah105]

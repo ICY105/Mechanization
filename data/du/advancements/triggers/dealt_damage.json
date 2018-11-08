@@ -1,0 +1,17 @@
+{
+	"display": {
+		"title": "entity_hurt_player","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false,
+		"parent":"du:base"
+    },
+	"criteria": {
+        "entity_hurt_player": {
+			"trigger": "minecraft:player_hurt_entity"
+		}
+    },
+	"rewards":{ 
+		"function":"du:player/triggers/dealt_damage"
+	}
+}

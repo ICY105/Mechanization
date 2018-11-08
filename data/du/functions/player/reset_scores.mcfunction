@@ -22,8 +22,6 @@ scoreboard players set @s du_shoe 0
 scoreboard players set @s du_ihoe 0
 scoreboard players set @s du_dhoe 0
 
-scoreboard players set @s du_damage 0
 scoreboard players set @s du_talked 0
-scoreboard players set @s du_hurt 0
 
-scoreboard players set @s du_furnace 0
+tag @s remove du_hit_entity
