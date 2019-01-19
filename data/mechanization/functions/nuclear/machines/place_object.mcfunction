@@ -1,5 +1,5 @@
 #Centrifuge
-execute if score @s mech_data matches 3000 run summon armor_stand ~ ~ ~ {Tags:["mech_centrifuge","mech_reciever"],Invisible:1,Invulnerable:1,NoGravity:1,ShowArms:1,DisabledSlots:1973790,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,Unbreakable:1,Damage:86}}]}
+execute if score @s mech_data matches 3000 run summon armor_stand ~ ~ ~ {Tags:["mech_centrifuge","mech_receiver"],Invisible:1,Invulnerable:1,NoGravity:1,ShowArms:1,DisabledSlots:1973790,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,Unbreakable:1,Damage:86}}]}
 execute if score @s mech_data matches 3000 run summon armor_stand ~ ~ ~ {Tags:["mech_centrifuge_model"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{Unbreakable:1,Damage:85}}]}
 execute if score @s mech_data matches 3000 run scoreboard players set @e[tag=mech_centrifuge,distance=..0.25] mech_power 0
 execute if score @s mech_data matches 3000 run setblock ~ ~ ~ minecraft:barrier

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.resource.ingot","with":[{"translate":"mech.resource.structural"}],"color":"blue","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1340, CustomModelData: 6421340, OreDict:[\"ingotStructural\"], HideFlags: 32}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

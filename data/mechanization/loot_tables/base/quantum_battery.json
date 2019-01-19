@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:blast_furnace",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.block.battery.quantum","color":"dark_purple","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"mech.block.battery.storage","color":"white","italic":false,"with":[500000]},{"translate":"mech.block.battery.rate","color":"white","italic":false,"with":[1000]},{"translate":"mech.block.battery.range","color":"white","italic":false,"with":[16]}]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1003, CustomModelData: 6421027, HideFlags: 6,BlockEntityTag: {Lock: \"§mechanization\"}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

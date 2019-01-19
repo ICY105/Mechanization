@@ -1,7 +1,0 @@
-{
-	"values":[
-		"mechanization:machines/worldgen/place_ore",
-		"mechanization:nuclear/worldgen/place_ore",
-		"mechanization:assembly/machines/place_block"
-	]
-}

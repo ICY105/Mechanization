@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:blast_furnace",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.resource.block","with":[{"translate":"mech.resource.conductive"}],"color":"gold","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1353, CustomModelData: 6421353, OreDict:[\"blockConductive\"], HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

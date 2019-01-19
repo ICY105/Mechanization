@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.nether_upgrade","color":"dark_purple","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"mech.item.machine_upgrade.lore_1","color":"white","italic":false},{"translate":"mech.item.machine_upgrade.lore_2","color":"white","italic":false}]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1103, CustomModelData: 6421103, HideFlags: 6, Unbreakable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

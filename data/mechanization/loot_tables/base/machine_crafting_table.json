@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:blast_furnace",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.block.machine_crafting_table","color":"dark_aqua","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"mech.block.machine_crafting_table.lore_1","color":"white","italic":false}]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1005, CustomModelData: 6421037, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

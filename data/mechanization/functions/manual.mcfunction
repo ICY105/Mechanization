@@ -1,0 +1,1 @@
+give @p written_book{pages: ["[{\"translate\":\"mech.manual.background\",\"color\":\"white\"},{\"translate\":\"offset.-48\",\"with\":[{\"text\":\"\\uee12\"}]},{\"translate\":\"mech.manual.page_1\",\"color\":\"black\"}]"], author: "ImCoolYeah105", title: "Mechanical Manual"}

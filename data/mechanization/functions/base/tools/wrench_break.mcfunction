@@ -1,36 +1,39 @@
 
-#store power
+#get data
 scoreboard players set temp_3 mech_data 0
-execute store result score temp_3 mech_data run scoreboard players get @e[scores={mech_power=1..},sort=nearest,limit=1,distance=..0.5] mech_power
+scoreboard players operation temp_3 mech_data = @s[tag=!mech_storageq] mech_power
 
-#Machine Upgrade
-execute as @e[tag=mech_upgraded,distance=..0.5] run function give:mech_base/machine_upgrade
+scoreboard players set temp_4 mech_data 0
+execute if entity @s[tag=mech_upgraded] run scoreboard players set temp_4 mech_data 1
+execute if entity @s[tag=mech_upgrade_nether] run scoreboard players set temp_4 mech_data 2
+execute if entity @s[tag=mech_upgrade_ender] run scoreboard players set temp_4 mech_data 3
 
 #Batteries
-execute as @e[tag=mech_storage1,distance=..0.5] run function give:mech_base/battery_tier_1
-execute as @e[tag=mech_storage2,distance=..0.5] run function give:mech_base/battery_tier_2
-execute as @e[tag=mech_storage3,distance=..0.5] run function give:mech_base/battery_tier_3
-execute as @e[tag=mech_storageq,distance=..0.5] run function give:mech_base/battery_quantum
-execute as @e[tag=mech_power_storage,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_power_storage,distance=..0.5]
+execute if entity @s[tag=mech_storage1] run loot spawn ~ ~ ~ loot mechanization:base/tier_1_battery
+execute if entity @s[tag=mech_storage2] run loot spawn ~ ~ ~ loot mechanization:base/tier_2_battery
+execute if entity @s[tag=mech_storage3] run loot spawn ~ ~ ~ loot mechanization:base/tier_3_battery
+execute if entity @s[tag=mech_storageq] run loot spawn ~ ~ ~ loot mechanization:base/quantum_battery
+execute if entity @s[tag=mech_power_storage] at @s run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_power_storage]
 
 #Energy Relay
-execute as @e[tag=mech_energy_relay,distance=..0.5] run function give:mech_base/energy_relay
-execute as @e[tag=mech_energy_relay,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_energy_relay,distance=..0.5]
+execute if entity @s[tag=mech_energy_relay] run loot spawn ~ ~ ~ loot mechanization:base/energy_relay
+execute if entity @s[tag=mech_energy_relay] at @s run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_energy_relay]
 
 #Machine Crafter
-execute as @e[tag=mech_machine_crafter,distance=..0.5] run function give:mech_base/machine_crafter
-execute as @e[tag=mech_machine_crafter,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_machine_crafter,distance=..0.5]
+execute if entity @s[tag=mech_machine_crafter] run loot spawn ~ ~ ~ loot mechanization:base/machine_crafting_table
+execute if entity @s[tag=mech_machine_crafter] at @s run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_machine_crafter]
 
-#Machine Crafter
-execute as @e[tag=mech_network_reformer,distance=..0.5] run function give:mech_base/network_reformer
-execute as @e[tag=mech_network_reformer,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_network_reformer,distance=..0.5]
+#function #mechanization:wrench_break
 
-function #mechanization:wrench_break
+#store data to item
+execute if score temp_3 mech_data matches 1.. store result entity @e[type=item,sort=nearest,limit=1] Item.tag.mech_energy int 1 run scoreboard players get temp_3 mech_data
+execute if score temp_3 mech_data matches 1.. run data merge block -29999999 0 1602 {Text1:"[{\"translate\":\"mech.text.multimeter.energy\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"score\":{\"name\":\"temp_3\",\"objective\":\"mech_data\"},\"color\":\"gray\"}]}]"}
+execute if score temp_3 mech_data matches 1.. as @e[type=item,sort=nearest,limit=1] run data modify entity @s Item.tag.display.Lore append from block -29999999 0 1602 Text1
 
-#store power to item
-execute if score temp_3 mech_data matches 1.. run data merge entity @e[type=item,sort=nearest,limit=1,distance=..0.5] {Item:{tag:{mech_energy:0,display:{Lore:["Stored Energy"]}}}}
-execute if score temp_3 mech_data matches 1.. store result entity @e[type=item,sort=nearest,limit=1,distance=..0.5] Item.tag.mech_energy int 1 run scoreboard players get temp_3 mech_data
+execute if score temp_4 mech_data matches 1 as @e[type=item,sort=nearest,limit=1] run data modify entity @s Item.tag.display.Lore append value "{\"translate\":\"mech.item.machine_upgrade\",\"color\":\"gray\",\"italic\":false}"
+execute if score temp_4 mech_data matches 2 as @e[type=item,sort=nearest,limit=1] run data modify entity @s Item.tag.display.Lore append value "{\"translate\":\"mech.item.nether_upgrade\",\"color\":\"gray\",\"italic\":false}"
+execute if score temp_4 mech_data matches 3 as @e[type=item,sort=nearest,limit=1] run data modify entity @s Item.tag.display.Lore append value "{\"translate\":\"mech.item.ender_upgrade\",\"color\":\"gray\",\"italic\":false}"
+execute if score temp_4 mech_data matches 1.. store result entity @e[type=item,sort=nearest,limit=1] Item.tag.mech_upgrade int 1 run scoreboard players get temp_4 mech_data

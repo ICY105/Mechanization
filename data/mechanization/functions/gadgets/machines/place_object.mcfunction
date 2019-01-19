@@ -1,6 +1,6 @@
 
 #Charging Station
-execute if score @s mech_data matches 4000 run summon armor_stand ~ ~-0.25 ~ {Tags:["mech_charging_station","mech_reciever"],Marker:0b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:1973790,ShowArms:1,Small:1,Pose:{RightArm:[-90f,-90f,90f]},ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,Unbreakable:1,Damage:111}}]}
+execute if score @s mech_data matches 4000 run summon armor_stand ~ ~-0.25 ~ {Tags:["mech_charging_station","mech_receiver"],Marker:0b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:1973790,ShowArms:1,Small:1,Pose:{RightArm:[-90f,-90f,90f]},ArmorItems:[{},{},{},{id:diamond_shovel,Count:1b,tag:{mech_power:0,mech_gridid:0,Unbreakable:1,Damage:111}}]}
 execute if score @s mech_data matches 4000 run scoreboard players set @e[tag=mech_charging_station,distance=..0.25] mech_power 0
 execute if score @s mech_data matches 4000 run setblock ~ ~ ~ minecraft:barrier
 

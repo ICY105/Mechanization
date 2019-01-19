@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:blast_furnace",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.resource.block","with":[{"translate":"mech.resource.uranium"}],"color":"green","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1434, CustomModelData: 6421434, OreDict:[\"blockUranium\"], HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:comparator[facing=south] store success score @s mech_data run setblock ~ ~ ~ minecraft:comparator[facing=west]
-execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:comparator[facing=west] store success score @s mech_data run setblock ~ ~ ~ minecraft:comparator[facing=north]
-execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:comparator[facing=north] store success score @s mech_data run setblock ~ ~ ~ minecraft:comparator[facing=east]
-execute if entity @s[scores={mech_data=0}] if block ~ ~ ~ minecraft:comparator[facing=east] store success score @s mech_data run setblock ~ ~ ~ minecraft:comparator[facing=south]
+execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:comparator[facing=south] store success score in_0 mech_data run setblock ~ ~ ~ minecraft:comparator[facing=west]
+execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:comparator[facing=west] store success score in_0 mech_data run setblock ~ ~ ~ minecraft:comparator[facing=north]
+execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:comparator[facing=north] store success score in_0 mech_data run setblock ~ ~ ~ minecraft:comparator[facing=east]
+execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:comparator[facing=east] store success score in_0 mech_data run setblock ~ ~ ~ minecraft:comparator[facing=south]

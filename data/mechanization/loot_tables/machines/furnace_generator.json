@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:black_shulker_box",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.block.furnace_generator","color":"dark_aqua","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"mech.block.furnace_generator.lore_1","color":"white","italic":false},{"translate":"mech.lore.generate","color":"white","italic":false,"with":[16]}]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 2002, CustomModelData: 6422002, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

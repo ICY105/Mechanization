@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.resource.dust","with":[{"translate":"mech.resource.plutonium"}],"color":"blue","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1442, CustomModelData: 6421442, du_smelt_id: 1442, OreDict:[\"dustPlutonium\"], HideFlags: 32}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
