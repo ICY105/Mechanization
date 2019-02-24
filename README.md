@@ -14,8 +14,6 @@ The wiki has overview videos, recipes, and in-depth descriptions of all items.
 
 Now on curseforge! https://minecraft.curseforge.com/projects/mechanization-datapack
 
-(cannot embed curseforge wigit on github :/)
-
 ![prerelease](https://i.imgur.com/S04DKyE.png)
 
 Fan of the project? Consider supporting its development on [Patreon](https://www.patreon.com/ImCoolYeah105).
