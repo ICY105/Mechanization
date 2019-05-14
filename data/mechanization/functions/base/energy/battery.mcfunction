@@ -3,6 +3,7 @@
 #in_1 mech_data: max output buffer
 #in_2 mech_data: max battery energy
 #in_3 mech_data: range (12|16|24)
+#in_4 mech_data: 0 for no effects, 1 for effects
 
 #setup
 scoreboard players operation temp_1 mech_data = @s mech_gridid
@@ -31,3 +32,4 @@ execute if score in_3 mech_data matches 24 if score temp_0 mech_data matches 1..
 
 scoreboard players operation temp_2 mech_data -= temp_0 mech_data
 scoreboard players operation @s mech_power -= temp_2 mech_data
+ 

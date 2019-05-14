@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 4405, OreDict:["upgradeVerticalGrip"],Unbreakable:1,Damage:152,HideFlags:6,display:{Lore:["§fMax 1 Upgrades","§fDecreases vertical recoil."],Name:"{\"translate\":\"mech.item.vertical_grip\",\"color\":\"gray\",\"italic\":false}"}}}}
+loot give @s loot mechanization:gadgets/vertical_grip

@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.plasma_smg","color":"gray","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 4102, CustomModelData: 6424102, HideFlags: 6, Unbreakable:1b, mech_gun:{energy:16, fire_rate:2, heat:35, recoil_x:6, recoil_y:6, damage:30, velocity:5, bouncy:0}}"
+            },
+			{
+				"function":"set_attributes",
+				"modifiers": [
+					{
+						"name":"generic.attackDamage",
+						"attribute":"generic.movementSpeed",
+						"operation":"addition",
+						"amount":0,
+						"slot":"mainhand"
+					},
+					{
+						"name":"generic.attackSpeed",
+						"attribute":"generic.attackSpeed",
+						"operation":"addition",
+						"amount":1024,
+						"slot":"mainhand"
+					}
+				]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

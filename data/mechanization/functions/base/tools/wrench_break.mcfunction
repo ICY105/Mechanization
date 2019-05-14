@@ -26,7 +26,7 @@ execute if entity @s[tag=mech_machine_crafter] run loot spawn ~ ~ ~ loot mechani
 execute if entity @s[tag=mech_machine_crafter] at @s run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_machine_crafter]
 
-#function #mechanization:wrench_break
+function #mechanization:wrench_break
 
 #store data to item
 execute if score temp_3 mech_data matches 1.. store result entity @e[type=item,sort=nearest,limit=1] Item.tag.mech_energy int 1 run scoreboard players get temp_3 mech_data

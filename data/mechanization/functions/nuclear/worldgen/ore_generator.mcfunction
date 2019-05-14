@@ -1,3 +1,0 @@
-function mechanization:nuclear/worldgen/uranium_ore/generate
-function mechanization:nuclear/worldgen/uranium_ore/generate
-function mechanization:nuclear/worldgen/uranium_ore/generate

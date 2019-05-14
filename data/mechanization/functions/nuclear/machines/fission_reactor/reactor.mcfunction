@@ -12,12 +12,14 @@ tag @s remove mech_plutonium
 
 execute if entity @s[nbt={HandItems:[{tag:{OreDict:["cellUranium"]}},{}]}] run tag @s add mech_uranium
 execute if entity @s[nbt={HandItems:[{tag:{OreDict:["cellPlutonium"]}},{}]}] run tag @s add mech_plutonium
-tag @s[tag=mech_uranium] add mech_active
-tag @s[tag=mech_plutonium] add mech_active
 
-execute if entity @s[tag=!mech_active] store success entity @s ArmorItems[3].tag.Damage short 87 if entity @s
-execute if entity @s[tag=mech_uranium] store success entity @s ArmorItems[3].tag.Damage short 88 if entity @s
-execute if entity @s[tag=mech_plutonium] store success entity @s ArmorItems[3].tag.Damage short 89 if entity @s
+execute store result score temp_0 mech_data run data get entity @s HandItems[0].tag.FuelGrade
+execute if score temp_0 mech_data matches 100.. run tag @s[tag=mech_uranium] add mech_active
+execute if score temp_0 mech_data matches 100.. run tag @s[tag=mech_plutonium] add mech_active
+
+execute if entity @s[tag=!mech_uranium,tag=!mech_plutonium] store success entity @s ArmorItems[3].tag.CustomModelData int 6423002 if entity @s
+execute if entity @s[tag=mech_uranium] store success entity @s ArmorItems[3].tag.CustomModelData int 6423203 if entity @s
+execute if entity @s[tag=mech_plutonium] store success entity @s ArmorItems[3].tag.CustomModelData int 6423204 if entity @s
 
 execute if entity @s[tag=mech_active] run function mechanization:nuclear/machines/fission_reactor/heat_process
 

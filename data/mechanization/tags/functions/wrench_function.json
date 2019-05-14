@@ -1,6 +1,9 @@
 {
 	"values":[
 		"mechanization:base/tools/wrench_function",
-		"mechanization:base/tools/wrench_rotate_machine"
+		"mechanization:base/tools/wrench_rotate_machine",
+		"mechanization:machines/tools/wrench_function",
+		"mechanization:nuclear/tools/wrench_function",
+		"mechanization:gadgets/tools/wrench_function"
 	]
 }

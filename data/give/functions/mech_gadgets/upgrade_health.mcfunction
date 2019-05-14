@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 4316, OreDict:["upgradeHealth"],Unbreakable:1,Damage:176,HideFlags:6,display:{Lore:["§fMax 1 Upgrade per Armor","§f+5 Health"],Name:"{\"translate\":\"mech.item.upgrade_health\",\"color\":\"red\",\"italic\":false}"}}}}
+loot give @s loot mechanization:gadgets/upgrade_health

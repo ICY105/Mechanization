@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 4300, OreDict:["upgradeBase"],Unbreakable:1,Damage:158,HideFlags:6,display:{Name:"{\"translate\":\"mech.item.upgrade_base\",\"color\":\"dark_red\",\"italic\":false}"}}}}
+loot give @s loot mechanization:gadgets/upgrade_base

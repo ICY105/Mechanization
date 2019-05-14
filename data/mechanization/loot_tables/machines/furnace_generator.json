@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:black_shulker_box",
+		  "name": "minecraft:blast_furnace",
           "functions": [
             {
 			  "function": "minecraft:set_name",
@@ -14,11 +14,11 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"mech.block.furnace_generator.lore_1","color":"white","italic":false},{"translate":"mech.lore.generate","color":"white","italic":false,"with":[16]}]
+			  "lore": [{"translate":"mech.lore.generate","with":["12"],"color":"white","italic":false}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 2002, CustomModelData: 6422002, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 2001, CustomModelData: 6422001, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
             }
           ]
         }

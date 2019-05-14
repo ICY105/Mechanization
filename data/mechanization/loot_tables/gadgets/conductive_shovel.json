@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:golden_shovel",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.tool.shovel","color":"yellow","italic":false,"with":[{"translate":"mech.resource.conductive"}]}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 4519, CustomModelData: 6424519, du_dur:{enabled:1b,max_dur:256}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

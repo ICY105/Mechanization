@@ -1,6 +1,9 @@
-execute if block ~ ~ ~ dropper[triggered=true] store success entity @s ArmorItems[3].tag.Damage short 96 if entity @s
-execute if block ~ ~ ~ dropper[triggered=false] store success entity @s ArmorItems[3].tag.Damage short 95 if entity @s
+function du:world/blocks/is_active
 
-data merge entity @s {Fire:32676s}
-execute unless block ~ ~ ~ dropper run function give:mech_machines/machine_frame_tier_2
-execute unless block ~ ~ ~ dropper run kill @s
+execute if score out_0 du_data matches 0 store success entity @s ArmorItems[3].tag.CustomModelData int 6423001 if entity @s
+execute if score out_0 du_data matches 1..2 store success entity @s ArmorItems[3].tag.CustomModelData int 6423202 if entity @s
+
+execute if score out_0 du_data matches 0 run tag @s remove mech_active
+execute if score out_0 du_data matches 1..2 run tag @s add mech_active
+
+execute unless block ~ ~ ~ barrier run kill @s

@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 4309, OreDict:["upgradeWither"],Unbreakable:1,Damage:167,HideFlags:6,display:{Lore:["§fMax 1 Upgrade","§fWithers target."],Name:"{\"translate\":\"mech.item.upgrade_wither\",\"color\":\"gray\",\"italic\":false}"}}}}
+loot give @s loot mechanization:gadgets/upgrade_wither

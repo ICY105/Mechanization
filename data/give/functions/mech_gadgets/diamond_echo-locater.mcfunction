@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 4101, du_click_detect:1b,Unbreakable:1,Damage:187,HideFlags:6,display:{Lore:["§fDetects caves.","§fRange: 24 blocks."],Name:"{\"translate\":\"mech.item.diamond_echo-locater\",\"color\":\"dark_aqua\",\"italic\":false}"}}}}
+loot give @s loot mechanization:gadgets/diamond_echo-locator

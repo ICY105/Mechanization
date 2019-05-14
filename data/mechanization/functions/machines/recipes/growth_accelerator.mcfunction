@@ -1,4 +1,4 @@
-replaceitem block ~ ~ ~ container.16 diamond_shovel{du_nerf:1b, mech_itemid: 2004, du_click_detect:1b, Unbreakable:1, Damage:54, HideFlags:6, display: {Name: "{\"translate\":\"mech.block.growth_accelerator\",\"color\":\"green\",\"italic\":false}", Lore: ["§fSpeeds up crop growth","§fon above farm block.","§fUses: 16 kW"]}}
+loot replace block ~ ~ ~ container.16 loot mechanization:machines/growth_accelerator
 scoreboard players set out_0 du_data 2
 scoreboard players set out_1 du_data 16
 scoreboard players set out_2 du_data 2

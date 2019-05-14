@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:diamond_axe",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.tool.axe","color":"dark_red","italic":false,"with":[{"translate":"mech.resource.crystal"}]}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 452, CustomModelData: 6424522, du_dur:{enabled:1b,max_dur:24}, Enchantments:[{id:\"minecraft:looting\",lvl:5},{id:\"minecraft:fortune\",lvl:5}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

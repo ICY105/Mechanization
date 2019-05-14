@@ -9,12 +9,14 @@ execute if score temp_0 mech_data matches 12000.. run scoreboard players remove 
 scoreboard players remove temp_0 mech_data 6000
 
 execute store result entity @s Pose.Head[0] float 0.0075 run scoreboard players get temp_0 mech_data
-execute if block ~ ~ ~ daylight_detector[inverted=false] store success entity @s ArmorItems[3].tag.Damage short 58 if entity @s
-execute if block ~ ~ ~ daylight_detector[inverted=true] store success entity @s ArmorItems[3].tag.Damage short 59 if entity @s
+execute if block ~ ~ ~ daylight_detector[inverted=false] store success entity @s ArmorItems[3].tag.CustomModelData int 6422909 if entity @s
+execute if block ~ ~ ~ daylight_detector[inverted=true] store success entity @s ArmorItems[3].tag.CustomModelData int 6422910 if entity @s
 execute unless block ~ ~ ~ daylight_detector run kill @s
 
-execute if entity @s[tag=!mech_upgraded,scores={mech_power=..2000}] run function mechanization:machines/machines/solar_panel/solar_panel_normal
-execute if entity @s[tag=mech_upgraded,scores={mech_power=..2000}] run function mechanization:machines/machines/solar_panel/solar_panel_upgraded
+execute if entity @s[tag=!mech_upgraded,scores={mech_power=..2000}] run function mechanization:machines/machines/solar_panel/normal
+execute if entity @s[tag=mech_upgraded,tag=!mech_upgrade_ender,tag=!mech_upgrade_nether,scores={mech_power=..2000}] run function mechanization:machines/machines/solar_panel/upgraded
+execute if entity @s[tag=mech_upgrade_ender,scores={mech_power=..2000}] run function mechanization:machines/machines/solar_panel/ender
+execute if entity @s[tag=mech_upgrade_nether,scores={mech_power=..2000}] run function mechanization:machines/machines/solar_panel/nether
 
 #store scoreboard values
 execute store result entity @s ArmorItems[3].tag.mech_power int 1 run scoreboard players get @s mech_power

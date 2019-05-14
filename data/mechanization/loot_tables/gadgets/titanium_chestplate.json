@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.tool.chestplate","color":"light_purple","italic":false,"with":[{"translate":"mech.resource.titanium"}]}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 4206, CustomModelData: 6424206, du_dur:{enabled:1b,max_dur:792},display:{color:13216198}}"
+            },
+			{
+				"function":"set_attributes",
+				"modifiers": [
+					{
+						"name":"generic.armor",
+						"attribute":"generic.armor",
+						"operation":"addition",
+						"amount":8,
+						"slot":"chest"
+					},
+					{
+						"name":"generic.armorToughness",
+						"attribute":"generic.attackSpeed",
+						"operation":"addition",
+						"amount":2,
+						"slot":"chest"
+					}
+				]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+	"values":[
+		"#mechanization:block_breaker_upgrade",
+		"minecraft:obsidian",
+		"minecraft:coal_ore",
+		"minecraft:iron_ore",
+		"minecraft:gold_ore",
+		"minecraft:lapis_ore",
+		"minecraft:redstone_ore",
+		"minecraft:emerald_ore",
+		"minecraft:diamond_ore",
+		"minecraft:nether_quartz_ore"
+	]
+}

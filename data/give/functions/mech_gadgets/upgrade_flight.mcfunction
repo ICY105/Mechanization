@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 4320, OreDict:["upgradeFlight"],Unbreakable:1,Damage:177,HideFlags:6,display:{Lore:["§fMax 1 Upgrade","§fLike swimming on air."],Name:"{\"translate\":\"mech.item.upgrade_flight\",\"color\":\"blue\",\"italic\":false}"}}}}
+loot give @s loot mechanization:gadgets/upgrade_flight

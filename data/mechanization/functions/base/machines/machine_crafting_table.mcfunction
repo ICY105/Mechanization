@@ -5,3 +5,4 @@ data merge entity @s {Fire:32000s}
 
 data modify block ~ ~ ~ Items[{tag:{du_gui:1b}}].id set value "minecraft:structure_block"
 data modify block ~ ~ ~ Items[{tag:{du_gui:1b}}].tag set value {CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+replaceitem block ~ ~ ~ container.0 minecraft:structure_block{CustomModelData:6421201,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}

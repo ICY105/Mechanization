@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {CustomName:"{\"translate\":\"mech.block.electric_furnace\",\"color\":\"dark_blue\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 2003, du_click_detect:1b,Unbreakable:1,Damage:46,HideFlags:6,display:{Name:"{\"translate\":\"mech.block.electric_furnace\",\"color\":\"dark_blue\",\"italic\":false}",Lore:["§fSmelts items.","§fUses 20 kW"]}}}}
+loot give @s loot mechanization:machines/electric_furnace

@@ -1,1 +1,2 @@
-loot give @s loot mechanization:base/mechanical_manual
+function mechanization:manual
+loot give @s mine -29999999 0 1601 minecraft:golden_pickaxe{drop_contents:true}

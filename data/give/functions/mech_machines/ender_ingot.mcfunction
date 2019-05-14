@@ -1,1 +1,0 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:firework_star",Count:1,tag:{mech_itemid: 2113, Explosion: {Colors: [I; 8388727]}, HideFlags: 32, display: {Name: "{\"translate\":\"mech.item.ender_ingot\",\"color\":\"dark_purple\",\"italic\":false}"}, OreDict: ["ingotEnder"]}}}

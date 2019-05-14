@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:diamond_sword",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.tool.sword","color":"dark_red","italic":false,"with":[{"translate":"mech.resource.crystal_composite"}]}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 4520, CustomModelData: 6424520, du_dur:{enabled:1b,max_dur:24}, Enchantments:[{id:\"minecraft:looting\",lvl:5}]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4,12 +4,18 @@ execute unless score @s mech_power matches -2147483648.. store result score @s m
 execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s ArmorItems[3].tag.mech_gridid
 
 #main
-execute if entity @s[tag=mech_active,scores={mech_power=..319}] run data merge block ~ ~ ~ {RequiredPlayerRange: 16s, MaxSpawnDelay: 800s, MinSpawnDelay: 200s, Delay: 600s}
-execute if entity @s[tag=!mech_active,tag=mech_upgraded,scores={mech_power=320..}] run data merge block ~ ~ ~ {RequiredPlayerRange: 32s, MaxSpawnDelay: 301s, MinSpawnDelay: 300s, Delay: 300s}
-execute if entity @s[tag=!mech_active,tag=mech_upgraded,scores={mech_power=320..}] run data merge block ~ ~ ~ {RequiredPlayerRange: 32s, MaxSpawnDelay: 151s, MinSpawnDelay: 150s, Delay: 150s}
-
-tag @s[scores={mech_power=..319}] remove mech_active
+function du:world/blocks/is_active
 tag @s[scores={mech_power=320..}] add mech_active
+tag @s[scores={mech_power=..319}] remove mech_active
+execute if score out_0 mech_data matches 1..2 run tag @s remove mech_active
+
+execute if score out_0 mech_data matches 0 if entity @s[tag=!mech_active,scores={mech_power=..319}] run data merge block ~ ~ ~ {RequiredPlayerRange: 16s, MaxSpawnDelay: 800s, MinSpawnDelay: 200s, Delay: 600s}
+execute if score out_0 mech_data matches 1..2 if entity @s[tag=!mech_active,scores={mech_power=..319}] run data merge block ~ ~ ~ {RequiredPlayerRange: 0s, MaxSpawnDelay: 800s, MinSpawnDelay: 200s, Delay: 600s}
+
+execute if entity @s[tag=mech_active,tag=!mech_upgraded] run data merge block ~ ~ ~ {RequiredPlayerRange: 24s, MaxSpawnDelay: 401s, MinSpawnDelay: 400s}
+execute if entity @s[tag=mech_active,tag=mech_upgraded,tag=!mech_upgrade_ender,tag=!mech_upgrade_nether] run data merge block ~ ~ ~ {RequiredPlayerRange: 24s, MaxSpawnDelay: 200s, MinSpawnDelay: 200s}
+execute if entity @s[tag=mech_active,tag=mech_upgrade_ender] run data merge block ~ ~ ~ {RequiredPlayerRange: 48s, MaxSpawnDelay: 200s, MinSpawnDelay: 200s}
+execute if entity @s[tag=mech_active,tag=!mech_upgrade_nether] run data merge block ~ ~ ~ {RequiredPlayerRange: 24s, MaxSpawnDelay: 100s, MinSpawnDelay: 100s}
 
 scoreboard players remove @s[tag=mech_active] mech_power 320
 

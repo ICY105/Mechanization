@@ -16,6 +16,9 @@ execute if entity @s[tag=mech_upgrade_nether] run scoreboard players set in_2 me
 
 scoreboard players set in_3 mech_data 12
 
+execute if entity @s[tag=mech_no_effects] run scoreboard players set in_4 mech_data 0
+execute if entity @s[tag=mech_effects] run scoreboard players set in_4 mech_data 1
+
 function mechanization:base/energy/battery
 
 #store power to nbt

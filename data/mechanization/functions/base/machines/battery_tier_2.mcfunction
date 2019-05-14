@@ -31,6 +31,10 @@ execute if entity @s[tag=mech_upgraded] run scoreboard players set in_2 mech_dat
 execute if entity @s[tag=mech_upgrade_nether] run scoreboard players set in_2 mech_data 700000
 
 scoreboard players set in_3 mech_data 16
+
+execute if entity @s[tag=mech_no_effects] run scoreboard players set in_4 mech_data 0
+execute if entity @s[tag=mech_effects] run scoreboard players set in_4 mech_data 1
+
 function mechanization:base/energy/battery
 
 #energy display

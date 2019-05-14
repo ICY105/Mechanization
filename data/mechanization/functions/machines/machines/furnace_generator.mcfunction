@@ -1,23 +1,32 @@
-data merge entity @s {Fire:32676}
 
-#load scoreboard values
+## load scoreboard values
 execute unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s ArmorItems[3].tag.mech_power
 execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s ArmorItems[3].tag.mech_gridid
 
-#main
-scoreboard players set temp_0 mech_data 0
-execute store success score temp_0 mech_data if block ~ ~ ~ minecraft:furnace[lit=true] if entity @s
-execute if score temp_0 mech_data matches 1 if entity @s[scores={mech_power=..2000},tag=!mech_upgraded] run scoreboard players add @s mech_power 16
-execute if score temp_0 mech_data matches 1 if entity @s[scores={mech_power=..2000},tag=mech_upgraded] run scoreboard players add @s mech_power 24
-execute if score temp_0 mech_data matches 1 if entity @s[scores={mech_power=..2000}] run playsound minecraft:block.fire.ambient block @a[distance=..6] ~ ~ ~ 0.5 1
-execute if score temp_0 mech_data matches 1 if entity @s[scores={mech_power=..2000}] store success entity @s ArmorItems[3].tag.Damage short 45 if entity @s
-execute if score temp_0 mech_data matches 0 store success entity @s ArmorItems[3].tag.Damage short 44 if entity @s
-data merge block ~ ~ ~ {CookTime:-1000}
+## Main
+replaceitem block ~ ~ ~ container.0 minecraft:structure_block{CustomModelData:6422201,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+data merge entity @s {Fire:32676s,CookTime:0s}
 
-#store scoreboard values
+#power
+execute store success score temp_0 mech_data if score @s mech_power matches ..2000 if block ~ ~ ~ minecraft:furnace[lit=true]
+execute if score temp_0 mech_data matches 1 run scoreboard players add @s mech_power 12
+execute if score temp_0 mech_data matches 1 if entity @s[tag=mech_upgraded] run scoreboard players add @s mech_power 4
+execute if score temp_0 mech_data matches 1 if entity @s[tag=mech_upgrade_ender] run scoreboard players add @s mech_power 8
+
+execute if score temp_0 mech_data matches 1 if entity @s[tag=mech_upgrade_nether] run scoreboard players add @s mech_power 32
+execute if score temp_0 mech_data matches 1 if entity @s[tag=mech_upgrade_nether] store result score temp_1 mech_data run data get block ~ ~ ~ BurnTime
+execute if score temp_0 mech_data matches 1 if entity @s[tag=mech_upgrade_nether] run scoreboard players remove temp_1 mech_data 60
+execute if score temp_0 mech_data matches 1 if entity @s[tag=mech_upgrade_nether] if score temp_1 mech_data matches ..0 run scoreboard players set temp_1 mech_data 1
+execute if score temp_0 mech_data matches 1 if entity @s[tag=mech_upgrade_nether] store result block ~ ~ ~ BurnTime short 1 run scoreboard players get temp_1 mech_data
+
+#model
+execute if score temp_0 mech_data matches 0 store success entity @s ArmorItems[3].tag.CustomModelData int 6422001 if entity @s
+execute if score temp_0 mech_data matches 1 store success entity @s ArmorItems[3].tag.CustomModelData int 6422902 if entity @s
+
+## store scoreboard values
 execute store result entity @s ArmorItems[3].tag.mech_power int 1 run scoreboard players get @s mech_power
 execute store result entity @s ArmorItems[3].tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
 
-#cleanup
-execute unless block ~ ~ ~ furnace run function give:mech_machines/machine_frame_tier_1
+## cleanup
+execute unless block ~ ~ ~ furnace run loot spawn ~ ~ ~ loot mechanization:base/tier_1_machine_frame
 execute unless block ~ ~ ~ furnace run kill @s

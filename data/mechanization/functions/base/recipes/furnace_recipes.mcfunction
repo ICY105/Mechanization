@@ -1,3 +1,4 @@
+
 #copper
 execute if score in_0 du_data matches 1300..1303 run replaceitem block ~ ~ ~ container.2 structure_block{CustomModelData: 6421301, HideFlags: 32, display: {Name: "{\"italic\":false,\"color\":\"gold\",\"translate\":\"mech.resource.ingot\",\"with\":[{\"translate\":\"mech.resource.copper\"}]}"}, mech_itemid: 1301, OreDict: ["ingotCopper"]}
 

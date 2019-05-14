@@ -1,4 +1,4 @@
-replaceitem block ~ ~ ~ container.16 diamond_shovel{du_nerf:1b, mech_itemid: 2010, du_click_detect:1b, Unbreakable:1, Damage:72, HideFlags:6, display: {Name: "{\"translate\":\"mech.block.item_reformer\",\"color\":\"dark_blue\",\"italic\":false}", Lore: ["§fRepaires items.","§fUses 128 kW."]}}
+loot replace block ~ ~ ~ container.16 loot mechanization:machines/item_reformer
 scoreboard players set out_0 du_data 2
 scoreboard players set out_2 du_data 2
 scoreboard players set out_3 du_data 2

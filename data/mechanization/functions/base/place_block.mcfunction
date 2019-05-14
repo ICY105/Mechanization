@@ -2,17 +2,17 @@
 #### Machines
 
 #Tier 1 Battery
-execute if score in_0 mech_data matches 1000 run summon armor_stand ~ ~ ~ {Tags:["mech_storage1","mech_power_storage"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421000}}]}
+execute if score in_0 mech_data matches 1000 run summon armor_stand ~ ~ ~ {Tags:["mech_storage1","mech_power_storage","mech_effects"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421000}}]}
 
 #Tier 2 Battery
-execute if score in_0 mech_data matches 1001 run summon armor_stand ~ ~ ~ {Tags:["mech_storage2","mech_power_storage"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421009}}]}
+execute if score in_0 mech_data matches 1001 run summon armor_stand ~ ~ ~ {Tags:["mech_storage2","mech_power_storage","mech_effects"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421009}}]}
 
 #Tier 3 Battery
-execute if score in_0 mech_data matches 1002 run summon armor_stand ~ ~ ~ {Tags:["mech_storage3","mech_power_storage"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421018}}]}
-execute if score in_0 mech_data matches 1006 run summon armor_stand ~ ~ ~ {Tags:["mech_storage3","mech_power_storage","mech_storage_creative"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],CustomModelData:6421023}}]}
+execute if score in_0 mech_data matches 1002 run summon armor_stand ~ ~ ~ {Tags:["mech_storage3","mech_power_storage","mech_effects"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421018}}]}
+execute if score in_0 mech_data matches 1006 run summon armor_stand ~ ~ ~ {Tags:["mech_storage3","mech_power_storage","mech_effects","mech_storage_creative"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],CustomModelData:6421023}}]}
 
 #Quantum Battery
-execute if score in_0 mech_data matches 1003 run summon armor_stand ~ ~ ~ {Tags:["mech_storageq","mech_power_storage"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],CustomModelData:6421027}}]}
+execute if score in_0 mech_data matches 1003 run summon armor_stand ~ ~ ~ {Tags:["mech_storageq","mech_power_storage","mech_effects"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],CustomModelData:6421027}}]}
 execute if score in_0 mech_data matches 1003 run scoreboard players set @e[tag=mech_storageq,distance=..0.5] mech_data 0
 
 #Energy Relay
@@ -26,10 +26,12 @@ execute if score in_0 mech_data matches 1000..1004 run scoreboard players set @e
 
 #machine crafter
 execute if score in_0 mech_data matches 1005 run summon armor_stand ~ ~ ~ {Tags:["mech_machine_crafter","du_crafter"],Marker:1b,Fire:32676,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421037}}]}
-execute if score in_0 mech_data matches 1005 run setblock ~ ~ ~ minecraft:barrel{CustomName:"[{\"translate\":\"offset.-8\",\"with\":[{\"text\":\"\\uee00\",\"color\":\"white\"}]},{\"translate\":\"offset.-128\",\"with\":[{\"translate\":\"offset.-77\",\"with\":[{\"translate\":\"mech.block.machine_crafting_table\",\"color\":\"dark_aqua\",\"italic\":false}]}]}]"}
+execute if score in_0 mech_data matches 1005 run setblock ~ ~ ~ minecraft:barrel{CustomName:"[{\"translate\":\"mech.block.machine_crafting_table\",\"color\":\"dark_aqua\",\"italic\":false}]"}
 
-#run function
+#run global function
 function #mechanization:place_block
+scoreboard players set @e[tag=mech_reciever,distance=..0.25] mech_power 0
+scoreboard players set @e[tag=mech_transmitter,distance=..0.25] mech_power 0
 
 #set stored data
 execute store result score temp_1 mech_data run data get entity @s SelectedItem.tag.mech_upgrade

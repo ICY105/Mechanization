@@ -2,7 +2,7 @@ tag @s remove mech_fire_cont
 
 #consume energy
 execute store result score in_0 mech_data run data get entity @s SelectedItem.tag.mech_gun.energy
-function mechanization:base/tools/player_energy/use_energy
+function mechanization:base/energy/player_energy
 
 execute if score out_0 mech_data matches 1 run playsound mechanization:gadgets.laser_gun player @a[distance=..24] ~ ~1 ~ 4
 

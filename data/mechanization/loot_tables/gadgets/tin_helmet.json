@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.tool.helmet","color":"white","italic":false,"with":[{"translate":"mech.resource.tin"}]}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 4504, CustomModelData: 6424504, du_dur:{enabled:1b,max_dur:247},display:{color:16777215}}"
+            },
+			{
+				"function":"set_attributes",
+				"modifiers": [
+					{
+						"name":"generic.armor",
+						"attribute":"generic.armor",
+						"operation":"addition",
+						"amount":2,
+						"slot":"head"
+					}
+				]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

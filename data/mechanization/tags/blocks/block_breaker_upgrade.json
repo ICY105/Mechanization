@@ -1,0 +1,19 @@
+{
+	"values":[
+		"#du:unbreakable",
+		"#du:colors/shulker_boxes",
+		"minecraft:spawner",
+		"minecraft:chest",
+		"minecraft:trapped_chest",
+		"minecraft:furnace",
+		"minecraft:jukebox",
+		"minecraft:barrel",
+		"minecraft:smoker",
+		"minecraft:blast_furnace",
+		"minecraft:campfire",
+		"minecraft:hopper",
+		"minecraft:dropper",
+		"minecraft:dispenser",
+		"minecraft:lectern"
+	]
+}
