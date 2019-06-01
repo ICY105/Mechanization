@@ -11,15 +11,15 @@ execute unless score @s du_move_z matches -2147483648.. store result score @s me
 function du:world/blocks/is_active
 
 execute unless score @s du_move_y matches 1..4 run scoreboard players set @s mech_data 0
-execute if score out_0 du_data matches 1..2 if entity @s[scores={du_move_y=1,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 0 0 run function mechanization:machines/machines/quarry/mine
-execute if score out_0 du_data matches 1..2 if entity @s[scores={du_move_y=2,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 90 0 run function mechanization:machines/machines/quarry/mine
-execute if score out_0 du_data matches 1..2 if entity @s[scores={du_move_y=3,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 180 0 run function mechanization:machines/machines/quarry/mine
-execute if score out_0 du_data matches 1..2 if entity @s[scores={du_move_y=4,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 270 0 run function mechanization:machines/machines/quarry/mine
+execute if score out_0 du_data matches 0 if entity @s[scores={du_move_y=1,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 0 0 run function mechanization:machines/machines/quarry/mine
+execute if score out_0 du_data matches 0 if entity @s[scores={du_move_y=2,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 90 0 run function mechanization:machines/machines/quarry/mine
+execute if score out_0 du_data matches 0 if entity @s[scores={du_move_y=3,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 180 0 run function mechanization:machines/machines/quarry/mine
+execute if score out_0 du_data matches 0 if entity @s[scores={du_move_y=4,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 270 0 run function mechanization:machines/machines/quarry/mine
 
-execute if score out_0 du_data matches 1..2 if entity @s[tag=mech_upgraded,scores={du_move_y=1,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 0 0 run function mechanization:machines/machines/quarry/mine
-execute if score out_0 du_data matches 1..2 if entity @s[tag=mech_upgraded,scores={du_move_y=2,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 90 0 run function mechanization:machines/machines/quarry/mine
-execute if score out_0 du_data matches 1..2 if entity @s[tag=mech_upgraded,scores={du_move_y=3,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 180 0 run function mechanization:machines/machines/quarry/mine
-execute if score out_0 du_data matches 1..2 if entity @s[tag=mech_upgraded,scores={du_move_y=4,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 270 0 run function mechanization:machines/machines/quarry/mine
+execute if score out_0 du_data matches 0 if entity @s[tag=mech_upgraded,scores={du_move_y=1,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 0 0 run function mechanization:machines/machines/quarry/mine
+execute if score out_0 du_data matches 0 if entity @s[tag=mech_upgraded,scores={du_move_y=2,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 90 0 run function mechanization:machines/machines/quarry/mine
+execute if score out_0 du_data matches 0 if entity @s[tag=mech_upgraded,scores={du_move_y=3,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 180 0 run function mechanization:machines/machines/quarry/mine
+execute if score out_0 du_data matches 0 if entity @s[tag=mech_upgraded,scores={du_move_y=4,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 270 0 run function mechanization:machines/machines/quarry/mine
 
 
 #store scoreboard values

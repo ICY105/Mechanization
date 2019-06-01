@@ -7,7 +7,7 @@ execute unless score @s mech_gridid matches -2147483648.. store result score @s 
 function du:world/blocks/is_active
 tag @s[scores={mech_power=320..}] add mech_active
 tag @s[scores={mech_power=..319}] remove mech_active
-execute if score out_0 mech_data matches 1..2 run tag @s remove mech_active
+execute if score out_0 mech_data matches 0 run tag @s remove mech_active
 
 execute if score out_0 mech_data matches 0 if entity @s[tag=!mech_active,scores={mech_power=..319}] run data merge block ~ ~ ~ {RequiredPlayerRange: 16s, MaxSpawnDelay: 800s, MinSpawnDelay: 200s, Delay: 600s}
 execute if score out_0 mech_data matches 1..2 if entity @s[tag=!mech_active,scores={mech_power=..319}] run data merge block ~ ~ ~ {RequiredPlayerRange: 0s, MaxSpawnDelay: 800s, MinSpawnDelay: 200s, Delay: 600s}

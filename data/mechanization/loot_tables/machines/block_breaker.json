@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.block.bio_generator","color":"dark_red","italic":false}
+			  "name": {"translate":"mech.block.block_breaker","color":"dark_red","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",

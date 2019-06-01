@@ -1,101 +1,10 @@
 Base:
-Reverted use of custom fonts in as custom GUIs back to items to avoid crashes related to .tts files.
-Energy transfer effects (sound & particles) can be toggled by using a wrench on a battery
-Wrench can rotate all tile entities without deleting data (rotate full chests!)
+Added version check for DU
+Added resourcepack check
+Fixed Uranium Ore
 
 Machines:
-Machine have new effects for the new upgrade system
-Moved primary give commands to loot tables (functions still work)
-More machines have a custom GUIs
-Notable changes to machines:
-Grinder:
- * Now a Tier 1 machine (with a recipe to match)
- * Initially only has x1 production
- * Now processes ores and ingots into dust, which need to be smelted
- * Machine Upgrade: x2 production
- * Ender Upgrade: x3 production
- * Nether Upgrade: Additional process step (ie. Ores grind to ingots instead of dust)
- * Recipe Change: cobble -> sand, and stone -> gravel -> flint
-Alloy Furnace:
- * Machine Upgrade: enables creating titanium alloys (Tier 3 alloys)
- * Other upgrades currently have no effects
-Bio Generator:
- * Machine Upgrade: Accepts meat as fuel (closes #55)
- * Ender Upgrade: +50% Power Generation
- * Nether Upgrade: x2 Power Generation, x2 Fuel Consumption
-Tree Feller:
- * Machine Upgrade: Replants dropped saplings
- * Ender Upgrade: Cuts larger (2x2) trees
- * Nether Upgrade: Turns chopped would into charcoal
-Block Breaker:
- * Machine Upgrade: Allows breaking harder blocks (ie. ores & obsidian)
- * Ender Upgrade: gives Silk Touch
- * Nether Upgrade: Increases area to 3x3x3
-Quarry:
- * Quarry now requires a mining area to be defined with fences. Can be up to 32x32
- * Right click with a wrench to establish fence boundary
- * Quarry now responds to a redstone signal
- * Machine Upgrade: x2 mining speed
- * Ender Upgrade: Silk Touch
- * Nether Upgrade: Fortune 3
-Dimensional Generator (previously Ender Generator):
- * Turns items into power using rare items from each dimension. Initially only accepts Overworld items.
- * Machine Upgrade: x2 Power Generation
- * Ender Upgrade: Accepts items from the End (no longer accepts Overworld items)
- * Nether Upgrade: Accepts items from the Nether (no longer accepts Overworld items)
-Growth Accelerator:
- * Now grows pumpkin/melon blocks, not just the stems
- * Machine Upgrade: More crop types
- * Ender Upgrade: 3x3 growing area
- * Nether Upgrade: Instantly grows crops
-Auto Fisher:
- * Now responds to redstone
- * Machine Upgrade: Requires less water
- * Ender Upgrade: Luck of the Sea 3
- * Nether Upgrade: x2 Drops, +50% Power Consumption
-Auto Farm
- * Now responds to redstone
- * Machine Upgrade: Auto collects drops
- * Ender/Nether Upgrade: Larger area (ideas for different upgrade?)
-Mob Grinder
- * Now responds to redstone
- * Machine Upgrade: Auto collects drops
- * Ender Upgrade: Extra Range
- * Nether Upgrade: x2 Drops, +50% power consumption
-Disenchanter
- * Now requires books and lapis to remove enchantments
- * No upgrades (yet)
-Solar Panel:
- * Machine Upgrade: x2 power generation
- * Ender Upgrade: -25% peak power generation, x2 low-light power generation
- * Nether Upgrade: x2 peak power generation, no low-light power generation
-Teleporter:
- * No longer linked via Grid IDs (for the moment)
- * Teleporters can be named in an anvil
- * Now removes teleporter entries upon teleport if no teleporter is detection at the destination (closes #57)
- * Machine Upgrade: Adds a "dialing device" for choosing your destination
- * Ender Upgrade: Allows teleporting to the End
- * Nether Upgrade: Allows teleporting to the Nether
-Spawner Controller
- * Now responds to redstone
- * Machine Upgrade: +50% Increased spawning speed
- * Ender Upgrade: Increase minimum player range from 16 -> 32 blocks
- * Nether Upgrade: x2 Spawning speed, x2 power
-Super Piston:
- * Can face up/down (using wrench)
- * Better animation
-Chunk Loader:
- * Has been removed (for now), afaik 1.14 has no usable chunk loading methods (closes #60)
-
-Nuclear:
-Reactors can accept any cell grade. GLHF.
-Some other minor adjustments
-
-Gadgets:
-Portable Batteries now must be in the hotbar (no more weird behavior with batteries sometimes working in the inv)
-Portable Batteries display energy remaining in lore
-Guns now use COAS. Since no entities are used, left click doesn't work. Looking for alternatives for ADS.
-Weapon heat display uses custom fonts
+Fixed some redstone control issues
 
 Assembly:
 TODO: item filter: copy reference to shulker box, insert input to shulker box, test if stacked, remove reference, transfer to output

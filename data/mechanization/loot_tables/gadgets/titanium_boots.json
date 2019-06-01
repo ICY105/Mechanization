@@ -28,7 +28,7 @@
 					},
 					{
 						"name":"generic.armorToughness",
-						"attribute":"generic.attackSpeed",
+						"attribute":"generic.armorToughness",
 						"operation":"addition",
 						"amount":2,
 						"slot":"feet"

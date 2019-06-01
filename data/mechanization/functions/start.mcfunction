@@ -11,8 +11,9 @@ scoreboard objectives add mech_tele trigger
 scoreboard objectives add mech_crafter minecraft.crafted:minecraft.damaged_anvil
 scoreboard objectives add mech_use_coas minecraft.used:minecraft.carrot_on_a_stick
 
-#Installation message
-tellraw @a[tag=!mech_installation] [{"translate":"mech.text.load_1","color":"dark_red"}]
-tag @a add mech_installation
+#Install check
+scoreboard players set mech_ver du_data -2010003
 
-say [Loaded Mechanization v2.1 Prerelease 1 by ImCoolYeah105]
+scoreboard players set install mech_data 0
+execute unless score du_ver du_data matches ..-2000007 run scoreboard players set install mech_data 1
+schedule function mechanization:install 1s
