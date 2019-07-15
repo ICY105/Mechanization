@@ -18,17 +18,6 @@ execute if block ~ ~ ~ dropper{Items:[{Slot:8b,id:"minecraft:bone_block"}]		} st
 execute if block ~ ~ ~ dropper{Items:[{Slot:8b,id:"minecraft:prismarine_bricks"}]} store success score temp_1 mech_data run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:prismarine_shard",Count:9b}}
 execute if block ~ ~ ~ dropper{Items:[{Slot:8b,id:"minecraft:nether_wart_block"}]} store success score temp_1 mech_data run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:nether_wart",Count:9b}}
 
-#3x3 custom
-execute if block ~ ~ ~ dropper{Items:[{Slot:8b,tag:{OreDict:["blockCopper"]} }]		} store success score temp_1 mech_data run function give:mech_machines/copper_ingot
-execute if block ~ ~ ~ dropper{Items:[{Slot:8b,tag:{OreDict:["blockTin"]} }]		} store success score temp_1 mech_data run function give:mech_machines/tin_ingot
-execute if block ~ ~ ~ dropper{Items:[{Slot:8b,tag:{OreDict:["blockTitanium"]} }]	} store success score temp_1 mech_data run function give:mech_machines/titanium_ingot
-execute if block ~ ~ ~ dropper{Items:[{Slot:8b,tag:{OreDict:["blockCrystalComposite"]} }]} store success score temp_1 mech_data run function give:mech_machines/crystal_composite
-execute if block ~ ~ ~ dropper{Items:[{Slot:8b,tag:{OreDict:["blockUranium"]} }]	} store success score temp_1 mech_data run function give:mech_nuclear/uranium_ingot
-execute if block ~ ~ ~ dropper{Items:[{Slot:8b,tag:{OreDict:["blockPlutonium"]} }]	} store success score temp_1 mech_data run function give:mech_nuclear/plutonium_ingot
-execute if block ~ ~ ~ dropper{Items:[{Slot:8b,tag:{OreDict:["blockFlint"]} }]		} store success score temp_1 mech_data run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:flint",Count:9b}}
-execute if block ~ ~ ~ dropper{Items:[{Slot:8b,tag:{OreDict:["blockCharcoal"]} }]	} store success score temp_1 mech_data run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:charcoal",Count:9b}}
-execute as @e[type=item,distance=..0.1,nbt={Age:0s,Item:{Count:1b}}] store result entity @s Item.Count int 9 if entity @s
-
 # 2x2
 execute if block ~ ~ ~ dropper{Items:[{Slot:8b,id:"minecraft:quartz_block"}]} store success score temp_1 mech_data run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:quartz",Count:4b}}
 execute if block ~ ~ ~ dropper{Items:[{Slot:8b,id:"minecraft:snow_block"}]	} store success score temp_1 mech_data run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:snowball",Count:4b}}

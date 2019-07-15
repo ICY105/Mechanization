@@ -1,7 +1,11 @@
-execute if score timer_20 du_data matches 0..1 run data merge entity @s {Fire:32676}
+data merge entity @s {Fire:32676}
 
-execute if block ~ ~ ~ dropper[triggered=true] if entity @s[tag=!mech_active] run data merge block ~ ~1 ~ {TransferCooldown:20}
-execute if block ~ ~ ~ dropper[triggered=true] if entity @s[tag=!mech_active] run tag @s add mech_switch
-execute if block ~ ~ ~ dropper[triggered=false] if entity @s[tag=mech_active] run tag @s remove mech_active
+#get powered
+function du:world/blocks/is_active
 
-execute unless block ~ ~ ~ dropper run kill @s
+#play record
+execute if score out_0 du_data matches 0 run tag @s remove mech_active
+execute if score out_0 du_data matches 1..2 if entity @s[tag=!mech_active] run function mechanization:assembly/machines/auto_jukebox_switch
+
+#cleanup
+execute unless block ~ ~ ~ barrel run kill @s

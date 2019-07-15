@@ -6,5 +6,25 @@ Fixed Uranium Ore
 Machines:
 Fixed some redstone control issues
 
-Assembly:
-TODO: item filter: copy reference to shulker box, insert input to shulker box, test if stacked, remove reference, transfer to output
+Nuclear:
+Fixed centrifuge only refining up to 10%
+
+Gadgets:
+Tinker Table
+* Supports 5 upgrades per item
+* Can remove upgrades from an item
+Portable Battery can now be applied as an upgrade
+Guns
+* New weapon heat bar
+* ADS (and along with it sights/scopes) has been removed, may readd at some point
+Fixed charging station trying to charge all items
+
+Assembly
+Added Item Transmitter
+Added Item Receiver
+Added Item Filter
+Jukebox:
+* Now with 27 slots
+* Responds to redstone more consistently
+* No longer requires a hopper
+Removed metal blocks (moved to base module)

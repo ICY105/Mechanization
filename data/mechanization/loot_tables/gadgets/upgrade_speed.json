@@ -13,6 +13,10 @@
 			  "name": {"translate":"mech.item.upgrade_speed","color":"dark_red","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"mech.lore.upgrade","with":["∞"],"color":"white","italic":false}]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{mech_itemid: 4318, CustomModelData: 6424318, OreDict:[\"upgradeSpeed\"]}"
             }

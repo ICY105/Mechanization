@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4204, CustomModelData: 6424204, du_dur:{enabled:1b,max_dur:2048}}"
+              "tag":"{mech_itemid: 4204, CustomModelData: 6424204, mech_modify:1b, du_dur:{enabled:1b,max_dur:2048}}"
             }
           ]
         }

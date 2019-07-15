@@ -5,7 +5,7 @@ tag @s add mech_active
 #add to fuel grade
 execute store result score temp_0 mech_data run data get entity @s HandItems[0].tag.FuelGrade
 scoreboard players add temp_0 mech_data 2
-execute if score temp_0 mech_data matches 101.. run scoreboard players set temp_0 mech_data 0
+execute if score temp_0 mech_data matches 1000.. run scoreboard players set temp_0 mech_data 1000
 execute store result entity @s HandItems[0].tag.FuelGrade int 1 run scoreboard players get temp_0 mech_data
 
 #convert to percentage

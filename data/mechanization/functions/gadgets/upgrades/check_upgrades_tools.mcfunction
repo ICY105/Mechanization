@@ -24,15 +24,10 @@ scoreboard players operation temp_5 mech_data += @s mech_usesword
 scoreboard players operation temp_5 mech_data += @s mech_usetrident
 
 #run upgrades
-execute if score timer_20 du_data matches 10 if entity @s[tag=mech_upgrade_empower_1] run function mechanization:gadgets/upgrades/tools/empowered_1
-execute if score timer_20 du_data matches 10 if entity @s[tag=mech_upgrade_empower_2] run function mechanization:gadgets/upgrades/tools/empowered_2
+#execute if score timer_20 du_data matches 10 if entity @s[tag=mech_upgrade_empower_1] run function mechanization:gadgets/upgrades/tools/empowered_1
+execute if score timer_20 du_data matches 10 if entity @s[tag=mech_upgrade_empower] run function mechanization:gadgets/upgrades/tools/empowered_2
 execute if entity @s[tag=mech_upgrade_smash,tag=!du_sneaking] at @s run function mechanization:gadgets/upgrades/tools/smash
 execute if score temp_4 mech_data matches 1.. if entity @s[tag=mech_upgrade_magnetic] at @s run function mechanization:gadgets/upgrades/tools/magnetic
-execute if score temp_4 mech_data matches 1.. if entity @s[tag=mech_upgrade_trash,tag=!du_sneaking] at @s run function mechanization:gadgets/upgrades/tools/trash
-
-execute if score temp_4 mech_data matches 1.. if entity @s[tag=mech_upgrade_autosmelt] run scoreboard players set in_0 mech_data 40
-execute if score temp_4 mech_data matches 1.. if entity @s[tag=mech_upgrade_autosmelt] run function mechanization:base/tools/player_energy/use_energy
-execute if score temp_4 mech_data matches 1.. if entity @s[tag=mech_upgrade_autosmelt] if score out_0 mech_data matches 1 at @s run function mechanization:gadgets/upgrades/tools/autosmelt
 
 
 execute if score temp_5 mech_data matches 1.. if entity @s[tag=mech_upgrade_poison] at @s run effect give @e[distance=0.5..8,nbt={HurtTime:10s}] poison 4 1
@@ -48,25 +43,3 @@ scoreboard players set @s mech_usetrident 0
 scoreboard players set @s mech_usepick 0
 scoreboard players set @s mech_useaxe 0
 scoreboard players set @s mech_useshovel 0
-
-scoreboard players set @s mech_breakstone 0
-scoreboard players set @s mech_breakcobble 0
-scoreboard players set @s mech_breaksand 0
-scoreboard players set @s mech_breakrsand 0
-scoreboard players set @s mech_breakgold 0
-scoreboard players set @s mech_breakiron 0
-scoreboard players set @s mech_breakoak 0
-scoreboard players set @s mech_breakspruce 0
-scoreboard players set @s mech_breakbirch 0
-scoreboard players set @s mech_breakjungle 0
-scoreboard players set @s mech_breakacacia 0
-scoreboard players set @s mech_breakdark 0
-scoreboard players set @s mech_breakclay 0
-scoreboard players set @s mech_breaknether 0
-scoreboard players set @s mech_breakbricks 0
-scoreboard players set @s mech_breakcactus 0
-scoreboard players set @s mech_breaksponge 0
-scoreboard players set @s mech_breakhead 0
-scoreboard players set @s mech_breakgranit 0
-scoreboard players set @s mech_breakdiorit 0
-scoreboard players set @s mech_breakandesi 0

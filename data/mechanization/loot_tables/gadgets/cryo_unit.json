@@ -13,6 +13,10 @@
 			  "name": {"translate":"mech.item.cryo_unit","color":"dark_red","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"mech.lore.upgrade","with":["1"],"color":"white","italic":false}]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{mech_itemid: 4409, CustomModelData: 6424409, OreDict:[\"upgradeCryoUnit\"]}"
             }

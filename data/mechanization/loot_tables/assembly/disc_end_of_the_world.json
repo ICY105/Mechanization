@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"item.minecraft.music_disc_ward","color":"aqua","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"mech.item.disc_end_of_the_world","color":"gray","italic":false},{"translate":"mech.item.disc_end_of_the_world2","color":"gray","italic":false}]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 5101, CustomModelData: 6425101, HideFlags: 6, Unbreakable:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

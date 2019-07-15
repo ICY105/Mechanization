@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {CustomName:"{\"translate\":\"mech.block.ender_hopper\",\"color\":\"light_purple\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 5004, du_click_detect:1b,Unbreakable:1,Damage:193,HideFlags:6,display:{Name:"{\"translate\":\"Ender Hopper\",\"color\":\"light_purple\",\"italic\":false}",Lore:["§fDraws in nearby items."]}}}}
+loot spawn ~ ~ ~ loot mechanization:assembly/ender_hopper

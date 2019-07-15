@@ -13,6 +13,10 @@
 			  "name": {"translate":"mech.item.upgrade_auto_smelt","color":"dark_red","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"mech.lore.upgrade","with":["1"],"color":"white","italic":false}]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{mech_itemid: 4301, CustomModelData: 6424301, OreDict:[\"upgradeAutoSmelt\"]}"
             }

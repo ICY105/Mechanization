@@ -120,10 +120,10 @@ execute if score in_0 mech_data matches 2020 if block ~ ~ ~ blast_furnace[facing
 execute if score in_0 mech_data matches 2020 if block ~ ~ ~ blast_furnace[facing=east] run summon armor_stand ~ ~ ~ {Tags:["mech_super_piston"],CustomName:'{"text":"Super Piston"}',Rotation:[90.0f,0.0f],Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Fire:32000s,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422020}}]}
 execute if score in_0 mech_data matches 2020 if block ~ ~ ~ blast_furnace[facing=south] run summon armor_stand ~ ~ ~ {Tags:["mech_super_piston"],CustomName:'{"text":"Super Piston"}',Rotation:[180.0f,0.0f],Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Fire:32000s,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422020}}]}
 execute if score in_0 mech_data matches 2020 if block ~ ~ ~ blast_furnace[facing=west] run summon armor_stand ~ ~ ~ {Tags:["mech_super_piston"],CustomName:'{"text":"Super Piston"}',Rotation:[270.0f,0.0f],Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Fire:32000s,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422020}}]}
-execute if score in_0 mech_data matches 2020 if block ~ ~ ~ blast_furnace[facing=north] run scoreboard players set @e[tag=mech_super_piston,sort=nearest,distance=..1] mech_data 3
-execute if score in_0 mech_data matches 2020 if block ~ ~ ~ blast_furnace[facing=east] run scoreboard players set @e[tag=mech_super_piston,sort=nearest,distance=..1] mech_data 2
-execute if score in_0 mech_data matches 2020 if block ~ ~ ~ blast_furnace[facing=south] run scoreboard players set @e[tag=mech_super_piston,sort=nearest,distance=..1] mech_data 1
-execute if score in_0 mech_data matches 2020 if block ~ ~ ~ blast_furnace[facing=west] run scoreboard players set @e[tag=mech_super_piston,sort=nearest,distance=..1] mech_data 0
+execute if score in_0 mech_data matches 2020 if block ~ ~ ~ blast_furnace[facing=north] run scoreboard players set @e[tag=mech_super_piston,sort=nearest,distance=..0.5] mech_data 3
+execute if score in_0 mech_data matches 2020 if block ~ ~ ~ blast_furnace[facing=east] run scoreboard players set @e[tag=mech_super_piston,sort=nearest,distance=..0.5] mech_data 2
+execute if score in_0 mech_data matches 2020 if block ~ ~ ~ blast_furnace[facing=south] run scoreboard players set @e[tag=mech_super_piston,sort=nearest,distance=..0.5] mech_data 1
+execute if score in_0 mech_data matches 2020 if block ~ ~ ~ blast_furnace[facing=west] run scoreboard players set @e[tag=mech_super_piston,sort=nearest,distance=..0.5] mech_data 0
 execute if score in_0 mech_data matches 2020 run setblock ~ ~ ~ minecraft:barrier
 
 #super sticky piston
@@ -131,10 +131,10 @@ execute if score in_0 mech_data matches 2021 if block ~ ~ ~ blast_furnace[facing
 execute if score in_0 mech_data matches 2021 if block ~ ~ ~ blast_furnace[facing=east] run summon armor_stand ~ ~ ~ {Tags:["mech_super_sticky_piston"],CustomName:'{"text":"Super Sticky Piston"}',Rotation:[90f,0f],Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Fire:32000s,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422021}}]}
 execute if score in_0 mech_data matches 2021 if block ~ ~ ~ blast_furnace[facing=south] run summon armor_stand ~ ~ ~ {Tags:["mech_super_sticky_piston"],CustomName:'{"text":"Super Sticky Piston"}',Rotation:[180f,0f],Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Fire:32000s,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422021}}]}
 execute if score in_0 mech_data matches 2021 if block ~ ~ ~ blast_furnace[facing=west] run summon armor_stand ~ ~ ~ {Tags:["mech_super_sticky_piston"],CustomName:'{"text":"Super Sticky Piston"}',Rotation:[270f,0f],Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Fire:32000s,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422021}}]}
-execute if score in_0 mech_data matches 2021 if block ~ ~ ~ blast_furnace[facing=north] run scoreboard players set @e[tag=mech_super_sticky_piston,sort=nearest,distance=..1] mech_data 3
-execute if score in_0 mech_data matches 2021 if block ~ ~ ~ blast_furnace[facing=east] run scoreboard players set @e[tag=mech_super_sticky_piston,sort=nearest,distance=..1] mech_data 2
-execute if score in_0 mech_data matches 2021 if block ~ ~ ~ blast_furnace[facing=south] run scoreboard players set @e[tag=mech_super_sticky_piston,sort=nearest,distance=..1] mech_data 1
-execute if score in_0 mech_data matches 2021 if block ~ ~ ~ blast_furnace[facing=west] run scoreboard players set @e[tag=mech_super_sticky_piston,sort=nearest,distance=..1] mech_data 0
+execute if score in_0 mech_data matches 2021 if block ~ ~ ~ blast_furnace[facing=north] run scoreboard players set @e[tag=mech_super_sticky_piston,sort=nearest,distance=..0.5] mech_data 3
+execute if score in_0 mech_data matches 2021 if block ~ ~ ~ blast_furnace[facing=east] run scoreboard players set @e[tag=mech_super_sticky_piston,sort=nearest,distance=..0.5] mech_data 2
+execute if score in_0 mech_data matches 2021 if block ~ ~ ~ blast_furnace[facing=south] run scoreboard players set @e[tag=mech_super_sticky_piston,sort=nearest,distance=..0.5] mech_data 1
+execute if score in_0 mech_data matches 2021 if block ~ ~ ~ blast_furnace[facing=west] run scoreboard players set @e[tag=mech_super_sticky_piston,sort=nearest,distance=..0.5] mech_data 0
 execute if score in_0 mech_data matches 2021 run setblock ~ ~ ~ minecraft:barrier
 
 #turn table

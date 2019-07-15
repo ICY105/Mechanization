@@ -244,27 +244,22 @@ Gadgets [04]: {
 
 Assembly [05]: {
 	Machines [0]: {
-		Compressor		[00]
-		Decompressor	[01]
-		Stone Cutter	[02]
-		Dye Machine		[03]
-		Ender Hopper	[04]
-		Fast Hopper		[05]
-		Auto Jukebox	[06]
-		Unlimited Storage Unit [07]
+		Compressor		[00-5000]
+		Decompressor	[01-5001]
+		Stone Cutter	[02-5002]
+		Dye Machine		[03-5003]
+		Ender Hopper	[04-5004]
+		Fast Hopper		[05-5005]
+		Auto Jukebox	[06-5006]
+		Unlimited Storage Unit [07-5007]
+		Item Transmitter       [08-5008]
+		Item Receiver          [09-5009]
 	}
-	Blocks [1] {
-		Copper Block		[00]
-		Tin Block			[01]
-		Titanium Block		[02]
-		Crystal Block		[03]
-		Uranium Block		[04]
-		Plutonium Block		[05]
-		Flint Block			[06]
-		Charcoal Block		[07]
-		Nether Star Block	[08]
-		Ender Block			[09]
-		Flesh Block			[10]
-		Sugar Cane Block	[11]
+	Items [1] {
+		Item Filter [00-5100]
+		Disc End of the World	[01-5101]
+		Disc Hyperspace			[02-5102]
+		Disc Money for Nothing	[03-5103]
+		Disc Wander				[04-5104]
 	}
 }

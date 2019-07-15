@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {CustomName:"{\"translate\":\"mech.block.decompressor\",\"color\":\"blue\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 5001, du_click_detect:1b,Unbreakable:1,Damage:200,HideFlags:6,display:{Name:"{\"translate\":\"Decompressor\",\"color\":\"blue\",\"italic\":false}",Lore:["§fUncompresses items into","§fless compact forms.","§fUses 16 kJ/Operation"]}}}}
+loot spawn ~ ~ ~ loot mechanization:assembly/decompressor

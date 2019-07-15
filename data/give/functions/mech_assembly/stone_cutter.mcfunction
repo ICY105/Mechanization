@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {CustomName:"{\"translate\":\"mech.block.stone_cutter\",\"color\":\"red\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 5002, du_click_detect:1b,Unbreakable:1,Damage:201,HideFlags:6,display:{Name:"{\"translate\":\"Stone Cutter\",\"color\":\"red\",\"italic\":false}",Lore:["§fCreates variants","§fof stone blocks.","§fUses 16 kJ/Operation"]}}}}
+loot spawn ~ ~ ~ loot mechanization:assembly/stone_cutter
