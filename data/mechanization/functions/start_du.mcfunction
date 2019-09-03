@@ -1,13 +1,13 @@
 
+#installed
+execute if score du_ver du_data matches 2000000.. run scoreboard players set install mech_data 0
+
 #set up ore gen
 scoreboard objectives add mech_data dummy
 scoreboard players set worldgen du_data 1
 
 #set up mech data storage
 execute unless data block -29999999 0 1600 RecordItem.tag.mech run data modify block -29999999 0 1600 RecordItem.tag.mech set value {quantum_network:[],teleporters:[]}
-
-#### ore reg
-scoreboard players set worldgen du_data 1
 
 #### Copper Ore
 
