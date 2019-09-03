@@ -9,6 +9,7 @@ data modify block ~ ~ ~ Items[{Slot:17b}].tag.mech_modifiers append from block ~
 
 #add lore
 data modify block ~ ~ ~ Items[{Slot:17b}].tag.display.Lore set value []
+execute if block ~ ~ ~ barrel{Items:[{tag:{mech_itemid:4209}}]} run data modify block ~ ~ ~ Items[{Slot:17b}].tag.display.Lore append value '[{"translate":"mech.item.portable_battery.lore","color":"gray","italic":false,"with":[{"text":"0"},{"text":"0"}]}]'
 data modify block ~ ~ ~ Items[{Slot:17b}].tag.display.Lore append from block ~ ~ ~ Items[{Slot:11b}].tag.display.Name
 data modify block ~ ~ ~ Items[{Slot:17b}].tag.display.Lore append from block ~ ~ ~ Items[{Slot:12b}].tag.display.Name
 data modify block ~ ~ ~ Items[{Slot:17b}].tag.display.Lore append from block ~ ~ ~ Items[{Slot:13b}].tag.display.Name

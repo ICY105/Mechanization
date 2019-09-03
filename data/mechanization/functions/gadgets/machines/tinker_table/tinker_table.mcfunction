@@ -13,7 +13,7 @@ replaceitem block -29999999 0 1601 container.14 air
 replaceitem block -29999999 0 1601 container.15 air
 replaceitem block -29999999 0 1601 container.17 air
 replaceitem block -29999999 0 1601 container.22 air
-loot spawn ~ ~1 ~ mine -29999999 0 1601 minecraft:golden_pickaxe{drop_contents:true}
+loot give @p mine -29999999 0 1601 minecraft:golden_pickaxe{drop_contents:true}
 
 #reset
 replaceitem block ~ ~ ~ container.0 minecraft:structure_block{CustomModelData:6424500,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}

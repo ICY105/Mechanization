@@ -84,4 +84,8 @@ execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mec
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5104} }}}}} run playsound mechanization:assembly.music.wanderer record @a ~ ~ ~ 6
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5104} }}}}} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_wanderer"}],"color":"green"}]
 
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5105} }}}}} run playsound mechanization:assembly.music.stranger_think record @a ~ ~ ~ 6
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5105} }}}}} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_stranger_think"}],"color":"green"}]
+
+
 

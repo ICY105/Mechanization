@@ -10,10 +10,10 @@ data merge entity @s {Fire:32676s,CookTime:0s}
 #power
 execute store success score temp_0 mech_data if score @s mech_power matches ..2000 if block ~ ~ ~ minecraft:furnace[lit=true]
 execute if score temp_0 mech_data matches 1 run scoreboard players add @s mech_power 12
-execute if score temp_0 mech_data matches 1 if entity @s[tag=mech_upgraded] run scoreboard players add @s mech_power 4
-execute if score temp_0 mech_data matches 1 if entity @s[tag=mech_upgrade_ender] run scoreboard players add @s mech_power 8
+execute if score temp_0 mech_data matches 1 if entity @s[tag=mech_upgraded] run scoreboard players add @s mech_power 6
+execute if score temp_0 mech_data matches 1 if entity @s[tag=mech_upgrade_ender] run scoreboard players add @s mech_power 6
 
-execute if score temp_0 mech_data matches 1 if entity @s[tag=mech_upgrade_nether] run scoreboard players add @s mech_power 32
+execute if score temp_0 mech_data matches 1 if entity @s[tag=mech_upgrade_nether] run scoreboard players add @s mech_power 36
 execute if score temp_0 mech_data matches 1 if entity @s[tag=mech_upgrade_nether] store result score temp_1 mech_data run data get block ~ ~ ~ BurnTime
 execute if score temp_0 mech_data matches 1 if entity @s[tag=mech_upgrade_nether] run scoreboard players remove temp_1 mech_data 60
 execute if score temp_0 mech_data matches 1 if entity @s[tag=mech_upgrade_nether] if score temp_1 mech_data matches ..0 run scoreboard players set temp_1 mech_data 1

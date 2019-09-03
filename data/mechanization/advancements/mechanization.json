@@ -1,14 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.mechanization.title"
+            "translate": "mech.advancements.mechanization.title",
+			"color":"red"
         },
         "description": {
-            "translate": "mech.advancements.mechanization.description"
+            "translate": "mech.advancements.mechanization.description",
+			"color":"dark_aqua"
         },
         "icon": {
-            "item": "minecraft:structure_block",
-            "nbt": "{CustomModelData:6421000}"
+            "item": "minecraft:blast_furnace",
+            "nbt": "{CustomModelData:6421037}"
         },
         "background": "mechanization:textures\/base\/2_plate_panel.png",
         "frame": "goal",

@@ -1,14 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.machines.spawner_mover.title"
+            "translate": "mech.advancements.machines.spawner_mover.title",
+			"color":"dark_purple"
         },
         "description": {
-            "translate": "mech.advancements.machines.spawner_mover.description"
+            "translate": "mech.advancements.machines.spawner_mover.description",
+			"color":"dark_aqua"
         },
         "icon": {
-            "item": "minecraft:diamond_shovel",
-            "nbt": "{Damage:82,Unbreakable:1b}"
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:6422200}"
         },
         "frame": "task"
     },
@@ -17,11 +19,11 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:2203}"
+                        "nbt": "{mech_itemid:2200}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:machines\/machine_frame_3"
+    "parent": "mechanization:machines/auto_farm"
 }

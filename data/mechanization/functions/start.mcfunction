@@ -25,5 +25,5 @@ scoreboard objectives add mech_usetrident minecraft.used:minecraft.trident
 scoreboard players set mech_ver du_data -2010003
 
 scoreboard players set install mech_data 0
-execute unless score du_ver du_data matches ..-2000007 run scoreboard players set install mech_data 1
+execute unless score du_ver du_data matches 2000000.. run scoreboard players set install mech_data 1
 schedule function mechanization:install 1s

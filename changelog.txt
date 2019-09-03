@@ -1,30 +1,24 @@
-Base:
-Added version check for DU
-Added resourcepack check
-Fixed Uranium Ore
 
-Machines:
-Fixed some redstone control issues
-
-Nuclear:
-Fixed centrifuge only refining up to 10%
-
-Gadgets:
-Tinker Table
-* Supports 5 upgrades per item
-* Can remove upgrades from an item
-Portable Battery can now be applied as an upgrade
-Guns
-* New weapon heat bar
-* ADS (and along with it sights/scopes) has been removed, may readd at some point
-Fixed charging station trying to charge all items
-
-Assembly
-Added Item Transmitter
-Added Item Receiver
-Added Item Filter
-Jukebox:
-* Now with 27 slots
-* Responds to redstone more consistently
-* No longer requires a hopper
-Removed metal blocks (moved to base module)
+Readded `/function give:mech_all`
+Updated Mechanical Manual
+Updated advancements
+Optimized Compressor/Decompressor + added Mech resources as recipes
+Probably fixed Quarry missing some blocks
+Fixed block breaker a bit
+Fixed tree feller leaving behind the saw blade when broken
+Fixed recipes for:
+ * All of Nuclear Ascension recipes
+ * Nether & End Alloy recipes
+ * Super Sticky Piston & Turn Table recipes
+ * Dimensional Generator
+ * Disenchanter
+ * Teleporter
+ * Spawner Controller
+ * Spawner Mover
+ * XP Tank
+ * Knockback Resist Upgrade
+ * Dye Machine
+Fixed ores not generating on first time installing
+Fixed directional sound issues
+Changed uranium ore texture to make it less like copper
+Changed most armor & tool textures to be Jappa themed and to better color match the new ingot textures

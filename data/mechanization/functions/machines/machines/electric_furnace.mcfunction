@@ -32,7 +32,7 @@ execute if score temp_0 mech_data matches 1 if entity @s[scores={mech_power=200.
 execute if block ~ ~ ~ furnace[lit=false] store success entity @s ArmorItems[3].tag.CustomModelData int 6422003 if entity @s
 execute if block ~ ~ ~ furnace[lit=true] store success entity @s ArmorItems[3].tag.CustomModelData int 6422905 if entity @s
 
-execute if block ~ ~ ~ furnace[lit=true] run playsound mechanization:machines.electric_furnace block @a[distance=..16] ~ ~ ~ 0.3 1
+execute if block ~ ~ ~ furnace[lit=true] run playsound mechanization:machines.electric_furnace block @a[distance=..16] ~ ~ ~ 0.75 1
 
 ## store scoreboard values
 execute store result entity @s ArmorItems[3].tag.mech_power int 1 run scoreboard players get @s mech_power

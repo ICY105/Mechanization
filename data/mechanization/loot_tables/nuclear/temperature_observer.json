@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.block.tempurature_observer","color":"dark_red","italic":false}
+			  "name": {"translate":"mech.block.temperature_observer","color":"dark_red","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

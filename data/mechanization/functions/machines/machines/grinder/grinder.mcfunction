@@ -15,7 +15,7 @@ execute if entity @s[tag=!mech_active,tag=mech_upgrade_nether,scores={mech_power
 execute if entity @s[tag=!mech_active,tag=mech_upgrade_ender,scores={mech_power=360..}] run function mechanization:machines/machines/grinder/input_upgrade_ender
 
 scoreboard players add @s[tag=mech_active] mech_timer 1
-execute if entity @s[tag=mech_active] run playsound mechanization:machines.grinder block @a[distance=..16] ~ ~ ~ 0.5 0.9
+execute if entity @s[tag=mech_active] run playsound mechanization:machines.grinder block @a[distance=..16] ~ ~ ~ 0.75 0.9
 
 execute store success entity @s[tag=!mech_active] ArmorItems[3].tag.CustomModelData int 6422009 if entity @s
 execute store success entity @s[tag=mech_active] ArmorItems[3].tag.CustomModelData int 6422907 if entity @s

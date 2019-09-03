@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": {
+            "translate": "mech.advancements.base.nether_upgrade.title",
+			"color":"dark_purple"
+        },
+        "description": {
+            "translate": "mech.advancements.base.nether_upgrade.description",
+			"color":"dark_aqua"
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:6421103}"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "have_wrench": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [{
+                        "nbt": "{mech_itemid:1103}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "mechanization:base/machine_upgrade"
+}

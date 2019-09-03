@@ -1,12 +1,4 @@
 
-#T2 Battery
-execute if score in_0 du_data matches 4.. if score in_2 du_data matches 4.. if score in_6 du_data matches 4.. if score in_8 du_data matches 4.. if block ~ ~ ~ barrel{Items:[{Slot:2b, id:"minecraft:gray_wool"},{Slot:3b, tag:{OreDict:["ingotConductive"]}},{Slot:4b, id:"minecraft:gray_wool"},{Slot:11b, tag:{OreDict:["ingotConductive"]}},{Slot:12b, tag:{OreDict:["blockMachineFrame2"]}},{Slot:13b, tag:{OreDict:["ingotConductive"]}},{Slot:20b, id:"minecraft:gray_wool"},{Slot:21b, tag:{OreDict:["ingotConductive"]}},{Slot:22b, id:"minecraft:gray_wool"}]} run function mechanization:machines/recipes/battery_t2
-
-#Energy relay
-execute if score in_0 du_data matches 0 if score in_2 du_data matches 0 if score in_3 du_data matches 2.. if score in_5 du_data matches 2.. if score in_6 du_data matches 2.. if score in_7 du_data matches 4.. if score in_8 du_data matches 2.. if block ~ ~ ~ barrel{Items:[{Slot:3b, tag:{OreDict:["gemCrystalComposite"]}},{Slot:11b, tag:{OreDict:["ingotConductive"]}},{Slot:12b, tag:{OreDict:["blockMachineFrame2"]}},{Slot:13b, tag:{OreDict:["ingotConductive"]}},{Slot:20b, tag:{OreDict:["ingotConductive"]}},{Slot:21b, id:"minecraft:gray_wool"},{Slot:22b, tag:{OreDict:["ingotConductive"]}}]} run function mechanization:machines/recipes/energy_relay
-
-
-
 #Solar Panel
 execute if score in_0 du_data matches 4.. if score in_1 du_data matches 4.. if score in_2 du_data matches 4.. if score in_7 du_data matches 2.. if block ~ ~ ~ barrel{Items:[{Slot:2b, id:"minecraft:blue_stained_glass"},{Slot:3b, id:"minecraft:blue_stained_glass"},{Slot:4b, id:"minecraft:blue_stained_glass"},{Slot:11b, tag:{OreDict:["ingotConductive"]}},{Slot:12b, tag:{OreDict:["blockMachineFrame2"]}},{Slot:13b, tag:{OreDict:["ingotConductive"]}},{Slot:20b, tag:{OreDict:["ingotConductive"]}},{Slot:21b, id:"minecraft:daylight_detector"},{Slot:22b, tag:{OreDict:["ingotConductive"]}}]} run function mechanization:machines/recipes/solar_panel
 

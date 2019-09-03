@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "translate": "mech.advancements.machines.titanium_ore.title",
+			"color":"light_purple"
+        },
+        "description": {
+            "translate": "mech.advancements.machines.titanium_ore.description",
+			"color":"dark_aqua"
+        },
+        "icon": {
+            "item": "minecraft:blast_furnace",
+            "nbt": "{CustomModelData:6421320}"
+        },
+        "frame": "goal",
+        "hidden": true
+    },
+    "criteria": {
+        "have_titanium_ore": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [{
+                        "nbt": "{mech_itemid:1320}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "mechanization:mechanization"
+}

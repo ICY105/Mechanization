@@ -31,5 +31,6 @@ execute store result entity @s ArmorItems[3].tag.du_move_y int 1 run scoreboard 
 execute store result entity @s ArmorItems[3].tag.du_move_z int 1 run scoreboard players get @s du_move_z
 
 #cleanup
+data merge entity @s {Fire:32676}
 execute unless block ~ ~ ~ barrel run loot spawn ~ ~ ~ loot mechanization:base/tier_2_machine_frame
 execute unless block ~ ~ ~ barrel run kill @s

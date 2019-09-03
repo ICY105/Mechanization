@@ -261,5 +261,6 @@ Assembly [05]: {
 		Disc Hyperspace			[02-5102]
 		Disc Money for Nothing	[03-5103]
 		Disc Wander				[04-5104]
+		Disc Stranger Think		[05-5105]
 	}
 }

@@ -1,5 +1,5 @@
 scoreboard players set out_0 mech_data 0
-scoreboard players set in_0 mech_data 6
+scoreboard players set in_0 mech_data 4
 execute if block ~ ~-1 ~ air if block ~ ~-2 ~ air run function mechanization:base/energy/player_energy
 execute if entity @s[x_rotation=-90..-45] if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run function mechanization:base/energy/player_energy
 

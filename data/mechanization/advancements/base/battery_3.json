@@ -1,14 +1,18 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.base.battery_3.title"
+            "translate": "mech.advancements.base.battery_3.title",
+			"color":"dark_purple",
+			"italic":true
         },
         "description": {
-            "translate": "mech.advancements.base.battery_3.description"
+            "translate": "mech.advancements.base.battery_3.description",
+			"color":"dark_aqua",
+			"italic":false
         },
         "icon": {
-            "item": "minecraft:diamond_shovel",
-            "nbt": "{Damage:19,Unbreakable:1b}"
+            "item": "minecraft:blast_furnace",
+            "nbt": "{CustomModelData:6421018}"
         },
         "frame": "goal"
     },
@@ -17,11 +21,11 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:1002}"
+                        "nbt": "{mech_itemid:1018}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:base\/battery_2"
+    "parent": "mechanization:base/machine_frame_3"
 }

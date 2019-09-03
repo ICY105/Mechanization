@@ -1,14 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.base.multimeter.title"
+            "translate": "mech.advancements.base.multimeter.title",
+			"color":"gray"
         },
         "description": {
-            "translate": "mech.advancements.base.multimeter.description"
+            "translate": "mech.advancements.base.multimeter.description",
+			"color":"dark_aqua"
         },
         "icon": {
-            "item": "minecraft:diamond_shovel",
-            "nbt": "{Damage:41,Unbreakable:1b}"
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:6421101}"
         },
         "frame": "task"
     },

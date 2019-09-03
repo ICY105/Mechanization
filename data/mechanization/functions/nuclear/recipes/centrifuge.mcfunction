@@ -1,4 +1,4 @@
-replaceitem block ~ ~ ~ container.16 diamond_shovel{du_nerf:1b, mech_itemid: 3000, du_click_detect:1b, Unbreakable:1, Damage:84, HideFlags:6, display: {Name: "{\"translate\":\"mech.block.centrifuge\",\"color\":\"gray\",\"italic\":false}", Lore: ["§fRefines nuclear fuels.","§fUses: 64 kW"]}}
+loot replace block ~ ~ ~ container.16 loot mechanization:nuclear/centrifuge
 scoreboard players set out_0 du_data 4
 scoreboard players set out_1 du_data 8
 scoreboard players set out_2 du_data 4

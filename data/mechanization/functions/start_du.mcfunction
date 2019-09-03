@@ -1,5 +1,6 @@
 
 #set up ore gen
+scoreboard objectives add mech_data dummy
 scoreboard players set worldgen du_data 1
 
 #set up mech data storage

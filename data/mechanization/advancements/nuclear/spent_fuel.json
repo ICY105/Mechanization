@@ -1,14 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.nuclear.spent_fuel.title"
+            "translate": "mech.advancements.nuclear.spent_fuel.title",
+			"color":"blue"
         },
         "description": {
-            "translate": "mech.advancements.nuclear.spent_fuel.description"
+            "translate": "mech.advancements.nuclear.spent_fuel.description",
+			"color":"dark_aqua"
         },
         "icon": {
-            "item": "minecraft:diamond_shovel",
-            "nbt": "{Damage:97,Unbreakable:1b}"
+            "item": "minecraft:structure_block",
+            "nbt": "{CustomModelData:6423102}"
         },
         "frame": "task",
         "hidden": true

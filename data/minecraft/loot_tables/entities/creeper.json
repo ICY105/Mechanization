@@ -51,19 +51,23 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "mechanization:assembly/disc_end_of_the_world"
+          "name": "minecraft:assembly/disc_end_of_the_world"
         },
 		{
           "type": "minecraft:loot_table",
-          "name": "mechanization:assembly/disc_hyperspace"
+          "name": "minecraft:assembly/disc_hyperspace"
         },
 		{
           "type": "minecraft:loot_table",
-          "name": "mechanization:assembly/disc_money_for_nothing"
+          "name": "minecraft:assembly/disc_money_for_nothing"
         },
 		{
           "type": "minecraft:loot_table",
-          "name": "mechanization:assembly/disc_wanderer"
+          "name": "minecraft:assembly/disc_wanderer"
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:assembly/disc_stranger_think"
         }
       ],
       "conditions": [

@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": {
+            "translate": "mech.advancements.base.ender_upgrade.title",
+			"color":"dark_purple"
+        },
+        "description": {
+            "translate": "mech.advancements.base.ender_upgrade.description",
+			"color":"dark_aqua"
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:6421104}"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "have_wrench": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [{
+                        "nbt": "{mech_itemid:1104}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "mechanization:base/machine_upgrade"
+}

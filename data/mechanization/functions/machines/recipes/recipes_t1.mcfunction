@@ -1,9 +1,4 @@
 
-#T1 Battery
-execute if score in_0 du_data matches 4.. if score in_1 du_data matches 8.. if score in_2 du_data matches 4.. if score in_3 du_data matches 2.. if score in_5 du_data matches 2.. if score in_6 du_data matches 4.. if score in_7 du_data matches 8.. if score in_8 du_data matches 4.. if block ~ ~ ~ barrel{Items:[{Slot:2b, id:"minecraft:white_wool"},{Slot:3b, id:"minecraft:redstone"},{Slot:4b, id:"minecraft:white_wool"},{Slot:11b, tag:{OreDict:["ingotCopper"]}},{Slot:12b, tag:{OreDict:["blockMachineFrame1"]}},{Slot:13b, tag:{OreDict:["ingotCopper"]}},{Slot:20b, id:"minecraft:white_wool"},{Slot:21b, id:"minecraft:redstone"},{Slot:22b, id:"minecraft:white_wool"}]} run function mechanization:machines/recipes/battery_t1
-
-
-
 #Furnace Generator
 execute if score in_0 du_data matches 2.. if score in_2 du_data matches 2.. if score in_3 du_data matches 2.. if score in_5 du_data matches 2.. if score in_6 du_data matches 2.. if score in_8 du_data matches 2.. if block ~ ~ ~ barrel{Items:[{Slot:2b, id:"minecraft:white_terracotta"},{Slot:3b, id:"minecraft:water_bucket"},{Slot:4b, id:"minecraft:white_terracotta"},{Slot:11b, tag:{OreDict:["ingotCopper"]}},{Slot:12b, tag:{OreDict:["blockMachineFrame1"]}},{Slot:13b, tag:{OreDict:["ingotCopper"]}},{Slot:20b, id:"minecraft:white_terracotta"},{Slot:21b, id:"minecraft:furnace"},{Slot:22b, id:"minecraft:white_terracotta"}]} run function mechanization:machines/recipes/furnace_generator
 

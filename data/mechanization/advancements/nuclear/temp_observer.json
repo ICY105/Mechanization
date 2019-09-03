@@ -1,14 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.nuclear.temp_observer.title"
+            "translate": "mech.advancements.nuclear.temp_observer.title",
+			"color":"dark_red"
         },
         "description": {
-            "translate": "mech.advancements.nuclear.temp_observer.description"
+            "translate": "mech.advancements.nuclear.temp_observer.description",
+			"color":"dark_aqua"
         },
         "icon": {
-            "item": "minecraft:diamond_shovel",
-            "nbt": "{Damage:93,Unbreakable:1b}"
+            "item": "minecraft:blast_furnace",
+            "nbt": "{CustomModelData:6423005}"
         },
         "frame": "task"
     },
@@ -23,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:nuclear\/fission_reactor"
+    "parent": "mechanization:nuclear/control_rod"
 }

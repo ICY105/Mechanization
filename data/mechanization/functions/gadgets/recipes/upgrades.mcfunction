@@ -1,7 +1,7 @@
 #Upgrades Tools
 execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:blaze_powder", Count: 32b},{id:"minecraft:lava_bucket", Count: 1b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_auto_smelt
 execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:redstone", Count: 48b},{id:"minecraft:sugar", Count: 32b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_empowered
-execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:iron_ingot", Count: 16b},{id:"minecraft:rose_red", Count: 32b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_magnetic
+execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:iron_ingot", Count: 16b},{id:"minecraft:red_dye", Count: 32b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_magnetic
 execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:ender_eye", Count: 4b},{id:"minecraft:lava_bucket", Count: 1b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_trash
 execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:tnt", Count: 8b},{id:"minecraft:quartz", Count: 32b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_smash
 
@@ -17,7 +17,7 @@ execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b
 
 #Upgrades Armor
 execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:obsidian", Count: 32b},{id:"minecraft:slime_ball", Count: 16b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_armor
-execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:shulker_shell", Count: 2b},{id:"minecraft:slime_block", Count: 4b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_armor_toughness
+execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:shulker_shell", Count: 2b},{id:"minecraft:slime_block", Count: 4b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_knockback_resistance
 execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:sugar", Count: 48b},{id:"minecraft:rabbit_foot", Count: 8b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_speed
 execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:glistering_melon_slice", Count: 48b},{id:"minecraft:ender_pearl", Count: 16b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_health
 
@@ -37,10 +37,10 @@ execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b
 execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:pufferfish", Count: 16b},{id:"minecraft:scute", Count: 8b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_water_breathing
 
 #guns
-execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:packed_ice", Count: 16b},{id:"minecraft:snow_block", Count: 64b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_cryo_unit
-execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:piston", Count: 16b},{id:"minecraft:hopper", Count: 16b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_fluid_actuator
-execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:hopper", Count: 16b},{id:"minecraft:redstone", Count: 64b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_plasma_pump
-execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:glowstone_dust", Count: 64b},{id:"minecraft:popped_chorus_fruit", Count: 32b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_super_charger
+execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:packed_ice", Count: 16b},{id:"minecraft:snow_block", Count: 64b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/cryo_unit
+execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:piston", Count: 16b},{id:"minecraft:hopper", Count: 16b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/fluid_actuator
+execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:hopper", Count: 16b},{id:"minecraft:redstone", Count: 64b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/plasma_pump
+execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:glowstone_dust", Count: 64b},{id:"minecraft:popped_chorus_fruit", Count: 32b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/super_charger
 execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:slime_block", Count: 4b},{id:"minecraft:ender_pearl", Count: 8b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_bouncy_projectiles
 
 
