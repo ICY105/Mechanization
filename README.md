@@ -12,7 +12,7 @@ The wiki has overview videos, recipes, and in-depth descriptions of all items.
 
 [Installation Instructions](https://github.com/ImCoolYeah105/Mechanization/wiki/Installion)
 
-Now on curseforge! https://minecraft.curseforge.com/projects/mechanization-datapack
+[Releases](https://github.com/ImCoolYeah105/Mechanization/releases)
 
 ![prerelease](https://i.imgur.com/S04DKyE.png)
 
