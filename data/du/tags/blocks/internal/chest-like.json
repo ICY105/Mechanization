@@ -1,0 +1,8 @@
+{
+	"values":[
+		"minecraft:chest",
+		"minecraft:trapped_chest",
+		"minecraft:barrel",
+		"#du:colors/shulker_boxes"
+	]
+}

@@ -1,3 +1,5 @@
+say loaded
+
 gamerule commandBlockOutput false
 gamerule maxCommandChainLength 1000000
 

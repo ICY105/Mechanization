@@ -1,0 +1,14 @@
+{
+	"values":[
+		"#minecraft:buttons",
+		"#du:pressure_plates",
+		"minecraft:lever",
+		"minecraft:repeater",
+		"minecraft:comparator",
+		"minecraft:detector_rail",
+		"minecraft:tripwire_hook",
+		"minecraft:redstone_torch",
+		"minecraft:redstone_block",
+		"minecraft:daylight_detector"
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"values":[
+		"#du:tools/weapons",
+		"#du:tools/pickaxes",
+		"#du:tools/axes",
+		"#du:tools/shovels",
+		"#du:tools/hoes",
+		
+		"minecraft:flint_and_steel",
+		"minecraft:fishing_rod",
+		"minecraft:shears",
+		"minecraft:shield",
+		"minecraft:carrot_on_a_stick"
+	]
+}

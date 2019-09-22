@@ -1,0 +1,19 @@
+{
+	"values":[
+		"#du:colors/terracotta",
+		
+		"minecraft:gravel",
+		"minecraft:dirt",
+		"minecraft:sandstone",
+		
+		"minecraft:stone",
+		"minecraft:granite",
+		"minecraft:diorite",
+		"minecraft:andesite",
+		"minecraft:infested_stone",
+		
+		"minecraft:end_stone",
+		"minecraft:netherrack",
+		"minecraft:soul_sand"
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"values":[
+		"#du:air",
+		"#du:command_blocks",
+		"minecraft:bedrock",
+		"minecraft:barrier",
+		"minecraft:structure_block",
+		"minecraft:structure_void",
+		"minecraft:jigsaw",
+		"minecraft:end_portal_frame",
+		"minecraft:end_portal",
+		"minecraft:nether_portal"
+	]
+}
