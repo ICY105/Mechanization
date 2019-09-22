@@ -1,2 +1,2 @@
-replaceitem block ~ ~ ~ container.16 diamond_shovel{du_nerf:1b, mech_itemid: 4103, du_click_detect:3b,Unbreakable:1,Damage:136,HideFlags:6,modified:3,OreDict:["itemPlasmaRifle"],mech_gun:{energy:24,fire_rate:4,heat:50,recoil_x:4,recoil_y:4,damage:60,velocity:6},display:{Name:"{\"translate\":\"mech.item.plasma_rifle\",\"color\":\"dark_aqua\",\"italic\":false}"},AttributeModifiers:[{AttributeName:"generic.movementSpeed",Name:"generic.movementSpeed",Amount:0.0,Operation:1,UUIDLeast:100006,UUIDMost:100006,Slot:"mainhand"},{AttributeName:"generic.attackSpeed",Name:"generic.attackSpeed",Amount:100,Operation:0,UUIDLeast:91804,UUIDMost:191102,Slot:"mainhand"}]}
+loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/plasma_rifle
 scoreboard players set out_1 du_data 32

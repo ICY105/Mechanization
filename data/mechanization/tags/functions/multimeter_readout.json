@@ -4,7 +4,6 @@
 		"mechanization:machines/tools/multimeter_readout",
 		"mechanization:nuclear/tools/multimeter_readout",
 		"mechanization:gadgets/tools/multimeter_readout",
-		"mechanization:assembly/tools/multimeter_readout",
-		"mechanization:tempist/tools/multimeter_readout"
+		"mechanization:assembly/tools/multimeter_readout"
 	]
 }

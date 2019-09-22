@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.resource.dust","with":[{"translate":"mech.resource.uranium"}],"color":"green","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1433, CustomModelData: 6421433, du_smelt_id: 1433, OreDict:[\"dustUranium\"], HideFlags: 32}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

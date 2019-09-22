@@ -1,4 +1,4 @@
-replaceitem block ~ ~ ~ container.16 diamond_shovel{du_nerf:1b, mech_itemid: 4407, Unbreakable:1,Damage:151,HideFlags:6,OreDict:["upgradeScope"],display:{Name:"{\"translate\":\"mech.item.scope\",\"color\":\"blue\",\"italic\":false}"}}
+loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/scope
 scoreboard players set out_0 du_data 2
 scoreboard players set out_1 du_data 2
 scoreboard players set out_2 du_data 2

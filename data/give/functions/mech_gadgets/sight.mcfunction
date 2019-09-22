@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 4406, Unbreakable:1,Damage:150,HideFlags:6,OreDict:["upgradeSight"],display:{Name:"{\"translate\":\"mech.item.sight\",\"color\":\"blue\",\"italic\":false}"}}}}
+loot give @s loot mechanization:gadgets/red_dot_sight

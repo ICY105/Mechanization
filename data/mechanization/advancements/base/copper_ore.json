@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": {
+            "translate": "mech.advancements.machines.copper_ore.title",
+			"color":"green"
+        },
+        "description": {
+            "translate": "mech.advancements.machines.copper_ore.description",
+			"color":"dark_aqua"
+        },
+        "icon": {
+            "item": "minecraft:blast_furnace",
+            "nbt": "{CustomModelData:6421300}"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "have_copper_ore": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [{
+                        "nbt": "{mech_itemid:1300}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "mechanization:mechanization"
+}

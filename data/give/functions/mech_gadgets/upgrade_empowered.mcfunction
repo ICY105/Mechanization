@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 4302, OreDict:["upgradeEmpowered"],Unbreakable:1,Damage:160,HideFlags:6,display:{Lore:["§fMax 2 Upgrades","§fGrants haste for 4 kW."],Name:"{\"translate\":\"mech.item.upgrade_empowered\",\"color\":\"dark_green\",\"italic\":false}"}}}}
+loot give @s loot mechanization:gadgets/upgrade_empowered

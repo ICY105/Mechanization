@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {CustomName:"{\"translate\":\"mech.block.auto_farm\",\"color\":\"dark_green\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 2005, du_click_detect:1b,Unbreakable:1,Damage:64,HideFlags:6,display:{Name:"{\"translate\":\"mech.block.auto_farm\",\"color\":\"dark_green\",\"italic\":false}",Lore:["§fAutomatically harvests","§fand replants crops.","§fUses: 48 kW"]}}}}
+loot give @s loot mechanization:machines/auto_farm

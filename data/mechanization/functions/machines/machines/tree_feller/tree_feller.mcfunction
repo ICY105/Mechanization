@@ -15,4 +15,5 @@ execute store result entity @s ArmorItems[3].tag.mech_gridid int 1 run scoreboar
 
 #cleanup
 execute at @s unless block ~ ~ ~ barrier run kill @e[tag=mech_tree_feller_model,distance=..0.75]
+execute at @s unless block ~ ~ ~ barrier run loot spawn ~ ~ ~ loot mechanization:base/tier_1_machine_frame
 execute at @s unless block ~ ~ ~ barrier run kill @s

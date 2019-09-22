@@ -1,9 +1,0 @@
-execute if score in_0 mech_data matches 0 run function mechanization:base/tools/manual/close/close_0
-execute if score in_0 mech_data matches 1 run function mechanization:base/tools/manual/close/close_1
-execute if score in_0 mech_data matches 2 run function mechanization:base/tools/manual/close/close_2
-execute if score in_0 mech_data matches 3 run function mechanization:base/tools/manual/close/close_3
-execute if score in_0 mech_data matches 4 run function mechanization:base/tools/manual/close/close_4
-execute if score in_0 mech_data matches 5 run function mechanization:base/tools/manual/close/close_5
-execute if score in_0 mech_data matches 6 run function mechanization:base/tools/manual/close/close_6
-execute if score in_0 mech_data matches 7 run function mechanization:base/tools/manual/close/close_7
-execute if score in_0 mech_data matches 8 run function mechanization:base/tools/manual/close/close_8

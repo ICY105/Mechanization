@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:leather_boots",Count:1b,tag:{mech_itemid: 4507, Damage:63, HideFlags:36, du_durability:1b, Unbreakable:1b, display:{color:16777215, Name:"{\"translate\":\"mech.item.tin_boots\",\"color\":\"gray\",\"italic\":false}"},AttributeModifiers:[{AttributeName:"mech.durability",Name:"mech.durability",Amount:384,Operation:0,UUIDLeast:12345,UUIDMost:12345,Slot:"feet"},{AttributeName:"generic.armor",Name:"generic.armor",Amount:2,Operation:0,UUIDLeast:100050,UUIDMost:100050,Slot:"feet"}] }}}
+loot give @s loot mechanization:gadgets/tin_boots

@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {CustomName:"{\"translate\":\"mech.block.tree_feller\",\"color\":\"dark_green\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 2002, du_click_detect:1b,Unbreakable:1,Damage:51,HideFlags:6,display:{Name:"{\"translate\":\"mech.block.tree_feller\",\"color\":\"dark_green\",\"italic\":false}",Lore:["§fCuts down trees.","§fUses: 32 kW"]}}}}
+loot give @s loot mechanization:machines/tree_feller

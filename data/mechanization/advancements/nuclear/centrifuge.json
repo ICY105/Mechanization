@@ -1,14 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.nuclear.centrifuge.title"
+            "translate": "mech.advancements.nuclear.centrifuge.title",
+			"color":"dark_red"
         },
         "description": {
-            "translate": "mech.advancements.nuclear.centrifuge.description"
+            "translate": "mech.advancements.nuclear.centrifuge.description",
+			"color":"dark_aqua"
         },
         "icon": {
-            "item": "minecraft:diamond_shovel",
-            "nbt": "{Damage:84,Unbreakable:1b}"
+            "item": "minecraft:blast_furnace",
+            "nbt": "{CustomModelData:6423000}"
         },
         "frame": "task"
     },

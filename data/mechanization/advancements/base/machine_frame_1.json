@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": {
+            "translate": "mech.advancements.machines.machine_frame_1.title",
+			"color":"gray"
+        },
+        "description": {
+            "translate": "mech.advancements.machines.machine_frame_1.description",
+			"color":"dark_aqua"
+        },
+        "icon": {
+            "item": "minecraft:blast_furnace",
+            "nbt": "{CustomModelData:6421415}"
+        },
+        "frame": "goal"
+    },
+    "criteria": {
+        "have_frame_1": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [{
+                        "nbt": "{mech_itemid:1415}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "mechanization:base/machine_crafter"
+}

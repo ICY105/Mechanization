@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {CustomName:"{\"translate\":\"mech.block.fast_hopper\",\"color\":\"red\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 5005, du_click_detect:1b,Unbreakable:1,Damage:195,HideFlags:6,display:{Name:"{\"translate\":\"Fast Hopper\",\"color\":\"red\",\"italic\":false}",Lore:["§fSuper fast hopper."]}}}}
+loot spawn ~ ~ ~ loot mechanization:assembly/fast_hopper

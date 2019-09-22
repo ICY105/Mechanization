@@ -1,5 +1,9 @@
 {
 	"values":[
-		"mechanization:base/machines/machine_crafter"
+		"mechanization:base/recipes/table_recipes",
+		"mechanization:machines/recipes/main",
+		"mechanization:nuclear/recipes/main",
+		"mechanization:gadgets/recipes/main",
+		"mechanization:assembly/recipes/main"
 	]
 }

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.resource.ingot","with":[{"translate":"mech.resource.copper"}],"color":"gold","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1301, CustomModelData: 6421301, OreDict:[\"ingotCopper\"], HideFlags: 32}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

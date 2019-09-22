@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 4409, OreDict:["upgradeCryoUnit"],Unbreakable:1,Damage:157,HideFlags:6,display:{Lore:["§fMax 1 Upgrades","§fDecreases weapon heat output."],Name:"{\"translate\":\"mech.item.cryo_unit\",\"color\":\"dark_aqua\",\"italic\":false}"}}}}
+loot give @s loot mechanization:gadgets/cryo_unit

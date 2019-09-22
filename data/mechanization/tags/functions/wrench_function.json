@@ -4,7 +4,6 @@
 		"mechanization:machines/tools/wrench_function",
 		"mechanization:nuclear/tools/wrench_function",
 		"mechanization:gadgets/tools/wrench_function",
-		"mechanization:assembly/tools/wrench_function",
-		"mechanization:tempist/tools/wrench_function"
+		"mechanization:assembly/tools/wrench_function"
 	]
 }

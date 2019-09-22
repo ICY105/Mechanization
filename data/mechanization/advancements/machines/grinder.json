@@ -1,14 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.machines.grinder.title"
+            "translate": "mech.advancements.machines.grinder.title",
+			"color":"gray"
         },
         "description": {
-            "translate": "mech.advancements.machines.grinder.description"
+            "translate": "mech.advancements.machines.grinder.description",
+			"color":"dark_aqua"
         },
         "icon": {
-            "item": "minecraft:diamond_shovel",
-            "nbt": "{Damage:60,Unbreakable:1b}"
+            "item": "minecraft:blast_furnace",
+            "nbt": "{CustomModelData:6422009}"
         },
         "frame": "task"
     },
@@ -23,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:machines\/machine_frame_2"
+    "parent": "mechanization:base/copper_ore"
 }

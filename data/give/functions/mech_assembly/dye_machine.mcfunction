@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {CustomName:"{\"translate\":\"mech.block.dye_machine\",\"color\":\"green\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 5003, du_click_detect:1b,Unbreakable:1,Damage:202,HideFlags:6,display:{Name:"{\"translate\":\"Dye Machine\",\"color\":\"green\",\"italic\":false}",Lore:["§fDyes blocks.","§fUses 16 kJ/Operation"]}}}}
+loot spawn ~ ~ ~ loot mechanization:assembly/dye_machine

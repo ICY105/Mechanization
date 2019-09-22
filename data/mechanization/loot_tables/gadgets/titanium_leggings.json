@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.tool.leggings","color":"light_purple","italic":false,"with":[{"translate":"mech.resource.titanium"}]}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 4207, CustomModelData: 6424207, mech_modify:1b, du_dur:{enabled:1b,max_dur:742},display:{color:13216198}}"
+            },
+			{
+				"function":"set_attributes",
+				"modifiers": [
+					{
+						"name":"generic.armor",
+						"attribute":"generic.armor",
+						"operation":"addition",
+						"amount":6,
+						"slot":"legs"
+					},
+					{
+						"name":"generic.armorToughness",
+						"attribute":"generic.armorToughness",
+						"operation":"addition",
+						"amount":2,
+						"slot":"legs"
+					}
+				]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

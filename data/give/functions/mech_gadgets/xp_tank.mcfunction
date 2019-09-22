@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {CustomName:"{\"translate\":\"mech.block.xp_tank\",\"color\":\"green\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 4002, du_click_detect:1b,Unbreakable:1,Damage:206,HideFlags:6,mech_xp:0,display:{Name:"{\"translate\":\"mech.block.xp_tank\",\"color\":\"green\",\"italic\":false}",Lore:["§fPulls XP from players","§fabove 30 levels and pushes","§fXP to players bellow 30 levels."]}}}}
+loot give @s loot mechanization:gadgets/xp_tank

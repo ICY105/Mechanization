@@ -19,5 +19,4 @@ execute if score @s mech_data matches 53..56 run data merge block ~ ~ ~ {Items:[
 execute if score @s mech_data matches 57.. run data merge block ~ ~ ~ {Items:[{Slot:0b,id:"minecraft:cobblestone",Count:64},{Slot:1b,id:"minecraft:cobblestone",Count:64},{Slot:2b,id:"minecraft:cobblestone",Count:64},{Slot:3b,id:"minecraft:cobblestone",Count:64},{Slot:4b,id:"minecraft:cobblestone",Count:64},{Slot:5b,id:"minecraft:cobblestone",Count:64},{Slot:6b,id:"minecraft:cobblestone",Count:64},{Slot:7b,id:"minecraft:cobblestone",Count:64},{Slot:8b,id:"minecraft:cobblestone",Count:64}]}
 
 data merge entity @s {Fire:32676s}
-execute unless block ~ ~ ~ dropper run function give:mech_machines/machine_frame_tier_2
 execute unless block ~ ~ ~ dropper run kill @s

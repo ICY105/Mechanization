@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 4323, OreDict:["upgradeSlowfall"],Unbreakable:1,Damage:178,HideFlags:6,display:{Lore:["§fMax 1 Upgrade","§fFall Slowly & Negate Fall Damage"],Name:"{\"translate\":\"mech.item.upgrade_slowfall\",\"color\":\"blue\",\"italic\":false}"}}}}
+loot give @s loot mechanization:gadgets/upgrade_slowfall

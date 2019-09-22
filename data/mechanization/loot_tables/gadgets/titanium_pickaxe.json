@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:diamond_pickaxe",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.tool.pickaxe","color":"light_purple","italic":false,"with":[{"translate":"mech.resource.titanium"}]}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 4200, CustomModelData: 6424200, mech_modify:1b, du_dur:{enabled:1b,max_dur:2048}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

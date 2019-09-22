@@ -1,0 +1,1 @@
+loot spawn ~ ~ ~ loot mechanization:assembly/item_receiver

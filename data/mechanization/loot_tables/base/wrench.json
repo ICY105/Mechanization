@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.wrench","color":"gray","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [{"translate":"mech.item.wrench.lore_1","color":"white","italic":false},{"translate":"mech.item.wrench.lore_2","color":"white","italic":false}]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1100, CustomModelData: 6421100, HideFlags: 6, Unbreakable:1b, du_click_detect:-1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

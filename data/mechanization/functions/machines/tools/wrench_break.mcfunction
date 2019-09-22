@@ -1,117 +1,116 @@
 #Furnace Generator
-execute as @e[tag=mech_furnace_gen,distance=..0.5] run function give:mech_machines/furnace_generator
-execute as @e[tag=mech_furnace_gen,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_furnace_gen,distance=..0.5]
+execute if entity @s[tag=mech_furnace_gen] run loot spawn ~ ~ ~ loot mechanization:machines/furnace_generator
+execute if entity @s[tag=mech_furnace_gen] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_furnace_gen]
 
 #Electric Furnace
-execute as @e[tag=mech_ele_furnace,distance=..0.5] run function give:mech_machines/electric_furnace
-execute as @e[tag=mech_ele_furnace,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_ele_furnace,distance=..0.5]
+execute if entity @s[tag=mech_ele_furnace] run loot spawn ~ ~ ~ loot mechanization:machines/electric_furnace
+execute if entity @s[tag=mech_ele_furnace] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_ele_furnace]
 
 #Solar Panel
-execute as @e[tag=mech_solar_panel,distance=..0.5] run function give:mech_machines/solar_panel
-execute as @e[tag=mech_solar_panel,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_solar_panel,distance=..0.5]
-kill @e[tag=mech_solar_panel_model,distance=..0.5]
+execute if entity @s[tag=mech_solar_panel] run loot spawn ~ ~ ~ loot mechanization:machines/solar_panel
+execute if entity @s[tag=mech_solar_panel] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_solar_panel]
+kill @s[tag=mech_solar_panel_model]
 
 #Grinder
-execute as @e[tag=mech_grinder,distance=..0.5] run function give:mech_machines/grinder
-execute as @e[tag=mech_grinder,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_grinder,distance=..0.5]
+execute if entity @s[tag=mech_grinder] run loot spawn ~ ~ ~ loot mechanization:machines/grinder
+execute if entity @s[tag=mech_grinder] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_grinder]
 
 #Alloy Furnace
-execute as @e[tag=mech_alloy_furnace,distance=..0.5] run function give:mech_machines/alloy_furnace
-execute as @e[tag=mech_alloy_furnace,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_alloy_furnace,distance=..0.5]
+execute if entity @s[tag=mech_alloy_furnace] run loot spawn ~ ~ ~ loot mechanization:machines/alloy_furnace
+execute if entity @s[tag=mech_alloy_furnace] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_alloy_furnace]
 
 #Tree Feller
-execute as @e[tag=mech_tree_feller,distance=..0.5] run function give:mech_machines/tree_feller
-execute as @e[tag=mech_tree_feller,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_tree_feller,distance=..0.5]
-kill @e[tag=mech_tree_feller_model,distance=..0.6]
+execute if entity @s[tag=mech_tree_feller] run loot spawn ~ ~ ~ loot mechanization:machines/tree_feller
+execute if entity @s[tag=mech_tree_feller] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_tree_feller]
+kill @e[tag=mech_tree_feller_model,distance=..0.75]
 
 #Block Breaker
-execute positioned ~ ~1 ~ as @e[tag=mech_block_breaker,distance=..0.5] run function give:mech_machines/block_breaker
-execute positioned ~ ~1 ~ run kill @e[tag=mech_block_breaker,distance=..0.5]
+execute if entity @s[tag=mech_block_breaker] run loot spawn ~ ~ ~ loot mechanization:machines/block_breaker
+kill @s[tag=mech_block_breaker]
 
 #Auto Farm
-execute as @e[tag=mech_auto_farm,distance=..0.5] run function give:mech_machines/auto_farm
-execute as @e[tag=mech_auto_farm,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_auto_farm,distance=..0.5]
+execute if entity @s[tag=mech_auto_farm] run function give:mech_machines/auto_farm
+execute if entity @s[tag=mech_auto_farm] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_auto_farm]
 
 #Mob Grinder
-execute as @e[tag=mech_mob_grinder,distance=..0.5] run function give:mech_machines/mob_grinder
-execute as @e[tag=mech_mob_grinder,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_mob_grinder,distance=..0.5]
+execute if entity @s[tag=mech_mob_grinder] run loot spawn ~ ~ ~ loot mechanization:machines/mob_grinder
+execute if entity @s[tag=mech_mob_grinder] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_mob_grinder]
 
 #Quarry
-execute as @e[tag=mech_quarry,distance=..0.5] run function give:mech_machines/quarry
-execute as @e[tag=mech_quarry,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_quarry,distance=..0.5]
+execute if entity @s[tag=mech_quarry] run loot spawn ~ ~ ~ loot mechanization:machines/quarry
+execute if entity @s[tag=mech_quarry] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_quarry]
 
 #Chunk Loader
-execute as @e[tag=mech_chunk_loader,distance=..0.5] run function give:mech_machines/chunk_loader
-execute as @e[tag=mech_chunk_loader,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_chunk_loader,distance=..0.5]
+execute if entity @s[tag=mech_chunk_loader] run loot spawn ~ ~ ~ loot mechanization:machines/chunk_loader
+execute if entity @s[tag=mech_chunk_loader] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_chunk_loader]
 
 #Teleporter
-execute as @e[tag=mech_teleporter,distance=..0.5] run function give:mech_machines/teleporter
-execute as @e[tag=mech_teleporter,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-execute as @e[tag=mech_teleporter,distance=..0.5] at @s run function mechanization:machines/machines/teleporter/remove
+execute if entity @s[tag=mech_teleporter] run loot spawn ~ ~ ~ loot mechanization:machines/teleporter
+execute if entity @s[tag=mech_teleporter] run setblock ~ ~ ~ minecraft:air replace
+execute if entity @s[tag=mech_teleporter] run function mechanization:machines/machines/teleporter/remove
 
 #Lava Fabricator
-execute as @e[tag=mech_lava_fabricator,distance=..0.5] run function give:mech_machines/lava_fabricator
-execute as @e[tag=mech_lava_fabricator,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_lava_fabricator,distance=..0.5]
+execute if entity @s[tag=mech_lava_fabricator] run loot spawn ~ ~ ~ loot mechanization:machines/lava_fabricator
+execute if entity @s[tag=mech_lava_fabricator] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_lava_fabricator]
 
 #Growth Accelerator
-execute as @e[tag=mech_growth_accelerator,distance=..0.5] run function give:mech_machines/growth_accelerator
-execute as @e[tag=mech_growth_accelerator,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_growth_accelerator,distance=..0.5]
+execute if entity @s[tag=mech_growth_accelerator] run loot spawn ~ ~ ~ loot mechanization:machines/growth_accelerator
+execute if entity @s[tag=mech_growth_accelerator] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_growth_accelerator]
 
 #Fisher
-execute as @e[tag=mech_fisher,distance=..0.5] run function give:mech_machines/auto_fisher
-execute as @e[tag=mech_fisher,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_fisher,distance=..0.5]
+execute if entity @s[tag=mech_fisher] run loot spawn ~ ~ ~ loot mechanization:machines/auto_fisher
+execute if entity @s[tag=mech_fisher] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_fisher]
 
 #Spawner Controller
-execute as @e[tag=mech_spawner_controller,distance=..0.5] run function give:mech_machines/spawner_controller
-execute as @e[tag=mech_spawner_controller,distance=..0.5] at @s run data merge block ~ ~ ~ {RequiredPlayerRange: 16s, MaxSpawnDelay: 800s, MinSpawnDelay: 200s, Delay: 600s}
-kill @e[tag=mech_spawner_controller,distance=..0.5]
+execute if entity @s[tag=mech_spawner_controller] run loot spawn ~ ~ ~ loot mechanization:machines/spawner_controller
+execute if entity @s[tag=mech_spawner_controller] run data merge block ~ ~ ~ {RequiredPlayerRange: 16s, MaxSpawnDelay: 800s, MinSpawnDelay: 200s, Delay: 600s}
+kill @s[tag=mech_spawner_controller]
 
 #Super Piston
-execute as @e[tag=mech_super_piston,distance=..0.5] run function give:mech_machines/super_piston
-execute as @e[tag=mech_super_piston,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_super_piston,distance=..0.5]
+execute if entity @s[tag=mech_super_piston] run loot spawn ~ ~ ~ loot mechanization:machines/super_piston
+execute if entity @s[tag=mech_super_piston] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_super_piston]
 
 #Super Sticky Piston
-execute as @e[tag=mech_super_sticky_piston,distance=..0.5] run function give:mech_machines/super_sticky_piston
-execute as @e[tag=mech_super_sticky_piston,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_super_sticky_piston,distance=..0.5]
+execute if entity @s[tag=mech_super_sticky_piston] run loot spawn ~ ~ ~ loot mechanization:machines/super_sticky_piston
+execute if entity @s[tag=mech_super_sticky_piston] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_super_sticky_piston]
 
 #Turn Table
-execute as @e[tag=mech_turn_table,distance=..0.5] run function give:mech_machines/turn_table
-execute as @e[tag=mech_turn_table,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_turn_table,distance=..0.5]
+execute if entity @s[tag=mech_turn_table] run loot spawn ~ ~ ~ loot mechanization:machines/turn_table
+execute if entity @s[tag=mech_turn_table] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_turn_table]
 
 #Bio Generator
-execute as @e[tag=mech_bio_gen,distance=..0.5] run function give:mech_machines/bio_generator
-execute as @e[tag=mech_bio_gen,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_bio_gen,distance=..0.5]
+execute if entity @s[tag=mech_bio_gen] run loot spawn ~ ~ ~ loot mechanization:machines/bio_generator
+execute if entity @s[tag=mech_bio_gen] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_bio_gen]
 
 #Item Reformer
-execute as @e[tag=mech_reformer,distance=..0.5] run function give:mech_machines/item_reformer
-execute as @e[tag=mech_reformer,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_reformer,distance=..0.5]
+execute if entity @s[tag=mech_reformer] run loot spawn ~ ~ ~ loot mechanization:machines/item_reformer
+execute if entity @s[tag=mech_reformer] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_reformer]
 
 #Disenchanter
-execute as @e[tag=mech_disenchanter,distance=..0.5] run function give:mech_machines/disenchanter
-execute as @e[tag=mech_disenchanter,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_disenchanter,distance=..0.5]
+execute if entity @s[tag=mech_disenchanter] run loot spawn ~ ~ ~ loot mechanization:machines/disenchanter
+execute if entity @s[tag=mech_disenchanter] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_disenchanter]
 
 #Ender Generator
-execute as @e[tag=mech_end_generator,distance=..0.5] run function give:mech_machines/ender_generator
-execute as @e[tag=mech_end_generator,distance=..0.5] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @e[tag=mech_end_generator,distance=..0.5]
-
+execute if entity @s[tag=mech_dim_generator] run loot spawn ~ ~ ~ loot mechanization:machines/dimensional_generator
+execute if entity @s[tag=mech_dim_generator] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_dim_generator]
 

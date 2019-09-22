@@ -18,17 +18,17 @@ execute if score temp_0 mech_data matches 1.. run scoreboard players operation @
 execute if score temp_0 mech_data matches 1.. run kill @e[type=experience_orb,distance=..8,limit=1]
 
 #display
-execute if score @s mech_data matches 0..255 store success entity @s ArmorItems[3].tag.Damage int 114 if entity @s
-execute if score @s mech_data matches 256..511 store success entity @s ArmorItems[3].tag.Damage int 115 if entity @s
-execute if score @s mech_data matches 512..559 store success entity @s ArmorItems[3].tag.Damage int 116 if entity @s
-execute if score @s mech_data matches 768..1023 store success entity @s ArmorItems[3].tag.Damage int 117 if entity @s
-execute if score @s mech_data matches 1024..1279 store success entity @s ArmorItems[3].tag.Damage int 118 if entity @s
-execute if score @s mech_data matches 1280..1535 store success entity @s ArmorItems[3].tag.Damage int 119 if entity @s
-execute if score @s mech_data matches 1536..1791 store success entity @s ArmorItems[3].tag.Damage int 120 if entity @s
-execute if score @s mech_data matches 1792..2047 store success entity @s ArmorItems[3].tag.Damage int 121 if entity @s
-execute if score @s mech_data matches 2048.. store success entity @s ArmorItems[3].tag.Damage int 122 if entity @s
+execute if score @s mech_data matches 0..255 store success entity @s ArmorItems[3].tag.CustomModelData int 6424003 if entity @s
+execute if score @s mech_data matches 256..511 store success entity @s ArmorItems[3].tag.CustomModelData int 6424004 if entity @s
+execute if score @s mech_data matches 512..559 store success entity @s ArmorItems[3].tag.CustomModelData int 6424005 if entity @s
+execute if score @s mech_data matches 768..1023 store success entity @s ArmorItems[3].tag.CustomModelData int 6424006 if entity @s
+execute if score @s mech_data matches 1024..1279 store success entity @s ArmorItems[3].tag.CustomModelData int 6424007 if entity @s
+execute if score @s mech_data matches 1280..1535 store success entity @s ArmorItems[3].tag.CustomModelData int 6424008 if entity @s
+execute if score @s mech_data matches 1536..1791 store success entity @s ArmorItems[3].tag.CustomModelData int 6424009 if entity @s
+execute if score @s mech_data matches 1792..2047 store success entity @s ArmorItems[3].tag.CustomModelData int 6424010 if entity @s
+execute if score @s mech_data matches 2048.. store success entity @s ArmorItems[3].tag.CustomModelData int 64240011 if entity @s
 
 execute store result entity @s ArmorItems[3].tag.mech_xp int 1 run scoreboard players get @s mech_data
 
-execute unless block ~ ~ ~ glass run function give:mech_machines/machine_frame_tier_3
+execute unless block ~ ~ ~ glass run loot spawn ~ ~ ~ loot mechanization:base/tier_3_machine_frame
 execute unless block ~ ~ ~ glass run kill @s

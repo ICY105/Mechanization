@@ -1,14 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.machines.alloy_furnace.title"
+            "translate": "mech.advancements.machines.alloy_furnace.title",
+			"color":"gray"
         },
         "description": {
-            "translate": "mech.advancements.machines.alloy_furnace.description"
+            "translate": "mech.advancements.machines.alloy_furnace.description",
+			"color":"dark_aqua"
         },
         "icon": {
-            "item": "minecraft:diamond_shovel",
-            "nbt": "{Damage:48,Unbreakable:1b}"
+            "item": "minecraft:blast_furnace",
+            "nbt": "{CustomModelData:6422000}"
         },
         "frame": "task"
     },
@@ -23,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:machines\/machine_frame_1"
+    "parent": "mechanization:base/copper_ore"
 }

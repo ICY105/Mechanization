@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {CustomName:"{\"translate\":\"mech.block.teleporter\",\"color\":\"dark_purple\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 2017, du_click_detect:1b,Unbreakable:1,Damage:76,HideFlags:6,display:{Name:"{\"translate\":\"mech.block.teleporter\",\"color\":\"dark_purple\",\"italic\":false}",Lore:["§fTeleports to another teleporter","§fset to the same grid id.","§fTarget must be chunk loaded.","§fUses: 1024 kJ/teleport"]}}}}
+loot give @s loot mechanization:machines/teleporter

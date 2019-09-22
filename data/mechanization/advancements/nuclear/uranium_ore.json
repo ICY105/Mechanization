@@ -1,14 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.nuclear.uranium_ore.title"
+            "translate": "mech.advancements.nuclear.uranium_ore.title",
+			"color":"dark_green"
         },
         "description": {
-            "translate": "mech.advancements.nuclear.uranium_ore.description"
+            "translate": "mech.advancements.nuclear.uranium_ore.description",
+			"color":"dark_aqua"
         },
         "icon": {
-            "item": "minecraft:player_head",
-            "nbt": "{SkullOwner:{Id:\"00000000-0000-0000-ee69-000000000006\",Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTZmMTIzNWJiMGMwMzgzMDIwZWY2MmViZTUyMmMxOWY0YmUxNjhkNDcyZTg4ODY5NDkwN2UzYzFlZTQifX19\"}]}}}"
+            "item": "minecraft:blast_furnace",
+            "nbt": "{CustomModelData:6421430}"
         },
         "frame": "task"
     },
@@ -17,7 +19,7 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:3103}"
+                        "nbt": "{mech_itemid:1430}"
                     }
                 ]
             }

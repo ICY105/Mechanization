@@ -1,8 +1,10 @@
+
 #Add to rate, then check for control rode
+execute positioned ~ ~-1 ~ store success score temp_0 mech_data if entity @e[tag=mech_control_rod,tag=mech_active,distance=..1]
 scoreboard players add @s[tag=mech_uranium] mech_y 3
 scoreboard players add @s[tag=mech_plutonium] mech_y 2
-execute if entity @s[tag=mech_uranium] if block ~ ~-1 ~ dropper[triggered=true] run scoreboard players remove @s mech_y 7
-execute if entity @s[tag=mech_plutonium] if block ~ ~-1 ~ dropper[triggered=true] run scoreboard players remove @s mech_y 6
+execute if entity @s[tag=mech_uranium] if score temp_0 mech_data matches 1 run scoreboard players remove @s mech_y 7
+execute if entity @s[tag=mech_plutonium] if score temp_0 mech_data matches 1 run scoreboard players remove @s mech_y 6
 execute if score @s mech_y matches ..-16 run scoreboard players set @s mech_y -16
 execute if score @s mech_y matches 64.. run scoreboard players set @s mech_y 64
 
@@ -33,7 +35,7 @@ execute if score heat_0 mech_data matches 10.. if score temp_0 mech_data matches
 #reduce fuel durability
 execute store result score temp_0 mech_data run data get entity @s HandItems[0].tag.FuelGrade
 execute store result score temp_1 mech_data run data get entity @s HandItems[0].tag.FuelSpent
-execute if score temp_0 mech_data < temp_1 mech_data run replaceitem entity @s weapon.mainhand diamond_shovel{du_nerf:1b, mech_itemid: 3102, Unbreakable:1, OreDict:["cellSpentFuel"], Damage:97, HideFlags:6, display: {Name: "{\"translate\":\"mech.item.spent_fuel_cell\",\"color\":\"gray\",\"italic\":false}"}}
+execute if score temp_0 mech_data < temp_1 mech_data run loot replace entity @s weapon.mainhand loot mechanization:nuclear/spent_fuel_cell
 scoreboard players add temp_1 mech_data 1
 execute store result entity @s HandItems[0].tag.FuelSpent int 1 run scoreboard players get temp_1 mech_data
 

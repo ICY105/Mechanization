@@ -1,14 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.machines.teleporter.title"
+            "translate": "mech.advancements.machines.teleporter.title",
+			"color":"dark_purple"
         },
         "description": {
-            "translate": "mech.advancements.machines.teleporter.description"
+            "translate": "mech.advancements.machines.teleporter.description",
+			"color":"dark_aqua"
         },
         "icon": {
-            "item": "minecraft:diamond_shovel",
-            "nbt": "{Damage:76,Unbreakable:1b}"
+            "item": "minecraft:blast_furnace",
+            "nbt": "{CustomModelData:6422017}"
         },
         "frame": "task"
     },
@@ -23,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:machines\/machine_frame_3"
+    "parent": "mechanization:machines/auto_farm"
 }

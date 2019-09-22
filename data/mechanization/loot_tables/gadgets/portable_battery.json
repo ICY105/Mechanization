@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.portable_battery","color":"dark_aqua","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 4209, CustomModelData: 6424209, mech_battery:{energy:0, max_energy:32000, models:8, base_model:6424209}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

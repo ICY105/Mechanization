@@ -1,0 +1,10 @@
+
+Added manual automatically updating when held. Does not work on lecterns.
+Fixed some machine not receiving stored power/upgrades when broken and replaced
+Fixed Block Breaker showing Tree Feller recipe in manual
+Fixed Energy Relay showing Machine Upgrade recipe in manual
+Fixed Solar Panel not dropping machine frame
+Fixed Base Upgrade recipe
+Fixed some typos in the manual
+Fixed some advancement triggers
+Fixed some minor texture issues

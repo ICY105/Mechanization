@@ -1,14 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.nuclear.fission_reactor.title"
+            "translate": "mech.advancements.nuclear.fission_reactor.title",
+			"color":"dark_green"
         },
         "description": {
-            "translate": "mech.advancements.nuclear.fission_reactor.description"
+            "translate": "mech.advancements.nuclear.fission_reactor.description",
+			"color":"dark_aqua"
         },
         "icon": {
-            "item": "minecraft:diamond_shovel",
-            "nbt": "{Damage:87,Unbreakable:1b}"
+            "item": "minecraft:blast_furnace",
+            "nbt": "{CustomModelData:6423002}"
         },
         "frame": "task"
     },
@@ -23,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:nuclear\/centrifuge"
+    "parent": "mechanization:nuclear/uranium_ore"
 }

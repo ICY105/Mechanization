@@ -1,14 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.base.battery_1.title"
+            "translate": "mech.advancements.base.battery_1.title",
+			"color":"gray"
         },
         "description": {
-            "translate": "mech.advancements.base.battery_1.description"
+            "translate": "mech.advancements.base.battery_1.description",
+			"color":"dark_aqua"
         },
         "icon": {
-            "item": "minecraft:diamond_shovel",
-            "nbt": "{Damage:1,Unbreakable:1b}"
+            "item": "minecraft:blast_furnace",
+            "nbt": "{CustomModelData:6421000}"
         },
         "frame": "task"
     },
@@ -23,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:base\/machine_crafter"
+    "parent": "mechanization:base/machine_frame_1"
 }

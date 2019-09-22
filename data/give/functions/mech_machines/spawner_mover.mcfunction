@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {CustomName:"{\"translate\":\"mech.item.spawner_mover\",\"color\":\"red\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 2203, du_click_detect:1b,Unbreakable:1,Damage:82,HideFlags:6,display:{Name:"{\"translate\":\"mech.item.spawner_mover\",\"color\":\"red\",\"italic\":false}",Lore:["§fRight click to","§fpick up spawner.","§fOne time use."]}}}}
+loot give @s loot mechanization:machines/spawner_mover

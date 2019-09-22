@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.resource.nugget","with":[{"translate":"mech.resource.uranium"}],"color":"green","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1432, CustomModelData: 6421432, OreDict:[\"nuggetUranium\"], HideFlags: 32}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,14 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.nuclear.plutonium.title"
+            "translate": "mech.advancements.nuclear.plutonium.title",
+			"color":"blue"
         },
         "description": {
-            "translate": "mech.advancements.nuclear.plutonium.description"
+            "translate": "mech.advancements.nuclear.plutonium.description",
+			"color":"dark_aqua"
         },
         "icon": {
-            "item": "minecraft:firework_star",
-            "nbt": "{Explosion: {Colors: [I; 11187400]}}"
+            "item": "minecraft:structure_block",
+            "nbt": "{CustomModelData:6421440}"
         },
         "frame": "task"
     },
@@ -17,11 +19,11 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:3105}"
+                        "nbt": "{mech_itemid:1440}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:nuclear\/spent_fuel"
+    "parent": "mechanization:nuclear/spent_fuel"
 }

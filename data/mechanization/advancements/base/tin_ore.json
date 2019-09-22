@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": {
+            "translate": "mech.advancements.machines.tin_ore.title",
+			"color":"gray"
+        },
+        "description": {
+            "translate": "mech.advancements.machines.tin_ore.description",
+			"color":"dark_aqua"
+        },
+        "icon": {
+            "item": "minecraft:blast_furnace",
+            "nbt": "{CustomModelData:6421310}"
+        },
+        "frame": "task"
+    },
+    "criteria": {
+        "have_tin_ore": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [{
+                        "nbt": "{mech_itemid:1310}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "mechanization:mechanization"
+}

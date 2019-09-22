@@ -1,0 +1,8 @@
+{
+	"values":[
+		"mechanization:machines/place_block",
+		"mechanization:nuclear/place_block",
+		"mechanization:gadgets/place_block",
+		"mechanization:assembly/place_block"
+	]
+}

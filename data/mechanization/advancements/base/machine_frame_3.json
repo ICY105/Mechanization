@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": {
+            "translate": "mech.advancements.machines.machine_frame_3.title",
+			"color":"dark_purple"
+        },
+        "description": {
+            "translate": "mech.advancements.machines.machine_frame_3.description",
+			"color":"dark_aqua"
+        },
+        "icon": {
+            "item": "minecraft:blast_furnace",
+            "nbt": "{CustomModelData:6421417}"
+        },
+        "frame": "goal"
+    },
+    "criteria": {
+        "have_frame_3": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [{
+                        "nbt": "{mech_itemid:1417}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "mechanization:base/battery_2"
+}
