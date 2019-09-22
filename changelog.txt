@@ -1,24 +1,10 @@
 
-Readded `/function give:mech_all`
-Updated Mechanical Manual
-Updated advancements
-Optimized Compressor/Decompressor + added Mech resources as recipes
-Probably fixed Quarry missing some blocks
-Fixed block breaker a bit
-Fixed tree feller leaving behind the saw blade when broken
-Fixed recipes for:
- * All of Nuclear Ascension recipes
- * Nether & End Alloy recipes
- * Super Sticky Piston & Turn Table recipes
- * Dimensional Generator
- * Disenchanter
- * Teleporter
- * Spawner Controller
- * Spawner Mover
- * XP Tank
- * Knockback Resist Upgrade
- * Dye Machine
-Fixed ores not generating on first time installing
-Fixed directional sound issues
-Changed uranium ore texture to make it less like copper
-Changed most armor & tool textures to be Jappa themed and to better color match the new ingot textures
+Added manual automatically updating when held. Does not work on lecterns.
+Fixed some machine not receiving stored power/upgrades when broken and replaced
+Fixed Block Breaker showing Tree Feller recipe in manual
+Fixed Energy Relay showing Machine Upgrade recipe in manual
+Fixed Solar Panel not dropping machine frame
+Fixed Base Upgrade recipe
+Fixed some typos in the manual
+Fixed some advancement triggers
+Fixed some minor texture issues

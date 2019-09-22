@@ -37,55 +37,55 @@ execute if score out_0 du_data matches 27 run data modify block -29999999 0 1600
 
 #play record
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_ward"}}}}} run playsound minecraft:music_disc.ward record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_ward"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Ward"],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_ward"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Ward"],"color":"light_purple"}]
 
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_13"}}}}} run playsound minecraft:music_disc.13 record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_13"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - 13"],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_13"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - 13"],"color":"light_purple"}]
 
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_cat"}}}}} run playsound minecraft:music_disc.cat record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_cat"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Cat"],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_cat"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Cat"],"color":"light_purple"}]
 
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_blocks"}}}}} run playsound minecraft:music_disc.blocks record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_blocks"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Blocks"],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_blocks"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Blocks"],"color":"light_purple"}]
 
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_chirp"}}}}} run playsound minecraft:music_disc.chirp record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_chirp"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Chirp"],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_chirp"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Chirp"],"color":"light_purple"}]
 
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_far"}}}}} run playsound minecraft:music_disc.far record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_far"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Far"],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_far"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Far"],"color":"light_purple"}]
 
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_mall"}}}}} run playsound minecraft:music_disc.mall record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_mall"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Mall"],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_mall"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Mall"],"color":"light_purple"}]
 
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_mellohi"}}}}} run playsound minecraft:music_disc.mellohi record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_mellohi"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Mellohi"],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_mellohi"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Mellohi"],"color":"light_purple"}]
 
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_stal"}}}}} run playsound minecraft:music_disc.stal record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_stal"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Stal"],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_stal"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Stal"],"color":"light_purple"}]
 
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_strad"}}}}} run playsound minecraft:music_disc.strad record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_strad"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Strad"],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_strad"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Strad"],"color":"light_purple"}]
 
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_11"}}}}} run playsound minecraft:music_disc.11 record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_11"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - 11"],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_11"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - 11"],"color":"light_purple"}]
 
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_wait"}}}}} run playsound minecraft:music_disc.wait record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_wait"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Wait"],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{id:"minecraft:music_disc_wait"}}}}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Wait"],"color":"light_purple"}]
 
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5101} }}}}} run playsound mechanization:assembly.music.end_of_the_world record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5101} }}}}} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_end_of_the_world"}],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5101} }}}}} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_end_of_the_world"}],"color":"light_purple"}]
 
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5102} }}}}} run playsound mechanization:assembly.music.hyperspace record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5102} }}}}} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_hyperspace"}],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5102} }}}}} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_hyperspace"}],"color":"light_purple"}]
 
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5103} }}}}} run playsound mechanization:assembly.music.money_for_nothing record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5103} }}}}} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_money_for_nothing"}],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5103} }}}}} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_money_for_nothing"}],"color":"light_purple"}]
 
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5104} }}}}} run playsound mechanization:assembly.music.wanderer record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5104} }}}}} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_wanderer"}],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5104} }}}}} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_wanderer"}],"color":"light_purple"}]
 
 execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5105} }}}}} run playsound mechanization:assembly.music.stranger_think record @a ~ ~ ~ 6
-execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5105} }}}}} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_stranger_think"}],"color":"green"}]
+execute if block -29999999 0 1600 jukebox{RecordItem:{tag:{mech:{temp:{ tag:{mech_itemid:5105} }}}}} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_stranger_think"}],"color":"light_purple"}]
 
 
 

@@ -19,7 +19,7 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:1009}"
+                        "nbt": "{mech_itemid:1001}"
                     }
                 ]
             }

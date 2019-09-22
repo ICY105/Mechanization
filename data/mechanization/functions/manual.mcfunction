@@ -1,6 +1,6 @@
 
 execute in minecraft:overworld run data remove block -29999999 0 1601 Items
-execute in minecraft:overworld run replaceitem block -29999999 0 1601 container.0 minecraft:written_book{pages:[],author:"ImCoolYeah105", title:"Mechanical Manual",CustomModelData:6421105} 
+execute in minecraft:overworld run replaceitem block -29999999 0 1601 container.0 minecraft:written_book{pages:[],author:"ImCoolYeah105", title:"Mechanical Manual",CustomModelData:6421105,mech_version:2} 
 execute in minecraft:overworld run data remove block -29999999 0 1601 Items[0].tag.pages
 
 ## Start
@@ -50,7 +50,7 @@ execute in minecraft:overworld run data modify block -29999999 0 1601 Items[0].t
 #21: Q Battery
 execute in minecraft:overworld run data modify block -29999999 0 1601 Items[0].tag.pages append value '[{"text":"","color":"black"},{"translate":"mech.manual.image_centered","color":"white","with":[{"text":"\\uee1b"}]},{"translate":"mech.block.battery.quantum","color":"dark_red","bold":true},{"translate":"mech.manual.page_21.body"}]'
 #22: Relay
-execute in minecraft:overworld run data modify block -29999999 0 1601 Items[0].tag.pages append value '[{"text":"","color":"black"},{"translate":"mech.manual.image_centered","color":"white","with":[{"text":"\\uee1d"}]},{"translate":"mech.block.energy_relay","color":"dark_red","bold":true},{"translate":"mech.manual.page_22.body"}]'
+execute in minecraft:overworld run data modify block -29999999 0 1601 Items[0].tag.pages append value '[{"text":"","color":"black"},{"translate":"mech.manual.image_centered","color":"white","with":[{"text":"\\uee07"}]},{"translate":"mech.block.energy_relay","color":"dark_red","bold":true},{"translate":"mech.manual.page_22.body"}]'
 #23: Relay modes
 execute in minecraft:overworld run data modify block -29999999 0 1601 Items[0].tag.pages append value '[{"translate":"mech.manual.page_23.body","color":"black"}]'
 #24: Upgrade
@@ -98,7 +98,7 @@ execute in minecraft:overworld run data modify block -29999999 0 1601 Items[0].t
 #44: Tree Feller Upgrades
 execute in minecraft:overworld run data modify block -29999999 0 1601 Items[0].tag.pages append value '[{"translate":"mech.manual.upgrades","color":"black","with":[{"translate":"mech.manual.page_44.upgrade"},{"translate":"mech.manual.page_44.ender"},{"translate":"mech.manual.page_44.nether"}]}]'
 #45: Block Breaker
-execute in minecraft:overworld run data modify block -29999999 0 1601 Items[0].tag.pages append value '[{"text":"","color":"black"},{"translate":"mech.manual.image_centered","color":"white","with":[{"text":"\\uee36"}]},{"translate":"mech.block.block_breaker","color":"dark_red","bold":true},{"translate":"mech.manual.page_45.body"}]'
+execute in minecraft:overworld run data modify block -29999999 0 1601 Items[0].tag.pages append value '[{"text":"","color":"black"},{"translate":"mech.manual.image_centered","color":"white","with":[{"text":"\\uee37"}]},{"translate":"mech.block.block_breaker","color":"dark_red","bold":true},{"translate":"mech.manual.page_45.body"}]'
 #46: Block Breaker Upgrades
 execute in minecraft:overworld run data modify block -29999999 0 1601 Items[0].tag.pages append value '[{"translate":"mech.manual.upgrades","color":"black","with":[{"translate":"mech.manual.page_46.upgrade"},{"translate":"mech.manual.page_46.ender"},{"translate":"mech.manual.page_46.nether"}]}]'
 #47: Growth Accelerator

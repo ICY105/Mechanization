@@ -12,11 +12,8 @@ execute if entity @s[tag=mech_right_click] if score @s mech_usedid matches 1103 
 execute if entity @s[tag=mech_right_click] if score @s mech_usedid matches 1104 run function mechanization:base/tools/ender_upgrade
 
 #manual
-execute if entity @s[tag=du_right_click,scores={mech_usedid=1103}] run function mechanization:base/tools/manual/manual
-execute if entity @s[tag=du_left_click,scores={mech_usedid=1103}] run function mechanization:base/tools/manual/manual
-execute if entity @s[tag=mech_manual_open] if entity @s[nbt=!{SelectedItem:{ tag:{mech_itemid: 1103} }}] run function mechanization:base/tools/manual/close
-execute if entity @s[tag=mech_manual_open,tag=du_jumping] run function mechanization:base/tools/manual/open_menu
-execute if entity @s[tag=mech_manual_open,scores={mech_manual=1..9}] if entity @s[nbt={SelectedItem:{ tag:{mech_itemid: 1103} }}] run function mechanization:base/tools/manual/menu
+execute store result score temp_0 mech_data run data get entity @s SelectedItem.tag.mech_version
+execute if data entity @s SelectedItem{id:"minecraft:written_book"}.tag{CustomModelData:6421105} if score temp_0 mech_data matches ..1 run function mechanization:base/utils/replace_manual
 
 #Craft Machine Crafter
 execute if score @s mech_crafter matches 1.. run function mechanization:base/machines/crafter
@@ -28,3 +25,4 @@ tag @s[tag=!mech_has_id] add mech_has_id
 
 #clear bad items
 clear @s minecraft:structure_block{du_gui:1b}
+

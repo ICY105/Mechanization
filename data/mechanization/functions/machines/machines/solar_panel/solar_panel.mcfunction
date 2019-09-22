@@ -23,6 +23,6 @@ execute store result entity @s ArmorItems[3].tag.mech_power int 1 run scoreboard
 execute store result entity @s ArmorItems[3].tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
 
 #cleanup
-execute unless block ~ ~ ~ daylight_detector run function give:mech_machines/machine_frame_tier_2
+execute unless block ~ ~ ~ daylight_detector run loot spawn ~ ~ ~ loot mechanization:base/tier_2_machine_frame
 execute unless block ~ ~ ~ daylight_detector run kill @e[tag=mech_solar_panel_model,distance=..0.5]
 execute unless block ~ ~ ~ daylight_detector run kill @s

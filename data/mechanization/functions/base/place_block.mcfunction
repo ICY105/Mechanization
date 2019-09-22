@@ -30,17 +30,17 @@ execute if score in_0 mech_data matches 1005 run setblock ~ ~ ~ minecraft:barrel
 
 #run global function
 function #mechanization:place_block
-scoreboard players set @e[tag=mech_reciever,distance=..0.25] mech_power 0
-scoreboard players set @e[tag=mech_transmitter,distance=..0.25] mech_power 0
+scoreboard players set @e[tag=mech_reciever,distance=..0.75] mech_power 0
+scoreboard players set @e[tag=mech_transmitter,distance=..0.75] mech_power 0
 
 #set stored data
 execute store result score temp_1 mech_data run data get entity @s SelectedItem.tag.mech_upgrade
-execute if score temp_1 mech_data matches 1..3 run tag @e[scores={mech_power=0},sort=nearest,limit=1,distance=..0.5] add mech_upgraded
-execute if score temp_1 mech_data matches 2 run tag @e[scores={mech_power=0},sort=nearest,limit=1,distance=..0.5] add mech_upgrade_nether
-execute if score temp_1 mech_data matches 3 run tag @e[scores={mech_power=0},sort=nearest,limit=1,distance=..0.5] add mech_upgrade_ender
+execute if score temp_1 mech_data matches 1..3 run tag @e[scores={mech_power=0},sort=nearest,limit=1,distance=..0.75] add mech_upgraded
+execute if score temp_1 mech_data matches 2 run tag @e[scores={mech_power=0},sort=nearest,limit=1,distance=..0.75] add mech_upgrade_nether
+execute if score temp_1 mech_data matches 3 run tag @e[scores={mech_power=0},sort=nearest,limit=1,distance=..0.75] add mech_upgrade_ender
 
 execute store result score temp_1 mech_data run data get entity @s SelectedItem.tag.mech_energy
-execute if score temp_1 mech_data matches 1.. run scoreboard players operation @e[scores={mech_power=0},sort=nearest,limit=1,distance=..0.5] mech_power = temp_1 mech_data
+execute if score temp_1 mech_data matches 1.. run scoreboard players operation @e[scores={mech_power=0},sort=nearest,limit=1,distance=..0.75] mech_power = temp_1 mech_data
 
 #### Resources
 

@@ -1,4 +1,4 @@
-loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/
+loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_base
 scoreboard players set out_4 du_data 16
 
 scoreboard players set temp_0 du_data 4
