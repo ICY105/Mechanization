@@ -1,5 +1,3 @@
-say loaded
-
 gamerule commandBlockOutput false
 gamerule maxCommandChainLength 1000000
 
@@ -24,7 +22,7 @@ scoreboard objectives add mech_usesword minecraft.used:minecraft.diamond_sword
 scoreboard objectives add mech_usetrident minecraft.used:minecraft.trident
 
 #Install check
-scoreboard players set mech_ver du_data 2010000
+scoreboard players set mech_ver du_data 2010003
 
 scoreboard players set install mech_data 1
 schedule function mechanization:install 1s

@@ -1,7 +1,7 @@
 
-execute if score du_ver du_data matches 2000001.. run scoreboard players set install mech_data 0
-execute if score install mech_data matches 0 run tellraw @a [{"text":"[Loaded Mechanization v2.1.0]","color":"dark_green"}]
-execute if score install mech_data matches 1 run tellraw @a [{"text":"Mechanization requires the latest version of Datapack Utilities. You can download that [here].","color":"dark_red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/Datapack-Utilities/releases"}}]
+execute if score du_ver du_data matches 2000101.. run scoreboard players set install mech_data 0
+execute if score install mech_data matches 0 run tellraw @a [{"text":"[Loaded Mechanization v2.1.0c]","color":"dark_green"}]
+execute if score install mech_data matches 1 run tellraw @a [{"text":"Mechanization requires Datapack Utilities version +2.0.1a. You can download that [here].","color":"dark_red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/Datapack-Utilities/releases"}}]
 
 execute if score install mech_data matches 1.. run schedule function mechanization:install 5s
 
