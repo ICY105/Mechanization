@@ -5,10 +5,10 @@ execute unless score @s mech_gridid matches -2147483648.. store result score @s 
 
 #main
 function du:world/blocks/is_active
-execute if score out_0 du_data matches 1..2 if entity @s[tag=!mech_upgraded] run function mechanization:machines/machines/fisher/normal
-execute if score out_0 du_data matches 1..2 if entity @s[tag=mech_upgraded,tag=!mech_upgrade_ender,tag=!mech_upgrade_nether] run function mechanization:machines/machines/fisher/upgrade
-execute if score out_0 du_data matches 1..2 if entity @s[tag=mech_upgrade_ender] run function mechanization:machines/machines/fisher/upgrade_ender
-execute if score out_0 du_data matches 1..2 if entity @s[tag=mech_upgrade_nether] run function mechanization:machines/machines/fisher/upgrade_nether
+execute if score out_0 du_data matches 0 if entity @s[tag=!mech_upgraded] run function mechanization:machines/machines/fisher/normal
+execute if score out_0 du_data matches 0 if entity @s[tag=mech_upgraded,tag=!mech_upgrade_ender,tag=!mech_upgrade_nether] run function mechanization:machines/machines/fisher/upgrade
+execute if score out_0 du_data matches 0 if entity @s[tag=mech_upgrade_ender] run function mechanization:machines/machines/fisher/upgrade_ender
+execute if score out_0 du_data matches 0 if entity @s[tag=mech_upgrade_nether] run function mechanization:machines/machines/fisher/upgrade_nether
 
 #store scoreboard values
 execute store result entity @s ArmorItems[3].tag.mech_power int 1 run scoreboard players get @s mech_power

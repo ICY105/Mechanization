@@ -16,13 +16,13 @@ scoreboard players set in_0 du_data 24
 #max Y elevation [1,255] (needs to be equal or larger than min y elevation)
 scoreboard players set in_1 du_data 64
 #min number of veins [1,32]
-scoreboard players set in_2 du_data 12
+scoreboard players set in_2 du_data 10
 #max number of veins [1,32] (needs to be equal or larger than min veins)
-scoreboard players set in_3 du_data 12
+scoreboard players set in_3 du_data 10
 #min ores per vein [1,16]
 scoreboard players set in_4 du_data 4
 #max ores per vein [1,16] (needs to be equal or larger than min ores)
-scoreboard players set in_5 du_data 8
+scoreboard players set in_5 du_data 6
 #Dimension id [-1,1]
 scoreboard players set in_6 du_data 0
 
@@ -37,13 +37,13 @@ scoreboard players set in_0 du_data 24
 #max Y elevation [1,255] (needs to be equal or larger than min y elevation)
 scoreboard players set in_1 du_data 64
 #min number of veins [1,32]
-scoreboard players set in_2 du_data 10
+scoreboard players set in_2 du_data 9
 #max number of veins [1,32] (needs to be equal or larger than min veins)
-scoreboard players set in_3 du_data 10
+scoreboard players set in_3 du_data 9
 #min ores per vein [1,16]
 scoreboard players set in_4 du_data 4
 #max ores per vein [1,16] (needs to be equal or larger than min ores)
-scoreboard players set in_5 du_data 8
+scoreboard players set in_5 du_data 6
 #Dimension id [-1,1]
 scoreboard players set in_6 du_data 0
 
@@ -62,9 +62,9 @@ scoreboard players set in_2 du_data 1
 #max number of veins [1,32] (needs to be equal or larger than min veins)
 scoreboard players set in_3 du_data 1
 #min ores per vein [1,16]
-scoreboard players set in_4 du_data 2
+scoreboard players set in_4 du_data 1
 #max ores per vein [1,16] (needs to be equal or larger than min ores)
-scoreboard players set in_5 du_data 4
+scoreboard players set in_5 du_data 3
 #Dimension id [-1,1]
 scoreboard players set in_6 du_data 0
 
@@ -79,13 +79,13 @@ scoreboard players set in_0 du_data 1
 #max Y elevation [1,255] (needs to be equal or larger than min y elevation)
 scoreboard players set in_1 du_data 24
 #min number of veins [1,32]
-scoreboard players set in_2 du_data 4
+scoreboard players set in_2 du_data 2
 #max number of veins [1,32] (needs to be equal or larger than min veins)
-scoreboard players set in_3 du_data 4
+scoreboard players set in_3 du_data 3
 #min ores per vein [1,16]
 scoreboard players set in_4 du_data 2
 #max ores per vein [1,16] (needs to be equal or larger than min ores)
-scoreboard players set in_5 du_data 6
+scoreboard players set in_5 du_data 4
 #Dimension id [-1,1]
 scoreboard players set in_6 du_data 0
 
