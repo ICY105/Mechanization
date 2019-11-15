@@ -1,23 +1,23 @@
 
 #Add to rate, then check for control rode
 execute positioned ~ ~-1 ~ store success score temp_0 mech_data if entity @e[tag=mech_control_rod,tag=mech_active,distance=..1]
-scoreboard players add @s[tag=mech_uranium] mech_y 3
-scoreboard players add @s[tag=mech_plutonium] mech_y 2
-execute if entity @s[tag=mech_uranium] if score temp_0 mech_data matches 1 run scoreboard players remove @s mech_y 7
-execute if entity @s[tag=mech_plutonium] if score temp_0 mech_data matches 1 run scoreboard players remove @s mech_y 6
-execute if score @s mech_y matches ..-16 run scoreboard players set @s mech_y -16
-execute if score @s mech_y matches 64.. run scoreboard players set @s mech_y 64
+scoreboard players add @s[tag=mech_uranium] du_move_y 3
+scoreboard players add @s[tag=mech_plutonium] du_move_y 2
+execute if entity @s[tag=mech_uranium] if score temp_0 mech_data matches 1 run scoreboard players remove @s du_move_y 7
+execute if entity @s[tag=mech_plutonium] if score temp_0 mech_data matches 1 run scoreboard players remove @s du_move_y 6
+execute if score @s du_move_y matches ..-16 run scoreboard players set @s du_move_y -16
+execute if score @s du_move_y matches 64.. run scoreboard players set @s du_move_y 64
 
 #Get Fuel grade, add rate multiplier, add to current heat
 execute store result score temp_0 mech_data run data get entity @s HandItems[0].tag.FuelGrade
 scoreboard players set temp_1 mech_data 16
 scoreboard players operation temp_0 mech_data *= temp_1 mech_data
-scoreboard players operation temp_0 mech_data *= @s mech_y
-scoreboard players operation @s mech_x += temp_0 mech_data
+scoreboard players operation temp_0 mech_data *= @s du_move_y
+scoreboard players operation @s du_move_x += temp_0 mech_data
 
 #Process Cooling
 scoreboard players set temp_2 mech_data 0
-execute if score @s mech_x matches 100000.. run function mechanization:nuclear/machines/fission_reactor/cooling/start
+execute if score @s du_move_x matches 100000.. run function mechanization:nuclear/machines/fission_reactor/cooling/start
 execute if score temp_2 mech_data matches 1.. run playsound mechanization:nuclear.steam_boil block @a[distance=..16] ~ ~1 ~ 1.5
 
 #Add Power to Turbine
@@ -40,6 +40,6 @@ scoreboard players add temp_1 mech_data 1
 execute store result entity @s HandItems[0].tag.FuelSpent int 1 run scoreboard players get temp_1 mech_data
 
 #Cleanup
-scoreboard players set @s[scores={mech_x=..20000}] mech_x 20000
-execute if score @s mech_x matches 2000000.. run function mechanization:nuclear/machines/fission_reactor/explode
+scoreboard players set @s[scores={du_move_x=..20000}] du_move_x 20000
+execute if score @s du_move_x matches 2000000.. run function mechanization:nuclear/machines/fission_reactor/explode
 playsound mechanization:nuclear.fission_reactor_active block @a[distance=..16] ~ ~1 ~ 0.5

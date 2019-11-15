@@ -26,11 +26,11 @@ execute if score in_0 mech_data matches 1000..1004 run scoreboard players set @e
 
 #machine crafter
 execute if score in_0 mech_data matches 1005 run summon armor_stand ~ ~ ~ {Tags:["mech_machine_crafter","du_crafter"],Marker:1b,Fire:32676,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421037}}]}
-execute if score in_0 mech_data matches 1005 run setblock ~ ~ ~ minecraft:barrel{CustomName:"[{\"translate\":\"mech.block.machine_crafting_table\",\"color\":\"dark_aqua\",\"italic\":false}]"}
+execute if score in_0 mech_data matches 1005 run setblock ~ ~ ~ minecraft:barrel{CustomName:'[{"translate":"mech.block.machine_crafting_table","color":"dark_aqua","italic":false}]'}
 
 #run global function
 function #mechanization:place_block
-scoreboard players set @e[tag=mech_reciever,distance=..0.75] mech_power 0
+scoreboard players set @e[tag=mech_receiver,distance=..0.75] mech_power 0
 scoreboard players set @e[tag=mech_transmitter,distance=..0.75] mech_power 0
 
 #set stored data

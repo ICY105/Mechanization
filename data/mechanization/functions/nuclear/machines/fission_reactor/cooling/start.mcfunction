@@ -26,7 +26,7 @@ scoreboard players set heat_23 mech_data 0
 scoreboard players set heat_24 mech_data 0
 
 scoreboard players set temp_0 mech_data 5
-scoreboard players operation heat_1 mech_data = @s mech_x
+scoreboard players operation heat_1 mech_data = @s du_move_x
 scoreboard players operation heat_1 mech_data /= temp_0 mech_data
 scoreboard players operation heat_2 mech_data = heat_1 mech_data
 scoreboard players operation heat_3 mech_data = heat_1 mech_data

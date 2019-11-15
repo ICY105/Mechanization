@@ -1,7 +1,4 @@
 
-#installed
-execute if score du_ver du_data matches 2000001.. run scoreboard players set install mech_data 0
-
 #set up ore gen
 scoreboard objectives add mech_data dummy
 scoreboard players set worldgen du_data 1
