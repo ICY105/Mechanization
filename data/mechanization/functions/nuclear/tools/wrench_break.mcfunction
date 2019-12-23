@@ -16,7 +16,7 @@ kill @s[tag=mech_turbine]
 kill @s[tag=mech_turbine_model]
 
 #Temp Observer
-execute if entity @s[tag=mech_temp_observer] run loot spawn ~ ~ ~ loot mechanization:nuclear/tempurature_observer
+execute if entity @s[tag=mech_temp_observer] run loot spawn ~ ~ ~ loot mechanization:nuclear/temperature_observer
 execute if entity @s[tag=mech_temp_observer] at @s run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_temp_observer]
 
