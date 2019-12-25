@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.resource.dust","with":[{"translate":"mech.resource.super_conductive"}],"color":"dark_green","italic":false}
+			  "name": {"translate":"mech.dust.super_conductive","color":"dark_green","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

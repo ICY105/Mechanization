@@ -1,5 +1,5 @@
 scoreboard players set @s mech_data 0
-scoreboard players operation @s mech_data = @e[tag=mech_fission_reactor,sort=nearest,limit=1,distance=..8] mech_y
+scoreboard players operation @s mech_data = @e[tag=mech_fission_reactor,sort=nearest,limit=1,distance=..8] du_move_y
 
 execute if score @s mech_data matches 0 run data merge block ~ ~ ~ {Items:[]}
 execute if score @s mech_data matches 1..4 run data merge block ~ ~ ~ {Items:[{Slot:0b,id:"minecraft:cobblestone",Count:1}]}

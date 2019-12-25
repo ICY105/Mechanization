@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1101, CustomModelData: 6421101, HideFlags: 6, Unbreakable:1b, du_click_detect:-1b}"
+              "tag":"{mech_itemid: 1101, CustomModelData: 6421101, HideFlags: 6, Unbreakable:1b, du_click_detect:1b}"
             }
           ]
         }

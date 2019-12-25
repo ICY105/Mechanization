@@ -36,9 +36,6 @@ scoreboard players operation in_1 mech_data += in_2 mech_data
 
 execute store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get in_1 mech_data
 
-#update quantum energy
-scoreboard players operation in_6 mech_data = @s mech_power
-
 #Ambient Sounds
 execute if entity @s[scores={mech_timer=1}] run playsound mechanization:base.quantum_battery_ambient ambient @a[distance=..16] ~ ~ ~ 0.05
 scoreboard players add @s mech_timer 1
@@ -46,7 +43,7 @@ scoreboard players set @s[scores={mech_timer=10}] mech_timer 0
 
 #update registry
 tag @s remove mech_not_checked
-scoreboard players operation @s mech_power = in_6 mech_data
+scoreboard players operation in_6 mech_data = @s mech_power
 
 #Break
 execute at @s unless block ~ ~ ~ minecraft:barrier run kill @s

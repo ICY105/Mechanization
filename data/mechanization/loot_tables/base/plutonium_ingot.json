@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.resource.ingot","with":[{"translate":"mech.resource.plutonium"}],"color":"blue","italic":false}
+			  "name": {"translate":"mech.ingot.plutonium","color":"blue","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.tool.leggings","color":"white","italic":false,"with":[{"translate":"mech.resource.tin"}]}
+			  "name": {"translate":"mech.leggings.tin","color":"white","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

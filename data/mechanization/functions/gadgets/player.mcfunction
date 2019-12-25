@@ -11,9 +11,6 @@ execute if entity @s[tag=mech_upgrade_flight] run function mechanization:gadgets
 execute if entity @s[tag=mech_invisible] at @e[type=area_effect_cloud,tag=mech_invis_mark,sort=nearest,limit=1] run tp @s ~ ~0.25 ~
 execute if score timer_100 du_data matches 0 if entity @s[tag=mech_upgrade_shield] run function mechanization:gadgets/upgrades/armor/shield
 
-#spelunker tools
-execute if entity @s[tag=mech_right_click,scores={mech_usedid=4100,mech_firerate=0}] at @s run function mechanization:gadgets/tools/iron_echo-locater
-execute if entity @s[tag=mech_right_click,scores={mech_usedid=4101,mech_firerate=0}] at @s run function mechanization:gadgets/tools/diamond_echo-locater
 
 
 #guns

@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.tool.pickaxe","color":"yellow","italic":false,"with":[{"translate":"mech.resource.conductive"}]}
+			  "name": {"translate":"mech.pickaxe.conductive","color":"yellow","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

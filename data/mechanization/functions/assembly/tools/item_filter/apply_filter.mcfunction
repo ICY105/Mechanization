@@ -36,8 +36,8 @@ execute unless data block ~ ~ ~ Items[{Slot:27b}] run replaceitem block ~ ~ ~ co
 #copy items
 data remove block -29999999 0 1601 Items
 execute if score temp_1 mech_data matches 1.. run function du:player/inv/get_equipment
-execute if score temp_1 mech_data matches 1.. run data modify block -29999999 0 1601 Items[0].tag.mech_filter set from block ~ ~ ~ Items
-execute if score temp_1 mech_data matches 1.. run execute if data block -29999999 0 1601 Items[0].tag.mech_filter[{}] run data modify block -29999999 0 1601 Items[0].tag.Enchantments set value [{id:"mech:filter",lvl:1}]
+execute if score temp_1 mech_data matches 1.. run data modify block -29999999 0 1601 Items[{Slot:0b}].tag.mech_filter set from block ~ ~ ~ Items
+execute if score temp_1 mech_data matches 1.. if data block -29999999 0 1601 Items[{Slot:0b}].tag.mech_filter[{}] run data modify block -29999999 0 1601 Items[{Slot:0b}].tag.Enchantments set value [{id:"mech:filter",lvl:1}]
 execute if score temp_1 mech_data matches 1.. run function du:player/inv/restore_equipment
 
 #remove filler

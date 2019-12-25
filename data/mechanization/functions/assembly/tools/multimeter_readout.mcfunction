@@ -1,8 +1,3 @@
 
 #storage unit
-scoreboard players set temp_0 mech_data 0
-scoreboard players set temp_1 mech_data 0
-execute if entity @s[tag=mech_unlimited_storage] if block ~ ~ ~ hopper{Items:[{Slot:0b}]} store result score temp_0 mech_data run data get entity @s ArmorItems[3].tag.mech_storage
-execute if entity @s[tag=mech_unlimited_storage] if block ~ ~ ~ hopper{Items:[{Slot:0b}]} store result score temp_1 mech_data run data get block ~ ~ ~ Items[0].Count
-execute if entity @s[tag=mech_unlimited_storage] run scoreboard players operation temp_0 mech_data += temp_1 mech_data
-execute if entity @s[tag=mech_unlimited_storage] run tellraw @p [{"translate":"mech.text.multimeter.storage","color":"dark_green"},{"score":{"name":"temp_0","objective":"mech_data"},"color":"dark_aqua"}]
+execute if entity @s[tag=mech_unlimited_storage] run tellraw @p [{"translate":"mech.text.multimeter.storage","color":"dark_green"},{"score":{"name":"@s","objective":"mech_data"},"color":"dark_aqua"}]

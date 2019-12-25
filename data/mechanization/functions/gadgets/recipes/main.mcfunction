@@ -11,11 +11,6 @@ execute if score in_1 du_data matches 16.. if score in_3 du_data matches 4.. if 
 #Portable Battery
 execute if score in_1 du_data matches 2.. if score in_7 du_data matches 2.. if block ~ ~ ~ barrel{Items:[{Slot:2b, tag:{OreDict:["ingotTin"]}},{Slot:3b, tag:{OreDict:["ingotConductive"]}},{Slot:4b, tag:{OreDict:["ingotTin"]}},{Slot:11b, tag:{OreDict:["ingotTin"]}},{Slot:12b, id:"minecraft:diamond"},{Slot:13b, tag:{OreDict:["ingotTin"]}},{Slot:20b, tag:{OreDict:["ingotTin"]}},{Slot:21b, tag:{OreDict:["ingotConductive"]}},{Slot:22b, tag:{OreDict:["ingotTin"]}}]} run function mechanization:gadgets/recipes/portable_battery
 
-#echo-locaters
-execute if block ~ ~ ~ barrel{Items:[{Slot:2b, id:"minecraft:iron_ingot"},{Slot:3b, id:"minecraft:iron_ingot"},{Slot:4b, id:"minecraft:white_wool"},{Slot:11b, id:"minecraft:note_block"},{Slot:12b, id:"minecraft:note_block"},{Slot:13b, id:"minecraft:white_wool"},{Slot:20b, id:"minecraft:iron_ingot"},{Slot:21b, id:"minecraft:iron_ingot"},{Slot:22b, id:"minecraft:white_wool"}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/iron_echo-locater
-execute if block ~ ~ ~ barrel{Items:[{Slot:2b, id:"minecraft:diamond"},{Slot:3b, id:"minecraft:diamond"},{Slot:4b, id:"minecraft:white_wool"},{Slot:11b, id:"minecraft:note_block"},{Slot:12b, id:"minecraft:note_block"},{Slot:13b, id:"minecraft:white_wool"},{Slot:20b, id:"minecraft:diamond"},{Slot:21b, id:"minecraft:diamond"},{Slot:22b, id:"minecraft:white_wool"}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/diamond_echo-locater
-
-
 #Custom Tools
 execute if block ~ ~ ~ barrel{Items:[{tag:{OreDict:["ingotCopper"]}}]} run function mechanization:gadgets/recipes/copper_armor
 execute if block ~ ~ ~ barrel{Items:[{tag:{OreDict:["ingotTin"]}}]} run function mechanization:gadgets/recipes/tin_armor

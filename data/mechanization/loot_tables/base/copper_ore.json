@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.resource.ore","with":[{"translate":"mech.resource.copper"}],"color":"green","italic":false}
+			  "name": {"translate":"mech.ore.copper","color":"green","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

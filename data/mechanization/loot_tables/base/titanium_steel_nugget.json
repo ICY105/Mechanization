@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.resource.nugget","with":[{"translate":"mech.resource.titanium_steel"}],"color":"light_purple","italic":false}
+			  "name": {"translate":"mech.nugget.titanium_steel","color":"light_purple","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

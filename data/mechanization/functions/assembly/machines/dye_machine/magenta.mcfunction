@@ -111,4 +111,3 @@ execute if block ~ ~ ~ dropper{Items:[{Slot:7b,id:"minecraft:brown_terracotta"}]
 execute if block ~ ~ ~ dropper{Items:[{Slot:7b,id:"minecraft:green_terracotta"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:magenta_terracotta",Count:8b}}
 execute if block ~ ~ ~ dropper{Items:[{Slot:7b,id:"minecraft:red_terracotta"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:magenta_terracotta",Count:8b}}
 execute if block ~ ~ ~ dropper{Items:[{Slot:7b,id:"minecraft:black_terracotta"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:magenta_terracotta",Count:8b}}
-say h

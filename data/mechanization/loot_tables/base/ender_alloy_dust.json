@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.resource.dust","with":[{"translate":"mech.resource.ender_alloy"}],"color":"dark_purple","italic":false}
+			  "name": {"translate":"mech.dust.ender_alloy","color":"dark_purple","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

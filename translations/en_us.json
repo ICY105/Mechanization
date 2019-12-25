@@ -1,7 +1,8 @@
 {
 	"Looks like you don't have the resourcepack for Mechanization. You can download that [here].":"",
     "block.minecraft.damaged_anvil": "Machine Crafting Table",
-    
+   
+"__comment":"Mechanization: Base",
     "mech.item.wrench": "Wrench",
 		"mech.item.wrench.lore_1": "R-Click to rotate machine.",
 		"mech.item.wrench.lore_2": "Shift+R-Click to safely break machine.",
@@ -34,7 +35,123 @@
 	"mech.lore.generate":"Generates: %d kW",
 	"mech.lore.consume":"Uses: %d kW",
 	"mech.lore.upgrade":"Max Upgrades: %s",
+
+"__comment":"Resources",
+	"mech.resource.machine_frame_tier_1": "Tier 1 Machine Frame",
+	"mech.resource.machine_frame_tier_2": "Tier 2 Machine Frame",
+	"mech.resource.machine_frame_tier_3": "Tier 3 Machine Frame",
 	
+	"mech.dust.iron":"Iron Dust",
+	"mech.dust.gold":"Gold Dust",
+	
+	"mech.block.copper":"Copper Block",
+	"mech.dust.copper":"Copper Dust",
+	"mech.ingot.copper":"Copper Ingot",
+	"mech.nugget.copper":"Copper Nugget",
+	"mech.ore.copper":"Copper Ore",
+	"mech.helmet.copper":"Copper Helmet",
+	"mech.chestplate.copper":"Copper Chestplate",
+	"mech.leggings.copper":"Copper Leggings",
+	"mech.boots.copper":"Copper Boots",
+	
+	"mech.block.tin":"Tin Block",
+	"mech.dust.tin":"Tin Dust",
+	"mech.ingot.tin":"Tin Ingot",
+	"mech.nugget.tin":"Tin Nugget",
+	"mech.ore.tin":"Tin Ore",
+	"mech.helmet.tin":"Tin Helmet",
+	"mech.chestplate.tin":"Tin Chestplate",
+	"mech.leggings.tin":"Tin Leggings",
+	"mech.boots.tin":"Tin Boots",
+	
+	"mech.block.titanium":"Titanium Block",
+	"mech.dust.titanium":"Titanium Dust",
+	"mech.ingot.titanium":"Titanium Ingot",
+	"mech.nugget.titanium":"Titanium Nugget",
+	"mech.ore.titanium":"Titanium Ore",
+	"mech.sword.titanium":"Titanium Sword",
+	"mech.trident.titanium":"Titanium Trident",
+	"mech.pickaxe.titanium":"Titanium Pickaxe",
+	"mech.axe.titanium":"Titanium Axe",
+	"mech.shovel.titanium":"Titanium Shovel",
+	"mech.helmet.titanium":"Titanium Helmet",
+	"mech.chestplate.titanium":"Titanium Chestplate",
+	"mech.leggings.titanium":"Titanium Leggings",
+	"mech.boots.titanium":"Titanium Boots",
+	
+	"mech.block.steel":"Steel Block",
+	"mech.dust.steel":"Steel Dust",
+	"mech.ingot.steel":"Steel Ingot",
+	"mech.nugget.steel":"Steel Nugget",
+	"mech.helmet.steel":"Steel Helmet",
+	"mech.chestplate.steel":"Steel Chestplate",
+	"mech.leggings.steel":"Steel Leggings",
+	"mech.boots.steel":"Steel Boots",
+	
+	"mech.block.structural":"Structural Block",
+	"mech.dust.structural":"Structural Dust",
+	"mech.ingot.structural":"Structural Ingot",
+	"mech.nugget.structural":"Structural Nugget",
+	"mech.helmet.structural":"Structural Helmet",
+	"mech.chestplate.structural":"Structural Chestplate",
+	"mech.leggings.structural":"Structural Leggings",
+	"mech.boots.structural":"Structural Boots",
+	
+	"mech.block.conductive":"Conductive Block",
+	"mech.dust.conductive":"Conductive Dust",
+	"mech.ingot.conductive":"Conductive Ingot",
+	"mech.nugget.conductive":"Conductive Nugget",
+	"mech.sword.conductive":"Conductive Sword",
+	"mech.trident.conductive":"Conductive Trident",
+	"mech.pickaxe.conductive":"Conductive Pickaxe",
+	"mech.axe.conductive":"Conductive Axe",
+	"mech.shovel.conductive":"Conductive Shovel",
+	
+	"mech.block.titanium_steel":"Titanium Steel Block",
+	"mech.dust.titanium_steel":"Titanium Steel Dust",
+	"mech.ingot.titanium_steel":"Titanium Steel Ingot",
+	"mech.nugget.titanium_steel":"Titanium Steel Nugget",
+	
+	"mech.block.reinforced_structural":"Reinforced Structural Block",
+	"mech.dust.reinforced_structural":"Reinforced Structural Dust",
+	"mech.ingot.reinforced_structural":"Reinforced Structural Ingot",
+	"mech.nugget.reinforced_structural":"Reinforced Structural Nugget",
+	
+	"mech.block.super_conductive":"Super Conductive Block",
+	"mech.dust.super_conductive":"Super Conductive Dust",
+	"mech.ingot.super_conductive":"Super Conductive Ingot",
+	"mech.nugget.super_conductive":"Super Conductive Nugget",
+	
+	"mech.block.nether_alloy":"Nether Alloy Block",
+	"mech.dust.nether_alloy":"Nether Alloy Dust",
+	"mech.ingot.nether_alloy":"Nether Alloy Ingot",
+	"mech.nugget.nether_alloy":"Nether Alloy Nugget",
+	
+	"mech.block.ender_alloy":"Ender Alloy Block",
+	"mech.dust.ender_alloy":"Ender Alloy Dust",
+	"mech.ingot.ender_alloy":"Ender Alloy Ingot",
+	"mech.nugget.ender_alloy":"Ender Alloy Nugget",
+	
+	"mech.block.crystal_composite":"Crystal Block",
+	"mech.gem.crystal_composite":"Crystal Composite",
+	"mech.sword.crystal_composite":"Crystal Sword",
+	"mech.trident.crystal_composite":"Crystal Trident",
+	"mech.pickaxe.crystal_composite":"Crystal Pickaxe",
+	"mech.axe.crystal_composite":"Crystal Axe",
+	"mech.shovel.crystal_composite":"Crystal Shovel",
+	
+	"mech.block.uranium":"Uranium Block",
+	"mech.dust.uranium":"Uranium Dust",
+	"mech.ingot.uranium":"Uranium Ingot",
+	"mech.nugget.uranium":"Uranium Nugget",
+	"mech.ore.uranium":"Uranium Ore",
+	
+	"mech.block.plutonium":"Plutonium Block",
+	"mech.dust.plutonium":"Plutonium Dust",
+	"mech.ingot.plutonium":"Plutonium Ingot",
+	"mech.nugget.plutonium":"Plutonium Nugget",
+	
+"__comment":"Old Resource Translation System",
 	"mech.resource.ore": "%s Ore",
 	"mech.resource.block": "%s Block",
 	"mech.resource.ingot": "%s Ingot",
@@ -57,25 +174,23 @@
 		"mech.resource.crystal": "Crystal",
 		"mech.resource.uranium": "Uranium",
 		"mech.resource.plutonium": "Plutonium",
-		"mech.resource.machine_frame_tier_1": "Tier 1 Machine Frame",
-		"mech.resource.machine_frame_tier_2": "Tier 2 Machine Frame",
-		"mech.resource.machine_frame_tier_3": "Tier 3 Machine Frame",
 		"mech.item.tool.sword": "%s Sword",
 		"mech.item.tool.pickaxe": "%s Pickaxe",
 		"mech.item.tool.axe": "%s Axe",
 		"mech.item.tool.shovel": "%s Shovel",
-		"mech.item.tool.hoe": "%s Hoe",
 		"mech.item.tool.trident": "%s Trident",
 		"mech.item.tool.helmet": "%s Helmet",
 		"mech.item.tool.chestplate": "%s Chestplate",
 		"mech.item.tool.leggings": "%s Leggings",
 		"mech.item.tool.boots": "%s Boots",
 		
+"__comment":"Mechanization: Machines",
 	"mech.item.spawner_mover": "Spawner Mover",
     
     "mech.block.furnace_generator": "Furnace Generator",
     "mech.block.teleporter": "Teleporter",
     "mech.block.teleporter.no_destination": "No Valid Destination",
+    "mech.block.teleporter.select_destination": "Click on destination and enter ID:",
     "mech.block.tree_feller": "Tree Feller",
     "mech.block.turn_table": "Turn Table",
     "mech.block.alloy_furnace": "Alloy Furnace",
@@ -100,7 +215,8 @@
     "mech.block.spawner_controller": "Spawner Controller",
 	"mech.block.super_piston": "Super Piston",
     "mech.block.super_sticky_piston": "Super Sticky Piston",
-    
+
+"__comment":"Mechanization: Nuclear",
 	"mech.item.spent_fuel_cell": "Spent Fuel Cell",
 	"mech.item.uranium_cell": "Uranium Cell",
 		"mech.item.depleted_uranium_cell": "Depleted Uranium Cell",
@@ -123,7 +239,8 @@
     "mech.block.reaction_rate_observer": "Reaction Rate Observer",
     "mech.block.steam_turbine": "Steam Turbine",
     "mech.block.temperature_observer": "Temperature Observer",
-    
+
+"__comment":"Mechanization: Gadgets",
     "mech.item.portable_battery": "Portable Battery",
 		"mech.item.portable_battery.lore": "Energy: %s kJ/%s kJ",
     "mech.item.iron_echo-locater": "Iron Echo-Locater",
@@ -192,6 +309,7 @@
     "mech.block.item_transmitter": "Item Transmitter",
     "mech.block.item_receiver": "Item Receiver",
 	
+"__comment":"Mechanization: Assembly",
     "mech.item.item_filter": "Item Filter",
     "mech.item.item_filter.lore_1": "Right click on a chest with",
     "mech.item.item_filter.lore_2": "items to set the filter.",
@@ -206,12 +324,7 @@
 	"mech.item.disc_stranger_think": "C418 - Stranger Think",
 	"mech.item.disc_stranger_think2": "Remix of Stranger Things Theme",
     
-	
-	
-	"mech.text.load_1": "Thank you for installing Mechanization: by ImCoolYeah105.",
-	
-	
-	
+"__comment":"Information Text",
     "mech.text.manual.table_of_contents": "Table of Contents",
     "mech.text.manual.instructions": "\nClick on section to quick jump to it.",
     "mech.text.manual.title": "\n - Title",
@@ -242,7 +355,7 @@
 	"mech.text.multimeter.storage": "Items Stored: ",
     
 	
-	
+"__comment":"Advancements",
     "mech.advancements.mechanization.title": "Mechanization",
     "mech.advancements.mechanization.description_du": "Running Mechanization by ImCoolYeah105",
     "mech.advancements.mechanization.description": "Mechanization advancement tree.",
@@ -324,7 +437,7 @@
     "mech.advancements.nuclear.rate_observer.description": "Create a reaction rate observer.",
 	
 	
-	
+"__comment":"Mechanical Manual",
 	"mech.manual.list":"• %s\n",
 	"mech.manual.image_centered":"      %s \n\n\n\n",
 	"mech.manual.upgrades":"Basic Upgrade:\n%s\n\nEnder Upgrade:\n%s\n\nNether Upgrade:\n%s",

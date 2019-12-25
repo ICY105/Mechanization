@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.tool.boots","color":"white","italic":false,"with":[{"translate":"mech.resource.steel"}]}
+			  "name": {"translate":"mech.boots.steel","color":"white","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.resource.block","with":[{"translate":"mech.resource.steel"}],"color":"dark_gray","italic":false}
+			  "name": {"translate":"mech.block.steel","color":"dark_gray","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

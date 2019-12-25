@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.tool.helmet","color":"blue","italic":false,"with":[{"translate":"mech.resource.structural"}]}
+			  "name": {"translate":"mech.helmet.structural","color":"blue","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

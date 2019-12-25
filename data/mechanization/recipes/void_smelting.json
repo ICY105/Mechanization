@@ -1,9 +1,0 @@
-{
-    "type": "smelting",
-    "ingredient": {
-        "item": "minecraft:structure_block"
-    },
-    "result": "minecraft:cobblestone",
-    "experience": 0.0,
-    "cookingtime": -1
-}

@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.resource.dust","with":[{"translate":"mech.resource.reinforced_structural"}],"color":"dark_aqua","italic":false}
+			  "name": {"translate":"mech.dust.reinforced_structural","color":"dark_aqua","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.resource.block","with":[{"translate":"mech.resource.conductive"}],"color":"gold","italic":false}
+			  "name": {"translate":"mech.block.conductive","color":"gold","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

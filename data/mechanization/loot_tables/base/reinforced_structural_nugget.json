@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.resource.nugget","with":[{"translate":"mech.resource.reinforced_structural"}],"color":"dark_aqua","italic":false}
+			  "name": {"translate":"mech.nugget.reinforced_structural","color":"dark_aqua","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

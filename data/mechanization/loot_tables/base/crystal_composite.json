@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.resource.crystal_composite","color":"dark_red","italic":false}
+			  "name": {"translate":"mech.gem.crystal_composite","color":"dark_red","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

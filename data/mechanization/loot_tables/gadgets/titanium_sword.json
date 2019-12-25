@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.tool.sword","color":"light_purple","italic":false,"with":[{"translate":"mech.resource.titanium"}]}
+			  "name": {"translate":"mech.sword.titanium","color":"light_purple","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

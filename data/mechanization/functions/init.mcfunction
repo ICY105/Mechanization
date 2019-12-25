@@ -22,7 +22,4 @@ scoreboard objectives add mech_usesword minecraft.used:minecraft.diamond_sword
 scoreboard objectives add mech_usetrident minecraft.used:minecraft.trident
 
 #Install check
-scoreboard players set $mech.ver load 2010100
-
-scoreboard players set install mech_data 1
-schedule function mechanization:install 1s
+scoreboard players set $mech.ver load 2020000

@@ -13,4 +13,4 @@ execute if score timer_2 du_data matches 1 as @e[tag=mech_unlimited_storage] at 
 execute if score timer_2 du_data matches 0 as @e[tag=mech_speed_hopper] at @s run function mechanization:assembly/machines/speed_hopper
 
 #item filter
-execute as @a[tag=mech_right_click,tag=du_sneaking,scores={mech_usedid=5100}] at @s run function mechanization:assembly/tools/item_filter/start
+execute as @a[tag=mech_right_click,scores={mech_usedid=5100}] if predicate du:entity/is_sneaking at @s run function mechanization:assembly/tools/item_filter/start

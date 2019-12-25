@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.tool.pickaxe","color":"dark_red","italic":false,"with":[{"translate":"mech.resource.crystal"}]}
+			  "name": {"translate":"mech.pickaxe.crystal_composite","color":"dark_red","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

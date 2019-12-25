@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.resource.ingot","with":[{"translate":"mech.resource.tin"}],"color":"gray","italic":false}
+			  "name": {"translate":"mech.ingot.tin","color":"gray","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.resource.dust","with":[{"translate":"mech.resource.plutonium"}],"color":"blue","italic":false}
+			  "name": {"translate":"mech.dust.plutonium","color":"blue","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

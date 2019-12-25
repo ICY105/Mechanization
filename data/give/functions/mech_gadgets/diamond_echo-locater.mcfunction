@@ -1,1 +1,0 @@
-loot give @s loot mechanization:gadgets/diamond_echo-locator

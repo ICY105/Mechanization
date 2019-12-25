@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.resource.ore","with":[{"translate":"mech.resource.titanium"}],"color":"light_purple","italic":false}
+			  "name": {"translate":"mech.ore.titanium","color":"light_purple","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

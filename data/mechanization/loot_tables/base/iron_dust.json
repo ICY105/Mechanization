@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.resource.dust","with":[{"translate":"mech.resource.iron"}],"color":"white","italic":false}
+			  "name": {"translate":"mech.dust.iron","color":"white","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

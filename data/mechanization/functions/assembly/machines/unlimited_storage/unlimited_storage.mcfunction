@@ -1,5 +1,17 @@
-execute if block ~ ~ ~ hopper{Items:[{Slot:0b}]} run function mechanization:assembly/machines/unlimited_storage/items
-execute unless block ~ ~ ~ hopper{Items:[{Slot:0b}]} run function mechanization:assembly/machines/unlimited_storage/empty
 
-execute unless block ~ ~ ~ hopper run function give:mech_machines/machine_frame_tier_2
-execute unless block ~ ~ ~ hopper run kill @s
+#ui
+replaceitem block ~ ~ ~ container.1 minecraft:structure_block{CustomModelData:6422203,du_gui:1b,HideFlags:63,display:{Name:'""'}}
+execute if score timer_100 du_data matches 0..1 run data merge entity @s {Fire:32000s}
+
+#back up item counts
+execute unless score @s mech_data matches -2147483648.. store result score @s mech_data run data get entity @s ArmorItems[3].tag.mech_data
+execute store result entity @s ArmorItems[3].tag.mech_data int 1 run scoreboard players get @s mech_data
+
+#run IO commands
+execute unless score @s mech_data matches 2147483580.. if data block ~ ~ ~ Items[{Slot:0b}] run function mechanization:assembly/machines/unlimited_storage/input
+execute if score @s mech_data matches 1.. unless data block ~ ~ ~ Items[{Slot:2b,Count:64b}] run function mechanization:assembly/machines/unlimited_storage/output
+
+#cleanup
+execute unless block ~ ~ ~ minecraft:furnace run loot spawn ~ ~ ~ loot mechanization:base/tier_2_machine_frame
+execute unless block ~ ~ ~ minecraft:furnace run kill @s
+

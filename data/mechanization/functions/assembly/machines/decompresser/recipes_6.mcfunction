@@ -21,33 +21,33 @@ execute if data block ~ ~ ~ Items:[{Slot:6b,id:"minecraft:bone_block"}] store su
 execute if data block ~ ~ ~ Items:[{Slot:6b,id:"minecraft:prismarine_bricks"}] store success score temp_1 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:prismarine_shard",Count:9b}}
 execute if data block ~ ~ ~ Items:[{Slot:6b,id:"minecraft:nether_wart_block"}] store success score temp_1 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:nether_wart",Count:9b}}
 
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockCopper"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/copper_ingot
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotCopper"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/copper_nugget
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockTin"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/tin_ingot
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotTin"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/tin_nugget
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockTitanium"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/titanium_ingot
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotTitanium"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/titanium_nugget
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockSteel"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/steel_ingot
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotSteel"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/steel_nugget
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockConductive"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/conductive_ingot
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotConductive"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/conductive_nugget
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockStructural"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/structural_ingot
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotStructural"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/structural_nugget
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockTitaniumSteel"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/titanium_steel_ingot
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotTitaniumSteel"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/titanium_steel_nugget
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockSuperConductive"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/super_conductive_ingot
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotSuperConductive"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/super_conductive_nugget
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockReinforcedStructural"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/reinforced_structural_ingot
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotReinforcedStructural"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/reinforced_structural_nugget
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockEnderAlloy"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/ender_alloy_ingot
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotEnderAlloy"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/ender_alloy_nugget
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockNetherAlloy"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/nether_alloy_ingot
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotNetherAlloy"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/nether_alloy_nugget
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockUranium"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/uranium_ingot
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotUranium"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/uranium_nugget
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockPlutonium"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/plutonium_ingot
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotPlutonium"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/plutonium_nugget
-execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockCrystalComposite"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:assembly/decompressor/crystal_composite
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockCopper"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/copper_ingot
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotCopper"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/copper_nugget
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockTin"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/tin_ingot
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotTin"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/tin_nugget
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockTitanium"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/titanium_ingot
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotTitanium"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/titanium_nugget
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockSteel"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/steel_ingot
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotSteel"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/steel_nugget
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockConductive"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/conductive_ingot
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotConductive"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/conductive_nugget
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockStructural"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/structural_ingot
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotStructural"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/structural_nugget
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockTitaniumSteel"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/titanium_steel_ingot
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotTitaniumSteel"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/titanium_steel_nugget
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockSuperConductive"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/super_conductive_ingot
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotSuperConductive"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/super_conductive_nugget
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockReinforcedStructural"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/reinforced_structural_ingot
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotReinforcedStructural"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/reinforced_structural_nugget
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockEnderAlloy"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/ender_alloy_ingot
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotEnderAlloy"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/ender_alloy_nugget
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockNetherAlloy"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/nether_alloy_ingot
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotNetherAlloy"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/nether_alloy_nugget
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockUranium"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/uranium_ingot
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotUranium"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/uranium_nugget
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockPlutonium"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/plutonium_ingot
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["ingotPlutonium"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/plutonium_nugget
+execute if data block ~ ~ ~ Items[{Slot:6b,tag:{OreDict:["blockCrystalComposite"]}}] store success score temp_1 mech_data run loot spawn ^ ^ ^1 loot mechanization:base/resources_x9/crystal_composite
 
 # 2x2
 execute if data block ~ ~ ~ Items:[{Slot:6b,id:"minecraft:quartz_block"}] store success score temp_1 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:quartz",Count:4b}}

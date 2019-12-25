@@ -56,8 +56,10 @@ execute if score in_0 mech_data matches 5006 if block ~ ~ ~ blast_furnace run su
 execute if score in_0 mech_data matches 5006 run setblock ~ ~ ~ minecraft:barrel[facing=south]{CustomName:"{\"translate\":\"mech.block.auto_jukebox\",\"color\":\"dark_red\",\"italic\":false}"}
 
 #Unlimited Storage Unit
-execute if score in_0 mech_data matches 5007 if block ~ ~ ~ blast_furnace run summon armor_stand ~ ~ ~ {Tags:["mech_unlimited_storage"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Fire:32676,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6425007}}]}
-execute if score in_0 mech_data matches 5007 run setblock ~ ~ ~ minecraft:hopper[facing=south]{CustomName:"{\"translate\":\"mech.block.unlimited_storage_unit\",\"color\":\"dark_red\",\"italic\":false}",Lock:"§mechanization"}
+execute if score in_0 mech_data matches 5007 if block ~ ~ ~ blast_furnace run summon armor_stand ~ ~ ~ {Tags:["mech_unlimited_storage"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,Fire:32676,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_data:0,item:{},CustomModelData:6425007}}]}
+execute if score in_0 mech_data matches 5007 if data entity @s SelectedItem.tag.stored_item run data modify entity @e[tag=mech_unlimited_storage,sort=nearest,limit=1,distance=..1] ArmorItems[3].tag.item set from entity @s SelectedItem.tag.stored_item
+execute if score in_0 mech_data matches 5007 if data entity @s SelectedItem.tag.stored_item store result score @e[tag=mech_unlimited_storage,sort=nearest,limit=1,distance=..1] mech_data run data get entity @s SelectedItem.tag.stored_count
+execute if score in_0 mech_data matches 5007 run setblock ~ ~ ~ minecraft:furnace{CustomName:'{"translate":"mech.block.unlimited_storage_unit","color":"dark_red","italic":false}'}
 
 #Item Transmitter
 execute if score in_0 mech_data matches 5008 if block ~ ~ ~ blast_furnace[facing=south] run summon armor_stand ~ ~-0.25 ~ {Tags:["mech_item_transmitter","mech_receiver"],Rotation:[180.0f,0.0f],Small:1b,Invisible:1b,ShowArms:1b,Invulnerable:1,NoGravity:1,DisabledSlots:4079166,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6425008}}]}

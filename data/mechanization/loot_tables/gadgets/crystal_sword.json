@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.tool.sword","color":"dark_red","italic":false,"with":[{"translate":"mech.resource.crystal_composite"}]}
+			  "name": {"translate":"mech.sword.crystal_composite","color":"dark_red","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

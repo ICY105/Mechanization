@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.tool.chestplate","color":"dark_gray","italic":false,"with":[{"translate":"mech.resource.steel"}]}
+			  "name": {"translate":"mech.chestplate.steel","color":"dark_gray","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",

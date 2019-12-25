@@ -1,8 +1,8 @@
 
-execute store result score temp_0 mech_data in minecraft:overworld run data get block -29999999 0 1600 RecordItem.tag.mech.teleporters[0].uuid
+execute store result score temp_0 mech_data run data get storage mechanization:networks teleporter[0].uuid
 
-execute unless score temp_0 mech_data = in_1 mech_data in minecraft:overworld run data modify block -29999999 0 1600 RecordItem.tag.mech.teleporters append from block -29999999 0 1600 RecordItem.tag.mech.teleporters[0]
-execute in minecraft:overworld run data remove block -29999999 0 1600 RecordItem.tag.mech.teleporters[0]
+execute unless score temp_0 mech_data = in_1 mech_data run data modify storage mechanization:networks teleporter append from storage mechanization:networks teleporter[0]
+data remove storage mechanization:networks teleporter[0]
 execute if score temp_0 mech_data = in_1 mech_data run scoreboard players set in_0 mech_data -1
 
 scoreboard players remove in_0 mech_data 1

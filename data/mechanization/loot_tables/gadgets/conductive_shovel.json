@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.tool.shovel","color":"yellow","italic":false,"with":[{"translate":"mech.resource.conductive"}]}
+			  "name": {"translate":"mech.shovel.conductive","color":"yellow","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",
