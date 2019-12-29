@@ -29,12 +29,12 @@ kill @s[tag=mech_machine_crafter]
 #drop items 1
 data remove block -29999999 0 1601 Items
 execute if block ~ ~ ~ #mechanization:inv run data modify block -29999999 0 1601 Items set from block ~ ~ ~ Items
-execute if block ~ ~ ~ #mechanization:inv run data remove block -29999999 0 1601 Items[{du_gui:1b}]
+execute if block ~ ~ ~ #mechanization:inv run data remove block -29999999 0 1601 Items[{tag:{du_gui:1b}}]
 
 function #mechanization:wrench_break
 
 #drop items 2
-execute if data block -29999999 0 1601 Items if entity @e[type=item,distance=..0.5] run loot spawn ~ ~ ~ mine -29999999 0 1601 air{drop_contents:true}
+execute if data block -29999999 0 1601 Items if entity @e[type=item,distance=..0.5] run loot spawn ~ ~ ~ mine -29999999 0 1601 minecraft:air{drop_contents:true}
 
 #store data to item
 execute if score temp_3 mech_data matches 1.. store result entity @e[type=item,sort=nearest,limit=1,distance=..0.5] Item.tag.mech_energy int 1 run scoreboard players get temp_3 mech_data

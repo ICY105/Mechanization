@@ -1,3 +1,8 @@
+
+execute if score in_0 du_data matches 1300 run loot spawn ~ ~ ~ loot mechanization:base/copper_ore
+execute if score in_0 du_data matches 1310 run loot spawn ~ ~ ~ loot mechanization:base/tin_ore
+execute if score in_0 du_data matches 1320 run loot spawn ~ ~ ~ loot mechanization:base/titanium_ore
+
 execute if score in_0 du_data matches 1304 run loot spawn ~ ~ ~ loot mechanization:base/copper_block
 execute if score in_0 du_data matches 1314 run loot spawn ~ ~ ~ loot mechanization:base/tin_block
 execute if score in_0 du_data matches 1324 run loot spawn ~ ~ ~ loot mechanization:base/titanium_block
@@ -19,5 +24,6 @@ execute if score in_0 du_data matches 1415 run loot spawn ~ ~ ~ loot mechanizati
 execute if score in_0 du_data matches 1416 run loot spawn ~ ~ ~ loot mechanization:base/tier_2_machine_frame
 execute if score in_0 du_data matches 1417 run loot spawn ~ ~ ~ loot mechanization:base/tier_3_machine_frame
 
+execute if score in_0 du_data matches 1430 run loot spawn ~ ~ ~ loot mechanization:base/uranium_ore
 execute if score in_0 du_data matches 1434 run loot spawn ~ ~ ~ loot mechanization:base/uranium_block
 execute if score in_0 du_data matches 1443 run loot spawn ~ ~ ~ loot mechanization:base/plutonium_block

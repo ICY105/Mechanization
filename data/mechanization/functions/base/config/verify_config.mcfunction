@@ -26,6 +26,12 @@ execute unless score $base.config.uranium_rarity mech_data matches 0..32 run sco
 execute unless score $base.config.emerald_rarity mech_data matches 0..32 run tellraw @a [{"text":"Error: Invalid config setting for ","color":"red"},{"text":"[Veins of Emerald per Chunk]","color":"aqua"},{"text":". Resetting to default.","color":"red"}]
 execute unless score $base.config.emerald_rarity mech_data matches 0..32 run scoreboard players set $base.config.emerald_rarity mech_data 1
 
+#reduce veins if compat mode is on
+execute if score $base.config.ore_compatibility mech_data matches 1 if score $base.config.copper_rarity mech_data matches 10.. run scoreboard players remove $base.config.copper_rarity mech_data 3
+execute if score $base.config.ore_compatibility mech_data matches 1 if score $base.config.tin_rarity mech_data matches 10.. run scoreboard players remove $base.config.tin_rarity mech_data 3
+execute if score $base.config.ore_compatibility mech_data matches 1 if score $base.config.titanium_rarity mech_data matches 8.. run scoreboard players remove $base.config.titanium_rarity mech_data 2
+execute if score $base.config.ore_compatibility mech_data matches 1 if score $base.config.uranium_rarity mech_data matches 8.. run scoreboard players remove $base.config.uranium_rarity mech_data 2
+
 ### Machines
 
 ## Tier 1 battery

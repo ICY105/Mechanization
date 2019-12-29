@@ -1,19 +1,18 @@
 
 #### Copper Ore
 
-#min Y elevation [1,255]
+# Y elevation [1,255]
 scoreboard players set $world.in_0 du_data 24
-#max Y elevation [1,255] (needs to be equal or larger than min y elevation)
 scoreboard players set $world.in_1 du_data 64
-#min number of veins [1,32]
+# number of veins [1,32]
 scoreboard players operation $world.in_2 du_data = $base.config.copper_rarity mech_data
-#max number of veins [1,32] (needs to be equal or larger than min veins)
 scoreboard players operation $world.in_3 du_data = $base.config.copper_rarity mech_data
-#min ores per vein [1,16]
+# ores per vein [1,16]
 scoreboard players set $world.in_4 du_data 4
-#max ores per vein [1,16] (needs to be equal or larger than min ores)
 scoreboard players set $world.in_5 du_data 6
-#Dimension id [-1,1]
+execute if score $base.config.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_4 du_data 1
+execute if score $base.config.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_5 du_data 1
+# Dimension id [-1,1]
 scoreboard players set $world.in_6 du_data 0
 
 #Call Registry Function
@@ -31,6 +30,8 @@ scoreboard players operation $world.in_3 du_data = $base.config.tin_rarity mech_
 # ores per vein [1,16]
 scoreboard players set $world.in_4 du_data 4
 scoreboard players set $world.in_5 du_data 6
+execute if score $base.config.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_4 du_data 1
+execute if score $base.config.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_5 du_data 1
 # Dimension id [-1,1]
 scoreboard players set $world.in_6 du_data 0
 
@@ -49,6 +50,8 @@ scoreboard players operation $world.in_3 du_data = $base.config.titanium_rarity 
 # ores per vein [1,16]
 scoreboard players set $world.in_4 du_data 1
 scoreboard players set $world.in_5 du_data 3
+execute if score $base.config.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_4 du_data 1
+execute if score $base.config.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_5 du_data 1
 # Dimension id [-1,1]
 scoreboard players set $world.in_6 du_data 0
 
@@ -67,6 +70,8 @@ scoreboard players operation $world.in_3 du_data = $base.config.uranium_rarity m
 # ores per vein [1,16]
 scoreboard players set $world.in_4 du_data 2
 scoreboard players set $world.in_5 du_data 4
+execute if score $base.config.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_4 du_data 1
+execute if score $base.config.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_5 du_data 1
 # Dimension id [-1,1]
 scoreboard players set $world.in_6 du_data 0
 

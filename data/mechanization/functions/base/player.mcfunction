@@ -22,10 +22,10 @@ execute if data entity @s SelectedItem{id:"minecraft:written_book"}.tag{CustomMo
 execute if score @s mech_crafter matches 1.. run function mechanization:base/machines/crafter
 
 #assign grid id
-scoreboard players set @s[tag=!mech_has_id] mech_gridid 0
+execute unless score @s mech_gridid matches -2147483648.. run scoreboard players set @s mech_gridid 0
 scoreboard players enable @s mech_gridid
-tag @s[tag=!mech_has_id] add mech_has_id
 
 #clear bad items
 clear @s minecraft:structure_block{du_gui:1b}
+clear @s minecraft:cobblestone{du_gui:1b}
 
