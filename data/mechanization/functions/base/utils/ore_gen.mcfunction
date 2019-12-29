@@ -1,6 +1,6 @@
 
 #normal mode
-execute if score $base.config.ore_compatibility mech_data matches 0 if score $world.in_0 du_data = $cons.copper_ore mech_data run setblock ~ ~ ~ minecraft:petrified_oak_slab[waterlogged=true,type=double]
+execute if score $base.config.ore_compatibility mech_data matches 0 if score $world.in_0 du_data = $cons.copper_ore mech_data run setblock ~ ~ ~ minecraft:stone_brick_slab[waterlogged=true,type=double]
 execute if score $base.config.ore_compatibility mech_data matches 0 if score $world.in_0 du_data = $cons.tin_ore mech_data run setblock ~ ~ ~ minecraft:stone_slab[waterlogged=true,type=double]
 execute if score $base.config.ore_compatibility mech_data matches 0 if score $world.in_0 du_data = $cons.titanium_ore mech_data run setblock ~ ~ ~ minecraft:smooth_stone_slab[waterlogged=true,type=double]
 execute if score $base.config.ore_compatibility mech_data matches 0 if score $world.in_0 du_data = $cons.uranium_ore mech_data run setblock ~ ~ ~ minecraft:cobblestone_slab[waterlogged=true,type=double]
