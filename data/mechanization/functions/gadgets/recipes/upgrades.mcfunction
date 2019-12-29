@@ -46,12 +46,12 @@ execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b
 
 scoreboard players set temp_0 mech_data 0
 execute if block ~ ~ ~ barrel{Items:[{Slot:16b}]} run scoreboard players set temp_0 mech_data 1
-execute if score temp_0 mech_data matches 1 store result score out_0 du_data run data get block ~ ~ ~ Items[{Slot:2b}].Count
-execute if score temp_0 mech_data matches 1 store result score out_1 du_data run data get block ~ ~ ~ Items[{Slot:3b}].Count
-execute if score temp_0 mech_data matches 1 store result score out_2 du_data run data get block ~ ~ ~ Items[{Slot:4b}].Count
-execute if score temp_0 mech_data matches 1 store result score out_3 du_data run data get block ~ ~ ~ Items[{Slot:11b}].Count
-execute if score temp_0 mech_data matches 1 store result score out_4 du_data run data get block ~ ~ ~ Items[{Slot:12b}].Count
-execute if score temp_0 mech_data matches 1 store result score out_5 du_data run data get block ~ ~ ~ Items[{Slot:13b}].Count
-execute if score temp_0 mech_data matches 1 store result score out_6 du_data run data get block ~ ~ ~ Items[{Slot:20b}].Count
-execute if score temp_0 mech_data matches 1 store result score out_7 du_data run data get block ~ ~ ~ Items[{Slot:21b}].Count
-execute if score temp_0 mech_data matches 1 store result score out_8 du_data run data get block ~ ~ ~ Items[{Slot:22b}].Count
+execute if score temp_0 mech_data matches 1 store result score $crafting.out_0 du_data run data get block ~ ~ ~ Items[{Slot:2b}].Count
+execute if score temp_0 mech_data matches 1 store result score $crafting.out_1 du_data run data get block ~ ~ ~ Items[{Slot:3b}].Count
+execute if score temp_0 mech_data matches 1 store result score $crafting.out_2 du_data run data get block ~ ~ ~ Items[{Slot:4b}].Count
+execute if score temp_0 mech_data matches 1 store result score $crafting.out_3 du_data run data get block ~ ~ ~ Items[{Slot:11b}].Count
+execute if score temp_0 mech_data matches 1 store result score $crafting.out_4 du_data run data get block ~ ~ ~ Items[{Slot:12b}].Count
+execute if score temp_0 mech_data matches 1 store result score $crafting.out_5 du_data run data get block ~ ~ ~ Items[{Slot:13b}].Count
+execute if score temp_0 mech_data matches 1 store result score $crafting.out_6 du_data run data get block ~ ~ ~ Items[{Slot:20b}].Count
+execute if score temp_0 mech_data matches 1 store result score $crafting.out_7 du_data run data get block ~ ~ ~ Items[{Slot:21b}].Count
+execute if score temp_0 mech_data matches 1 store result score $crafting.out_8 du_data run data get block ~ ~ ~ Items[{Slot:22b}].Count

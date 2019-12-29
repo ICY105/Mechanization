@@ -46,4 +46,5 @@ tag @s remove mech_not_checked
 scoreboard players operation in_6 mech_data = @s mech_power
 
 #Break
+execute at @s unless block ~ ~ ~ minecraft:barrier run loot spawn ~ ~ ~ loot mechanization:base/tier_3_machine_frame
 execute at @s unless block ~ ~ ~ minecraft:barrier run kill @s
