@@ -1,30 +1,42 @@
 
-#store scoreboard to nbt
+# NBT backup
 execute unless score @s mech_power matches 0.. store result score @s mech_power run data get entity @s ArmorItems[3].tag.mech_power
 execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s ArmorItems[3].tag.mech_gridid
 
-#energy transfer
-scoreboard players set in_0 mech_data 1000
-execute if entity @s[tag=mech_upgraded] run scoreboard players set in_0 mech_data 1250
-execute if entity @s[tag=mech_upgrade_ender] run scoreboard players set in_0 mech_data 2000
+execute store result entity @s ArmorItems[3].tag.mech_power int 1 run scoreboard players get @s mech_power
+execute store result entity @s ArmorItems[3].tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
 
-scoreboard players set in_1 mech_data 4000
 
-scoreboard players set in_2 mech_data 1000000
-execute if entity @s[tag=mech_upgraded] run scoreboard players set in_2 mech_data 1250000
-execute if entity @s[tag=mech_upgrade_nether] run scoreboard players set in_2 mech_data 2000000
+### Call API
 
-scoreboard players set in_3 mech_data 24
+#rate
+scoreboard players operation in_0 mech_data = $base.config.t3_rate mech_data
+execute if entity @s[tag=mech_upgraded] run scoreboard players operation in_0 mech_data = $base.config.t3_rate_upgrade mech_data
+execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation in_0 mech_data = $base.config.t3_rate_ender_upgrade mech_data
+execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation in_0 mech_data = $base.config.t3_rate_nether_upgrade mech_data
 
+#buffer
+scoreboard players set in_1 mech_data 2000
+
+#capacity
+scoreboard players operation in_2 mech_data = $base.config.t3_capacity mech_data
+execute if entity @s[tag=mech_upgraded] run scoreboard players operation in_2 mech_data = $base.config.t3_capacity_upgrade mech_data
+execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation in_2 mech_data = $base.config.t3_capacity_ender_upgrade mech_data
+execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation in_2 mech_data = $base.config.t3_capacity_nether_upgrade mech_data
+
+#range
+scoreboard players set in_3 mech_data 12
+
+#effects
 execute if entity @s[tag=mech_no_effects] run scoreboard players set in_4 mech_data 0
 execute if entity @s[tag=mech_effects] run scoreboard players set in_4 mech_data 1
 
+#call
 function mechanization:base/energy/battery
 
-#energy display
-scoreboard players set in_0 mech_data 1000000
-execute if entity @s[tag=mech_upgraded] run scoreboard players set in_0 mech_data 1250000
-execute if entity @s[tag=mech_upgrade_nether] run scoreboard players set in_0 mech_data 2000000
+
+### energy display
+scoreboard players operation in_0 mech_data = in_2 mech_data
 
 scoreboard players operation in_1 mech_data = @s mech_power
 scoreboard players set in_2 mech_data 6421018
@@ -37,10 +49,6 @@ execute if score in_1 mech_data matches 9.. run scoreboard players set in_1 mech
 scoreboard players operation in_1 mech_data += in_2 mech_data
 
 execute store result entity @s ArmorItems[3].tag.CustomModelData int 1 run scoreboard players get in_1 mech_data
-
-#store power to nbt
-execute store result entity @s ArmorItems[3].tag.mech_power int 1 run scoreboard players get @s mech_power
-execute store result entity @s ArmorItems[3].tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
 
 #Ambient Sounds
 execute if entity @s[scores={mech_timer=1}] run playsound mechanization:base.battery_ambient ambient @a[distance=..16] ~ ~ ~ 0.05

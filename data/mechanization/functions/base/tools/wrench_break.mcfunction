@@ -26,14 +26,22 @@ execute if entity @s[tag=mech_machine_crafter] run loot spawn ~ ~ ~ loot mechani
 execute if entity @s[tag=mech_machine_crafter] at @s run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_machine_crafter]
 
+#drop items 1
+data remove block -29999999 0 1601 Items
+execute if block ~ ~ ~ #mechanization:inv run data modify block -29999999 0 1601 Items set from block ~ ~ ~ Items
+execute if block ~ ~ ~ #mechanization:inv run data remove block -29999999 0 1601 Items[{du_gui:1b}]
+
 function #mechanization:wrench_break
 
-#store data to item
-execute if score temp_3 mech_data matches 1.. store result entity @e[type=item,sort=nearest,limit=1] Item.tag.mech_energy int 1 run scoreboard players get temp_3 mech_data
-execute if score temp_3 mech_data matches 1.. run data merge block -29999999 0 1602 {Text1:"[{\"translate\":\"mech.text.multimeter.energy\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"score\":{\"name\":\"temp_3\",\"objective\":\"mech_data\"},\"color\":\"gray\"}]}]"}
-execute if score temp_3 mech_data matches 1.. as @e[type=item,sort=nearest,limit=1] run data modify entity @s Item.tag.display.Lore append from block -29999999 0 1602 Text1
+#drop items 2
+execute if data block -29999999 0 1601 Items if entity @e[type=item,distance=..0.5] run loot spawn ~ ~ ~ mine -29999999 0 1601 air{drop_contents:true}
 
-execute if score temp_4 mech_data matches 1 as @e[type=item,sort=nearest,limit=1] run data modify entity @s Item.tag.display.Lore append value "{\"translate\":\"mech.item.machine_upgrade\",\"color\":\"gray\",\"italic\":false}"
-execute if score temp_4 mech_data matches 2 as @e[type=item,sort=nearest,limit=1] run data modify entity @s Item.tag.display.Lore append value "{\"translate\":\"mech.item.nether_upgrade\",\"color\":\"gray\",\"italic\":false}"
-execute if score temp_4 mech_data matches 3 as @e[type=item,sort=nearest,limit=1] run data modify entity @s Item.tag.display.Lore append value "{\"translate\":\"mech.item.ender_upgrade\",\"color\":\"gray\",\"italic\":false}"
-execute if score temp_4 mech_data matches 1.. store result entity @e[type=item,sort=nearest,limit=1] Item.tag.mech_upgrade int 1 run scoreboard players get temp_4 mech_data
+#store data to item
+execute if score temp_3 mech_data matches 1.. store result entity @e[type=item,sort=nearest,limit=1,distance=..0.5] Item.tag.mech_energy int 1 run scoreboard players get temp_3 mech_data
+execute if score temp_3 mech_data matches 1.. run data merge block -29999999 0 1602 {Text1:'[{"translate":"mech.text.multimeter.energy","color":"gray","italic":false,"with":[{"score":{"name":"temp_3","objective":"mech_data"},"color":"gray"}]}]'}
+execute if score temp_3 mech_data matches 1.. as @e[type=item,sort=nearest,limit=1,distance=..0.5] run data modify entity @s Item.tag.display.Lore append from block -29999999 0 1602 Text1
+
+execute if score temp_4 mech_data matches 1 as @e[type=item,sort=nearest,limit=1,distance=..0.5] run data modify entity @s Item.tag.display.Lore append value "{\"translate\":\"mech.item.machine_upgrade\",\"color\":\"gray\",\"italic\":false}"
+execute if score temp_4 mech_data matches 2 as @e[type=item,sort=nearest,limit=1,distance=..0.5] run data modify entity @s Item.tag.display.Lore append value "{\"translate\":\"mech.item.nether_upgrade\",\"color\":\"gray\",\"italic\":false}"
+execute if score temp_4 mech_data matches 3 as @e[type=item,sort=nearest,limit=1,distance=..0.5] run data modify entity @s Item.tag.display.Lore append value "{\"translate\":\"mech.item.ender_upgrade\",\"color\":\"gray\",\"italic\":false}"
+execute if score temp_4 mech_data matches 1.. store result entity @e[type=item,sort=nearest,limit=1,distance=..0.5] Item.tag.mech_upgrade int 1 run scoreboard players get temp_4 mech_data

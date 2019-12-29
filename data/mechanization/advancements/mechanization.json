@@ -21,5 +21,8 @@
         "always": {
             "trigger": "minecraft:tick"
         }
+    },
+    "rewards": {
+        "function": "give:mech_base/mechanical_manual"
     }
 }

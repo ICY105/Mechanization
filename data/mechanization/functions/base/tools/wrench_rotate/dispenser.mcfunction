@@ -1,5 +1,5 @@
-data modify block -29999999 0 1600 RecordItem.tag.mech.temp set value {}
-data modify block -29999999 0 1600 RecordItem.tag.mech.temp set from block ~ ~ ~ Items
+data merge storage du:temp {list:[]}
+data modify storage du:temp list set from block ~ ~ ~ Items
 
 execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:dispenser[facing=up] store success score in_0 mech_data run setblock ~ ~ ~ minecraft:dispenser[facing=down]
 execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:dispenser[facing=down] store success score in_0 mech_data run setblock ~ ~ ~ minecraft:dispenser[facing=north]
@@ -8,4 +8,4 @@ execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:dispenser[fac
 execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:dispenser[facing=south] store success score in_0 mech_data run setblock ~ ~ ~ minecraft:dispenser[facing=west]
 execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:dispenser[facing=west] store success score in_0 mech_data run setblock ~ ~ ~ minecraft:dispenser[facing=up]
 
-data modify block ~ ~ ~ Items set from block -29999999 0 1600 RecordItem.tag.mech.temp
+data modify block ~ ~ ~ Items set from storage du:temp list

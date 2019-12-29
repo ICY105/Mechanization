@@ -16,6 +16,7 @@ execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:comparator ru
 execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:chest run function mechanization:base/tools/wrench_rotate/chest
 execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:trapped_chest run function mechanization:base/tools/wrench_rotate/trapped_chest
 execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:furnace run function mechanization:base/tools/wrench_rotate/furnace
+execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:barrel run function mechanization:base/tools/wrench_rotate/barrel
 
 execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:dispenser run function mechanization:base/tools/wrench_rotate/dispenser
 execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:dropper run function mechanization:base/tools/wrench_rotate/dropper

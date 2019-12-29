@@ -1,6 +1,5 @@
-gamerule commandBlockOutput false
-gamerule maxCommandChainLength 1000000
 
+#init scores
 scoreboard objectives add mech_timer dummy
 scoreboard objectives add mech_power dummy
 scoreboard objectives add mech_gridid trigger
@@ -21,5 +20,12 @@ scoreboard objectives add mech_useshovel minecraft.used:minecraft.diamond_shovel
 scoreboard objectives add mech_usesword minecraft.used:minecraft.diamond_sword
 scoreboard objectives add mech_usetrident minecraft.used:minecraft.trident
 
-#Install check
-scoreboard players set $mech.ver load 2020000
+#mark version
+scoreboard players set $mech.ver load 2020100
+
+#configure storage
+execute unless data storage mechanization:networks quantum run data merge storage mechanization:networks {quantum:[]}
+execute unless data storage mechanization:networks teleporter run data merge storage mechanization:networks {teleporter:[]}
+
+#load config
+function mechanization:base/config/load_config
