@@ -7,6 +7,7 @@ execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:bamboo"}]} run scoreboard p
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:sweet_berries"}]} run scoreboard players add temp_0 mech_data 2
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:cocoa_beans"}]} run scoreboard players add temp_0 mech_data 2
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:melon_slice"}]} run scoreboard players add temp_0 mech_data 2
+execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:rotten_flesh"}]} run scoreboard players add temp_0 mech_data 2
 
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:beetroot"}]} run scoreboard players add temp_0 mech_data 3
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:potato"}]} run scoreboard players add temp_0 mech_data 3
