@@ -1,1 +1,1 @@
-summon item ~ ~ ~ {CustomName:"{\"translate\":\"mech.block.reaction_rate_observer\",\"color\":\"green\",\"italic\":false}",CustomNameVisible:1,Item:{id:"minecraft:diamond_shovel",Count:1b,tag:{du_nerf:1b, mech_itemid: 3003, du_click_detect:1b,Unbreakable:1,Damage:94,HideFlags:6,display:{Name:"{\"translate\":\"mech.block.reaction_rate_observer\",\"color\":\"green\",\"italic\":false}",Lore:["§fComparator outputs reaction rate","§fof reactor within 8 blocks."]}}}}
+loot give @s loot mechanization:nuclear/reaction_rate_observer

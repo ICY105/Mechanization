@@ -27,7 +27,7 @@ execute if score $crafting.in_0 du_data matches 0 if score $crafting.in_2 du_dat
 
 #manual
 execute if score $crafting.in_0 du_data matches 0 if score $crafting.in_2 du_data matches 0 if score $crafting.in_6 du_data matches 0 if score $crafting.in_8 du_data matches 0 if block ~ ~ ~ barrel{Items:[{Slot:3b, id:"minecraft:redstone"},{Slot:11b, id:"minecraft:redstone"},{Slot:12b, id:"minecraft:book"},{Slot:13b, id:"minecraft:redstone"},{Slot:21b, id:"minecraft:redstone"}]} run function mechanization:base/recipes/manual
-
+execute if score $compat.config.manual_vol2 mech_data matches 1 if score $crafting.in_1 du_data matches 0 if score $crafting.in_3 du_data matches 0 if score $crafting.in_5 du_data matches 0 if score $crafting.in_7 du_data matches 0 if block ~ ~ ~ barrel{Items:[{Slot:2b, id:"minecraft:redstone"},{Slot:4b, id:"minecraft:redstone"},{Slot:12b, id:"minecraft:book"},{Slot:20b, id:"minecraft:redstone"},{Slot:22b, id:"minecraft:redstone"}]} run function mechanization:base/recipes/manual_2
 
 
 #ingots -> block

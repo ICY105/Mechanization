@@ -1,7 +1,23 @@
 
+### Compatibility & Grief Prevention
+
+# [0,1] Use Villager click detection instead of Carrot on a Stick Detection
+#       Less accurate but usually works better with plugins (like grief prevention)
+scoreboard players set $compat.config.click_detect mech_data 0
+
+# [0,1] Add Manual Vol. 2. Spigot caps book length at 100 pages which is too short.
+scoreboard players set $compat.config.manual_vol2 mech_data 0
+
+# [0,1] Decrease reactor explosion size to prevent griefing.
+scoreboard players set $compat.config.small_explosion mech_data 0
+
+# [0,1] Disable block smelting effects from plasma weapons
+scoreboard players set $compat.config.plasma_smelt mech_data 0
+
 ### Ore Generation
 
-# [0,1] Compatibility Mode: set to 1 to turn all ores into player heads
+# [0,1] Compatibility Mode: set to 1 to turn all ores into player heads. Big FPS hit.
+#       Only use if another datapack uses the technical blocks the Mech also uses for ores.
 scoreboard players set $base.config.ore_compatibility mech_data 0
 
 # [0,32] Veins of Copper per Chunk

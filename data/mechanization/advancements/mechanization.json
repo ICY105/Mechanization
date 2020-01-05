@@ -23,6 +23,6 @@
         }
     },
     "rewards": {
-        "function": "give:mech_base/mechanical_manual"
+        "function": "mechanization:base/utils/give_manual"
     }
 }
