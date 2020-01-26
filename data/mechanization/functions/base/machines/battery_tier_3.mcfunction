@@ -16,7 +16,7 @@ execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation in
 execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation in_0 mech_data = $base.config.t3_rate_nether_upgrade mech_data
 
 #buffer
-scoreboard players set in_1 mech_data 2000
+scoreboard players set in_1 mech_data 6000
 
 #capacity
 scoreboard players operation in_2 mech_data = $base.config.t3_capacity mech_data
@@ -25,7 +25,7 @@ execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation in
 execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation in_2 mech_data = $base.config.t3_capacity_nether_upgrade mech_data
 
 #range
-scoreboard players set in_3 mech_data 12
+scoreboard players set in_3 mech_data 24
 
 #effects
 execute if entity @s[tag=mech_no_effects] run scoreboard players set in_4 mech_data 0

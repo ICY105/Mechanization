@@ -7,7 +7,34 @@
         {
 		  "type": "minecraft:alternatives",
           "children": [
-		    {
+			{
+			  "type": "minecraft:loot_table",
+              "name": "mechanization:base/copper_ingot",
+			  "functions": [
+			    {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops"
+                }
+			  ],
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "nbt": "{du_auto_smelt:1b}"
+                  }
+                },
+				{
+				  "condition": "minecraft:block_state_property",
+				  "block": "minecraft:petrified_oak_slab",
+				  "properties": {
+				    "type": "double",
+					"waterlogged": true
+				  }
+				}
+              ]
+			},
+			{
 			  "type": "minecraft:loot_table",
 			  "name": "mechanization:base/copper_ore",
 			  "conditions": [

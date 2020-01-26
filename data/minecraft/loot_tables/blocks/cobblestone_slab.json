@@ -9,6 +9,33 @@
           "children": [
 		    {
 			  "type": "minecraft:loot_table",
+              "name": "mechanization:base/uranium_ingot",
+			  "functions": [
+			    {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops"
+                }
+			  ],
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "nbt": "{du_auto_smelt:1b}"
+                  }
+                },
+				{
+				  "condition": "minecraft:block_state_property",
+				  "block": "minecraft:cobblestone_slab",
+				  "properties": {
+				    "type": "double",
+					"waterlogged": true
+				  }
+				}
+              ]
+			},
+			{
+			  "type": "minecraft:loot_table",
 			  "name": "mechanization:base/uranium_ore",
 			  "conditions": [
 			    {

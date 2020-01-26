@@ -12,7 +12,7 @@ execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation in
 execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation in_0 mech_data = $base.config.q_rate_nether_upgrade mech_data
 
 #buffer
-scoreboard players set in_1 mech_data 2000
+scoreboard players set in_1 mech_data 6000
 
 #capacity
 scoreboard players operation in_2 mech_data = $base.config.q_capacity mech_data
