@@ -1,28 +1,31 @@
-scoreboard players set in_1 mech_data 1
-execute if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:stone"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:stone_bricks",Count:1b}}
-execute if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:stone"}]} run function mechanization:assembly/machines/compressor/remove_items
-execute if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:end_stone"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:end_stone_bricks",Count:1b}}
-execute if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:end_stone"}]} run function mechanization:assembly/machines/compressor/remove_items
-execute if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:diorite"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:polished_diorite",Count:1b}}
-execute if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:diorite"}]} run function mechanization:assembly/machines/compressor/remove_items
-execute if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:granite"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:polished_granite",Count:1b}}
-execute if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:granite"}]} run function mechanization:assembly/machines/compressor/remove_items
-execute if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:andesite"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:polished_andesite",Count:1b}}
-execute if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:andesite"}]} run function mechanization:assembly/machines/compressor/remove_items
 
+#get count
+execute store result score temp_0 mech_data run data get block ~ ~ ~ Items[{Slot:3b}].Count
+scoreboard players set temp_1 mech_data 0
 
-scoreboard players set in_1 mech_data 4
-execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:prismarine_shard"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:prismarine",Count:4b}}
-execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:prismarine_shard"}]} run function mechanization:assembly/machines/compressor/remove_items
-execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:sand"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:sandstone",Count:4b}}
-execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:sand"}]} run function mechanization:assembly/machines/compressor/remove_items
-execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:red_sand"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:red_sandstone",Count:4b}}
-execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:red_sand"}]} run function mechanization:assembly/machines/compressor/remove_items
-execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:brick"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:bricks",Count:4b}}
-execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:brick"}]} run function mechanization:assembly/machines/compressor/remove_items
-execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:nether_brick"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:nether_bricks",Count:4b}}
-execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:nether_brick"}]} run function mechanization:assembly/machines/compressor/remove_items
-execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:magma_cream"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:magma_block",Count:4b}}
-execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:magma_cream"}]} run function mechanization:assembly/machines/compressor/remove_items
-execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:popped_chorus_fruit"}]} run summon item ~ ~ ~ {Tags:["mech_comp_new"],Item:{id:"minecraft:purpur_block",Count:4b}}
-execute if score out_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:popped_chorus_fruit"}]} run function mechanization:assembly/machines/compressor/remove_items
+# 1-input recipes
+scoreboard players set temp_1 mech_data 0
+execute if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:stone"}]} store success score temp_1 mech_data run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:stone_bricks",Count:1b}}
+execute if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:end_stone"}]} store success score temp_1 mech_data run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:end_stone_bricks",Count:1b}}
+execute if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:diorite"}]} store success score temp_1 mech_data run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:polished_diorite",Count:1b}}
+execute if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:granite"}]} store success score temp_1 mech_data run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:polished_granite",Count:1b}}
+execute if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:andesite"}]} store success score temp_1 mech_data run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:polished_andesite",Count:1b}}
+
+execute if score temp_1 mech_data matches 1 run scoreboard players remove temp_0 mech_data 1
+execute if score temp_1 mech_data matches 1 run scoreboard players remove @s mech_power 16
+
+# 4-input recipes
+scoreboard players set temp_1 mech_data 0
+execute if score temp_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:prismarine_shard"}]} run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:prismarine",Count:4b}}
+execute if score temp_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:sand"}]} run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:sandstone",Count:4b}}
+execute if score temp_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:red_sand"}]} run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:red_sandstone",Count:4b}}
+execute if score temp_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:brick"}]} run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:bricks",Count:4b}}
+execute if score temp_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:nether_brick"}]} run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:nether_bricks",Count:4b}}
+execute if score temp_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:magma_cream"}]} run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:magma_block",Count:4b}}
+execute if score temp_0 mech_data matches 4.. if block ~ ~ ~ dropper{Items:[{Slot:3b,id:"minecraft:popped_chorus_fruit"}]} run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:purpur_block",Count:4b}}
+
+execute if score temp_1 mech_data matches 1 run scoreboard players remove temp_0 mech_data 4
+execute if score temp_1 mech_data matches 1 run scoreboard players remove @s mech_power 16
+
+#store count
+execute store result block ~ ~ ~ Items[{Slot:3b}].Count byte 1 run scoreboard players get temp_0 mech_data

@@ -21,10 +21,10 @@ scoreboard players set $compat.config.plasma_smelt mech_data 0
 scoreboard players set $base.config.ore_compatibility mech_data 0
 
 # [0,32] Veins of Copper per Chunk
-scoreboard players set $base.config.copper_rarity mech_data 12
+scoreboard players set $base.config.copper_rarity mech_data 8
 
 # [0,32] Veins of Tin per Chunk
-scoreboard players set $base.config.tin_rarity mech_data 12
+scoreboard players set $base.config.tin_rarity mech_data 8
 
 # [0,32] Veins of Titanium per Chunk
 scoreboard players set $base.config.titanium_rarity mech_data 1

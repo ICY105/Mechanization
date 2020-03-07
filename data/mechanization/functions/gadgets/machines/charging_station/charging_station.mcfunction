@@ -5,6 +5,11 @@ execute unless score @s mech_gridid matches -2147483648.. store result score @s 
 
 ### Main
 
+#configure input
+execute if data entity @s ArmorItems[{Count:1b}] run function mechanization:gadgets/machines/charging_station/move_armor 
+execute if data entity @s HandItems[0].Count run data merge entity @s {DisabledSlots:4136992}
+execute unless data entity @s HandItems[0].Count run data merge entity @s {DisabledSlots:2105376}
+
 #get data
 execute store result score temp_0 mech_data run data get entity @s HandItems[0].tag.mech_battery.energy
 execute store result score temp_1 mech_data run data get entity @s HandItems[0].tag.mech_battery.max_energy
@@ -29,13 +34,13 @@ execute if score temp_1 mech_data matches 1.. run data modify entity @s HandItem
 scoreboard players operation temp_1 mech_data /= temp_2 mech_data
 scoreboard players operation temp_0 mech_data /= temp_1 mech_data
 scoreboard players operation temp_3 mech_data += temp_0 mech_data
-
 execute if score temp_1 mech_data matches 1.. if score temp_2 mech_data matches 1.. store result entity @s HandItems[0].tag.CustomModelData int 1 run scoreboard players get temp_3 mech_data
 
 #store scoreboard values
 execute store result entity @s ArmorItems[3].tag.mech_power int 1 run scoreboard players get @s mech_power
 execute store result entity @s ArmorItems[3].tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
 
-#cleanup
-execute unless block ~ ~ ~ barrier run loot spawn ~ ~ ~ loot mechanization:base/tier_2_machine_frame
+### cleanup
 execute unless block ~ ~ ~ barrier run kill @s
+
+

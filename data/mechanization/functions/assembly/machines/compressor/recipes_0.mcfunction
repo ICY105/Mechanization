@@ -1,7 +1,6 @@
 
 #get count
 execute store result score temp_0 mech_data run data get block ~ ~ ~ Items[{Slot:0b}].Count
-scoreboard players set temp_1 mech_data 0
 
 ### 3x3
 scoreboard players set temp_1 mech_data 0
@@ -54,9 +53,6 @@ execute if score temp_0 mech_data matches 9.. if data block ~ ~ ~ Items[{Slot:0b
 #cleanup
 execute if score temp_1 mech_data matches 1 run scoreboard players remove temp_0 mech_data 9
 execute if score temp_1 mech_data matches 1 run scoreboard players remove @s mech_power 16
-scoreboard players set temp_1 mech_data 0
-
-
 
 ### 2x2
 scoreboard players set temp_1 mech_data 0
@@ -68,6 +64,8 @@ execute if score temp_0 mech_data matches 4.. if data block ~ ~ ~ Items[{Slot:0b
 execute if score temp_0 mech_data matches 4.. if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:rabbit_hide"}] store success score temp_1 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:leather",Count:1b}}
 execute if score temp_0 mech_data matches 4.. if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:ice"}] store success score temp_1 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:packed_ice",Count:1b}}
 execute if score temp_0 mech_data matches 4.. if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:packed_ice"}] store success score temp_1 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:blue_ice",Count:1b}}
+execute if score temp_0 mech_data matches 4.. if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:honeycomb"}] store success score temp_1 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:honeycomb_block",Count:1b}}
+execute if score temp_0 mech_data matches 4.. if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:honey_bottle"}] store success score temp_1 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:honey_block",Count:1b}}
 
 #cleanup
 execute if score temp_1 mech_data matches 1 run scoreboard players remove temp_0 mech_data 4

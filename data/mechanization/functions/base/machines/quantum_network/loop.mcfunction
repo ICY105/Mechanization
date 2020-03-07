@@ -10,5 +10,5 @@ data modify storage mechanization:networks quantum append from storage mechaniza
 data remove storage mechanization:networks quantum[0]
 
 #loop function
-scoreboard players remove in_4 mech_data 1
-execute if score in_4 mech_data matches 1 run function mechanization:base/machines/quantum_network/loop
+scoreboard players remove in_7 mech_data 1
+execute if score in_7 mech_data matches 1.. run function mechanization:base/machines/quantum_network/loop

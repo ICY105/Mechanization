@@ -37,3 +37,13 @@ execute store result block ~ ~ ~ Items[{Slot:17b}].tag.AttributeModifiers[{Name:
 execute if block ~ ~ ~ barrel{Items:[ {tag:{OreDict:["upgradeKnockResist"]}} ]} store success block ~ ~ ~ Items[{Slot:17b}].tag.AttributeModifiers[{Name:"generic.knockbackResistance"}].Amount double 0.5 if entity @s
 execute if block ~ ~ ~ barrel{Items:[ {tag:{OreDict:["upgradeHealth"]}} ]} store success block ~ ~ ~ Items[{Slot:17b}].tag.AttributeModifiers[{Name:"generic.maxHealth"}].Amount double 5 if entity @s
 
+scoreboard players set temp_0 mech_data 0
+execute if block ~ ~ ~ barrel{Items:[ {Slot:11b,tag:{mech_itemid:4209}} ]} run scoreboard players add temp_0 mech_data 32000
+execute if block ~ ~ ~ barrel{Items:[ {Slot:12b,tag:{mech_itemid:4209}} ]} run scoreboard players add temp_0 mech_data 32000
+execute if block ~ ~ ~ barrel{Items:[ {Slot:13b,tag:{mech_itemid:4209}} ]} run scoreboard players add temp_0 mech_data 32000
+execute if block ~ ~ ~ barrel{Items:[ {Slot:14b,tag:{mech_itemid:4209}} ]} run scoreboard players add temp_0 mech_data 32000
+execute if block ~ ~ ~ barrel{Items:[ {Slot:15b,tag:{mech_itemid:4209}} ]} run scoreboard players add temp_0 mech_data 32000
+execute if score temp_0 mech_data matches 1.. run data modify block ~ ~ ~ Items[{Slot:17b}].tag.mech_battery set value {models:0,base_model:0,max_energy:0,energy:0}
+execute if score temp_0 mech_data matches 1.. store result block ~ ~ ~ Items[{Slot:17b}].tag.mech_battery.max_energy int 1 run scoreboard players get temp_0 mech_data
+
+
