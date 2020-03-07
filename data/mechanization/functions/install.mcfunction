@@ -8,8 +8,8 @@ execute if score $install.15 mech_data matches 0 run scoreboard players set $ins
 execute if score $install.15 mech_data matches 0 run tellraw @a [{"text":"Error: This version of Mechanization requires Minecraft +1.15. Click [here] to download the latest version for 1.14 (2.1.1).\n","color":"red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/Mechanization/releases/tag/2.1.1"}}]
 
 #check DU
-execute unless score $du.ver load matches 2010200.. run scoreboard players set $install mech_data 0
-execute unless score $du.ver load matches 2010200.. run tellraw @a [{"text":"Error: Mechanization requires Datapack Utilities version +2.1.2. You can download that [here].\n","color":"red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/Datapack-Utilities/releases"}}]
+execute unless score $du.ver load matches 2010300.. run scoreboard players set $install mech_data 0
+execute unless score $du.ver load matches 2010300.. run tellraw @a [{"text":"Error: Mechanization requires Datapack Utilities version +2.1.3. You can download that [here].\n","color":"red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/Datapack-Utilities/releases"}}]
 
 #print install message
 execute if score $install mech_data matches 1 run tellraw @a [{"text":"[Loaded Mechanization v2.2.2]","color":"dark_green"}]
