@@ -12,6 +12,5 @@ execute unless score @s mech_data matches 2147483580.. if data block ~ ~ ~ Items
 execute if score @s mech_data matches 1.. unless data block ~ ~ ~ Items[{Slot:2b,Count:64b}] run function mechanization:assembly/machines/unlimited_storage/output
 
 #cleanup
-execute unless block ~ ~ ~ minecraft:furnace run loot spawn ~ ~ ~ loot mechanization:base/tier_2_machine_frame
-execute unless block ~ ~ ~ minecraft:furnace run kill @s
+execute unless block ~ ~ ~ minecraft:furnace run function mechanization:base/utils/break_machine_t2
 

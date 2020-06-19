@@ -56,4 +56,4 @@ scoreboard players add @s mech_timer 1
 scoreboard players set @s[scores={mech_timer=3}] mech_timer 0
 
 #Break
-execute at @s unless block ~ ~ ~ minecraft:barrier run kill @s
+execute at @s unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_machine_t2

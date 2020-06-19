@@ -3,7 +3,7 @@ tag @s remove mech_upgrade_slowfall
 tag @s remove mech_upgrade_vision
 tag @s remove mech_upgrade_breathing
 tag @s remove mech_upgrade_eater
-tag @s remove mech_upgrade_invisability
+tag @s remove mech_upgrade_invisibility
 tag @s remove mech_upgrade_shield
 tag @s remove mech_upgrade_antidote
 

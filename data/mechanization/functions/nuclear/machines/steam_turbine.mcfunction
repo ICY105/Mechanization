@@ -10,4 +10,4 @@ execute store result entity @s ArmorItems[3].tag.mech_gridid int 1 run scoreboar
 
 #cleanup
 execute unless block ~ ~ ~ barrier run kill @e[tag=mech_turbine_model,distance=..0.25]
-execute unless block ~ ~ ~ barrier run kill @s
+execute unless block ~ ~ ~ barrier run function mechanization:base/utils/break_machine_t2

@@ -20,5 +20,5 @@ data modify block -29999999 0 1601 Items[6].tag.display.Lore[0] set from block -
 
 scoreboard players operation temp_2 mech_data /= temp_4 mech_data
 scoreboard players operation temp_1 mech_data /= temp_2 mech_data
-scoreboard players operation temp_3 mech_data += temp_1 mech_data
+execute unless score temp_3 mech_data matches 0 run scoreboard players operation temp_3 mech_data += temp_1 mech_data
 execute unless score temp_3 mech_data matches 0 if score temp_2 mech_data matches 1.. store result block -29999999 0 1601 Items[6].tag.CustomModelData int 1 run scoreboard players get temp_3 mech_data

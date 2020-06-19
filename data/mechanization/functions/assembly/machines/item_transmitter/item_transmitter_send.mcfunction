@@ -3,7 +3,6 @@
 data modify storage du:temp list set from block ~ ~ ~ Items
 
 #setup filter
-execute in minecraft:overworld run setblock -29999999 1 1601 green_shulker_box
 execute if data entity @s HandItems[0].tag.Enchantments[{id:"mech:filter"}] in minecraft:overworld run data modify block -29999999 1 1601 Items set from entity @s HandItems[0].tag.mech_filter
 
 #run send
