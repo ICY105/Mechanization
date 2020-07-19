@@ -49,7 +49,7 @@ scoreboard players operation $world.in_2 du_data = $base.config.titanium_rarity 
 scoreboard players operation $world.in_3 du_data = $base.config.titanium_rarity mech_data
 # ores per vein [1,16]
 scoreboard players set $world.in_4 du_data 1
-scoreboard players set $world.in_5 du_data 3
+scoreboard players set $world.in_5 du_data 4
 execute if score $base.config.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_4 du_data 1
 execute if score $base.config.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_5 du_data 1
 # Dimension id [-1,1]

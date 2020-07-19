@@ -27,7 +27,3 @@ execute if score @s mech_crafter matches 1.. run function mechanization:base/mac
 execute unless score @s mech_gridid matches -2147483648.. run scoreboard players set @s mech_gridid 0
 scoreboard players enable @s mech_gridid
 
-#clear bad items
-clear @s minecraft:structure_block{du_gui:1b}
-clear @s minecraft:cobblestone{du_gui:1b}
-

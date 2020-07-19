@@ -35,7 +35,7 @@ execute if entity @s[tag=mech_block_breaker] run loot spawn ~ ~ ~ loot mechaniza
 kill @s[tag=mech_block_breaker]
 
 #Auto Farm
-execute if entity @s[tag=mech_auto_farm] run function give:mech_machines/auto_farm
+execute if entity @s[tag=mech_auto_farm] run loot spawn ~ ~ ~ loot mechanization:machines/auto_farm
 execute if entity @s[tag=mech_auto_farm] run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_auto_farm]
 

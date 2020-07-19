@@ -19,4 +19,4 @@ execute store result entity @s ArmorItems[3].tag.mech_gridid int 1 run scoreboar
 execute store result entity @s ArmorItems[3].tag.mech_data int 1 run scoreboard players get @s mech_data
 
 #Break
-execute at @s unless block ~ ~ ~ minecraft:barrier run kill @s
+execute at @s unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_machine_t2

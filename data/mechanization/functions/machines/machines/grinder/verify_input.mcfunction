@@ -43,8 +43,8 @@ execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:dark_oak_log"},{Slo
 execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:acacia_log"},{Slot:2b,id:"minecraft:acacia_planks"}]} run scoreboard players set out_0 mech_data 1
 
 #Extra
-execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:cobblestone"},{Slot:2b,id:"minecraft:sand"}]} run scoreboard players add temp_0 mech_data 1
-execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:stone"},{Slot:2b,id:"minecraft:gravel"}]} run scoreboard players add temp_0 mech_data 1
-execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:gravel"},{Slot:2b,id:"minecraft:flint"}]} run scoreboard players add temp_0 mech_data 1
+execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:cobblestone"},{Slot:2b,id:"minecraft:sand"}]} run scoreboard players add out_0 mech_data 1
+execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:stone"},{Slot:2b,id:"minecraft:gravel"}]} run scoreboard players add out_0 mech_data 1
+execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:gravel"},{Slot:2b,id:"minecraft:flint"}]} run scoreboard players add out_0 mech_data 1
 execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:blaze_rod"},{Slot:2b,id:"minecraft:blaze_powder"}]} run scoreboard players set out_0 mech_data 1
 execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:bone"},{Slot:2b,id:"minecraft:bone_meal"}]} run scoreboard players set out_0 mech_data 1

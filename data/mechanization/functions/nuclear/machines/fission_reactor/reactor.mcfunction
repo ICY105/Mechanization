@@ -28,4 +28,4 @@ execute store result entity @s ArmorItems[3].tag.mech_x int 1 run scoreboard pla
 execute store result entity @s ArmorItems[3].tag.mech_y int 1 run scoreboard players get @s mech_y
 
 #cleanup
-execute unless block ~ ~ ~ barrier run kill @s
+execute unless block ~ ~ ~ barrier run function mechanization:base/utils/break_machine_t2
