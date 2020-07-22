@@ -243,9 +243,9 @@
 "__comment":"Mechanization: Gadgets",
     "mech.item.portable_battery": "Portable Battery",
 		"mech.item.portable_battery.lore": "Energy: %s kJ/%s kJ",
-    "mech.item.iron_echo-locater": "Iron Echo-Locater",
+    "mech.item.iron_echo-locater": "Iron Echo-Locator",
 		"mech.item.iron_echo-locater.lore": "Range: 16 Blocks",
-    "mech.item.diamond_echo-locater": "Diamond Echo-Locater",
+    "mech.item.diamond_echo-locater": "Diamond Echo-Locator",
 		"mech.item.diamond_echo-locater.lore": "Range: 24 Blocks",
     "mech.item.cryo_unit": "Cryothermal Unit",
     "mech.item.fluid_actuator": "Fluid Actuator",
@@ -351,7 +351,6 @@
     "mech.text.multimeter.fuel_spent": "Fuel Spent: ",
     "mech.text.multimeter.temperature": "Temperature: ",
     "mech.text.multimeter.reaction_rate": "Reaction Rate: ",
-    "mech.text.multimeter.": "Fuel Spent: ",
 	"mech.text.multimeter.storage": "Items Stored: ",
     
 	
@@ -519,7 +518,7 @@
 	"mech.manual.page_44.upgrade":"Replants dropped saplings.",
 		"mech.manual.page_44.ender":"Chops 2x2 Trees.",
 		"mech.manual.page_44.nether":"Smelts logs into charcoal.",
-	"mech.manual.page_45.body":"\nActs as a sort of \'null\' chamber that breaks any block inside. Cannot break hard blocks.\nUses 24 kJ/Block.",
+	"mech.manual.page_45.body":"\nActs as a sort of 'null' chamber that breaks any block inside. Cannot break hard blocks.\nUses 24 kJ/Block.",
 	"mech.manual.page_46.upgrade":"Can break hard blocks (ie. ores and obsidian).",
 		"mech.manual.page_46.ender":"Breaks blocks with silk touch.",
 		"mech.manual.page_46.nether":"Increases size to 3x3x3.",
@@ -575,7 +574,7 @@
 	"mech.manual.page_74.title":"Overworld Fuels\n",
 		"mech.manual.page_74.body":"15s: Blue Ice\n20s: Prismarine Crystals\n40s: Rabbit Foot\n80s: Phantom Membrane\n160s: Scute\n240s: Nautilus Shell\n500s: Music Disc\n1000s: Heart of the Sea\n2000s: Totem of Undying",
 	"mech.manual.page_75.title":"Ender Fuels\n",
-		"mech.manual.page_75.body":"4s: End Stone\n8s: Purpur Block\n40s: Ender Pearl\n60s: Eye of Ender\n80s: Dragon\'s Breath\n250s: End Crystal\n500s: Shulker Shell\n2000s: Dragon Head\n8000s: Elytra",
+		"mech.manual.page_75.body":"4s: End Stone\n8s: Purpur Block\n40s: Ender Pearl\n60s: Eye of Ender\n80s: Dragon's Breath\n250s: End Crystal\n500s: Shulker Shell\n2000s: Dragon Head\n8000s: Elytra",
 	"mech.manual.page_76.title":"Nether Fuels\n",
 		"mech.manual.page_76.body":"4s: Nether Brick\n10s: Soul Sand\n40s: Magma Block\n40s: Glowstone Dust\n80s: Nether Quartz\n80s: Blaze Powder\n250s: Ghast Tear\n500s: Wither Rose\n2000s: Wither Skeleton Skull\n6000s: Nether Star",
 	"mech.manual.page_77.body":"\nRemoves enchantments from items and puts them into enchanted books. Requires books and lapis to operate.\nUses 2048 kJ",
@@ -603,11 +602,11 @@
 	"mech.manual.page_88.body":"\nOutputs a comparator signal based on the temperature of the nearest reactor within 8 blocks.",
 	"mech.manual.page_89.body":"\nOutputs a comparator signal based on the reaction rate of the nearest reactor within 8 blocks.",
 	"mech.manual.page_90.body":"\nConverts steam generated from reactors into usable power. Can only generate up to 50 kW, so multiple turbines are needed to convert all the steam.",
-	"mech.manual.page_91.body":"\nThe heart of the fission reactor multiblock. Generates heat from fuel rods which is \'spread\' into the cooling unit. Right click on top of the reactor to insert a fuel rod.",
+	"mech.manual.page_91.body":"\nThe heart of the fission reactor multiblock. Generates heat from fuel rods which is 'spread' into the cooling unit. Right click on top of the reactor to insert a fuel rod.",
 	"mech.manual.page_92.title":"Reactor Mechanics\n",
 		"mech.manual.page_92.body":"Fission reactors have 2 stats: reaction rate (rate) and temperature (temp). You can think of rate as acceleration, and temp as speed. The reactor burns fuel to increase the rate, which in turn increases the speed. The higher the rate, the faster the temp",
 	"mech.manual.page_93.body":"increases. Higher temps can generate more power, but pass 2000°C and the reactor will explode!\n\nConverting heat into steam requires a cooling unit. This consists of a 5x5 block grid around the reactor. The reactor",
-	"mech.manual.page_94.body":"transfers heat into each adjacent block, which in turn transfer some heat to their adjacent blocks, convert some heat into steam, and then cools off some heat reducing the reactor\'s temp.",
+	"mech.manual.page_94.body":"transfers heat into each adjacent block, which in turn transfer some heat to their adjacent blocks, convert some heat into steam, and then cools off some heat reducing the reactor's temp.",
 	"mech.manual.page_95.body":"The key to a good cooling unit is balancing exchange, steam production, and cooling for the reactor.\nBlocks have different stats for each trait, see block charts on the next page.",
 	"mech.manual.page_96.title":"Exchangers\n",
 		"mech.manual.page_96.body":"Exchangers have high transfer rates, but no steam production.\n\n       Transfer Cooling\nObsidian\n            60°C   40°C\nBlock of Coal\n            70°C   30°C\nBlock of Redstone\n            80°C   20°C\nBlock of Quartz\n            90°C   10°C",
@@ -661,7 +660,7 @@
 	"mech.manual.page_122.title":"Gadgets\n",
 	"mech.manual.page_123.body":"\nHandles most 2x2 and 3x3 \"compressing\" recipes (ie. iron ingots -> iron blocks). Works with both vanilla and mech items.\nUses 16 kJ/Recipe",
 	"mech.manual.page_124.body":"\nHandles most \"decompressing\" recipes (ie. iron block -> iron ingots). Works with both vanilla and mech items.\nUses 16 kJ/Recipe",
-	"mech.manual.page_125.body":"\nHandels most \'stone\' based recipes (ie. stone -> stone bricks). See next page for complete list.\nUses 16 kJ/Recipe",
+	"mech.manual.page_125.body":"\nHandels most 'stone' based recipes (ie. stone -> stone bricks). See next page for complete list.\nUses 16 kJ/Recipe",
 	"mech.manual.page_126.body":"Stone -> Stone Bricks\nEnd Stone\n -> End Stone Bricks\nDiorite\n -> Polished Diorite\nGranite\n -> Polished Granite\n4 Prismarine Shards\n -> Prismarine\n4 Sand -> Sandstone\n4 Red Sand\n -> Red Sandstone\n4 Brick -> Bricks",
 	"mech.manual.page_127.body":"4 Nether Birck\n -> Nether Bricks\n4 Magma Cream\n -> Magma Block\n4 Popped Chorus Fruit\n -> Purpur Block",
 	"mech.manual.page_128.body":"\nDyes any dyeable block in batches of 8. Dye goes in the top slot, the block in the bottom slot.\nUses 16 kJ/Recipe",
@@ -675,7 +674,7 @@
 	"mech.manual.page_133.body":"\nShift+Right click on a chest to set contents of item filter. Right click on top of an item transmitter to attach filter.",
 	"mech.manual.page_134.body":"\nStores up to 2147483647 of a single, stackable item. Can only be interacted with via hoppers.",
 	"mech.manual.page_135.body":"\nPlays a random music disc in its inventory when given a redstone signal. Legend speaks of music discs that ",
-	"mech.manual.page_136.body":"\n\n\n      That\'s All!\n      For now..."
+	"mech.manual.page_136.body":"\n\n\n      That's All!\n      For now..."
 }
 
 
