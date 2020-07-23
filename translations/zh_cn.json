@@ -347,7 +347,7 @@
     "mech.text.multimeter.import": "传入",
     "mech.text.multimeter.export": "传出",
     "mech.text.multimeter.refined": "%% 丰度",
-    "mech.text.multimeter.fuel_spent": "Fuel Spent: ",
+    "mech.text.multimeter.fuel_spent": "燃料消耗：",
     "mech.text.multimeter.temperature": "温度：",
     "mech.text.multimeter.reaction_rate": "反应速率：",
 	"mech.text.multimeter.storage": "储存的物品：",
