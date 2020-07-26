@@ -27,6 +27,6 @@ execute if score in_0 mech_data matches 3003 run setblock ~ ~ ~ minecraft:droppe
 
 #Temp Observer
 execute if score in_0 mech_data matches 3005 run summon armor_stand ~ ~ ~ {Tags:["mech_temp_observer"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,ShowArms:1,DisabledSlots:2039583,Fire:32676,ArmorItems:[{},{},{},{id:blast_furnace,Count:1b,tag:{CustomModelData:6423005}}]}
-execute if score in_0 mech_data matches 3005 run setblock ~ ~ ~ minecraft:dropper{Lock:"afhoigbioasbas",CustomName:'{"translate":"mech.block.tempurature_observer","color":"dark_gray","italic":false}'}
+execute if score in_0 mech_data matches 3005 run setblock ~ ~ ~ minecraft:dropper{Lock:"afhoigbioasbas",CustomName:'{"translate":"mech.block.temperature_observer","color":"dark_gray","italic":false}'}
 
 
