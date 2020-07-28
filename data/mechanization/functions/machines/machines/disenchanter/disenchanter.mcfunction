@@ -18,5 +18,4 @@ execute store result entity @s ArmorItems[3].tag.mech_power int 1 run scoreboard
 execute store result entity @s ArmorItems[3].tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
 
 #cleanup
-execute unless block ~ ~ ~ dropper run loot spawn ~ ~ ~ loot mechanization:base/tier_3_machine_frame
-execute unless block ~ ~ ~ dropper run kill @s
+execute unless block ~ ~ ~ dropper run function mechanization:base/utils/break_machine_t3

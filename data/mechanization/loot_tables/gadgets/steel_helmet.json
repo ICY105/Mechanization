@@ -27,8 +27,8 @@
 						"slot":"head"
 					},
 					{
-						"name":"generic.armorToughness",
-						"attribute":"generic.armorToughness",
+						"name":"generic.armor_toughness",
+						"attribute":"generic.armor_toughness",
 						"operation":"addition",
 						"amount":4,
 						"slot":"head"

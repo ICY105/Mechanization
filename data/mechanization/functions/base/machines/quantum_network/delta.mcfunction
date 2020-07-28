@@ -56,4 +56,4 @@ tag @s remove mech_not_checked
 scoreboard players operation in_6 mech_data = @s mech_power
 
 #Break
-execute at @s unless block ~ ~ ~ minecraft:barrier run kill @s
+execute at @s unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_machine_t3
