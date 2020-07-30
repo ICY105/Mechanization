@@ -20,8 +20,8 @@
 			  "function":"set_attributes",
 			  "modifiers": [
 				{
-				  "name":"generic.attackDamage",
-				  "attribute":"generic.attackDamage",
+				  "name":"generic.attack_damage",
+				  "attribute":"generic.attack_damage",
 				  "operation":"addition",
 				  "amount":4,
 				  "slot":"mainhand"

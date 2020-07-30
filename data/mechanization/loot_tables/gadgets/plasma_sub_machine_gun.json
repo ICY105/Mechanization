@@ -20,15 +20,15 @@
 				"function":"set_attributes",
 				"modifiers": [
 					{
-						"name":"generic.attackDamage",
-						"attribute":"generic.movementSpeed",
+						"name":"generic.movement_speed",
+						"attribute":"generic.movement_speed",
 						"operation":"addition",
 						"amount":0,
 						"slot":"mainhand"
 					},
 					{
-						"name":"generic.attackSpeed",
-						"attribute":"generic.attackSpeed",
+						"name":"generic.attack_speed",
+						"attribute":"generic.attack_speed",
 						"operation":"addition",
 						"amount":1024,
 						"slot":"mainhand"

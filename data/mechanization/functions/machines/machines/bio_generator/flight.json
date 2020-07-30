@@ -1,0 +1,12 @@
+{
+  "level": 0,
+  "durationSeconds": 180,
+  "ingredient": "minecraft:elytra",
+  "basePotionType": "minecraft:awkward",
+  "effect": "potioncore:flight",
+  "name": "Potion of Flight",
+  "autoGenerateStrongVersion": true,
+  "autoGenerateLongVersion": true,
+  "durationLongVersion": 480,
+  "durationStrongVersion": 90
+}

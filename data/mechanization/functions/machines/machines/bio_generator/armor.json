@@ -1,0 +1,12 @@
+{
+  "level": 0,
+  "durationSeconds": 180,
+  "ingredient": "minecraft:iron_chestplate",
+  "basePotionType": "minecraft:awkward",
+  "effect": "potioncore:iron_skin",
+  "name": "Ironskin Potion",
+  "autoGenerateStrongVersion": true,
+  "autoGenerateLongVersion": true,
+  "durationLongVersion": 480,
+  "durationStrongVersion": 90
+}

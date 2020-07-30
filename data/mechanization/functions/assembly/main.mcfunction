@@ -12,5 +12,8 @@ execute if score $base.timer_20 du_data matches 13 as @e[tag=mech_auto_jukebox] 
 execute if score $base.timer_2 du_data matches 1 as @e[tag=mech_unlimited_storage] at @s run function mechanization:assembly/machines/unlimited_storage/unlimited_storage
 execute if score $base.timer_2 du_data matches 0 as @e[tag=mech_speed_hopper] at @s run function mechanization:assembly/machines/speed_hopper
 
+execute if score $base.timer_10 du_data matches 9 as @e[tag=mech_terminal,tag=!mech_active] at @s run function mechanization:assembly/machines/mss/terminal
+execute as @e[tag=mech_terminal,tag=mech_active] at @s run function mechanization:assembly/machines/mss/terminal
+
 #item filter
-execute as @a[tag=mech_right_click,scores={mech_usedid=5100}] if predicate du:entity/is_sneaking at @s run function mechanization:assembly/tools/item_filter/start
+execute as @a at @s run function mechanization:assembly/player

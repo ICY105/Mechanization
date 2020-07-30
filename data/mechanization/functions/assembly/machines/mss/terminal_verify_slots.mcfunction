@@ -1,0 +1,32 @@
+
+execute unless data block ~ ~ ~ Items[{Slot:0b}].tag.mss{slot:0b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:0b}]
+execute unless data block ~ ~ ~ Items[{Slot:1b}].tag.mss{slot:1b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:1b}]
+execute unless data block ~ ~ ~ Items[{Slot:2b}].tag.mss{slot:2b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:2b}]
+execute unless data block ~ ~ ~ Items[{Slot:3b}].tag.mss{slot:3b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:3b}]
+execute unless data block ~ ~ ~ Items[{Slot:4b}].tag.mss{slot:4b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:4b}]
+execute unless data block ~ ~ ~ Items[{Slot:5b}].tag.mss{slot:5b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:5b}]
+execute unless data block ~ ~ ~ Items[{Slot:6b}].tag.mss{slot:6b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:6b}]
+execute unless data block ~ ~ ~ Items[{Slot:7b}].tag.mss{slot:7b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:7b}]
+execute unless data block ~ ~ ~ Items[{Slot:8b}].tag.mss{slot:8b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:8b}]
+
+execute unless data block ~ ~ ~ Items[{Slot:9b}].tag.mss{slot:9b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:9b}]
+execute unless data block ~ ~ ~ Items[{Slot:10b}].tag.mss{slot:10b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:10b}]
+execute unless data block ~ ~ ~ Items[{Slot:11b}].tag.mss{slot:11b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:11b}]
+execute unless data block ~ ~ ~ Items[{Slot:12b}].tag.mss{slot:12b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:12b}]
+execute unless data block ~ ~ ~ Items[{Slot:13b}].tag.mss{slot:13b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:13b}]
+execute unless data block ~ ~ ~ Items[{Slot:14b}].tag.mss{slot:14b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:14b}]
+execute unless data block ~ ~ ~ Items[{Slot:15b}].tag.mss{slot:15b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:15b}]
+execute unless data block ~ ~ ~ Items[{Slot:16b}].tag.mss{slot:16b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:16b}]
+execute if data block ~ ~ ~ Items[{Slot:17b}].tag.mss{ui:1b} run replaceitem block ~ ~ ~ container.17 minecraft:air
+execute if data block ~ ~ ~ Items[{Slot:17b}].tag.mss run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:17b}]
+execute if data block ~ ~ ~ Items[{Slot:17b}].tag.mss run replaceitem block ~ ~ ~ container.17 minecraft:air
+
+execute unless data block ~ ~ ~ Items[{Slot:18b}].tag.mss{slot:18b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:18b}]
+execute unless data block ~ ~ ~ Items[{Slot:19b}].tag.mss{slot:19b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:19b}]
+execute unless data block ~ ~ ~ Items[{Slot:20b}].tag.mss{slot:20b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:20b}]
+execute unless data block ~ ~ ~ Items[{Slot:21b}].tag.mss{slot:21b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:21b}]
+execute unless data block ~ ~ ~ Items[{Slot:22b}].tag.mss{slot:22b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:22b}]
+execute unless data block ~ ~ ~ Items[{Slot:23b}].tag.mss{slot:23b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:23b}]
+execute unless data block ~ ~ ~ Items[{Slot:24b}].tag.mss{slot:24b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:24b}]
+execute unless data block ~ ~ ~ Items[{Slot:25b}].tag.mss{slot:25b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:25b}]
+execute unless data block ~ ~ ~ Items[{Slot:26b}].tag.mss{slot:26b} run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:26b}]
