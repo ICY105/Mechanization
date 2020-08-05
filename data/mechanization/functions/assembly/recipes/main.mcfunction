@@ -31,8 +31,14 @@ execute if score $crafting.in_0 du_data matches 0 if score $crafting.in_2 du_dat
 #Item Filter
 execute if block ~ ~ ~ barrel{Items:[{Slot:2b, id:"minecraft:string"},{Slot:3b, id:"minecraft:string"},{Slot:4b, id:"minecraft:string"},{Slot:11b, id:"minecraft:string"},{Slot:12b, id:"minecraft:iron_ingot"},{Slot:13b, id:"minecraft:string"},{Slot:20b, id:"minecraft:string"},{Slot:21b, id:"minecraft:string"},{Slot:22b, id:"minecraft:string"}]} run loot replace block ~ ~ ~ container.16 loot mechanization:assembly/item_filter
 
+#MSS Terminal
+execute if score $crafting.in_1 du_data matches 4.. if score $crafting.in_3 du_data matches 4.. if score $crafting.in_5 du_data matches 4.. if score $crafting.in_7 du_data matches 4.. if block ~ ~ ~ barrel{Items:[{Slot:2b, id:"minecraft:netherite_ingot"},{Slot:3b, tag:{OreDict:["ingotSuperConductive"]}},{Slot:4b, id:"minecraft:netherite_ingot"},{Slot:11b, tag:{OreDict:["ingotNetherAlloy"]}},{Slot:12b, tag:{OreDict:["blockMachineFrame3"]}},{Slot:13b, tag:{OreDict:["ingotEnderAlloy"]}},{Slot:20b, id:"minecraft:netherite_ingot"},{Slot:21b, tag:{OreDict:["gemCrystalComposite"]}},{Slot:22b, id:"minecraft:netherite_ingot"}]} run function mechanization:assembly/recipes/mss_terminal
 
+#MSS Terminal
+execute if score $crafting.in_0 du_data matches 4.. if score $crafting.in_1 du_data matches 2.. if score $crafting.in_2 du_data matches 4.. if score $crafting.in_3 du_data matches 2.. if score $crafting.in_5 du_data matches 2.. if score $crafting.in_6 du_data matches 4.. if score $crafting.in_8 du_data matches 4.. if block ~ ~ ~ barrel{Items:[{Slot:2b, id:"minecraft:iron_bars"},{Slot:3b, tag:{OreDict:["gemCrystalComposite"]}},{Slot:4b, id:"minecraft:iron_bars"},{Slot:11b, tag:{OreDict:["ingotConductive"]}},{Slot:12b, tag:{OreDict:["blockMachineFrame2"]}},{Slot:13b, tag:{OreDict:["ingotConductive"]}},{Slot:20b, id:"minecraft:iron_bars"},{Slot:21b, id:"minecraft:barrel"},{Slot:22b, id:"minecraft:iron_bars"}]} run function mechanization:assembly/recipes/mss_drive_bay
 
+#MSS Storage Drive
+execute if score $crafting.in_1 du_data matches 2.. if score $crafting.in_7 du_data matches 2.. if block ~ ~ ~ barrel{Items:[{Slot:2b, tag:{OreDict:["ingotTitaniumSteel"]}},{Slot:3b, tag:{OreDict:["ingotEnderAlloy"]}},{Slot:4b, tag:{OreDict:["ingotTitaniumSteel"]}},{Slot:11b, tag:{OreDict:["ingotSuperConductive"]}},{Slot:12b, tag:{mech_itemid:5007}},{Slot:13b, tag:{OreDict:["ingotSuperConductive"]}},{Slot:20b, tag:{OreDict:["ingotTitaniumSteel"]}},{Slot:21b, tag:{OreDict:["ingotNetherAlloy"]}},{Slot:22b, tag:{OreDict:["ingotTitaniumSteel"]}}]} run function mechanization:assembly/recipes/mss_storage_drive
 
 
 

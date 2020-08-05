@@ -245,7 +245,7 @@ Gadgets [04]: {
 Assembly [05]: {
 	Machines [0]: {
 		Compressor		[00-5000]
-		Decompressor	[01-5001]
+		Decompresser	[01-5001]
 		Stone Cutter	[02-5002]
 		Dye Machine		[03-5003]
 		Ender Hopper	[04-5004]
@@ -254,13 +254,16 @@ Assembly [05]: {
 		Unlimited Storage Unit [07-5007]
 		Item Transmitter       [08-5008]
 		Item Receiver          [09-5009]
+		MSS Terminal           [10-5010]
+		MSS Drive Bay          [11-5011]
 	}
 	Items [1] {
-		Item Filter [00-5100]
+		Item Filter 			[00-5100]
 		Disc End of the World	[01-5101]
 		Disc Hyperspace			[02-5102]
 		Disc Money for Nothing	[03-5103]
 		Disc Wander				[04-5104]
 		Disc Stranger Think		[05-5105]
+		MSS Storage Drive		[06-5106]
 	}
 }

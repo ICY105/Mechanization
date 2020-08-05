@@ -6,6 +6,8 @@ execute unless score @s du_uuid matches -2147483648.. store result score @s du_u
 
 ### Main
 
+execute if entity @s[tag=!mech_init,scores={du_uuid=1..}] run function mechanization:machines/machines/teleporter/init
+
 #get nearby player
 scoreboard players set temp_0 mech_data 0
 execute positioned ~ ~0.5 ~ store success score temp_0 mech_data if entity @p[distance=..0.25]

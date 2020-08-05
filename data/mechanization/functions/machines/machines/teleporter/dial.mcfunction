@@ -8,4 +8,5 @@ execute if score in_0 mech_data matches 0 positioned ~ ~0.5 ~ run title @a[dista
 
 execute if score in_0 mech_data matches 1.. positioned ~ ~0.5 ~ run scoreboard players enable @a[distance=..0.5] mech_tele
 execute if score in_0 mech_data matches 1.. run summon area_effect_cloud ~ ~0.5 ~ {CustomName:'{"text":"Unnamed"}',Duration:0,Tags:["mech_dial"]}
+scoreboard players operation in_1 mech_data = @s du_uuid
 execute if score in_0 mech_data matches 1.. as @e[tag=mech_dial] at @s run function mechanization:machines/machines/teleporter/dial_2

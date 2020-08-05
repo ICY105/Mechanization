@@ -31,6 +31,8 @@ execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:mutton"}]} run scoreboard p
 
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:red_mushroom"}]} run scoreboard players add temp_0 mech_data 8
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:brown_mushroom"}]} run scoreboard players add temp_0 mech_data 8
+execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:warped_fungus"}]} run scoreboard players add temp_0 mech_data 8
+execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:crimson_fungus"}]} run scoreboard players add temp_0 mech_data 8
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:chorus_fruit"}]} run scoreboard players add temp_0 mech_data 8
 
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:chorus_flower"}]} run scoreboard players add temp_0 mech_data 9

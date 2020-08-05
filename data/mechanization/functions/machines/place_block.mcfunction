@@ -111,8 +111,7 @@ execute if score in_0 mech_data matches 2016 run setblock ~ ~ ~ minecraft:droppe
 
 #teleporter
 execute if score in_0 mech_data matches 2017 run summon armor_stand ~ ~ ~ {Tags:["mech_teleporter","mech_receiver"],CustomName:'{"text":"Unnamed"}',Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Fire:32000s,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422017}}]}
-data modify entity @e[limit=1,tag=mech_teleporter,distance=..0.25] CustomName set from entity @s SelectedItem.tag.display.Name
-execute if score in_0 mech_data matches 2017 as @e[tag=mech_teleporter,distance=..0.25] run function mechanization:machines/machines/teleporter/init
+execute if score in_0 mech_data matches 2017 run data modify entity @e[limit=1,tag=mech_teleporter,distance=..0.5] CustomName set from entity @s SelectedItem.tag.display.Name
 execute if score in_0 mech_data matches 2017 run setblock ~ ~ ~ minecraft:barrier
 
 #super piston

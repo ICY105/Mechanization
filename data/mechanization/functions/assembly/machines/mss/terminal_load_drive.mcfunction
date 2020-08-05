@@ -1,5 +1,6 @@
 
 #copy drive items
+data modify storage du:temp list set from entity @s HandItems[0].tag.mech_storage
 execute if data storage du:temp list[{Slot:0b}] run data modify block ~ ~ ~ Items append from storage du:temp list[{Slot:0b}]
 execute if data storage du:temp list[{Slot:1b}] run data modify block ~ ~ ~ Items append from storage du:temp list[{Slot:1b}]
 execute if data storage du:temp list[{Slot:2b}] run data modify block ~ ~ ~ Items append from storage du:temp list[{Slot:2b}]
