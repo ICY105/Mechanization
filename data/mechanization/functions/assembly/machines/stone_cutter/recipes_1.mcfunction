@@ -10,6 +10,8 @@ execute if block ~ ~ ~ dropper{Items:[{Slot:1b,id:"minecraft:end_stone"}]} store
 execute if block ~ ~ ~ dropper{Items:[{Slot:1b,id:"minecraft:diorite"}]} store success score temp_1 mech_data run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:polished_diorite",Count:1b}}
 execute if block ~ ~ ~ dropper{Items:[{Slot:1b,id:"minecraft:granite"}]} store success score temp_1 mech_data run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:polished_granite",Count:1b}}
 execute if block ~ ~ ~ dropper{Items:[{Slot:1b,id:"minecraft:andesite"}]} store success score temp_1 mech_data run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:polished_andesite",Count:1b}}
+execute if block ~ ~ ~ dropper{Items:[{Slot:1b,id:"minecraft:blackstone"}]} store success score temp_1 mech_data run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:polished_blackstone",Count:1b}}
+execute if block ~ ~ ~ dropper{Items:[{Slot:1b,id:"minecraft:polished_blackstone"}]} store success score temp_1 mech_data run summon item ^ ^ ^1 {Tags:["mech_comp_new"],Item:{id:"minecraft:polished_blackstone_bricks",Count:1b}}
 
 execute if score temp_1 mech_data matches 1 run scoreboard players remove temp_0 mech_data 1
 execute if score temp_1 mech_data matches 1 run scoreboard players remove @s mech_power 16

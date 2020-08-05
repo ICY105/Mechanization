@@ -1,4 +1,7 @@
 
+# in_0: block slot count
+# in_1: storage slot count
+
 execute store result score temp_0 mech_data run data get storage du:temp list[{Slot:0b}].tag.mss.count
 scoreboard players operation temp_0 mech_data += in_0 mech_data
 scoreboard players operation temp_0 mech_data -= in_1 mech_data

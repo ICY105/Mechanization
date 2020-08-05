@@ -8,6 +8,7 @@ execute if score $base.timer_20 du_data matches 15 as @e[tag=mech_ender_hopper] 
 execute if score $base.timer_20 du_data matches 14 as @e[tag=mech_item_receiver] at @s run function mechanization:assembly/machines/item_receiver
 execute if score $base.timer_20 du_data matches 14 as @e[tag=mech_item_transmitter] at @s run function mechanization:assembly/machines/item_transmitter/item_transmitter
 execute if score $base.timer_20 du_data matches 13 as @e[tag=mech_auto_jukebox] at @s run function mechanization:assembly/machines/auto_jukebox
+execute if score $base.timer_20 du_data matches 12 as @e[tag=mech_drive_bay] at @s run function mechanization:assembly/machines/mss/drive_bay
 
 execute if score $base.timer_2 du_data matches 1 as @e[tag=mech_unlimited_storage] at @s run function mechanization:assembly/machines/unlimited_storage/unlimited_storage
 execute if score $base.timer_2 du_data matches 0 as @e[tag=mech_speed_hopper] at @s run function mechanization:assembly/machines/speed_hopper

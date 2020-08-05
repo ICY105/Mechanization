@@ -72,6 +72,9 @@ execute if data storage du:temp {object:{id:"minecraft:music_disc_11"}} run titl
 execute if data storage du:temp {object:{id:"minecraft:music_disc_wait"}} run playsound minecraft:music_disc.wait record @a ~ ~ ~ 6
 execute if data storage du:temp {object:{id:"minecraft:music_disc_wait"}} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Wait"],"color":"light_purple"}]
 
+execute if data storage du:temp {object:{id:"minecraft:music_disc_pigstep"}} run playsound minecraft:music_disc.pigstep record @a ~ ~ ~ 6
+execute if data storage du:temp {object:{id:"minecraft:music_disc_pigstep"}} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":["Lena Raine - Pigstep"],"color":"light_purple"}]
+
 execute if data storage du:temp {object:{ tag:{mech_itemid:5101} }} run playsound mechanization:assembly.music.end_of_the_world record @a ~ ~ ~ 6
 execute if data storage du:temp {object:{ tag:{mech_itemid:5101} }} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_end_of_the_world"}],"color":"light_purple"}]
 

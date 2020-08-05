@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.mss_storage_drive","color":"dark_purple","italic":false}
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 5106, CustomModelData: 6425106, HideFlags: 6, Unbreakable:1b, mech_storage:[]}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

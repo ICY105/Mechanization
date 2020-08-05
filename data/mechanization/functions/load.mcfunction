@@ -21,7 +21,7 @@ scoreboard objectives add mech_usesword minecraft.used:minecraft.diamond_sword
 scoreboard objectives add mech_usetrident minecraft.used:minecraft.trident
 
 #mark version
-scoreboard players set $mech.ver load 2020300
+scoreboard players set $mech.ver load 2030000
 
 #configure storage
 execute unless data storage mechanization:networks quantum run data merge storage mechanization:networks {quantum:[]}

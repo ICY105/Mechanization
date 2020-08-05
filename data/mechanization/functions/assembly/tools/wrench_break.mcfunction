@@ -13,7 +13,7 @@ execute if entity @s[tag=mech_stone_cutter] run loot spawn ~ ~ ~ loot mechanizat
 execute if entity @s[tag=mech_stone_cutter] at @s run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_stone_cutter]
 
-#Decompressor
+#Decompresser
 execute if entity @s[tag=mech_dye_machine] run loot spawn ~ ~ ~ loot mechanization:assembly/dye_machine
 execute if entity @s[tag=mech_dye_machine] at @s run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_dye_machine]
@@ -49,3 +49,15 @@ kill @s[tag=mech_item_transmitter]
 execute if entity @s[tag=mech_item_receiver] run loot spawn ~ ~ ~ loot mechanization:assembly/item_receiver
 execute if entity @s[tag=mech_item_receiver] at @s run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_item_receiver]
+
+#MSS Terminal
+execute if entity @s[tag=mech_terminal,tag=mech_active] run function mechanization:assembly/machines/mss/get_drive/terminal_insert 
+execute if entity @s[tag=mech_terminal] run loot spawn ~ ~ ~ loot mechanization:assembly/mss_terminal
+execute if entity @s[tag=mech_terminal] at @s run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_terminal]
+
+#MSS Drive Bay
+execute if entity @s[tag=mech_drive_bay] run loot spawn ~ ~ ~ loot mechanization:assembly/mss_drive_bay
+execute if entity @s[tag=mech_drive_bay] at @s run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_drive_bay]
+

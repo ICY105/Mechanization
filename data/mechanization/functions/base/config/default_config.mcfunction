@@ -1,10 +1,6 @@
 
 ### Compatibility & Grief Prevention
 
-# [0,1] Use Villager click detection instead of Carrot on a Stick Detection
-#       Less accurate but usually works better with plugins (like grief prevention)
-scoreboard players set $compat.config.click_detect mech_data 0
-
 # [0,1] Add Manual Vol. 2. Spigot caps book length at 100 pages which is too short.
 scoreboard players set $compat.config.manual_vol2 mech_data 0
 
