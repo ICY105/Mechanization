@@ -439,7 +439,7 @@
     "mech.advancements.nuclear.rate_observer.description": "制作一个反应堆速率监视器",
 	
     "mech.advancements.assembly.mss_terminal.title": "终极储物箱",
-    "mech.advancements.assembly.mss_terminal.description": "建造一个MSS终端，然后再也不用担心箱子空间满了！",
+    "mech.advancements.assembly.mss_terminal.description": "制作一个MSS终端。麻麻再也不用担心我的箱子空间满了！",
 	
 "__comment":"Mechanical Manual",
 	"mech.manual.list":"* %s\n",
@@ -467,7 +467,7 @@
 		"mech.manual.getting_started.body1":"1. 第一步，在原版的工作台上制作一个%s，再用机械制造台来制作%s和%s。\n2. 下一步，收集一些资源。你会需要很多的%s来起步工业，同时还需要一些沙子和羊毛。",
 		"mech.manual.getting_started.body2":"矿石",
 		"mech.manual.getting_started.body3":"3. 你所需要的第一批机器将会是火力发电机、电池和合金炉。打粉机和电炉或许也能派上用场。\n4. 所有机器都有自己的用处，做点东西总能帮到你——同时别忘了玩的开心（*＾-＾*）",
-	"mech.manual.machine_crafter.body":"机械制造台将会用于制造模组中的所有物品。它可以在原版的工作台上制造。",
+	"mech.manual.machine_crafter.body":"\n机械制造台将会用于制造模组中的所有物品。它可以在原版的工作台上制造。",
 		"mech.manual.copper_ore.body":"\n常见矿石\nY轴坐标：24-64\n良好的电导体，应用在大多数机器中。",
 		"mech.manual.tin_ore.body":"\n常见矿石\nY轴坐标：24-64\n强度高的金属，应用在大多数机器中。",
 		"mech.manual.titanium_ore.body":"\n稀有矿石\nY轴坐标：1-16\n应用在高级机械和装备中。",
@@ -676,7 +676,7 @@
 		"mech.manual.item_transmittion.nether":"同上。",
 		"mech.manual.item_transmittion.body2":"\n接收物品传输器发送的物品。不能安装升级插件或物品过滤器。",
 		"mech.manual.item_transmittion.body3":"\nShift+右键一个箱子来配置物品过滤器。右键一个物品传输器的上方来启用过滤器。",
-	"mech.manual.storage_unit.body4":"\n储存最多2147483647个单种且可堆叠的物品。仅能通过漏斗进行交互。",
+	"mech.manual.storage_unit.body":"\n储存最多2147483647个单种且可堆叠的物品。仅能通过漏斗进行交互。",
 		"mech.manual.auto_jukebox.body":"\n接收到红石信号时，从物品栏内随机选择一张音乐唱片进行播放。传说中提到的音乐唱片也 ",
 	"mech.manual.mss_terminal.body":"\n用于访问16格内硬盘架中的存储硬盘。使用箭头来在可用的硬盘间切换。\n使用时功耗128 kW。",
 		"mech.manual.mss_drive_bay.body":"\n用于安放存储硬盘并供终端读写。",
