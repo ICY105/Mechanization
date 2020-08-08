@@ -366,7 +366,7 @@
     "mech.advancements.base.machine_crafter.description": "制作一个机械制造台",
 		"mech.advancements.machines.copper_ore.title": "千里之行，始于“足下”",
 		"mech.advancements.machines.copper_ore.description": "找到些铜矿石",
-	"mech.advancements.machines.tin_ore.title": "不是矿溪，是锡矿哦～",
+	"mech.advancements.machines.tin_ore.title": "非一般的石头",
 	"mech.advancements.machines.tin_ore.description": "找到些锡矿石",
 		"mech.advancements.machines.titanium_ore.title": "比钻石更好！？",
 		"mech.advancements.machines.titanium_ore.description": "找到些钛矿石",
@@ -378,11 +378,11 @@
 	"mech.advancements.base.battery_1.description": "制作一个一阶电池",
     	"mech.advancements.base.battery_2.title": "一节更比四节强",
 		"mech.advancements.base.battery_2.description": "制作一个二阶电池",
-	"mech.advancements.base.battery_3.title": "超级能源！",
+	"mech.advancements.base.battery_3.title": "超能电源",
 	"mech.advancements.base.battery_3.description": "制作一个三阶电池",
 		"mech.advancements.base.battery_q.title": "能源保险箱",
 		"mech.advancements.base.battery_q.description": "制作一个量子电池",
-	"mech.advancements.base.energy_relay.title": "比子弹更快！",
+	"mech.advancements.base.energy_relay.title": "比快更快",
 	"mech.advancements.base.energy_relay.description": "制作一个继电器",
 		"mech.advancements.base.machine_upgrade.title": "加大力度",
 		"mech.advancements.base.machine_upgrade.description": "制作一个机械升级插件",
@@ -408,7 +408,7 @@
     "mech.advancements.machines.quarry.description": "制作一个挖矿机",
     "mech.advancements.machines.machine_frame_1.title": "万物之源",
     "mech.advancements.machines.machine_frame_1.description": "制作一个一阶机械框架",
-		"mech.advancements.machines.alloy_furnace.title": "金属的潜力",
+		"mech.advancements.machines.alloy_furnace.title": "金属之潜力",
 		"mech.advancements.machines.alloy_furnace.description": "制作一个合金炉",
     "mech.advancements.machines.machine_frame_3.title": "还不是最终形态！？",
     "mech.advancements.machines.machine_frame_3.description": "制作一个三阶机械框架",
@@ -418,7 +418,7 @@
     "mech.advancements.machines.furnace_generator.description": "制作一个火力发电机",
 		"mech.advancements.machines.machine_frame_2.title": "更上一层楼",
 		"mech.advancements.machines.machine_frame_2.description": "制作一个二阶机械框架",
-    "mech.advancements.machines.grinder.title": "双倍价值",
+    "mech.advancements.machines.grinder.title": "精细加工",
     "mech.advancements.machines.grinder.description": "制作一个打粉机",
 
 		"mech.advancements.nuclear.plutonium.title": "可回收物",
@@ -595,7 +595,7 @@
 	"mech.manual.nuclear.title":"核工业\n",
 	"mech.manual.nuclear.fuel_cells":"燃料单元",
 	"mech.manual.nuclear.reactor_mechanics":"反应堆力学",
-	"mech.manual.nuclear.block_stats":"方块状态监视",
+	"mech.manual.nuclear.block_stats":"方块信息",
 		"mech.manual.fuel_cells.title":"燃料单元\n",
 		"mech.manual.fuel_cells.body":"裂变反应堆的燃料来源。需要在离心机中精炼至至少10%。精炼程度更高的燃料会更快地给裂变反应堆加温。",
 	"mech.manual.centrifuge.body":"\n精炼燃料棒并回收乏燃料棒。在机器上方放置和拿取燃料棒。\n功耗64 kW。",
@@ -612,7 +612,7 @@
 		"mech.manual.reactor_blocks.title1":"传热方块\n",
 		"mech.manual.reactor_blocks.body1":"它们有着高的热传导性，但是没有产生蒸汽的能力。\n\n       热传导性 冷却性能\n黑曜石\n          60°C   40°C\n煤炭块\n          70°C   30°C\n红石块\n          80°C   20°C\n石英块\n          90°C   10°C",
 		"mech.manual.reactor_blocks.title2":"锅炉方块\n",
-		"mech.manual.reactor_blocks.body2":"它们可以高效地生产蒸汽，但是不能冷却热量。\n\n       蒸汽转换率 热传导性\n铁块\n            25°C   75°C\n金块\n            50°C   50°C\n绿宝石块\n            75°C   25°C\n钻石块\n           100°C   10°C",
+		"mech.manual.reactor_blocks.body2":"它们可以高效地生产蒸汽，但是无法冷却热量。\n\n       蒸汽转换率 热传导性\n铁块\n            25°C   75°C\n金块\n            50°C   50°C\n绿宝石块\n            75°C   25°C\n钻石块\n           100°C   10°C",
 		"mech.manual.reactor_blocks.title3":"制冷方块\n",
 		"mech.manual.reactor_blocks.body3":"它们能够有效地冷却热量，但是不能传导热量。\n\n      冷却性能 蒸汽转换率\n雪块\n         10°C    10°C\n青金石块\n         20°C    20°C\n冰\n         30°C    30°C\n浮冰\n         40°C    40°C",
 	
@@ -683,6 +683,6 @@
 	"mech.manual.mss_storage_drive.body":"\n物品的储存介质。拥有24个物品槽位，每个槽位都可以储存2147483647个单种可堆叠物品。",
 	
 		
-	"mech.manual.page_136.body":"\n\n\n      以上就是全部内容了~\n      仅就目前而言...",
+	"mech.manual.the_end.body":"\n\n\n      以上就是全部内容了~\n      仅就目前而言...",
 	"__comment":"Chinese translstion by MineCommander"
 }
