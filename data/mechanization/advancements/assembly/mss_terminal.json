@@ -2,7 +2,7 @@
     "display": {
         "title": {
             "translate": "mech.advancements.assembly.mss_terminal.title",
-			"color":"gray"
+			"color":"dark_green"
         },
         "description": {
             "translate": "mech.advancements.assembly.mss_terminal.description",
