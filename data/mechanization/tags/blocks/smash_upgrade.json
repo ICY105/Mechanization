@@ -1,10 +1,13 @@
 {
+	"required":false,
 	"values":[
 		"minecraft:stone",
 		"minecraft:granite",
 		"minecraft:diorite",
 		"minecraft:andesite",
 		"minecraft:cobblestone",
-		"minecraft:netherrack"
+		"minecraft:netherrack",
+		"minecraft:basalt",
+		"minecraft:blackstone"
 	]
 }

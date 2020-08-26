@@ -1,4 +1,5 @@
 {
+	"required":false,
 	"values":[
 		"#minecraft:coral_blocks",
 		"#minecraft:corals",
