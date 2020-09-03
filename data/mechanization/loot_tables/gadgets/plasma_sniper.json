@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4105, CustomModelData: 6424105, mech_modify:1b, HideFlags: 6, Unbreakable:1b, mech_gun:{energy:64, fire_rate:40, heat:400, recoil_x:8, recoil_y:8, damage:200, velocity:10, bouncy:0}}"
+              "tag":"{mech_itemid: 4105, CustomModelData: 6424105, mech_modify:1b, HideFlags: 6, Unbreakable:1b, mech_gun:{energy:100, fire_rate:32, heat:300, recoil_x:8, recoil_y:8, damage:200, velocity:10, bouncy:0}}"
             },
 			{
 				"function":"set_attributes",

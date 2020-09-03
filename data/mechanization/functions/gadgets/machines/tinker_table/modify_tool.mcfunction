@@ -1,6 +1,6 @@
 
-execute if block ~ ~ ~ barrel{Items:[ {tag:{OreDict:["upgradeAutoSmelt"]}} ]} run data modify block ~ ~ ~ Items[{Slot:17b}].tag.du_auto_smelt set value 1b
-execute if block ~ ~ ~ barrel{Items:[ {tag:{OreDict:["upgradeTrash"]}} ]} run data modify block ~ ~ ~ Items[{Slot:17b}].tag.du_trash set value 1b
+execute if block ~ ~ ~ barrel{Items:[ {tag:{OreDict:["upgradeAutoSmelt"]}} ]} run data modify block ~ ~ ~ Items[{Slot:10b}].tag.du_auto_smelt set value 1b
+execute if block ~ ~ ~ barrel{Items:[ {tag:{OreDict:["upgradeTrash"]}} ]} run data modify block ~ ~ ~ Items[{Slot:10b}].tag.du_trash set value 1b
 
 execute store result score temp_0 mech_data run data get block ~ ~ ~ Items[{Slot:10b}].tag.AttributeModifiers[{Name:"generic.attack_damage"}].Amount 10
 execute store result score temp_1 mech_data if data block ~ ~ ~ Items[{tag:{OreDict:["upgradeDamage"]}}]
