@@ -16,8 +16,8 @@ execute store result score temp_1 mech_data if data block ~ ~ ~ Items[{tag:{OreD
 scoreboard players operation temp_0 mech_data += temp_1 mech_data
 execute store result block ~ ~ ~ Items[{Slot:10b}].tag.AttributeModifiers[{Name:"generic.movement_speed"}].Amount double 0.1 run scoreboard players get temp_0 mech_data
 
-execute if block ~ ~ ~ barrel{Items:[ {tag:{OreDict:["upgradeKnockResist"]}} ]} store success block ~ ~ ~ Items[{Slot:10b}].tag.AttributeModifiers[{Name:"generic.knockbackResistance"}].Amount double 0.5 if entity @s
-execute if block ~ ~ ~ barrel{Items:[ {tag:{OreDict:["upgradeHealth"]}} ]} store success block ~ ~ ~ Items[{Slot:10b}].tag.AttributeModifiers[{Name:"generic.maxHealth"}].Amount double 5 if entity @s
+execute if block ~ ~ ~ barrel{Items:[ {tag:{OreDict:["upgradeKnockResist"]}} ]} store success block ~ ~ ~ Items[{Slot:10b}].tag.AttributeModifiers[{Name:"generic.knockback_resistance"}].Amount double 0.5 if entity @s
+execute if block ~ ~ ~ barrel{Items:[ {tag:{OreDict:["upgradeHealth"]}} ]} store success block ~ ~ ~ Items[{Slot:10b}].tag.AttributeModifiers[{Name:"generic.max_health"}].Amount double 5 if entity @s
 
 
 

@@ -1,5 +1,5 @@
-tag @s remove mech_upgrade_empower
-#tag @s remove mech_upgrade_empower_2
+tag @s remove mech_upgrade_empower_1
+tag @s remove mech_upgrade_empower_2
 tag @s remove mech_upgrade_autosmelt
 tag @s remove mech_upgrade_magnetic
 tag @s remove mech_upgrade_trash

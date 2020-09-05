@@ -13,6 +13,9 @@ execute unless data block ~ ~ ~ Items[{Slot:5b}] run replaceitem block ~ ~ ~ con
 execute unless data block ~ ~ ~ Items[{Slot:6b}] run replaceitem block ~ ~ ~ container.6 minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
 execute unless data block ~ ~ ~ Items[{Slot:8b}] run replaceitem block ~ ~ ~ container.8 minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
 
+#errored
+execute if entity @s[tag=!mech_errored] run data modify block ~ ~ ~ CustomName set value '[{"translate":"mech.block.alloy_furnace","color":"dark_aqua"}]'
+
 #function
 scoreboard players set @s[tag=!mech_active] mech_timer 0
 scoreboard players add @s[tag=mech_active] mech_timer 1
