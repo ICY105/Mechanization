@@ -26,16 +26,16 @@ scoreboard players operation temp_5 mech_data += @s mech_usetrident
 #run upgrades
 execute if score $base.timer_20 du_data matches 10 if entity @s[tag=mech_upgrade_empower_1] run function mechanization:gadgets/upgrades/tools/empowered_1
 execute if score $base.timer_20 du_data matches 10 if entity @s[tag=mech_upgrade_empower_2] run function mechanization:gadgets/upgrades/tools/empowered_2
-execute if score temp_4 mech_data matches 1.. if entity @s[tag=mech_upgrade_magnetic] at @s run function mechanization:gadgets/upgrades/tools/magnetic
-execute unless predicate du:entity/is_sneaking if entity @s[tag=mech_upgrade_smash] at @s as @e[type=item,sort=nearest,limit=1,distance=..8,nbt={Age:0s}] at @s run function mechanization:gadgets/upgrades/tools/smash
+execute if score temp_4 mech_data matches 1.. if entity @s[tag=mech_upgrade_magnetic] run function mechanization:gadgets/upgrades/tools/magnetic
+execute if score temp_4 mech_data matches 1.. unless predicate du:entity/is_sneaking if entity @s[tag=mech_upgrade_smash] as @e[type=item,sort=nearest,limit=1,distance=..8,nbt={Age:0s}] at @s run function mechanization:gadgets/upgrades/tools/smash
 
 
-execute if score temp_5 mech_data matches 1.. if entity @s[tag=mech_upgrade_poison] at @s run effect give @e[distance=0.5..8,nbt={HurtTime:10s}] poison 4 1
-execute if score temp_5 mech_data matches 1.. if entity @s[tag=mech_upgrade_wither] at @s run effect give @e[distance=0.5..8,nbt={HurtTime:10s}] wither 4 1
-execute if score temp_5 mech_data matches 1.. if entity @s[tag=mech_upgrade_vamparic] at @s if entity @e[distance=0.5..8,nbt={HurtTime:10s}] run effect give @s regeneration 4 1
-execute if score temp_5 mech_data matches 1.. if entity @s[tag=mech_upgrade_slowness] at @s run effect give @e[distance=0.5..8,nbt={HurtTime:10s}] slowness 4 0
-execute if score temp_5 mech_data matches 1.. if entity @s[tag=mech_upgrade_weakness] at @s run effect give @e[distance=0.5..8,nbt={HurtTime:10s}] weakness 4 0
-execute if score temp_5 mech_data matches 1.. if entity @s[tag=mech_upgrade_glow] at @s run effect give @e[distance=0.5..8,nbt={HurtTime:10s}] glowing 4 0
+execute if score temp_5 mech_data matches 1.. if entity @s[tag=mech_upgrade_poison] run effect give @e[distance=0.5..8,nbt={HurtTime:10s}] poison 4 1
+execute if score temp_5 mech_data matches 1.. if entity @s[tag=mech_upgrade_wither] run effect give @e[distance=0.5..8,nbt={HurtTime:10s}] wither 4 1
+execute if score temp_5 mech_data matches 1.. if entity @s[tag=mech_upgrade_slowness] run effect give @e[distance=0.5..8,nbt={HurtTime:10s}] slowness 4 0
+execute if score temp_5 mech_data matches 1.. if entity @s[tag=mech_upgrade_weakness] run effect give @e[distance=0.5..8,nbt={HurtTime:10s}] weakness 4 0
+execute if score temp_5 mech_data matches 1.. if entity @s[tag=mech_upgrade_glow] run effect give @e[distance=0.5..8,nbt={HurtTime:10s}] glowing 4 0
+execute if score temp_5 mech_data matches 1.. if entity @s[tag=mech_upgrade_vampiric] if entity @e[distance=0.5..8,nbt={HurtTime:10s}] run effect give @s regeneration 4 1
 
 #cleanup
 scoreboard players set @s mech_usetrident 0
