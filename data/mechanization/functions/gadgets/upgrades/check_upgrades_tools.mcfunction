@@ -26,8 +26,8 @@ scoreboard players operation temp_5 mech_data += @s mech_usetrident
 #run upgrades
 execute if score $base.timer_20 du_data matches 10 if entity @s[tag=mech_upgrade_empower_1] run function mechanization:gadgets/upgrades/tools/empowered_1
 execute if score $base.timer_20 du_data matches 10 if entity @s[tag=mech_upgrade_empower_2] run function mechanization:gadgets/upgrades/tools/empowered_2
-execute unless predicate du:entity/is_sneaking if entity @s[tag=mech_upgrade_smash] at @s as @e[type=item,sort=nearest,limit=1,nbt={Item:{Count:1b},Age:0s},distance=..8] at @s run function mechanization:gadgets/upgrades/tools/smash
 execute if score temp_4 mech_data matches 1.. if entity @s[tag=mech_upgrade_magnetic] at @s run function mechanization:gadgets/upgrades/tools/magnetic
+execute unless predicate du:entity/is_sneaking if entity @s[tag=mech_upgrade_smash] at @s as @e[type=item,sort=nearest,limit=1,distance=..8,nbt={Age:0s}] at @s run function mechanization:gadgets/upgrades/tools/smash
 
 
 execute if score temp_5 mech_data matches 1.. if entity @s[tag=mech_upgrade_poison] at @s run effect give @e[distance=0.5..8,nbt={HurtTime:10s}] poison 4 1
