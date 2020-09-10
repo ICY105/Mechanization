@@ -2,6 +2,7 @@
 #set upgrade tags
 execute store result score temp_0 mech_data run data get entity @s SelectedItemSlot
 
+execute unless score temp_0 mech_data = @s mech_itemslot run function mechanization:gadgets/upgrades/remove_upgrades_tools
 execute unless score temp_0 mech_data = @s mech_itemslot if predicate mechanization:holding_weapon run function mechanization:gadgets/upgrades/tools/set_upgrades_sword
 execute unless score temp_0 mech_data = @s mech_itemslot if predicate mechanization:holding_tool run function mechanization:gadgets/upgrades/tools/set_upgrades_tools
 
@@ -21,6 +22,8 @@ scoreboard players operation temp_4 mech_data += @s mech_usenshovel
 scoreboard players set temp_5 mech_data 0
 scoreboard players operation temp_5 mech_data += @s mech_usesword
 scoreboard players operation temp_5 mech_data += @s mech_usensword
+scoreboard players operation temp_5 mech_data += @s mech_useaxe
+scoreboard players operation temp_5 mech_data += @s mech_usenaxe
 scoreboard players operation temp_5 mech_data += @s mech_usetrident
 
 #run upgrades
