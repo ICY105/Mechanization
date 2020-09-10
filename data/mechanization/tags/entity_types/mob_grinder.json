@@ -3,6 +3,7 @@
 	"values": [
 		"minecraft:bat",
 		"minecraft:blaze",
+		"minecraft:bee",
 		"minecraft:cat",
 		"minecraft:cave_spider",
 		"minecraft:chicken",
@@ -12,12 +13,12 @@
 		"minecraft:dolphin",
 		"minecraft:donkey",
 		"minecraft:drowned",
-		"minecraft:elder_guardian",
 		"minecraft:enderman",
 		"minecraft:evoker",
 		"minecraft:ghast",
 		"minecraft:guardian",
 		"minecraft:horse",
+		"minecraft:hoglin",
 		"minecraft:husk",
 		"minecraft:illusioner",
 		"minecraft:iron_golem",
@@ -31,11 +32,13 @@
 		"minecraft:phantom",
 		"minecraft:pig",
 		"minecraft:pillager",
+		"minecraft:piglin",
 		"minecraft:polar_bear",
 		"minecraft:pufferfish",
 		"minecraft:rabbit",
 		"minecraft:ravager",
 		"minecraft:salmon",
+		"minecraft:snow_golem",
 		"minecraft:sheep",
 		"minecraft:shulker",
 		"minecraft:silverfish",
@@ -43,6 +46,7 @@
 		"minecraft:skeleton_horse",
 		"minecraft:slime",
 		"minecraft:spider",
+		"minecraft:strider",
 		"minecraft:squid",
 		"minecraft:stray",
 		"minecraft:tropical_fish",
@@ -56,6 +60,7 @@
 		"minecraft:zombie",
 		"minecraft:zombie_horse",
 		"minecraft:zombified_piglin",
-		"minecraft:zombie_villager"
+		"minecraft:zombie_villager",
+		"minecraft:zoglin"
 	]
 } 
