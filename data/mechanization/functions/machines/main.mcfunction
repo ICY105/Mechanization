@@ -24,7 +24,7 @@ execute if score $base.timer_2 du_data matches 0 as @e[tag=mech_turn_table] at @
 execute if score $base.timer_100 du_data matches 10 as @e[tag=mech_tree_feller] at @s run function mechanization:machines/machines/tree_feller/tree_feller
 execute as @e[type=armor_stand,tag=mech_tree_feller_model,tag=mech_active] run function mechanization:machines/machines/tree_feller/tree_feller_model
 execute if score $base.timer_100 du_data matches 20 as @e[tag=mech_auto_farm] at @s run function mechanization:machines/machines/auto_farm/auto_farm
-execute if score $base.timer_100 du_data matches 30 as @e[tag=mech_mob_grinder] at @s run function mechanization:machines/machines/mob_grinder
+execute if score $base.timer_100 du_data matches 30 as @e[tag=mech_mob_grinder] at @s run function mechanization:machines/machines/mob_grinder/mob_grinder
 
 execute if score $base.timer_100 du_data matches 50 as @e[tag=mech_lava_fabricator] at @s run function mechanization:machines/machines/lava_fabricator
 execute if score $base.timer_100 du_data matches 60 as @e[tag=mech_growth_accelerator] at @s run function mechanization:machines/machines/growth_accelerator/growth_accelerator
