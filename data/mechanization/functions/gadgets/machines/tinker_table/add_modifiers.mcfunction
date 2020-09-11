@@ -1,5 +1,8 @@
 
+#reset items and find number of upgrade slots
+scoreboard players set in_0 mech_data 4
 function mechanization:gadgets/machines/tinker_table/reset_item
+execute if data block ~ ~ ~ Items[{Slot:10b}].tag.mech_upgrades store result score in_0 mech_data run data get block ~ ~ ~ Items[{Slot:10b}].tag.mech_upgrades
 
 #battery modifier
 scoreboard players set temp_0 mech_data 0
