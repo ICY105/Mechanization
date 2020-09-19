@@ -43,6 +43,7 @@ execute if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{mech_modify:1b,mech_itemid:4
 execute if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{mech_modify:1b,mech_itemid:4206}}]} run function mechanization:gadgets/machines/tinker_table/modify_armor
 execute if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{mech_modify:1b,mech_itemid:4207}}]} run function mechanization:gadgets/machines/tinker_table/modify_armor
 execute if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{mech_modify:1b,mech_itemid:4208}}]} run function mechanization:gadgets/machines/tinker_table/modify_armor
+execute if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{mech_modify:1b,mech_itemid:4218}}]} run function mechanization:gadgets/machines/tinker_table/modify_armor
 
 execute if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{mech_modify:1b,mech_itemid:4102}}]} run function mechanization:gadgets/machines/tinker_table/modify_gun
 execute if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{mech_modify:1b,mech_itemid:4103}}]} run function mechanization:gadgets/machines/tinker_table/modify_gun

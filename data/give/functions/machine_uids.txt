@@ -169,6 +169,7 @@ Gadgets [04]: {
 		Titanium Leggings	[07-4207]
 		Titanium Boots		[08-4208]
 		Portable Battery 	[09-4209|4217]
+		Titanium Elytra 	[09-4218]
 	}
 	Upgrades [3]: {
 		Base		[00-4300]
