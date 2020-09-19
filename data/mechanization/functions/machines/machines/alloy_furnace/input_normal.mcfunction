@@ -83,6 +83,14 @@ execute if block ~ ~ ~ dropper{Items:[{Slot:1b,tag:{OreDict:["ingotTitanium"]}},
 execute if block ~ ~ ~ dropper{Items:[{Slot:2b,tag:{OreDict:["ingotTitanium"]}},{Slot:0b,id:"minecraft:chorus_fruit"},{Slot:1b,id:"minecraft:dragon_breath"}]} if score temp_0 mech_data matches 32.. if score temp_1 mech_data matches 32.. if score temp_2 mech_data matches 4.. run function mechanization:machines/machines/alloy_furnace/error
 execute if block ~ ~ ~ dropper{Items:[{Slot:2b,tag:{OreDict:["ingotTitanium"]}},{Slot:1b,id:"minecraft:chorus_fruit"},{Slot:0b,id:"minecraft:dragon_breath"}]} if score temp_0 mech_data matches 32.. if score temp_1 mech_data matches 32.. if score temp_2 mech_data matches 4.. run function mechanization:machines/machines/alloy_furnace/error
 
+#Netherite
+execute if block ~ ~ ~ dropper{Items:[{Slot:0b,id:"minecraft:netherite_scrap"},{Slot:1b,id:"minecraft:gold_ingot"}]} if score temp_0 mech_data matches 4.. if score temp_1 mech_data matches 4.. if score temp_2 mech_data matches 0 run function mechanization:machines/machines/alloy_furnace/error
+execute if block ~ ~ ~ dropper{Items:[{Slot:0b,id:"minecraft:netherite_scrap"},{Slot:2b,id:"minecraft:gold_ingot"}]} if score temp_0 mech_data matches 4.. if score temp_1 mech_data matches 0 if score temp_2 mech_data matches 4.. run function mechanization:machines/machines/alloy_furnace/error
+execute if block ~ ~ ~ dropper{Items:[{Slot:1b,id:"minecraft:netherite_scrap"},{Slot:0b,id:"minecraft:gold_ingot"}]} if score temp_0 mech_data matches 4.. if score temp_1 mech_data matches 4.. if score temp_2 mech_data matches 0 run function mechanization:machines/machines/alloy_furnace/error
+execute if block ~ ~ ~ dropper{Items:[{Slot:1b,id:"minecraft:netherite_scrap"},{Slot:2b,id:"minecraft:gold_ingot"}]} if score temp_0 mech_data matches 0 if score temp_1 mech_data matches 4.. if score temp_2 mech_data matches 4.. run function mechanization:machines/machines/alloy_furnace/error
+execute if block ~ ~ ~ dropper{Items:[{Slot:2b,id:"minecraft:netherite_scrap"},{Slot:0b,id:"minecraft:gold_ingot"}]} if score temp_0 mech_data matches 4.. if score temp_1 mech_data matches 0 if score temp_2 mech_data matches 4.. run function mechanization:machines/machines/alloy_furnace/error
+execute if block ~ ~ ~ dropper{Items:[{Slot:2b,id:"minecraft:netherite_scrap"},{Slot:1b,id:"minecraft:gold_ingot"}]} if score temp_0 mech_data matches 0 if score temp_1 mech_data matches 4.. if score temp_2 mech_data matches 4.. run function mechanization:machines/machines/alloy_furnace/error
+
 execute if score temp_3 mech_data matches 0 run tag @s remove mech_errored
 
 

@@ -81,6 +81,15 @@ execute if block ~ ~ ~ dropper{Items:[{Slot:1b,id:"minecraft:emerald"},{Slot:2b,
 execute if block ~ ~ ~ dropper{Items:[{Slot:2b,id:"minecraft:emerald"},{Slot:0b,id:"minecraft:diamond"},{Slot:1b,id:"minecraft:redstone"}]} if score temp_0 mech_data matches 2.. if score temp_1 mech_data matches 16.. if score temp_2 mech_data matches 2.. run function mechanization:machines/machines/alloy_furnace/recipes/crystal_composite_1
 execute if block ~ ~ ~ dropper{Items:[{Slot:2b,id:"minecraft:emerald"},{Slot:1b,id:"minecraft:diamond"},{Slot:0b,id:"minecraft:redstone"}]} if score temp_0 mech_data matches 16.. if score temp_1 mech_data matches 2.. if score temp_2 mech_data matches 2.. run function mechanization:machines/machines/alloy_furnace/recipes/crystal_composite_0
 
+#Netherite
+execute if block ~ ~ ~ dropper{Items:[{Slot:0b,id:"minecraft:netherite_scrap"},{Slot:1b,id:"minecraft:gold_ingot"}]} if score temp_0 mech_data matches 4.. if score temp_1 mech_data matches 4.. if score temp_2 mech_data matches 0 run function mechanization:machines/machines/alloy_furnace/recipes/netherite
+execute if block ~ ~ ~ dropper{Items:[{Slot:0b,id:"minecraft:netherite_scrap"},{Slot:2b,id:"minecraft:gold_ingot"}]} if score temp_0 mech_data matches 4.. if score temp_1 mech_data matches 0 if score temp_2 mech_data matches 4.. run function mechanization:machines/machines/alloy_furnace/recipes/netherite
+execute if block ~ ~ ~ dropper{Items:[{Slot:1b,id:"minecraft:netherite_scrap"},{Slot:0b,id:"minecraft:gold_ingot"}]} if score temp_0 mech_data matches 4.. if score temp_1 mech_data matches 4.. if score temp_2 mech_data matches 0 run function mechanization:machines/machines/alloy_furnace/recipes/netherite
+execute if block ~ ~ ~ dropper{Items:[{Slot:1b,id:"minecraft:netherite_scrap"},{Slot:2b,id:"minecraft:gold_ingot"}]} if score temp_0 mech_data matches 0 if score temp_1 mech_data matches 4.. if score temp_2 mech_data matches 4.. run function mechanization:machines/machines/alloy_furnace/recipes/netherite
+execute if block ~ ~ ~ dropper{Items:[{Slot:2b,id:"minecraft:netherite_scrap"},{Slot:0b,id:"minecraft:gold_ingot"}]} if score temp_0 mech_data matches 4.. if score temp_1 mech_data matches 0 if score temp_2 mech_data matches 4.. run function mechanization:machines/machines/alloy_furnace/recipes/netherite
+execute if block ~ ~ ~ dropper{Items:[{Slot:2b,id:"minecraft:netherite_scrap"},{Slot:1b,id:"minecraft:gold_ingot"}]} if score temp_0 mech_data matches 0 if score temp_1 mech_data matches 4.. if score temp_2 mech_data matches 4.. run function mechanization:machines/machines/alloy_furnace/recipes/netherite
+
+
 
 #change item amounts
 execute store result block ~ ~ ~ Items[{Slot:0b}].Count int 1 run scoreboard players get temp_0 mech_data
