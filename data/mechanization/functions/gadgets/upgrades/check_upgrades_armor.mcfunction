@@ -1,3 +1,4 @@
+
 execute if entity @s[tag=mech_up_helm,nbt=!{Inventory:[ {Slot:103b,tag:{mech_modify:1b}} ]}] run function mechanization:gadgets/upgrades/remove_upgrades_armor
 execute if entity @s[tag=mech_up_chest,nbt=!{Inventory:[ {Slot:102b,tag:{mech_modify:1b}} ]}] run function mechanization:gadgets/upgrades/remove_upgrades_armor
 execute if entity @s[tag=mech_up_legs,nbt=!{Inventory:[ {Slot:101b,tag:{mech_modify:1b}} ]}] run function mechanization:gadgets/upgrades/remove_upgrades_armor

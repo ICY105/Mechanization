@@ -7,12 +7,7 @@ tag @s remove mech_upgrade_smash
 
 tag @s remove mech_upgrade_poison
 tag @s remove mech_upgrade_wither
-tag @s remove mech_upgrade_vamparic
+tag @s remove mech_upgrade_vampiric
 tag @s remove mech_upgrade_slowness
 tag @s remove mech_upgrade_weakness
 tag @s remove mech_upgrade_glow
-
-scoreboard players set @s mech_usesword 0
-scoreboard players set @s mech_usepick 0
-scoreboard players set @s mech_useaxe 0
-scoreboard players set @s mech_useshovel 0

@@ -1,4 +1,3 @@
-function mechanization:gadgets/upgrades/remove_upgrades_tools
 
 execute store success score temp_0 mech_data run data get entity @s SelectedItem.tag.mech_modifiers[{tag:{OreDict:["upgradeEmpowered"]}}]
 execute if data entity @s SelectedItem.tag.mech_modifiers[].tag{OreDict:["upgradeEmpowered"]} if score temp_0 mech_data matches 1 run tag @s add mech_upgrade_empower_1

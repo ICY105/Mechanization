@@ -2,19 +2,14 @@
 ## ui
 
 #remove bad items
-data remove block -29999999 0 1601 Items
-data modify block -29999999 0 1601 Items set from block ~ ~ ~ Items
-replaceitem block -29999999 0 1601 container.10 air
-execute if entity @s[tag=mech_active] run replaceitem block -29999999 0 1601 container.12 air
-execute if entity @s[tag=mech_active] run replaceitem block -29999999 0 1601 container.13 air
-execute if entity @s[tag=mech_active] run replaceitem block -29999999 0 1601 container.14 air
-execute if entity @s[tag=mech_active] run replaceitem block -29999999 0 1601 container.15 air
-execute if entity @s[tag=mech_active] run replaceitem block -29999999 0 1601 container.16 air
-data remove block -29999999 0 1601 Items[{tag:{du_gui:1b}}]
-loot give @p mine -29999999 0 1601 minecraft:air{drop_contents:true}
+execute if entity @s[tag=!mech_active] run data remove block -29999999 0 1601 Items
+execute if entity @s[tag=!mech_active] run data modify block -29999999 0 1601 Items set from block ~ ~ ~ Items
+execute if entity @s[tag=!mech_active] run replaceitem block -29999999 0 1601 container.10 air
+execute if entity @s[tag=!mech_active] run data remove block -29999999 0 1601 Items[{tag:{du_gui:1b}}]
+execute if entity @s[tag=!mech_active] run loot give @p mine -29999999 0 1601 minecraft:air{drop_contents:true}
 
 #reset
-replaceitem block ~ ~ ~ container.0 minecraft:structure_block{CustomModelData:6424501,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+replaceitem block ~ ~ ~ container.0 minecraft:structure_block{CustomModelData:6424500,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
 replaceitem block ~ ~ ~ container.1 minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
 replaceitem block ~ ~ ~ container.2 minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
 replaceitem block ~ ~ ~ container.3 minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}

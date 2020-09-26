@@ -6,7 +6,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{mech_modify:1b}}}] run function mec
 execute if entity @s[tag=mech_upgrade_tool,nbt=!{SelectedItem:{tag:{mech_modify:1b}}}] run function mechanization:gadgets/upgrades/remove_upgrades_tools_2
 
 #upgrades
-execute if entity @s[tag=mech_upgrade_slowfall] if block ~ ~-2 ~ air if block ~ ~-3 ~ air run function mechanization:gadgets/upgrades/armor/slowfall
+execute if entity @s[tag=mech_upgrade_slowfall] if block ~ ~-1 ~ #du:air if block ~ ~-2 ~ #du:air if block ~ ~-3 ~ #du:air run function mechanization:gadgets/upgrades/armor/slowfall
 execute if entity @s[tag=mech_upgrade_flight] if entity @s[nbt={FallFlying:0b}] run function mechanization:gadgets/upgrades/armor/flight
 execute if entity @s[tag=mech_invisible] at @e[type=area_effect_cloud,tag=mech_invis_mark,sort=nearest,limit=1] run tp @s ~ ~0.25 ~
 execute if score $base.timer_100 du_data matches 0 if entity @s[tag=mech_upgrade_shield] run function mechanization:gadgets/upgrades/armor/shield
