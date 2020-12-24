@@ -8,8 +8,8 @@ scoreboard players set temp_0 mech_data 0
 function du:world/blocks/is_active
 
 #spawn loot
-execute if score $world.out_0 du_data matches 0 if entity @s[tag=!mech_upgrade_ender,scores={mech_power=160..}] as @e[distance=..5,type=#mechanization:mob_grinder] run loot spawn ~ ~1 ~ kill @s
-execute if score $world.out_0 du_data matches 0 if entity @s[tag=mech_upgrade_nether,scores={mech_power=160..}] as @e[distance=..5,type=#mechanization:mob_grinder] run loot spawn ~ ~1 ~ kill @s
+execute if score $world.out_0 du_data matches 0 if entity @s[tag=!mech_upgrade_ender,scores={mech_power=160..}] as @e[distance=..5,type=#mechanization:mob_grinder,tag=!global.ignore.kill] run loot spawn ~ ~1 ~ kill @s
+execute if score $world.out_0 du_data matches 0 if entity @s[tag=mech_upgrade_nether,scores={mech_power=160..}] as @e[distance=..5,type=#mechanization:mob_grinder,tag=!global.ignore.kill] run loot spawn ~ ~1 ~ kill @s
 execute if score $world.out_0 du_data matches 0 if entity @s[tag=mech_upgrade_ender,scores={mech_power=160..}] as @p run function mechanization:machines/machines/mob_grinder/player_drop
 
 #kill entities
