@@ -33,7 +33,7 @@ execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b
 execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:golden_carrot", Count: 24b},{id:"minecraft:prismarine_crystals", Count: 32b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_night_vision
 execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:enchanted_golden_apple", Count: 1b},{id:"minecraft:redstone_block", Count: 16b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_shield
 execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:white_wool", Count: 64b},{id:"minecraft:slime_block", Count: 8b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_slowfall
-execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:ender_eye", Count: 64b},{id:"minecraft:glowstone", Count: 64b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_invisibility
+execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:ender_eye", Count: 64b},{id:"minecraft:glowstone", Count: 64b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_true_invisibility
 execute if block ~ ~ ~ barrel{Items:[{tag: {OreDict: ["upgradeBase"]}, Count: 1b},{id:"minecraft:pufferfish", Count: 16b},{id:"minecraft:scute", Count: 8b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:gadgets/upgrade_water_breathing
 
 #guns
