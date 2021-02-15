@@ -4,7 +4,7 @@ execute if entity @s[tag=mech_compressor] at @s run setblock ~ ~ ~ minecraft:air
 kill @s[tag=mech_compressor]
 
 #Decompressor
-execute if entity @s[tag=mech_decompresser] run loot spawn ~ ~ ~ loot mechanization:assembly/decompresser
+execute if entity @s[tag=mech_decompresser] run loot spawn ~ ~ ~ loot mechanization:assembly/decompressor
 execute if entity @s[tag=mech_decompresser] at @s run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_decompresser]
 
