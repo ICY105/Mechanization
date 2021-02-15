@@ -4,6 +4,7 @@ scoreboard players set temp_0 mech_data 0
 scoreboard players set temp_1 mech_data 0
 scoreboard players set temp_2 mech_data 0
 scoreboard players set temp_3 mech_data 0
+scoreboard players set temp_4 mech_data 0
 execute store result score temp_0 mech_data run data get block ~ ~ ~ Items[{Slot:0b}].Count
 execute store result score temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:1b}].Count
 execute store result score temp_2 mech_data run data get block ~ ~ ~ Items[{Slot:2b}].Count
