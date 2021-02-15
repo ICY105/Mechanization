@@ -1,4 +1,7 @@
 
+#kill floating DU entity
+kill @e[tag=du_furnace,distance=..1]
+
 #### Machines
 
 #Tier 1 Battery
