@@ -27,7 +27,7 @@ scoreboard objectives add mech_usenshovel minecraft.used:minecraft.netherite_sho
 scoreboard objectives add mech_usensword minecraft.used:minecraft.netherite_sword
 
 #mark version
-scoreboard players set $mech.ver load 2030201
+scoreboard players set $mech.ver load 2030202
 
 #configure storage
 execute unless data storage mechanization:networks quantum run data merge storage mechanization:networks {quantum:[]}
