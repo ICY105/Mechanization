@@ -68,7 +68,7 @@ execute if block ~ ~ ~ dropper{Items:[{Slot:2b,tag:{OreDict:["ingotTitanium"]}},
 execute if block ~ ~ ~ dropper{Items:[{Slot:2b,tag:{OreDict:["ingotTitanium"]}},{Slot:1b,tag:{OreDict:["ingotSteel"]}},{Slot:0b,id:"minecraft:blaze_rod"}]} if score temp_0 mech_data matches 2.. if score temp_1 mech_data matches 2.. if score temp_2 mech_data matches 1.. run tag @s add mech_temp
 execute if score temp_3 mech_data matches 64.. run tag @s remove mech_temp
 execute if score temp_3 mech_data matches 1.. unless data block ~ ~ ~ Items[{Slot:7b,tag:{OreDict:["ingotTitaniumSteel"]}}] run tag @s remove mech_temp
-execute if entity @s[tag=mech_temp] run tag @s add mech_temp
+execute if entity @s[tag=mech_temp] run tag @s add mech_active
 tag @s remove mech_temp
 
 #Reinforced Structural Ingot
