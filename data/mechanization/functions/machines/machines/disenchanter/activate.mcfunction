@@ -4,7 +4,7 @@ execute store result score temp_0 mech_data run data get block ~ ~ ~ Items[{Slot
 execute store result score temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:2b}].Count
 
 #create enchanted book and move enchanted
-execute if score temp_1 mech_data matches 3.. run replaceitem block ~ ~ ~ container.4 minecraft:enchanted_book
+execute if score temp_1 mech_data matches 3.. run item replace block ~ ~ ~ container.4 with minecraft:enchanted_book
 execute if score temp_1 mech_data matches 3.. run data modify block ~ ~ ~ Items[{Slot:4b}].tag.StoredEnchantments set value []
 execute if score temp_1 mech_data matches 3.. run data modify block ~ ~ ~ Items[{Slot:4b}].tag.StoredEnchantments append from block ~ ~ ~ Items[{Slot:0b}].tag.Enchantments[0]
 execute if score temp_1 mech_data matches 3.. run data remove block ~ ~ ~ Items[{Slot:0b}].tag.Enchantments[0]

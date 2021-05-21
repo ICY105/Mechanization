@@ -6,4 +6,4 @@ execute if score $base.timer_100 du_data matches 0 run data merge entity @s {Fir
 
 execute if score $base.timer_20 du_data matches 0 run data modify block ~ ~ ~ Items[{tag:{du_gui:1b}}].id set value "minecraft:structure_block"
 execute if score $base.timer_20 du_data matches 0 run data modify block ~ ~ ~ Items[{tag:{du_gui:1b}}].tag set value {CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-execute if score $base.timer_20 du_data matches 0 run replaceitem block ~ ~ ~ container.0 minecraft:structure_block{CustomModelData:6421201,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+execute if score $base.timer_20 du_data matches 0 run item replace block ~ ~ ~ container.0 with minecraft:structure_block{CustomModelData:6421201,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}

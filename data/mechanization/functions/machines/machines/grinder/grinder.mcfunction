@@ -6,7 +6,7 @@ execute unless score @s mech_data matches -2147483648.. store result score @s me
 
 #main
 data merge entity @s {Fire:32676}
-replaceitem block ~ ~ ~ container.1 minecraft:structure_block{CustomModelData:6422203,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+item replace block ~ ~ ~ container.1 with minecraft:structure_block{CustomModelData:6422203,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
 
 scoreboard players set @s[tag=!mech_active] mech_timer 0
 execute if entity @s[tag=!mech_active,tag=!mech_upgraded,scores={mech_power=360..}] run function mechanization:machines/machines/grinder/input

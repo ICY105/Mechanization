@@ -1,6 +1,6 @@
 
 execute in minecraft:overworld run data remove block -29999999 0 1601 Items
-execute in minecraft:overworld run replaceitem block -29999999 0 1601 container.0 minecraft:written_book{pages:[],author:"ImCoolYeah105", title:"Mechanical Manual",CustomModelData:6421105,mech_version:3} 
+execute in minecraft:overworld run item replace block -29999999 0 1601 container.0 with minecraft:written_book{pages:[],author:"ImCoolYeah105", title:"Mechanical Manual",CustomModelData:6421105,mech_version:3} 
 execute in minecraft:overworld run data remove block -29999999 0 1601 Items[0].tag.pages
 
 #99: TOC

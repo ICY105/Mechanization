@@ -1,4 +1,5 @@
-replaceitem block ~ ~ ~ container.16 air
+
+item replace block ~ ~ ~ container.16 with air
 data remove block -29999999 0 1601 Items
 function mechanization:manual
 execute store result block -29999999 0 1601 Items[0].Slot byte 16 if entity @s

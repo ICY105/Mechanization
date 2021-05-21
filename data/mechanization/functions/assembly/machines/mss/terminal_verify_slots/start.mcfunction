@@ -20,9 +20,9 @@ execute unless data storage du:temp list[{Slot:15b}].tag.mss{slot:15b} run funct
 execute unless data storage du:temp list[{Slot:16b}].tag.mss{slot:16b} run function mechanization:assembly/machines/mss/terminal_verify_slots/remove_slot_16
 execute unless data storage du:temp list[{Slot:16b}].tag.mss{slot:17b} run function mechanization:assembly/machines/mss/terminal_verify_slots/remove_slot_17
 
-execute if data storage du:temp list[{Slot:17b}].tag.mss{ui:1b} run replaceitem block ~ ~ ~ container.17 minecraft:air
+execute if data storage du:temp list[{Slot:17b}].tag.mss{ui:1b} run item replace block ~ ~ ~ container.17 with minecraft:air
 execute if data storage du:temp list[{Slot:17b}].tag.mss run data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:17b}]
-execute if data storage du:temp list[{Slot:17b}].tag.mss run replaceitem block ~ ~ ~ container.17 minecraft:air
+execute if data storage du:temp list[{Slot:17b}].tag.mss run item replace block ~ ~ ~ container.17 with minecraft:air
 
 execute unless data storage du:temp list[{Slot:18b}].tag.mss{slot:18b} run function mechanization:assembly/machines/mss/terminal_verify_slots/remove_slot_18
 execute unless data storage du:temp list[{Slot:19b}].tag.mss{slot:19b} run function mechanization:assembly/machines/mss/terminal_verify_slots/remove_slot_19

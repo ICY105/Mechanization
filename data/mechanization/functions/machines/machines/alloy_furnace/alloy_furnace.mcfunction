@@ -7,11 +7,11 @@ execute unless score @s mech_gridid matches -2147483648.. store result score @s 
 data merge entity @s {Fire:32676s}
 
 #GUI blockers
-execute unless data block ~ ~ ~ Items[{Slot:3b}] run replaceitem block ~ ~ ~ container.3 minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-execute unless data block ~ ~ ~ Items[{Slot:4b}] run replaceitem block ~ ~ ~ container.4 minecraft:structure_block{CustomModelData:6422200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-execute unless data block ~ ~ ~ Items[{Slot:5b}] run replaceitem block ~ ~ ~ container.5 minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-execute unless data block ~ ~ ~ Items[{Slot:6b}] run replaceitem block ~ ~ ~ container.6 minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-execute unless data block ~ ~ ~ Items[{Slot:8b}] run replaceitem block ~ ~ ~ container.8 minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+execute unless data block ~ ~ ~ Items[{Slot:3b}] run item replace block ~ ~ ~ container.3 with minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+execute unless data block ~ ~ ~ Items[{Slot:4b}] run item replace block ~ ~ ~ container.4 with minecraft:structure_block{CustomModelData:6422200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+execute unless data block ~ ~ ~ Items[{Slot:5b}] run item replace block ~ ~ ~ container.5 with minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+execute unless data block ~ ~ ~ Items[{Slot:6b}] run item replace block ~ ~ ~ container.6 with minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+execute unless data block ~ ~ ~ Items[{Slot:8b}] run item replace block ~ ~ ~ container.8 with minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
 
 #errored
 execute if entity @s[tag=!mech_errored] run data modify block ~ ~ ~ CustomName set value '[{"translate":"mech.block.alloy_furnace","color":"dark_aqua"}]'

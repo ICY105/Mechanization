@@ -1,3 +1,3 @@
 
 data modify block -29999999 0 1601 Items append from block ~ ~ ~ Items[{Slot:9b}]
-replaceitem block ~ ~ ~ container.9 minecraft:air
+item replace block ~ ~ ~ container.9 with minecraft:air

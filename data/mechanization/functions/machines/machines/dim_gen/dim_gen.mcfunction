@@ -11,7 +11,7 @@ execute if entity @s[scores={mech_power=..4000,mech_data=..0},tag=mech_upgrade_n
 
 #display
 data merge entity @s {Fire:32676}
-replaceitem block ~ ~ ~ container.1 minecraft:structure_block{CustomModelData:6422206,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+item replace block ~ ~ ~ container.1 with minecraft:structure_block{CustomModelData:6422206,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
 
 execute store success entity @s ArmorItems[3].tag.CustomModelData int 6422015 if entity @s
 execute if entity @s[scores={mech_power=..4000,mech_data=1..}] store success entity @s ArmorItems[3].tag.CustomModelData int 6422911 if entity @s

@@ -4,8 +4,8 @@ execute unless score @s mech_power matches -2147483648.. store result score @s m
 execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s ArmorItems[3].tag.mech_gridid
 
 ## Main
-execute if score @s mech_power matches ..1999 run replaceitem block ~ ~ ~ container.0 minecraft:cobblestone{du_gui:1b,display:{Name:'{"text":"Ignition"}'}}
-execute if score @s mech_power matches 2000.. if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:cobblestone"}] run replaceitem block ~ ~ ~ container.0 minecraft:air
+execute if score @s mech_power matches ..1999 run item replace block ~ ~ ~ container.0 with minecraft:cobblestone{du_gui:1b,display:{Name:'{"text":"Ignition"}'}}
+execute if score @s mech_power matches 2000.. if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:cobblestone"}] run item replace block ~ ~ ~ container.0 with minecraft:air
 data merge entity @s {Fire:32676s}
 data merge block ~ ~ ~ {CookTime:0s}
 

@@ -5,7 +5,7 @@ execute unless score @s mech_gridid matches -2147483648.. store result score @s 
 
 ### Main
 data merge entity @s {Fire:32676}
-replaceitem block ~ ~ ~ container.1 minecraft:structure_block{CustomModelData:6422202,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+item replace block ~ ~ ~ container.1 with minecraft:structure_block{CustomModelData:6422202,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
 
 #get has item
 scoreboard players set temp_0 mech_data 0

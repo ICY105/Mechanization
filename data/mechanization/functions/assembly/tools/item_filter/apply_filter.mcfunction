@@ -4,34 +4,34 @@ scoreboard players remove temp_0 mech_data 0
 
 #add filler
 execute store result score temp_1 mech_data run data get block ~ ~ ~ Items
-execute unless data block ~ ~ ~ Items[{Slot:0b}] run replaceitem block ~ ~ ~ container.0 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:1b}] run replaceitem block ~ ~ ~ container.1 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:2b}] run replaceitem block ~ ~ ~ container.2 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:3b}] run replaceitem block ~ ~ ~ container.3 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:4b}] run replaceitem block ~ ~ ~ container.4 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:5b}] run replaceitem block ~ ~ ~ container.5 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:6b}] run replaceitem block ~ ~ ~ container.6 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:7b}] run replaceitem block ~ ~ ~ container.7 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:8b}] run replaceitem block ~ ~ ~ container.8 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:9b}] run replaceitem block ~ ~ ~ container.9 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:10b}] run replaceitem block ~ ~ ~ container.10 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:11b}] run replaceitem block ~ ~ ~ container.11 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:12b}] run replaceitem block ~ ~ ~ container.12 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:13b}] run replaceitem block ~ ~ ~ container.13 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:14b}] run replaceitem block ~ ~ ~ container.14 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:15b}] run replaceitem block ~ ~ ~ container.15 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:16b}] run replaceitem block ~ ~ ~ container.16 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:17b}] run replaceitem block ~ ~ ~ container.17 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:18b}] run replaceitem block ~ ~ ~ container.18 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:19b}] run replaceitem block ~ ~ ~ container.19 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:20b}] run replaceitem block ~ ~ ~ container.20 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:21b}] run replaceitem block ~ ~ ~ container.21 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:22b}] run replaceitem block ~ ~ ~ container.22 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:23b}] run replaceitem block ~ ~ ~ container.23 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:24b}] run replaceitem block ~ ~ ~ container.24 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:25b}] run replaceitem block ~ ~ ~ container.25 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:26b}] run replaceitem block ~ ~ ~ container.26 minecraft:blast_furnace{du_gui:1b}
-execute unless data block ~ ~ ~ Items[{Slot:27b}] run replaceitem block ~ ~ ~ container.27 minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:0b}] run item replace block ~ ~ ~ container.0 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:1b}] run item replace block ~ ~ ~ container.1 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:2b}] run item replace block ~ ~ ~ container.2 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:3b}] run item replace block ~ ~ ~ container.3 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:4b}] run item replace block ~ ~ ~ container.4 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:5b}] run item replace block ~ ~ ~ container.5 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:6b}] run item replace block ~ ~ ~ container.6 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:7b}] run item replace block ~ ~ ~ container.7 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:8b}] run item replace block ~ ~ ~ container.8 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:9b}] run item replace block ~ ~ ~ container.9 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:10b}] run item replace block ~ ~ ~ container.10 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:11b}] run item replace block ~ ~ ~ container.11 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:12b}] run item replace block ~ ~ ~ container.12 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:13b}] run item replace block ~ ~ ~ container.13 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:14b}] run item replace block ~ ~ ~ container.14 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:15b}] run item replace block ~ ~ ~ container.15 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:16b}] run item replace block ~ ~ ~ container.16 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:17b}] run item replace block ~ ~ ~ container.17 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:18b}] run item replace block ~ ~ ~ container.18 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:19b}] run item replace block ~ ~ ~ container.19 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:20b}] run item replace block ~ ~ ~ container.20 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:21b}] run item replace block ~ ~ ~ container.21 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:22b}] run item replace block ~ ~ ~ container.22 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:23b}] run item replace block ~ ~ ~ container.23 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:24b}] run item replace block ~ ~ ~ container.24 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:25b}] run item replace block ~ ~ ~ container.25 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:26b}] run item replace block ~ ~ ~ container.26 with minecraft:blast_furnace{du_gui:1b}
+execute unless data block ~ ~ ~ Items[{Slot:27b}] run item replace block ~ ~ ~ container.27 with minecraft:blast_furnace{du_gui:1b}
 
 #copy items
 data remove block -29999999 0 1601 Items

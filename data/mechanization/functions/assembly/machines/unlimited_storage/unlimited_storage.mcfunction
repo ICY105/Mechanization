@@ -1,6 +1,6 @@
 
 #ui
-replaceitem block ~ ~ ~ container.1 minecraft:structure_block{CustomModelData:6422203,du_gui:1b,HideFlags:63,display:{Name:'""'}}
+item replace block ~ ~ ~ container.1 with minecraft:structure_block{CustomModelData:6422203,du_gui:1b,HideFlags:63,display:{Name:'""'}}
 execute if score $base.timer_100 du_data matches 0..1 run data merge entity @s {Fire:32000s}
 
 #back up item counts

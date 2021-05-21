@@ -11,5 +11,5 @@ data modify block -29999999 1 1601 Items prepend from entity @s ArmorItems[3].ta
 execute store result score temp_0 mech_data run loot insert -29999999 1 1601 mine -29999999 0 1601 minecraft:air{drop_contents:true}
 execute if score temp_0 mech_data matches 1.. store result score temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:0b}].Count
 execute if score temp_0 mech_data matches 1.. run scoreboard players operation @s mech_data += temp_1 mech_data
-execute if score temp_0 mech_data matches 1.. run replaceitem block ~ ~ ~ container.0 minecraft:air
+execute if score temp_0 mech_data matches 1.. run item replace block ~ ~ ~ container.0 with minecraft:air
 

@@ -10,4 +10,4 @@ data modify block ~ ~ ~ MinSpawnDelay set from entity @s SelectedItem.tag.spawne
 data modify block ~ ~ ~ SpawnPotentials set from entity @s SelectedItem.tag.spawner_data.SpawnPotentials
 data modify block ~ ~ ~ SpawnData set from entity @s SelectedItem.tag.spawner_data.SpawnData
 
-replaceitem entity @s[gamemode=!creative] weapon.mainhand air
+item replace entity @s[gamemode=!creative] weapon.mainhand with air

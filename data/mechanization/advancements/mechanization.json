@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.mechanization.title",
+            "translate": "mech.advancements.title",
 			"color":"red"
         },
         "description": {
-            "translate": "mech.advancements.mechanization.description",
+            "translate": "mech.advancements.description",
 			"color":"dark_aqua"
         },
         "icon": {

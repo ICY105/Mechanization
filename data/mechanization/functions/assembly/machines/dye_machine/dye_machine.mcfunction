@@ -5,13 +5,13 @@ execute unless score @s mech_power matches -2147483648.. store result score @s m
 execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s ArmorItems[3].tag.mech_gridid
 
 #ui
-replaceitem block ~ ~ ~ container.0 structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-replaceitem block ~ ~ ~ container.2 structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-replaceitem block ~ ~ ~ container.3 structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-replaceitem block ~ ~ ~ container.4 structure_block{CustomModelData:6425900,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-replaceitem block ~ ~ ~ container.5 structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-replaceitem block ~ ~ ~ container.6 structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-replaceitem block ~ ~ ~ container.8 structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+item replace block ~ ~ ~ container.0 with structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+item replace block ~ ~ ~ container.2 with structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+item replace block ~ ~ ~ container.3 with structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+item replace block ~ ~ ~ container.4 with structure_block{CustomModelData:6425900,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+item replace block ~ ~ ~ container.5 with structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+item replace block ~ ~ ~ container.6 with structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+item replace block ~ ~ ~ container.8 with structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
 
 #main
 execute if score @s mech_power matches 144.. if block ~ ~ ~ dropper{Items:[{Slot:1b},{Slot:7b}]} run function mechanization:assembly/machines/dye_machine/start
