@@ -28,8 +28,8 @@ execute if score in_0 mech_data matches 1000..1006 run setblock ~ ~ ~ barrier re
 execute if score in_0 mech_data matches 1000..1004 run scoreboard players set @e[tag=mech_power_storage,distance=..0.75] mech_power 0
 
 #machine crafter
-execute if score in_0 mech_data matches 1005 run summon armor_stand ~ ~ ~ {Tags:["mech_machine_crafter","du_crafter"],Marker:1b,Fire:32676,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421037}}]}
-execute if score in_0 mech_data matches 1005 run setblock ~ ~ ~ minecraft:barrel{CustomName:'[{"translate":"mech.block.machine_crafting_table","color":"dark_aqua","italic":false}]'}
+execute if score $id mech_data matches 1005 run summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mech_machine_crafter","du_crafter"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421037},Count:1b}}
+execute if score $id mech_data matches 1005 run setblock ~ ~ ~ minecraft:barrel{CustomName:'[{"translate":"offset.-8","font":"space:default","with":[{"text":"\\uee06","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-256","font":"space:default","with":[{"translate":"mech.block.machine_crafting_table","color":"dark_aqua","italic":false,"font":"minecraft:default"}]}]'}
 
 #run global functions
 function #mechanization:place_block

@@ -1,0 +1,13 @@
+{
+	"criteria": {
+		"crafter":{
+			"trigger": "minecraft:recipe_unlocked",
+		    "conditions": {
+			  "recipe": "mechanization:machine_crafting_table"
+		    }
+		}
+	},
+	"rewards":{ 
+		"function":"mechanization:base/triggers/craft_machine_crafting_table"
+	}
+}

@@ -6,5 +6,5 @@
 	},
 	"pattern":["000","010","020"],
 	"type":"crafting_shaped",
-	"result":{"item":"minecraft:damaged_anvil"}
+	"result":{"item":"minecraft:knowledge_book"}
 }
