@@ -1,25 +1,4 @@
 
-#### Copper Ore
-
-# Y elevation [1,255]
-scoreboard players set $world.in_0 du_data 24
-scoreboard players set $world.in_1 du_data 64
-# number of veins [1,32]
-scoreboard players operation $world.in_2 du_data = $base.config.copper_rarity mech_data
-scoreboard players operation $world.in_3 du_data = $base.config.copper_rarity mech_data
-# ores per vein [1,16]
-scoreboard players set $world.in_4 du_data 4
-scoreboard players set $world.in_5 du_data 6
-execute if score $base.config.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_4 du_data 1
-execute if score $base.config.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_5 du_data 1
-# ignore placement restrictions
-scoreboard players set $world.in_6 du_data 0
-
-#Call Registry Function
-data merge storage du:temp {object:{dimension:"minecraft:overworld"}}
-execute if score $base.config.copper_rarity mech_data matches 1.. run function du:world/registry/register_ore
-scoreboard players operation $cons.copper_ore mech_data = $world.out_0 du_data
-
 #### Tin Ore
 
 # Y elevation [1,255]

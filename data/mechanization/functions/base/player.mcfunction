@@ -1,10 +1,10 @@
 
 #Click Detect
 tag @s remove mech_right_click
-scoreboard players set @s mech_usedid 0
-
 execute if score @s mech_use_coas matches 1.. run tag @s add mech_right_click
 scoreboard players set @s mech_use_coas 0
+
+scoreboard players set @s mech_usedid 0
 execute store result score @s mech_usedid run data get entity @s SelectedItem.tag.mech_itemid
 
 #tools

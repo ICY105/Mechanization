@@ -11,10 +11,6 @@ scoreboard players set $compat.config.plasma_smelt mech_data 0
 
 ### Ore Generation
 
-# [0,1] Compatibility Mode: set to 1 to turn all ores into player heads. Big FPS hit.
-#       Only use if another datapack uses the technical blocks the Mech also uses for ores.
-scoreboard players set $base.config.ore_compatibility mech_data 0
-
 # [0,32] Veins of Copper per Chunk
 scoreboard players set $base.config.copper_rarity mech_data 8
 

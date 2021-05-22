@@ -49,11 +49,6 @@ execute if score temp_1 mech_data matches 1.. run scoreboard players operation @
 
 #### Resources
 
-#copper
-execute if score in_0 mech_data matches 1300 if score $base.config.ore_compatibility mech_data matches 0 run setblock ~ ~ ~ minecraft:stone_brick_slab[waterlogged=true,type=double]
-execute if score in_0 mech_data matches 1300 if score $base.config.ore_compatibility mech_data matches 1 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421300,du_block_id:1300}}]}}
-execute if score in_0 mech_data matches 1304 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421304,du_block_id:1304}}]}}
-
 #tin
 execute if score in_0 mech_data matches 1310 if score $base.config.ore_compatibility mech_data matches 0 run setblock ~ ~ ~ minecraft:stone_slab[waterlogged=true,type=double]
 execute if score in_0 mech_data matches 1310 if score $base.config.ore_compatibility mech_data matches 1 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421310,du_block_id:1310}}]}}
