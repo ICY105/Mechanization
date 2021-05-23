@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.dust.plutonium","color":"blue","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1442, CustomModelData: 6421442, du_smelt_id: 1442, OreDict:[\"dustPlutonium\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1442, CustomModelData: 6421442, du_smelt_id: 1442, HideFlags: 32, ctc:{ id:\"raw_plutonium\", from:\"mechanization\", traits:{ item:1b, raw:1b, \"metal/plutonium\":1b }} }"
             }
           ]
         }

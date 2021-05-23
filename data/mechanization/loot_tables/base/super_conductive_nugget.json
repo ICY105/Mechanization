@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.nugget.super_conductive","color":"dark_green","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1381, CustomModelData: 6421381, OreDict:[\"nuggetSuperConductive\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1381, CustomModelData: 6421381, HideFlags: 32, ctc:{ id:\"super_conductive_alloy_nugget\", from:\"mechanization\", traits:{ item:1b, nugget:1b, \"metal/super_conductive_alloy\":1b }} }"
             }
           ]
         }

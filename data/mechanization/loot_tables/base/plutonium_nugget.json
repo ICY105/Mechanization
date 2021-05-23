@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.nugget.plutonium","color":"blue","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1441, CustomModelData: 6421441, OreDict:[\"nuggetPlutonium\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1441, CustomModelData: 6421441, HideFlags: 32, ctc:{ id:\"plutonium_nugget\", from:\"mechanization\", traits:{ item:1b, nugget:1b, \"metal/plutonium\":1b }} }"
             }
           ]
         }

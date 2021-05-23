@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.ore.titanium","color":"light_purple","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1320, CustomModelData: 6421320, du_smelt_id:1320, OreDict:[\"oreTitanium\"], HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 1320, CustomModelData: 6421320, du_smelt_id:1320, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"titanium_ore\", from:\"mechanization\", traits:{ block:1b, ore:1b, \"metal/titanium\":1b }} }"
             }
           ]
         }

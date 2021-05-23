@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.item.mechanical_manual","color":"dark_purple","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1103, CustomModelData: 6421103, HideFlags: 6}"
+              "tag":"{mech_itemid: 1103, CustomModelData: 6421103, HideFlags: 6, ctc:{ id:\"mechanical_manual\", from:\"mechanization\", traits:{ item:1b, manual:1b }} }"
             }
           ]
         }

@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.block.plutonium","color":"blue","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1443, CustomModelData: 6421443, OreDict:[\"blockPlutonium\"], HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 1443, CustomModelData: 6421443, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"plutonium_block\", from:\"mechanization\", traits:{ block:1b, packed:1b, \"metal/plutonium\":1b }} }"
             }
           ]
         }

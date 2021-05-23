@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.ingot.tin","color":"gray","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1311, CustomModelData: 6421311, OreDict:[\"ingotTin\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1311, CustomModelData: 6421311, HideFlags: 32, ctc:{ id:\"tin_ingot\", from:\"mechanization\", traits:{ item:1b, ingot:1b, \"metal/tin\":1b }} }"
             }
           ]
         }

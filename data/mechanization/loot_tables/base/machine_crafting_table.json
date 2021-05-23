@@ -14,11 +14,14 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"mech.block.machine_crafting_table.lore_1","color":"white","italic":false}]
+			  "lore": [
+			    {"translate":"mech.block.machine_crafting_table.lore_1","color":"white","italic":false},
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1005, CustomModelData: 6421037, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 1005, CustomModelData: 6421037, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"machine_crafting_table\", from:\"mechanization\", traits:{ block:1b }} }"
             }
           ]
         }

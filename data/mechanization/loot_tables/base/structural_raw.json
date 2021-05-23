@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.dust.structural","color":"blue","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1342, CustomModelData: 6421342, du_smelt_id:1342, OreDict:[\"dustStructural\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1342, CustomModelData: 6421342, du_smelt_id:1342, HideFlags: 32, ctc:{ id:\"raw_structural_alloy\", from:\"mechanization\", traits:{ item:1b, raw:1b, \"metal/structural_alloy\":1b }} }"
             }
           ]
         }

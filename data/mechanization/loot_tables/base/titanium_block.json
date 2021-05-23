@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.block.titanium","color":"light_purple","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1324, CustomModelData: 6421324, OreDict:[\"blockTitanium\"], HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 1324, CustomModelData: 6421324, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"titanium_block\", from:\"mechanization\", traits:{ block:1b, packed:1b, \"metal/titanium\":1b }} }"
             }
           ]
         }

@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.block.tin","color":"gray","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1314, CustomModelData: 6421314, OreDict:[\"blockTin\"], HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 1314, CustomModelData: 6421314, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"tin_block\", from:\"mechanization\", traits:{ block:1b, packed:1b, \"metal/tin\":1b }} }"
             }
           ]
         }

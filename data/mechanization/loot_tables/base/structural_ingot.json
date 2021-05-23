@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.ingot.structural","color":"blue","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1340, CustomModelData: 6421340, OreDict:[\"ingotStructural\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1340, CustomModelData: 6421340, HideFlags: 32, ctc:{ id:\"structural_alloy_ingot\", from:\"mechanization\", traits:{ item:1b, ingot:1b, \"metal/structural_alloy\":1b }} }"
             }
           ]
         }

@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.ingot.nether_alloy","color":"dark_red","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1400, CustomModelData: 6421400, OreDict:[\"ingotNetherAlloy\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1400, CustomModelData: 6421400, HideFlags: 32, ctc:{ id:\"nether_alloy_ingot\", from:\"mechanization\", traits:{ item:1b, ingot:1b, \"metal/nether_alloy\":1b }} }"
             }
           ]
         }

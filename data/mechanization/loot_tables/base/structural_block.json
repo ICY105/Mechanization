@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.block.structural","color":"blue","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1343, CustomModelData: 6421343, OreDict:[\"blockStructural\"], HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 1343, CustomModelData: 6421343, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"structural_alloy_block\", from:\"mechanization\", traits:{ block:1b, packed:1b, \"metal/structural_alloy\":1b }} }"
             }
           ]
         }

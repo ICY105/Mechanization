@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.block.ender_alloy","color":"dark_purple","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1393, CustomModelData: 6421393, OreDict:[\"blockEnderAlloy\"], HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 1393, CustomModelData: 6421393, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"ender_alloy_block\", from:\"mechanization\", traits:{ block:1b, packed:1b, \"metal/ender_alloy\":1b }} }"
             }
           ]
         }

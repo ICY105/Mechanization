@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.dust.ender_alloy","color":"dark_purple","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1392, CustomModelData: 6421392, du_smelt_id: 1392, OreDict:[\"dustEnderAlloy\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1392, CustomModelData: 6421392, du_smelt_id: 1392, HideFlags: 32, ctc:{ id:\"raw_ender_alloy\", from:\"mechanization\", traits:{ item:1b, raw:1b, \"metal/ender_alloy\":1b }} }"
             }
           ]
         }

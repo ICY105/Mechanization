@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.resource.machine_frame_tier_2","color":"dark_red","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1416, CustomModelData: 6421416, OreDict:[\"blockMachineFrame2\"], HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 1416, CustomModelData: 6421416, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"tier_2_machine_frame\", from:\"mechanization\", traits:{ block:1b, \"machine_frame/tier2\":1b }} }"
             }
           ]
         }

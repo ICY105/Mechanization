@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.dust.uranium","color":"green","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1433, CustomModelData: 6421433, du_smelt_id: 1433, OreDict:[\"dustUranium\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1433, CustomModelData: 6421433, du_smelt_id: 1433, HideFlags: 32, ctc:{ id:\"raw_uranium\", from:\"mechanization\", traits:{ item:1b, raw:1b, \"metal/uranium\":1b }} }"
             }
           ]
         }

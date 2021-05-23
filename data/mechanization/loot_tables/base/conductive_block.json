@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.block.conductive","color":"gold","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1353, CustomModelData: 6421353, OreDict:[\"blockConductive\"], HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 1353, CustomModelData: 6421353, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"conductive_block\", from:\"mechanization\", traits:{ block:1b, packed:1b, \"metal/conductive_alloy\":1b }}}"
             }
           ]
         }

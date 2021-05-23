@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.nugget.nether_alloy","color":"dark_red","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1401, CustomModelData: 6421401, OreDict:[\"nuggetNetherAlloy\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1401, CustomModelData: 6421401, OreDict:[\"nuggetNetherAlloy\"], HideFlags: 32, ctc:{ id:\"nether_alloy_nugget\", from:\"mechanization\", traits:{ item:1b, nugget:1b, \"metal/nether_alloy\":1b }} }"
             }
           ]
         }

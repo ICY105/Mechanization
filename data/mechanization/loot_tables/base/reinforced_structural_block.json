@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.block.reinforced_structural","color":"dark_aqua","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1373, CustomModelData: 6421373, OreDict:[\"blockReinforcedStructural\"], HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 1373, CustomModelData: 6421373, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"reinforced_structural_alloy_block\", from:\"mechanization\", traits:{ block:1b, packed:1b, \"metal/reinforced_structural_alloy\":1b }} }"
             }
           ]
         }

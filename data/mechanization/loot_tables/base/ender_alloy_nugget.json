@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.nugget.ender_alloy","color":"dark_purple","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1391, CustomModelData: 6421391, OreDict:[\"nuggetEnderAlloy\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1391, CustomModelData: 6421391, HideFlags: 32, ctc:{ id:\"ender_alloy_nugget\", from:\"mechanization\", traits:{ item:1b, nugget:1b, \"metal/ender_alloy\":1b }} }"
             }
           ]
         }

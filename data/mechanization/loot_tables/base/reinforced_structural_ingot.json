@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.ingot.reinforced_structural","color":"dark_aqua","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1370, CustomModelData: 6421370, OreDict:[\"ingotReinforcedStructural\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1370, CustomModelData: 6421370, HideFlags: 32, ctc:{ id:\"reinforced_structural_alloy_ingot\", from:\"mechanization\", traits:{ item:1b, ingot:1b, \"metal/reinforced_structural_alloy\":1b }} }"
             }
           ]
         }

@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.ingot.steel","color":"dark_gray","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1330, CustomModelData: 6421330, OreDict:[\"ingotSteel\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1330, CustomModelData: 6421330, HideFlags: 32, ctc:{ id:\"steel_ingot\", from:\"mechanization\", traits:{ item:1b, ingot:1b, \"metal/steel\":1b, \"metal/expensive_steel\":1b }} }"
             }
           ]
         }

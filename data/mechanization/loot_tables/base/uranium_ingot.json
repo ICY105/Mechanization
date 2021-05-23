@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.ingot.uranium","color":"green","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1431, CustomModelData: 6421431, OreDict:[\"ingotUranium\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1431, CustomModelData: 6421431, HideFlags: 32, ctc:{ id:\"uranium_ingot\", from:\"mechanization\", traits:{ item:1b, ingot:1b, \"metal/uranium\":1b }} }"
             }
           ]
         }

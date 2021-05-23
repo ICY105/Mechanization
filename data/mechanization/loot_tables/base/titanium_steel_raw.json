@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.dust.titanium_steel","color":"light_purple","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1362, CustomModelData: 6421362, du_smelt_id: 1362, OreDict:[\"dustTitaniumSteel\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1362, CustomModelData: 6421362, du_smelt_id: 1362, HideFlags: 32, ctc:{ id:\"raw_titanium_steel\", from:\"mechanization\", traits:{ item:1b, raw:1b, \"metal/titanium_steel\":1b }} }"
             }
           ]
         }

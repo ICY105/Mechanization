@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.ore.tin","color":"gray","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1310, CustomModelData: 6421310, du_smelt_id:1310, OreDict:[\"oreTin\"], HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 1310, CustomModelData: 6421310, du_smelt_id:1310, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"tin_ore\", from:\"mechanization\", traits:{ block:1b, ore:1b, \"metal/tin\":1b }} }"
             }
           ]
         }

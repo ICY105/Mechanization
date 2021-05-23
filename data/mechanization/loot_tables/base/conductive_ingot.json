@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.ingot.conductive","color":"gold","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1350, CustomModelData: 6421350, OreDict:[\"ingotConductive\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1350, CustomModelData: 6421350, HideFlags: 32, ctc:{ id:\"conductive_ingot\", from:\"mechanization\", traits:{ item:1b, ingot:1b, \"metal/conductive_alloy\":1b }} }"
             }
           ]
         }

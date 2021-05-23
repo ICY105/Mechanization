@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.dust.nether_alloy","color":"dark_red","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1402, CustomModelData: 6421402, du_smelt_id: 1402, OreDict:[\"dustNetherAlloy\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1402, CustomModelData: 6421402, du_smelt_id: 1402, HideFlags: 32, ctc:{ id:\"raw_nether_alloy\", from:\"mechanization\", traits:{ item:1b, raw:1b, \"metal/nether_alloy\":1b }} }"
             }
           ]
         }

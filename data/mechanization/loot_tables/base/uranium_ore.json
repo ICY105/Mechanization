@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.ore.uranium","color":"green","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1430, CustomModelData: 6421430, du_smelt_id:1430, OreDict:[\"oreUranium\"], HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 1430, CustomModelData: 6421430, du_smelt_id:1430, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"uranium_ore\", from:\"mechanization\", traits:{ block:1b, ore:1b, \"metal/uranium\":1b }} }"
             }
           ]
         }

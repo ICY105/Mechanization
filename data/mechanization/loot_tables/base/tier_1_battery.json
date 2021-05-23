@@ -14,11 +14,15 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"mech.block.battery.storage","color":"white","italic":false,"with":[100000]},{"translate":"mech.block.battery.rate","color":"white","italic":false,"with":[100]},{"translate":"mech.block.battery.range","color":"white","italic":false,"with":[12]}]
+			  "lore": [
+			    {"translate":"mech.block.battery.storage","color":"white","italic":false,"with":[100000]},
+				{"translate":"mech.block.battery.rate","color":"white","italic":false,"with":[100]},
+				{"translate":"mech.block.battery.range","color":"white","italic":false,"with":[12]}
+			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1000, CustomModelData: 6421000, HideFlags: 6,BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 1000, CustomModelData: 6421000, HideFlags: 6,BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"tier_1_battery\", from:\"mechanization\", traits:{ blcok:1b }} }"
             }
           ]
         }

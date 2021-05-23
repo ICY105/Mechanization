@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.dust.steel","color":"dark_gray","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1332, CustomModelData: 6421332, du_smelt_id:1332, OreDict:[\"dustSteel\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1332, CustomModelData: 6421332, du_smelt_id:1332, HideFlags: 32, ctc:{ id:\"raw_steel\", from:\"mechanization\", traits:{ item:1b, raw:1b, \"metal/steel\":1b, \"metal/expensive_steel\":1b }} }"
             }
           ]
         }

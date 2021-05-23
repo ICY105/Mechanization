@@ -13,8 +13,14 @@
 			  "name": {"translate":"mech.nugget.tin","color":"gray","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1312, CustomModelData: 6421312, OreDict:[\"nuggetTin\"], HideFlags: 32}"
+              "tag":"{mech_itemid: 1312, CustomModelData: 6421312, HideFlags: 32, ctc:{ id:\"tin_nugget\", from:\"mechanization\", traits:{ item:1b, nugget:1b, \"metal/tin\":1b }} }"
             }
           ]
         }
