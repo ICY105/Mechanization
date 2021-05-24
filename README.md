@@ -15,5 +15,3 @@ The wiki has overview videos, recipes, and in-depth descriptions of all items.
 [Releases](https://github.com/ImCoolYeah105/Mechanization/releases)
 
 ![prerelease](https://i.imgur.com/S04DKyE.png)
-
-Fan of the project? Consider supporting its development on [Patreon](https://www.patreon.com/ImCoolYeah105).
