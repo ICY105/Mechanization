@@ -1,0 +1,13 @@
+
+[
+  {
+	"condition": "minecraft:location_check",
+	"predicate": {
+	  "block": {
+		"nbt": "{Items:[
+		  {tag:{ctc:{traits:{ ingot:1b, \"metal/ender_alloy\":1b }}}}
+		]}"
+	  }
+	}
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.gear.conductive","color":"gold","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1355, CustomModelData: 6421355, HideFlags: 32, ctc:{ id:\"conductive_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/conductive_alloy\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

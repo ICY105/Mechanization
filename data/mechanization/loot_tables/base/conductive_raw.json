@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.dust.conductive","color":"gold","italic":false}
+			  "name": {"translate":"mech.raw.conductive","color":"gold","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",

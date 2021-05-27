@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.gear.plutonium","color":"blue","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1445, CustomModelData: 6421445, HideFlags: 32, ctc:{ id:\"plutonium_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/plutonium\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

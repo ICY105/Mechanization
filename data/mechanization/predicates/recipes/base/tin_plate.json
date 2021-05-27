@@ -1,0 +1,22 @@
+
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/base/tin_plate_1"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/base/tin_plate_2"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/base/tin_plate_3"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/base/tin_plate_4"
+    }
+  ]
+}

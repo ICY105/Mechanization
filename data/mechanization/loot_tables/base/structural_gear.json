@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.gear.structural","color":"blue","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1345, CustomModelData: 6421345, HideFlags: 32, ctc:{ id:\"structural_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/structural\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

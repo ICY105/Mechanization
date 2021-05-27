@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.gear.ender_alloy","color":"dark_purple","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1395, CustomModelData: 6421395, HideFlags: 32, ctc:{ id:\"ender_alloy_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/ender_alloy\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

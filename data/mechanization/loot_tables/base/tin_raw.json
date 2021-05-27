@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.dust.tin","color":"gray","italic":false}
+			  "name": {"translate":"mech.raw.tin","color":"gray","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.plate.uranium","color":"green","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1434, CustomModelData: 6421434, HideFlags: 32, ctc:{ id:\"uranium_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"metal/uranium\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

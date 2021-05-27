@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.plate.steel","color":"dark_gray","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1334, CustomModelData: 6421334, HideFlags: 32, ctc:{ id:\"steel_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"metal/steel\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

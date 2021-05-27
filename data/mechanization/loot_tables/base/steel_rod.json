@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.rod.steel","color":"dark_gray","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1336, CustomModelData: 6421336, HideFlags: 32, ctc:{ id:\"steel_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/steel\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

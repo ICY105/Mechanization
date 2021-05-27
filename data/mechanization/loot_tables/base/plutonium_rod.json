@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.rod.plutonium","color":"blue","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1446, CustomModelData: 6421446, HideFlags: 32, ctc:{ id:\"plutonium_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/plutonium\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

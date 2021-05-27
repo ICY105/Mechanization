@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.rod.titanium_steel","color":"light_purple","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1366, CustomModelData: 6421366, HideFlags: 32, ctc:{ id:\"titanium_steel_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/titanium_steel\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

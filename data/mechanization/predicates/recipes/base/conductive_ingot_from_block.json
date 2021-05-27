@@ -1,0 +1,13 @@
+
+[
+  {
+	"condition": "minecraft:location_check",
+	"predicate": {
+	  "block": {
+		"nbt": "{Items:[
+		  {tag:{ctc:{traits:{ block:1b, \"metal/conductive\":1b }}}}
+		]}"
+	  }
+	}
+  }
+]

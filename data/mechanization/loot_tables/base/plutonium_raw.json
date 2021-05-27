@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.dust.plutonium","color":"blue","italic":false}
+			  "name": {"translate":"mech.raw.plutonium","color":"blue","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",

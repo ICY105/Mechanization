@@ -1,0 +1,18 @@
+
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/base/tin_rod_1"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/base/tin_rod_2"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/base/tin_rod_3"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.rod.nether_alloy","color":"dark_red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1406, CustomModelData: 6421406, HideFlags: 32, ctc:{ id:\"nether_alloy_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/nether_alloy\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

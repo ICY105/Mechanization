@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.dust.reinforced_structural","color":"dark_aqua","italic":false}
+			  "name": {"translate":"mech.raw.reinforced_structural","color":"dark_aqua","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",

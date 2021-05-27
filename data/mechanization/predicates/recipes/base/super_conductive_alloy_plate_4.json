@@ -1,0 +1,21 @@
+
+[
+  {
+	"condition": "minecraft:location_check",
+	"predicate": {
+	  "block": {
+		"nbt": "{Items:[
+		  {Slot:12b,tag:{ctc:{traits:{ ingot:1b, \"metal/super_conductive_alloy\":1b }}}},
+		  {Slot:13b,tag:{ctc:{traits:{ ingot:1b, \"metal/super_conductive_alloy\":1b }}}},
+		  {Slot:21b,tag:{ctc:{traits:{ ingot:1b, \"metal/super_conductive_alloy\":1b }}}},
+		  {Slot:22b,tag:{ctc:{traits:{ ingot:1b, \"metal/super_conductive_alloy\":1b }}}}
+		]}"
+	  }
+	}
+  },
+  { "condition": "minecraft:inverted", "term": { "condition": "minecraft:location_check", "predicate": { "block": { "nbt": "{Items:[{Slot:2b}]}" }}}},
+  { "condition": "minecraft:inverted", "term": { "condition": "minecraft:location_check", "predicate": { "block": { "nbt": "{Items:[{Slot:3b}]}" }}}},
+  { "condition": "minecraft:inverted", "term": { "condition": "minecraft:location_check", "predicate": { "block": { "nbt": "{Items:[{Slot:4b}]}" }}}},
+  { "condition": "minecraft:inverted", "term": { "condition": "minecraft:location_check", "predicate": { "block": { "nbt": "{Items:[{Slot:11b}]}" }}}},
+  { "condition": "minecraft:inverted", "term": { "condition": "minecraft:location_check", "predicate": { "block": { "nbt": "{Items:[{Slot:20b}]}" }}}}
+]
