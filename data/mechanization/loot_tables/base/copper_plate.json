@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.plate.super_conductive","color":"dark_green","italic":false}
+			  "name": {"translate":"mech.plate.copper","color":"white","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1384, CustomModelData: 6421384, HideFlags: 32, ctc:{ id:\"super_conductive_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"metal/super_conductive_alloy\":1b }}}"
+              "tag":"{mech_itemid: 1470, CustomModelData: 6421470, HideFlags: 32, ctc:{ id:\"copper_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"metal/copper\":1b }}}"
             }
           ]
         }

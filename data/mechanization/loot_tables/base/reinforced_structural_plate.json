@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1374, CustomModelData: 6421374, HideFlags: 32, ctc:{ id:\"reinforced_structural_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"metal/reinforced_structural\":1b }}}"
+              "tag":"{mech_itemid: 1374, CustomModelData: 6421374, HideFlags: 32, ctc:{ id:\"reinforced_structural_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"metal/reinforced_structural_alloy\":1b }}}"
             }
           ]
         }

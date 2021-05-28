@@ -1,0 +1,14 @@
+
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/base/tier_1_battery_1"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/base/tier_1_battery_2"
+    }
+  ]
+}

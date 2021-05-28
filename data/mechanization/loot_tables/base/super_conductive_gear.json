@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1385, CustomModelData: 6421385, HideFlags: 32, ctc:{ id:\"super_conductive_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/super_conductive\":1b }}}"
+              "tag":"{mech_itemid: 1385, CustomModelData: 6421385, HideFlags: 32, ctc:{ id:\"super_conductive_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/super_conductive_alloy\":1b }}}"
             }
           ]
         }

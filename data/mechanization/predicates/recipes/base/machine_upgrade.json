@@ -1,0 +1,14 @@
+
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/base/machine_upgrade_1"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/base/machine_upgrade_2"
+    }
+  ]
+}

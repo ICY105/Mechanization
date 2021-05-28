@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1346, CustomModelData: 6421346, HideFlags: 32, ctc:{ id:\"structural_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/structural\":1b }}}"
+              "tag":"{mech_itemid: 1346, CustomModelData: 6421346, HideFlags: 32, ctc:{ id:\"structural_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/structural_alloy\":1b }}}"
             }
           ]
         }

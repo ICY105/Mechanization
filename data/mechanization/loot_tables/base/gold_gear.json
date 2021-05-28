@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.plate.super_conductive","color":"dark_green","italic":false}
+			  "name": {"translate":"mech.gear.gold","color":"white","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1384, CustomModelData: 6421384, HideFlags: 32, ctc:{ id:\"super_conductive_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"metal/super_conductive_alloy\":1b }}}"
+              "tag":"{mech_itemid: 1461, CustomModelData: 6421461, HideFlags: 32, ctc:{ id:\"gold_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/gold\":1b }}}"
             }
           ]
         }
