@@ -1,0 +1,21 @@
+
+[
+  {
+	"condition": "minecraft:location_check",
+	"predicate": {
+	  "block": {
+		"nbt": "{Items:[
+		  {Slot:11b, id:\"minecraft:copper_ingot\"},
+		  {Slot:12b, id:\"minecraft:copper_ingot\"},
+		  {Slot:20b, id:\"minecraft:copper_ingot\"},
+		  {Slot:21b, id:\"minecraft:copper_ingot\"}
+		]}"
+	  }
+	}
+  },
+  { "condition": "minecraft:inverted", "term": { "condition": "minecraft:location_check", "predicate": { "block": { "nbt": "{Items:[{Slot:2b}]}" }}}},
+  { "condition": "minecraft:inverted", "term": { "condition": "minecraft:location_check", "predicate": { "block": { "nbt": "{Items:[{Slot:3b}]}" }}}},
+  { "condition": "minecraft:inverted", "term": { "condition": "minecraft:location_check", "predicate": { "block": { "nbt": "{Items:[{Slot:4b}]}" }}}},
+  { "condition": "minecraft:inverted", "term": { "condition": "minecraft:location_check", "predicate": { "block": { "nbt": "{Items:[{Slot:13b}]}" }}}},
+  { "condition": "minecraft:inverted", "term": { "condition": "minecraft:location_check", "predicate": { "block": { "nbt": "{Items:[{Slot:22b}]}" }}}}
+]

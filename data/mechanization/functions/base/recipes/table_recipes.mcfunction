@@ -28,6 +28,10 @@ execute if predicate mechanization:recipes/base/energy_relay run loot replace bl
 execute if predicate mechanization:recipes/base/mechanical_manual run function mechanization:base/recipes/manual
 
 #resources
+execute if data block ~ ~ ~ Items[{id:"minecraft:iron_ingot"}] run function mechanization:base/recipes/iron
+execute if data block ~ ~ ~ Items[{id:"minecraft:gold_ingot"}] run function mechanization:base/recipes/gold
+execute if data block ~ ~ ~ Items[{id:"minecraft:copper_ingot"}] run function mechanization:base/recipes/copper
+
 execute if data block ~ ~ ~ Items[].tag.ctc.traits."metal/tin" run function mechanization:base/recipes/tin
 execute if data block ~ ~ ~ Items[].tag.ctc.traits."metal/titanium" run function mechanization:base/recipes/titanium
 execute if data block ~ ~ ~ Items[].tag.ctc.traits."metal/steel" run function mechanization:base/recipes/steel
