@@ -5,30 +5,30 @@ kill @e[tag=du_furnace,distance=..0.5]
 #### Machines
 
 #Tier 1 Battery
-execute if score in_0 mech_data matches 1000 run summon armor_stand ~ ~ ~ {Tags:["mech_storage1","mech_power_storage","mech_effects"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421000}}]}
+execute if score $id mech_data matches 1000 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_storage1","mech_power_storage","mech_effects"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6429000},Count:1b}}
 
 #Tier 2 Battery
-execute if score in_0 mech_data matches 1001 run summon armor_stand ~ ~ ~ {Tags:["mech_storage2","mech_power_storage","mech_effects"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421009}}]}
+execute if score $id mech_data matches 1001 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_storage2","mech_power_storage","mech_effects"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6429009},Count:1b}}
 
 #Tier 3 Battery
-execute if score in_0 mech_data matches 1002 run summon armor_stand ~ ~ ~ {Tags:["mech_storage3","mech_power_storage","mech_effects"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421018}}]}
-execute if score in_0 mech_data matches 1006 run summon armor_stand ~ ~ ~ {Tags:["mech_storage3","mech_power_storage","mech_effects","mech_storage_creative"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],CustomModelData:6421023}}]}
+execute if score $id mech_data matches 1002 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_storage3","mech_power_storage","mech_effects"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6429018},Count:1b}}
+execute if score $id mech_data matches 1006 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_energy_relay","mech_receiver","mech_no_upgrade"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6429023},Count:1b}}
 
 #Quantum Battery
-execute if score in_0 mech_data matches 1003 run summon armor_stand ~ ~ ~ {Tags:["mech_storageq","mech_power_storage","mech_effects"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{Enchantments:[{id:"minecraft:binding_curse",lvl:1s}],CustomModelData:6421027}}]}
-execute if score in_0 mech_data matches 1003 run scoreboard players set @e[tag=mech_storageq,distance=..0.5] mech_data 0
+execute if score $id mech_data matches 1003 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_storageq","mech_power_storage","mech_effects"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6429027},Count:1b}}
+execute if score $id mech_data matches 1003 run scoreboard players set @e[tag=mech_storageq,distance=..0.5] mech_data 0
 
 #Energy Relay
-execute if score in_0 mech_data matches 1004 run summon armor_stand ~ ~ ~ {Tags:["mech_energy_relay","mech_receiver","mech_no_upgrade"],Marker:1b,Invisible:1,Invulnerable:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,mech_data:0,CustomModelData:6421036}}]}
-execute if score in_0 mech_data matches 1004 run scoreboard players set @e[tag=mech_energy_relay,distance=..0.5] mech_data 0
-execute if score in_0 mech_data matches 1004 run scoreboard players set @e[tag=mech_energy_relay,distance=..0.5] mech_power 0
+execute if score $id mech_data matches 1004 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_energy_relay","mech_receiver","mech_no_upgrade"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421004},Count:1b}}
+execute if score $id mech_data matches 1004 run scoreboard players set @e[tag=mech_energy_relay,distance=..0.5] mech_data 0
+execute if score $id mech_data matches 1004 run scoreboard players set @e[tag=mech_energy_relay,distance=..0.5] mech_power 0
 
 #general cases
-execute if score in_0 mech_data matches 1000..1006 run setblock ~ ~ ~ barrier replace
-execute if score in_0 mech_data matches 1000..1004 run scoreboard players set @e[tag=mech_power_storage,distance=..0.75] mech_power 0
+execute if score $id mech_data matches 1000..1006 run setblock ~ ~ ~ barrier replace
+execute if score $id mech_data matches 1000..1004 run scoreboard players set @e[tag=mech_power_storage,distance=..0.75] mech_power 0
 
 #machine crafter
-execute if score $id mech_data matches 1005 run summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mech_machine_crafter","du_crafter"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421037},Count:1b}}
+execute if score $id mech_data matches 1005 run summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mech_machine_crafter","du_crafter"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421005},Count:1b}}
 execute if score $id mech_data matches 1005 run setblock ~ ~ ~ minecraft:barrel{CustomName:'[{"translate":"offset.-8","font":"space:default","with":[{"text":"\\uee06","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-256","font":"space:default","with":[{"translate":"mech.block.machine_crafting_table","color":"dark_aqua","italic":false,"font":"minecraft:default"}]}]'}
 
 #run global functions
@@ -39,13 +39,13 @@ scoreboard players operation @e[scores={mech_power=0..},sort=nearest,limit=1,dis
 kill @e[tag=du_furnace,type=area_effect_cloud,distance=..0.75]
 
 #set stored data
-execute store result score temp_1 mech_data run data get entity @s SelectedItem.tag.mech_upgrade
-execute if score temp_1 mech_data matches 1..3 run tag @e[scores={mech_power=0..},sort=nearest,limit=1,distance=..0.75] add mech_upgraded
-execute if score temp_1 mech_data matches 2 run tag @e[scores={mech_power=0..},sort=nearest,limit=1,distance=..0.75] add mech_upgrade_nether
-execute if score temp_1 mech_data matches 3 run tag @e[scores={mech_power=0..},sort=nearest,limit=1,distance=..0.75] add mech_upgrade_ender
+execute store result score $temp_1 mech_data run data get entity @s SelectedItem.tag.mech_upgrade
+execute if score $temp_1 mech_data matches 1..3 run tag @e[scores={mech_power=0..},sort=nearest,limit=1,distance=..0.75] add mech_upgraded
+execute if score $temp_1 mech_data matches 2 run tag @e[scores={mech_power=0..},sort=nearest,limit=1,distance=..0.75] add mech_upgrade_nether
+execute if score $temp_1 mech_data matches 3 run tag @e[scores={mech_power=0..},sort=nearest,limit=1,distance=..0.75] add mech_upgrade_ender
 
-execute store result score temp_1 mech_data run data get entity @s SelectedItem.tag.mech_energy
-execute if score temp_1 mech_data matches 1.. run scoreboard players operation @e[scores={mech_power=0..},sort=nearest,limit=1,distance=..0.75] mech_power = temp_1 mech_data
+execute store result score $temp_1 mech_data run data get entity @s SelectedItem.tag.mech_energy
+execute if score $temp_1 mech_data matches 1.. run scoreboard players operation @e[scores={mech_power=0..},sort=nearest,limit=1,distance=..0.75] mech_power = $temp_1 mech_data
 
 #### Resources
 
