@@ -23,7 +23,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1003, CustomModelData: 6421027, HideFlags: 6,BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 1003, CustomModelData: 6421003, HideFlags: 6,BlockEntityTag: {Lock: \"§mechanization\"}}"
             }
           ]
         }

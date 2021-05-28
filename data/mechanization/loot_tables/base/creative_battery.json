@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1006, CustomModelData: 6421026, HideFlags: 6, Enchantments: [{lvl: 1s, id: \"minecraft:infinity\"}], BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"creative_battery\", from:\"mechanization\", traits:{ block:1b }} }"
+              "tag":"{mech_itemid: 1006, CustomModelData: 6421002, HideFlags: 6, Enchantments: [{lvl: 1s, id: \"minecraft:infinity\"}], BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"creative_battery\", from:\"mechanization\", traits:{ block:1b }} }"
             }
           ]
         }

@@ -23,7 +23,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1002, CustomModelData: 6421018, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"tier_3_battery\", from:\"mechanization\", traits:{ block:1b }} }"
+              "tag":"{mech_itemid: 1002, CustomModelData: 6421002, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"tier_3_battery\", from:\"mechanization\", traits:{ block:1b }} }"
             }
           ]
         }

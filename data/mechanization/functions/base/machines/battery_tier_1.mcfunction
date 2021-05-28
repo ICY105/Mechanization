@@ -39,7 +39,7 @@ function mechanization:base/energy/battery
 scoreboard players operation in_0 mech_data = in_2 mech_data
 
 scoreboard players operation in_1 mech_data = @s mech_power
-scoreboard players set in_2 mech_data 6421000
+scoreboard players set in_2 mech_data 6421900
 scoreboard players set temp_0 mech_data 7
 
 scoreboard players operation in_0 mech_data /= temp_0 mech_data

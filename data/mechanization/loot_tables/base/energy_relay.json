@@ -23,7 +23,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1004, CustomModelData: 6421036, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"energy_relay\", from:\"mechanization\", traits:{ block:1b }} }"
+              "tag":"{mech_itemid: 1004, CustomModelData: 6421004, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"energy_relay\", from:\"mechanization\", traits:{ block:1b }} }"
             }
           ]
         }

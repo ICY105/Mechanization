@@ -5,17 +5,17 @@ kill @e[tag=du_furnace,distance=..0.5]
 #### Machines
 
 #Tier 1 Battery
-execute if score $id mech_data matches 1000 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_storage1","mech_power_storage","mech_effects"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6429000},Count:1b}}
+execute if score $id mech_data matches 1000 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_storage1","mech_power_storage","mech_effects"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421900},Count:1b}}
 
 #Tier 2 Battery
-execute if score $id mech_data matches 1001 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_storage2","mech_power_storage","mech_effects"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6429009},Count:1b}}
+execute if score $id mech_data matches 1001 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_storage2","mech_power_storage","mech_effects"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421909},Count:1b}}
 
 #Tier 3 Battery
-execute if score $id mech_data matches 1002 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_storage3","mech_power_storage","mech_effects"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6429018},Count:1b}}
-execute if score $id mech_data matches 1006 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_energy_relay","mech_receiver","mech_no_upgrade"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6429023},Count:1b}}
+execute if score $id mech_data matches 1002 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_storage3","mech_power_storage","mech_effects"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421918},Count:1b}}
+execute if score $id mech_data matches 1006 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_energy_relay","mech_receiver","mech_no_upgrade"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421923},Count:1b}}
 
 #Quantum Battery
-execute if score $id mech_data matches 1003 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_storageq","mech_power_storage","mech_effects"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6429027},Count:1b}}
+execute if score $id mech_data matches 1003 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_storageq","mech_power_storage","mech_effects"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421927},Count:1b}}
 execute if score $id mech_data matches 1003 run scoreboard players set @e[tag=mech_storageq,distance=..0.5] mech_data 0
 
 #Energy Relay
