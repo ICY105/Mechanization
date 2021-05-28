@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1008, CustomModelData: 6421417, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"tier_3_machine_frame\", from:\"mechanization\", traits:{ block:1b, \"machine_frame/tier3\":1b }} }"
+              "tag":"{mech_itemid: 1009, CustomModelData: 6421040, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"tier_3_machine_frame\", from:\"mechanization\", traits:{ block:1b, \"machine_frame/tier3\":1b }} }"
             }
           ]
         }

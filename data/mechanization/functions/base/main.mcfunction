@@ -2,9 +2,6 @@
 #player
 execute as @a at @s run function mechanization:base/player
 
-#Assign IDs
-#execute as @e[scores={mech_power=-10000..},tag=!mech_has_gridid] run function mechanization:base/machines/assign_id
-
 #Machine Crafter
 execute as @e[tag=mech_machine_crafter] at @s run function mechanization:base/machines/machine_crafting_table
 
@@ -16,3 +13,6 @@ execute if score $base.timer_20 du_data matches 4 run function mechanization:bas
 
 #Energy Relay
 execute if score $base.timer_20 du_data matches 5 as @e[type=armor_stand,tag=mech_energy_relay] at @s run function mechanization:base/machines/relay/energy_relay
+
+#cleanup abandoned resource blocks
+execute if score $base.timer_100 du_data matches 99 as @e[tag=mech_resource_block] at @s unless block ~ ~ ~ minecraft:barrier run kill @s

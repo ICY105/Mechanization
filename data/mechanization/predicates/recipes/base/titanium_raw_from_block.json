@@ -1,0 +1,11 @@
+
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "block": {
+      "nbt": "{Items:[
+        {tag:{ctc:{traits:{ raw_packed:1b, \"metal/titanium\":1b }}}}
+      ]}"
+    }
+  }
+}

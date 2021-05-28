@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:blast_furnace",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.raw_block.ender_alloy","color":"dark_purple","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1397, CustomModelData: 6421397, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"ender_alloy_raw_block\", from:\"mechanization\", traits:{ block:1b, raw_packed:1b, \"metal/ender_alloy\":1b }} }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

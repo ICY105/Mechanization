@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:blast_furnace",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.raw_block.reinforced_structural","color":"dark_aqua","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1377, CustomModelData: 6421377, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"reinforced_structural_alloy_raw_block\", from:\"mechanization\", traits:{ block:1b, raw_packed:1b, \"metal/reinforced_structural_alloy\":1b }} }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

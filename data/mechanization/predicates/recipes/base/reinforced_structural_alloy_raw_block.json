@@ -1,0 +1,19 @@
+
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "block": {
+      "nbt": "{Items:[
+        {Slot:2b,tag:{ctc:{traits:{ raw:1b, \"metal/reinforced_structural_alloy\":1b }}}},
+        {Slot:3b,tag:{ctc:{traits:{ raw:1b, \"metal/reinforced_structural_alloy\":1b }}}},
+        {Slot:4b,tag:{ctc:{traits:{ raw:1b, \"metal/reinforced_structural_alloy\":1b }}}},
+        {Slot:11b,tag:{ctc:{traits:{ raw:1b, \"metal/reinforced_structural_alloy\":1b }}}},
+        {Slot:12b,tag:{ctc:{traits:{ raw:1b, \"metal/reinforced_structural_alloy\":1b }}}},
+        {Slot:13b,tag:{ctc:{traits:{ raw:1b, \"metal/reinforced_structural_alloy\":1b }}}},
+        {Slot:20b,tag:{ctc:{traits:{ raw:1b, \"metal/reinforced_structural_alloy\":1b }}}},
+        {Slot:21b,tag:{ctc:{traits:{ raw:1b, \"metal/reinforced_structural_alloy\":1b }}}},
+        {Slot:22b,tag:{ctc:{traits:{ raw:1b, \"metal/reinforced_structural_alloy\":1b }}}}
+      ]}"
+    }
+  }
+}

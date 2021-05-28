@@ -5,7 +5,7 @@
 	"predicate": {
 	  "block": {
 		"nbt": "{Items:[
-		  {tag:{ctc:{traits:{ block:1b, \"metal/nether_alloy\":1b }}}}
+		  {tag:{ctc:{traits:{ packed:1b, \"metal/nether_alloy\":1b }}}}
 		]}"
 	  }
 	}

@@ -32,6 +32,7 @@ Base Module [01]: {
 		Tin Plate			[15-1315]
 		Tin Gear			[16-1316]
 		Tin Rod				[17-1317]
+		Tin Raw Block		[18-1318]
 		
 		Titanium Ore		[20-1320]
 		Titanium Ingot		[21-1321]
@@ -41,6 +42,7 @@ Base Module [01]: {
 		Titanium Plate		[25-1325]
 		Titanium Gear		[26-1326]
 		Titanium Rod		[27-1327]
+		Titanium Raw Block	[28-1328]
 		
 		Steel Ingot			[30-1330]
 		Steel Nugget		[31-1331]
@@ -49,6 +51,7 @@ Base Module [01]: {
 		Steel Plate			[34-1334]
 		Steel Gear			[35-1335]
 		Steel Rod			[36-1336]
+		Steel Raw Block		[37-1337]
 		
 		Structural Ingot	[40-1340]
 		Structural Nugget	[41-1341]
@@ -57,6 +60,7 @@ Base Module [01]: {
 		Structural Plate	[44-1344]
 		Structural Gear		[45-1345]
 		Structural Rod		[46-1346]
+		Structural Raw Block[47-1347]
 		
 		Conductive Ingot	[50-1350]
 		Conductive Nugget	[51-1351]
@@ -65,6 +69,7 @@ Base Module [01]: {
 		Conductive Plate	[54-1354]
 		Conductive Gear		[55-1355]
 		Conductive Rod		[56-1356]
+		Conductive Raw Block[57-157]
 		
 		Titanium Steel Ingot			[60-1360]
 		Titanium Steel Nugget			[61-1361]
@@ -73,6 +78,7 @@ Base Module [01]: {
 		Titanium Steel Plate			[64-1364]
 		Titanium Steel Gear				[65-1365]
 		Titanium Steel Rod				[66-1366]
+		Titanium Steel Raw Block		[67-1367]
 		
 		Reinforced Structural Ingot		[70-1370]
 		Reinforced Structural Nugget	[71-1371]
@@ -81,6 +87,7 @@ Base Module [01]: {
 		Reinforced Structural Plate		[74-1374]
 		Reinforced Structural Gear		[75-1375]
 		Reinforced Structural Rod		[76-1376]
+		Reinforced Structural Raw Block	[77-1377]
 		
 		Super Conductive Ingot		[80-1380]
 		Super Conductive Nugget		[81-1381]
@@ -89,6 +96,7 @@ Base Module [01]: {
 		Super Conductive Plate		[84-1384]
 		Super Conductive Gear		[85-1385]
 		Super Conductive Rod		[86-1386]
+		Super Conductive Raw Block	[87-1387]
 		
 		Ender Alloy Ingot		[90-1390]
 		Ender Alloy Nugget		[91-1391]
@@ -97,6 +105,7 @@ Base Module [01]: {
 		Ender Alloy Plate		[94-1394]
 		Ender Alloy Gear		[95-1395]
 		Ender Alloy Rod			[96-1396]
+		Ender Alloy Raw Block	[97-1397]
 	}
 	Resources 2 [4]: {
 		Nether Alloy Ingot		[00-1400]
@@ -106,6 +115,7 @@ Base Module [01]: {
 		Nether Alloy Plate		[04-1404]
 		Nether Alloy Gear		[05-1405]
 		Nether Alloy Rod		[06-1406]
+		Nether Alloy Raw Block	[07-1407]
 		
 		Crystal Composite		[10-1410]
 		Crystal Block			[11-1411]
@@ -115,9 +125,10 @@ Base Module [01]: {
 		Uranium Nugget		[32-1432]
 		Uranium Raw			[33-1433]
 		Uranium Block		[34-1434]
-		Uranium Plate		[34-1434]
-		Uranium Gear		[35-1435]
-		Uranium Rod			[36-1436]
+		Uranium Plate		[35-1434]
+		Uranium Gear		[36-1435]
+		Uranium Rod			[37-1436]
+		Uranium Raw Block	[38-1437]
 		
 		Plutonium Ingot		[40-1440]
 		Plutonium Nugget	[41-1441]
@@ -126,6 +137,7 @@ Base Module [01]: {
 		Plutonium Plate		[44-1444]
 		Plutonium Gear		[45-1445]
 		Plutonium Rod		[46-1446]
+		Plutonium Raw Block	[47-1447]
 		
 		Iron Plate			[50-1450]
 		Iron Gear			[51-1451]

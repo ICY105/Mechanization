@@ -49,52 +49,64 @@ execute if score temp_1 mech_data matches 1.. run scoreboard players operation @
 
 #### Resources
 
-#tin
-execute if score in_0 mech_data matches 1310 if score $base.config.ore_compatibility mech_data matches 0 run setblock ~ ~ ~ minecraft:stone_slab[waterlogged=true,type=double]
-execute if score in_0 mech_data matches 1310 if score $base.config.ore_compatibility mech_data matches 1 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421310,du_block_id:1310}}]}}
-execute if score in_0 mech_data matches 1314 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421314,du_block_id:1314}}]}}
-
-#titanium
-execute if score in_0 mech_data matches 1320 if score $base.config.ore_compatibility mech_data matches 0 run setblock ~ ~ ~ minecraft:smooth_stone_slab[waterlogged=true,type=double]
-execute if score in_0 mech_data matches 1320 if score $base.config.ore_compatibility mech_data matches 1 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421320,du_block_id:1320}}]}}
-execute if score in_0 mech_data matches 1324 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421324,du_block_id:1324}}]}}
-
-#steel
-execute if score in_0 mech_data matches 1333 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421333,du_block_id:1333}}]}}
-
-#structural
-execute if score in_0 mech_data matches 1343 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421343,du_block_id:1343}}]}}
-
-#conductive
-execute if score in_0 mech_data matches 1353 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421353,du_block_id:1353}}]}}
-
-#titanium-steel
-execute if score in_0 mech_data matches 1363 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421363,du_block_id:1363}}]}}
-
-#reinforced structural
-execute if score in_0 mech_data matches 1373 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421373,du_block_id:1373}}]}}
-
-#super conductive
-execute if score in_0 mech_data matches 1383 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421383,du_block_id:1383}}]}}
-
-#ender
-execute if score in_0 mech_data matches 1393 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421393,du_block_id:1393}}]}}
+execute if score $id mech_data matches 1007..1009 if block ~ ~ ~ minecraft:blast_furnace run setblock ~ ~ ~ minecraft:barrier
+execute if score $id mech_data matches 1300..1499 if block ~ ~ ~ minecraft:blast_furnace run setblock ~ ~ ~ minecraft:barrier
 
 #machine frames
-execute if score in_0 mech_data matches 1415 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421415,du_block_id:1415}}]}}
-execute if score in_0 mech_data matches 1416 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421416,du_block_id:1416}}]}}
-execute if score in_0 mech_data matches 1417 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421417,du_block_id:1417}}]}}
-
-#nether
-execute if score in_0 mech_data matches 1403 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421403,du_block_id:1403}}]}}
+execute if score $id mech_data matches 1007 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421038},Count:1b}}
+execute if score $id mech_data matches 1008 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421039},Count:1b}}
+execute if score $id mech_data matches 1009 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421040},Count:1b}}
 
 #crystal
-execute if score in_0 mech_data matches 1411 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421411,du_block_id:1411}}]}}
+execute if score $id mech_data matches 1411 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421411},Count:1b}}
+
+#tin
+execute if score $id mech_data matches 1310 run setblock ~ ~ ~ minecraft:stone_slab[waterlogged=true,type=double]
+execute if score $id mech_data matches 1314 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421314},Count:1b}}
+execute if score $id mech_data matches 1318 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421318},Count:1b}}
+
+#titanium
+execute if score $id mech_data matches 1320 run setblock ~ ~ ~ minecraft:smooth_stone_slab[waterlogged=true,type=double]
+execute if score $id mech_data matches 1324 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421324},Count:1b}}
+execute if score $id mech_data matches 1328 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421328},Count:1b}}
+
+#steel
+execute if score $id mech_data matches 1333 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421333},Count:1b}}
+execute if score $id mech_data matches 1337 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421337},Count:1b}}
+
+#structural
+execute if score $id mech_data matches 1343 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421343},Count:1b}}
+execute if score $id mech_data matches 1347 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421347},Count:1b}}
+
+#conductive
+execute if score $id mech_data matches 1353 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421353},Count:1b}}
+execute if score $id mech_data matches 1357 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421357},Count:1b}}
+
+#titanium-steel
+execute if score $id mech_data matches 1363 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421363},Count:1b}}
+execute if score $id mech_data matches 1367 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421367},Count:1b}}
+
+#reinforced structural
+execute if score $id mech_data matches 1373 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421373},Count:1b}}
+execute if score $id mech_data matches 1377 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421377},Count:1b}}
+
+#super conductive
+execute if score $id mech_data matches 1383 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421383},Count:1b}}
+execute if score $id mech_data matches 1387 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421387},Count:1b}}
+
+#ender
+execute if score $id mech_data matches 1393 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421393},Count:1b}}
+execute if score $id mech_data matches 1397 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421397},Count:1b}}
+
+#nether
+execute if score $id mech_data matches 1403 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421403},Count:1b}}
+execute if score $id mech_data matches 1407 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421407},Count:1b}}
 
 #uranium
-execute if score in_0 mech_data matches 1430 if score $base.config.ore_compatibility mech_data matches 0 run setblock ~ ~ ~ minecraft:cobblestone_slab[waterlogged=true,type=double]
-execute if score in_0 mech_data matches 1430 if score $base.config.ore_compatibility mech_data matches 1 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421430,du_block_id:1430}}]}}
-execute if score in_0 mech_data matches 1434 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421434,du_block_id:1434}}]}}
+execute if score $id mech_data matches 1430 run setblock ~ ~ ~ minecraft:cobblestone_slab[waterlogged=true,type=double]
+execute if score $id mech_data matches 1434 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421434},Count:1b}}
+execute if score $id mech_data matches 1438 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421438},Count:1b}}
 
 #plutonium
-execute if score in_0 mech_data matches 1443 run setblock ~ ~ ~ minecraft:spawner{SpawnCount:0,SpawnRange:0,Delay:0,MinSpawnDelay:20000,MaxSpawnDelay:20000,MaxNearbyEntities:0,RequiredPlayerRange:0,SpawnData:{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421443,du_block_id:1443}}]}}
+execute if score $id mech_data matches 1443 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421443},Count:1b}}
+execute if score $id mech_data matches 1447 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421447},Count:1b}}
