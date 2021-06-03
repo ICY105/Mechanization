@@ -32,7 +32,7 @@ execute if entity @s[tag=mech_no_effects] run scoreboard players set in_4 mech_d
 execute if entity @s[tag=mech_effects] run scoreboard players set in_4 mech_data 1
 
 #call
-function mechanization:base/energy/battery
+function mechanization:base/energy/capacitor
 
 
 ### energy display

@@ -1,0 +1,19 @@
+[
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mechanization:base/valid_pull_capacitor_1"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mechanization:base/valid_pull_capacitor_2"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mechanization:base/valid_pull_capacitor_3"
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mechanization:matches_gridid"
+  },
+  {
+    "condition": "minecraft:alternative",
+    "terms": [
+      {
+        "condition": "minecraft:reference",
+        "name": "mechanization:base/valid_get_capacitor_1"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mechanization:base/valid_get_capacitor_2"
+      },
+      {
+        "condition": "minecraft:reference",
+        "name": "mechanization:base/valid_get_capacitor_3"
+      }
+    ]
+  }
+]

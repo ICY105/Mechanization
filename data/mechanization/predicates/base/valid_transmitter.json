@@ -1,0 +1,16 @@
+[
+  {
+    "condition": "minecraft:reference",
+    "name": "mechanization:matches_gridid"
+  },
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "mech_power": {
+        "min": 1,
+        "max": 2000000000
+      }
+    }
+  }
+]

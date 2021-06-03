@@ -15,7 +15,7 @@ execute if score $id mech_data matches 1011 run summon minecraft:item_frame ~ ~ 
 execute if score $id mech_data matches 1012 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_capacitor3","mech_power_storage","mech_effects"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421954},Count:1b}}
 
 #creative battery
-execute if score $id mech_data matches 1006 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_energy_relay","mech_receiver","mech_no_upgrade"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421923},Count:1b}}
+execute if score $id mech_data matches 1006 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery3","mech_power_storage","mech_effects","mech_creative_battery"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421923},Count:1b}}
 
 #Quantum Battery
 execute if score $id mech_data matches 1003 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery_qu","mech_power_storage","mech_effects"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421927},Count:1b}}
