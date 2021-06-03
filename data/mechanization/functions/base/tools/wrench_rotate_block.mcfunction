@@ -12,6 +12,7 @@ execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:carved_pumpki
 execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:jack_o_lantern run function mechanization:base/tools/wrench_rotate/jack_o_lantern
 execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:repeater run function mechanization:base/tools/wrench_rotate/repeater
 execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:comparator run function mechanization:base/tools/wrench_rotate/comparator
+execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:deepslate run function mechanization:base/tools/wrench_rotate/deepslate
 
 execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:chest run function mechanization:base/tools/wrench_rotate/chest
 execute if score in_0 mech_data matches 0 if block ~ ~ ~ minecraft:trapped_chest run function mechanization:base/tools/wrench_rotate/trapped_chest

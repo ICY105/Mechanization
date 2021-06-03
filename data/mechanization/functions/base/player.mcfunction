@@ -18,9 +18,6 @@ execute if entity @s[tag=mech_right_click] if score @s mech_usedid matches 1104 
 execute store result score temp_0 mech_data run data get entity @s SelectedItem.tag.mech_version
 execute if data entity @s SelectedItem{id:"minecraft:written_book"}.tag{CustomModelData:6421105} if score temp_0 mech_data matches ..2 run function mechanization:base/utils/replace_manual
 
-#Craft Machine Crafter
-execute if score @s mech_crafter matches 1.. run function mechanization:base/machines/crafter
-
 #assign grid id
 execute unless score @s mech_gridid matches -2147483648.. run scoreboard players set @s mech_gridid 0
 scoreboard players enable @s mech_gridid
