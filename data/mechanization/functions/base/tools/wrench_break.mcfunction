@@ -1,7 +1,7 @@
 
 #get data
 scoreboard players set temp_3 mech_data 0
-scoreboard players operation temp_3 mech_data = @s[tag=!mech_storageq] mech_power
+scoreboard players operation temp_3 mech_data = @s[tag=!mech_battery_qu] mech_power
 
 scoreboard players set temp_4 mech_data 0
 execute if entity @s[tag=mech_upgraded] run scoreboard players set temp_4 mech_data 1
@@ -9,10 +9,15 @@ execute if entity @s[tag=mech_upgrade_nether] run scoreboard players set temp_4 
 execute if entity @s[tag=mech_upgrade_ender] run scoreboard players set temp_4 mech_data 3
 
 #Batteries
-execute if entity @s[tag=mech_storage1] run loot spawn ~ ~ ~ loot mechanization:base/tier_1_battery
-execute if entity @s[tag=mech_storage2] run loot spawn ~ ~ ~ loot mechanization:base/tier_2_battery
-execute if entity @s[tag=mech_storage3] run loot spawn ~ ~ ~ loot mechanization:base/tier_3_battery
-execute if entity @s[tag=mech_storageq] run loot spawn ~ ~ ~ loot mechanization:base/quantum_battery
+execute if entity @s[tag=mech_battery1] run loot spawn ~ ~ ~ loot mechanization:base/tier_1_battery
+execute if entity @s[tag=mech_battery2] run loot spawn ~ ~ ~ loot mechanization:base/tier_2_battery
+execute if entity @s[tag=mech_battery3] run loot spawn ~ ~ ~ loot mechanization:base/tier_3_battery
+execute if entity @s[tag=mech_battery_qu] run loot spawn ~ ~ ~ loot mechanization:base/quantum_battery
+
+execute if entity @s[tag=mech_capacitor1] run loot spawn ~ ~ ~ loot mechanization:base/tier_1_capacitor
+execute if entity @s[tag=mech_capacitor2] run loot spawn ~ ~ ~ loot mechanization:base/tier_2_capacitor
+execute if entity @s[tag=mech_capacitor3] run loot spawn ~ ~ ~ loot mechanization:base/tier_3_capacitor
+
 execute if entity @s[tag=mech_power_storage] at @s run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_power_storage]
 

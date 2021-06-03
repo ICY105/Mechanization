@@ -10,8 +10,8 @@ tag @s[tag=mech_power_storage,tag=mech_effects] remove mech_effects
 tag @s[tag=mech_power_storage,tag=mech_temp_effects] add mech_effects
 tag @s[tag=mech_power_storage,tag=mech_temp_effects] remove mech_temp_effects
 
-execute as @s[tag=mech_power_storage,tag=mech_effects] run title @p actionbar [{"translate":"mech.block.battery.effects_on","color":"dark_aqua","bold":false}]
-execute as @s[tag=mech_power_storage,tag=mech_no_effects] run title @p actionbar [{"translate":"mech.block.battery.effects_off","color":"dark_aqua","bold":false}]
+execute as @s[tag=mech_power_storage,tag=mech_effects] run title @p actionbar [{"translate":"mech.text.multimeter.effects_on","color":"dark_aqua","bold":false}]
+execute as @s[tag=mech_power_storage,tag=mech_no_effects] run title @p actionbar [{"translate":"mech.text.multimeter.effects_off","color":"dark_aqua","bold":false}]
 
 #energy relay
 tag @s[tag=mech_energy_relay] remove mech_receiver

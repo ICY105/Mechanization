@@ -15,9 +15,9 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"translate":"mech.block.battery.storage","color":"white","italic":false,"with":[350000]},
-				{"translate":"mech.block.battery.rate","color":"white","italic":false,"with":[400]},
-				{"translate":"mech.block.battery.range","color":"white","italic":false,"with":[16]},
+			    {"translate":"mech.lore.storage","color":"white","italic":false,"with":[200000]},
+				{"translate":"mech.lore.transfer","color":"white","italic":false,"with":[36]},
+				{"translate":"mech.lore.range","color":"white","italic":false,"with":[12]},
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},

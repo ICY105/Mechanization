@@ -2,4 +2,4 @@ execute if predicate du:entity/is_sneaking if entity @s[tag=!mech_tut_multimeter
 execute if predicate du:entity/is_sneaking run tag @s add mech_tut_multimeter
 
 scoreboard players set in_0 mech_data 120
-execute positioned ~ ~1.61 ~ run function mechanization:base/tools/multimeter_loop
+execute anchored eyes positioned ^ ^ ^ run function mechanization:base/tools/multimeter_loop

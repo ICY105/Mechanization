@@ -14,6 +14,9 @@ Base Module [01]: {
 		Tier 1 Machine Frame	[07-1007]
 		Tier 2 Machine Frame	[08-1008]
 		Tier 3 Machine Frame	[09-1009]
+		Tier 1 Capacitor		[10-1010]
+		Tier 2 Capacitor		[11-1011]
+		Tier 3 Capacitor		[12-1012]
 	}
 	Items [1]: {
 		Wrench				[00-1100]

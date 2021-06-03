@@ -1,0 +1,21 @@
+{
+	"condition": "minecraft:location_check",
+	"predicate": {
+	  "block": {
+		"nbt": "{Items:[
+		  {Slot:2b, id:\"minecraft:black_wool\"},
+		  {Slot:3b, tag:{ctc:{traits:{ gear:1b, \"metal/super_conductive_alloy\":1b }}}},
+		  {Slot:4b, id:\"minecraft:black_wool\"},
+		  
+		  {Slot:11b, tag:{ctc:{traits:{ plate:1b,\"metal/ender_alloy\":1b }}}},
+		  {Slot:12b, tag:{ctc:{traits:{ \"machine_frame/tier3\":1b }}}},
+		  {Slot:13b, tag:{ctc:{traits:{ plate:1b,\"metal/ender_alloy\":1b }}}},
+		  
+		  {Slot:20b, id:\"minecraft:black_wool\"},
+		  {Slot:21b, tag:{ctc:{traits:{ rod:1b, \"metal/super_conductive_alloy\":1b }}}},
+		  {Slot:22b, id:\"minecraft:black_wool\"}
+		]}"
+	  }
+	}
+}
+  

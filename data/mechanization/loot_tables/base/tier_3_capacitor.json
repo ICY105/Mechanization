@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:blast_furnace",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.block.capacitor.tier_3","color":"dark_purple","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"translate":"mech.lore.storage","color":"white","italic":false,"with":[80000]},
+				{"translate":"mech.lore.transfer","color":"white","italic":false,"with":[1000]},
+				{"translate":"mech.lore.range","color":"white","italic":false,"with":[24]},
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1012, CustomModelData: 6421012, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"tier_3_capacitor\", from:\"mechanization\", traits:{ block:1b }} }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
