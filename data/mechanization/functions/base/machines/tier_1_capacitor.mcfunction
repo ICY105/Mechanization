@@ -34,6 +34,16 @@ execute if entity @s[tag=mech_effects] run scoreboard players set in_4 mech_data
 #call
 function mechanization:base/energy/capacitor
 
+### energy drain
+scoreboard players operation temp_0 mech_data = in_2 mech_data
+scoreboard players operation temp_0 mech_data *= $cons.3 du_data
+scoreboard players operation temp_0 mech_data /= $cons.10 du_data
+
+scoreboard players operation temp_1 mech_data = @s mech_power
+scoreboard players operation temp_1 mech_data -= temp_0 mech_data
+scoreboard players operation temp_1 mech_data /= $cons.100 du_data
+
+execute if score @s mech_power > temp_0 mech_data run scoreboard players operation @s mech_power -= temp_1 mech_data
 
 ### energy display
 scoreboard players operation in_0 mech_data = in_2 mech_data
