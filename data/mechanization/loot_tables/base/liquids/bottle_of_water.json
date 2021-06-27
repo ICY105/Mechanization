@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:potion",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.filled_bottle","italic":false,"with":[{"translate":"mech.liquid.water"}]}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.liquid_amount","color":"gray","italic":false,"with":[{"text":"333"}]},
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1107, HideFlags: 38, CustomPotionColor:35071, ctc:{ id:\"glass_bottle\", from:\"mechanization\", traits:{ item:1b, liquid:{water:1b, amount:250, temperature:20, color:35071} }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

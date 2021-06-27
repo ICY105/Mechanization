@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:potion",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.filled_vial","italic":false,"with":[{"translate":"mech.liquid.mushroom_stew"}]}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.liquid_amount","color":"gray","italic":false,"with":[{"text":"1000"}]},
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1108, CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:13150840, ctc:{ id:\"vial\", from:\"mechanization\", traits:{ item:1b, liquid:{id:\"mushroom_stew\", amount:1000, temperature:20, color:13150840, name:'{\"translate\":\"mech.liquid.mushroom_stew\"}'} }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

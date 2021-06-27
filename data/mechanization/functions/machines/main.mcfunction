@@ -1,8 +1,13 @@
 
-####Machine Ticks
+#### Machine Ticks
+
+# 2 tick clock
+execute if score $base.timer_2 du_data matches 0 as @e[tag=mech_super_piston] at @s run function mechanization:machines/machines/super_piston/super_piston
+execute if score $base.timer_2 du_data matches 0 as @e[tag=mech_super_sticky_piston] at @s run function mechanization:machines/machines/super_piston/super_piston
+execute if score $base.timer_2 du_data matches 0 as @e[tag=mech_turn_table] at @s run function mechanization:machines/machines/turn_table
 
 # 20 tick clock
-execute if score $base.timer_20 du_data matches 6 as @e[tag=mech_furnace_gen] at @s run function mechanization:machines/machines/furnace_generator
+execute if score $base.timer_20 du_data matches 6 as @e[tag=mech_steam_generator] at @s run function mechanization:machines/machines/steam_generator/steam_generator
 execute if score $base.timer_20 du_data matches 7 as @e[tag=mech_ele_furnace] at @s run function mechanization:machines/machines/electric_furnace
 execute if score $base.timer_20 du_data matches 8 as @e[tag=mech_solar_panel] at @s run function mechanization:machines/machines/solar_panel/solar_panel
 execute if score $base.timer_20 du_data matches 9 as @e[tag=mech_grinder] at @s run function mechanization:machines/machines/grinder/grinder
@@ -14,11 +19,6 @@ execute if score $base.timer_20 du_data matches 14 as @e[tag=mech_disenchanter] 
 execute if score $base.timer_20 du_data matches 15 as @e[tag=mech_dim_generator] at @s run function mechanization:machines/machines/dim_gen/dim_gen
 execute if score $base.timer_20 du_data matches 16 as @e[tag=mech_bio_gen] at @s run function mechanization:machines/machines/bio_generator/bio_generator
 execute if score $base.timer_20 du_data matches 17 as @e[tag=mech_quarry] at @s run function mechanization:machines/machines/quarry/quarry
-
-# 2 tick clock
-execute if score $base.timer_2 du_data matches 0 as @e[tag=mech_super_piston] at @s run function mechanization:machines/machines/super_piston/super_piston
-execute if score $base.timer_2 du_data matches 0 as @e[tag=mech_super_sticky_piston] at @s run function mechanization:machines/machines/super_piston/super_piston
-execute if score $base.timer_2 du_data matches 0 as @e[tag=mech_turn_table] at @s run function mechanization:machines/machines/turn_table
 
 # 100 tick clock
 execute if score $base.timer_100 du_data matches 10 as @e[tag=mech_tree_feller] at @s run function mechanization:machines/machines/tree_feller/tree_feller

@@ -1,5 +1,5 @@
 {
-	"values":[
-		"#load:__init"
-	]
+    "values": [
+        "#load:_private/load"
+    ]
 }

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:potion",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.filled_vial","italic":false,"with":[{"translate":"mech.liquid.water"}]}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.liquid_amount","color":"gray","italic":false,"with":[{"text":"1000"}]},
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1108, CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:35071, ctc:{ id:\"vial\", from:\"mechanization\", traits:{ item:1b, liquid:{id:\"water\", amount:1000, temperature:20, color:35071, name:'{\"translate\":\"mech.liquid.water\"}'} }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

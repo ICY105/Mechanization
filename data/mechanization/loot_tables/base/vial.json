@@ -6,19 +6,21 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:blast_furnace",
+		  "name": "minecraft:potion",
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.block.furnace_generator","color":"dark_aqua","italic":false}
+			  "name": {"translate":"mech.item.vial","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"mech.lore.generate","with":["12"],"color":"white","italic":false}]
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 2001, CustomModelData: 6422001, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 1108, CustomModelData: 6421108, CustomPotionColor:16777215, HideFlags: 38, ctc:{ id:\"vial\", from:\"mechanization\", traits:{ item:1b }} }"
             }
           ]
         }

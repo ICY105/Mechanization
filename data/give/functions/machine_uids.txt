@@ -25,6 +25,9 @@ Base Module [01]: {
 		Nether Upgrade		[03-1103]
 		Ender Upgrade		[04-1104]
 		Manual				[05-1105]
+		Bucket				[06-1106]
+		Bottle				[07-1107]
+		Vial				[08-1108]
 	}
 	Resources [3]: {		
 		Tin Ore				[10-1310]
