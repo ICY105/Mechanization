@@ -5,9 +5,6 @@ execute if data block ~ ~ ~ Items[{Slot:6b}].tag.ctc.traits.liquid{id:"steam"} r
 execute if data block ~ ~ ~ Items[{Slot:6b}].tag{mech_itemid:1108} unless data block ~ ~ ~ Items[{Slot:6b}].tag.ctc.traits.liquid run scoreboard players set $in_0 mech_data 0
 
 #init data
-execute if score @s du_data matches 1.. unless data entity @s Item.tag.steam_item.id run loot replace block -29999999 0 1601 container.0 loot mechanization:base/liquids/vial_of_steam
-execute if score @s du_data matches 1.. unless data entity @s Item.tag.steam_item.id run data modify entity @s Item.tag.steam_item set from block -29999999 0 1601 Items[0]
-
 execute if score $in_0 mech_data matches 0.. run scoreboard players operation $in_0 mech_data = @s du_data
 execute if score $in_0 mech_data matches 0.. run scoreboard players set $in_1 mech_data 4000
 execute if score $in_0 mech_data matches 0.. run data modify storage du:temp obj set value {input_item:{},output_item:{},liquid_item:{}}

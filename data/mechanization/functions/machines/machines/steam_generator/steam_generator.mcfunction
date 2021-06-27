@@ -45,6 +45,9 @@ execute if score @s mech_data matches 0 if score @s du_data matches 10.. run sco
 execute if score @s mech_data matches 0 store success entity @s Item.tag.CustomModelData int 6422001 if entity @s
 execute if score @s mech_data matches 1.. store success entity @s Item.tag.CustomModelData int 6422902 if entity @s
 
+execute if score @s du_data matches 1.. unless data entity @s Item.tag.steam_item.id run loot replace block -29999999 0 1601 container.0 loot mechanization:base/liquids/vial_of_steam
+execute if score @s du_data matches 1.. unless data entity @s Item.tag.steam_item.id run data modify entity @s Item.tag.steam_item set from block -29999999 0 1601 Items[0]
+
 ## store scoreboard values
 execute store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power
 execute store result entity @s Item.tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
