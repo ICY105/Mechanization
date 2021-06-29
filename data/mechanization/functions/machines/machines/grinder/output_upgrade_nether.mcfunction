@@ -1,54 +1,65 @@
 
 #get initial output count
-scoreboard players set temp_0 mech_data 0
-execute store result score temp_0 mech_data run data get block ~ ~ ~ Items[{Slot:2b}].Count
+scoreboard players set $temp_0 mech_data 0
+scoreboard players set $temp_1 mech_data 0
+scoreboard players set $out_0 mech_data 1
 
-scoreboard players set out_0 mech_data 1
-execute if score temp_0 mech_data matches 1.. run function mechanization:machines/machines/grinder/verify_input_nether
+execute store result score $temp_0 mech_data run data get block ~ ~ ~ Items[{Slot:2b}].Count
+execute if score $temp_0 mech_data matches 1.. run function mechanization:machines/machines/grinder/verify_input
 
 ## Set Output
 
-#vanilla ores
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:coal_ore"}]} run item replace block ~ ~ ~ container.2 with coal 2
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:iron_ore"}]} run item replace block ~ ~ ~ container.2 with iron_ingot 2
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:gold_ore"}]} run item replace block ~ ~ ~ container.2 with gold_ingot 2
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:lapis_ore"}]} run item replace block ~ ~ ~ container.2 with lapis_lazuli 6
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:diamond_ore"}]} run item replace block ~ ~ ~ container.2 with diamond 2
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:redstone_ore"}]} run item replace block ~ ~ ~ container.2 with redstone 6
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:emerald_ore"}]} run item replace block ~ ~ ~ container.2 with emerald 2
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:nether_quartz_ore"}]} run item replace block ~ ~ ~ container.2 with quartz 6
+#ores
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:coal_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:coal 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:iron_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:raw_iron 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:copper_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:raw_copper 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:gold_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:raw_gold 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:diamond_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:diamond 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:emerald_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:emerald 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:redstone_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:redstone 6
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:lapis_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:lapis_lazuli 9
 
-#mech ores
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{OreDict:["oreCopper"]}}]} run item replace block ~ ~ ~ container.2 with structure_block{	mech_itemid: 1301, CustomModelData: 6421301, OreDict:["ingotCopper"], 	display: {Name: "{\"italic\":false,\"color\":\"gold\",\"translate\":\"mech.resource.ingot\",\"with\":[{\"translate\":\"mech.resource.copper\"}]}"},HideFlags: 32			} 2
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{OreDict:["oreTin"]}}]} run item replace block ~ ~ ~ container.2 with structure_block{		mech_itemid: 1311, CustomModelData: 6421311, OreDict:["ingotTin"], 		display: {Name: "{\"italic\":false,\"color\":\"gray\",\"translate\":\"mech.resource.ingot\",\"with\":[{\"translate\":\"mech.resource.tin\"}]}"},HideFlags: 32				} 2
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{OreDict:["oreTitanium"]}}]} run item replace block ~ ~ ~ container.2 with structure_block{	mech_itemid: 1321, CustomModelData: 6421321, OreDict:["ingotTitanium"], display: {Name: "{\"italic\":false,\"color\":\"light_purple\",\"translate\":\"mech.resource.ingot\",\"with\":[{\"translate\":\"mech.resource.titanium\"}]}"},HideFlags: 32	} 2
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,tag:{OreDict:["oreUranium"]}}]} run item replace block ~ ~ ~ container.2 with structure_block{	mech_itemid: 1431, CustomModelData: 6421431, OreDict:["ingotUranium"], 	display: {Name: "{\"italic\":false,\"color\":\"green\",\"translate\":\"mech.resource.ingot\",\"with\":[{\"translate\":\"mech.resource.uranium\"}]}"},HideFlags: 32			} 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:deepslate_coal_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:coal 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:deepslate_iron_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:raw_iron 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:deepslate_copper_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:raw_copper 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:deepslate_gold_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:raw_gold 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:deepslate_diamond_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:diamond 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:deepslate_emerald_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:emerald 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:deepslate_redstone_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:redstone 6
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:deepslate_lapis_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:lapis_lazuli 9
+
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:nether_quartz_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:quartz 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:nether_gold_ore"}] run item replace block -29999999 0 1601 container.0 with minecraft:raw_gold 2
+
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b}].tag.ctc.traits{"metal/tin":1b,ore:1b} run loot replace block -29999999 0 1601 container.0 loot mechanization:base/resources_x2/tin_ingot
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b}].tag.ctc.traits{"metal/titanium":1b,ore:1b} run loot replace block -29999999 0 1601 container.0 loot mechanization:base/resources_x2/titanium_ingot
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b}].tag.ctc.traits{"metal/uranium":1b,ore:1b} run loot replace block -29999999 0 1601 container.0 loot mechanization:base/resources_x2/uranium_ingot
 
 #Logs
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:oak_log"}]} run item replace block ~ ~ ~ container.2 with charcoal 2
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:birch_log"}]} run item replace block ~ ~ ~ container.2 with charcoal 2
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:spruce_log"}]} run item replace block ~ ~ ~ container.2 with charcoal 2
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:jungle_log"}]} run item replace block ~ ~ ~ container.2 with charcoal 2
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:dark_oak_log"}]} run item replace block ~ ~ ~ container.2 with charcoal 2
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:acacia_log"}]} run item replace block ~ ~ ~ container.2 with charcoal 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:oak_log"}] run item replace block -29999999 0 1601 container.0 with minecraft:charcoal 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:birch_log"}] run item replace block -29999999 0 1601 container.0 with minecraft:charcoal 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:spruce_log"}] run item replace block -29999999 0 1601 container.0 with minecraft:charcoal 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:jungle_log"}] run item replace block -29999999 0 1601 container.0 with minecraft:charcoal 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:dark_oak_log"}] run item replace block -29999999 0 1601 container.0 with minecraft:charcoal 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:acacia_log"}] run item replace block -29999999 0 1601 container.0 with minecraft:charcoal 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:crimson_stem"}] run item replace block -29999999 0 1601 container.0 with minecraft:charcoal 2
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:warped_stem"}] run item replace block -29999999 0 1601 container.0 with minecraft:charcoal 2
 
 #Extra
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:cobblestone"}]} run item replace block ~ ~ ~ container.2 with glass 1
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:stone"}]} run item replace block ~ ~ ~ container.2 with flint 1
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:gravel"}]} run item replace block ~ ~ ~ container.2 with flint 1
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:blaze_rod"}]} run item replace block ~ ~ ~ container.2 with blaze_powder 3
-execute if score out_0 mech_data matches 1 if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:bone"}]} run item replace block ~ ~ ~ container.2 with bone_meal 4
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:cobblestone"}] run item replace block -29999999 0 1601 container.0 with minecraft:glass 1
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stone"}] run item replace block -29999999 0 1601 container.0 with minecraft:flint 1
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:netherrack"}] run item replace block -29999999 0 1601 container.0 with minecraft:flint 1
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:gravel"}] run item replace block -29999999 0 1601 container.0 with minecraft:flint 1
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:blaze_rod"}] run item replace block -29999999 0 1601 container.0 with minecraft:blaze_powder 3
+execute if score $out_0 mech_data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:bone"}] run item replace block -29999999 0 1601 container.0 with minecraft:bone_meal 4
 
-#add to output
-execute if score out_0 mech_data matches 1 store result score temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:2b}].Count
-execute if score out_0 mech_data matches 1 run scoreboard players operation temp_0 mech_data += temp_1 mech_data
-execute if score out_0 mech_data matches 1 store result block ~ ~ ~ Items[{Slot:2b}].Count int 1 run scoreboard players get temp_0 mech_data
+## Add to Output
+execute if score $out_0 mech_data matches 1 run item replace block ~ ~ ~ container.2 from block -29999999 0 1601 container.0
+execute if score $out_0 mech_data matches 1 store result score $temp_2 mech_data run data get block ~ ~ ~ Items[{Slot:2b}].Count
+execute if score $out_0 mech_data matches 1 run scoreboard players operation $temp_0 mech_data += $temp_2 mech_data
+execute if score $out_0 mech_data matches 1 store result block ~ ~ ~ Items[{Slot:2b}].Count int 1 run scoreboard players get $temp_0 mech_data
 
-execute if score out_0 mech_data matches 1 store result score temp_0 mech_data run data get block ~ ~ ~ Items[{Slot:0b}].Count
-execute if score out_0 mech_data matches 1 run scoreboard players remove temp_0 mech_data 1
-execute if score out_0 mech_data matches 1 store result block ~ ~ ~ Items[{Slot:0b}].Count int 1 run scoreboard players get temp_0 mech_data
-
-execute if score out_0 mech_data matches 1 run scoreboard players remove @s mech_power 360
-tag @s remove mech_active
-
-
+execute if score $out_0 mech_data matches 1 store result score $temp_0 mech_data run data get block ~ ~ ~ Items[{Slot:0b}].Count
+execute if score $out_0 mech_data matches 1 run scoreboard players remove $temp_0 mech_data 1
+execute if score $out_0 mech_data matches 1 if score $temp_1 mech_data matches 1 run scoreboard players remove $temp_0 mech_data 1
+execute if score $out_0 mech_data matches 1 store result block ~ ~ ~ Items[{Slot:0b}].Count int 1 run scoreboard players get $temp_0 mech_data
