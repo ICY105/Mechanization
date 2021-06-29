@@ -172,7 +172,6 @@ Age of Machine [02]: {
 		Block Breaker		[08-2008]
 		Grinder				[09-2009]
 		Item Reformer		[10-2010]
-		Lava Fabricator		[11-2011]
 		Mob Grinder			[12-2012]
 		Quarry				[13-2013]
 		Solar Panel			[14-2014]

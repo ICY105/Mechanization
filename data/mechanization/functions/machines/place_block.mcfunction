@@ -70,10 +70,6 @@ execute if score $id mech_data matches 2009 if block ~ ~ ~ minecraft:blast_furna
 execute if score in_0 mech_data matches 2010 run summon armor_stand ~ ~ ~ {Tags:["mech_reformer","mech_receiver"],CustomName:'{"text":"Item Reformer"}',Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Fire:32000s,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422010}}]}
 execute if score in_0 mech_data matches 2010 run setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'[{"translate":"mech.block.item_reformer","color":"dark_red","italic":false}]'}
 
-#lava fabricator
-execute if score in_0 mech_data matches 2011 run summon armor_stand ~ ~ ~ {Tags:["mech_lava_fabricator","mech_receiver"],CustomName:'{"text":"Lava Fabricator"}',Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Fire:32000s,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422011}}]}
-execute if score in_0 mech_data matches 2011 run setblock ~ ~ ~ minecraft:barrier
-
 #mob grinder
 execute if score in_0 mech_data matches 2012 if block ~ ~ ~ blast_furnace[facing=north] run summon armor_stand ~ ~ ~ {Tags:["mech_mob_grinder","mech_receiver","mech_rotatable"],CustomName:'{"text":"Mob Grinder"}',Rotation:[180.0f,0.0f],Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Fire:32000s,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422012}}]}
 execute if score in_0 mech_data matches 2012 if block ~ ~ ~ blast_furnace[facing=east] run summon armor_stand ~ ~ ~ {Tags:["mech_mob_grinder","mech_receiver","mech_rotatable"],CustomName:'{"text":"Mob Grinder"}',Rotation:[270.0f,0.0f],Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Fire:32000s,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422012}}]}
