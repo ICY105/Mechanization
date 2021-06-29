@@ -1,5 +1,5 @@
 
-execute as @e[tag=mech_tree_feller_model,distance=..0.75] at @s run function mechanization:machines/tools/rotate_tree_feller_model
+execute positioned ~ ~-1 ~ as @e[tag=mech_tree_feller_model,distance=..0.75] at @s run function mechanization:machines/tools/rotate_tree_feller_model
 
 execute if entity @s[tag=mech_quarry] run function mechanization:machines/machines/quarry/scan_boundry
 
