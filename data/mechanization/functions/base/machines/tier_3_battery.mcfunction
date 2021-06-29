@@ -32,8 +32,9 @@ execute if entity @s[tag=mech_no_effects] run scoreboard players set in_4 mech_d
 execute if entity @s[tag=mech_effects] run scoreboard players set in_4 mech_data 1
 
 #creative battery
-execute if entity @s[tag=mech_battery_creative] run scoreboard players set in_0 mech_power 10000
-execute if entity @s[tag=mech_battery_creative] run scoreboard players set in_3 mech_power 32
+scoreboard players set @s[tag=mech_creative_battery] mech_power 500000
+execute if entity @s[tag=mech_creative_battery] run scoreboard players set in_0 mech_data 10000
+execute if entity @s[tag=mech_creative_battery] run scoreboard players set in_3 mech_data 32
 
 #call
 function mechanization:base/energy/battery
@@ -58,9 +59,6 @@ execute store result entity @s Item.tag.CustomModelData int 1 run scoreboard pla
 execute if entity @s[scores={mech_timer=1}] run playsound mechanization:base.battery_ambient ambient @a[distance=..16] ~ ~ ~ 0.05
 scoreboard players add @s mech_timer 1
 scoreboard players set @s[scores={mech_timer=3}] mech_timer 0
-
-#Creative
-scoreboard players set @s[tag=mech_battery_creative] mech_power 500000
 
 #Break
 execute at @s unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_machine_t3

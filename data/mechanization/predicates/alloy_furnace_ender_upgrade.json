@@ -1,0 +1,13 @@
+[
+  {
+    "condition": "minecraft:random_chance",
+    "chance": 0.1
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "nbt": "{Tags:[\"mech_upgrade_ender\"]}"
+    }
+  }
+]
