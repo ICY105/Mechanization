@@ -53,9 +53,8 @@ execute if score in_0 mech_data matches 2007 run summon armor_stand ~ ~ ~ {Tags:
 execute if score in_0 mech_data matches 2007 run setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'[{"translate":"mech.block.bio_generator","color":"dark_red","italic":false}]'}
 
 #block breaker
-execute if score in_0 mech_data matches 2008 run summon armor_stand ~ ~ ~ {Tags:["mech_block_breaker","mech_receiver"],CustomName:'{"text":"Block Breaker"}',Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:structure_block",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421200}}]}
-execute if score in_0 mech_data matches 2008 run setblock ~ ~ ~ air
-execute if score in_0 mech_data matches 2008 positioned ~ ~ ~ run scoreboard players set @e[tag=mech_block_breaker,distance=..0.25] mech_power 0
+execute if score $id mech_data matches 2008 run summon minecraft:marker ~ ~ ~ {Tags:["mech_block_breaker","mech_receiver"],CustomName:'{"translate":"mech.block.block_breaker"}',data:{mech_power:0,mech_gridid:0}}
+execute if score $id mech_data matches 2008 run setblock ~ ~ ~ minecraft:air
 
 #Grinder
 execute if score $id mech_data matches 2009 if block ~ ~ ~ minecraft:blast_furnace[facing=north] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mech_grinder","mech_receiver","mech_rotatable"],CustomName:'{"translate":"mech.block.grinder"}',ItemRotation:6,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422009}}}
