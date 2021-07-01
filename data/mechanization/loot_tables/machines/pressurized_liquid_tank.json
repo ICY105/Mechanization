@@ -10,18 +10,18 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.block.block_breaker","color":"dark_aqua","italic":false}
+			  "name": {"translate":"mech.block.tier_3_liquid_tank","color":"dark_purple","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"translate":"mech.lore.consume","with":["24"],"color":"white","italic":false},
+				{"translate":"mech.lore.liquid_amount","color":"gray","italic":false,"with":[{"text":"64000 mb"}]},
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 2008, CustomModelData: 6422008, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 2025, CustomModelData: 6422025, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
             }
           ]
         }

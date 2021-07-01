@@ -131,6 +131,17 @@ execute if score in_0 mech_data matches 2021 run setblock ~ ~ ~ minecraft:barrie
 execute if score in_0 mech_data matches 2022 run summon armor_stand ~ ~ ~ {Tags:["mech_turn_table"],CustomName:'{"text":"Turn Table"}',Marker:1b,Invisible:1b,Invulnerable:1b,NoGravity:1b,Fire:32000s,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422022}}]}
 execute if score in_0 mech_data matches 2022 run setblock ~ ~ ~ minecraft:barrier
 
+#tanks
+execute if score $id mech_data matches 2023 run summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mech_liquid_tank","mech_t1_liquid_tank","mech_liquid_dest","mech_liquid_src"],CustomName:'{"translate":"mech.block.tier_1_liquid_tank"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_fluid:0,CustomModelData:6422023}}}
+execute if score $id mech_data matches 2023 run setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'[{"translate":"offset.17","font":"space:default","with":[{"text":"\\uee0b","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-64","font":"space:default","with":[{"translate":"mech.block.tier_1_liquid_tank","color":"dark_aqua","italic":false,"font":"minecraft:default"}]}]'}
+
+execute if score $id mech_data matches 2024 run summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mech_liquid_tank","mech_t2_liquid_tank","mech_liquid_dest","mech_liquid_src"],CustomName:'{"translate":"mech.block.tier_2_liquid_tank"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_fluid:0,CustomModelData:6422024}}}
+execute if score $id mech_data matches 2024 run setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'[{"translate":"offset.23","font":"space:default","with":[{"text":"\\uee0b","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-60","font":"space:default","with":[{"translate":"mech.block.tier_2_liquid_tank","color":"dark_red","italic":false,"font":"minecraft:default"}]}]'}
+
+execute if score $id mech_data matches 2025 run summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mech_liquid_tank","mech_t3_liquid_tank","mech_liquid_dest","mech_liquid_src"],CustomName:'{"translate":"mech.block.tier_3_liquid_tank"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_fluid:0,CustomModelData:6422025}}}
+execute if score $id mech_data matches 2025 run setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'[{"translate":"offset.30","font":"space:default","with":[{"text":"\\uee0b","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-56","font":"space:default","with":[{"translate":"mech.block.tier_3_liquid_tank","color":"dark_purple","italic":false,"font":"minecraft:default"}]}]'}
+
+
 
 
 

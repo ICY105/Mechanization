@@ -13,6 +13,12 @@
 			  "name": {"translate":"mech.block.turn_table","color":"gray","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{mech_itemid: 2022, CustomModelData: 6422022, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
             }

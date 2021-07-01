@@ -13,6 +13,12 @@
 			  "name": {"translate":"mech.block.super_piston","color":"gray","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{mech_itemid: 2020, CustomModelData: 6422020, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
             }

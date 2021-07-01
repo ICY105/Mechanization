@@ -13,6 +13,12 @@
 			  "name": {"translate":"mech.item.spawner_mover","color":"dark_purple","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{mech_itemid: 2200, CustomModelData: 6422200, HideFlags: 6}"
             }
