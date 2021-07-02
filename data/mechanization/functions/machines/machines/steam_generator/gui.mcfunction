@@ -46,8 +46,8 @@ execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData int 1 run
 execute if score @s du_data matches 1.. run data modify storage du:temp var set from entity @s Item.tag.steam_item.tag.ctc.traits.liquid.name
 execute if score @s du_data matches 1.. run data modify block -29999999 0 1602 Text1 set value '{"nbt":"var","storage":"du:temp","interpret":true,"italic":false}'
 execute if score @s du_data matches 1.. run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Name set from block -29999999 0 1602 Text1
-execute if score @s mech_fluid matches 1.. run data modify block -29999999 0 1602 Text1 set value '{"translate":"mech.lore.liquid_amount","italic":false,"color":"gray","with":[{"score":{"name":"$temp_1","objective":"mech_data"}}]}'
-execute if score @s mech_fluid matches 1.. run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Lore append from block -29999999 0 1602 Text1
+execute if score @s du_data matches 1.. run data modify block -29999999 0 1602 Text1 set value '{"translate":"mech.lore.liquid_amount","italic":false,"color":"gray","with":[{"score":{"name":"$temp_1","objective":"mech_data"}}]}'
+execute if score @s du_data matches 1.. run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Lore append from block -29999999 0 1602 Text1
 execute if score @s du_data matches 1.. run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.color set from entity @s Item.tag.steam_item.tag.ctc.traits.liquid.color
 
 #fuel slot

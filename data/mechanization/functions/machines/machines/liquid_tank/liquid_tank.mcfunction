@@ -22,6 +22,4 @@ execute if score @s mech_fluid matches 1.. if entity @s[tag=mech_t2_liquid_tank]
 execute store result entity @s Item.tag.mech_fluid int 1 run scoreboard players get @s mech_fluid
 
 ## cleanup
-execute unless block ~ ~ ~ minecraft:dropper if entity @s[tag=mech_t1_liquid_tank] run function mechanization:base/utils/break_machine_t1
-execute unless block ~ ~ ~ minecraft:dropper if entity @s[tag=mech_t2_liquid_tank] run function mechanization:base/utils/break_machine_t2
-execute unless block ~ ~ ~ minecraft:dropper if entity @s[tag=mech_t3_liquid_tank] run function mechanization:base/utils/break_machine_t3
+execute unless block ~ ~ ~ minecraft:dropper run function mechanization:machines/machines/liquid_tank/break_hard

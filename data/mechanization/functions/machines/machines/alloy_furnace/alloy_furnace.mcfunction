@@ -39,4 +39,5 @@ execute store result entity @s Item.tag.du_data int 1 run scoreboard players get
 execute store result entity @s Item.tag.mech_usedid int 1 run scoreboard players get @s mech_usedid
 
 ## cleanup
+execute unless block ~ ~ ~ minecraft:barrel run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
 execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_machine_t1

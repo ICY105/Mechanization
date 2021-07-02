@@ -56,62 +56,62 @@ execute if score $temp_1 mech_data matches 1.. run scoreboard players operation 
 execute if score $id mech_data matches 1300..1499 if block ~ ~ ~ minecraft:blast_furnace run setblock ~ ~ ~ minecraft:barrier
 
 #machine frames
-execute if score $id mech_data matches 1007 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421007},Count:1b}}
-execute if score $id mech_data matches 1008 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421008},Count:1b}}
-execute if score $id mech_data matches 1009 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421009},Count:1b}}
+execute if score $id mech_data matches 1007 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_t1_machine_frame"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421007},Count:1b}}
+execute if score $id mech_data matches 1008 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_t2_machine_frame"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421008},Count:1b}}
+execute if score $id mech_data matches 1009 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_t2_machine_frame"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421009},Count:1b}}
 
 #crystal
-execute if score $id mech_data matches 1411 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421411},Count:1b}}
+execute if score $id mech_data matches 1411 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_crystal_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421411},Count:1b}}
 
 #tin
 execute if score $id mech_data matches 1310 run setblock ~ ~ ~ minecraft:stone_slab[waterlogged=true,type=double]
-execute if score $id mech_data matches 1314 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421314},Count:1b}}
-execute if score $id mech_data matches 1318 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421318},Count:1b}}
+execute if score $id mech_data matches 1314 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_tin"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421314},Count:1b}}
+execute if score $id mech_data matches 1318 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_raw_tin"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421318},Count:1b}}
 
 #titanium
 execute if score $id mech_data matches 1320 run setblock ~ ~ ~ minecraft:smooth_stone_slab[waterlogged=true,type=double]
-execute if score $id mech_data matches 1324 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421324},Count:1b}}
-execute if score $id mech_data matches 1328 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421328},Count:1b}}
+execute if score $id mech_data matches 1324 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_titanium"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421324},Count:1b}}
+execute if score $id mech_data matches 1328 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_raw_titanium"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421328},Count:1b}}
 
 #steel
-execute if score $id mech_data matches 1333 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421333},Count:1b}}
-execute if score $id mech_data matches 1337 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421337},Count:1b}}
+execute if score $id mech_data matches 1333 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_steel"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421333},Count:1b}}
+execute if score $id mech_data matches 1337 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_raw_steel"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421337},Count:1b}}
 
 #structural
-execute if score $id mech_data matches 1343 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421343},Count:1b}}
-execute if score $id mech_data matches 1347 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421347},Count:1b}}
+execute if score $id mech_data matches 1343 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_structural"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421343},Count:1b}}
+execute if score $id mech_data matches 1347 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_raw_structural"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421347},Count:1b}}
 
 #conductive
-execute if score $id mech_data matches 1353 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421353},Count:1b}}
-execute if score $id mech_data matches 1357 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421357},Count:1b}}
+execute if score $id mech_data matches 1353 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_conductive"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421353},Count:1b}}
+execute if score $id mech_data matches 1357 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_raw_conductive"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421357},Count:1b}}
 
 #titanium-steel
-execute if score $id mech_data matches 1363 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421363},Count:1b}}
-execute if score $id mech_data matches 1367 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421367},Count:1b}}
+execute if score $id mech_data matches 1363 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_titanium_steel"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421363},Count:1b}}
+execute if score $id mech_data matches 1367 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_raw_titanium_steel"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421367},Count:1b}}
 
 #reinforced structural
-execute if score $id mech_data matches 1373 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421373},Count:1b}}
-execute if score $id mech_data matches 1377 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421377},Count:1b}}
+execute if score $id mech_data matches 1373 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_reinforced_structural"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421373},Count:1b}}
+execute if score $id mech_data matches 1377 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_raw_reinforced_structural"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421377},Count:1b}}
 
 #super conductive
-execute if score $id mech_data matches 1383 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421383},Count:1b}}
-execute if score $id mech_data matches 1387 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421387},Count:1b}}
+execute if score $id mech_data matches 1383 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_super_conductive"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421383},Count:1b}}
+execute if score $id mech_data matches 1387 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_raw_super_conductive"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421387},Count:1b}}
 
 #ender
-execute if score $id mech_data matches 1393 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421393},Count:1b}}
-execute if score $id mech_data matches 1397 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421397},Count:1b}}
+execute if score $id mech_data matches 1393 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_ender"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421393},Count:1b}}
+execute if score $id mech_data matches 1397 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_raw_ender"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421397},Count:1b}}
 
 #nether
-execute if score $id mech_data matches 1403 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421403},Count:1b}}
-execute if score $id mech_data matches 1407 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421407},Count:1b}}
+execute if score $id mech_data matches 1403 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_nether"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421403},Count:1b}}
+execute if score $id mech_data matches 1407 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_raw_nether"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421407},Count:1b}}
 
 #uranium
 execute if score $id mech_data matches 1430 run setblock ~ ~ ~ minecraft:cobblestone_slab[waterlogged=true,type=double]
-execute if score $id mech_data matches 1434 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421434},Count:1b}}
-execute if score $id mech_data matches 1438 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421438},Count:1b}}
+execute if score $id mech_data matches 1434 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_uranium"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421434},Count:1b}}
+execute if score $id mech_data matches 1438 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_raw_uranium"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421438},Count:1b}}
 
 #plutonium
-execute if score $id mech_data matches 1443 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421443},Count:1b}}
-execute if score $id mech_data matches 1447 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421447},Count:1b}}
+execute if score $id mech_data matches 1443 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_plutonium"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421443},Count:1b}}
+execute if score $id mech_data matches 1447 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_raw_plutonium"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421447},Count:1b}}
 
 

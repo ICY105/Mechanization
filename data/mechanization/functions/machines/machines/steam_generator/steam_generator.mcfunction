@@ -12,23 +12,22 @@ execute if score @s mech_data matches 1.. run scoreboard players remove @s mech_
 #ui
 execute if data block ~ ~ ~ Items[{Slot:3b}] run function mechanization:machines/machines/steam_generator/water_tank_input
 execute if data block ~ ~ ~ Items[{Slot:6b}] run function mechanization:machines/machines/steam_generator/steam_tank_input
-execute unless score @s mech_data matches 1.. unless score @s du_data matches 2000.. if score @s mech_fluid matches 1.. if data block ~ ~ ~ Items[{Slot:10b}] run function mechanization:machines/machines/steam_generator/add_fuel
+execute unless score @s mech_data matches 1.. unless score @s du_data matches 3900.. if score @s mech_fluid matches 1.. if data block ~ ~ ~ Items[{Slot:10b}] run function mechanization:machines/machines/steam_generator/add_fuel
 
 function mechanization:machines/machines/steam_generator/gui
 
 #generate heat
-scoreboard players set $temp_0 mech_data 0
-execute if score @s mech_data matches 1.. run scoreboard players add $temp_0 mech_data 12
-execute if score @s mech_data matches 1.. if entity @s[tag=mech_upgraded] run scoreboard players add $temp_0 mech_data 6
-execute if score @s mech_data matches 1.. if entity @s[tag=mech_upgrade_ender] run scoreboard players add $temp_0 mech_data 6
-execute if score @s mech_data matches 1.. if entity @s[tag=mech_upgrade_nether] run scoreboard players add $temp_0 mech_data 30
-execute if score @s mech_data matches 1.. if entity @s[tag=mech_upgrade_nether] run scoreboard players remove @s du_data 3
+scoreboard players set $temp_0 mech_data 12
+execute if entity @s[tag=mech_upgraded] run scoreboard players add $temp_0 mech_data 6
+execute if entity @s[tag=mech_upgrade_ender] run scoreboard players add $temp_0 mech_data 6
+execute if entity @s[tag=mech_upgrade_nether] run scoreboard players add $temp_0 mech_data 30
+execute if entity @s[tag=mech_upgrade_nether] run scoreboard players remove @s du_data 3
 
 #convert water + heat into steam
-execute if score $temp_0 mech_data matches 1.. if score @s mech_fluid matches 1.. run scoreboard players operation @s du_data += $temp_0 mech_data
-execute if score $temp_0 mech_data matches 1.. if score @s mech_fluid matches 1.. run scoreboard players operation @s mech_fluid -= $temp_0 mech_data
-execute if score @s mech_fluid matches ..-1 run scoreboard players set @s mech_fluid 0
-execute if score @s du_data matches 4001.. run scoreboard players set @s du_data 4000
+execute if score @s mech_data matches 1.. if score @s mech_fluid matches 1.. run scoreboard players operation @s du_data += $temp_0 mech_data
+execute if score @s mech_data matches 1.. if score @s mech_fluid matches 1.. run scoreboard players operation @s mech_fluid -= $temp_0 mech_data
+execute if score @s mech_data matches 1.. if score @s mech_fluid matches ..-1 run scoreboard players set @s mech_fluid 0
+execute if score @s mech_data matches 1.. if score @s du_data matches 4001.. run scoreboard players set @s du_data 4000
 
 #convert steam into power
 scoreboard players operation $temp_0 mech_data += $temp_0 mech_data
@@ -55,4 +54,5 @@ execute store result entity @s Item.tag.mech_water_tank int 1 run scoreboard pla
 execute store result entity @s Item.tag.mech_steam_tank int 1 run scoreboard players get @s du_data
 
 ## cleanup
+execute unless block ~ ~ ~ minecraft:barrel run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
 execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_machine_t1

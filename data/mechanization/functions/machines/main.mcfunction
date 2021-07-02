@@ -7,6 +7,7 @@ execute if score $base.timer_2 du_data matches 0 as @e[tag=mech_super_sticky_pis
 execute if score $base.timer_2 du_data matches 0 as @e[tag=mech_turn_table] at @s run function mechanization:machines/machines/turn_table
 
 # 20 tick clock
+execute if score $base.timer_20 du_data matches 6 as @e[tag=mech_pipe] at @s run function mechanization:machines/machines/liquid_pipe/liquid_pipe
 execute if score $base.timer_20 du_data matches 7 as @e[tag=mech_steam_generator] at @s run function mechanization:machines/machines/steam_generator/steam_generator
 execute if score $base.timer_20 du_data matches 8 as @e[tag=mech_ele_furnace] at @s run function mechanization:machines/machines/electric_furnace
 execute if score $base.timer_20 du_data matches 9 as @e[tag=mech_solar_panel] at @s run function mechanization:machines/machines/solar_panel/solar_panel
@@ -27,7 +28,6 @@ execute as @e[type=armor_stand,tag=mech_tree_feller_model,tag=mech_active] run f
 execute if score $base.timer_100 du_data matches 20 as @e[tag=mech_auto_farm] at @s run function mechanization:machines/machines/auto_farm/auto_farm
 execute if score $base.timer_100 du_data matches 30 as @e[tag=mech_mob_grinder] at @s run function mechanization:machines/machines/mob_grinder/mob_grinder
 
-execute if score $base.timer_100 du_data matches 50 as @e[tag=mech_lava_fabricator] at @s run function mechanization:machines/machines/lava_fabricator
 execute if score $base.timer_100 du_data matches 60 as @e[tag=mech_growth_accelerator] at @s run function mechanization:machines/machines/growth_accelerator/growth_accelerator
 execute if score $base.timer_100 du_data matches 70 as @e[tag=mech_fisher] at @s run function mechanization:machines/machines/fisher/fisher
 execute if score $base.timer_100 du_data matches 80 as @e[tag=mech_spawner_controller] at @s run function mechanization:machines/machines/spawner_controller

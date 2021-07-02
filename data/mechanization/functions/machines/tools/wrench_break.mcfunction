@@ -1,7 +1,8 @@
-#Furnace Generator
-execute if entity @s[tag=mech_furnace_gen] run loot spawn ~ ~ ~ loot mechanization:machines/furnace_generator
-execute if entity @s[tag=mech_furnace_gen] run setblock ~ ~ ~ minecraft:air replace
-kill @s[tag=mech_furnace_gen]
+#Steam Generator
+execute if entity @s[tag=mech_steam_generator] run loot spawn ~ ~ ~ loot mechanization:machines/steam_generator
+execute if entity @s[tag=mech_steam_generator] run setblock ~ ~ ~ minecraft:air replace
+execute if entity @s[tag=mech_steam_generator] run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
+kill @s[tag=mech_steam_generator]
 
 #Electric Furnace
 execute if entity @s[tag=mech_ele_furnace] run loot spawn ~ ~ ~ loot mechanization:machines/electric_furnace
@@ -22,6 +23,7 @@ kill @s[tag=mech_grinder]
 #Alloy Furnace
 execute if entity @s[tag=mech_alloy_furnace] run loot spawn ~ ~ ~ loot mechanization:machines/alloy_furnace
 execute if entity @s[tag=mech_alloy_furnace] run setblock ~ ~ ~ minecraft:air replace
+execute if entity @s[tag=mech_alloy_furnace] run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
 kill @s[tag=mech_alloy_furnace]
 
 #Tree Feller
@@ -58,11 +60,6 @@ kill @s[tag=mech_chunk_loader]
 execute if entity @s[tag=mech_teleporter] run loot spawn ~ ~ ~ loot mechanization:machines/teleporter
 execute if entity @s[tag=mech_teleporter] run setblock ~ ~ ~ minecraft:air replace
 execute if entity @s[tag=mech_teleporter] run function mechanization:machines/machines/teleporter/remove
-
-#Lava Fabricator
-execute if entity @s[tag=mech_lava_fabricator] run loot spawn ~ ~ ~ loot mechanization:machines/lava_fabricator
-execute if entity @s[tag=mech_lava_fabricator] run setblock ~ ~ ~ minecraft:air replace
-kill @s[tag=mech_lava_fabricator]
 
 #Growth Accelerator
 execute if entity @s[tag=mech_growth_accelerator] run loot spawn ~ ~ ~ loot mechanization:machines/growth_accelerator
@@ -113,4 +110,11 @@ kill @s[tag=mech_disenchanter]
 execute if entity @s[tag=mech_dim_generator] run loot spawn ~ ~ ~ loot mechanization:machines/dimensional_generator
 execute if entity @s[tag=mech_dim_generator] run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_dim_generator]
+
+#liquid tanks
+execute if entity @s[tag=mech_liquid_tank] run function mechanization:machines/machines/liquid_tank/break
+
+#pipes
+execute if entity @s[tag=mech_pipe] run function mechanization:machines/machines/liquid_pipe/break
+
 
