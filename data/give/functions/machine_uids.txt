@@ -189,6 +189,8 @@ Age of Machine [02]: {
 		Liquid Pipe				[26-2026]
 		Arc Furnace				[27-2027]
 		Casting Basin			[28-2028]
+		Liquid Accumulator		[29-2029]
+		Thermoelectric Generator[30-2030]
 	}
 	Misc [1]: {
 		Spawner Mover			[03-2100]

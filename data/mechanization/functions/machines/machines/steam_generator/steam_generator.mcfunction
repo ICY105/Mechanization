@@ -2,8 +2,8 @@
 ## load scoreboard values
 execute unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s Item.tag.mech_power
 execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s Item.tag.mech_gridid
-execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_fluid run data get entity @s Item.tag.mech_water_tank
-execute unless score @s mech_gridid matches -2147483648.. store result score @s du_data run data get entity @s Item.tag.mech_steam_tank
+execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_fluid run data get entity @s Item.tag.mech_fluid
+execute unless score @s mech_gridid matches -2147483648.. store result score @s du_data run data get entity @s Item.tag.du_data
 
 ## Main
 

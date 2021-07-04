@@ -3,7 +3,7 @@ scoreboard players set $temp_0 mech_data -1
 data modify storage du:temp obj set from storage du:temp list[0]
 
 #check for fuel & empty fuel slot
-execute if score $temp_0 mech_data matches -1 unless data block ~ ~ ~ Items[{Slot:0b}] run scoreboard players set $temp_0 mech_data 0
+execute if score $temp_0 mech_data matches -1 unless data block ~ ~ ~ Items[{Slot:0b}] run scoreboard players set $temp_0 mech_data 3
 
 #move item
 execute if score $temp_0 mech_data matches -1 run data modify block -29999999 0 1601 Items append from storage du:temp list[0]
@@ -13,4 +13,4 @@ execute if score $temp_0 mech_data matches 0.. run data modify block ~ ~ ~ Items
 
 #cycle
 data remove storage du:temp list[0]
-execute if data storage du:temp list[0] run function mechanization:machines/machines/casting_basin/gui_move
+execute if data storage du:temp list[0] run function mechanization:machines/machines/liquid_accumulator/gui_move

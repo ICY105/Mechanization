@@ -1,3 +1,4 @@
+
 #Steam Generator
 execute if entity @s[tag=mech_steam_generator] run loot spawn ~ ~ ~ loot mechanization:machines/steam_generator
 execute if entity @s[tag=mech_steam_generator] run setblock ~ ~ ~ minecraft:air replace
@@ -116,5 +117,29 @@ execute if entity @s[tag=mech_liquid_tank] run function mechanization:machines/m
 
 #pipes
 execute if entity @s[tag=mech_pipe] run function mechanization:machines/machines/liquid_pipe/break
+
+#Arc Furnace
+execute if entity @s[tag=mech_arc_furnace] run loot spawn ~ ~ ~ loot mechanization:machines/arc_furnace
+execute if entity @s[tag=mech_arc_furnace] run setblock ~ ~ ~ minecraft:air replace
+execute if entity @s[tag=mech_arc_furnace] run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
+kill @s[tag=mech_arc_furnace]
+
+#Casting Basin
+execute if entity @s[tag=mech_casting_basin] run loot spawn ~ ~ ~ loot mechanization:machines/casting_basin
+execute if entity @s[tag=mech_casting_basin] run setblock ~ ~ ~ minecraft:air replace
+execute if entity @s[tag=mech_casting_basin] run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
+kill @s[tag=mech_casting_basin]
+
+#Liquid Accumulator
+execute if entity @s[tag=mech_liquid_accumulator] run loot spawn ~ ~ ~ loot mechanization:machines/liquid_accumulator
+execute if entity @s[tag=mech_liquid_accumulator] run setblock ~ ~ ~ minecraft:air replace
+execute if entity @s[tag=mech_liquid_accumulator] run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
+kill @s[tag=mech_liquid_accumulator]
+
+#Liquid Accumulator
+execute if entity @s[tag=mech_thermoelectric_generator] run loot spawn ~ ~ ~ loot mechanization:machines/thermoelectric_generator
+execute if entity @s[tag=mech_thermoelectric_generator] run setblock ~ ~ ~ minecraft:air replace
+execute if entity @s[tag=mech_thermoelectric_generator] run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
+kill @s[tag=mech_thermoelectric_generator]
 
 

@@ -18,8 +18,8 @@ data remove storage du:temp list[{Slot:12b}]
 data remove storage du:temp list[{Slot:18b}]
 
 data remove block -29999999 0 1601 Items
-execute if data storage du:temp list[0] run function mechanization:machines/machines/liquid_tank/gui_clear
-execute if data storage du:temp list[0] run function mechanization:machines/machines/liquid_tank/gui_move
+execute if data storage du:temp list[0] run function mechanization:machines/machines/casting_basin/gui_clear
+execute if data storage du:temp list[0] run function mechanization:machines/machines/casting_basin/gui_move
 
 execute if data block -29999999 0 1601 Items[0] run loot give @p mine -29999999 0 1601 minecraft:air{drop_contents:true}
 

@@ -164,6 +164,15 @@ execute if score $id mech_data matches 2028 run summon minecraft:glow_item_frame
 execute if score $id mech_data matches 2028 run setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:'[{"translate":"offset.-8","font":"space:default","with":[{"text":"\\uee0d","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-120","font":"space:default","with":[{"translate":"mech.block.casting_basin","color":"dark_aqua","italic":false,"font":"minecraft:default"}]}]'}
 execute if score $id mech_data matches 2028 as @e[tag=mech_casting_basin,sort=nearest,limit=1,distance=..0.5] run function mechanization:machines/machines/liquid_pipe/add_adjacent_pipes
 
+#liquid accumulator
+execute if score $id mech_data matches 2029 run summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mech_liquid_accumulator","mech_liquid_src"],CustomName:'{"translate":"mech.block.liquid_accumulator"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_fluid:0,CustomModelData:6422029}}}
+execute if score $id mech_data matches 2029 run setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'[{"translate":"offset.16","font":"space:default","with":[{"text":"\\uee0b","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-60","font":"space:default","with":[{"translate":"mech.block.liquid_accumulator","color":"dark_aqua","italic":false,"font":"minecraft:default"}]}]'}
+execute if score $id mech_data matches 2029 as @e[tag=mech_liquid_accumulator,sort=nearest,limit=1,distance=..0.5] run function mechanization:machines/machines/liquid_pipe/add_adjacent_pipes
+
+#thermoelectric generator
+execute if score $id mech_data matches 2030 run summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mech_thermoelectric_generator","mech_liquid_dest"],CustomName:'{"translate":"mech.block.thermoelectric_generator"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,mech_fluid:0,du_data:0,CustomModelData:6422030}}}
+execute if score $id mech_data matches 2030 run setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:'[{"translate":"offset.-8","font":"space:default","with":[{"text":"\\uee0e","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-160","font":"space:default","with":[{"translate":"mech.block.thermoelectric_generator","color":"dark_aqua","italic":false,"font":"minecraft:default"}]}]'}
+execute if score $id mech_data matches 2030 as @e[tag=mech_liquid_accumulator,sort=nearest,limit=1,distance=..0.5] run function mechanization:machines/machines/liquid_pipe/add_adjacent_pipes
 
 
 
