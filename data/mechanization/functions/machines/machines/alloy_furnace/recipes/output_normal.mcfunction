@@ -53,7 +53,7 @@ execute if score $temp_6 mech_data matches 2 if score $temp_3 mech_data matches 
 execute if score $temp_6 mech_data matches 2 if score $temp_4 mech_data matches 288.. if data storage du:temp obj.tank2.tag.ctc.traits.liquid{id:"molten_gold"} run scoreboard players set $temp_6 mech_data 3
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 1.. unless data storage du:temp obj.tank3.tag.ctc.traits.liquid{id:"molten_conductive_alloy"} run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 3857.. run scoreboard players set $temp_6 mech_data 0
-function mechanization:machines/machines/alloy_furnace/recipes/conductive_alloy
+execute if score $temp_6 mech_data matches 3 run function mechanization:machines/machines/alloy_furnace/recipes/conductive_alloy
 
 #Crystal Composite
 scoreboard players set $temp_6 mech_data 0

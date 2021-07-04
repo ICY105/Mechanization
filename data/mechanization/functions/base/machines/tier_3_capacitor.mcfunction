@@ -11,18 +11,18 @@ execute store result entity @s Item.tag.mech_gridid int 1 run scoreboard players
 
 #rate
 scoreboard players operation in_0 mech_data = $base.cf.t3_capacitor.rate mech_data
-execute if entity @s[tag=mech_upgraded] run scoreboard players operation in_0 mech_data = $base.cf.t3_capacitor.rate_upgrade mech_data
-execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation in_0 mech_data = $base.cf.t3_capacitor.rate_ender_upgrade mech_data
-execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation in_0 mech_data = $base.cf.t3_capacitor.rate_nether_upgrade mech_data
+execute if entity @s[tag=mech_upgraded] run scoreboard players operation in_0 mech_data = $base.cf.t3_capacitor.rate_mu mech_data
+execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation in_0 mech_data = $base.cf.t3_capacitor.rate_eu mech_data
+execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation in_0 mech_data = $base.cf.t3_capacitor.rate_nu mech_data
 
 #buffer
 scoreboard players set in_1 mech_data 6000
 
 #capacity
 scoreboard players operation in_2 mech_data = $base.cf.t3_capacitor.capacity mech_data
-execute if entity @s[tag=mech_upgraded] run scoreboard players operation in_2 mech_data = $base.cf.t3_capacitor.capacity_upgrade mech_data
-execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation in_2 mech_data = $base.cf.t3_capacitor.capacity_ender_upgrade mech_data
-execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation in_2 mech_data = $base.cf.t3_capacitor.capacity_nether_upgrade mech_data
+execute if entity @s[tag=mech_upgraded] run scoreboard players operation in_2 mech_data = $base.cf.t3_capacitor.capacity_mu mech_data
+execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation in_2 mech_data = $base.cf.t3_capacitor.capacity_eu mech_data
+execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation in_2 mech_data = $base.cf.t3_capacitor.capacity_nu mech_data
 
 #range
 scoreboard players operation in_3 mech_data = $base.cf.t3_capacitor.range mech_data

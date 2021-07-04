@@ -15,8 +15,8 @@ execute if data block ~ ~ ~ Items[{Slot:0b}] run function mechanization:machines
 function mechanization:machines/machines/casting_basin/gui
 
 #update
-execute if score @s mech_timer matches 1.. if score @s mech_power matches ..59 run scoreboard players set @s mech_timer 0
-execute if score @s mech_timer matches 1.. if score @s mech_power matches 60.. run scoreboard players remove @s mech_power 60
+execute if score @s mech_timer matches 1.. if score @s mech_power matches ..15 run scoreboard players set @s mech_timer 0
+execute if score @s mech_timer matches 1.. if score @s mech_power matches 15.. run scoreboard players remove @s mech_power 15
 execute if score @s mech_timer matches 1.. run scoreboard players remove @s mech_timer 1
 
 ## store scoreboard values

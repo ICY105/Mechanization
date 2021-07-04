@@ -11,18 +11,18 @@ execute store result entity @s Item.tag.mech_gridid int 1 run scoreboard players
 
 #rate
 scoreboard players operation in_0 mech_data = $base.cf.t2_battery.rate mech_data
-execute if entity @s[tag=mech_upgraded] run scoreboard players operation in_0 mech_data = $base.cf.t2_battery.rate_upgrade mech_data
-execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation in_0 mech_data = $base.cf.t2_battery.rate_ender_upgrade mech_data
-execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation in_0 mech_data = $base.cf.t2_battery.rate_nether_upgrade mech_data
+execute if entity @s[tag=mech_upgraded] run scoreboard players operation in_0 mech_data = $base.cf.t2_battery.rate_mu mech_data
+execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation in_0 mech_data = $base.cf.t2_battery.rate_eu mech_data
+execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation in_0 mech_data = $base.cf.t2_battery.rate_nu mech_data
 
 #buffer
 scoreboard players set in_1 mech_data 4000
 
 #capacity
 scoreboard players operation in_2 mech_data = $base.cf.t2_battery.capacity mech_data
-execute if entity @s[tag=mech_upgraded] run scoreboard players operation in_2 mech_data = $base.cf.t2_battery.capacity_upgrade mech_data
-execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation in_2 mech_data = $base.cf.t2_battery.capacity_ender_upgrade mech_data
-execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation in_2 mech_data = $base.cf.t2_battery.capacity_nether_upgrade mech_data
+execute if entity @s[tag=mech_upgraded] run scoreboard players operation in_2 mech_data = $base.cf.t2_battery.capacity_mu mech_data
+execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation in_2 mech_data = $base.cf.t2_battery.capacity_eu mech_data
+execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation in_2 mech_data = $base.cf.t2_battery.capacity_nu mech_data
 
 #range
 scoreboard players operation in_3 mech_data = $base.cf.t2_battery.range mech_data
