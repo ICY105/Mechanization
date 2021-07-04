@@ -159,8 +159,8 @@ execute if score $id mech_data matches 2027 if block ~ ~ ~ minecraft:blast_furna
 execute if score $id mech_data matches 2027 run setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'[{"translate":"offset.2","font":"space:default","with":[{"text":"\\uee0c","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-56","font":"space:default","with":[{"translate":"mech.block.arc_furnace","color":"dark_aqua","italic":false,"font":"minecraft:default"}]}]'}
 execute if score $id mech_data matches 2027 as @e[tag=mech_arc_furnace,sort=nearest,limit=1,distance=..0.5] run function mechanization:machines/machines/liquid_pipe/add_adjacent_pipes
 
-#arc furnace
-execute if score $id mech_data matches 2028 run summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mech_casting_basin","mech_receiver","mech_rotatable","mech_liquid_dest"],CustomName:'{"translate":"mech.block.casting_basin"}',ItemRotation:4,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422028}}}
+#casting basin
+execute if score $id mech_data matches 2028 run summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mech_casting_basin","mech_receiver","mech_rotatable","mech_liquid_dest"],CustomName:'{"translate":"mech.block.casting_basin"}',ItemRotation:4,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,mech_fluid:0,CustomModelData:6422028}}}
 execute if score $id mech_data matches 2028 run setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:'[{"translate":"offset.-8","font":"space:default","with":[{"text":"\\uee0d","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-120","font":"space:default","with":[{"translate":"mech.block.casting_basin","color":"dark_aqua","italic":false,"font":"minecraft:default"}]}]'}
 execute if score $id mech_data matches 2028 as @e[tag=mech_casting_basin,sort=nearest,limit=1,distance=..0.5] run function mechanization:machines/machines/liquid_pipe/add_adjacent_pipes
 

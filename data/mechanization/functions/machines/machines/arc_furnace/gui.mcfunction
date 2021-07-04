@@ -20,8 +20,8 @@ data remove block ~ ~ ~ Items[{tag:{du_gui:1b}}]
 item replace block ~ ~ ~ container.5 with minecraft:leather_boots{du_gui:1b,CustomModelData:0,HideFlags:127,display:{Name:'{"translate":"mech.liquid.empty","italic":false}',Lore:[],color:0}}
 scoreboard players operation $temp_0 mech_data = @s mech_fluid
 scoreboard players operation $temp_1 mech_data = @s mech_fluid
-scoreboard players operation $temp_0 mech_data *= $cons.16 du_data
-scoreboard players operation $temp_0 mech_data /= $in_1 mech_data
+scoreboard players add $temp_0 mech_data 249
+scoreboard players operation $temp_0 mech_data /= $cons.250 du_data
 scoreboard players add $temp_0 mech_data 6422900
 execute if data entity @s Item.tag.tank.tag.ctc.traits.liquid.molten run scoreboard players add $temp_0 mech_data 17
 execute store result block ~ ~ ~ Items[{Slot:5b}].tag.CustomModelData int 1 run scoreboard players get $temp_0 mech_data

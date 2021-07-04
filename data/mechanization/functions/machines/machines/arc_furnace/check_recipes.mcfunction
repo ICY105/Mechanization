@@ -13,5 +13,5 @@ execute if entity @s[tag=!mech_upgrade_nether,tag=!mech_upgrade_ender] if data s
 execute if entity @s[tag=!mech_upgrade_nether,tag=!mech_upgrade_ender] if data storage du:temp obj.input_item.tag.ctc.traits{packed:1b} run function mechanization:machines/machines/arc_furnace/check_recipes_block
 execute if entity @s[tag=!mech_upgrade_nether,tag=!mech_upgrade_ender] if data storage du:temp obj.input_item.tag.ctc.traits{nugget:1b} run function mechanization:machines/machines/arc_furnace/check_recipes_nugget
 
-execute if score @s[tag=mech_upgrade] mech_timer matches 3.. run scoreboard players operation @s mech_timer *= $cons.3 du_data
-execute if score @s[tag=mech_upgrade] mech_timer matches 3.. run scoreboard players operation @s mech_timer /= $cons.4 du_data
+execute if score @s[tag=mech_upgraded] mech_timer matches 3.. run scoreboard players operation @s mech_timer *= $cons.3 du_data
+execute if score @s[tag=mech_upgraded] mech_timer matches 3.. run scoreboard players operation @s mech_timer /= $cons.4 du_data

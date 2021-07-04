@@ -10,19 +10,20 @@ execute if score $base.timer_2 du_data matches 0 as @e[tag=mech_turn_table] at @
 execute if score $base.timer_20 du_data matches 5 as @e[tag=mech_pipe] at @s run function mechanization:machines/machines/liquid_pipe/liquid_pipe
 execute if score $base.timer_20 du_data matches 6 as @e[tag=mech_steam_generator] at @s run function mechanization:machines/machines/steam_generator/steam_generator
 execute if score $base.timer_20 du_data matches 7 as @e[tag=mech_ele_furnace] at @s run function mechanization:machines/machines/electric_furnace
-execute if score $base.timer_20 du_data matches 8 as @e[tag=mech_solar_panel] at @s run function mechanization:machines/machines/solar_panel/solar_panel
-execute if score $base.timer_20 du_data matches 9 as @e[tag=mech_grinder] at @s run function mechanization:machines/machines/grinder/grinder
-execute if score $base.timer_20 du_data matches 10 as @e[tag=mech_alloy_furnace] at @s run function mechanization:machines/machines/alloy_furnace/alloy_furnace
-execute if score $base.timer_20 du_data matches 11 as @e[tag=mech_arc_furnace] at @s run function mechanization:machines/machines/arc_furnace/arc_furnace
+execute if score $base.timer_20 du_data matches 8 as @e[tag=mech_grinder] at @s run function mechanization:machines/machines/grinder/grinder
+execute if score $base.timer_20 du_data matches 9 as @e[tag=mech_alloy_furnace] at @s run function mechanization:machines/machines/alloy_furnace/alloy_furnace
+execute if score $base.timer_20 du_data matches 10 as @e[tag=mech_arc_furnace] at @s run function mechanization:machines/machines/arc_furnace/arc_furnace
+execute if score $base.timer_20 du_data matches 11 as @e[tag=mech_casting_basin] at @s run function mechanization:machines/machines/casting_basin/casting_basin
+execute if score $base.timer_20 du_data matches 12 as @e[tag=mech_liquid_tank] at @s run function mechanization:machines/machines/liquid_tank/liquid_tank
+execute if score $base.timer_20 du_data matches 13 as @e[tag=mech_quarry] at @s run function mechanization:machines/machines/quarry/quarry
 
-execute if score $base.timer_20 du_data matches 12 as @e[tag=mech_block_breaker] at @s run function mechanization:machines/machines/block_breaker/block_breaker
-execute if score $base.timer_20 du_data matches 13 as @e[tag=mech_teleporter] at @s run function mechanization:machines/machines/teleporter/teleporter
-execute if score $base.timer_20 du_data matches 14 as @e[tag=mech_reformer] at @s run function mechanization:machines/machines/reformer/reformer
-execute if score $base.timer_20 du_data matches 15 as @e[tag=mech_disenchanter] at @s run function mechanization:machines/machines/disenchanter/disenchanter
-execute if score $base.timer_20 du_data matches 16 as @e[tag=mech_dim_generator] at @s run function mechanization:machines/machines/dim_gen/dim_gen
-execute if score $base.timer_20 du_data matches 17 as @e[tag=mech_bio_gen] at @s run function mechanization:machines/machines/bio_generator/bio_generator
-execute if score $base.timer_20 du_data matches 18 as @e[tag=mech_quarry] at @s run function mechanization:machines/machines/quarry/quarry
-execute if score $base.timer_20 du_data matches 19 as @e[tag=mech_liquid_tank] at @s run function mechanization:machines/machines/liquid_tank/liquid_tank
+execute if score $base.timer_20 du_data matches 5 as @e[tag=mech_solar_panel] at @s run function mechanization:machines/machines/solar_panel/solar_panel
+execute if score $base.timer_20 du_data matches 6 as @e[tag=mech_block_breaker] at @s run function mechanization:machines/machines/block_breaker/block_breaker
+execute if score $base.timer_20 du_data matches 7 as @e[tag=mech_teleporter] at @s run function mechanization:machines/machines/teleporter/teleporter
+execute if score $base.timer_20 du_data matches 8 as @e[tag=mech_reformer] at @s run function mechanization:machines/machines/reformer/reformer
+execute if score $base.timer_20 du_data matches 9 as @e[tag=mech_disenchanter] at @s run function mechanization:machines/machines/disenchanter/disenchanter
+execute if score $base.timer_20 du_data matches 10 as @e[tag=mech_dim_generator] at @s run function mechanization:machines/machines/dim_gen/dim_gen
+execute if score $base.timer_20 du_data matches 11 as @e[tag=mech_bio_gen] at @s run function mechanization:machines/machines/bio_generator/bio_generator
 
 # 100 tick clock
 execute if score $base.timer_100 du_data matches 10 as @e[tag=mech_tree_feller] at @s run function mechanization:machines/machines/tree_feller/tree_feller

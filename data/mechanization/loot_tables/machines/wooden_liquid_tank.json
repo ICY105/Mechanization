@@ -15,7 +15,7 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				{"translate":"mech.lore.liquid_amount","color":"gray","italic":false,"with":[{"text":"16000 mb"}]},
+				{"translate":"mech.lore.liquid_amount","color":"gray","italic":false,"with":[{"text":"16000"}]},
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
