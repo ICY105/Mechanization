@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1108, CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:6579300, ctc:{ id:\"vial\", from:\"mechanization\", traits:{ item:1b, liquid:{id:\"molten_steel\", molten:1b, amount:1000, temperature:1500, color:6579300, name:'{\"translate\":\"mech.liquid.molten_steel\"}'} }}}"
+              "tag":"{mech_itemid: 1108, CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:5197647, ctc:{ id:\"vial\", from:\"mechanization\", traits:{ item:1b, liquid:{id:\"molten_steel\", molten:1b, amount:1000, temperature:2500, color:5197647, name:'{\"translate\":\"mech.liquid.molten_steel\"}'} }}}"
             }
           ]
         }

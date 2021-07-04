@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1108, CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:15790335, ctc:{ id:\"vial\", from:\"mechanization\", traits:{ item:1b, liquid:{id:\"powdered_snow\", amount:1000, temperature:0, color:15790335, name:'{\"translate\":\"mech.liquid.powdered_snow\"}'} }}}"
+              "tag":"{mech_itemid: 1108, CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:12513520, ctc:{ id:\"vial\", from:\"mechanization\", traits:{ item:1b, liquid:{id:\"powdered_snow\", amount:1000, temperature:0, color:12513520, name:'{\"translate\":\"mech.liquid.powdered_snow\"}'} }}}"
             }
           ]
         }

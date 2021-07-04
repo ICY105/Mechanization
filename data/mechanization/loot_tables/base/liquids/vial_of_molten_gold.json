@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.filled_vial","italic":false,"with":[{"translate":"mech.liquid.lava"}]}
+			  "name": {"translate":"mech.item.filled_vial","italic":false,"with":[{"translate":"mech.liquid.molten_gold"}]}
 			},
 			{
 			  "function": "minecraft:set_lore",
@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1108, CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:14912575, ctc:{ id:\"vial\", from:\"mechanization\", traits:{ item:1b, liquid:{id:\"lava\", molten:1b, amount:1000, temperature:1000, color:14912575, name:'{\"translate\":\"mech.liquid.lava\"}'} }}}"
+              "tag":"{mech_itemid: 1108, CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:16438858, ctc:{ id:\"vial\", from:\"mechanization\", traits:{ item:1b, liquid:{id:\"molten_gold\", molten:1b, amount:1000, temperature:1500, color:16438858, name:'{\"translate\":\"mech.liquid.molten_gold\"}'} }}}"
             }
           ]
         }

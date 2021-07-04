@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1106, CustomModelData: 6421106, HideFlags: 38, CustomPotionColor:35071, ctc:{ id:\"bucket\", from:\"mechanization\", traits:{ item:1b, liquid:{water:1b, amount:1000, temperature:20, color:35071} }}}"
+              "tag":"{mech_itemid: 1106, CustomModelData: 6421106, HideFlags: 38, CustomPotionColor:3432410, ctc:{ id:\"bucket\", from:\"mechanization\", traits:{ item:1b, liquid:{water:1b, amount:1000, temperature:20, color:3432410} }}}"
             }
           ]
         }

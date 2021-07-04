@@ -187,6 +187,8 @@ Age of Machine [02]: {
 		Hardened Liquid Tank	[24-2024]
 		Pressurized Liquid Tank	[25-2025]
 		Liquid Pipe				[26-2026]
+		Arc Furnace				[27-2027]
+		Casting Basin			[28-2028]
 	}
 	Misc [1]: {
 		Spawner Mover			[03-2100]

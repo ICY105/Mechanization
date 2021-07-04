@@ -6,22 +6,22 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:potion",
+		  "name": "minecraft:blast_furnace",
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.filled_bottle","italic":false,"with":[{"translate":"mech.liquid.water"}]}
+			  "name": {"translate":"mech.block.arc_furnace","color":"dark_aqua","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				{"translate":"mech.lore.liquid_amount","color":"gray","italic":false,"with":[{"text":"333"}]},
+			    {"translate":"mech.lore.consume","with":["60"],"color":"white","italic":false},
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1107, HideFlags: 38, CustomPotionColor:3432410, ctc:{ id:\"glass_bottle\", from:\"mechanization\", traits:{ item:1b, liquid:{water:1b, amount:250, temperature:20, color:3432410} }}}"
+              "tag":"{mech_itemid: 2027, CustomModelData: 6422027, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
             }
           ]
         }
