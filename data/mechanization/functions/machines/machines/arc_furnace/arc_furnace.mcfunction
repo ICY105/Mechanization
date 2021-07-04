@@ -14,8 +14,12 @@ execute unless score @s mech_timer matches 2.. if data block ~ ~ ~ Items[{Slot:3
 execute if data block ~ ~ ~ Items[{Slot:1b}] run function mechanization:machines/machines/arc_furnace/tank_input
 function mechanization:machines/machines/arc_furnace/gui
 
-execute if score @s mech_timer matches 1.. if score @s mech_power matches ..59 run scoreboard players set @s mech_timer 0
-execute if score @s mech_timer matches 1.. if score @s mech_power matches 60.. run scoreboard players remove @s mech_power 60
+execute if score @s[tag=!mech_upgraded] mech_timer matches 1.. if score @s mech_power matches ..59 run scoreboard players set @s mech_timer 0
+execute if score @s[tag=!mech_upgraded] mech_timer matches 1.. if score @s mech_power matches 60.. run scoreboard players remove @s mech_power 60
+execute if score @s[tag=mech_upgraded,tag=!mech_upgrade_nether] mech_timer matches 1.. if score @s mech_power matches ..74 run scoreboard players set @s mech_timer 0
+execute if score @s[tag=mech_upgraded,tag=!mech_upgrade_nether] mech_timer matches 1.. if score @s mech_power matches 75.. run scoreboard players remove @s mech_power 75
+execute if score @s[tag=mech_upgrade_nether] mech_timer matches 1.. if score @s mech_power matches ..59 run scoreboard players set @s mech_timer 0
+execute if score @s[tag=mech_upgrade_nether] mech_timer matches 1.. if score @s mech_power matches 60.. run scoreboard players remove @s mech_power 60
 execute if score @s mech_timer matches 1.. run scoreboard players remove @s mech_timer 1
 
 ## store scoreboard values
