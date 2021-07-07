@@ -1,0 +1,16 @@
+{
+	"criteria": {
+        "place_block": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+                "item": {
+                    "item": "minecraft:potion",
+					"nbt": "{ctc:{traits:{liquid:{}}}}"
+                }
+            }
+		}
+    },
+	"rewards":{ 
+		"function":"mechanization:base/triggers/drink_liquid"
+	}
+}
