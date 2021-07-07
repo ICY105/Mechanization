@@ -8,22 +8,22 @@ execute at @s store result score temp_0 mech_data run loot insert ~ ~ ~ mine -29
 execute if score temp_0 mech_data matches 1.. run scoreboard players remove @s mech_power 64
 
 execute if score temp_0 mech_data matches 1.. run setblock ~ ~ ~ air replace
-execute if score temp_0 mech_data matches 0 if block -29999999 0 1601 #du:colors/shulker_boxes{Items:[{}]} run scoreboard players remove @s mech_data 1
+execute if score temp_0 mech_data matches 0 if data block -29999999 0 1601 Items[0] run scoreboard players remove @s mech_data 1
 
-particle dust 0.25 0 0.25 1 ~ ~0.45 ~0.45 0.2 0 0 0 3
-particle dust 0.25 0 0.25 1 ~ ~0.45 ~-0.45 0.2 0 0 0 3
-particle dust 0.25 0 0.25 1 ~0.45 ~0.45 ~ 0 0 0.2 0 3
-particle dust 0.25 0 0.25 1 ~-0.45 ~0.45 ~ 0 0 0.2 0 3
+execute align xyz positioned ~0.5 ~0.5 ~0.5 run particle scrape ~ ~0.45 ~0.45 0.2 0 0 0 3
+execute align xyz positioned ~0.5 ~0.5 ~0.5 run particle scrape ~ ~0.45 ~-0.45 0.2 0 0 0 3
+execute align xyz positioned ~0.5 ~0.5 ~0.5 run particle scrape ~0.45 ~0.45 ~ 0 0 0.2 0 3
+execute align xyz positioned ~0.5 ~0.5 ~0.5 run particle scrape ~-0.45 ~0.45 ~ 0 0 0.2 0 3
 
-particle dust 0.25 0 0.25 1 ~ ~-0.45 ~0.45 0.2 0 0 0 3
-particle dust 0.25 0 0.25 1 ~ ~-0.45 ~-0.45 0.2 0 0 0 3
-particle dust 0.25 0 0.25 1 ~0.45 ~-0.45 ~ 0 0 0.2 0 3
-particle dust 0.25 0 0.25 1 ~-0.45 ~-0.45 ~ 0 0 0.2 0 3
+execute align xyz positioned ~0.5 ~0.5 ~0.5 run particle scrape ~ ~-0.45 ~0.45 0.2 0 0 0 3
+execute align xyz positioned ~0.5 ~0.5 ~0.5 run particle scrape ~ ~-0.45 ~-0.45 0.2 0 0 0 3
+execute align xyz positioned ~0.5 ~0.5 ~0.5 run particle scrape ~0.45 ~-0.45 ~ 0 0 0.2 0 3
+execute align xyz positioned ~0.5 ~0.5 ~0.5 run particle scrape ~-0.45 ~-0.45 ~ 0 0 0.2 0 3
 
-particle dust 0.25 0 0.25 1 ~0.45 ~ ~0.45 0 0.2 0 0 3
-particle dust 0.25 0 0.25 1 ~-0.45 ~ ~0.45 0 0.2 0 0 3
-particle dust 0.25 0 0.25 1 ~0.45 ~ ~-0.45 0 0.2 0 0 3
-particle dust 0.25 0 0.25 1 ~-0.45 ~ ~-0.45 0 0.2 0 0 3
+execute align xyz positioned ~0.5 ~0.5 ~0.5 run particle scrape ~0.45 ~ ~0.45 0 0.2 0 0 3
+execute align xyz positioned ~0.5 ~0.5 ~0.5 run particle scrape ~-0.45 ~ ~0.45 0 0.2 0 0 3
+execute align xyz positioned ~0.5 ~0.5 ~0.5 run particle scrape ~0.45 ~ ~-0.45 0 0.2 0 0 3
+execute align xyz positioned ~0.5 ~0.5 ~0.5 run particle scrape ~-0.45 ~ ~-0.45 0 0.2 0 0 3
 
 #move
 scoreboard players add @s mech_data 1

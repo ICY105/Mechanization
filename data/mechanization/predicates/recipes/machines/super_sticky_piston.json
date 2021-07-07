@@ -1,0 +1,30 @@
+
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/super_sticky_piston_1"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/super_sticky_piston_2"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/super_sticky_piston_3"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/super_sticky_piston_4"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/super_sticky_piston_5"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/super_sticky_piston_6"
+    }
+  ]
+}

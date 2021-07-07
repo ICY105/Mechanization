@@ -1,0 +1,20 @@
+{
+	"condition": "minecraft:location_check",
+	"predicate": {
+	  "block": {
+		"nbt": "{Items:[
+		  {Slot:2b, id:\"minecraft:copper_ingot\"},
+		  {Slot:3b, id:\"minecraft:golden_sword\"},
+		  {Slot:4b, id:\"minecraft:copper_ingot\"},
+		  
+		  {Slot:11b, id:\"minecraft:golden_axe\"},
+		  {Slot:12b, tag:{ctc:{traits:{ \"machine_frame/tier1\":1b }}}},
+		  {Slot:13b, id:\"minecraft:golden_pickaxe\"},
+		  
+		  {Slot:20b, id:\"minecraft:copper_ingot\"},
+		  {Slot:21b, id:\"minecraft:golden_shovel\"},
+		  {Slot:22b, id:\"minecraft:copper_ingot\"}
+		]}"
+	  }
+	}
+  }

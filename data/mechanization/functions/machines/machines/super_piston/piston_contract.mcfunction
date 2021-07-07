@@ -1,11 +1,11 @@
 
 playsound minecraft:block.piston.contract block @a ~ ~ ~ 1 0.7
-execute if score @s mech_data matches 0..3 store success entity @s[tag=mech_super_piston] ArmorItems[3].tag.CustomModelData int 6422020 if entity @s
-execute if score @s mech_data matches 4 store success entity @s[tag=mech_super_piston] ArmorItems[3].tag.CustomModelData int 6422913 if entity @s
-execute if score @s mech_data matches 5 store success entity @s[tag=mech_super_piston] ArmorItems[3].tag.CustomModelData int 6422915 if entity @s
-execute if score @s mech_data matches 0..3 store success entity @s[tag=mech_super_sticky_piston] ArmorItems[3].tag.CustomModelData int 6422021 if entity @s
-execute if score @s mech_data matches 4 store success entity @s[tag=mech_super_sticky_piston] ArmorItems[3].tag.CustomModelData int 6422918 if entity @s
-execute if score @s mech_data matches 5 store success entity @s[tag=mech_super_sticky_piston] ArmorItems[3].tag.CustomModelData int 6422920 if entity @s
+execute if score @s mech_data matches 0..3 store success entity @s[tag=mech_super_piston] Item.tag.CustomModelData int 6422020 if entity @s
+execute if score @s mech_data matches 4 store success entity @s[tag=mech_super_piston] Item.tag.CustomModelData int 6422913 if entity @s
+execute if score @s mech_data matches 5 store success entity @s[tag=mech_super_piston] Item.tag.CustomModelData int 6422915 if entity @s
+execute if score @s mech_data matches 0..3 store success entity @s[tag=mech_super_sticky_piston] Item.tag.CustomModelData int 6422021 if entity @s
+execute if score @s mech_data matches 4 store success entity @s[tag=mech_super_sticky_piston] Item.tag.CustomModelData int 6422918 if entity @s
+execute if score @s mech_data matches 5 store success entity @s[tag=mech_super_sticky_piston] Item.tag.CustomModelData int 6422920 if entity @s
 
 execute if score @s mech_data matches 0 rotated 90 0 positioned ^ ^ ^1 if block ~ ~ ~ piston_head run setblock ~ ~ ~ air
 execute if score @s mech_data matches 1 rotated 0 0 positioned ^ ^ ^1 if block ~ ~ ~ piston_head run setblock ~ ~ ~ air

@@ -1,0 +1,20 @@
+{
+	"condition": "minecraft:location_check",
+	"predicate": {
+	  "block": {
+		"nbt": "{Items:[
+		  {Slot:2b, id:\"minecraft:nether_bricks\"},
+		  {Slot:3b, id:\"minecraft:red_stained_glass\"},
+		  {Slot:4b, id:\"minecraft:nether_bricks\"},
+		  
+		  {Slot:11b, tag:{ctc:{traits:{ plate:1b, \"metal/steel\":1b }}}},
+		  {Slot:12b, tag:{ctc:{traits:{ \"machine_frame/tier2\":1b }}}},
+		  {Slot:13b, tag:{ctc:{traits:{ plate:1b, \"metal/steel\":1b }}}},
+		  
+		  {Slot:20b, id:\"minecraft:nether_bricks\"},
+		  {Slot:21b, id:\"minecraft:red_stained_glass\"},
+		  {Slot:22b, id:\"minecraft:nether_bricks\"}
+		]}"
+	  }
+	}
+  }

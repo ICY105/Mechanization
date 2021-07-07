@@ -1,0 +1,38 @@
+
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/wooden_liquid_tank_1"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/wooden_liquid_tank_2"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/wooden_liquid_tank_3"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/wooden_liquid_tank_4"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/wooden_liquid_tank_5"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/wooden_liquid_tank_6"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/wooden_liquid_tank_7"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/wooden_liquid_tank_8"
+    }
+  ]
+}

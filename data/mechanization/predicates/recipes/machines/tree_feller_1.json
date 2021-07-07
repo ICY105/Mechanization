@@ -1,0 +1,20 @@
+{
+	"condition": "minecraft:location_check",
+	"predicate": {
+	  "block": {
+		"nbt": "{Items:[
+		  {Slot:2b, id:\"minecraft:oak_log\"},
+		  {Slot:3b, id:\"minecraft:redstone\"},
+		  {Slot:4b, id:\"minecraft:oak_log\"},
+		  
+		  {Slot:11b, id:\"minecraft:diamond_axe\"},
+		  {Slot:12b, tag:{ctc:{traits:{ \"machine_frame/tier1\":1b }}}},
+		  {Slot:13b, id:\"minecraft:diamond_axe\"},
+		  
+		  {Slot:20b, id:\"minecraft:oak_log\"},
+		  {Slot:21b, tag:{ctc:{traits:{ plate:1b, \"metal/copper\":1b }}}},
+		  {Slot:22b, id:\"minecraft:oak_log\"}
+		]}"
+	  }
+	}
+  }

@@ -1,0 +1,22 @@
+[
+  {
+	"condition": "minecraft:location_check",
+	"predicate": {
+	  "block": {
+		"nbt": "{Items:[
+		  {Slot:2b, id:\"minecraft:glow_ink_sac\"},
+		  {Slot:3b, id:\"minecraft:redstone_lamp\"},
+		  {Slot:4b, id:\"minecraft:glow_ink_sac\"},
+		  
+		  {Slot:11b, tag:{ctc:{traits:{ rod:1b, \"metal/conductive_alloy\":1b }}}},
+		  {Slot:12b, tag:{ctc:{traits:{ \"machine_frame/tier2\":1b }}}},
+		  {Slot:13b, tag:{ctc:{traits:{ rod:1b, \"metal/conductive_alloy\":1b }}}},
+		  
+		  {Slot:20b, id:\"minecraft:glow_ink_sac\"},
+		  {Slot:21b, id:\"minecraft:redstone_lamp\"},
+		  {Slot:22b, id:\"minecraft:glow_ink_sac\"}
+		]}"
+	  }
+	}
+  }
+]

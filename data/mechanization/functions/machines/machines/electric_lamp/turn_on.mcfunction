@@ -1,0 +1,7 @@
+
+execute rotated 0 -90 run function mechanization:machines/machines/electric_lamp/turn_on_2
+execute rotated 0 90 run function mechanization:machines/machines/electric_lamp/turn_on_2
+execute rotated 0 0 run function mechanization:machines/machines/electric_lamp/turn_on_2
+execute rotated 90 0 run function mechanization:machines/machines/electric_lamp/turn_on_2
+execute rotated 180 0 run function mechanization:machines/machines/electric_lamp/turn_on_2
+execute rotated 270 0 run function mechanization:machines/machines/electric_lamp/turn_on_2

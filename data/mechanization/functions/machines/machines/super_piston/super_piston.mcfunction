@@ -11,4 +11,4 @@ execute if score $world.out_0 du_data matches 0 run tag @s remove mech_active
 execute if score $world.out_0 du_data matches 1..2 run tag @s add mech_active
 
 #cleanup
-execute unless block ~ ~ ~ barrier run kill @s
+execute unless block ~ ~ ~ minecraft:barrier run kill @s

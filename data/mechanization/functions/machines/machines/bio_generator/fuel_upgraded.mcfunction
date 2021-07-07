@@ -18,6 +18,7 @@ execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:pumpkin"}]} run scoreboard 
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:apple"}]} run scoreboard players add temp_0 mech_data 16
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:cod"}]} run scoreboard players add temp_0 mech_data 16
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:salmon"}]} run scoreboard players add temp_0 mech_data 16
+execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:glow_berries"}]} run scoreboard players add temp_0 mech_data 16
 
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:melon"}]} run scoreboard players add temp_0 mech_data 20
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:nether_wart"}]} run scoreboard players add temp_0 mech_data 20

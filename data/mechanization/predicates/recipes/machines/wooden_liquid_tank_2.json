@@ -1,0 +1,20 @@
+{
+	"condition": "minecraft:location_check",
+	"predicate": {
+	  "block": {
+		"nbt": "{Items:[
+		  {Slot:2b, id:\"minecraft:spruce_log\"},
+		  {Slot:3b, id:\"minecraft:glass\"},
+		  {Slot:4b, id:\"minecraft:spruce_log\"},
+		  
+		  {Slot:11b, tag:{ctc:{traits:{ plate:1b, \"metal/iron\":1b }}}},
+		  {Slot:12b, tag:{ctc:{traits:{ \"machine_frame/tier1\":1b }}}},
+		  {Slot:13b, tag:{ctc:{traits:{ plate:1b, \"metal/iron\":1b }}}},
+		  
+		  {Slot:20b, id:\"minecraft:spruce_log\"},
+		  {Slot:21b, id:\"minecraft:glass\"},
+		  {Slot:22b, id:\"minecraft:spruce_log\"}
+		]}"
+	  }
+	}
+  }

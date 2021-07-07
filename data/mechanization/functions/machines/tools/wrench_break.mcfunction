@@ -45,6 +45,7 @@ kill @s[tag=mech_auto_farm]
 #Mob Grinder
 execute if entity @s[tag=mech_mob_grinder] run loot spawn ~ ~ ~ loot mechanization:machines/mob_grinder
 execute if entity @s[tag=mech_mob_grinder] run setblock ~ ~ ~ minecraft:air replace
+execute if entity @s[tag=mech_mob_grinder] run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
 kill @s[tag=mech_mob_grinder]
 
 #Quarry
@@ -52,14 +53,8 @@ execute if entity @s[tag=mech_quarry] run loot spawn ~ ~ ~ loot mechanization:ma
 execute if entity @s[tag=mech_quarry] run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_quarry]
 
-#Chunk Loader
-execute if entity @s[tag=mech_chunk_loader] run loot spawn ~ ~ ~ loot mechanization:machines/chunk_loader
-execute if entity @s[tag=mech_chunk_loader] run setblock ~ ~ ~ minecraft:air replace
-kill @s[tag=mech_chunk_loader]
-
 #Teleporter
 execute if entity @s[tag=mech_teleporter] run loot spawn ~ ~ ~ loot mechanization:machines/teleporter
-execute if entity @s[tag=mech_teleporter] run setblock ~ ~ ~ minecraft:air replace
 execute if entity @s[tag=mech_teleporter] run function mechanization:machines/machines/teleporter/remove
 
 #Growth Accelerator
@@ -100,12 +95,14 @@ kill @s[tag=mech_bio_gen]
 #Item Reformer
 execute if entity @s[tag=mech_reformer] run loot spawn ~ ~ ~ loot mechanization:machines/item_reformer
 execute if entity @s[tag=mech_reformer] run setblock ~ ~ ~ minecraft:air replace
+execute if entity @s[tag=mech_reformer] run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
 kill @s[tag=mech_reformer]
 
-#Disenchanter
-execute if entity @s[tag=mech_disenchanter] run loot spawn ~ ~ ~ loot mechanization:machines/disenchanter
-execute if entity @s[tag=mech_disenchanter] run setblock ~ ~ ~ minecraft:air replace
-kill @s[tag=mech_disenchanter]
+#Enchanting Station
+execute if entity @s[tag=mech_ench_station] run loot spawn ~ ~ ~ loot mechanization:machines/enchanting_station
+execute if entity @s[tag=mech_ench_station] run setblock ~ ~ ~ minecraft:air replace
+execute if entity @s[tag=mech_ench_station] run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
+kill @s[tag=mech_ench_station]
 
 #Ender Generator
 execute if entity @s[tag=mech_dim_generator] run loot spawn ~ ~ ~ loot mechanization:machines/dimensional_generator
@@ -136,7 +133,7 @@ execute if entity @s[tag=mech_liquid_accumulator] run setblock ~ ~ ~ minecraft:a
 execute if entity @s[tag=mech_liquid_accumulator] run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
 kill @s[tag=mech_liquid_accumulator]
 
-#Liquid Accumulator
+#Thermoelectric Generator
 execute if entity @s[tag=mech_thermoelectric_generator] run loot spawn ~ ~ ~ loot mechanization:machines/thermoelectric_generator
 execute if entity @s[tag=mech_thermoelectric_generator] run setblock ~ ~ ~ minecraft:air replace
 execute if entity @s[tag=mech_thermoelectric_generator] run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes

@@ -18,6 +18,7 @@
 		"minecraft:redstone_wire",
 		"minecraft:repeater",
 		"minecraft:comparator",
-		"minecraft:water"
+		"minecraft:water",
+		"minecraft:light"
 	]
 }

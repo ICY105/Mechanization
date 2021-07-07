@@ -5,6 +5,9 @@ execute if predicate mechanization:recipes/base/machine_wrench run loot replace 
 #Multimeter
 execute if predicate mechanization:recipes/base/multimeter run loot replace block ~ ~ ~ container.16 loot mechanization:base/multimeter
 
+#Vial
+execute if predicate mechanization:recipes/base/vial run loot replace block ~ ~ ~ container.16 loot mechanization:base/vial
+
 #machine upgrades
 execute if predicate mechanization:recipes/base/machine_upgrade run loot replace block ~ ~ ~ container.16 loot mechanization:base/machine_upgrade
 execute if predicate mechanization:recipes/base/ender_upgrade run loot replace block ~ ~ ~ container.16 loot mechanization:base/ender_upgrade

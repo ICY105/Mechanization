@@ -6,6 +6,7 @@
 		"minecraft:void_air",
 		"minecraft:water",
 		"minecraft:lava",
-		"minecraft:snow"
+		"minecraft:snow",
+		"minecraft:light"
 	]
 }

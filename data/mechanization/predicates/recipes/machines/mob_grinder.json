@@ -1,0 +1,22 @@
+[
+  {
+	"condition": "minecraft:location_check",
+	"predicate": {
+	  "block": {
+		"nbt": "{Items:[
+		  {Slot:3b, id:\"minecraft:wither_skeleton_skull\"},
+		  
+		  {Slot:11b, id:\"minecraft:diamond_sword\"},
+		  {Slot:12b, tag:{ctc:{traits:{ \"machine_frame/tier2\":1b }}}},
+		  {Slot:13b, id:\"minecraft:diamond_sword\"},
+		  
+		  {Slot:20b, tag:{ctc:{traits:{ plate:1b, \"metal/conductive_alloy\":1b }}}},
+		  {Slot:21b, id:\"minecraft:bucket\"},
+		  {Slot:22b, tag:{ctc:{traits:{ plate:1b, \"metal/conductive_alloy\":1b }}}}
+		]}"
+	  }
+	}
+  },
+  { "condition": "minecraft:inverted", "term": { "condition": "minecraft:location_check", "predicate": { "block": { "nbt": "{Items:[{Slot:2b}]}" }}}},
+  { "condition": "minecraft:inverted", "term": { "condition": "minecraft:location_check", "predicate": { "block": { "nbt": "{Items:[{Slot:4b}]}" }}}}
+]

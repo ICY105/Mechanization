@@ -36,7 +36,14 @@
 			},
 			{
 			  "type": "minecraft:loot_table",
-			  "name": "mechanization:base/titanium_ore",
+			  "name": "mechanization:base/titanium_raw",
+			  "functions": [
+			    {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops"
+                }
+			  ],
 			  "conditions": [
 			    {
 				  "condition": "minecraft:block_state_property",

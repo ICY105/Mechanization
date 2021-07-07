@@ -1,0 +1,20 @@
+{
+	"condition": "minecraft:location_check",
+	"predicate": {
+	  "block": {
+		"nbt": "{Items:[
+		  {Slot:2b, id:\"minecraft:fishing_rod\"},
+		  {Slot:3b, tag:{ctc:{traits:{ gear:1b, \"metal/conductive_alloy\":1b }}}},
+		  {Slot:4b, id:\"minecraft:fishing_rod\"},
+		  
+		  {Slot:11b, id:\"minecraft:string\"},
+		  {Slot:12b, tag:{ctc:{traits:{ \"machine_frame/tier2\":1b }}}},
+		  {Slot:13b, id:\"minecraft:string\"},
+		  
+		  {Slot:20b, id:\"minecraft:fishing_rod\"},
+		  {Slot:21b, tag:{ctc:{traits:{ gear:1b, \"metal/conductive_alloy\":1b }}}},
+		  {Slot:22b, id:\"minecraft:fishing_rod\"}
+		]}"
+	  }
+	}
+  }

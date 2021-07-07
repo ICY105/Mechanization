@@ -3,8 +3,8 @@ execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:nether_brick"}]} ru
 execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:soul_sand"}]} run scoreboard players add @s mech_data 10
 execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:magma_block"}]} run scoreboard players add @s mech_data 40
 execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:glowstone_dust"}]} run scoreboard players add @s mech_data 40
-execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:quartz"}]} run scoreboard players add @s mech_data 80
-execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:blaze_powder"}]} run scoreboard players add @s mech_data 80
+execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:quartz"}]} run scoreboard players add @s mech_data 60
+execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:blaze_powder"}]} run scoreboard players add @s mech_data 60
 execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:ghast_tear"}]} run scoreboard players add @s mech_data 250
 
 execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:wither_rose"}]} run scoreboard players add @s mech_data 500

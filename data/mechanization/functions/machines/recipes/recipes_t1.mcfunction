@@ -1,21 +1,13 @@
 
-#Furnace Generator
-execute if score $crafting.in_0 du_data matches 2.. if score $crafting.in_2 du_data matches 2.. if score $crafting.in_3 du_data matches 2.. if score $crafting.in_5 du_data matches 2.. if score $crafting.in_6 du_data matches 2.. if score $crafting.in_8 du_data matches 2.. if block ~ ~ ~ barrel{Items:[{Slot:2b, id:"minecraft:white_terracotta"},{Slot:3b, id:"minecraft:water_bucket"},{Slot:4b, id:"minecraft:white_terracotta"},{Slot:11b, tag:{OreDict:["ingotCopper"]}},{Slot:12b, tag:{OreDict:["blockMachineFrame1"]}},{Slot:13b, tag:{OreDict:["ingotCopper"]}},{Slot:20b, id:"minecraft:white_terracotta"},{Slot:21b, id:"minecraft:furnace"},{Slot:22b, id:"minecraft:white_terracotta"}]} run function mechanization:machines/recipes/furnace_generator
-
-#Electric Furnace
-execute if score $crafting.in_0 du_data matches 2.. if score $crafting.in_1 du_data matches 16.. if score $crafting.in_2 du_data matches 2.. if score $crafting.in_3 du_data matches 2.. if score $crafting.in_5 du_data matches 2.. if score $crafting.in_6 du_data matches 2.. if score $crafting.in_8 du_data matches 2.. if block ~ ~ ~ barrel{Items:[{Slot:2b, id:"minecraft:iron_ingot"},{Slot:3b, id:"minecraft:redstone"},{Slot:4b, id:"minecraft:iron_ingot"},{Slot:11b, tag:{OreDict:["ingotCopper"]}},{Slot:12b, tag:{OreDict:["blockMachineFrame1"]}},{Slot:13b, tag:{OreDict:["ingotCopper"]}},{Slot:20b, id:"minecraft:iron_ingot"},{Slot:21b, id:"minecraft:furnace"},{Slot:22b, id:"minecraft:iron_ingot"}]} run function mechanization:machines/recipes/electric_furnace
-
-#Alloy Furnace
-execute if score $crafting.in_0 du_data matches 2.. if score $crafting.in_2 du_data matches 2.. if score $crafting.in_3 du_data matches 2.. if score $crafting.in_5 du_data matches 2.. if score $crafting.in_6 du_data matches 2.. if score $crafting.in_8 du_data matches 2.. if block ~ ~ ~ barrel{Items:[{Slot:2b, id:"minecraft:bricks"},{Slot:3b, id:"minecraft:lava_bucket"},{Slot:4b, id:"minecraft:bricks"},{Slot:11b, tag:{OreDict:["ingotCopper"]}},{Slot:12b, tag:{OreDict:["blockMachineFrame1"]}},{Slot:13b, tag:{OreDict:["ingotCopper"]}},{Slot:20b, id:"minecraft:bricks"},{Slot:21b, id:"minecraft:furnace"},{Slot:22b, id:"minecraft:bricks"}]} run function mechanization:machines/recipes/alloy_furnace
-
-#Tree Feller
-execute if score $crafting.in_0 du_data matches 2.. if score $crafting.in_2 du_data matches 2.. if score $crafting.in_3 du_data matches 2.. if score $crafting.in_5 du_data matches 2.. if score $crafting.in_6 du_data matches 2.. if score $crafting.in_8 du_data matches 2.. if block ~ ~ ~ barrel{Items:[{Slot:2b, id:"minecraft:oak_log"},{Slot:3b, id:"minecraft:diamond_axe"},{Slot:4b, id:"minecraft:spruce_log"},{Slot:11b, tag:{OreDict:["ingotCopper"]}},{Slot:12b, tag:{OreDict:["blockMachineFrame1"]}},{Slot:13b, tag:{OreDict:["ingotCopper"]}},{Slot:20b, id:"minecraft:birch_log"},{Slot:21b, id:"minecraft:diamond_axe"},{Slot:22b, id:"minecraft:jungle_log"}]} run function mechanization:machines/recipes/tree_feller
-
-#Growth Accelerator
-execute if score $crafting.in_0 du_data matches 2.. if score $crafting.in_1 du_data matches 16.. if score $crafting.in_2 du_data matches 2.. if score $crafting.in_3 du_data matches 2.. if score $crafting.in_5 du_data matches 2.. if score $crafting.in_6 du_data matches 2.. if score $crafting.in_7 du_data matches 16.. if score $crafting.in_8 du_data matches 2.. if block ~ ~ ~ barrel{Items:[{Slot:2b, id:"minecraft:bone_block"},{Slot:3b, id:"minecraft:dirt"},{Slot:4b, id:"minecraft:bone_block"},{Slot:11b, tag:{OreDict:["ingotConductive"]}},{Slot:12b, tag:{OreDict:["blockMachineFrame1"]}},{Slot:13b, tag:{OreDict:["ingotConductive"]}},{Slot:20b, id:"minecraft:bone_block"},{Slot:21b, id:"minecraft:dirt"},{Slot:22b, id:"minecraft:bone_block"}]} run function mechanization:machines/recipes/growth_accelerator
-
-#Block Breaker
-execute if block ~ ~ ~ barrel{Items:[{Slot:2b, tag:{OreDict:["ingotCopper"]}},{Slot:3b, id:"minecraft:golden_shovel"},{Slot:4b, tag:{OreDict:["ingotCopper"]}},{Slot:11b, id:"minecraft:golden_pickaxe"},{Slot:12b, tag:{OreDict:["blockMachineFrame1"]}},{Slot:13b, id:"minecraft:golden_axe"},{Slot:20b, tag:{OreDict:["ingotCopper"]}},{Slot:21b, id:"minecraft:golden_sword"},{Slot:22b, tag:{OreDict:["ingotCopper"]}}]} run loot replace block ~ ~ ~ container.16 loot mechanization:machines/block_breaker
-
-#Grinder
-execute if score $crafting.in_3 du_data matches 2.. if score $crafting.in_5 du_data matches 2.. if block ~ ~ ~ barrel{Items:[{Slot:2b, id:"minecraft:obsidian"},{Slot:3b, id:"minecraft:diamond"},{Slot:4b, id:"minecraft:obsidian"},{Slot:11b, tag:{OreDict:["ingotCopper"]}},{Slot:12b, tag:{OreDict:["blockMachineFrame1"]}},{Slot:13b, tag:{OreDict:["ingotCopper"]}},{Slot:20b, id:"minecraft:obsidian"},{Slot:21b, id:"minecraft:diamond"},{Slot:22b, id:"minecraft:obsidian"}]} store success score temp_0 du_data run function mechanization:machines/recipes/grinder
+execute if predicate mechanization:recipes/machines/electric_furnace run loot replace block ~ ~ ~ container.16 loot mechanization:machines/electric_furnace
+execute if predicate mechanization:recipes/machines/steam_generator run loot replace block ~ ~ ~ container.16 loot mechanization:machines/steam_generator
+execute if predicate mechanization:recipes/machines/alloy_furnace run loot replace block ~ ~ ~ container.16 loot mechanization:machines/alloy_furnace
+execute if predicate mechanization:recipes/machines/grinder run loot replace block ~ ~ ~ container.16 loot mechanization:machines/grinder
+execute if predicate mechanization:recipes/machines/tree_feller run loot replace block ~ ~ ~ container.16 loot mechanization:machines/tree_feller
+execute if predicate mechanization:recipes/machines/growth_accelerator run loot replace block ~ ~ ~ container.16 loot mechanization:machines/growth_accelerator
+execute if predicate mechanization:recipes/machines/arc_furnace run loot replace block ~ ~ ~ container.16 loot mechanization:machines/arc_furnace
+execute if predicate mechanization:recipes/machines/casting_basin run loot replace block ~ ~ ~ container.16 loot mechanization:machines/casting_basin
+execute if predicate mechanization:recipes/machines/thermoelectric_generator run loot replace block ~ ~ ~ container.16 loot mechanization:machines/thermoelectric_generator
+execute if predicate mechanization:recipes/machines/liquid_accumulator run loot replace block ~ ~ ~ container.16 loot mechanization:machines/liquid_accumulator
+execute if predicate mechanization:recipes/machines/wooden_liquid_tank run loot replace block ~ ~ ~ container.16 loot mechanization:machines/wooden_liquid_tank
+execute if predicate mechanization:recipes/machines/block_breaker run loot replace block ~ ~ ~ container.16 loot mechanization:machines/block_breaker

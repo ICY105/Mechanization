@@ -8,7 +8,7 @@ execute unless score @s mech_fluid matches -2147483648.. store result score @s m
 
 #process recipes
 execute if score @s mech_timer matches 1 if data block ~ ~ ~ Items[{Slot:3b}] run function mechanization:machines/machines/arc_furnace/process_result
-execute unless score @s mech_timer matches 2.. if data block ~ ~ ~ Items[{Slot:3b}] run function mechanization:machines/machines/arc_furnace/check_recipes
+execute unless score @s mech_timer matches 2.. if score @s mech_power matches 60.. if data block ~ ~ ~ Items[{Slot:3b}] run function mechanization:machines/machines/arc_furnace/check_recipes
 
 #ui
 execute if data block ~ ~ ~ Items[{Slot:1b}] run function mechanization:machines/machines/arc_furnace/tank_input

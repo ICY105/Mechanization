@@ -191,6 +191,8 @@ Age of Machine [02]: {
 		Casting Basin			[28-2028]
 		Liquid Accumulator		[29-2029]
 		Thermoelectric Generator[30-2030]
+		Lightning Generator		[31-2031]
+		Electric Lamp			[32-2032]
 	}
 	Misc [1]: {
 		Spawner Mover			[03-2100]

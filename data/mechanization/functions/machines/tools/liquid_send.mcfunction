@@ -4,4 +4,5 @@ execute if entity @s[tag=mech_steam_generator] run function mechanization:machin
 execute if entity @s[tag=mech_alloy_furnace] run function mechanization:machines/machines/alloy_furnace/send_liquid
 execute if entity @s[tag=mech_arc_furnace] run function mechanization:machines/machines/arc_furnace/send_liquid
 execute if entity @s[tag=mech_liquid_accumulator] run function mechanization:machines/machines/liquid_accumulator/send_liquid
+execute if entity @s[tag=mech_mob_grinder] run function mechanization:machines/machines/mob_grinder/send_liquid
 

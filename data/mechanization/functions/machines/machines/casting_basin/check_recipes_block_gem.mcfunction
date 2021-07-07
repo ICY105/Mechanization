@@ -18,3 +18,5 @@ execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid
 execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_amethyst"} if data storage du:temp obj.output_item{id:"minecraft:amethyst_block"} run scoreboard players set @s mech_timer 16
 execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_quartz"} run scoreboard players set @s mech_timer 16
 execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_quartz"} if data storage du:temp obj.output_item{id:"minecraft:quartz_block"} run scoreboard players set @s mech_timer 16
+execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"lava"} run scoreboard players set @s mech_timer 16
+execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"lava"} if data storage du:temp obj.output_item{id:"minecraft:obsidian"} run scoreboard players set @s mech_timer 16

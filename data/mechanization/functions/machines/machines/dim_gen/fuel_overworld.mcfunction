@@ -20,7 +20,7 @@ execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:music_disc_11"}]} r
 execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:music_disc_wait"}]} run scoreboard players add @s mech_data 500
 
 execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:heart_of_the_sea"}]} run scoreboard players add @s mech_data 1000
-execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:totem_of_undying"}]} run scoreboard players add @s mech_data 2000
+execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:totem_of_undying"}]} run scoreboard players add @s mech_data 1000
 
 execute store result score temp_0 mech_data run data get block ~ ~ ~ Items[0].Count
 scoreboard players remove temp_0 mech_data 1

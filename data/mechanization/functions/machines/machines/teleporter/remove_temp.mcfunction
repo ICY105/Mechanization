@@ -1,5 +1,5 @@
 
 
-scoreboard players remove in_0 mech_data 1
-data remove storage du:temp list[0]
-execute if score in_0 mech_data matches 1.. run function mechanization:machines/machines/teleporter/remove_temp
+data remove storage du:temp obj.valid[0]
+scoreboard players remove $math.out_0 du_data 1
+execute if score $math.out_0 du_data matches 1.. run function mechanization:machines/machines/teleporter/remove_temp

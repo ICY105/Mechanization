@@ -1,0 +1,30 @@
+
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/turn_table_1"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/turn_table_2"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/turn_table_3"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/turn_table_4"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/turn_table_5"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/machines/turn_table_6"
+    }
+  ]
+}

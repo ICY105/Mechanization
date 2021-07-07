@@ -1,25 +1,22 @@
 data merge entity @s {Fire:32676}
 
 #load scoreboard values
-execute unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s ArmorItems[3].tag.mech_power
-execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s ArmorItems[3].tag.mech_gridid
+execute unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s Item.tag.mech_power
+execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s Item.tag.mech_gridid
 
-#main
-execute unless block ~ ~ ~ dropper{Items:[{Slot:0b}]} run item replace block ~ ~ ~ container.0 with minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-execute unless block ~ ~ ~ dropper{Items:[{Slot:1b}]} run item replace block ~ ~ ~ container.1 with minecraft:structure_block{CustomModelData:6422204,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-execute unless block ~ ~ ~ dropper{Items:[{Slot:2b}]} run item replace block ~ ~ ~ container.2 with minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-execute unless block ~ ~ ~ dropper{Items:[{Slot:3b}]} run item replace block ~ ~ ~ container.3 with minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-execute unless block ~ ~ ~ dropper{Items:[{Slot:5b}]} run item replace block ~ ~ ~ container.5 with minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-execute unless block ~ ~ ~ dropper{Items:[{Slot:6b}]} run item replace block ~ ~ ~ container.6 with minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-execute unless block ~ ~ ~ dropper{Items:[{Slot:7b}]} run item replace block ~ ~ ~ container.7 with minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
-execute unless block ~ ~ ~ dropper{Items:[{Slot:8b}]} run item replace block ~ ~ ~ container.8 with minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:"\"\""}}
+### main
 
-execute if score @s mech_power matches 128.. if block ~ ~ ~ dropper{Items:[{Slot:4b}]} unless block ~ ~ ~ dropper{Items:[{Slot:4b,tag:{Unbreakable:1b}}]} unless block ~ ~ ~ dropper{Items:[{Slot:4b,tag:{Damage:0}}]} unless block ~ ~ ~ dropper{Items:[{Slot:4b,tag:{du_dur:{enabled:1b}}}]} run function mechanization:machines/machines/reformer/normal_repair
-execute if score @s mech_power matches 128.. if block ~ ~ ~ dropper{Items:[{Slot:4b,tag:{du_dur:{init:1b}}}]} unless block ~ ~ ~ dropper{Items:[{Slot:4b,tag:{Damage:0}}]} run function mechanization:machines/machines/reformer/du_repair
+#ui
+execute if data block ~ ~ ~ Items[{Slot:1b}] run function mechanization:machines/machines/reformer/tank_input
+function mechanization:machines/machines/reformer/gui
 
-#store scoreboard values
-execute store result entity @s ArmorItems[3].tag.mech_power int 1 run scoreboard players get @s mech_power
-execute store result entity @s ArmorItems[3].tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
+#repair
+execute if score @s mech_power matches 128.. if score @s mech_fluid matches 1.. if data block ~ ~ ~ Items[{Slot:3b}] unless data block ~ ~ ~ Items[{Slot:3b}].tag.Unbreakable unless data block ~ ~ ~ Items[{Slot:3b}].tag{Damage:0} unless data block ~ ~ ~ Items[{Slot:3b}].tag.du_dur.enabled run function mechanization:machines/machines/reformer/normal_repair
+execute if score @s mech_power matches 128.. if score @s mech_fluid matches 1.. if data block ~ ~ ~ Items[{Slot:3b}].tag.du_dur{init:1b} unless data block ~ ~ ~ Items[{Slot:3b}].tag{Damage:0} run function mechanization:machines/machines/reformer/du_repair
+
+## store scoreboard values
+execute store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power
+execute store result entity @s Item.tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
 
 #cleanup
 execute unless block ~ ~ ~ dropper run function mechanization:base/utils/break_machine_t2

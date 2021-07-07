@@ -8,7 +8,7 @@ execute unless score @s mech_fluid matches -2147483648.. store result score @s m
 
 #process recipes
 execute if score @s mech_timer matches 1 if score @s mech_fluid matches 1.. if score @s mech_data matches 1.. run function mechanization:machines/machines/casting_basin/process_result
-execute unless score @s mech_timer matches 2.. if score @s mech_fluid matches 1.. if score @s mech_data matches 1.. run function mechanization:machines/machines/casting_basin/check_recipes
+execute unless score @s mech_timer matches 2.. if score @s mech_fluid matches 1.. if score @s mech_data matches 1.. if score @s mech_power matches 15.. run function mechanization:machines/machines/casting_basin/check_recipes
 
 #ui
 execute if data block ~ ~ ~ Items[{Slot:0b}] run function mechanization:machines/machines/casting_basin/tank_input
