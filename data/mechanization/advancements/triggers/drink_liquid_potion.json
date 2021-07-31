@@ -1,0 +1,16 @@
+{
+	"criteria": {
+        "drink_liquid": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+                "item": {
+                    "item": "minecraft:potion",
+					"nbt": "{mech_itemid:1107,ctc:{traits:{liquid:{}}}}"
+                }
+            }
+		}
+    },
+	"rewards":{ 
+		"function":"mechanization:base/triggers/drink_liquid"
+	}
+}

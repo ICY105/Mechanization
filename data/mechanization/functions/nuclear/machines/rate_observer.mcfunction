@@ -1,3 +1,4 @@
+
 scoreboard players set @s mech_data 0
 scoreboard players operation @s mech_data = @e[tag=mech_fission_reactor,sort=nearest,limit=1,distance=..8] du_move_y
 
@@ -18,5 +19,4 @@ execute if score @s mech_data matches 47..52 run data merge block ~ ~ ~ {Items:[
 execute if score @s mech_data matches 53..56 run data merge block ~ ~ ~ {Items:[{Slot:0b,id:"minecraft:cobblestone",Count:64},{Slot:1b,id:"minecraft:cobblestone",Count:64},{Slot:2b,id:"minecraft:cobblestone",Count:64},{Slot:3b,id:"minecraft:cobblestone",Count:64},{Slot:4b,id:"minecraft:cobblestone",Count:64},{Slot:5b,id:"minecraft:cobblestone",Count:64},{Slot:6b,id:"minecraft:cobblestone",Count:64},{Slot:7b,id:"minecraft:cobblestone",Count:64},{Slot:8b,id:"minecraft:cobblestone",Count:23}]}
 execute if score @s mech_data matches 57.. run data merge block ~ ~ ~ {Items:[{Slot:0b,id:"minecraft:cobblestone",Count:64},{Slot:1b,id:"minecraft:cobblestone",Count:64},{Slot:2b,id:"minecraft:cobblestone",Count:64},{Slot:3b,id:"minecraft:cobblestone",Count:64},{Slot:4b,id:"minecraft:cobblestone",Count:64},{Slot:5b,id:"minecraft:cobblestone",Count:64},{Slot:6b,id:"minecraft:cobblestone",Count:64},{Slot:7b,id:"minecraft:cobblestone",Count:64},{Slot:8b,id:"minecraft:cobblestone",Count:64}]}
 
-data merge entity @s {Fire:32676s}
-execute unless block ~ ~ ~ dropper run kill @s
+execute unless block ~ ~ ~ minecraft:dropper run kill @s

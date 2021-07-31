@@ -1,5 +1,7 @@
 
-advancement revoke @s only mechanization:triggers/drink_liquid
+advancement revoke @s only mechanization:triggers/drink_liquid_vial
+advancement revoke @s only mechanization:triggers/drink_liquid_bucket
+advancement revoke @s only mechanization:triggers/drink_liquid_potion
 
 #give custom
 execute if data entity @s[gamemode=!creative] SelectedItem.tag{mech_itemid:1106} run give @s minecraft:bucket

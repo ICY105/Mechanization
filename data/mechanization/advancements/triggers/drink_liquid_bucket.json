@@ -1,11 +1,11 @@
 {
 	"criteria": {
-        "place_block": {
+        "drink_liquid": {
 			"trigger": "minecraft:consume_item",
 			"conditions": {
                 "item": {
                     "item": "minecraft:potion",
-					"nbt": "{ctc:{traits:{liquid:{}}}}"
+					"nbt": "{mech_itemid:1106}"
                 }
             }
 		}

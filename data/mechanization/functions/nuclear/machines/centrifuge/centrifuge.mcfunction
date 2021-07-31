@@ -17,5 +17,5 @@ execute store result entity @s ArmorItems[3].tag.mech_power int 1 run scoreboard
 execute store result entity @s ArmorItems[3].tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
 
 #cleanup
-execute unless block ~ ~ ~ barrier run kill @e[tag=mech_centrifuge_model,distance=..0.25]
-execute unless block ~ ~ ~ barrier run function mechanization:base/utils/break_machine_t2
+execute unless block ~ ~ ~ minecraft:barrier positioned ~ ~0.25 ~ run kill @e[tag=mech_centrifuge_model,distance=..0.25]
+execute unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_machine_t2
