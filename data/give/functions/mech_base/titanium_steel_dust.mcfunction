@@ -1,1 +1,0 @@
-loot give @s loot mechanization:base/titanium_steel_dust

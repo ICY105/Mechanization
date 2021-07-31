@@ -1,1 +1,0 @@
-loot spawn ~ ~ ~ loot mechanization:assembly/fast_hopper

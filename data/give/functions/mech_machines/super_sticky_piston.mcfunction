@@ -1,1 +1,0 @@
-loot give @s loot mechanization:machines/super_sticky_piston

@@ -1,1 +1,0 @@
-loot give @s loot mechanization:nuclear/temperature_observer

@@ -1,1 +1,0 @@
-loot give @s loot mechanization:machines/bio_generator

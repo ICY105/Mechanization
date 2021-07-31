@@ -1,1 +1,0 @@
-loot give @s loot mechanization:base/tier_2_machine_frame

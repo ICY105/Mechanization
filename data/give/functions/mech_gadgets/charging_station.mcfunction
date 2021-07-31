@@ -1,1 +1,0 @@
-loot give @s loot mechanization:gadgets/charging_station

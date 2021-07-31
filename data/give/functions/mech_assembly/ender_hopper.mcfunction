@@ -1,1 +1,0 @@
-loot spawn ~ ~ ~ loot mechanization:assembly/ender_hopper

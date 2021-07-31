@@ -1,1 +1,0 @@
-loot give @s loot mechanization:base/copper_ore

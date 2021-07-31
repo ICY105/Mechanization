@@ -1,1 +1,0 @@
-loot spawn ~ ~ ~ loot mechanization:assembly/mss_storage_drive
