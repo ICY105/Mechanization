@@ -1,0 +1,20 @@
+{
+	"condition": "minecraft:location_check",
+	"predicate": {
+	  "block": {
+		"nbt": "{Items:[
+		  {Slot:2b, id:\"minecraft:glass\" },
+		  {Slot:3b, tag:{ctc:{traits:{ plate:1b, \"metal/uranium\":1b }}} },
+		  {Slot:4b, id:\"minecraft:glass\" },
+		  
+		  {Slot:11b, id:\"minecraft:glass\" },
+		  {Slot:12b, tag:{ctc:{traits:{ plate:1b, \"metal/uranium\":1b }}} },
+		  {Slot:13b, id:\"minecraft:glass\" },
+		  
+		  {Slot:20b, id:\"minecraft:glass\" },
+		  {Slot:21b, tag:{ctc:{traits:{ plate:1b, \"metal/uranium\":1b }}} },
+		  {Slot:22b, id:\"minecraft:glass\" }
+		]}"
+	  }
+	}
+  }
