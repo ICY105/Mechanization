@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.rod.emerald","color":"dark_green","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				 {"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"mech.lore.upgrade_reinforced"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1502, CustomModelData: 6421502, HideFlags: 32, mech_upgrade:{type:1b, effect:\"reinforced\", max_durability:1500, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"emerald_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"gem/emerald\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

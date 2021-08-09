@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.rod.amethyst","color":"light_purple","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				 {"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"mech.lore.upgrade_weakness"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1542, CustomModelData: 6421542, HideFlags: 32, mech_upgrade:{type:1b, effect:\"weakness\", max_durability:750, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"amethyst_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"gem/amethyst\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

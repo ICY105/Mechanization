@@ -15,12 +15,14 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
+				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +4 "},{"translate":"mech.lore.mining_area"}],
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1405, CustomModelData: 6421405, HideFlags: 32, ctc:{ id:\"nether_alloy_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/nether_alloy\":1b }}}"
+              "tag":"{mech_itemid: 1405, CustomModelData: 6421405, HideFlags: 32, mech_upgrade:{type:2b, effect:\"none\", max_durability:3000, bonus_stats:{mining_area:4}}, ctc:{ id:\"nether_alloy_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/nether_alloy\":1b }}}"
             }
           ]
         }

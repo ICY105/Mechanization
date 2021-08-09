@@ -15,12 +15,14 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
+				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"enchantment.minecraft.fortune"},{"text":" "},{"translate":"enchantment.level.2"}],
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1345, CustomModelData: 6421345, HideFlags: 32, ctc:{ id:\"structural_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/structural_alloy\":1b }}}"
+              "tag":"{mech_itemid: 1345, CustomModelData: 6421345, HideFlags: 32, mech_upgrade:{type:2b, effect:\"fortune_2\", max_durability:1500, bonus_stats:{}}, ctc:{ id:\"structural_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/structural_alloy\":1b }}}"
             }
           ]
         }

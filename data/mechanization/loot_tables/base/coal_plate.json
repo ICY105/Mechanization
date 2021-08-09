@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.plate.coal","color":"dark_gray","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				 {"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +0.25 "},{"translate":"attribute.name.generic.knockback_resistance"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1490, CustomModelData: 6421490, HideFlags: 32, mech_upgrade:{type:3b, effect:\"none\", max_durability:350, base_stats:{}, bonus_stats:{kb_resist:0.25}}, ctc:{ id:\"coal_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"gem/coal\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

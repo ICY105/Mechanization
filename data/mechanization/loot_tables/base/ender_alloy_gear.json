@@ -15,12 +15,14 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
+				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"enchantment.minecraft.fortune"},{"text":" "},{"translate":"enchantment.level.4"}],
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1395, CustomModelData: 6421395, HideFlags: 32, ctc:{ id:\"ender_alloy_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/ender_alloy\":1b }}}"
+              "tag":"{mech_itemid: 1395, CustomModelData: 6421395, HideFlags: 32, mech_upgrade:{type:2b, effect:\"fortune_4\", max_durability:3000, bonus_stats:{}}, ctc:{ id:\"ender_alloy_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/ender_alloy\":1b }}}"
             }
           ]
         }

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.gear.amethyst","color":"light_purple","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"enchantment.minecraft.silk_touch"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1541, CustomModelData: 6421541, HideFlags: 32, mech_upgrade:{type:2b, effect:\"silk_touch\", max_durability:750, bonus_stats:{}}, ctc:{ id:\"amethyst_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"gem/amethyst\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

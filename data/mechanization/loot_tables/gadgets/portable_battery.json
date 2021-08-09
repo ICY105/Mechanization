@@ -14,7 +14,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4209, CustomModelData: 6424209, mech_battery:{energy:0, max_energy:32000, models:8, base_model:6424209}}"
+              "tag":"{mech_itemid: 4110, CustomModelData: 6424110, mech_battery:{energy:0, max_energy:32000, models:8, base_model:6424900}}"
             }
           ]
         }

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.rod.obsidian","color":"red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				 {"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"enchantment.minecraft.fire_aspect"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1582, CustomModelData: 6421582, HideFlags: 32, mech_upgrade:{type:1b, effect:\"poison\", max_durability:1500, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"obsidian_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"obsidian\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

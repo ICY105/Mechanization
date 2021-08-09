@@ -15,12 +15,17 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
+				 {"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +3 "},{"translate":"mech.lore.shield_capacity"}],
+				 {"translate":"mech.lore.upgrade_base_stats","color":"gray","italic":false},
+				[{"text":"  4 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor"}],
+				[{"text":"  1.5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor_toughness"}],
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1384, CustomModelData: 6421384, HideFlags: 32, ctc:{ id:\"super_conductive_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"metal/super_conductive_alloy\":1b }}}"
+              "tag":"{mech_itemid: 1384, CustomModelData: 6421384, HideFlags: 32, mech_upgrade:{type:3b, effect:\"none\", max_durability:1200, base_stats:{armor:4, armor_toughness:1.5}, bonus_stats:{shield:3}}, ctc:{ id:\"super_conductive_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"metal/super_conductive_alloy\":1b }}}"
             }
           ]
         }

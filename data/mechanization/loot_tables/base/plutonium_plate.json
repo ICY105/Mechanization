@@ -15,12 +15,14 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
+				 {"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +1 "},{"translate":"mech.lore.shield_recharge"}],
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1444, CustomModelData: 6421444, HideFlags: 32, ctc:{ id:\"plutonium_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"metal/plutonium\":1b }}}"
+              "tag":"{mech_itemid: 1444, CustomModelData: 6421444, HideFlags: 32, mech_upgrade:{type:3b, effect:\"shield_recharge\", max_durability:800, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"plutonium_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"metal/plutonium\":1b }}}"
             }
           ]
         }

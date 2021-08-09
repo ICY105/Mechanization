@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.rod.experience","color":"green","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				 {"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"mech.lore.upgrade_repair"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1572, CustomModelData: 6421572, HideFlags: 32, mech_upgrade:{type:1b, effect:\"repair\", max_durability:1000, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"experience_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"liquid/experience\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

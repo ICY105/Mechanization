@@ -15,12 +15,18 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
+				 {"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +1 "},{"translate":"attribute.name.generic.attack_damage"}],
+				 {"translate":"mech.lore.upgrade_base_stats","color":"gray","italic":false},
+				[{"text":"  5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
+				[{"text":"  1.25 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_speed"}],
+				[{"text":"  5 ","color":"dark_green","italic":false},{"translate":"mech.lore.energy_saber_range"}],
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1336, CustomModelData: 6421336, HideFlags: 32, ctc:{ id:\"steel_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/steel\":1b }}}"
+              "tag":"{mech_itemid: 1336, CustomModelData: 6421336, HideFlags: 32, mech_upgrade:{type:1b, effect:\"none\", max_durability:1500, base_stats:{attack_damage:5, attack_speed:-2.75, energy_saber_range:5}, bonus_stats:{attack_damage:1}}, ctc:{ id:\"steel_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/steel\":1b }}}"
             }
           ]
         }

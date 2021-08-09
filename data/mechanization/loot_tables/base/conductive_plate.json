@@ -15,12 +15,17 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
+				 {"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +2 "},{"translate":"mech.lore.shield_capcity"}],
+				 {"translate":"mech.lore.upgrade_base_stats","color":"gray","italic":false},
+				[{"text":"  3 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor"}],
+				[{"text":"  0.5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor_toughness"}],
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1354, CustomModelData: 6421354, HideFlags: 32, ctc:{ id:\"conductive_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"metal/conductive_alloy\":1b }}}"
+              "tag":"{mech_itemid: 1354, CustomModelData: 6421354, HideFlags: 32, mech_upgrade:{type:3b, effect:\"none\", max_durability:800, base_stats:{armor:3, armor_toughness:0.5}, bonus_stats:{shield:2}}, ctc:{ id:\"conductive_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"metal/conductive_alloy\":1b }}}"
             }
           ]
         }

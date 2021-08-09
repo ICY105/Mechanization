@@ -125,6 +125,9 @@ Base Module [01]: {
 		
 		Crystal Composite		[10-1410]
 		Crystal Block			[11-1411]
+		Crystal Plate			[12-1412]
+		Crystal Gear			[13-1413]
+		Crystal Rod				[14-1414]
 		
 		Uranium Ore			[30-1430]
 		Uranium Ingot		[31-1431]
@@ -149,13 +152,58 @@ Base Module [01]: {
 		Iron Gear			[51-1451]
 		Iron Rod			[52-1452]
 		
-		Gold Plate			[60-1560]
-		Gold Gear			[61-1561]
-		Gold Rod			[62-1562]
+		Gold Plate			[60-1460]
+		Gold Gear			[61-1461]
+		Gold Rod			[62-1462]
 		
-		Copper Plate		[70-1570]
-		Copper Gear			[71-1571]
-		Copper Rod			[72-1572]
+		Copper Plate		[70-1470]
+		Copper Gear			[71-1471]
+		Copper Rod			[72-1472]
+		
+		Netherite Plate		[80-1480]
+		Netherite Gear		[81-1481]
+		Netherite Rod		[82-1482]
+		
+		Coal Plate			[90-1490]
+		Coal Gear			[91-1491]
+		Coal Rod			[92-1492]
+	}
+	Resources 2 [5]: {
+		Emerald Plate		[00-1500]
+		Emerald Gear		[01-1501]
+		Emerald Rod			[02-1502]
+		
+		Diamond Plate		[10-1510]
+		Diamond Gear		[11-1511]
+		Diamond Rod			[12-1512]
+		
+		Redstone Plate		[20-1520]
+		Redstone Gear		[21-1521]
+		Redstone Rod		[22-1522]
+		
+		Lapis Plate			[30-1530]
+		Lapis Gear			[31-1531]
+		Lapis Rod			[32-1532]
+		
+		Amethyst Plate		[40-1540]
+		Amethyst Gear		[41-1541]
+		Amethyst Rod		[42-1542]
+		
+		Glowstone Plate		[50-1550]
+		Glowstone Gear		[51-1551]
+		Glowstone Rod		[52-1552]
+		
+		Quartz Plate		[60-1560]
+		Quartz Gear			[61-1561]
+		Quartz Rod			[62-1562]
+		
+		Experience Plate	[70-1570]
+		Experience Gear		[71-1571]
+		Experience Rod		[72-1572]
+		
+		Obsidian Plate		[80-1580]
+		Obsidian Gear		[81-1581]
+		Obsidian Rod		[82-1582]
 	}
 }
 
@@ -223,57 +271,22 @@ Gadgets [04]: {
 	Machines [0]: {
 		Charging Station	[00-4000]
 		Tinker Table		[01-4001]
-		XP Tank				[02-4002]
 	}
-	Click Tools [1]: {
-		Iron Echolocator	[00-4100]
-		Diamond Echolocater	[01-4101]
+	Items [1]: {
+		Energy Saber		[00-4100]
+		Drill				[01-4101]
 		SMG					[02-4102]
 		Rifle				[03-4103]
 		Pistol				[04-4104]
 		Sniper				[05-4105]
-	}
-	Items [2]: {
-		Titanium Pickaxe	[00-4200]
-		Titanium Axe		[01-4201]
-		Titanium Shovel		[02-4202]
-		Titanium Sword		[03-4203]
-		Titanium Trident	[04-4204]
-		Titanium Helmet		[05-4205]
-		Titanium Chestplate	[06-4206]
-		Titanium Leggings	[07-4207]
-		Titanium Boots		[08-4208]
-		Portable Battery 	[09-4209|4217]
-		Titanium Elytra 	[09-4218]
+		Modular Helmet		[06-4106]
+		Modular Chestplate	[07-4107]
+		Modular Leggings	[08-4108]
+		Modular Boots		[09-4109]
+		Portable Battery 	[10-4110]
 	}
 	Upgrades [3]: {
 		Base		[00-4300]
-		Auto Smelt	[01-4301]
-		Empowered	[02-4302]
-		Magnetic	[03-4303]
-		Trash		[04-4304]
-		Smash		[05-4305]
-		Damage			[06-4306]
-		Attack Speed	[07-4307]
-		Poison			[08-4308]
-		Wither			[09-4309]
-		Vampiric		[10-4310]
-		Slowness		[11-4311]
-		Glow			[12-4312]
-		Weakness		[13-4313]
-		Armor		[14-4314]
-		Toughness	[15-4315]
-		Health		[16-4316]
-		KB Resist	[17-4317]
-		Speed		[18-4318]
-		Auto Eater	[19-4319]
-		Flight		[20-4320]
-		Antidote	[21-4321]
-		Vision		[22-4322]
-		Slowfall	[23-4323]
-		Shield		[24-4324]
-		True Invis	[25-4325]
-		Water		[26-4326]
 	}
 	Gun Parts [04]: {
 		Rodrel			[00-4400]
@@ -289,32 +302,6 @@ Gadgets [04]: {
 		Fluid Actuator	[10-4410]
 		Plamsa Pump		[11-4411]
 		Bouncy Proj.	[12-4412]
-	}
-	Tool Sets [05]: {
-		Copper Helmet		[00-4500]
-		Copper Chestplate	[01-4501]
-		Copper Leggings		[02-4502]
-		Copper Boots		[03-4503]
-		Tin Helmet		[04-4504]
-		Tin Chestplate	[05-4505]
-		Tin Leggings	[06-4506]
-		Tin Boots		[07-4507]
-		Steel Helmet		[08-4508]
-		Steel Chestplate	[09-4509]
-		Steel Leggings		[10-4510]
-		Steel Boots			[11-4511]
-		Structural Helmet		[12-4512]
-		Structural Chestplate	[13-4513]
-		Structural Leggings		[14-4514]
-		Structural Boots		[15-4515]
-		Conductive Sword		[16-4516]
-		Conductive Pickaxe		[17-4517]
-		Conductive Axe			[18-4518]
-		Conductive Shovel		[19-4519]
-		Crystal Sword		[20-4520]
-		Crystal Pickaxe		[21-4521]
-		Crystal Axe			[22-4522]
-		Crystal Shovel		[23-4523]
 	}
 }
 

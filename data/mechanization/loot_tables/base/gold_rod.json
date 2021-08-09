@@ -15,12 +15,20 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
+				 {"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +2 "},{"translate":"attribute.name.generic.attack_speed"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1462, CustomModelData: 6421462, HideFlags: 32, ctc:{ id:\"gold_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/gold\":1b }}}"
+              "tag":"{mech_itemid: 1462, CustomModelData: 6421462, HideFlags: 32, mech_upgrade:{type:1b, effect:\"poison\", max_durability:750, base_stats:{}, bonus_stats:{attack_speed:2}}, ctc:{ id:\"gold_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/gold\":1b }}}"
             }
           ]
         }

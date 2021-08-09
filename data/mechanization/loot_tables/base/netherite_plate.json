@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.plate.netherite","color":"dark_red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				 {"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false},
+				 {"translate":"mech.lore.upgrade_base_stats","color":"gray","italic":false},
+				[{"text":"  5.5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor"}],
+				[{"text":"  3 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor_toughness"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1480, CustomModelData: 6421480, HideFlags: 32, mech_upgrade:{type:3b, effect:\"none\", max_durability:1000, base_stats:{armor:5.5, armor_toughness:3}, bonus_stats:{}}, ctc:{ id:\"netherite_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"metal/netherite\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

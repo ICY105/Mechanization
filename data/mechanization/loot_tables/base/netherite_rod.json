@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.rod.netherite","color":"dark_red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				 {"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false},
+				 {"translate":"mech.lore.upgrade_base_stats","color":"gray","italic":false},
+				[{"text":"  8 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
+				[{"text":"  1.75 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_speed"}],
+				[{"text":"  9 ","color":"dark_green","italic":false},{"translate":"mech.lore.energy_saber_range"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1482, CustomModelData: 6421482, HideFlags: 32, mech_upgrade:{type:1b, effect:\"none\", max_durability:2000, base_stats:{attack_damage:8, attack_speed:-2.25, energy_saber_range:9}, bonus_stats:{}}, ctc:{ id:\"netherite_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/netherite\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

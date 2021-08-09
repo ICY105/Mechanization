@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.plate.glowstone","color":"yellow","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				 {"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +2 "},{"translate":"mech.lore.upgrade_illuminating"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1550, CustomModelData: 6421550, HideFlags: 32, mech_upgrade:{type:3b, effect:\"none\", max_durability:500, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"glowstone_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"gem/glowstone\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.rod.redstone","color":"red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				 {"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"mech.lore.upgrade_vampiric"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1522, CustomModelData: 6421522, HideFlags: 32, mech_upgrade:{type:1b, effect:\"vampiric\", max_durability:750, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"redstone_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"gem/redstone\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

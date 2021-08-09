@@ -48,4 +48,42 @@ execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid
 execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_ender_alloy"} run scoreboard players operation @s mech_fluid -= $temp_1 mech_data
 execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_ender_alloy"} run loot replace block ~ ~ ~ container.12 loot mechanization:base/ender_alloy_gear
 execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_ender_alloy"} if data storage du:temp obj.output_item.tag.ctc.traits{gear:1b,"metal/ender_alloy":1b} run item modify block ~ ~ ~ container.12 mechanization:increment_count
-execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_tin"} run scoreboard players operation @s mech_fluid -= $temp_1 mech_data
+execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_netherite"} run scoreboard players operation @s mech_fluid -= $temp_1 mech_data
+execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_netherite"} run loot replace block ~ ~ ~ container.12 loot mechanization:base/netherite_gear
+execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_netherite"} if data storage du:temp obj.output_item.tag.ctc.traits{rod:1b,"metal/netherite":1b} run item modify block ~ ~ ~ container.12 mechanization:increment_count
+
+execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_coal"} run scoreboard players operation @s mech_fluid -= $temp_1 mech_data
+execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_coal"} run loot replace block ~ ~ ~ container.12 loot mechanization:base/coal_gear
+execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_coal"} if data storage du:temp obj.output_item.tag.ctc.traits{rod:1b,"gem/coal":1b} run item modify block ~ ~ ~ container.12 mechanization:increment_count
+execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_obsidian"} run scoreboard players operation @s mech_fluid -= $temp_1 mech_data
+execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_obsidian"} run loot replace block ~ ~ ~ container.12 loot mechanization:base/obsidian_gear
+execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_obsidian"} if data storage du:temp obj.output_item.tag.ctc.traits{rod:1b,"obsidian":1b} run item modify block ~ ~ ~ container.12 mechanization:increment_count
+execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_emerald"} run scoreboard players operation @s mech_fluid -= $temp_1 mech_data
+execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_emerald"} run loot replace block ~ ~ ~ container.12 loot mechanization:base/emerald_gear
+execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_emerald"} if data storage du:temp obj.output_item.tag.ctc.traits{rod:1b,"gem/emerald":1b} run item modify block ~ ~ ~ container.12 mechanization:increment_count
+execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_diamond"} run scoreboard players operation @s mech_fluid -= $temp_1 mech_data
+execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_diamond"} run loot replace block ~ ~ ~ container.12 loot mechanization:base/diamond_gear
+execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_diamond"} if data storage du:temp obj.output_item.tag.ctc.traits{rod:1b,"gem/diamond":1b} run item modify block ~ ~ ~ container.12 mechanization:increment_count
+execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_redstone"} run scoreboard players operation @s mech_fluid -= $temp_1 mech_data
+execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_redstone"} run loot replace block ~ ~ ~ container.12 loot mechanization:base/redstone_gear
+execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_redstone"} if data storage du:temp obj.output_item.tag.ctc.traits{rod:1b,"gem/redstone":1b} run item modify block ~ ~ ~ container.12 mechanization:increment_count
+execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_lapis_lazuli"} run scoreboard players operation @s mech_fluid -= $temp_1 mech_data
+execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_lapis_lazuli"} run loot replace block ~ ~ ~ container.12 loot mechanization:base/lapis_gear
+execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_lapis_lazuli"} if data storage du:temp obj.output_item.tag.ctc.traits{rod:1b,"gem/lapis_lazuli":1b} run item modify block ~ ~ ~ container.12 mechanization:increment_count
+execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_amethyst"} run scoreboard players operation @s mech_fluid -= $temp_1 mech_data
+execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_amethyst"} run loot replace block ~ ~ ~ container.12 loot mechanization:base/amethyst_gear
+execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_amethyst"} if data storage du:temp obj.output_item.tag.ctc.traits{rod:1b,"gem/amethyst":1b} run item modify block ~ ~ ~ container.12 mechanization:increment_count
+execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_crystal_composite"} run scoreboard players operation @s mech_fluid -= $temp_1 mech_data
+execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_crystal_composite"} run loot replace block ~ ~ ~ container.12 loot mechanization:base/crystal_composite_gear
+execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_crystal_composite"} if data storage du:temp obj.output_item.tag.ctc.traits{rod:1b,"gem/crystal_composite":1b} run item modify block ~ ~ ~ container.12 mechanization:increment_count
+execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_glowstone"} run scoreboard players operation @s mech_fluid -= $temp_1 mech_data
+execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_glowstone"} run loot replace block ~ ~ ~ container.12 loot mechanization:base/glowstone_gear
+execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_glowstone"} if data storage du:temp obj.output_item.tag.ctc.traits{rod:1b,"gem/glowstone":1b} run item modify block ~ ~ ~ container.12 mechanization:increment_count
+execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_quartz"} run scoreboard players operation @s mech_fluid -= $temp_1 mech_data
+execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_quartz"} run loot replace block ~ ~ ~ container.12 loot mechanization:base/quartz_gear
+execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_quartz"} if data storage du:temp obj.output_item.tag.ctc.traits{rod:1b,"gem/quartz":1b} run item modify block ~ ~ ~ container.12 mechanization:increment_count
+execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"experience"} run scoreboard players operation @s mech_fluid -= $temp_1 mech_data
+execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"experience"} run loot replace block ~ ~ ~ container.12 loot mechanization:base/experience_gear
+execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"experience"} if data storage du:temp obj.output_item.tag.ctc.traits{rod:1b,"experience":1b} run item modify block ~ ~ ~ container.12 mechanization:increment_count
+
+

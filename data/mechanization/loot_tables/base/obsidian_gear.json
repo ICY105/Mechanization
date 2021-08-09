@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.gear.obsidian","color":"red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"mech.lore.upgrade_trash"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1581, CustomModelData: 6421581, HideFlags: 32, mech_upgrade:{type:2b, effect:\"trash\", max_durability:1500, bonus_stats:{}}, ctc:{ id:\"obsidian_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"obsidian\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

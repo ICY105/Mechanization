@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.rod.quartz","color":"white","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				 {"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"mech.lore.upgrade_weakness"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1562, CustomModelData: 6421562, HideFlags: 32, mech_upgrade:{type:1b, effect:\"weakness\", max_durability:1500, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"quartz_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"gem/quartz\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

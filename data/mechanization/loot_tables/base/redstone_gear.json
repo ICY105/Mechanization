@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.gear.redstone","color":"red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"mech.lore.upgrade_magnetic"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1521, CustomModelData: 6421521, HideFlags: 32, mech_upgrade:{type:2b, effect:\"magnetic\", max_durability:750, bonus_stats:{}}, ctc:{ id:\"redstone_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"gem/redstone\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.rod.glowstone","color":"yellow","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				 {"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"mech.lore.upgrade_illuminating"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1552, CustomModelData: 6421552, HideFlags: 32, mech_upgrade:{type:1b, effect:\"illuminating\", max_durability:1000, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"glowstone_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"gem/glowstone\":1b }}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

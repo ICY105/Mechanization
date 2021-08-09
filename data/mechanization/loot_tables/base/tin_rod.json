@@ -15,12 +15,18 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
+				 {"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +1 "},{"translate":"attribute.name.generic.energy_saber_range"}],
+				 {"translate":"mech.lore.upgrade_base_stats","color":"gray","italic":false},
+				[{"text":"  4 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
+				[{"text":"  1 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_speed"}],
+				[{"text":"  3 ","color":"dark_green","italic":false},{"translate":"mech.lore.energy_saber_range"}],
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1317, CustomModelData: 6421317, HideFlags: 32, ctc:{ id:\"tin_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/tin\":1b }}}"
+              "tag":"{mech_itemid: 1317, CustomModelData: 6421317, HideFlags: 32, mech_upgrade:{type:1b, effect:\"none\", max_durability:750, base_stats:{attack_damage:4, attack_speed:-3, energy_saber_range:3}, bonus_stats:{energy_saber_range:1}}, ctc:{ id:\"tin_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/tin\":1b }}}"
             }
           ]
         }

@@ -15,12 +15,14 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
+				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +4 "},{"translate":"mech.lore.mining_speed"}],
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1461, CustomModelData: 6421461, HideFlags: 32, ctc:{ id:\"gold_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/gold\":1b }}}"
+              "tag":"{mech_itemid: 1461, CustomModelData: 6421461, HideFlags: 32, mech_upgrade:{type:2b, effect:\"none\", max_durability:128, bonus_stats:{mining_speed:4}}, ctc:{ id:\"gold_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/gold\":1b }}}"
             }
           ]
         }

@@ -15,12 +15,18 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
+				 {"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +0.75 "},{"translate":"attribute.name.generic.attack_speed"}],
+				 {"translate":"mech.lore.upgrade_base_stats","color":"gray","italic":false},
+				[{"text":"  6 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
+				[{"text":"  1.5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_speed"}],
+				[{"text":"  7 ","color":"dark_green","italic":false},{"translate":"mech.lore.energy_saber_range"}],
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1386, CustomModelData: 6421386, HideFlags: 32, ctc:{ id:\"super_conductive_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/super_conductive_alloy\":1b }}}"
+              "tag":"{mech_itemid: 1386, CustomModelData: 6421386, HideFlags: 32, mech_upgrade:{type:1b, effect:\"none\", max_durability:2500, base_stats:{attack_damage:6, attack_speed:-2.5, energy_saber_range:7}, bonus_stats:{attack_speed:0.75}}, ctc:{ id:\"super_conductive_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/super_conductive_alloy\":1b }}}"
             }
           ]
         }
