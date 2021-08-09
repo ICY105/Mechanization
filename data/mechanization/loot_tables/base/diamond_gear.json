@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1355, CustomModelData: 6421355, HideFlags: 32, mech_upgrade:{type:2b, effect:\"reinforced\", max_durability:1500, bonus_stats:{}}, ctc:{ id:\"diamond_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"gem/diamond\":1b }}}"
+              "tag":"{mech_itemid: 1511, CustomModelData: 6421511, HideFlags: 32, mech_upgrade:{type:2b, effect:\"reinforced\", max_durability:1500, bonus_stats:{}}, ctc:{ id:\"diamond_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"gem/diamond\":1b }}}"
             }
           ]
         }
