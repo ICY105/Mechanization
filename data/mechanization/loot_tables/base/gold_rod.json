@@ -21,14 +21,8 @@
 			  ]
 			},
 			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
-			  ]
-			},
-			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1462, CustomModelData: 6421462, HideFlags: 32, mech_upgrade:{type:1b, effect:\"poison\", max_durability:750, base_stats:{}, bonus_stats:{attack_speed:2}}, ctc:{ id:\"gold_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/gold\":1b }}}"
+              "tag":"{mech_itemid: 1462, CustomModelData: 6421462, HideFlags: 32, mech_upgrade:{type:1b, effect:\"none\", max_durability:128, base_stats:{}, bonus_stats:{attack_speed:2}}, ctc:{ id:\"gold_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/gold\":1b }}}"
             }
           ]
         }

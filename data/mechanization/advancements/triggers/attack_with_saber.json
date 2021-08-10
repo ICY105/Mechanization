@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "example": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+		"player": {
+          "equipment": {
+            "mainhand": {
+              "nbt": "{mech_upgrades:{type:1b}}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "parent": "mechanization:mechanization",
+  "rewards": {
+    "function": "mechanization:gadgets/tools/energy_saber/attack_with_saber"
+  }
+}

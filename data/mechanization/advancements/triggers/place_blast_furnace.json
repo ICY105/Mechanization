@@ -1,10 +1,4 @@
 {
-	"display": {
-		"title": "place_blast_furnace","description": "","icon": {"item": "minecraft:stone"},
-		"hidden":true,
-		"show_toast": false,
-		"announce_to_chat": false
-    },
 	"criteria": {
         "place_block": {
 			"trigger": "minecraft:placed_block",

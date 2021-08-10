@@ -289,7 +289,7 @@ Gadgets [04]: {
 		Base		[00-4300]
 	}
 	Gun Parts [04]: {
-		Rodrel			[00-4400]
+		Barrel			[00-4400]
 		Magazine		[01-4401]
 		Stock			[02-4402]
 		Trigger			[03-4403]
