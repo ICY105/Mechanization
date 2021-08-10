@@ -16,7 +16,7 @@
 			  "function": "minecraft:set_lore",
 			  "lore": [
 				 {"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false},
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +0.15 "},{"translate":"attribute.name.generic.speed"}],
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +0.15 "},{"translate":"attribute.name.generic.movement_speed"}],
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},

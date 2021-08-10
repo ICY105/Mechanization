@@ -16,13 +16,13 @@
 			  "function": "minecraft:set_lore",
 			  "lore": [
 				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +2 "},{"translate":"mech.lore.mining_speed"}],
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +11 "},{"translate":"mech.lore.mining_speed"}],
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1355, CustomModelData: 6421355, HideFlags: 32, mech_upgrade:{type:2b, effect:\"none\", max_durability:1500, bonus_stats:{mining_speed:2}}, ctc:{ id:\"conductive_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/conductive_alloy\":1b }}}"
+              "tag":"{mech_itemid: 1355, CustomModelData: 6421355, HideFlags: 32, mech_upgrade:{type:2b, effect:\"none\", max_durability:1500, bonus_stats:{mining_speed:11}}, ctc:{ id:\"conductive_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/conductive_alloy\":1b }}}"
             }
           ]
         }

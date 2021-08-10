@@ -16,13 +16,13 @@
 			  "function": "minecraft:set_lore",
 			  "lore": [
 				 {"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false},
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +0.05 "},{"translate":"attribute.name.generic.movement_speed"}],
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +0.01 "},{"translate":"attribute.name.generic.movement_speed"}],
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1540, CustomModelData: 6421540, HideFlags: 32, mech_upgrade:{type:3b, effect:\"none\", max_durability:350, base_stats:{}, bonus_stats:{speed:0.05}}, ctc:{ id:\"amethyst_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"gem/amethyst\":1b }}}"
+              "tag":"{mech_itemid: 1540, CustomModelData: 6421540, HideFlags: 32, mech_upgrade:{type:3b, effect:\"none\", max_durability:350, base_stats:{}, bonus_stats:{speed:0.01}}, ctc:{ id:\"amethyst_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"gem/amethyst\":1b }}}"
             }
           ]
         }

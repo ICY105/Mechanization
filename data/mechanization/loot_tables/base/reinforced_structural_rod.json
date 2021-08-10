@@ -16,7 +16,7 @@
 			  "function": "minecraft:set_lore",
 			  "lore": [
 				 {"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false},
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +3 "},{"translate":"attribute.name.generic.energy_saber_range"}],
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +3 "},{"translate":"mech.lore.energy_saber_range"}],
 				 {"translate":"mech.lore.upgrade_base_stats","color":"gray","italic":false},
 				[{"text":"  6 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
 				[{"text":"  1.5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_speed"}],

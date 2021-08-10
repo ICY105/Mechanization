@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4408, CustomModelData: 6424408, OreDict:[\"upgradeSuperCharger\"]}"
+              "tag":"{mech_itemid: 4408, CustomModelData: 6424408, mech_upgrade:{type:4b}, OreDict:[\"upgradeSuperCharger\"]}"
             }
           ]
         }

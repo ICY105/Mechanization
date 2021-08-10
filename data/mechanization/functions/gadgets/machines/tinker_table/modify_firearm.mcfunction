@@ -1,4 +1,9 @@
 
+execute if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{mech_itemid:4102}}]} run data modify block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun set value {energy:16, fire_rate:2, heat:35, recoil_x:6, recoil_y:6, damage:30, velocity:5, bouncy:0}
+execute if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{mech_itemid:4103}}]} run data modify block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun set value {energy:24, fire_rate:4, heat:50, recoil_x:4, recoil_y:4, damage:60, velocity:6, bouncy:0}
+execute if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{mech_itemid:4104}}]} run data modify block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun set value {energy:32, fire_rate:12, heat:75, recoil_x:2, recoil_y:2, damage:80, velocity:4, bouncy:0}
+execute if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{mech_itemid:4105}}]} run data modify block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun set value {energy:64, fire_rate:40, heat:400, recoil_x:8, recoil_y:8, damage:200, velocity:10, bouncy:0}
+
 execute if block ~ ~ ~ barrel{Items:[{tag:{OreDict:["upgradeBouncy"]}}]} store success block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun.bouncy int 1 if entity @s
 
 scoreboard players set temp_0 mech_data 0
@@ -58,17 +63,3 @@ execute if score temp_0 mech_data matches 1.. run scoreboard players operation t
 execute if score temp_0 mech_data matches 1.. run scoreboard players operation temp_1 mech_data /= temp_3 mech_data
 execute if score temp_0 mech_data matches 1.. store result block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun.damage int 1 run scoreboard players get temp_1 mech_data
 
-#scoreboard players set temp_0 mech_data 0
-#execute if block ~ ~ ~ barrel{Items:[{tag:{OreDict:["upgradeSight"]}}]} run scoreboard players set temp_0 mech_data 1
-#execute if score temp_0 mech_data matches 1 store result score temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:10b}].tag.Damage
-#execute if block ~ ~ ~ barrel{Items:[ {Slot:4b,tag:{ OreDict:["itemPlasmaRifle"] }} ]} run scoreboard players add temp_1 mech_data 2
-#execute if block ~ ~ ~ barrel{Items:[ {Slot:4b,tag:{ OreDict:["itemPlasmaSMG"] }} ]} run scoreboard players add temp_1 mech_data 2
-#execute if block ~ ~ ~ barrel{Items:[ {Slot:4b,tag:{ OreDict:["itemPlasmaPistol"] }} ]} run scoreboard players add temp_1 mech_data 2
-#execute if score temp_0 mech_data matches 1 store result block ~ ~ ~ Items[{Slot:10b}].tag.Damage int 1 run scoreboard players get temp_1 mech_data
-
-#scoreboard players set temp_0 mech_data 0
-#execute if block ~ ~ ~ barrel{Items:[{tag:{OreDict:["upgradeScope"]}}]} run scoreboard players set temp_0 mech_data 1
-#execute if score temp_0 mech_data matches 1 store result score temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:10b}].tag.Damage
-#execute if block ~ ~ ~ barrel{Items:[ {Slot:4b,tag:{ OreDict:["itemPlasmaRifle"] }} ]} run scoreboard players add temp_1 mech_data 4
-#execute if block ~ ~ ~ barrel{Items:[ {Slot:4b,tag:{ OreDict:["itemPlasmaSniper"] }} ]} run scoreboard players add temp_1 mech_data 2
-#execute if score temp_0 mech_data matches 1 store result block ~ ~ ~ Items[{Slot:10b}].tag.Damage int 1 run scoreboard players get temp_1 mech_data

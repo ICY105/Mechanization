@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1531, CustomModelData: 6421531, HideFlags: 32, mech_upgrade:{type:2b, effect:\"none\", max_durability:750, bonus_stats:{}}, ctc:{ id:\"lapis_lazuli_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"gem/lapis_lazuli\":1b }}}"
+              "tag":"{mech_itemid: 1531, CustomModelData: 6421531, HideFlags: 32, mech_upgrade:{type:2b, effect:\"aquatic\", max_durability:750, bonus_stats:{}}, ctc:{ id:\"lapis_lazuli_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"gem/lapis_lazuli\":1b }}}"
             }
           ]
         }

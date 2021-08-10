@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.drill","color":"dark_aqua","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			     {"text":""},
+				 {"translate":"item.modifiers.mainhand","color":"gray","italic":false},
+				[{"text":"  9 ","color":"dark_green","italic":false},{"translate":"mech.lore.mining_speed"}],
+				[{"text":"  1 ","color":"dark_green","italic":false},{"translate":"mech.lore.mining_area"}],
+				[{"text":"  3 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
+				 {"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 4101, CustomModelData: 6424101, unbreakable:1b, HideFlags:2, mech_upgrades:{type:2b,count:5b,mining_speed:9,mining_area:0,items:[]}}"
+            },
+			{
+			  "function":"set_attributes",
+			  "modifiers": [
+				{
+				  "name":"generic.attack_damage",
+				  "attribute":"generic.attack_damage",
+				  "operation":"addition",
+				  "amount":2,
+				  "slot":"mainhand"
+				},
+				{
+				  "name":"generic.attack_speed",
+				  "attribute":"generic.attack_speed",
+				  "operation":"addition",
+				  "amount":-3,
+				  "slot":"mainhand"
+				}
+			  ]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

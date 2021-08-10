@@ -16,13 +16,13 @@
 			  "function": "minecraft:set_lore",
 			  "lore": [
 				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +1 "},{"translate":"mech.lore.mining_speed"}],
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +8 "},{"translate":"mech.lore.mining_speed"}],
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1471, CustomModelData: 6421471, HideFlags: 32, mech_upgrade:{type:2b, effect:\"none\", max_durability:750, bonus_stats:{mining_speed:1}}, ctc:{ id:\"copper_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/copper\":1b }}}"
+              "tag":"{mech_itemid: 1471, CustomModelData: 6421471, HideFlags: 32, mech_upgrade:{type:2b, effect:\"none\", max_durability:750, bonus_stats:{mining_speed:8}}, ctc:{ id:\"copper_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/copper\":1b }}}"
             }
           ]
         }

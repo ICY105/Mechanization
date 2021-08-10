@@ -1,0 +1,185 @@
+
+data remove storage du:temp obj.tag.Enchantments
+
+#armor
+scoreboard players set $temp_0 mech_data 0
+#armor_toughness
+scoreboard players set $temp_1 mech_data 0
+#shield capacity
+scoreboard players set $temp_2 mech_data 0
+#max health
+scoreboard players set $temp_3 mech_data 0
+#speed
+scoreboard players set $temp_4 mech_data 0
+#kb resist
+scoreboard players set $temp_5 mech_data 0
+
+#base stats
+execute store result score $temp_6 mech_data run data get storage du:temp list[0].tag.mech_upgrade.base_stats.armor 10
+execute if score $temp_6 mech_data > $temp_0 mech_data run scoreboard players operation $temp_0 mech_data = $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[1].tag.mech_upgrade.base_stats.armor 10
+execute if score $temp_6 mech_data > $temp_0 mech_data run scoreboard players operation $temp_0 mech_data = $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[2].tag.mech_upgrade.base_stats.armor 10
+execute if score $temp_6 mech_data > $temp_0 mech_data run scoreboard players operation $temp_0 mech_data = $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[3].tag.mech_upgrade.base_stats.armor 10
+execute if score $temp_6 mech_data > $temp_0 mech_data run scoreboard players operation $temp_0 mech_data = $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[4].tag.mech_upgrade.base_stats.armor 10
+execute if score $temp_6 mech_data > $temp_0 mech_data run scoreboard players operation $temp_0 mech_data = $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[5].tag.mech_upgrade.base_stats.armor 10
+execute if score $temp_6 mech_data > $temp_0 mech_data run scoreboard players operation $temp_0 mech_data = $temp_6 mech_data
+
+execute store result score $temp_6 mech_data run data get storage du:temp list[0].tag.mech_upgrade.base_stats.armor_toughness 10
+execute unless score $temp_6 mech_data matches 0 if score $temp_6 mech_data > $temp_1 mech_data run scoreboard players operation $temp_1 mech_data = $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[1].tag.mech_upgrade.base_stats.armor_toughness 10
+execute unless score $temp_6 mech_data matches 0 if score $temp_6 mech_data > $temp_1 mech_data run scoreboard players operation $temp_1 mech_data = $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[2].tag.mech_upgrade.base_stats.armor_toughness 10
+execute unless score $temp_6 mech_data matches 0 if score $temp_6 mech_data > $temp_1 mech_data run scoreboard players operation $temp_1 mech_data = $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[3].tag.mech_upgrade.base_stats.armor_toughness 10
+execute unless score $temp_6 mech_data matches 0 if score $temp_6 mech_data > $temp_1 mech_data run scoreboard players operation $temp_1 mech_data = $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[4].tag.mech_upgrade.base_stats.armor_toughness 10
+execute unless score $temp_6 mech_data matches 0 if score $temp_6 mech_data > $temp_1 mech_data run scoreboard players operation $temp_1 mech_data = $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[5].tag.mech_upgrade.base_stats.armor_toughness 10
+execute unless score $temp_6 mech_data matches 0 if score $temp_6 mech_data > $temp_1 mech_data run scoreboard players operation $temp_1 mech_data = $temp_6 mech_data
+
+#bonus stats
+execute store result score $temp_6 mech_data run data get storage du:temp list[0].tag.mech_upgrade.bonus_stats.armor 10
+scoreboard players operation $temp_0 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[1].tag.mech_upgrade.bonus_stats.armor 10
+scoreboard players operation $temp_0 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[2].tag.mech_upgrade.bonus_stats.armor 10
+scoreboard players operation $temp_0 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[3].tag.mech_upgrade.bonus_stats.armor 10
+scoreboard players operation $temp_0 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[4].tag.mech_upgrade.bonus_stats.armor 10
+scoreboard players operation $temp_0 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[5].tag.mech_upgrade.bonus_stats.armor 10
+scoreboard players operation $temp_0 mech_data += $temp_6 mech_data
+
+execute store result score $temp_6 mech_data run data get storage du:temp list[0].tag.mech_upgrade.bonus_stats.armor_toughness 10
+scoreboard players operation $temp_1 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[1].tag.mech_upgrade.bonus_stats.armor_toughness 10
+scoreboard players operation $temp_1 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[2].tag.mech_upgrade.bonus_stats.armor_toughness 10
+scoreboard players operation $temp_1 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[3].tag.mech_upgrade.bonus_stats.armor_toughness 10
+scoreboard players operation $temp_1 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[4].tag.mech_upgrade.bonus_stats.armor_toughness 10
+scoreboard players operation $temp_1 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[5].tag.mech_upgrade.bonus_stats.armor_toughness 10
+scoreboard players operation $temp_1 mech_data += $temp_6 mech_data
+
+execute store result score $temp_6 mech_data run data get storage du:temp list[0].tag.mech_upgrade.bonus_stats.shield
+scoreboard players operation $temp_2 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[1].tag.mech_upgrade.bonus_stats.shield
+scoreboard players operation $temp_2 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[2].tag.mech_upgrade.bonus_stats.shield
+scoreboard players operation $temp_2 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[3].tag.mech_upgrade.bonus_stats.shield
+scoreboard players operation $temp_2 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[4].tag.mech_upgrade.bonus_stats.shield
+scoreboard players operation $temp_2 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[5].tag.mech_upgrade.bonus_stats.shield
+scoreboard players operation $temp_2 mech_data += $temp_6 mech_data
+
+execute store result score $temp_6 mech_data run data get storage du:temp list[0].tag.mech_upgrade.bonus_stats.health 10
+scoreboard players operation $temp_3 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[1].tag.mech_upgrade.bonus_stats.health 10
+scoreboard players operation $temp_3 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[2].tag.mech_upgrade.bonus_stats.health 10
+scoreboard players operation $temp_3 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[3].tag.mech_upgrade.bonus_stats.health 10
+scoreboard players operation $temp_3 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[4].tag.mech_upgrade.bonus_stats.health 10
+scoreboard players operation $temp_3 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[5].tag.mech_upgrade.bonus_stats.health 10
+scoreboard players operation $temp_3 mech_data += $temp_6 mech_data
+
+execute store result score $temp_6 mech_data run data get storage du:temp list[0].tag.mech_upgrade.bonus_stats.speed 100
+scoreboard players operation $temp_4 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[1].tag.mech_upgrade.bonus_stats.speed 100
+scoreboard players operation $temp_4 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[2].tag.mech_upgrade.bonus_stats.speed 100
+scoreboard players operation $temp_4 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[3].tag.mech_upgrade.bonus_stats.speed 100
+scoreboard players operation $temp_4 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[4].tag.mech_upgrade.bonus_stats.speed 100
+scoreboard players operation $temp_4 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[5].tag.mech_upgrade.bonus_stats.speed 100
+scoreboard players operation $temp_4 mech_data += $temp_6 mech_data
+
+execute store result score $temp_6 mech_data run data get storage du:temp list[0].tag.mech_upgrade.bonus_stats.kb_resist 10
+scoreboard players operation $temp_5 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[1].tag.mech_upgrade.bonus_stats.kb_resist 10
+scoreboard players operation $temp_5 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[2].tag.mech_upgrade.bonus_stats.kb_resist 10
+scoreboard players operation $temp_5 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[3].tag.mech_upgrade.bonus_stats.kb_resist 10
+scoreboard players operation $temp_5 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[4].tag.mech_upgrade.bonus_stats.kb_resist 10
+scoreboard players operation $temp_5 mech_data += $temp_6 mech_data
+execute store result score $temp_6 mech_data run data get storage du:temp list[5].tag.mech_upgrade.bonus_stats.kb_resist 10
+scoreboard players operation $temp_5 mech_data += $temp_6 mech_data
+
+#apply stats
+execute store result storage du:temp obj.tag.AttributeModifiers[{AttributeName:"minecraft:generic.armor",Operation:0}].Amount double 0.1 run scoreboard players get $temp_0 mech_data
+execute store result storage du:temp obj.tag.AttributeModifiers[{AttributeName:"minecraft:generic.armor_toughness",Operation:0}].Amount double 0.1 run scoreboard players get $temp_1 mech_data
+execute store result storage du:temp obj.tag.mech_upgrades.shield int 1 run scoreboard players get $temp_2 mech_data
+execute store result storage du:temp obj.tag.AttributeModifiers[{AttributeName:"minecraft:generic.max_health",Operation:0}].Amount double 0.1 run scoreboard players get $temp_3 mech_data
+execute store result storage du:temp obj.tag.AttributeModifiers[{AttributeName:"minecraft:generic.movement_speed",Operation:0}].Amount double 0.01 run scoreboard players get $temp_4 mech_data
+execute store result storage du:temp obj.tag.AttributeModifiers[{AttributeName:"minecraft:generic.knockback_resistance",Operation:0}].Amount double 0.1 run scoreboard players get $temp_5 mech_data
+
+#special effects
+execute if data storage du:temp list[].tag.mech_upgrade{effect:"illuminating"} run data modify storage du:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_illuminating","color":"gray","italic":false}'
+execute if data storage du:temp list[].tag.mech_upgrade{effect:"shield_recharge"} run data modify storage du:temp obj.tag.display.Lore append value '{"translate":"mech.lore.shield_recharge","color":"gray","italic":false}'
+
+#add stats lore
+data modify storage du:temp obj.tag.display.Lore append value '{"text":""}'
+execute if data storage du:temp obj.tag{mech_itemid:4106} run data modify storage du:temp obj.tag.display.Lore append value '{"translate":"item.modifiers.head","color":"gray","italic":"false"}'
+execute if data storage du:temp obj.tag{mech_itemid:4107} run data modify storage du:temp obj.tag.display.Lore append value '{"translate":"item.modifiers.chest","color":"gray","italic":"false"}'
+execute if data storage du:temp obj.tag{mech_itemid:4108} run data modify storage du:temp obj.tag.display.Lore append value '{"translate":"item.modifiers.legs","color":"gray","italic":"false"}'
+execute if data storage du:temp obj.tag{mech_itemid:4109} run data modify storage du:temp obj.tag.display.Lore append value '{"translate":"item.modifiers.feet","color":"gray","italic":"false"}'
+
+scoreboard players operation $temp_6 mech_data = $temp_0 mech_data
+scoreboard players operation $temp_0 mech_data /= $cons.10 du_data
+scoreboard players operation $temp_6 mech_data %= $cons.10 du_data
+execute if score $temp_6 mech_data matches 0 run data modify block -29999999 0 1602 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"$temp_0","objective":"mech_data"}}," ",{"translate":"attribute.name.generic.armor"}]'
+execute unless score $temp_6 mech_data matches 0 run data modify block -29999999 0 1602 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"$temp_0","objective":"mech_data"}},".",{"score":{"name":"$temp_6","objective":"mech_data"}}," ",{"translate":"attribute.name.generic.armor"}]'
+data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1602 Text1
+
+scoreboard players operation $temp_6 mech_data = $temp_1 mech_data
+scoreboard players operation $temp_1 mech_data /= $cons.10 du_data
+scoreboard players operation $temp_6 mech_data %= $cons.10 du_data
+execute if score $temp_6 mech_data matches 0 run data modify block -29999999 0 1602 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"$temp_1","objective":"mech_data"}}," ",{"translate":"attribute.name.generic.armor_toughness"}]'
+execute unless score $temp_6 mech_data matches 0 run data modify block -29999999 0 1602 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"$temp_1","objective":"mech_data"}},".",{"score":{"name":"$temp_6","objective":"mech_data"}}," ",{"translate":"attribute.name.generic.armor_toughness"}]'
+data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1602 Text1
+
+data modify block -29999999 0 1602 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"$temp_2","objective":"mech_data"}}," ",{"translate":"mech.lore.shield_capacity"}]'
+data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1602 Text1
+
+scoreboard players operation $temp_6 mech_data = $temp_3 mech_data
+scoreboard players operation $temp_6 mech_data %= $cons.10 du_data
+execute if score $temp_3 mech_data matches 0 run scoreboard players set $temp_6 mech_data -1000
+scoreboard players operation $temp_3 mech_data /= $cons.10 du_data
+execute if score $temp_6 mech_data matches 0 run data modify block -29999999 0 1602 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"$temp_3","objective":"mech_data"}}," ",{"translate":"attribute.name.generic.max_health"}]'
+execute if score $temp_6 mech_data matches 1.. run data modify block -29999999 0 1602 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"$temp_3","objective":"mech_data"}},".",{"score":{"name":"$temp_6","objective":"mech_data"}}," ",{"translate":"attribute.name.generic.max_health"}]'
+execute if score $temp_6 mech_data matches 0.. run data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1602 Text1
+
+scoreboard players operation $temp_6 mech_data = $temp_4 mech_data
+scoreboard players operation $temp_6 mech_data %= $cons.100 du_data
+execute if score $temp_4 mech_data matches 0 run scoreboard players set $temp_6 mech_data -1000
+scoreboard players operation $temp_4 mech_data /= $cons.100 du_data
+execute if score $temp_6 mech_data matches 0 run data modify block -29999999 0 1602 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"$temp_4","objective":"mech_data"}}," ",{"translate":"attribute.name.generic.movement_speed"}]'
+execute if score $temp_6 mech_data matches 1..9 run data modify block -29999999 0 1602 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"$temp_4","objective":"mech_data"}},".0",{"score":{"name":"$temp_6","objective":"mech_data"}}," ",{"translate":"attribute.name.generic.movement_speed"}]'
+execute if score $temp_6 mech_data matches 10.. run data modify block -29999999 0 1602 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"$temp_4","objective":"mech_data"}},".",{"score":{"name":"$temp_6","objective":"mech_data"}}," ",{"translate":"attribute.name.generic.movement_speed"}]'
+execute if score $temp_6 mech_data matches 0.. run data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1602 Text1
+
+scoreboard players operation $temp_6 mech_data = $temp_5 mech_data
+scoreboard players operation $temp_6 mech_data %= $cons.10 du_data
+execute if score $temp_5 mech_data matches 0 run scoreboard players set $temp_6 mech_data -1000
+scoreboard players operation $temp_5 mech_data /= $cons.10 du_data
+execute if score $temp_6 mech_data matches 0 run data modify block -29999999 0 1602 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"$temp_5","objective":"mech_data"}}," ",{"translate":"attribute.name.generic.knockback_resistance"}]'
+execute if score $temp_6 mech_data matches 1.. run data modify block -29999999 0 1602 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"$temp_5","objective":"mech_data"}},".",{"score":{"name":"$temp_6","objective":"mech_data"}}," ",{"translate":"attribute.name.generic.knockback_resistance"}]'
+execute if score $temp_6 mech_data matches 0.. run data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1602 Text1
+
+data modify block -29999999 0 1602 Text1 set value '[{"translate":"mech.lore.added_by","color":"blue","italic":false}]'
+data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1602 Text1

@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:leather_leggings",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.modular_leggings","color":"dark_aqua","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			     {"text":""},
+				 {"translate":"item.modifiers.legs","color":"gray","italic":false},
+				[{"text":"+0 ","color":"blue","italic":false},{"translate":"attribute.name.generic.armor"}],
+				[{"text":"+0 ","color":"blue","italic":false},{"translate":"attribute.name.generic.armor_toughness"}],
+				[{"text":"+0 ","color":"blue","italic":false},{"translate":"mech.lore.shield_capacity"}],
+				 {"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 4108, CustomModelData: 6424108, unbreakable:1b, HideFlags:2, mech_upgrades:{type:3b,count:5b,shield:0,items:[]}, display:{color:15170646}}"
+            },
+			{
+			  "function":"set_attributes",
+			  "modifiers": [
+				{
+				  "name":"generic.armor",
+				  "attribute":"generic.armor",
+				  "operation":"addition",
+				  "amount":0,
+				  "slot":"legs"
+				},
+				{
+				  "name":"generic.armor_toughness",
+				  "attribute":"generic.armor_toughness",
+				  "operation":"addition",
+				  "amount":0,
+				  "slot":"legs"
+				},
+				{
+				  "name":"generic.max_health",
+				  "attribute":"generic.max_health",
+				  "operation":"addition",
+				  "amount":0,
+				  "slot":"legs"
+				},
+				{
+				  "name":"generic.movement_speed",
+				  "attribute":"generic.movement_speed",
+				  "operation":"addition",
+				  "amount":0,
+				  "slot":"legs"
+				},
+				{
+				  "name":"generic.knockback_resistance",
+				  "attribute":"generic.knockback_resistance",
+				  "operation":"addition",
+				  "amount":0,
+				  "slot":"legs"
+				},
+				{
+				  "name":"generic.attack_damage",
+				  "attribute":"generic.attack_damage",
+				  "operation":"multiply_total",
+				  "amount":0,
+				  "slot":"legs"
+				}
+			  ]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

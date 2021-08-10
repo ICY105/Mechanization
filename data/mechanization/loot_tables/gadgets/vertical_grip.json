@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4405, CustomModelData: 6424405, OreDict:[\"upgradeVerticalGrip\"]}"
+              "tag":"{mech_itemid: 4405, CustomModelData: 6424405, mech_upgrade:{type:4b}, OreDict:[\"upgradeVerticalGrip\"]}"
             }
           ]
         }

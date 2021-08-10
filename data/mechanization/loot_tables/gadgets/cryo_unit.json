@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4409, CustomModelData: 6424409, OreDict:[\"upgradeCryoUnit\"]}"
+              "tag":"{mech_itemid: 4409, CustomModelData: 6424409, mech_upgrade:{type:4b}, OreDict:[\"upgradeCryoUnit\"]}"
             }
           ]
         }

@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4404, CustomModelData: 6424404, OreDict:[\"upgradeAngledGrip\"]}"
+              "tag":"{mech_itemid: 4404, CustomModelData: 6424404, mech_upgrade:{type:4b}, OreDict:[\"upgradeAngledGrip\"]}"
             }
           ]
         }
