@@ -5,6 +5,7 @@ scoreboard objectives add mech_power dummy
 scoreboard objectives add mech_gridid trigger
 scoreboard objectives add mech_data dummy
 scoreboard objectives add mech_fluid dummy
+scoreboard objectives add mech_shield dummy
 scoreboard objectives add mech_usedid dummy
 scoreboard objectives add mech_tele trigger
 

@@ -1,0 +1,12 @@
+{
+  "criteria": {
+    "example": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {}
+    }
+  },
+  "parent": "mechanization:mechanization",
+  "rewards": {
+    "function": "mechanization:gadgets/tools/modular_armor/taken_damage"
+  }
+}

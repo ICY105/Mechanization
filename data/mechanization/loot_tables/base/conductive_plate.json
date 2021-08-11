@@ -16,7 +16,7 @@
 			  "function": "minecraft:set_lore",
 			  "lore": [
 				 {"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false},
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +2 "},{"translate":"mech.lore.shield_capcity"}],
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +2 "},{"translate":"mech.lore.shield_capacity"}],
 				 {"translate":"mech.lore.upgrade_base_stats","color":"gray","italic":false},
 				[{"text":"  3 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor"}],
 				[{"text":"  0.5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor_toughness"}],

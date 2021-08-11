@@ -2,9 +2,6 @@
 #check upgrades
 #execute if score $base.timer_20 du_data matches 10 if entity @s[nbt={Inventory:[{tag:{mech_modify:1b}}]}] run function mechanization:gadgets/upgrades/check_upgrades_armor
 
-#execute if entity @s[nbt={SelectedItem:{tag:{mech_modify:1b}}}] run function mechanization:gadgets/upgrades/check_upgrades_tools
-#execute if entity @s[tag=mech_upgrade_tool,nbt=!{SelectedItem:{tag:{mech_modify:1b}}}] run function mechanization:gadgets/upgrades/remove_upgrades_tools_2
-
 #upgrades
 #execute if entity @s[tag=mech_upgrade_slowfall] if block ~ ~-1 ~ #du:air if block ~ ~-2 ~ #du:air if block ~ ~-3 ~ #du:air run function mechanization:gadgets/upgrades/armor/slowfall
 #execute if entity @s[tag=mech_upgrade_flight] if entity @s[nbt={FallFlying:0b}] run function mechanization:gadgets/upgrades/armor/flight
@@ -16,6 +13,9 @@ execute if score @s[tag=mech_right_click] mech_usedid matches 4100 run function 
 
 #drill
 execute if score @s mech_usedid matches 4101 run function mechanization:gadgets/tools/drill/tick
+
+#modular armor
+execute if data entity @s Inventory[].tag.mech_upgrades{type:3b} run function mechanization:gadgets/tools/modular_armor/tick
 
 #guns
 scoreboard players remove @s mech_firerate 1
