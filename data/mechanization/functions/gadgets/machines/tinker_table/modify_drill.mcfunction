@@ -1,6 +1,5 @@
 
 data remove storage du:temp obj.tag.Enchantments
-data remove storage du:temp obj.tag.du_trash
 data remove storage du:temp obj.tag.du_auto_smelt
 
 #mining speed
@@ -84,7 +83,6 @@ execute if score $temp_3 mech_data matches 4 run data modify storage du:temp obj
 execute if score $temp_3 mech_data matches -1 run data modify storage du:temp obj.tag.Enchantments append value {id:"minecraft:silk_touch",lvl:1}
 
 execute if data storage du:temp list[].tag.mech_upgrade{effect:"auto_smelt"} run data modify storage du:temp obj.tag merge value {du_auto_smelt:1b}
-execute if data storage du:temp list[].tag.mech_upgrade{effect:"trash"} run data modify storage du:temp obj.tag merge value {du_trash:1b}
 
 execute if data storage du:temp list[].tag.mech_upgrade{effect:"auto_smelt"} run data modify storage du:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_auto_smelt","color":"gray","italic":false}'
 execute if data storage du:temp list[].tag.mech_upgrade{effect:"trash"} run data modify storage du:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_trash","color":"gray","italic":false}'
@@ -101,7 +99,7 @@ data modify block -29999999 0 1602 Text1 set value '[{"text":" ","color":"dark_g
 data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1602 Text1
 
 scoreboard players add $temp_1 mech_data 1
-data modify block -29999999 0 1602 Text1 set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"$temp_1","objective":"mech_data"}}," ",{"translate":"mech.lore.mining_speed"}]'
+data modify block -29999999 0 1602 Text1 set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"$temp_1","objective":"mech_data"}}," ",{"translate":"mech.lore.mining_area"}]'
 data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1602 Text1
 
 scoreboard players operation $temp_3 mech_data = $temp_2 mech_data

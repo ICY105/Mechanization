@@ -14,6 +14,9 @@
 #energy saber throw
 execute if score @s[tag=mech_right_click] mech_usedid matches 4100 run function mechanization:gadgets/tools/energy_saber/throw_saber
 
+#drill
+execute if score @s mech_usedid matches 4101 run function mechanization:gadgets/tools/drill/tick
+
 #guns
 scoreboard players remove @s mech_firerate 1
 scoreboard players set @s[scores={mech_firerate=..-1}] mech_firerate 0
@@ -24,3 +27,9 @@ execute if entity @s[tag=mech_fire_cont,scores={mech_usedid=4102..4105,mech_fire
 execute if entity @s[tag=mech_right_click,scores={mech_usedid=4102..4105,mech_firerate=0,mech_weaponheat=..1000}] at @s run function mechanization:gadgets/guns/fire_gun
 
 execute if entity @s[scores={mech_weaponheat=1..}] run function mechanization:gadgets/guns/display_heat
+
+#reset scores
+scoreboard players set @s mech_use_pick 0
+scoreboard players set @s mech_use_axe 0
+scoreboard players set @s mech_use_shovel 0
+scoreboard players set @s mech_use_hoe 0

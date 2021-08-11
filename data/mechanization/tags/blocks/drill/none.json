@@ -1,0 +1,7 @@
+{
+	"required":false,
+	"values":[
+		"#minecraft:anvil",
+		"minecraft:enchanting_table"
+	]
+}

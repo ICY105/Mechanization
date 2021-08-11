@@ -1,0 +1,9 @@
+{
+	"required":false,
+	"values":[
+		"#mechanization:drill/pickaxe",
+		"#mechanization:drill/axe",
+		"#mechanization:drill/shovel",
+		"#mechanization:drill/hoe"
+	]
+}
