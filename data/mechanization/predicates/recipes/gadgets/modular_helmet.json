@@ -1,0 +1,14 @@
+
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/gadgets/modular_helmet_1"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/gadgets/modular_helmet_2"
+    }
+  ]
+}

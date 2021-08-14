@@ -1,0 +1,14 @@
+
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/gadgets/high_pressure_pump_1"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "mechanization:recipes/gadgets/high_pressure_pump_2"
+    }
+  ]
+}

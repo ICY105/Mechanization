@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.modular_chestplate","color":"dark_aqua","italic":false}
+			  "name": {"translate":"mech.item.modular_boots","color":"dark_aqua","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
