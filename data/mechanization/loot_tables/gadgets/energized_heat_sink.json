@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.energized_heat_sink","color":"dark_red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"translate":"mech.lore.upgrade_plasma_weapon","color":"gray","italic":false},
+			    [{"text":"+50% ","color":"red","italic":false},{"translate":"mech.lore.energy"}],
+			    [{"text":"-15% ","color":"blue","italic":false},{"translate":"mech.lore.heat"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 4216, CustomModelData: 6424216, mech_upgrade:{type:4b}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

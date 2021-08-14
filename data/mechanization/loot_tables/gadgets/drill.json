@@ -25,7 +25,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4101, CustomModelData: 6424101, unbreakable:1b, HideFlags:2, mech_upgrades:{type:2b,count:5b,mining_speed:9,mining_area:0,items:[]}}"
+              "tag":"{mech_itemid: 4101, CustomModelData: 6424101, HideFlags:2, mech_upgrades:{type:2b,count:5b,mining_speed:9,mining_area:0,items:[]}}"
             },
 			{
 			  "function":"set_attributes",

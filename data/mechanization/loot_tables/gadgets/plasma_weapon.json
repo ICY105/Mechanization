@@ -10,11 +10,11 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.portable_battery","color":"dark_aqua","italic":false}
+			  "name": {"translate":"mech.item.plasma_weapon","color":"dark_red","italic":false}
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4110, CustomModelData: 6424110, mech_upgrade:{type:3b}, mech_battery:{energy:0, max_energy:32000, models:8, base_model:6424900}}"
+              "tag":"{mech_itemid: 4102, CustomModelData: 6424102, HideFlags: 6, Unbreakable:1b, mech_upgrades:{type:4b, count:4b, items:[]}, mech_gun:{energy:128, fire_rate:10, heat:100, recoil_x:6, recoil_y:6, damage:50, velocity:6, count:1, bouncy:1}}"
             }
           ]
         }

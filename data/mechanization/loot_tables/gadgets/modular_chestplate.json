@@ -25,7 +25,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4107, CustomModelData: 6424107, unbreakable:1b, HideFlags:2, mech_upgrades:{type:3b,count:5b,shield:0,items:[]}, display:{color:15170646}}"
+              "tag":"{mech_itemid: 4107, CustomModelData: 6424107, HideFlags:70, mech_upgrades:{type:3b,count:5b,shield:0,items:[]}, display:{color:15170646}}"
             },
 			{
 			  "function":"set_attributes",

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.long_barrel","color":"dark_aqua","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"translate":"mech.lore.upgrade_plasma_weapon","color":"gray","italic":false},
+			    [{"text":"+4 ","color":"blue","italic":false},{"translate":"mech.lore.velocity"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 4202, CustomModelData: 6424202, mech_upgrade:{type:4b}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

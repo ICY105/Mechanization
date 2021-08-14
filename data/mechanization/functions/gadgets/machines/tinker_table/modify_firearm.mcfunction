@@ -1,65 +1,86 @@
 
-execute if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{mech_itemid:4102}}]} run data modify block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun set value {energy:16, fire_rate:2, heat:35, recoil_x:6, recoil_y:6, damage:30, velocity:5, bouncy:0}
-execute if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{mech_itemid:4103}}]} run data modify block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun set value {energy:24, fire_rate:4, heat:50, recoil_x:4, recoil_y:4, damage:60, velocity:6, bouncy:0}
-execute if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{mech_itemid:4104}}]} run data modify block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun set value {energy:32, fire_rate:12, heat:75, recoil_x:2, recoil_y:2, damage:80, velocity:4, bouncy:0}
-execute if block ~ ~ ~ barrel{Items:[{Slot:10b,tag:{mech_itemid:4105}}]} run data modify block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun set value {energy:64, fire_rate:40, heat:400, recoil_x:8, recoil_y:8, damage:200, velocity:10, bouncy:0}
+#damage
+scoreboard players set $temp_0 mech_data 50
+#fire rate
+scoreboard players set $temp_1 mech_data 10
+#velocity
+scoreboard players set $temp_2 mech_data 6
+#heat
+scoreboard players set $temp_3 mech_data 100
+#energy
+scoreboard players set $temp_4 mech_data 128
+#count
+scoreboard players set $temp_5 mech_data 1
+#bouncy
+scoreboard players set $temp_6 mech_data 1
+#model
+scoreboard players set $temp_7 mech_data 6424925
 
-execute if block ~ ~ ~ barrel{Items:[{tag:{OreDict:["upgradeBouncy"]}}]} store success block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun.bouncy int 1 if entity @s
+#chambers
+execute if data storage du:temp list[{Slot:14b}].tag{mech_itemid:4206} run scoreboard players set $temp_0 mech_data 250
+execute if data storage du:temp list[{Slot:14b}].tag{mech_itemid:4206} run scoreboard players set $temp_1 mech_data 50
+execute if data storage du:temp list[{Slot:14b}].tag{mech_itemid:4206} run scoreboard players add $temp_7 mech_data 1
 
-scoreboard players set temp_0 mech_data 0
-execute if block ~ ~ ~ barrel{Items:[{tag:{OreDict:["upgradeVerticalGrip"]}}]} run scoreboard players set temp_0 mech_data 1
-execute if score temp_0 mech_data matches 1 store result score temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun.recoil_x
-execute if score temp_0 mech_data matches 1 run scoreboard players remove temp_1 mech_data 1
-execute if score temp_0 mech_data matches 1 store result block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun.recoil_x int 1 run scoreboard players get temp_1 mech_data
+execute if data storage du:temp list[{Slot:14b}].tag{mech_itemid:4207} run scoreboard players set $temp_0 mech_data 10
+execute if data storage du:temp list[{Slot:14b}].tag{mech_itemid:4207} run scoreboard players set $temp_1 mech_data 2
+execute if data storage du:temp list[{Slot:14b}].tag{mech_itemid:4207} run scoreboard players add $temp_7 mech_data 2
 
-scoreboard players set temp_0 mech_data 0
-execute if block ~ ~ ~ barrel{Items:[{tag:{OreDict:["upgradeAngledGrip"]}}]} run scoreboard players set temp_0 mech_data 1
-execute if score temp_0 mech_data matches 1 store result score temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun.recoil_y
-execute if score temp_0 mech_data matches 1 run scoreboard players remove temp_1 mech_data 1
-execute if score temp_0 mech_data matches 1 store result block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun.recoil_y int 1 run scoreboard players get temp_1 mech_data
+#pump
+execute if data storage du:temp list[{Slot:13b}].tag{mech_itemid:4211} run scoreboard players operation $temp_0 mech_data *= $cons.2 du_data
+execute if data storage du:temp list[{Slot:13b}].tag{mech_itemid:4211} run scoreboard players operation $temp_1 mech_data *= $cons.2 du_data
 
-scoreboard players set temp_0 mech_data 0
-execute if block ~ ~ ~ barrel{Items:[{tag:{OreDict:["upgradeCryoUnit"]}}]} run scoreboard players set temp_0 mech_data 1
-execute if score temp_0 mech_data matches 1 store result score temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun.heat
-execute if score temp_0 mech_data matches 1 run scoreboard players set temp_2 mech_data 4
-execute if score temp_0 mech_data matches 1 run scoreboard players operation temp_1 mech_data *= temp_2 mech_data
-execute if score temp_0 mech_data matches 1 run scoreboard players set temp_2 mech_data 5
-execute if score temp_0 mech_data matches 1 run scoreboard players operation temp_1 mech_data /= temp_2 mech_data
-execute if score temp_0 mech_data matches 1 store result block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun.heat int 1 run scoreboard players get temp_1 mech_data
+execute if data storage du:temp list[{Slot:13b}].tag{mech_itemid:4212} run scoreboard players operation $temp_0 mech_data /= $cons.2 du_data
+execute if data storage du:temp list[{Slot:13b}].tag{mech_itemid:4212} run scoreboard players operation $temp_1 mech_data /= $cons.2 du_data
 
-scoreboard players set temp_0 mech_data 0
-execute if block ~ ~ ~ barrel{Items:[{tag:{OreDict:["upgradePlasmaPump"]}}]} run scoreboard players set temp_0 mech_data 1
-execute if score temp_0 mech_data matches 1 store result score temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun.fire_rate
-execute if score temp_0 mech_data matches 1 run scoreboard players set temp_2 mech_data 4
-execute if score temp_0 mech_data matches 1 run scoreboard players operation temp_1 mech_data *= temp_2 mech_data
-execute if score temp_0 mech_data matches 1 run scoreboard players set temp_2 mech_data 5
-execute if score temp_0 mech_data matches 1 run scoreboard players operation temp_1 mech_data /= temp_2 mech_data
-execute if score temp_0 mech_data matches 1 run scoreboard players add temp_1 mech_data 1
-execute if score temp_0 mech_data matches 1 store result block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun.fire_rate int 1 run scoreboard players get temp_1 mech_data
+#heat sink
+execute if data storage du:temp list[{Slot:12b}].tag{mech_itemid:4216} run scoreboard players set $temp_3 mech_data 85
+execute if data storage du:temp list[{Slot:12b}].tag{mech_itemid:4216} run scoreboard players set $temp_4 mech_data 192
 
-scoreboard players set temp_0 mech_data 0
-execute if block ~ ~ ~ barrel{Items:[{tag:{OreDict:["upgradeFluidActuator"]}}]} run scoreboard players set temp_0 mech_data 1
-execute if score temp_0 mech_data matches 1 store result score temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun.velocity
-execute if score temp_0 mech_data matches 1 run scoreboard players set temp_2 mech_data 5
-execute if score temp_0 mech_data matches 1 run scoreboard players operation temp_1 mech_data *= temp_2 mech_data
-execute if score temp_0 mech_data matches 1 run scoreboard players set temp_2 mech_data 4
-execute if score temp_0 mech_data matches 1 run scoreboard players operation temp_1 mech_data /= temp_2 mech_data
-execute if score temp_0 mech_data matches 1 store result block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun.velocity int 1 run scoreboard players get temp_1 mech_data
+execute if data storage du:temp list[{Slot:12b}].tag{mech_itemid:4217} run scoreboard players set $temp_3 mech_data 115
+execute if data storage du:temp list[{Slot:12b}].tag{mech_itemid:4217} run scoreboard players set $temp_4 mech_data 64
 
-scoreboard players set temp_0 mech_data 0
-execute if block ~ ~ ~ barrel{Items:[ {Slot:11b,tag:{OreDict:["upgradeSuperCharger"]}} ]} run scoreboard players add temp_0 mech_data 1
-execute if block ~ ~ ~ barrel{Items:[ {Slot:12b,tag:{OreDict:["upgradeSuperCharger"]}} ]} run scoreboard players add temp_0 mech_data 1
-execute if block ~ ~ ~ barrel{Items:[ {Slot:13b,tag:{OreDict:["upgradeSuperCharger"]}} ]} run scoreboard players add temp_0 mech_data 1
-execute if block ~ ~ ~ barrel{Items:[ {Slot:14b,tag:{OreDict:["upgradeSuperCharger"]}} ]} run scoreboard players add temp_0 mech_data 1
-execute if block ~ ~ ~ barrel{Items:[ {Slot:15b,tag:{OreDict:["upgradeSuperCharger"]}} ]} run scoreboard players add temp_0 mech_data 1
-execute if score temp_0 mech_data matches 1.. store result score temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun.damage
-execute if score temp_0 mech_data matches 1 run scoreboard players set temp_2 mech_data 125
-execute if score temp_0 mech_data matches 2 run scoreboard players set temp_2 mech_data 150
-execute if score temp_0 mech_data matches 3 run scoreboard players set temp_2 mech_data 175
-execute if score temp_0 mech_data matches 4 run scoreboard players set temp_2 mech_data 200
-execute if score temp_0 mech_data matches 5 run scoreboard players set temp_2 mech_data 225
-execute if score temp_0 mech_data matches 1.. run scoreboard players set temp_3 mech_data 100
-execute if score temp_0 mech_data matches 1.. run scoreboard players operation temp_1 mech_data *= temp_2 mech_data
-execute if score temp_0 mech_data matches 1.. run scoreboard players operation temp_1 mech_data /= temp_3 mech_data
-execute if score temp_0 mech_data matches 1.. store result block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun.damage int 1 run scoreboard players get temp_1 mech_data
+#barrels
+execute if data storage du:temp list[{Slot:15b}].tag{mech_itemid:4201} run scoreboard players operation $temp_1 mech_data *= $cons.5 du_data
+execute if data storage du:temp list[{Slot:15b}].tag{mech_itemid:4201} run scoreboard players set $temp_2 mech_data 4
+execute if data storage du:temp list[{Slot:15b}].tag{mech_itemid:4201} run scoreboard players set $temp_5 mech_data 9
+execute if data storage du:temp list[{Slot:15b}].tag{mech_itemid:4201} run scoreboard players set $temp_6 mech_data 0
+execute if data storage du:temp list[{Slot:15b}].tag{mech_itemid:4201} run scoreboard players add $temp_7 mech_data 3
 
+execute if data storage du:temp list[{Slot:15b}].tag{mech_itemid:4202} run scoreboard players set $temp_2 mech_data 10
+execute if data storage du:temp list[{Slot:15b}].tag{mech_itemid:4202} run scoreboard players set $temp_6 mech_data 0
+execute if data storage du:temp list[{Slot:15b}].tag{mech_itemid:4202} run scoreboard players add $temp_7 mech_data 6
+
+#modify
+scoreboard players operation $temp_3 mech_data *= $temp_1 mech_data
+scoreboard players operation $temp_3 mech_data /= $cons.10 du_data
+execute if score $temp_3 mech_data matches ..25 run scoreboard players set $temp_3 mech_data 25
+
+scoreboard players operation $temp_4 mech_data *= $temp_1 mech_data
+scoreboard players operation $temp_4 mech_data /= $cons.16 du_data
+
+#store data
+execute store result storage du:temp obj.tag.mech_gun.damage int 1 run scoreboard players get $temp_0 mech_data
+execute store result storage du:temp obj.tag.mech_gun.fire_rate int 1 run scoreboard players get $temp_1 mech_data
+execute store result storage du:temp obj.tag.mech_gun.velocity int 1 run scoreboard players get $temp_2 mech_data
+execute store result storage du:temp obj.tag.mech_gun.heat int 1 run scoreboard players get $temp_3 mech_data
+execute store result storage du:temp obj.tag.mech_gun.energy int 1 run scoreboard players get $temp_4 mech_data
+execute store result storage du:temp obj.tag.mech_gun.count int 1 run scoreboard players get $temp_5 mech_data
+execute store result storage du:temp obj.tag.mech_gun.bouncy int 1 run scoreboard players get $temp_6 mech_data
+execute store result storage du:temp obj.tag.CustomModelData int 1 run scoreboard players get $temp_7 mech_data
+
+#display data
+scoreboard players operation $temp_0 mech_data /= $cons.10 du_data
+execute if score $temp_0 mech_data matches 0 run scoreboard players set $temp_0 mech_data 1
+data modify block -29999999 0 1602 Text1 set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"$temp_0","objective":"mech_data"}}," ",{"translate":"mech.lore.damage"}]'
+data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1602 Text1
+data modify block -29999999 0 1602 Text1 set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"$temp_1","objective":"mech_data"}}," ",{"translate":"mech.lore.fire_rate"}]'
+data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1602 Text1
+data modify block -29999999 0 1602 Text1 set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"$temp_2","objective":"mech_data"}}," ",{"translate":"mech.lore.velocity"}]'
+data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1602 Text1
+execute if score $temp_5 mech_data matches 2.. run data modify block -29999999 0 1602 Text1 set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"$temp_5","objective":"mech_data"}}," ",{"translate":"mech.lore.shot_count"}]'
+execute if score $temp_5 mech_data matches 2.. run data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1602 Text1
+data modify block -29999999 0 1602 Text1 set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"$temp_3","objective":"mech_data"}}," ",{"translate":"mech.lore.heat"}]'
+data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1602 Text1
+data modify block -29999999 0 1602 Text1 set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"$temp_4","objective":"mech_data"}}," ",{"translate":"mech.lore.energy"}]'
+data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1602 Text1
+execute if score $temp_6 mech_data matches 1 run data modify block -29999999 0 1602 Text1 set value '[{"translate":"mech.lore.bouncy","color":"dark_green","italic":"false"}]'

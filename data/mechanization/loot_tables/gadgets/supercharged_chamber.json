@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.supercharged_chamber","color":"dark_red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"translate":"mech.lore.upgrade_plasma_weapon","color":"gray","italic":false},
+			    [{"text":"+500% ","color":"blue","italic":false},{"translate":"mech.lore.damage"}],
+			    [{"text":"-80% ","color":"red","italic":false},{"translate":"mech.lore.fire_rate"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 4206, CustomModelData: 6424206, mech_upgrade:{type:4b}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

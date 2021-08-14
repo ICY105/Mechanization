@@ -6,6 +6,7 @@ execute if score $in_0 mech_data matches 3 run item replace block ~ ~ ~ containe
 execute if score $in_0 mech_data matches 4 run item replace block ~ ~ ~ container.0 with minecraft:structure_block{CustomModelData:6424504,du_gui:1b,HideFlags:63,display:{Name:'""'}}
 execute if score $in_0 mech_data matches 5 run item replace block ~ ~ ~ container.0 with minecraft:structure_block{CustomModelData:6424505,du_gui:1b,HideFlags:63,display:{Name:'""'}}
 execute if score $in_0 mech_data matches 6 run item replace block ~ ~ ~ container.0 with minecraft:structure_block{CustomModelData:6424506,du_gui:1b,HideFlags:63,display:{Name:'""'}}
+execute if data block ~ ~ ~ Items[{Slot:10b}].tag.mech_gun run item replace block ~ ~ ~ container.0 with minecraft:structure_block{CustomModelData:6424507,du_gui:1b,HideFlags:63,display:{Name:'""'}}
 
 item replace block ~ ~ ~ container.1 with minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:'""'}}
 item replace block ~ ~ ~ container.2 with minecraft:structure_block{CustomModelData:6421200,du_gui:1b,HideFlags:63,display:{Name:'""'}}

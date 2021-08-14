@@ -18,26 +18,32 @@ data remove block -29999999 0 1601 Items[{tag:{du_gui:1b}}]
 item replace block -29999999 0 1601 container.10 with air
 
 execute if score $in_0 mech_data matches 1.. store result score $temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:12b}].tag.mech_upgrade.type
+execute if score $in_0 mech_data matches 1.. if score $temp_1 mech_data matches 0 if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:elytra"}] run scoreboard players set $temp_1 mech_data 3
 execute if score $in_0 mech_data matches 1.. if score $temp_1 mech_data = $temp_0 mech_data run item replace block -29999999 0 1601 container.12 with minecraft:air
 execute if score $in_0 mech_data matches 1.. unless score $temp_1 mech_data = $temp_0 mech_data run item replace block ~ ~ ~ container.12 with minecraft:air
 
 execute if score $in_0 mech_data matches 2.. store result score $temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:13b}].tag.mech_upgrade.type
+execute if score $in_0 mech_data matches 2.. if score $temp_1 mech_data matches 0 if data block ~ ~ ~ Items[{Slot:13b,id:"minecraft:elytra"}] run scoreboard players set $temp_1 mech_data 3
 execute if score $in_0 mech_data matches 2.. if score $temp_1 mech_data = $temp_0 mech_data run item replace block -29999999 0 1601 container.13 with minecraft:air
 execute if score $in_0 mech_data matches 2.. unless score $temp_1 mech_data = $temp_0 mech_data run item replace block ~ ~ ~ container.13 with minecraft:air
 
 execute if score $in_0 mech_data matches 3.. store result score $temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:14b}].tag.mech_upgrade.type
+execute if score $in_0 mech_data matches 3.. if score $temp_1 mech_data matches 0 if data block ~ ~ ~ Items[{Slot:14b,id:"minecraft:elytra"}] run scoreboard players set $temp_1 mech_data 3
 execute if score $in_0 mech_data matches 3.. if score $temp_1 mech_data = $temp_0 mech_data run item replace block -29999999 0 1601 container.14 with minecraft:air
 execute if score $in_0 mech_data matches 3.. unless score $temp_1 mech_data = $temp_0 mech_data run item replace block ~ ~ ~ container.14 with minecraft:air
 
 execute if score $in_0 mech_data matches 4.. store result score $temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:15b}].tag.mech_upgrade.type
+execute if score $in_0 mech_data matches 4.. if score $temp_1 mech_data matches 0 if data block ~ ~ ~ Items[{Slot:15b,id:"minecraft:elytra"}] run scoreboard players set $temp_1 mech_data 3
 execute if score $in_0 mech_data matches 4.. if score $temp_1 mech_data = $temp_0 mech_data run item replace block -29999999 0 1601 container.15 with minecraft:air
 execute if score $in_0 mech_data matches 4.. unless score $temp_1 mech_data = $temp_0 mech_data run item replace block ~ ~ ~ container.15 with minecraft:air
 
 execute if score $in_0 mech_data matches 5.. store result score $temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:16b}].tag.mech_upgrade.type
+execute if score $in_0 mech_data matches 5.. if score $temp_1 mech_data matches 0 if data block ~ ~ ~ Items[{Slot:16b,id:"minecraft:elytra"}] run scoreboard players set $temp_1 mech_data 3
 execute if score $in_0 mech_data matches 5.. if score $temp_1 mech_data = $temp_0 mech_data run item replace block -29999999 0 1601 container.16 with minecraft:air
 execute if score $in_0 mech_data matches 5.. unless score $temp_1 mech_data = $temp_0 mech_data run item replace block ~ ~ ~ container.16 with minecraft:air
 
 execute if score $in_0 mech_data matches 6.. store result score $temp_1 mech_data run data get block ~ ~ ~ Items[{Slot:17b}].tag.mech_upgrade.type
+execute if score $in_0 mech_data matches 6.. if score $temp_1 mech_data matches 0 if data block ~ ~ ~ Items[{Slot:17b,id:"minecraft:elytra"}] run scoreboard players set $temp_1 mech_data 3
 execute if score $in_0 mech_data matches 6.. if score $temp_1 mech_data = $temp_0 mech_data run item replace block -29999999 0 1601 container.17 with minecraft:air
 execute if score $in_0 mech_data matches 6.. unless score $temp_1 mech_data = $temp_0 mech_data run item replace block ~ ~ ~ container.17 with minecraft:air
 
@@ -49,12 +55,12 @@ function mechanization:gadgets/machines/tinker_table/reset_ui
 #add modifiers
 data modify storage du:temp obj set from block ~ ~ ~ Items[{Slot:10b}]
 data modify storage du:temp list set value []
-execute if data block ~ ~ ~ Items[{Slot:12b}].tag.mech_upgrade run data modify storage du:temp list append from block ~ ~ ~ Items[{Slot:12b}]
-execute if data block ~ ~ ~ Items[{Slot:13b}].tag.mech_upgrade run data modify storage du:temp list append from block ~ ~ ~ Items[{Slot:13b}]
-execute if data block ~ ~ ~ Items[{Slot:14b}].tag.mech_upgrade run data modify storage du:temp list append from block ~ ~ ~ Items[{Slot:14b}]
-execute if data block ~ ~ ~ Items[{Slot:15b}].tag.mech_upgrade run data modify storage du:temp list append from block ~ ~ ~ Items[{Slot:15b}]
-execute if data block ~ ~ ~ Items[{Slot:16b}].tag.mech_upgrade run data modify storage du:temp list append from block ~ ~ ~ Items[{Slot:16b}]
-execute if data block ~ ~ ~ Items[{Slot:17b}].tag.mech_upgrade run data modify storage du:temp list append from block ~ ~ ~ Items[{Slot:17b}]
+execute unless data block ~ ~ ~ Items[{Slot:12b}].tag.du_gui run data modify storage du:temp list append from block ~ ~ ~ Items[{Slot:12b}]
+execute unless data block ~ ~ ~ Items[{Slot:13b}].tag.du_gui run data modify storage du:temp list append from block ~ ~ ~ Items[{Slot:13b}]
+execute unless data block ~ ~ ~ Items[{Slot:14b}].tag.du_gui run data modify storage du:temp list append from block ~ ~ ~ Items[{Slot:14b}]
+execute unless data block ~ ~ ~ Items[{Slot:15b}].tag.du_gui run data modify storage du:temp list append from block ~ ~ ~ Items[{Slot:15b}]
+execute unless data block ~ ~ ~ Items[{Slot:16b}].tag.du_gui run data modify storage du:temp list append from block ~ ~ ~ Items[{Slot:16b}]
+execute unless data block ~ ~ ~ Items[{Slot:17b}].tag.du_gui run data modify storage du:temp list append from block ~ ~ ~ Items[{Slot:17b}]
 
 execute if entity @s[tag=mech_active] run function mechanization:gadgets/machines/tinker_table/add_modifiers
 execute if entity @s[tag=mech_active] run data modify block ~ ~ ~ Items append from storage du:temp obj 

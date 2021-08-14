@@ -8,3 +8,6 @@ execute if score $in_0 mech_data matches 1.. run item replace block -29999999 0 
 execute if score $in_0 mech_data matches 1.. if entity @s[gamemode=!creative] run function mechanization:gadgets/tools/damage_upgrades
 execute if score $in_0 mech_data matches 1.. run item replace entity @s armor.chest from block -29999999 0 1601 container.0
 execute if score $in_0 mech_data matches 1.. run item modify entity @s armor.chest mechanization:remove_damage
+
+#effects
+execute if data entity @s Inventory[{Slot:102b}].tag.mech_upgrades.items[].tag.mech_upgrade{effect:"jetpack"} unless entity @s[nbt={FallFlying:1b}] run function mechanization:gadgets/tools/modular_armor/flight

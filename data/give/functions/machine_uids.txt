@@ -275,33 +275,34 @@ Gadgets [04]: {
 	Items [1]: {
 		Energy Saber		[00-4100]
 		Drill				[01-4101]
-		SMG					[02-4102]
-		Rifle				[03-4103]
-		Pistol				[04-4104]
-		Sniper				[05-4105]
+		Plasma Launcher		[02-4102]
 		Modular Helmet		[06-4106]
 		Modular Chestplate	[07-4107]
 		Modular Leggings	[08-4108]
 		Modular Boots		[09-4109]
 		Portable Battery 	[10-4110]
+		Jetpack 			[11-4111]
+		Rebreather 			[12-4112]
+		Night Vision Goggles[13-4113]
+		Hover Boots			[14-4114]
+		Phase Boots			[15-4115]
 	}
-	Upgrades [3]: {
-		Base		[00-4300]
-	}
-	Gun Parts [04]: {
-		Barrel			[00-4400]
-		Magazine		[01-4401]
-		Stock			[02-4402]
-		Trigger			[03-4403]
-		Angled Grip		[04-4404]
-		Vertical Grip	[05-4405]
-		Sight			[06-4406]
-		Scope			[07-4407]
-		Super Charger	[08-4408]
-		Cryo Unit		[09-4409]
-		Fluid Actuator	[10-4410]
-		Plamsa Pump		[11-4411]
-		Bouncy Proj.	[12-4412]
+	EPAC parts [2]: {
+		Standard Barrel		[0-4200]
+		Split Barrel		[1-4201]
+		Long Barrel			[2-4202]
+		
+		Standard Chamber	[5-4205]
+		Supercharged Chamber[6-4206]
+		Overclocked Chamber	[7-4207]
+		
+		Standard Pump		[10-4210]
+		High Pressure Pump	[11-4211]
+		Accelerated Pump	[12-4212]
+		
+		Standard Heat Sink	[15-4215]
+		Energized Heat Sink	[16-4216]
+		Passive Heat Sink	[17-4217]
 	}
 }
 
