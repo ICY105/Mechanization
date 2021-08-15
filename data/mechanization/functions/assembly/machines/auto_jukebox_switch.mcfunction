@@ -1,3 +1,4 @@
+
 #stop previous records
 stopsound @a[distance=..32] record
 tag @s add mech_active
