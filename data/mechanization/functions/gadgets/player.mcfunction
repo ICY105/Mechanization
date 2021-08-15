@@ -21,7 +21,7 @@ execute if score @s[tag=mech_right_click] mech_usedid matches 4102..4105 run sco
 execute if entity @s[scores={mech_usedid=4102..4105,mech_weaponheat=..1000,mech_timer=1..,mech_firerate=0}] run function mechanization:gadgets/tools/firearms/fire_weapon
 execute if score @s mech_usedid matches 4102..4105 store result score $temp_0 mech_data run data get entity @s SelectedItem.tag.mech_gun.fire_rate
 execute if score @s mech_usedid matches 4102..4105 run scoreboard players remove $temp_0 mech_data 4
-execute if entity @s[scores={mech_usedid=4102..4105,mech_weaponheat=..1000,mech_timer=1..,mech_firerate=1..}] if score @s mech_firerate > $temp_0 mech_data run function mechanization:gadgets/tools/firearms/recoil
+execute if entity @s[scores={mech_usedid=4102..4105,mech_timer=1..,mech_firerate=1..}] if score @s mech_firerate > $temp_0 mech_data run function mechanization:gadgets/tools/firearms/recoil
 
 execute if score @s mech_timer matches 1.. run scoreboard players remove @s mech_timer 1
 execute if score @s mech_firerate matches 1.. run scoreboard players remove @s mech_firerate 1
