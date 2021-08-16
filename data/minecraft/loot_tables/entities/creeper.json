@@ -68,6 +68,10 @@
 		{
           "type": "minecraft:loot_table",
           "name": "minecraft:assembly/disc_stranger_think"
+        },
+		{
+          "type": "minecraft:loot_table",
+          "name": "minecraft:assembly/disc_atomic_amnesia"
         }
       ],
       "conditions": [

@@ -84,3 +84,4 @@ data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1
 data modify block -29999999 0 1602 Text1 set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"$temp_4","objective":"mech_data"}}," ",{"translate":"mech.lore.energy"}]'
 data modify storage du:temp obj.tag.display.Lore append from block -29999999 0 1602 Text1
 execute if score $temp_6 mech_data matches 1 run data modify block -29999999 0 1602 Text1 set value '[{"translate":"mech.lore.bouncy","color":"dark_green","italic":"false"}]'
+data modify storage du:temp obj.tag.display.Lore append value '[{"translate":"mech.lore.added_by","color":"blue","italic":false}]'

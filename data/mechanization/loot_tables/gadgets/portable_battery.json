@@ -13,6 +13,13 @@
 			  "name": {"translate":"mech.item.portable_battery","color":"dark_aqua","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"translate":"mech.item.portable_battery.lore","color":"gray","italic":false,"with":[{"text":"0"},{"text":"32000"}]},
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{mech_itemid: 4110, CustomModelData: 6424110, mech_upgrade:{type:3b}, mech_battery:{energy:0, max_energy:32000, models:8, base_model:6424900}}"
             }

@@ -14,7 +14,11 @@
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"mech.item.item_filter.lore_1","color":"white","italic":false},{"translate":"mech.item.item_filter.lore_2","color":"white","italic":false}]
+			  "lore": [
+			    {"translate":"mech.item.item_filter.lore_1","color":"white","italic":false},
+				{"translate":"mech.item.item_filter.lore_2","color":"white","italic":false},
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
 			},
 			{
               "function": "minecraft:set_nbt",

@@ -13,6 +13,12 @@
 			  "name": {"translate":"mech.block.mss_drive_bay","color":"dark_red","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			   ]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{mech_itemid: 5011, CustomModelData: 6425012, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
             }

@@ -13,6 +13,12 @@
 			  "name": {"translate":"mech.block.tinker_table","color":"dark_red","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			   ]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{mech_itemid: 4001, CustomModelData: 6424001, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
             }

@@ -10,17 +10,15 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.mss_storage_drive","color":"dark_purple","italic":false}
+			  "name": {"translate":"item.minecraft.music_disc_ward","color":"aqua","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
-			  "lore": [
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
-			   ]
+			  "lore": [{"translate":"mech.item.disc_atomic_amnesia","color":"gray","italic":false},{"translate":"mech.item.disc_atomic_amnesia2","color":"gray","italic":false}]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 5106, CustomModelData: 6425106, HideFlags: 6, Unbreakable:1b, mech_storage:[]}"
+              "tag":"{mech_itemid: 5107, CustomModelData: 6425107, HideFlags: 6, Unbreakable:1b}"
             }
           ]
         }

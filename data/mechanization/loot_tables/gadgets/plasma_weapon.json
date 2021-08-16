@@ -13,6 +13,17 @@
 			  "name": {"translate":"mech.item.plasma_weapon","color":"dark_red","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    [{"text":" 5 ","color":"dark_green","italic":"false"},{"translate":"mech.lore.damage"}],
+			    [{"text":" 10 ","color":"dark_green","italic":"false"},{"translate":"mech.lore.fire_rate"}],
+			    [{"text":" 6 ","color":"dark_green","italic":"false"},{"translate":"mech.lore.velocity"}],
+			    [{"text":" 100 ","color":"dark_green","italic":"false"},{"translate":"mech.lore.heat"}],
+			    [{"text":" 80 ","color":"dark_green","italic":"false"},{"translate":"mech.lore.energy"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{mech_itemid: 4102, CustomModelData: 6424102, HideFlags: 6, Unbreakable:1b, mech_upgrades:{type:4b, count:4b, items:[]}, mech_gun:{energy:128, fire_rate:10, heat:100, recoil_x:6, recoil_y:6, damage:50, velocity:6, count:1, bouncy:1}}"
             }

@@ -13,6 +13,12 @@
 			  "name": {"translate":"mech.item.spent_fuel_cell","color":"dark_green","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{mech_itemid: 3102, CustomModelData: 6423102, OreDict:[\"cellSpentFuel\"], HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}}"
             }

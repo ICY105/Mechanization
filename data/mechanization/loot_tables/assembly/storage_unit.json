@@ -13,6 +13,12 @@
 			  "name": {"translate":"mech.block.unlimited_storage_unit","color":"dark_red","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			   ]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{mech_itemid: 5007, CustomModelData: 6425007, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
             }

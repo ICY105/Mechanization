@@ -13,6 +13,12 @@
 			  "name": {"translate":"mech.item.depleted_plutonium_cell","color":"gray","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{mech_itemid: 3101, CustomModelData: 6423101, OreDict:[\"cellPlutonium\"], HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}}"
             }

@@ -320,6 +320,7 @@ Assembly [05]: {
 		Item Receiver          [09-5009]
 		MSS Terminal           [10-5010]
 		MSS Drive Bay          [11-5011]
+		Item Pipe	           [12-5012]
 	}
 	Items [1] {
 		Item Filter 			[00-5100]
@@ -329,5 +330,6 @@ Assembly [05]: {
 		Disc Wander				[04-5104]
 		Disc Stranger Think		[05-5105]
 		MSS Storage Drive		[06-5106]
+		Disc Atomic Amnesia		[07-5107]
 	}
 }

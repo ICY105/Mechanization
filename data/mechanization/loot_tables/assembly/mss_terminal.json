@@ -13,6 +13,13 @@
 			  "name": {"translate":"mech.block.mss_terminal","color":"dark_purple","italic":false}
 			},
 			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"translate":"mech.lore.consume","with":["1024"],"color":"white","italic":false},
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
               "function": "minecraft:set_nbt",
               "tag":"{mech_itemid: 5010, CustomModelData: 6425010, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
             }
