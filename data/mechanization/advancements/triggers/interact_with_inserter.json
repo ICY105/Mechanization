@@ -1,0 +1,17 @@
+{
+  "parent": "mechanization:mechanization",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:item_frame",
+          "nbt": "{Tags:[\"mech_item_inserter\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mechanization:assembly/tools/item_filter/interact_with_inserter"
+  }
+}

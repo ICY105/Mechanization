@@ -4,6 +4,9 @@
 		"#mechanization:inv_3",
 		"#mechanization:inv_5",
 		"#mechanization:inv_9",
-		"#mechanization:inv_27"
+		"#mechanization:inv_27",
+		"minecraft:jukebox",
+		"minecraft:campfire",
+		"minecraft:soul_campfire"
 	]
 }

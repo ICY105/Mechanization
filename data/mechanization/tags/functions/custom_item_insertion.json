@@ -1,0 +1,10 @@
+{
+	"required":false,
+	"values":[
+	  "mechanization:base/tools/custom_item_insertion",
+	  "mechanization:machines/tools/custom_item_insertion",
+	  "mechanization:nuclear/tools/custom_item_insertion",
+	  "mechanization:gadgets/tools/custom_item_insertion",
+	  "mechanization:assembly/tools/custom_item_insertion"
+	]
+}

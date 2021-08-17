@@ -1,5 +1,6 @@
 {
 	"values":[
-		"mechanization:base/utils/process_ore"
+		"mechanization:base/utils/process_ore",
+		"mechanization:assembly/tools/process_item_tube"
 	]
 }

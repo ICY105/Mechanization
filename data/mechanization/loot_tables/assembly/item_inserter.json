@@ -6,21 +6,21 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:blast_furnace",
+		  "name": "minecraft:item_frame",
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.block.mss_drive_bay","color":"dark_red","italic":false}
+			  "name": {"translate":"mech.block.item_inserter","color":"dark_red","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
-			   ]
+			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 5011, CustomModelData: 6425011, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 5009, CustomModelData: 6425009, EntityTag:{Tags:[\"mech_item_inserter\"],CustomName:'{\"translate\":\"mech.block.item_inserter\"}',Invulnerable:1b,Invisible:1b,Silent:1b,Item:{id:\"minecraft:blast_furnace\",Count:1b,tag:{mech_itemid:5009,block:1b,CustomModelData:6425009}}}}"
             }
           ]
         }

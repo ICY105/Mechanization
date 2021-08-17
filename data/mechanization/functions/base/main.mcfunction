@@ -3,7 +3,7 @@
 execute as @a at @s run function mechanization:base/player
 
 #Machine Crafter
-execute as @e[type=glow_item_frame,tag=mech_machine_crafter] at @s run function mechanization:base/machines/machine_crafting_table
+execute as @e[type=glow_item_frame,tag=mech_machine_crafter] at @s run function mechanization:base/machines/machine_crafting_table/machine_crafting_table
 
 #Energy Storages
 execute if score $base.timer_20 du_data matches 1 as @e[type=item_frame,tag=mech_battery1] at @s run function mechanization:base/machines/tier_1_battery

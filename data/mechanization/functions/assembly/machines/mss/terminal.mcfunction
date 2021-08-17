@@ -48,7 +48,7 @@ execute if entity @s[tag=mech_active] run function mechanization:assembly/machin
 
 #set block display
 execute if score $base.timer_20 du_data matches 0 if entity @s[tag=mech_active] store result entity @s Item.tag.CustomModelData int 6425010 if entity @s
-execute if entity @s[tag=!mech_active] store result entity @s Item.tag.CustomModelData int 6425011 if entity @s
+execute if entity @s[tag=!mech_active] store result entity @s Item.tag.CustomModelData int 6425903 if entity @s
 
 #cleanup
 execute store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power

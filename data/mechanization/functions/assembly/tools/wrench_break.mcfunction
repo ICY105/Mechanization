@@ -40,16 +40,6 @@ execute if entity @s[tag=mech_unlimited_storage] at @s if score @s mech_data mat
 execute if entity @s[tag=mech_unlimited_storage] at @s run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_unlimited_storage]
 
-#Item Transmitter
-execute if entity @s[tag=mech_item_transmitter] run loot spawn ~ ~ ~ loot mechanization:assembly/item_transmitter
-execute if entity @s[tag=mech_item_transmitter] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @s[tag=mech_item_transmitter]
-
-#Item Receiver
-execute if entity @s[tag=mech_item_receiver] run loot spawn ~ ~ ~ loot mechanization:assembly/item_receiver
-execute if entity @s[tag=mech_item_receiver] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @s[tag=mech_item_receiver]
-
 #MSS Terminal
 execute if entity @s[tag=mech_terminal,tag=mech_active] run function mechanization:assembly/machines/mss/get_drive/terminal_insert 
 execute if entity @s[tag=mech_terminal] run loot spawn ~ ~ ~ loot mechanization:assembly/mss_terminal
@@ -61,3 +51,11 @@ execute if entity @s[tag=mech_drive_bay] run loot spawn ~ ~ ~ loot mechanization
 execute if entity @s[tag=mech_drive_bay] at @s run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_drive_bay]
 
+#item pipe
+execute if entity @s[tag=mech_item_pipe] run function mechanization:assembly/machines/item_pipe/break
+
+#item extractor
+execute if entity @s[tag=mech_item_extractor] run function mechanization:assembly/machines/item_extractor/break
+
+#item inserter
+execute if entity @s[tag=mech_item_inserter] run function mechanization:assembly/machines/item_inserter/break

@@ -316,6 +316,8 @@ Assembly [05]: {
 		Fast Hopper		[05-5005]
 		Auto Jukebox	[06-5006]
 		Unlimited Storage Unit [07-5007]
+		Item Extractor		   [08-5008]
+		Item Inserter		   [09-5009]
 		MSS Terminal           [10-5010]
 		MSS Drive Bay          [11-5011]
 		Item Pipe	           [12-5012]
