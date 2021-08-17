@@ -1,0 +1,20 @@
+{
+	"condition": "minecraft:location_check",
+	"predicate": {
+	  "block": {
+		"nbt": "{Items:[
+		  {Slot:2b, id:\"minecraft:string\" },
+		  {Slot:3b, id:\"minecraft:string\" },
+		  {Slot:4b, id:\"minecraft:string\" },
+		  
+		  {Slot:11b, id:\"minecraft:string\" },
+		  {Slot:12b, tag:{ctc:{traits:{ gear:1b, \"metal/iron\":1b }}} },
+		  {Slot:13b, id:\"minecraft:string\" },
+		  
+		  {Slot:20b, id:\"minecraft:string\" },
+		  {Slot:21b, id:\"minecraft:string\" },
+		  {Slot:22b, id:\"minecraft:string\" }
+		]}"
+	  }
+	}
+  }
