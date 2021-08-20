@@ -41,6 +41,6 @@ execute store result entity @s HandItems[0].tag.FuelSpent int 1 run scoreboard p
 
 #Cleanup
 scoreboard players set @s[scores={du_move_x=..20000}] du_move_x 20000
-execute if score $compat.config.small_explosion mech_data matches 0 if score @s du_move_x matches 2000000.. run function mechanization:nuclear/machines/fission_reactor/explode
-execute if score $compat.config.small_explosion mech_data matches 1 if score @s du_move_x matches 2000000.. run function mechanization:nuclear/machines/fission_reactor/explode_small
+execute if score $nuclear.config.small_explosion mech_data matches 0 if score @s du_move_x matches 2000000.. run function mechanization:nuclear/machines/fission_reactor/explode
+execute if score $nuclear.config.small_explosion mech_data matches 1 if score @s du_move_x matches 2000000.. run function mechanization:nuclear/machines/fission_reactor/explode_small
 playsound mechanization:nuclear.fission_reactor_active block @a[distance=..16] ~ ~1 ~ 0.5
