@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.nuclear.fission_reactor.title",
-			"color":"dark_green"
+            "translate": "mech.advancements.fission_reactor.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.nuclear.fission_reactor.description",
+            "translate": "mech.advancements.fission_reactor.desc",
 			"color":"dark_aqua"
         },
         "icon": {
@@ -25,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:nuclear/uranium_ore"
+    "parent": "mechanization:nuclear/centrifuge"
 }

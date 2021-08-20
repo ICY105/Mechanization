@@ -1,16 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.nuclear.temp_observer.title",
-			"color":"dark_red"
+            "translate": "mech.advancements.thermoelectric_generator.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.nuclear.temp_observer.description",
+            "translate": "mech.advancements.thermoelectric_generator.desc",
 			"color":"dark_aqua"
         },
         "icon": {
             "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6423005}"
+            "nbt": "{CustomModelData:6422030}"
         },
         "frame": "task"
     },
@@ -19,11 +19,11 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:3005}"
+                        "nbt": "{mech_itemid:2030}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:nuclear/control_rod"
+    "parent": "mechanization:machines/growth_accelerator"
 }

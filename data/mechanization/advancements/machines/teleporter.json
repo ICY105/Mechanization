@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.machines.teleporter.title",
-			"color":"dark_purple"
+            "translate": "mech.advancements.teleporter.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.machines.teleporter.description",
+            "translate": "mech.advancements.teleporter.desc",
 			"color":"dark_aqua"
         },
         "icon": {
@@ -25,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:machines/auto_farm"
+    "parent": "mechanization:machines/enchanting_station"
 }

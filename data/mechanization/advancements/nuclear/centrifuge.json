@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.nuclear.centrifuge.title",
-			"color":"dark_red"
+            "translate": "mech.advancements.centrifuge.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.nuclear.centrifuge.description",
+            "translate": "mech.advancements.centrifuge.desc",
 			"color":"dark_aqua"
         },
         "icon": {
@@ -25,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:nuclear\/uranium_ore"
+    "parent": "mechanization:base/tier_2_battery"
 }

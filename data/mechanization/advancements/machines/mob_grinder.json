@@ -1,16 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.machines.furnace_generator.title",
-			"color":"gray"
+            "translate": "mech.advancements.mob_grinder.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.machines.furnace_generator.description",
+            "translate": "mech.advancements.mob_grinder.desc",
 			"color":"dark_aqua"
         },
         "icon": {
             "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6422001}"
+            "nbt": "{CustomModelData:6422012}"
         },
         "frame": "task"
     },
@@ -19,11 +19,11 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:2001}"
+                        "nbt": "{mech_itemid:2012}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:base/copper_ore"
+    "parent": "mechanization:base/tier_2_battery"
 }

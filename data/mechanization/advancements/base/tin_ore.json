@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.machines.tin_ore.title",
-			"color":"gray"
+            "translate": "mech.advancements.tin_ore.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.machines.tin_ore.description",
+            "translate": "mech.advancements.tin_ore.desc",
 			"color":"dark_aqua"
         },
         "icon": {

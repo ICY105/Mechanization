@@ -1,23 +1,21 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.base.battery_3.title",
-			"color":"dark_purple",
-			"italic":true
+            "translate": "mech.advancements.tier_3_battery.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.base.battery_3.description",
-			"color":"dark_aqua",
-			"italic":false
+            "translate": "mech.advancements.tier_3_battery.desc",
+			"color":"dark_aqua"
         },
         "icon": {
             "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6421018}"
+            "nbt": "{CustomModelData:6421002}"
         },
-        "frame": "goal"
+        "frame": "task"
     },
     "criteria": {
-        "have_battery_3": {
+        "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
@@ -27,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:base/machine_frame_3"
+    "parent": "mechanization:base/tier_3_machine_frame"
 }

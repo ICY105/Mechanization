@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.base.ender_upgrade.title",
-			"color":"dark_purple"
+            "translate": "mech.advancements.ender_upgrade.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.base.ender_upgrade.description",
+            "translate": "mech.advancements.ender_upgrade.desc",
 			"color":"dark_aqua"
         },
         "icon": {
@@ -15,7 +15,7 @@
         "frame": "task"
     },
     "criteria": {
-        "have_wrench": {
+        "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
@@ -25,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:base/machine_upgrade"
+    "parent": "mechanization:base/tier_3_machine_frame"
 }

@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "translate": "mech.advancements.one_manual.title",
+			"color":"green"
+        },
+        "description": {
+            "translate": "mech.advancements.one_manual.desc",
+			"color":"dark_aqua"
+        },
+        "icon": {
+            "item": "minecraft:written_book",
+            "nbt": "{CustomModelData:64211105}"
+        },
+        "frame": "task",
+		"hidden": true
+    },
+    "criteria": {
+        "have_wrench": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "mechanization:mechanization"
+}

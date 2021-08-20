@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.assembly.mss_terminal.title",
-			"color":"dark_green"
+            "translate": "mech.advancements.mss_terminal.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.assembly.mss_terminal.description",
+            "translate": "mech.advancements.mss_terminal.desc",
 			"color":"dark_aqua"
         },
         "icon": {
@@ -25,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:base/battery_3"
+    "parent": "mechanization:assembly/mss_storage_drive"
 }

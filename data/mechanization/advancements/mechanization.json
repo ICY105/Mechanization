@@ -1,25 +1,31 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.title",
-			"color":"red"
+            "translate": "mech.advancements.mechanization.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.description",
+            "translate": "mech.advancements.mechanization.desc",
 			"color":"dark_aqua"
         },
         "icon": {
             "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6421037}"
+            "nbt": "{CustomModelData:6421005}"
         },
-        "background": "mechanization:textures\/base\/2_plate_panel.png",
+        "background": "mechanization:textures\/base\/manual\/index_icon\/blank.png",
         "frame": "goal",
-        "show_toast": false,
-        "announce_to_chat": false
+        "show_toast": true,
+        "announce_to_chat": true
     },
     "criteria": {
-        "always": {
-            "trigger": "minecraft:tick"
+        "have_machine_crafter": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [{
+                        "nbt": "{mech_itemid:1005}"
+                    }
+                ]
+            }
         }
     }
 }

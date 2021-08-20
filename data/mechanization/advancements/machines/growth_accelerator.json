@@ -1,29 +1,29 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.machines.copper_ore.title",
+            "translate": "mech.advancements.growth_accelerator.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.machines.copper_ore.description",
+            "translate": "mech.advancements.growth_accelerator.desc",
 			"color":"dark_aqua"
         },
         "icon": {
             "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6421300}"
+            "nbt": "{CustomModelData:6422004}"
         },
         "frame": "task"
     },
     "criteria": {
-        "have_copper_ore": {
+        "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:1300}"
+                        "nbt": "{mech_itemid:2004}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:mechanization"
+    "parent": "mechanization:machines/steam_generator"
 }

@@ -1,16 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.machines.spawner_mover.title",
-			"color":"dark_purple"
+            "translate": "mech.advancements.spawner_mover.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.machines.spawner_mover.description",
+            "translate": "mech.advancements.spawner_mover.desc",
 			"color":"dark_aqua"
         },
         "icon": {
             "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{CustomModelData:6422200}"
+            "nbt": "{CustomModelData:6422201}"
         },
         "frame": "task"
     },
@@ -19,11 +19,11 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:2200}"
+                        "nbt": "{mech_itemid:2201}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:machines/auto_farm"
+    "parent": "mechanization:base/tier_3_battery"
 }

@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.machines.grinder.title",
-			"color":"gray"
+            "translate": "mech.advancements.grinder.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.machines.grinder.description",
+            "translate": "mech.advancements.grinder.desc",
 			"color":"dark_aqua"
         },
         "icon": {
@@ -25,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:base/copper_ore"
+    "parent": "mechanization:machines/electric_furnace"
 }

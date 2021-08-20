@@ -1,29 +1,29 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.machines.machine_frame_1.title",
-			"color":"gray"
+            "translate": "mech.advancements.casting_basin.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.machines.machine_frame_1.description",
+            "translate": "mech.advancements.casting_basin.desc",
 			"color":"dark_aqua"
         },
         "icon": {
             "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6421415}"
+            "nbt": "{CustomModelData:6422028}"
         },
-        "frame": "goal"
+        "frame": "task"
     },
     "criteria": {
-        "have_frame_1": {
+        "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:1415}"
+                        "nbt": "{mech_itemid:2028}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:base/machine_crafter"
+    "parent": "mechanization:machines/grinder"
 }

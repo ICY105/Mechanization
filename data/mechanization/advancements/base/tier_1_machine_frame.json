@@ -1,29 +1,29 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.nuclear.uranium_ore.title",
-			"color":"dark_green"
+            "translate": "mech.advancements.tier_1_machine_frame.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.nuclear.uranium_ore.description",
+            "translate": "mech.advancements.tier_1_machine_frame.desc",
 			"color":"dark_aqua"
         },
         "icon": {
             "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6421430}"
+            "nbt": "{CustomModelData:6421007}"
         },
-        "frame": "task"
+        "frame": "goal"
     },
     "criteria": {
-        "have_copper_ore": {
+        "have_frame_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:1430}"
+                        "nbt": "{mech_itemid:1007}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:mechanization"
+    "parent": "mechanization:base/tin_ore"
 }

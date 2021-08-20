@@ -1,16 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.quarry.title",
+            "translate": "mech.advancements.quantum_battery.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.quarry.desc",
+            "translate": "mech.advancements.quantum_battery.desc",
 			"color":"dark_aqua"
         },
         "icon": {
             "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6422013}"
+            "nbt": "{CustomModelData:6421003}"
         },
         "frame": "task"
     },
@@ -19,11 +19,11 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:2013}"
+                        "nbt": "{mech_itemid:1003}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:base/tier_2_battery"
+    "parent": "mechanization:base/tier_3_machine_frame"
 }

@@ -1,29 +1,29 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.base.battery_2.title",
-			"color":"dark_red"
+            "translate": "mech.advancements.tree_feller.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.base.battery_2.description",
+            "translate": "mech.advancements.tree_feller.desc",
 			"color":"dark_aqua"
         },
         "icon": {
             "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6421009}"
+            "nbt": "{CustomModelData:6422002}"
         },
         "frame": "task"
     },
     "criteria": {
-        "have_battery_2": {
+        "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:1001}"
+                        "nbt": "{mech_itemid:2002}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:base/machine_frame_2"
+    "parent": "mechanization:machines/block_breaker"
 }

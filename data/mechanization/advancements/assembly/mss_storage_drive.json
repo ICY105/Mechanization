@@ -1,29 +1,29 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.quarry.title",
+            "translate": "mech.advancements.mss_storage_drive.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.quarry.desc",
+            "translate": "mech.advancements.mss_storage_drive.desc",
 			"color":"dark_aqua"
         },
         "icon": {
-            "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6422013}"
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:6425106}"
         },
-        "frame": "task"
+        "frame": "goal"
     },
     "criteria": {
         "have_battery_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:2013}"
+                        "nbt": "{mech_itemid:5106}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:base/tier_2_battery"
+    "parent": "mechanization:assembly/mss_drive_bay"
 }

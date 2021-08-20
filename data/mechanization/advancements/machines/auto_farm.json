@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.machines.auto_farm.title",
-			"color":"dark_red"
+            "translate": "mech.advancements.auto_farm.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.machines.auto_farm.description",
+            "translate": "mech.advancements.auto_farm.desc",
 			"color":"dark_aqua"
         },
         "icon": {
@@ -25,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:machines/alloy_furnace"
+    "parent": "mechanization:base/tier_2_battery"
 }

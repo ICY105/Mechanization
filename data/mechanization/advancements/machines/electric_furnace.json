@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.machines.electric_furnace.title",
-			"color":"gray"
+            "translate": "mech.advancements.electric_furnace.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.machines.electric_furnace.description",
+            "translate": "mech.advancements.electric_furnace.desc",
 			"color":"dark_aqua"
         },
         "icon": {
@@ -25,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:base/copper_ore"
+    "parent": "mechanization:base/tier_1_battery"
 }

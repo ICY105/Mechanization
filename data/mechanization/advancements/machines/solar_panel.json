@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.machines.solar_panel.title",
-			"color":"dark_red"
+            "translate": "mech.advancements.solar_panel.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.machines.solar_panel.description",
+            "translate": "mech.advancements.solar_panel.desc",
 			"color":"dark_aqua"
         },
         "icon": {
@@ -25,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:machines/alloy_furnace"
+    "parent": "mechanization:base/tier_2_battery"
 }

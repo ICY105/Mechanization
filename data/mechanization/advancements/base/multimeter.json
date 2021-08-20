@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.base.multimeter.title",
-			"color":"gray"
+            "translate": "mech.advancements.multimeter.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.base.multimeter.description",
+            "translate": "mech.advancements.multimeter.desc",
 			"color":"dark_aqua"
         },
         "icon": {
@@ -25,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:base\/wrench"
+    "parent": "mechanization:base/wrench"
 }

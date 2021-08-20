@@ -1,16 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.quarry.title",
+            "translate": "mech.advancements.tinker_table.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.quarry.desc",
+            "translate": "mech.advancements.tinker_table.desc",
 			"color":"dark_aqua"
         },
         "icon": {
-            "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6422013}"
+            "item": "minecraft:carrot_on_a_stick",
+            "nbt": "{CustomModelData:6424101}"
         },
         "frame": "task"
     },
@@ -19,11 +19,11 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:2013}"
+                        "nbt": "{mech_itemid:4101}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:base/tier_2_battery"
+    "parent": "mechanization:gadgets/tinker_table"
 }

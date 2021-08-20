@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.base.wrench.title",
-			"color":"gray"
+            "translate": "mech.advancements.wrench.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.base.wrench.description",
+            "translate": "mech.advancements.wrench.desc",
 			"color":"dark_aqua"
         },
         "icon": {
@@ -25,5 +25,5 @@
             }
         }
     },
-    "parent": "mechanization:base\/machine_crafter"
+    "parent": "mechanization:mechanization"
 }

@@ -1,29 +1,29 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.quarry.title",
+            "translate": "mech.advancements.gear.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.quarry.desc",
+            "translate": "mech.advancements.gear.desc",
 			"color":"dark_aqua"
         },
         "icon": {
-            "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6422013}"
+            "item": "minecraft:structure_block",
+            "nbt": "{CustomModelData:6421471}"
         },
         "frame": "task"
     },
     "criteria": {
-        "have_battery_1": {
+        "have_wrench": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:2013}"
+                        "nbt": "{ctc:{traits:{gear:1b}}}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:base/tier_2_battery"
+    "parent": "mechanization:base/plate"
 }

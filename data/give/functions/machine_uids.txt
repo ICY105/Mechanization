@@ -223,7 +223,7 @@ Age of Machine [02]: {
 		Mob Grinder			[12-2012]
 		Quarry				[13-2013]
 		Solar Panel			[14-2014]
-		Ender Generator		[15-2015]
+		DimensionalGenerator[15-2015]
 		Enchanting Station	[16-2016]
 		Teleporter			[17-2017]
 		Chunk Loader		[18-2018]

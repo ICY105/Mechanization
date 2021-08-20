@@ -1,29 +1,29 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.nuclear.rate_observer.title",
-			"color":"dark_red"
+            "translate": "mech.advancements.tier_3_machine_frame.title",
+			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.nuclear.rate_observer.description",
+            "translate": "mech.advancements.tier_3_machine_frame.desc",
 			"color":"dark_aqua"
         },
         "icon": {
             "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6423003}"
+            "nbt": "{CustomModelData:6421009}"
         },
-        "frame": "task"
+        "frame": "goal"
     },
     "criteria": {
-        "have_battery_1": {
+        "have_frame_1": {
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:3003}"
+                        "nbt": "{mech_itemid:1009}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:nuclear/control_rod"
+    "parent": "mechanization:base/machine_upgrade"
 }
