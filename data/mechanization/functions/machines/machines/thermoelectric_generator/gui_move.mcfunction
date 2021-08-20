@@ -3,7 +3,7 @@ scoreboard players set $temp_0 mech_data 0
 data modify storage du:temp obj set from storage du:temp list[0]
 
 #check for empty fluid IO slots
-execute if score $temp_0 mech_data matches 0 unless data block ~ ~ ~ Items[{Slot:1b}] run scoreboard players set $temp_0 mech_data 3
+execute if score $temp_0 mech_data matches 0 unless data block ~ ~ ~ Items[{Slot:1b}] run scoreboard players set $temp_0 mech_data 1
 execute if score $temp_0 mech_data matches 0 unless data block ~ ~ ~ Items[{Slot:6b}] run scoreboard players set $temp_0 mech_data 6
 
 #move item
