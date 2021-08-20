@@ -8,10 +8,11 @@ scoreboard objectives add mech_fluid dummy
 scoreboard objectives add mech_shield dummy
 scoreboard objectives add mech_usedid dummy
 scoreboard objectives add mech_tele trigger
+scoreboard objectives add mech_manual trigger
 
-scoreboard objectives add mech_firerate trigger
-scoreboard objectives add mech_weaponheat trigger
-scoreboard objectives add mech_itemslot trigger
+scoreboard objectives add mech_firerate dummy
+scoreboard objectives add mech_weaponheat dummy
+scoreboard objectives add mech_itemslot dummy
 
 scoreboard objectives add mech_use_coas minecraft.used:minecraft.carrot_on_a_stick
 

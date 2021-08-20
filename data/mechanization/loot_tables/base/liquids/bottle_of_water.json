@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1107, HideFlags: 38, CustomPotionColor:3432410, ctc:{ id:\"glass_bottle\", from:\"mechanization\", traits:{ item:1b, liquid:{water:1b, amount:250, temperature:20, color:3432410} }}}"
+              "tag":"{mech_itemid: 1107, HideFlags: 38, CustomPotionColor:3432410, ctc:{ id:\"glass_bottle\", from:\"mechanization\", traits:{ item:1b, liquid:{water:1b, amount:250, temperature:25, color:3432410} }}}"
             }
           ]
         }

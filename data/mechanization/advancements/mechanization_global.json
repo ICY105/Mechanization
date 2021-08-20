@@ -5,8 +5,7 @@
 			"color":"red"
         },
         "description": {
-            "translate": "mech.advancements.description_du",
-			"with":["3","0","0","Prerelease 2"],
+            "text": "v3.0.0 Prerelease 3",
 			"color":"dark_aqua"
         },
         "icon": {

@@ -139,4 +139,9 @@ execute if entity @s[tag=mech_thermoelectric_generator] run setblock ~ ~ ~ minec
 execute if entity @s[tag=mech_thermoelectric_generator] run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
 kill @s[tag=mech_thermoelectric_generator]
 
+#electric lamp
+execute if entity @s[tag=mech_electric_lamp] run loot spawn ~ ~ ~ loot mechanization:machines/electric_lamp
+execute if entity @s[tag=mech_electric_lamp] run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mech_electric_lamp]
+
 

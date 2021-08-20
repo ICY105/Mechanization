@@ -20,8 +20,8 @@ function mechanization:machines/machines/steam_generator/gui
 scoreboard players set $temp_0 mech_data 12
 execute if entity @s[tag=mech_upgraded] run scoreboard players add $temp_0 mech_data 6
 execute if entity @s[tag=mech_upgrade_ender] run scoreboard players add $temp_0 mech_data 6
-execute if entity @s[tag=mech_upgrade_nether] run scoreboard players add $temp_0 mech_data 30
-execute if entity @s[tag=mech_upgrade_nether] run scoreboard players remove @s du_data 3
+execute if entity @s[tag=mech_upgrade_nether] run scoreboard players add $temp_0 mech_data 36
+execute if entity @s[tag=mech_upgrade_nether] run scoreboard players remove @s du_data 2
 
 #convert water + heat into steam
 execute if score @s mech_data matches 1.. if score @s mech_fluid matches 1.. run scoreboard players operation @s du_data += $temp_0 mech_data

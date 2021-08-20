@@ -15,8 +15,15 @@ execute if entity @s[tag=mech_right_click] if score @s mech_usedid matches 1103 
 execute if entity @s[tag=mech_right_click] if score @s mech_usedid matches 1104 run function mechanization:base/tools/ender_upgrade
 
 #manual
-execute store result score temp_0 mech_data run data get entity @s SelectedItem.tag.mech_version
-execute if data entity @s SelectedItem{id:"minecraft:written_book"}.tag{CustomModelData:6421105} if score temp_0 mech_data matches ..2 run function mechanization:base/utils/replace_manual
+loot give @s[tag=!mech_has_manual] loot mechanization:base/manual/start
+execute if data entity @s[tag=!mech_has_manual] Inventory[].tag{mech_itemid:1105} run tag @s add mech_has_manual
+
+execute if score @s mech_usedid matches 1105 if score @s mech_manual matches 1.. run function mechanization:base/tools/manual_pin_recipe
+execute if score @s mech_usedid matches 1105 if score @s mech_manual matches ..-1 run function mechanization:base/tools/manual_switch_mode
+execute if score @s mech_usedid matches 1105 run scoreboard players set @s mech_manual 0
+execute if score @s mech_usedid matches 1105 run scoreboard players enable @s mech_manual
+execute if score @s mech_usedid matches 1105 store result score temp_0 mech_data run data get entity @s SelectedItem.tag.mech_version
+execute if score @s mech_usedid matches 1105 if score temp_0 mech_data matches ..3 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/mechanical_manual_start
 
 #assign grid id
 execute unless score @s mech_gridid matches -2147483648.. run scoreboard players set @s mech_gridid 0

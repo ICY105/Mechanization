@@ -33,3 +33,5 @@ scoreboard players set @s mech_use_pick 0
 scoreboard players set @s mech_use_axe 0
 scoreboard players set @s mech_use_shovel 0
 scoreboard players set @s mech_use_hoe 0
+execute unless score @s mech_firerate matches 0.. run scoreboard players set @s mech_firerate 0
+execute unless score @s mech_weaponheat matches 0.. run scoreboard players set @s mech_weaponheat 0

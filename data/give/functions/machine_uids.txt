@@ -210,7 +210,7 @@ Base Module [01]: {
 Age of Machine [02]: {
 	Machines [0]: {
 		Alloy Furnace		[00-2000]
-		Furnace Generator	[01-2001]
+		Steam Generator		[01-2001]
 		Tree Feller			[02-2002]
 		Electric furnace	[03-2003]
 		Growth Accelerator	[04-2004]
@@ -224,7 +224,7 @@ Age of Machine [02]: {
 		Quarry				[13-2013]
 		Solar Panel			[14-2014]
 		Ender Generator		[15-2015]
-		Disenchanter		[16-2016]
+		Enchanting Station	[16-2016]
 		Teleporter			[17-2017]
 		Chunk Loader		[18-2018]
 		Spawner Controller	[19-2019]
@@ -275,7 +275,7 @@ Gadgets [04]: {
 	Items [1]: {
 		Energy Saber		[00-4100]
 		Drill				[01-4101]
-		Plasma Launcher		[02-4102]
+		Plasma Weapon		[02-4102]
 		Modular Helmet		[06-4106]
 		Modular Chestplate	[07-4107]
 		Modular Leggings	[08-4108]
