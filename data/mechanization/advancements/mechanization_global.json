@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.title",
+            "text": "Mechanization",
 			"color":"red"
         },
         "description": {
-            "text": "v3.0.0 Prerelease 3",
+            "text": "v3.0.0",
 			"color":"dark_aqua"
         },
         "icon": {
