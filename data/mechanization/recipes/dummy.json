@@ -1,0 +1,8 @@
+{
+	"key":{
+		"0":{"item":"minecraft:barrier"}
+	},
+	"pattern":["000","000","000"],
+	"type":"crafting_shaped",
+	"result":{"item":"minecraft:barrier"}
+}
