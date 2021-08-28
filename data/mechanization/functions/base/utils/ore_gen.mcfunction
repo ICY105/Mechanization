@@ -1,6 +1,6 @@
 
 scoreboard players set $temp_0 mech_data 0
-execute if block ~ ~ ~ #minecraft:deepslate_ore_replaceable run scoreboard players set $temp_0 mech_data 1
+execute if block ~ ~ ~ #minecraft:deepslate_ore_replaceables run scoreboard players set $temp_0 mech_data 1
 
 #normal ores
 execute if score $temp_0 mech_data matches 0 if score $world.in_0 du_data = $cons.tin_ore mech_data run setblock ~ ~ ~ minecraft:stone_slab[waterlogged=true,type=double]

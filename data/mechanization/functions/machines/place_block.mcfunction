@@ -71,6 +71,7 @@ execute if score $id mech_data matches 2009 if block ~ ~ ~ minecraft:blast_furna
 #item reformer
 execute if score $id mech_data matches 2010 run summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mech_reformer","mech_receiver","mech_liquid_dest"],CustomName:'{"translate":"mech.block.item_reformer"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,mech_fluid:0,CustomModelData:6422010}}}
 execute if score $id mech_data matches 2010 run setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'[{"translate":"offset.5","font":"space:default","with":[{"text":"\\uee0c","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-56","font":"space:default","with":[{"translate":"mech.block.item_reformer","color":"dark_red","italic":false,"font":"minecraft:default"}]}]'}
+execute if score $id mech_data matches 2010 as @e[tag=mech_reformer,sort=nearest,limit=1,distance=..0.5] run function mechanization:machines/machines/liquid_pipe/add_adjacent_pipes
 
 #mob grinder
 execute if score $id mech_data matches 2012 if block ~ ~ ~ minecraft:blast_furnace[facing=north] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mech_mob_grinder","mech_receiver","mech_rotatable","mech_liquid_src"],CustomName:'{"translate":"mech.block.mob_grinder"}',ItemRotation:4,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422012}}}
@@ -102,7 +103,7 @@ execute if score $id mech_data matches 2015 if block ~ ~ ~ minecraft:blast_furna
 #Enchanting Station
 execute if score $id mech_data matches 2016 run summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mech_ench_station","mech_receiver","mech_liquid_dest"],CustomName:'{"translate":"mech.block.enchanting_station"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,mech_fluid:0,CustomModelData:6422016}}}
 execute if score $id mech_data matches 2016 run setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:'[{"translate":"offset.-8","font":"space:default","with":[{"text":"\\uee0f","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-132","font":"space:default","with":[{"translate":"mech.block.enchanting_station","color":"dark_aqua","italic":false,"font":"minecraft:default"}]}]'}
-execute if score $id mech_data matches 2016 as @e[tag=mech_disenchanter,sort=nearest,limit=1,distance=..0.5] run function mechanization:machines/machines/liquid_pipe/add_adjacent_pipes
+execute if score $id mech_data matches 2016 as @e[tag=mech_ench_station,sort=nearest,limit=1,distance=..0.5] run function mechanization:machines/machines/liquid_pipe/add_adjacent_pipes
 
 #teleporter
 execute if score $id mech_data matches 2017 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_teleporter","mech_receiver"],CustomName:'{"translate":"mech.block.teleporter"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422017}}}
@@ -174,7 +175,7 @@ execute if score $id mech_data matches 2029 as @e[tag=mech_liquid_accumulator,so
 #thermoelectric generator
 execute if score $id mech_data matches 2030 run summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mech_thermoelectric_generator","mech_liquid_dest","mech_transmitter"],CustomName:'{"translate":"mech.block.thermoelectric_generator"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,mech_fluid:0,du_data:0,CustomModelData:6422030}}}
 execute if score $id mech_data matches 2030 run setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:'[{"translate":"offset.-8","font":"space:default","with":[{"text":"\\uee0e","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-160","font":"space:default","with":[{"translate":"mech.block.thermoelectric_generator","color":"dark_aqua","italic":false,"font":"minecraft:default"}]}]'}
-execute if score $id mech_data matches 2030 as @e[tag=mech_liquid_accumulator,sort=nearest,limit=1,distance=..0.5] run function mechanization:machines/machines/liquid_pipe/add_adjacent_pipes
+execute if score $id mech_data matches 2030 as @e[tag=mech_thermoelectric_generator,sort=nearest,limit=1,distance=..0.5] run function mechanization:machines/machines/liquid_pipe/add_adjacent_pipes
 
 #lightning generator
 execute if score $id mech_data matches 2031 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_lightning_generator","mech_transmitter"],CustomName:'{"translate":"mech.block.lightning_generator"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_gridid:0,CustomModelData:6422031}}}

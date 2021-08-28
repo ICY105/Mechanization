@@ -11,13 +11,13 @@
 scoreboard players set $base.cf.ext_height mech_data 0
 
 # [0,32] Veins of Tin per Chunk
-scoreboard players set $base.cf.tin_rarity mech_data 8
+scoreboard players set $base.cf.tin_rarity mech_data 6
 
 # [0,32] Veins of Titanium per Chunk
 scoreboard players set $base.cf.titanium_rarity mech_data 1
 
 # [0,32] Veins of Uranium per Chunk
-scoreboard players set $base.cf.uranium_rarity mech_data 3
+scoreboard players set $base.cf.uranium_rarity mech_data 2
 
 # [0,32] Veins of Additional Emerald ore per Chunk (not biome restricted)
 scoreboard players set $base.cf.emerald_rarity mech_data 1
