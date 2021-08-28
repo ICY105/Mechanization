@@ -26,7 +26,7 @@
                 },
 				{
 				  "condition": "minecraft:block_state_property",
-				  "block": "minecraft:stone_slab",
+				  "block": "minecraft:deepslate_brick_slab",
 				  "properties": {
 				    "type": "double",
 					"waterlogged": true
@@ -36,7 +36,7 @@
 			},
 			{
               "type": "minecraft:loot_table",
-              "name": "mechanization:base/tin_ore",
+              "name": "mechanization:base/tin_ore_deepslate",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -53,7 +53,7 @@
                 },
 				{
 				  "condition": "minecraft:block_state_property",
-				  "block": "minecraft:stone_slab",
+				  "block": "minecraft:deepslate_brick_slab",
 				  "properties": {
 				    "type": "double",
 					"waterlogged": true
@@ -74,7 +74,7 @@
 			  "conditions": [
 			    {
 				  "condition": "minecraft:block_state_property",
-				  "block": "minecraft:stone_slab",
+				  "block": "minecraft:deepslate_brick_slab",
 				  "properties": {
 				    "type": "double",
 					"waterlogged": true
@@ -90,7 +90,7 @@
 				  "conditions": [
 					{
 					  "condition": "minecraft:block_state_property",
-					  "block": "minecraft:stone_slab",
+					  "block": "minecraft:deepslate_brick_slab",
 					  "properties": {
 						"type": "double"
 					  }
@@ -102,7 +102,7 @@
 				  "function": "minecraft:explosion_decay"
 				}
 			  ],
-			  "name": "minecraft:stone_slab"
+			  "name": "minecraft:deepslate_brick_slab"
 			}
 		  ]
         }

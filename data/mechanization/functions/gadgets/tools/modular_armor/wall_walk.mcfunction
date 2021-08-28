@@ -7,6 +7,6 @@ execute if score $temp_0 mech_data matches 1 rotated ~ 0 if block ^ ^0.5 ^2.5 #d
 execute if score $temp_0 mech_data matches 1 rotated ~ 0 if block ^ ^0.5 ^3.5 #du:air if block ^ ^1.5 ^3.5 #du:air run scoreboard players set $temp_0 mech_data 2
 execute if score $temp_0 mech_data matches 1 rotated ~ 0 if block ^ ^0.5 ^4.5 #du:air if block ^ ^1.5 ^4.5 #du:air run scoreboard players set $temp_0 mech_data 2
 
-execute if score $temp_0 mech_data matches 2 run scoreboard players set in_0 mech_data 128
+execute if score $temp_0 mech_data matches 2 run scoreboard players operation $in_0 mech_data = $gadgets.cf.wall_walk_power mech_data
 execute if score $temp_0 mech_data matches 2 run function mechanization:base/energy/player_energy
-execute if score $temp_0 mech_data matches 2 if score out_0 mech_data matches 1 rotated ~ 0 run tp @s ^ ^ ^0.5
+execute if score $temp_0 mech_data matches 2 if score $out_0 mech_data matches 1 rotated ~ 0 run tp @s ^ ^ ^0.5

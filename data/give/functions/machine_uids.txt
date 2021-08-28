@@ -39,6 +39,7 @@ Base Module [01]: {
 		Tin Gear			[16-1316]
 		Tin Rod				[17-1317]
 		Tin Raw Block		[18-1318]
+		Tin Ore				[19-1319]
 		
 		Titanium Ore		[20-1320]
 		Titanium Ingot		[21-1321]
@@ -49,6 +50,7 @@ Base Module [01]: {
 		Titanium Gear		[26-1326]
 		Titanium Rod		[27-1327]
 		Titanium Raw Block	[28-1328]
+		Titanium Ore		[29-1329]
 		
 		Steel Ingot			[30-1330]
 		Steel Nugget		[31-1331]
@@ -134,10 +136,11 @@ Base Module [01]: {
 		Uranium Nugget		[32-1432]
 		Uranium Raw			[33-1433]
 		Uranium Block		[34-1434]
-		Uranium Plate		[35-1434]
-		Uranium Gear		[36-1435]
-		Uranium Rod			[37-1436]
-		Uranium Raw Block	[38-1437]
+		Uranium Plate		[35-1435]
+		Uranium Gear		[36-1436]
+		Uranium Rod			[37-1437]
+		Uranium Raw Block	[38-1438]
+		Uranium Ore			[39-1439]
 		
 		Plutonium Ingot		[40-1440]
 		Plutonium Nugget	[41-1441]

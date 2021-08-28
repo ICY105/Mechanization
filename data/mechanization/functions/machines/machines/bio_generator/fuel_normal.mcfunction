@@ -30,5 +30,7 @@ execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:crimson_fungus"}]} run scor
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:chorus_flower"}]} run scoreboard players add temp_0 mech_data 32
 execute if block ~ ~ ~ dropper{Items:[{id:"minecraft:hay_block"}]} run scoreboard players add temp_0 mech_data 32
 
+scoreboard players operation temp_0 mech_data *= $machines.cf.bio_gen.power mech_data
+scoreboard players operation temp_0 mech_data /= $cons.100 du_data
 scoreboard players operation @s mech_power += temp_0 mech_data
 execute if score temp_0 mech_data matches 1.. run function mechanization:machines/machines/bio_generator/decrease_counts

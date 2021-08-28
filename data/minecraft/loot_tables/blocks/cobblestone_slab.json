@@ -35,6 +35,33 @@
               ]
 			},
 			{
+              "type": "minecraft:loot_table",
+              "name": "mechanization:base/uranium_ore",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                },
+				{
+				  "condition": "minecraft:block_state_property",
+				  "block": "minecraft:cobblestone_slab",
+				  "properties": {
+				    "type": "double",
+					"waterlogged": true
+				  }
+				}
+              ]
+            },
+			{
 			  "type": "minecraft:loot_table",
 			  "name": "mechanization:base/uranium_raw",
 			  "functions": [

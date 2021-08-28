@@ -17,11 +17,11 @@ execute store result score temp_2 mech_data run data get entity @s HandItems[0].
 execute store result score temp_3 mech_data run data get entity @s HandItems[0].tag.mech_battery.base_model
 
 #add energy
-execute if score @s mech_power matches 256.. if score temp_0 mech_data < temp_1 mech_data run scoreboard players add temp_0 mech_data 256
-execute if score @s[tag=mech_upgraded] mech_power matches 512.. if score temp_0 mech_data < temp_1 mech_data run scoreboard players add temp_0 mech_data 256
+execute if score @s mech_power >= $gadgets.cf.charge_speed mech_data if score temp_0 mech_data < temp_1 mech_data run scoreboard players operation temp_0 mech_data += $gadgets.cf.charge_speed mech_data
+execute if score @s[tag=mech_upgraded] mech_power >= $gadgets.cf.charge_speed mech_data if score temp_0 mech_data < temp_1 mech_data run scoreboard players operation temp_0 mech_data += $gadgets.cf.charge_speed mech_data
 
-execute if score @s mech_power matches 256.. if score temp_0 mech_data < temp_1 mech_data run scoreboard players remove @s mech_power 256
-execute if score @s[tag=mech_upgraded] mech_power matches 256.. if score temp_0 mech_data < temp_1 mech_data run scoreboard players remove @s mech_power 256
+execute if score @s mech_power >= $gadgets.cf.charge_speed mech_data if score temp_0 mech_data < temp_1 mech_data run scoreboard players operation @s mech_power -= $gadgets.cf.charge_speed mech_data
+execute if score @s[tag=mech_upgraded] mech_power >= $gadgets.cf.charge_speed mech_data if score temp_0 mech_data < temp_1 mech_data run scoreboard players operation @s mech_power -= $gadgets.cf.charge_speed mech_data
 
 execute if score temp_1 mech_data matches 1.. store result entity @s HandItems[0].tag.mech_battery.energy int 1 run scoreboard players get temp_0 mech_data
 

@@ -15,12 +15,16 @@ execute if data block ~ ~ ~ Items[{Slot:1b}] run function mechanization:machines
 function mechanization:machines/machines/arc_furnace/gui
 
 #update
-execute if score @s[tag=!mech_upgraded] mech_timer matches 1.. if score @s mech_power matches ..59 run scoreboard players set @s mech_timer 0
-execute if score @s[tag=!mech_upgraded] mech_timer matches 1.. if score @s mech_power matches 60.. run scoreboard players remove @s mech_power 60
-execute if score @s[tag=mech_upgraded,tag=!mech_upgrade_nether] mech_timer matches 1.. if score @s mech_power matches ..74 run scoreboard players set @s mech_timer 0
-execute if score @s[tag=mech_upgraded,tag=!mech_upgrade_nether] mech_timer matches 1.. if score @s mech_power matches 75.. run scoreboard players remove @s mech_power 75
-execute if score @s[tag=mech_upgrade_nether] mech_timer matches 1.. if score @s mech_power matches ..59 run scoreboard players set @s mech_timer 0
-execute if score @s[tag=mech_upgrade_nether] mech_timer matches 1.. if score @s mech_power matches 60.. run scoreboard players remove @s mech_power 60
+scoreboard players operation $temp_0 mech_data = $machines.cf.arc_furnace.power mech_data
+scoreboard players operation $temp_0 mech_data *= $cons.5 du_data
+scoreboard players operation $temp_0 mech_data /= $cons.4 du_data
+
+execute if score @s[tag=!mech_upgraded] mech_timer matches 1.. if score @s mech_power < $machines.cf.arc_furnace.power mech_data run scoreboard players set @s mech_timer 0
+execute if score @s[tag=!mech_upgraded] mech_timer matches 1.. if score @s mech_power >= $machines.cf.arc_furnace.power mech_data run scoreboard players operation @s mech_power -= $machines.cf.arc_furnace.power mech_data
+execute if score @s[tag=mech_upgraded,tag=!mech_upgrade_nether] mech_timer matches 1.. if score @s mech_power < $temp_0 mech_data run scoreboard players set @s mech_timer 0
+execute if score @s[tag=mech_upgraded,tag=!mech_upgrade_nether] mech_timer matches 1.. if score @s mech_power >= $temp_0 mech_data run scoreboard players operation @s mech_power -= $temp_0 mech_data
+execute if score @s[tag=mech_upgrade_nether] mech_timer matches 1.. if score @s mech_power < $machines.cf.arc_furnace.power mech_data run scoreboard players set @s mech_timer 0
+execute if score @s[tag=mech_upgrade_nether] mech_timer matches 1.. if score @s mech_power >= $machines.cf.arc_furnace.power mech_data run scoreboard players operation @s mech_power -= $machines.cf.arc_furnace.power mech_data
 execute if score @s mech_timer matches 1.. run scoreboard players remove @s mech_timer 1
 
 ## store scoreboard values

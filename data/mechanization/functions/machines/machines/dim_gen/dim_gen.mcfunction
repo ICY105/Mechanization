@@ -22,8 +22,8 @@ scoreboard players operation temp_0 mech_data *= @s mech_data
 execute store result block ~ ~ ~ BurnTime short 1 run scoreboard players get temp_0 mech_data
 
 #power & fuel
-execute if entity @s[scores={mech_power=..4000,mech_data=1..},tag=!mech_upgraded] run scoreboard players add @s mech_power 24
-execute if entity @s[scores={mech_power=..4000,mech_data=1..},tag=mech_upgraded] run scoreboard players add @s mech_power 48
+execute if entity @s[scores={mech_power=..4000,mech_data=1..},tag=!mech_upgraded] run scoreboard players operation @s mech_power += $machines.cf.dim_gen.power mech_data
+execute if entity @s[scores={mech_power=..4000,mech_data=1..},tag=mech_upgraded] run scoreboard players operation @s mech_power += $machines.cf.dim_gen.power_mu mech_data
 execute if entity @s[scores={mech_power=..4000,mech_data=1..}] run scoreboard players remove @s mech_data 1
 
 #store scoreboard values

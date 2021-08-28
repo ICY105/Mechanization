@@ -2,7 +2,7 @@
 #out_0 mech_data: if energy was successfully drawn
 
 #take energy
-scoreboard players operation temp_0 mech_data = in_0 mech_data
+scoreboard players operation temp_0 mech_data = $in_0 mech_data
 
 #get equipment
 function du:player/inv/get_equipment
@@ -61,5 +61,5 @@ execute if score temp_0 mech_data matches 1.. if score temp_1 mech_data matches 
 function du:player/inv/restore_hotbar
 
 #set output
-scoreboard players set out_0 mech_data 0
-execute if score temp_0 mech_data matches 0 run scoreboard players set out_0 mech_data 1
+scoreboard players set $out_0 mech_data 0
+execute if score temp_0 mech_data matches 0 run scoreboard players set $out_0 mech_data 1

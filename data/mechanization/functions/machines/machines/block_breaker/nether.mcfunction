@@ -1,10 +1,11 @@
-scoreboard players set temp_0 mech_data 0
-execute if score @s mech_power matches 216.. run scoreboard players set temp_0 mech_data 1
-execute if score @s mech_power matches 216.. run scoreboard players remove @s mech_power 216
 
-execute if score temp_0 mech_data matches 1 positioned ~ ~ ~ run function mechanization:machines/machines/block_breaker/nether_2
-execute if score temp_0 mech_data matches 1 positioned ~ ~1 ~ run function mechanization:machines/machines/block_breaker/nether_2
-execute if score temp_0 mech_data matches 1 positioned ~ ~2 ~ run function mechanization:machines/machines/block_breaker/nether_2
+scoreboard players operation $temp_0 mech_data = $machines.cf.block_breaker.power mech_data
+scoreboard players operation $temp_0 mech_data *= $cons.9 du_data
+
+execute if score @s mech_power >= $temp_0 mech_data positioned ~ ~ ~ run function mechanization:machines/machines/block_breaker/nether_2
+execute if score @s mech_power >= $temp_0 mech_data positioned ~ ~1 ~ run function mechanization:machines/machines/block_breaker/nether_2
+execute if score @s mech_power >= $temp_0 mech_data positioned ~ ~2 ~ run function mechanization:machines/machines/block_breaker/nether_2
+execute if score @s mech_power >= $temp_0 mech_data run scoreboard players operation @s mech_power -= $temp_0 mech_data
 
 particle scrape ~ ~2.45 ~1.45 0.6 0 0 0 18
 particle scrape ~ ~2.45 ~-1.45 0.6 0 0 0 18

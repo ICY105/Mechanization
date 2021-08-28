@@ -32,7 +32,7 @@ execute if predicate mechanization:recipes/base/tier_3_capacitor run loot replac
 execute if predicate mechanization:recipes/base/energy_relay run loot replace block ~ ~ ~ container.16 loot mechanization:base/energy_relay
 
 #manual
-execute if predicate mechanization:recipes/base/mechanical_manual run function mechanization:base/recipes/manual
+execute if predicate mechanization:recipes/base/mechanical_manual run loot replace block ~ ~ ~ container.16 loot mechanization:base/manual/start
 
 #resources
 execute if data block ~ ~ ~ Items[{id:"minecraft:iron_ingot"}] run function mechanization:base/recipes/iron

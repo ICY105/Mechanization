@@ -67,11 +67,13 @@ execute if score $id mech_data matches 1411 run summon minecraft:item_frame ~ ~ 
 execute if score $id mech_data matches 1310 run setblock ~ ~ ~ minecraft:stone_slab[waterlogged=true,type=double]
 execute if score $id mech_data matches 1314 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_tin"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421314},Count:1b}}
 execute if score $id mech_data matches 1318 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_raw_tin"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421318},Count:1b}}
+execute if score $id mech_data matches 1319 run setblock ~ ~ ~ minecraft:deepslate_brick_slab[waterlogged=true,type=double]
 
 #titanium
 execute if score $id mech_data matches 1320 run setblock ~ ~ ~ minecraft:smooth_stone_slab[waterlogged=true,type=double]
 execute if score $id mech_data matches 1324 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_titanium"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421324},Count:1b}}
 execute if score $id mech_data matches 1328 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_raw_titanium"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421328},Count:1b}}
+execute if score $id mech_data matches 1329 run setblock ~ ~ ~ minecraft:polished_deepslate_slab[waterlogged=true,type=double]
 
 #steel
 execute if score $id mech_data matches 1333 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_steel"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421333},Count:1b}}
@@ -109,6 +111,7 @@ execute if score $id mech_data matches 1407 run summon minecraft:item_frame ~ ~ 
 execute if score $id mech_data matches 1430 run setblock ~ ~ ~ minecraft:cobblestone_slab[waterlogged=true,type=double]
 execute if score $id mech_data matches 1434 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_uranium"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421434},Count:1b}}
 execute if score $id mech_data matches 1438 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_raw_uranium"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421438},Count:1b}}
+execute if score $id mech_data matches 1439 run setblock ~ ~ ~ minecraft:cobbled_deepslate_slab[waterlogged=true,type=double]
 
 #plutonium
 execute if score $id mech_data matches 1443 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_resource_block","mech_plutonium"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421443},Count:1b}}

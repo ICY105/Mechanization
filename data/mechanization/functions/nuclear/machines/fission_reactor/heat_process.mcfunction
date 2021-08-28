@@ -21,15 +21,18 @@ execute if score @s du_move_x matches 100000.. run function mechanization:nuclea
 execute if score temp_2 mech_data matches 1.. run playsound mechanization:nuclear.steam_boil block @a[distance=..16] ~ ~1 ~ 1.5
 
 #Add Power to Turbine
+scoreboard players operation heat_0 mech_data *= $nuclear.cf.fission_modifier mech_data
+scoreboard players operation heat_0 mech_data /= $cons.100 du_data
+
 scoreboard players set temp_0 mech_data 400
 scoreboard players operation heat_0 mech_data /= temp_0 mech_data
 
 execute if score heat_0 mech_data matches 10.. store result score temp_0 mech_data if entity @e[tag=mech_turbine,scores={mech_power=..2000},distance=..5]
 execute if score heat_0 mech_data matches 10.. if score temp_0 mech_data matches 1.. run scoreboard players operation heat_0 mech_data /= temp_0 mech_data
-execute if score heat_0 mech_data matches 10.. if score temp_0 mech_data matches 1.. run tag @e[tag=mech_turbine,scores={mech_power=..2000},distance=..5] add mech_active
 
-execute if score heat_0 mech_data matches 250.. run scoreboard players set heat_0 mech_data 250
+execute if score heat_0 mech_data > $nuclear.cf.turbine_power mech_data run scoreboard players operation heat_0 mech_data = $nuclear.cf.turbine_power mech_data
 execute if score heat_0 mech_data matches 10.. if score temp_0 mech_data matches 1.. run scoreboard players operation @e[tag=mech_turbine,scores={mech_power=..2000},distance=..5] mech_power += heat_0 mech_data
+execute if score heat_0 mech_data matches 10.. if score temp_0 mech_data matches 1.. run tag @e[tag=mech_turbine,scores={mech_power=..2000},distance=..5] add mech_active
 execute if score heat_0 mech_data matches 10.. if score temp_0 mech_data matches 1.. run playsound mechanization:nuclear.steam_turbine_active block @a[distance=..16] ~ ~2 ~ 2
 
 #reduce fuel durability

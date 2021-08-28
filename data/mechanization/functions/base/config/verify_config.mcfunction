@@ -3,6 +3,9 @@ scoreboard players set $temp_0 mech_data 0
 
 ### Ore Generation
 
+# [0,1] Use 1.18 Generation (changes ore gen to take advantage of extended world height).
+execute unless score $base.cf.ext_height mech_data matches 0..1 store success score $temp_0 mech_data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[$base.cf.ext_height]","color":"green"}]
+
 # [0,32] Veins of Tin per Chunk
 execute unless score $base.cf.tin_rarity mech_data matches 0..32 store success score $temp_0 mech_data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[$base.cf.tin_rarity]","color":"green"}]
 

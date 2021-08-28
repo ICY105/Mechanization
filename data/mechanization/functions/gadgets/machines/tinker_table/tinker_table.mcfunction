@@ -16,4 +16,4 @@ execute if data block ~ ~ ~ Items[{Slot:10b}].tag.mech_upgrades run data modify 
 execute if data block ~ ~ ~ Items[{Slot:10b}].tag.mech_upgrades run tag @s add mech_active
 
 ## cleanup
-execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_machine_t2
+execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_machine_t1

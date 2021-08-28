@@ -11,6 +11,7 @@ execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:wither_rose"}]} run
 execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:wither_skeleton_skull"}]} run scoreboard players add @s mech_data 2000
 execute if block ~ ~ ~ furnace{Items:[{Slot:0b,id:"minecraft:nether_star"}]} run scoreboard players add @s mech_data 6000
 
-execute store result score temp_0 mech_data run data get block ~ ~ ~ Items[0].Count
-scoreboard players remove temp_0 mech_data 1
-execute if score @s mech_data matches 1.. store result block ~ ~ ~ Items[0].Count int 1 run scoreboard players get temp_0 mech_data
+scoreboard players operation @s mech_data *= $machines.cf.dim_gen.fuel mech_data
+scoreboard players operation @s mech_data /= $cons.100 du_data
+
+item modify block ~ ~ ~ container.0 mechanization:decrement_count

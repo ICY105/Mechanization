@@ -17,11 +17,11 @@ execute if score @s mech_timer matches 1.. run playsound mechanization:machines.
 execute if score @s[tag=!mech_upgraded] mech_timer matches 1 run function mechanization:machines/machines/alloy_furnace/recipes/output_normal
 execute if score @s[tag=mech_upgraded] mech_timer matches 1 run function mechanization:machines/machines/alloy_furnace/recipes/output_upgrade
 
-execute unless score @s mech_timer matches 2.. if score @s mech_power matches 30.. run function mechanization:machines/machines/alloy_furnace/recipes/input_normal
-execute unless score @s mech_timer matches 2.. if score @s mech_power matches 30.. run function mechanization:machines/machines/alloy_furnace/recipes/input_upgrade
+execute unless score @s mech_timer matches 2.. if score @s mech_power >= $machines.cf.alloy_furnace.power mech_data run function mechanization:machines/machines/alloy_furnace/recipes/input_normal
+execute unless score @s mech_timer matches 2.. if score @s mech_power >= $machines.cf.alloy_furnace.power mech_data run function mechanization:machines/machines/alloy_furnace/recipes/input_upgrade
 
-execute if score @s mech_timer matches 1.. if score @s mech_power matches ..29 run scoreboard players set @s mech_timer 0
-execute if score @s mech_timer matches 1.. if score @s mech_power matches 30.. run scoreboard players remove @s mech_power 30
+execute if score @s mech_timer matches 1.. if score @s mech_power < $machines.cf.alloy_furnace.power mech_data run scoreboard players set @s mech_timer 0
+execute if score @s mech_timer matches 1.. if score @s mech_power >= $machines.cf.alloy_furnace.power mech_data run scoreboard players operation @s mech_power -= $machines.cf.alloy_furnace.power mech_data
 execute if score @s mech_timer matches 1.. run scoreboard players remove @s mech_timer 1
 
 #ui
