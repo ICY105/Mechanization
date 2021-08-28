@@ -22,6 +22,8 @@ execute if entity @s[tag=mech_upgraded] run scoreboard players add $temp_0 mech_
 execute if entity @s[tag=mech_upgrade_ender] run scoreboard players add $temp_0 mech_data 6
 execute if entity @s[tag=mech_upgrade_nether] run scoreboard players add $temp_0 mech_data 36
 execute if entity @s[tag=mech_upgrade_nether] run scoreboard players remove @s du_data 2
+scoreboard players operation $temp_0 mech_data *= $machines.cf.steam_gen.power mech_data
+scoreboard players operation $temp_0 mech_data /= $cons.100 du_data
 
 #convert water + heat into steam
 execute if score @s mech_data matches 1.. if score @s mech_fluid matches 1.. run scoreboard players operation @s du_data += $temp_0 mech_data

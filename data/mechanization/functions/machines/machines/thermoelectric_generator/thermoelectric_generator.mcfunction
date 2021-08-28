@@ -32,6 +32,9 @@ scoreboard players operation $temp_1 mech_data -= $temp_0 mech_data
 scoreboard players operation $temp_1 mech_data /= $cons.10 du_data
 
 execute if score $temp_1 mech_data matches ..0 run scoreboard players set $temp_1 mech_data 1
+scoreboard players operation $temp_1 mech_data *= $machines.cf.thermoelectric.power mech_data
+scoreboard players operation $temp_1 mech_data /= $cons.100 du_data
+
 execute if entity @s[tag=mech_upgraded] run scoreboard players operation $temp_1 mech_data *= $cons.3 du_data
 execute if entity @s[tag=mech_upgraded] run scoreboard players operation $temp_1 mech_data /= $cons.2 du_data
 execute if entity @s[tag=mech_active] run scoreboard players operation @s mech_power += $temp_1 mech_data

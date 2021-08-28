@@ -5,9 +5,9 @@ execute unless score @s mech_fluid matches -2147483648.. store result score @s m
 ### Main
 
 #set capacity
-execute if entity @s[tag=mech_t1_liquid_tank] run scoreboard players set $in_1 mech_data 16000
-execute if entity @s[tag=mech_t2_liquid_tank] run scoreboard players set $in_1 mech_data 32000
-execute if entity @s[tag=mech_t3_liquid_tank] run scoreboard players set $in_1 mech_data 64000
+execute if entity @s[tag=mech_t1_liquid_tank] run scoreboard players operation $in_1 mech_data = $machines.cf.t1_tank.capacity mech_data
+execute if entity @s[tag=mech_t2_liquid_tank] run scoreboard players operation $in_1 mech_data = $machines.cf.t2_tank.capacity mech_data
+execute if entity @s[tag=mech_t3_liquid_tank] run scoreboard players operation $in_1 mech_data = $machines.cf.t3_tank.capacity mech_data
 
 #ui
 execute if data block ~ ~ ~ Items[{Slot:0b}] run function mechanization:machines/machines/liquid_tank/tank_input

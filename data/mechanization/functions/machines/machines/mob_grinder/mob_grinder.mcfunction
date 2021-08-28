@@ -13,12 +13,12 @@ execute if score $world.out_0 du_data matches 0 if entity @s[tag=mech_upgrade_ne
 execute if score $world.out_0 du_data matches 0 if entity @s[tag=mech_upgrade_ender,scores={mech_power=160..}] as @p run function mechanization:machines/machines/mob_grinder/player_drop
 
 #kill entities
-execute if score $world.out_0 du_data matches 0 if entity @s[scores={mech_power=160..}] store result score $temp_0 mech_data run tp @e[distance=..5,type=#mechanization:mob_grinder] ~ -300 ~
+execute if score $world.out_0 du_data matches 0 if score @s mech_power >= $machines.cf.mob_grinder.power mech_data store result score $temp_0 mech_data run tp @e[distance=..5,type=#mechanization:mob_grinder] ~ -300 ~
 
 #power & effects
 execute if score $world.out_0 du_data matches 0 if score $temp_0 mech_data matches 1.. run particle flame ~ ~ ~ 2 0 2 0 100
-execute if score $world.out_0 du_data matches 0 if score $temp_0 mech_data matches 1.. run scoreboard players remove @s mech_power 160
-execute if score $world.out_0 du_data matches 0 if score $temp_0 mech_data matches 1.. if entity @s[tag=mech_upgraded] run scoreboard players operation @s mech_fluid += $temp_0 mech_data
+execute if score $world.out_0 du_data matches 0 if score $temp_0 mech_data matches 1.. run scoreboard players operation @s mech_power -= $machines.cf.mob_grinder.power mech_data
+execute if score $world.out_0 du_data matches 0 if score $temp_0 mech_data matches 1.. if entity @s[tag=mech_upgraded] run scoreboard players operation $temp_0 mech_data *= $machines.cf.mob_grinder.xp mech_data
 execute if score $world.out_0 du_data matches 0 if score $temp_0 mech_data matches 1.. if entity @s[tag=mech_upgraded] run scoreboard players operation @s mech_fluid += $temp_0 mech_data
 
 #store scoreboard values

@@ -21,8 +21,8 @@ execute unless score @s mech_timer matches 2.. if entity @s[tag=mech_upgrade_net
 execute unless score @s mech_timer matches 2.. if entity @s[tag=mech_upgrade_ender] run function mechanization:machines/machines/grinder/input_upgrade_ender
 
 #update
-execute if score @s mech_power matches ..39 run scoreboard players set @s mech_timer 0
-execute if score @s mech_timer matches 1.. run scoreboard players remove @s mech_power 40
+execute if score @s mech_power < $machines.cf.grinder.power mech_data run scoreboard players set @s mech_timer 0
+execute if score @s mech_timer matches 1.. run scoreboard players operation @s mech_power -= $machines.cf.grinder.power mech_data
 execute if score @s mech_timer matches 1.. run scoreboard players remove @s mech_timer 1
 execute if score @s mech_timer matches 1.. unless data block ~ ~ ~ Items[{Slot:0b}] run scoreboard players set @s mech_timer 0
 

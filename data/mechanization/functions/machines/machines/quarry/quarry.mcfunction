@@ -13,13 +13,13 @@ function du:world/blocks/is_active
 execute unless score @s du_move_y matches 1..4 run scoreboard players set @s mech_data 0
 execute if data block ~ ~ ~ Items[26] run scoreboard players set $world.out_0 du_data 1
 
-scoreboard players set in_3 mech_data 2
-execute if entity @s[tag=mech_upgraded] run scoreboard players set in_3 mech_data 4
+scoreboard players operation in_3 mech_data = $machines.cf.quarry.speed mech_data
+execute if entity @s[tag=mech_upgraded] run scoreboard players operation in_3 mech_data = $machines.cf.quarry.speed_mu mech_data
 
-execute if score $world.out_0 du_data matches 0 if entity @s[scores={du_move_y=1,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 0 0 run function mechanization:machines/machines/quarry/mine_count
-execute if score $world.out_0 du_data matches 0 if entity @s[scores={du_move_y=2,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 90 0 run function mechanization:machines/machines/quarry/mine_count
-execute if score $world.out_0 du_data matches 0 if entity @s[scores={du_move_y=3,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 180 0 run function mechanization:machines/machines/quarry/mine_count
-execute if score $world.out_0 du_data matches 0 if entity @s[scores={du_move_y=4,du_move_x=1..31,du_move_z=1..31,mech_data=0..,mech_power=64..}] rotated 270 0 run function mechanization:machines/machines/quarry/mine_count
+execute if score $world.out_0 du_data matches 0 if score @s mech_power >= $machines.cf.quarry.power mech_data if entity @s[scores={du_move_y=1,du_move_x=1..31,du_move_z=1..31,mech_data=0..}] rotated 0 0 run function mechanization:machines/machines/quarry/mine_count
+execute if score $world.out_0 du_data matches 0 if score @s mech_power >= $machines.cf.quarry.power mech_data if entity @s[scores={du_move_y=2,du_move_x=1..31,du_move_z=1..31,mech_data=0..}] rotated 90 0 run function mechanization:machines/machines/quarry/mine_count
+execute if score $world.out_0 du_data matches 0 if score @s mech_power >= $machines.cf.quarry.power mech_data if entity @s[scores={du_move_y=3,du_move_x=1..31,du_move_z=1..31,mech_data=0..}] rotated 180 0 run function mechanization:machines/machines/quarry/mine_count
+execute if score $world.out_0 du_data matches 0 if score @s mech_power >= $machines.cf.quarry.power mech_data if entity @s[scores={du_move_y=4,du_move_x=1..31,du_move_z=1..31,mech_data=0..}] rotated 270 0 run function mechanization:machines/machines/quarry/mine_count
 
 #store scoreboard values
 execute store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power
