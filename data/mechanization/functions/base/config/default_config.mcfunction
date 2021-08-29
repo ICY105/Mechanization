@@ -11,7 +11,7 @@
 scoreboard players set $base.cf.ext_height mech_data 0
 
 # [0,32] Veins of Tin per Chunk
-scoreboard players set $base.cf.tin_rarity mech_data 6
+scoreboard players set $base.cf.tin_rarity mech_data 8
 
 # [0,32] Veins of Titanium per Chunk
 scoreboard players set $base.cf.titanium_rarity mech_data 1
