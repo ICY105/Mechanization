@@ -1,6 +1,4 @@
 
-data remove storage du:temp obj.tag.Enchantments
-
 #armor
 scoreboard players set $temp_0 mech_data 0
 #armor_toughness
