@@ -10,7 +10,7 @@
         },
         "icon": {
             "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6421037}"
+            "nbt": "{CustomModelData:6421005}"
         },
         "frame": "goal",
         "show_toast": false,
