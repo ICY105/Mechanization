@@ -28,8 +28,8 @@ execute if score $temp_6 mech_data matches 2 if score $temp_4 mech_data matches 
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 1.. unless data storage du:temp obj.tank3.tag.ctc.traits.liquid{id:"molten_steel"} run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 3857.. run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s mech_timer = $machines.cf.alloy_furnace.speed mech_data
-execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s mech_timer /= $cons.2 mech_data
-execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s[tag=mech_upgrade_ender] mech_timer /= $cons.2 mech_data
+execute if score $temp_6 mech_data matches 3 if score @s mech_timer matches 3.. run scoreboard players operation @s mech_timer /= $cons.2 mech_data
+execute if score $temp_6 mech_data matches 3 if score @s mech_timer matches 3.. run scoreboard players operation @s[tag=mech_upgrade_ender] mech_timer /= $cons.2 mech_data
 #Structural Ingot
 scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 0 if score $temp_0 mech_data matches 4.. if data storage du:temp obj.slot1{id:"minecraft:lapis_lazuli"} run scoreboard players set $temp_6 mech_data 1
@@ -42,8 +42,8 @@ execute if score $temp_6 mech_data matches 2 if score $temp_4 mech_data matches 
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 1.. unless data storage du:temp obj.tank3.tag.ctc.traits.liquid{id:"molten_structural_alloy"} run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 3857.. run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s mech_timer = $machines.cf.alloy_furnace.speed mech_data
-execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s mech_timer /= $cons.2 mech_data
-execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s[tag=mech_upgrade_ender] mech_timer /= $cons.2 mech_data
+execute if score $temp_6 mech_data matches 3 if score @s mech_timer matches 3.. run scoreboard players operation @s mech_timer /= $cons.2 mech_data
+execute if score $temp_6 mech_data matches 3 if score @s mech_timer matches 3.. run scoreboard players operation @s[tag=mech_upgrade_ender] mech_timer /= $cons.2 mech_data
 
 #Conductive Ingot
 scoreboard players set $temp_6 mech_data 0
@@ -57,8 +57,8 @@ execute if score $temp_6 mech_data matches 2 if score $temp_4 mech_data matches 
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 1.. unless data storage du:temp obj.tank3.tag.ctc.traits.liquid{id:"molten_conductive_alloy"} run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 3857.. run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s mech_timer = $machines.cf.alloy_furnace.speed mech_data
-execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s mech_timer /= $cons.2 mech_data
-execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s[tag=mech_upgrade_ender] mech_timer /= $cons.2 mech_data
+execute if score $temp_6 mech_data matches 3 if score @s mech_timer matches 3.. run scoreboard players operation @s mech_timer /= $cons.2 mech_data
+execute if score $temp_6 mech_data matches 3 if score @s mech_timer matches 3.. run scoreboard players operation @s[tag=mech_upgrade_ender] mech_timer /= $cons.2 mech_data
 
 #Crystal Composite
 scoreboard players set $temp_6 mech_data 0
@@ -72,10 +72,8 @@ execute if score $temp_6 mech_data matches 2 if score $temp_4 mech_data matches 
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 1.. unless data storage du:temp obj.tank3.tag.ctc.traits.liquid{id:"molten_crystal_composite"} run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 3929.. run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s mech_timer = $machines.cf.alloy_furnace.speed mech_data
-execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s mech_timer /= $cons.2 mech_data
-execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s[tag=mech_upgrade_ender] mech_timer /= $cons.2 mech_data
-
-### Error Out
+execute if score $temp_6 mech_data matches 3 if score @s mech_timer matches 3.. run scoreboard players operation @s mech_timer /= $cons.2 mech_data
+execute if score $temp_6 mech_data matches 3 if score @s mech_timer matches 3.. run scoreboard players operation @s[tag=mech_upgrade_ender] mech_timer /= $cons.2 mech_data
 
 #Titanium Steel Ingot
 scoreboard players set $temp_6 mech_data 0
@@ -89,7 +87,7 @@ execute if score $temp_6 mech_data matches 2 if score $temp_4 mech_data matches 
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 1.. unless data storage du:temp obj.tank3.tag.ctc.traits.liquid{id:"molten_titanium_steel"} run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 3857.. run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s mech_timer = $machines.cf.alloy_furnace.speed mech_data
-execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s[tag=mech_upgrade_nether] mech_timer /= $cons.2 mech_data
+execute if score $temp_6 mech_data matches 3 if score @s mech_timer matches 3.. run scoreboard players operation @s[tag=mech_upgrade_nether] mech_timer /= $cons.2 mech_data
 
 #Reinforced Structural Ingot
 scoreboard players set $temp_6 mech_data 0
@@ -103,7 +101,7 @@ execute if score $temp_6 mech_data matches 2 if score $temp_4 mech_data matches 
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 1.. unless data storage du:temp obj.tank3.tag.ctc.traits.liquid{id:"molten_reinforced_structural_alloy"} run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 3857.. run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s mech_timer = $machines.cf.alloy_furnace.speed mech_data
-execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s[tag=mech_upgrade_nether] mech_timer /= $cons.2 mech_data
+execute if score $temp_6 mech_data matches 3 if score @s mech_timer matches 3.. run scoreboard players operation @s[tag=mech_upgrade_nether] mech_timer /= $cons.2 mech_data
 
 #Super Conductive Ingot
 scoreboard players set $temp_6 mech_data 0
@@ -117,7 +115,7 @@ execute if score $temp_6 mech_data matches 2 if score $temp_4 mech_data matches 
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 1.. unless data storage du:temp obj.tank3.tag.ctc.traits.liquid{id:"molten_super_conductive_alloy"} run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 3857.. run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s mech_timer = $machines.cf.alloy_furnace.speed mech_data
-execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s[tag=mech_upgrade_nether] mech_timer /= $cons.2 mech_data
+execute if score $temp_6 mech_data matches 3 if score @s mech_timer matches 3.. run scoreboard players operation @s[tag=mech_upgrade_nether] mech_timer /= $cons.2 mech_data
 
 #Nether Ingot
 scoreboard players set $temp_6 mech_data 0
@@ -131,7 +129,7 @@ execute if score $temp_6 mech_data matches 2 if score $temp_4 mech_data matches 
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 1.. unless data storage du:temp obj.tank3.tag.ctc.traits.liquid{id:"molten_nether_alloy"} run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 3425.. run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s mech_timer = $machines.cf.alloy_furnace.speed mech_data
-execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s[tag=mech_upgrade_nether] mech_timer /= $cons.2 mech_data
+execute if score $temp_6 mech_data matches 3 if score @s mech_timer matches 3.. run scoreboard players operation @s[tag=mech_upgrade_nether] mech_timer /= $cons.2 mech_data
 
 #Ender Ingot
 scoreboard players set $temp_6 mech_data 0
@@ -146,7 +144,7 @@ execute if score $temp_6 mech_data matches 2 if score $temp_4 mech_data matches 
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 1.. unless data storage du:temp obj.tank3.tag.ctc.traits.liquid{id:"molten_ender_alloy"} run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 if score $temp_5 mech_data matches 3425.. run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s mech_timer = $machines.cf.alloy_furnace.speed mech_data
-execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s[tag=mech_upgrade_nether] mech_timer /= $cons.2 mech_data
+execute if score $temp_6 mech_data matches 3 if score @s mech_timer matches 3.. run scoreboard players operation @s[tag=mech_upgrade_nether] mech_timer /= $cons.2 mech_data
 
 #Netherite
 scoreboard players set $temp_6 mech_data 0
@@ -158,7 +156,5 @@ execute if score $temp_6 mech_data matches 1 if score $temp_4 mech_data matches 
 execute if score $temp_6 mech_data matches 2 if score $temp_5 mech_data matches 1.. unless data storage du:temp obj.tank3.tag.ctc.traits.liquid{id:"molten_netherite"} run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 2 if score $temp_5 mech_data matches 3857.. run scoreboard players set $temp_6 mech_data 0
 execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s mech_timer = $machines.cf.alloy_furnace.speed mech_data
-execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s[tag=mech_upgrade_nether] mech_timer /= $cons.2 mech_data
+execute if score $temp_6 mech_data matches 3 if score @s mech_timer matches 3.. run scoreboard players operation @s[tag=mech_upgrade_nether] mech_timer /= $cons.2 mech_data
 
-#check score
-execute if score @s mech_timer matches 1 run scoreboard players set @s mech_timer 2

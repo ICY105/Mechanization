@@ -134,6 +134,3 @@ execute if score $temp_6 mech_data matches 0 if score $temp_2 mech_data matches 
 execute if score $temp_6 mech_data matches 1 if score $temp_3 mech_data matches 576.. if data storage du:temp obj.tank1.tag.ctc.traits.liquid{id:"molten_gold"} run scoreboard players set $temp_6 mech_data 2
 execute if score $temp_6 mech_data matches 1 if score $temp_4 mech_data matches 576.. if data storage du:temp obj.tank2.tag.ctc.traits.liquid{id:"molten_gold"} run scoreboard players set $temp_6 mech_data 2
 execute if score $temp_6 mech_data matches 2 run tag @s add mech_errored
-
-#check score
-execute if score @s mech_timer matches 1 run scoreboard players set @s mech_timer 2
