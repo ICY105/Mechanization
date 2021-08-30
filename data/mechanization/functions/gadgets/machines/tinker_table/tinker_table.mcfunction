@@ -14,6 +14,7 @@ function mechanization:gadgets/machines/tinker_table/reset_ui
 ### Main
 execute if data block ~ ~ ~ Items[{Slot:10b}].tag.mech_upgrades run data modify block ~ ~ ~ Items append from block ~ ~ ~ Items[{Slot:10b}].tag.mech_upgrades.items[]
 execute if data block ~ ~ ~ Items[{Slot:10b}].tag.mech_upgrades run tag @s add mech_active
+execute if data block ~ ~ ~ Items[{Slot:10b}].tag.mech_upgrades run data modify entity @s Item.tag.stored_item set from block ~ ~ ~ Items[{Slot:10b}]
 
 ## cleanup
 execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_machine_t1

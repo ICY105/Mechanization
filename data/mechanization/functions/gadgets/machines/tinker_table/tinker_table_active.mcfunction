@@ -1,4 +1,11 @@
 
+#verify same item
+scoreboard players set $temp_0 mech_data -1
+execute if data entity @s Item.tag.stored_item run scoreboard players set $temp_0 mech_data 0
+execute if score $temp_0 mech_data matches 0 run data modify storage du:temp obj set from entity @s Item.tag.stored_item
+execute if score $temp_0 mech_data matches 0 store success score $temp_0 mech_data run data modify storage du:temp obj set from block ~ ~ ~ Items[{Slot:10b}]
+execute if score $temp_0 mech_data matches 1 run tag @s remove mech_active
+
 #main
 execute unless data block ~ ~ ~ Items[{Slot:10b}].tag.mech_upgrades run tag @s remove mech_active
 execute if entity @s[tag=!mech_active] run item replace block ~ ~ ~ container.12 with minecraft:air
@@ -67,3 +74,5 @@ execute if entity @s[tag=mech_active] run data modify block ~ ~ ~ Items append f
 
 ## cleanup
 execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_machine_t2
+execute if entity @s[tag=mech_active] run data modify entity @s Item.tag.stored_item set from block ~ ~ ~ Items[{Slot:10b}]
+execute if entity @s[tag=!mech_active] run data modify entity @s Item.tag.stored_item set value {}

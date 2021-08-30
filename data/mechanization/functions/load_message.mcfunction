@@ -4,7 +4,7 @@ scoreboard players set $install mech_data 0
 #check for 1.17
 execute store result score $minecraft.version mech_data run data get entity @p DataVersion
 execute unless score $minecraft.version mech_data matches 2730.. run scoreboard players set $install mech_data -1
-execute if score $install mech_data matches -1 run tellraw @a [{"text":"Error: Mechanization v"},{"score":{"name":"$du.ver.major","objective":"load.status"}},{"text":","},{"score":{"name":"$du.ver.minor","objective":"load.status"}},{"text":","},{"score":{"name":"$du.ver.fix","objective":"load.status"}},{"text":" requires Minecraft +1.17.1. Click [here] to download alternate versions.","color":"red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/Mechanization/releases"}}]
+execute if score $install mech_data matches -1 run tellraw @a [{"text":"Error: Mechanization v"},{"score":{"name":"$mech.ver.major","objective":"load.status"}},{"text":","},{"score":{"name":"$mech.ver.minor","objective":"load.status"}},{"text":","},{"score":{"name":"$mech.ver.fix","objective":"load.status"}},{"text":" requires Minecraft +1.17.1. Click [here] to download alternate versions.","color":"red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/Mechanization/releases"}}]
 
 #check DU
 execute if score $install mech_data matches 0 unless score $du.ver.major load.status matches 2 run scoreboard players set $install mech_data -2
