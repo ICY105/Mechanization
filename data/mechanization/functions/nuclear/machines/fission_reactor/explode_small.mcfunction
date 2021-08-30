@@ -1,6 +1,6 @@
 fill ~-3 ~-3 ~-3 ~3 ~3 ~3 minecraft:air replace
 
-kill @e[distance=..5]
+kill @e[distance=..5,tag=!global.ignore.kill]
 kill @a[distance=..16]
 effect give @a[distance=..48] wither 60 2
 

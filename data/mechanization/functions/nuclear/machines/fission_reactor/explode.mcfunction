@@ -1,5 +1,5 @@
 fill ~-7 ~-7 ~-7 ~7 ~7 ~7 minecraft:air replace
-kill @e[distance=..16]
+kill @e[distance=..16,tag=!global.ignore.kill]
 effect give @e[distance=..48] wither 60 2
 
 summon creeper ~ ~7 ~ {ExplosionRadius:5,Fuse:0}
