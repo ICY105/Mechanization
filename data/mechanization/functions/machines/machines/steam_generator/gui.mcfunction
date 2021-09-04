@@ -1,5 +1,7 @@
 
 #move/clear items
+#execute if data block ~ ~ ~ Items[{Slot:0b}] run clone ~ ~ ~ ~ ~ ~ ~ ~2 ~
+
 data modify storage du:temp list set from block ~ ~ ~ Items
 data remove storage du:temp list[{tag:{du_gui:1b}}]
 data remove storage du:temp list[{Slot:3b}]

@@ -3,8 +3,8 @@ scoreboard players set $temp_0 mech_data 0
 data modify storage du:temp obj set from storage du:temp list[0]
 
 #check for empty fluid IO slots
-execute if score $temp_0 mech_data matches 0 unless data block ~ ~ ~ Items[{Slot:3b}] run scoreboard players set $temp_0 mech_data 3
-execute if score $temp_0 mech_data matches 0 unless data block ~ ~ ~ Items[{Slot:6b}] run scoreboard players set $temp_0 mech_data 6
+execute if score $temp_0 mech_data matches 0 unless data block ~ ~ ~ Items[{Slot:3b}] unless data storage du:temp list[{Slot:3b}] run scoreboard players set $temp_0 mech_data 3
+execute if score $temp_0 mech_data matches 0 unless data block ~ ~ ~ Items[{Slot:6b}] unless data storage du:temp list[{Slot:6b}] run scoreboard players set $temp_0 mech_data 6
 
 #check for fuel & empty fuel slot
 execute if data storage du:temp obj{id:"minecraft:stick"} run scoreboard players set $temp_0 mech_data 10

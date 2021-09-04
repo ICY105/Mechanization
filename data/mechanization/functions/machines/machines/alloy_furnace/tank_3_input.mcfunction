@@ -21,6 +21,6 @@ execute if score $in_0 mech_data matches 0.. unless data storage du:temp obj.inp
 execute if score $in_0 mech_data matches 0.. run data modify storage du:temp obj.output_item.Slot set value 25b
 
 execute if score $in_0 mech_data matches 0.. run scoreboard players operation @s mech_usedid = $out_0 mech_data
-execute if score $in_0 mech_data matches 0.. run data modify block ~ ~ ~ Items append from storage du:temp obj.input_item
-execute if score $in_0 mech_data matches 0.. run data modify block ~ ~ ~ Items append from storage du:temp obj.output_item
+execute if score $in_0 mech_data matches 0.. if data storage du:temp obj.input_item.id run data modify block ~ ~ ~ Items append from storage du:temp obj.input_item
+execute if score $in_0 mech_data matches 0.. if data storage du:temp obj.output_item.id run data modify block ~ ~ ~ Items append from storage du:temp obj.output_item
 execute if score $in_0 mech_data matches 0.. run data modify entity @s Item.tag.tank_3 set from storage du:temp obj.liquid_item
