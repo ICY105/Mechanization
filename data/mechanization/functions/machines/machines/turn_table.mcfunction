@@ -1,4 +1,3 @@
-data merge entity @s {Fire:32676}
 
 function du:world/blocks/is_active
 execute if score $world.out_0 du_data matches 1..2 if entity @s[tag=!mech_active] positioned ~ ~1 ~ run function mechanization:base/tools/wrench_run

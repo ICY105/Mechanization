@@ -5,7 +5,8 @@ execute if score @s mech_use_coas matches 1.. run tag @s add mech_right_click
 scoreboard players set @s mech_use_coas 0
 
 scoreboard players set @s mech_usedid 0
-execute store result score @s mech_usedid run data get entity @s SelectedItem.tag.mech_itemid
+item replace block -29999999 0 1601 container.0 from entity @s weapon.mainhand
+execute store result score @s mech_usedid run data get block -29999999 0 1601 Items[{Slot:0b}].tag.mech_itemid
 
 #tools
 execute if entity @s[tag=du_right_click] if score @s mech_usedid matches 1100 run function mechanization:base/tools/wrench

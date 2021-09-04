@@ -24,4 +24,4 @@ execute store result entity @s ArmorItems[3].tag.mech_gridid int 1 run scoreboar
 
 #cleanup
 execute unless block ~ ~ ~ minecraft:daylight_detector run function mechanization:base/utils/break_machine_t2
-execute unless block ~ ~ ~ minecraft:daylight_detector positioned ~ ~0.4 ~ run kill @e[tag=mech_solar_panel_model,distance=..0.5]
+execute unless block ~ ~ ~ minecraft:daylight_detector positioned ~ ~0.4 ~ run kill @e[type=item_frame,tag=mech_solar_panel_model,distance=..0.5]

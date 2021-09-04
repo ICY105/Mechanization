@@ -15,9 +15,9 @@ execute if score temp_3 mech_data matches 1 at @s as @a[distance=..0.5] in minec
 
 #check for teleporter
 scoreboard players set temp_5 mech_data 0
-execute if score temp_3 mech_data matches -1 at @s in minecraft:the_nether store success score temp_5 mech_data if entity @e[tag=mech_teleporter,distance=..2]
-execute if score temp_3 mech_data matches 0 at @s in minecraft:overworld store success score temp_5 mech_data if entity @e[tag=mech_teleporter,distance=..2]
-execute if score temp_3 mech_data matches 1 at @s in minecraft:the_end store success score temp_5 mech_data if entity @e[tag=mech_teleporter,distance=..2]
+execute if score temp_3 mech_data matches -1 at @s in minecraft:the_nether store success score temp_5 mech_data if entity @e[type=item_frame,tag=mech_teleporter,distance=..2]
+execute if score temp_3 mech_data matches 0 at @s in minecraft:overworld store success score temp_5 mech_data if entity @e[type=item_frame,tag=mech_teleporter,distance=..2]
+execute if score temp_3 mech_data matches 1 at @s in minecraft:the_end store success score temp_5 mech_data if entity @e[type=item_frame,tag=mech_teleporter,distance=..2]
 
 execute if score temp_5 mech_data matches 0 run scoreboard players operation in_1 mech_data = temp_4 mech_data
 execute if score temp_5 mech_data matches 0 store result score in_0 mech_data run data get storage mechanization:networks teleporter

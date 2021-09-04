@@ -18,7 +18,7 @@ execute if score $temp_1 mech_data matches 1 run data modify storage du:temp obj
 execute if score $temp_1 mech_data matches 1 run function #mechanization:liquid_send
 execute if score $temp_1 mech_data matches 1 if score $out_0 mech_data matches 1.. run scoreboard players set $temp_1 mech_data 2
 execute if score $temp_1 mech_data matches 2 run scoreboard players operation $temp_2 mech_data = $out_0 mech_data
-execute if score $temp_1 mech_data matches 2 as @e[tag=mech_pipe_output,predicate=mechanization:matches_uuid,sort=nearest] run function mechanization:machines/machines/liquid_pipe/output
+execute if score $temp_1 mech_data matches 2 as @e[type=#mechanization:valid_block_entity,tag=mech_pipe_output,predicate=mechanization:matches_uuid,sort=nearest] run function mechanization:machines/machines/liquid_pipe/output
 execute if score $temp_1 mech_data matches 2 run scoreboard players operation $in_0 mech_data = $out_1 mech_data
 execute if score $temp_1 mech_data matches 2 run data modify storage du:temp obj set value {}
 execute if score $temp_1 mech_data matches 2 run function #mechanization:liquid_send

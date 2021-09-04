@@ -1,0 +1,61 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "head": {
+            "items": [
+              "minecraft:leather_helmet"
+            ],
+            "nbt": "{mech_upgrades:{type:3b}}"
+          }
+        }
+      }
+    },
+	{
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "chest": {
+            "items": [
+              "minecraft:leather_chestplate"
+            ],
+            "nbt": "{mech_upgrades:{type:3b}}"
+          }
+        }
+      }
+    },
+	{
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "legs": {
+            "items": [
+              "minecraft:leather_leggings"
+            ],
+            "nbt": "{mech_upgrades:{type:3b}}"
+          }
+        }
+      }
+    },
+	{
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "feet": {
+            "items": [
+              "minecraft:leather_boots"
+            ],
+            "nbt": "{mech_upgrades:{type:3b}}"
+          }
+        }
+      }
+    }
+  ]
+}

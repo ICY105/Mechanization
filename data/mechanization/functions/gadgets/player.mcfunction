@@ -6,15 +6,15 @@ execute if score @s[tag=mech_right_click] mech_usedid matches 4100 run function 
 execute if score @s mech_usedid matches 4101 run function mechanization:gadgets/tools/drill/tick
 
 #armor
-execute if data entity @s Inventory[].tag.mech_upgrades{type:3b} run function mechanization:gadgets/tools/modular_armor/tick
+execute if predicate mechanization:equipment/wearing_modular_armor run function mechanization:gadgets/tools/modular_armor/tick
 
-execute if score $base.timer_20 du_data matches 0 if data entity @s Inventory[{Slot:103b}].tag{mech_itemid:4112} run function mechanization:gadgets/tools/modular_armor/rebreather
-execute if score $base.timer_20 du_data matches 0 if data entity @s Inventory[{Slot:103b}].tag{mech_itemid:4113} run function mechanization:gadgets/tools/modular_armor/night_vision
+execute if score $base.timer_20 du_data matches 0 if predicate mechanization:equipment/wearing_rebreather run function mechanization:gadgets/tools/modular_armor/rebreather
+execute if score $base.timer_20 du_data matches 0 if predicate mechanization:equipment/wearing_night_vision run function mechanization:gadgets/tools/modular_armor/night_vision
 
-execute if data entity @s Inventory[{Slot:102b}].tag{mech_itemid:4111} unless entity @s[nbt={FallFlying:1b}] run function mechanization:gadgets/tools/modular_armor/flight
+execute if predicate mechanization:equipment/wearing_jetpack unless entity @s[nbt={FallFlying:1b}] run function mechanization:gadgets/tools/modular_armor/flight
 
-execute if score $base.timer_10 du_data matches 0 if data entity @s Inventory[{Slot:100b}].tag{mech_itemid:4114} run function mechanization:gadgets/tools/modular_armor/slowfall
-execute if data entity @s[tag=du_moving] Inventory[{Slot:100b}].tag{mech_itemid:4115} run function mechanization:gadgets/tools/modular_armor/wall_walk
+execute if score $base.timer_10 du_data matches 0 if predicate mechanization:equipment/wearing_hover_boots run function mechanization:gadgets/tools/modular_armor/slowfall
+execute if predicate mechanization:equipment/wearing_phase_boots run function mechanization:gadgets/tools/modular_armor/wall_walk
 
 #firearm
 execute if score @s[tag=mech_right_click] mech_usedid matches 4102..4105 run scoreboard players set @s mech_timer 4

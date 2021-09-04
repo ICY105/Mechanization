@@ -13,7 +13,7 @@ scoreboard players operation $temp_0 mech_data -= @s mech_power
 execute if score $temp_0 mech_data > $in_0 mech_data run scoreboard players operation $temp_0 mech_data = $in_0 mech_data
 scoreboard players operation $temp_2 mech_data = $temp_0 mech_data
 
-execute if score $temp_0 mech_data matches 1.. as @e[distance=1..48,tag=mech_transmitter,tag=!mech_energy_relay,sort=nearest] if score @s mech_gridid = $temp_1 mech_data if score @s mech_power matches 1.. if score $temp_0 mech_data matches 1.. at @s run function mechanization:base/energy/receive
+execute if score $temp_0 mech_data matches 1.. as @e[distance=1..48,type=minecraft:item_frame,tag=mech_transmitter,tag=!mech_energy_relay,sort=nearest] if score @s mech_gridid = $temp_1 mech_data if score @s mech_power matches 1.. if score $temp_0 mech_data matches 1.. at @s run function mechanization:base/energy/receive
 
 scoreboard players operation $temp_2 mech_data -= $temp_0 mech_data
 scoreboard players operation @s mech_power += $temp_2 mech_data
