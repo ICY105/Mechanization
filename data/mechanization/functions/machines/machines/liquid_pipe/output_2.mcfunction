@@ -15,5 +15,5 @@ execute if score $temp_3 mech_data matches 1 run scoreboard players operation $i
 execute if score $temp_3 mech_data matches 1 if score $in_0 mech_data > $temp_0 mech_data run scoreboard players operation $in_0 mech_data = $temp_0 mech_data
 execute if score $temp_3 mech_data matches 1 run scoreboard players set $out_0 mech_data 0
 execute if score $temp_3 mech_data matches 1 run function #mechanization:liquid_accept
-execute if score $temp_3 mech_data matches 1 if score $out_0 mech_data matches 1.. run scoreboard players operation $temp_0 mech_data -= $out_0 mech_data
+execute if score $temp_3 mech_data matches 1 if score $out_0 mech_data matches 1.. run scoreboard players operation $temp_2 mech_data -= $out_0 mech_data
 execute if score $temp_3 mech_data matches 1 if score $out_0 mech_data matches 1.. run scoreboard players operation $out_1 mech_data += $out_0 mech_data
