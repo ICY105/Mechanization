@@ -10,7 +10,7 @@ execute if entity @s[tag=mech_active] run function mechanization:assembly/machin
 execute if entity @s[tag=mech_active] if score out_0 mech_data matches 1 run data modify storage du:temp list set from storage mechanization:networks mss.drive
 
 #try to insert into system's drives
-execute if score out_0 mech_data matches 0 as @e[type=minecraft:glowing_item_frame,tag=mech_drive_bay,distance=..16,sort=nearest] at @s run function mechanization:assembly/machines/mss/system_insert_item
+execute if score out_0 mech_data matches 0 as @e[type=minecraft:glow_item_frame,tag=mech_drive_bay,distance=..16,sort=nearest] at @s run function mechanization:assembly/machines/mss/system_insert_item
 
 #try to add to terminal's drive
 execute if entity @s[tag=mech_active] run data modify storage mechanization:networks mss.drive set from storage du:temp list
@@ -18,7 +18,7 @@ execute if entity @s[tag=mech_active] if score out_0 mech_data matches 0 unless 
 execute if entity @s[tag=mech_active] if score out_0 mech_data matches 1 run data modify storage du:temp list set from storage mechanization:networks mss.drive
 
 #try to add to system's drives
-execute if score out_0 mech_data matches 0 as @e[type=minecraft:glowing_item_frame,tag=mech_drive_bay,distance=..16,sort=nearest] at @s run function mechanization:assembly/machines/mss/system_add_item
+execute if score out_0 mech_data matches 0 as @e[type=minecraft:glow_item_frame,tag=mech_drive_bay,distance=..16,sort=nearest] at @s run function mechanization:assembly/machines/mss/system_add_item
 
 #if all else fails, eject item
 execute if score out_0 mech_data matches -1..0 run data remove block -29999999 0 1601 Items

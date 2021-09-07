@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1108, CustomModelData: 9734724, HideFlags: 38, CustomPotionColor:6579300, ctc:{ id:\"vial\", from:\"mechanization\", traits:{ item:1b, liquid:{id:\"molten_conductive_alloy\", molten:1b, amount:1000, temperature:2500, color:9734724, name:'{\"translate\":\"mech.liquid.molten_conductive_alloy\"}'} }}}"
+              "tag":"{mech_itemid: 1108, CustomModelData: 9734724, HideFlags: 38, CustomPotionColor:9734724, ctc:{ id:\"vial\", from:\"mechanization\", traits:{ item:1b, liquid:{id:\"molten_conductive_alloy\", molten:1b, amount:1000, temperature:2500, color:9734724, name:'{\"translate\":\"mech.liquid.molten_conductive_alloy\"}'} }}}"
             }
           ]
         }

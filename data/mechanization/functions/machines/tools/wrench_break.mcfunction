@@ -31,7 +31,7 @@ kill @s[tag=mech_alloy_furnace]
 execute if entity @s[tag=mech_tree_feller] run loot spawn ~ ~ ~ loot mechanization:machines/tree_feller
 execute if entity @s[tag=mech_tree_feller] run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_tree_feller]
-kill @e[tag=mech_tree_feller_model,distance=..0.75]
+execute positioned ~ ~-0.5 ~ run kill @e[tag=mech_tree_feller_model,distance=..0.75]
 
 #Block Breaker
 execute if entity @s[tag=mech_block_breaker] run loot spawn ~ ~ ~ loot mechanization:machines/block_breaker

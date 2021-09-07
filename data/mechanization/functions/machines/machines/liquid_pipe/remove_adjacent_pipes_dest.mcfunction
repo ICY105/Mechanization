@@ -13,5 +13,5 @@ execute store result entity @s Item.tag.CustomModelData int 1 run scoreboard pla
 tag @s remove mech_pipe_output
 
 scoreboard players set $temp_0 mech_data 0
-execute as @e[type=#mechanization:valid_block_entity,tag=mech_liquid_dest,tag=!mech_temp,distance=0.5..1.3] run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes_dest_2
+execute as @e[type=#mechanization:valid_block_entities,tag=mech_liquid_dest,tag=!mech_temp,distance=0.5..1.3] run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes_dest_2
 execute if score $temp_0 mech_data matches 1 run tag @s add mech_pipe_output
