@@ -24,7 +24,7 @@ scoreboard objectives add mech_use_hoe minecraft.used:minecraft.netherite_hoe
 #mark version
 scoreboard players set $mech.ver.major load.status 3
 scoreboard players set $mech.ver.minor load.status 0
-scoreboard players set $mech.ver.fix load.status 2
+scoreboard players set $mech.ver.fix load.status 3
 
 #configure storage
 execute unless data storage mechanization:networks quantum run data merge storage mechanization:networks {quantum:[]}
