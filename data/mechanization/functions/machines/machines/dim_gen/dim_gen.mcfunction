@@ -5,9 +5,9 @@ execute unless score @s mech_gridid matches -2147483648.. store result score @s 
 execute unless score @s mech_data matches -2147483648.. store result score @s mech_data run data get entity @s Item.tag.mech_data
 
 #main
-execute if entity @s[scores={mech_power=..4000,mech_data=..0},tag=!mech_upgrade_ender,tag=!mech_upgrade_nether] run function mechanization:machines/machines/dim_gen/fuel_overworld
-execute if entity @s[scores={mech_power=..4000,mech_data=..0},tag=mech_upgrade_ender] run function mechanization:machines/machines/dim_gen/fuel_end
-execute if entity @s[scores={mech_power=..4000,mech_data=..0},tag=mech_upgrade_nether] run function mechanization:machines/machines/dim_gen/fuel_nether
+execute if entity @s[scores={mech_power=..4000,mech_data=..0},tag=!mech_upgrade_ender,tag=!mech_upgrade_nether] if data block ~ ~ ~ Items[{Slot:0b}] run function mechanization:machines/machines/dim_gen/fuel_overworld
+execute if entity @s[scores={mech_power=..4000,mech_data=..0},tag=mech_upgrade_ender] if data block ~ ~ ~ Items[{Slot:0b}] run function mechanization:machines/machines/dim_gen/fuel_end
+execute if entity @s[scores={mech_power=..4000,mech_data=..0},tag=mech_upgrade_nether] if data block ~ ~ ~ Items[{Slot:0b}] run function mechanization:machines/machines/dim_gen/fuel_nether
 
 #display
 item replace block ~ ~ ~ container.1 with minecraft:structure_block{CustomModelData:6421202,du_gui:1b,HideFlags:63,display:{Name:'{"text":""}'}}
