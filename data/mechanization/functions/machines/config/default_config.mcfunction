@@ -84,10 +84,10 @@ scoreboard players set $machines.cf.mob_grinder.power mech_data 48
 scoreboard players set $machines.cf.mob_grinder.xp mech_data 2
 
 ## Quarry
-# [1,2000000000] How much power the Quarry uses
-scoreboard players set $machines.cf.quarry.power mech_data 48
+# [1,2000000000] How much power the Quarry uses per block mined (so by default, quarry used 32 * 2 = 64 kW)
+scoreboard players set $machines.cf.quarry.power mech_data 32
 
-# [0,2000000000] How many blocks the Quarry mines per cycle. Higher number by substantially reduce performance.
+# [0,2000000000] How many blocks the Quarry mines per cycle. Higher number may reduce performance.
 scoreboard players set $machines.cf.quarry.speed mech_data 2
 scoreboard players set $machines.cf.quarry.speed_mu mech_data 4
 
