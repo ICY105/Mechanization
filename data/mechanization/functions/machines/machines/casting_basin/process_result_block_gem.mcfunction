@@ -32,6 +32,7 @@ execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid
 execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_quartz"} run scoreboard players remove @s mech_fluid 288
 execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_quartz"} run item replace block ~ ~ ~ container.12 with minecraft:quartz_block
 execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_quartz"} if data storage du:temp obj.output_item{id:"minecraft:quartz_block"} run item modify block ~ ~ ~ container.12 mechanization:increment_count
-execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"lava"} run scoreboard players remove @s mech_fluid 288
+
+execute if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"lava"} run scoreboard players remove @s mech_fluid 1000
 execute if score $temp_0 mech_data matches ..0 if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"lava"} run item replace block ~ ~ ~ container.12 with minecraft:obsidian
 execute if score $temp_0 mech_data matches 1.. if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"lava"} if data storage du:temp obj.output_item{id:"minecraft:obsidian"} run item modify block ~ ~ ~ container.12 mechanization:increment_count
