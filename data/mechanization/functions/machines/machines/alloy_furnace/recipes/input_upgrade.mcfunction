@@ -158,3 +158,7 @@ execute if score $temp_6 mech_data matches 2 if score $temp_5 mech_data matches 
 execute if score $temp_6 mech_data matches 3 run scoreboard players operation @s mech_timer = $machines.cf.alloy_furnace.speed mech_data
 execute if score $temp_6 mech_data matches 3 if score @s mech_timer matches 3.. run scoreboard players operation @s[tag=mech_upgrade_nether] mech_timer /= $cons.2 mech_data
 
+#calculate needed power
+scoreboard players operation $temp_0 mech_data = $machines.cf.alloy_furnace.power mech_data
+scoreboard players operation $temp_0 mech_data *= @s mech_timer
+execute if score @s mech_power < $temp_0 mech_data run scoreboard players set @s mech_timer 0

@@ -134,3 +134,8 @@ execute if score $temp_6 mech_data matches 0 if score $temp_2 mech_data matches 
 execute if score $temp_6 mech_data matches 1 if score $temp_3 mech_data matches 576.. if data storage du:temp obj.tank1.tag.ctc.traits.liquid{id:"molten_gold"} run scoreboard players set $temp_6 mech_data 2
 execute if score $temp_6 mech_data matches 1 if score $temp_4 mech_data matches 576.. if data storage du:temp obj.tank2.tag.ctc.traits.liquid{id:"molten_gold"} run scoreboard players set $temp_6 mech_data 2
 execute if score $temp_6 mech_data matches 2 run tag @s add mech_errored
+
+#calculate needed power
+scoreboard players operation $temp_0 mech_data = $machines.cf.alloy_furnace.power mech_data
+scoreboard players operation $temp_0 mech_data *= @s mech_timer
+execute if score @s mech_power < $temp_0 mech_data run scoreboard players set @s mech_timer 0

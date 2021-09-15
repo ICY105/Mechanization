@@ -47,7 +47,7 @@ execute if score $temp_0 mech_data matches 0..63 if data block ~ ~ ~ Items[{Slot
 execute if score $temp_0 mech_data matches 0..61 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:blaze_rod"}] run scoreboard players operation @s mech_timer = $machines.cf.grinder.speed_other mech_data
 execute if score $temp_0 mech_data matches 0..60 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:bone"}] run scoreboard players operation @s mech_timer = $machines.cf.grinder.speed_other mech_data
 
-
-
-
-
+#calculate needed power
+scoreboard players operation $temp_0 mech_data = $machines.cf.grinder.power mech_data
+scoreboard players operation $temp_0 mech_data *= @s mech_timer
+execute if score @s mech_power < $temp_0 mech_data run scoreboard players set @s mech_timer 0

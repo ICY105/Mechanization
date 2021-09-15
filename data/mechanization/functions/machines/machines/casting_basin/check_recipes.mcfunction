@@ -27,3 +27,8 @@ execute if score $temp_0 mech_data matches ..63 if score @s[tag=mech_upgrade_end
 #speed upgrade
 execute if score @s[tag=mech_upgrade_nether] mech_timer matches 2..5 run scoreboard players set @s mech_timer 2
 execute if score @s[tag=mech_upgrade_nether] mech_timer matches 6.. run scoreboard players operation @s mech_timer /= $cons.2 du_data
+
+#calculate needed power
+scoreboard players operation $temp_0 mech_data = $machines.cf.casting_basin.power mech_data
+scoreboard players operation $temp_0 mech_data *= @s mech_timer
+execute if score @s mech_power < $temp_0 mech_data run scoreboard players set @s mech_timer 0
