@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1582, CustomModelData: 6421582, HideFlags: 32, mech_upgrade:{type:1b, effect:\"poison\", max_durability:1500, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"obsidian_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"obsidian\":1b }}}"
+              "tag":"{mech_itemid: 1582, CustomModelData: 6421582, HideFlags: 32, mech_upgrade:{type:1b, effect:\"fire_aspect\", max_durability:1500, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"obsidian_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"obsidian\":1b }}}"
             }
           ]
         }
