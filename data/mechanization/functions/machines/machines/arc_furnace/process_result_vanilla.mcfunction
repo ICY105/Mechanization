@@ -27,14 +27,14 @@ execute if score @s mech_fluid matches 0 if data storage du:temp obj.input_item{
 execute if score @s[tag=!mech_upgrade_ender] mech_fluid matches 0 if data storage du:temp obj.input_item{id:"minecraft:raw_iron_block"} run scoreboard players add @s mech_fluid 1296
 execute if score @s[tag=mech_upgrade_ender] mech_fluid matches 0 if data storage du:temp obj.input_item{id:"minecraft:raw_iron_block"} run scoreboard players add @s mech_fluid 1620
 
-execute if score @s[tag=!mech_upgrade_ender] mech_fluid matches 1..2704 if data storage du:temp obj.input_item{id:"minecraft:raw_copper_block"} if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_iron"} run scoreboard players add @s mech_fluid 1296
-execute if score @s[tag=mech_upgrade_ender] mech_fluid matches 1..2704 if data storage du:temp obj.input_item{id:"minecraft:raw_copper_block"} if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_iron"} run scoreboard players add @s mech_fluid 1620
+execute if score @s[tag=!mech_upgrade_ender] mech_fluid matches 1..2704 if data storage du:temp obj.input_item{id:"minecraft:raw_copper_block"} if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_copper"} run scoreboard players add @s mech_fluid 1296
+execute if score @s[tag=mech_upgrade_ender] mech_fluid matches 1..2704 if data storage du:temp obj.input_item{id:"minecraft:raw_copper_block"} if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_copper"} run scoreboard players add @s mech_fluid 1620
 execute if score @s mech_fluid matches 0 if data storage du:temp obj.input_item{id:"minecraft:raw_copper_block"} run loot replace block -29999999 0 1601 container.0 loot mechanization:base/liquids/vial_of_molten_iron
 execute if score @s[tag=!mech_upgrade_ender] mech_fluid matches 0 if data storage du:temp obj.input_item{id:"minecraft:raw_copper_block"} run scoreboard players add @s mech_fluid 1296
 execute if score @s[tag=mech_upgrade_ender] mech_fluid matches 0 if data storage du:temp obj.input_item{id:"minecraft:raw_copper_block"} run scoreboard players add @s mech_fluid 1620
 
-execute if score @s[tag=!mech_upgrade_ender] mech_fluid matches 1..2704 if data storage du:temp obj.input_item{id:"minecraft:raw_gold_block"} if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_iron"} run scoreboard players add @s mech_fluid 1296
-execute if score @s[tag=mech_upgrade_ender] mech_fluid matches 1..2704 if data storage du:temp obj.input_item{id:"minecraft:raw_gold_block"} if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_iron"} run scoreboard players add @s mech_fluid 1620
+execute if score @s[tag=!mech_upgrade_ender] mech_fluid matches 1..2704 if data storage du:temp obj.input_item{id:"minecraft:raw_gold_block"} if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_gold"} run scoreboard players add @s mech_fluid 1296
+execute if score @s[tag=mech_upgrade_ender] mech_fluid matches 1..2704 if data storage du:temp obj.input_item{id:"minecraft:raw_gold_block"} if data storage du:temp obj.fluid_item.tag.ctc.traits.liquid{id:"molten_gold"} run scoreboard players add @s mech_fluid 1620
 execute if score @s mech_fluid matches 0 if data storage du:temp obj.input_item{id:"minecraft:raw_gold_block"} run loot replace block -29999999 0 1601 container.0 loot mechanization:base/liquids/vial_of_molten_iron
 execute if score @s[tag=!mech_upgrade_ender] mech_fluid matches 0 if data storage du:temp obj.input_item{id:"minecraft:raw_gold_block"} run scoreboard players add @s mech_fluid 1296
 execute if score @s[tag=mech_upgrade_ender] mech_fluid matches 0 if data storage du:temp obj.input_item{id:"minecraft:raw_gold_block"} run scoreboard players add @s mech_fluid 1620
