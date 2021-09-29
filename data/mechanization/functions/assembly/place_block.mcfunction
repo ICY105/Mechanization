@@ -57,7 +57,7 @@ execute if score $id mech_data matches 5006 run setblock ~ ~ ~ minecraft:barrel[
 
 #Unlimited Storage Unit
 execute if score $id mech_data matches 5007 if block ~ ~ ~ minecraft:blast_furnace run summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mech_unlimited_storage","global.ignore"],CustomName:'{"translate":"mech.block.unlimited_storage_unit"}',Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_data:0,item:{},CustomModelData:6425007}}}
-execute if score $id mech_data matches 5007 if data entity @s SelectedItem.tag.stored_item run data modify entity @e[tag=mech_unlimited_storage,sort=nearest,limit=1,distance=..1] ArmorItems[3].tag.item set from entity @s SelectedItem.tag.stored_item
+execute if score $id mech_data matches 5007 if data entity @s SelectedItem.tag.stored_item run data modify entity @e[tag=mech_unlimited_storage,sort=nearest,limit=1,distance=..1] Item.tag.item set from entity @s SelectedItem.tag.stored_item
 execute if score $id mech_data matches 5007 if data entity @s SelectedItem.tag.stored_item store result score @e[tag=mech_unlimited_storage,sort=nearest,limit=1,distance=..1] mech_data run data get entity @s SelectedItem.tag.stored_count
 execute if score $id mech_data matches 5007 run setblock ~ ~ ~ minecraft:furnace{CustomName:'{"translate":"mech.block.unlimited_storage_unit","color":"dark_red","italic":false}'}
 
