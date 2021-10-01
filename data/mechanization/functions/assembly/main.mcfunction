@@ -4,7 +4,7 @@ execute if score $base.timer_20 du_data matches 19 as @e[type=minecraft:glow_ite
 execute if score $base.timer_20 du_data matches 18 as @e[type=minecraft:glow_item_frame,tag=mech_decompresser] at @s run function mechanization:assembly/machines/decompresser/decompresser
 execute if score $base.timer_20 du_data matches 17 as @e[type=minecraft:glow_item_frame,tag=mech_stone_cutter] at @s run function mechanization:assembly/machines/stone_cutter/stone_cutter
 execute if score $base.timer_20 du_data matches 16 as @e[type=minecraft:glow_item_frame,tag=mech_dye_machine] at @s run function mechanization:assembly/machines/dye_machine/dye_machine
-execute if score $base.timer_20 du_data matches 15 as @e[type=minecraft:glow_item_frame,tag=mech_ender_hopper] at @s run function mechanization:assembly/machines/ender_hopper
+execute if score $base.timer_20 du_data matches 15 as @e[type=minecraft:item_frame,tag=mech_ender_hopper] at @s run function mechanization:assembly/machines/ender_hopper
 execute if score $base.timer_20 du_data matches 14 as @e[type=minecraft:glow_item_frame,tag=mech_auto_jukebox] at @s run function mechanization:assembly/machines/auto_jukebox
 execute if score $base.timer_20 du_data matches 13 as @e[type=minecraft:glow_item_frame,tag=mech_drive_bay] at @s run function mechanization:assembly/machines/mss/drive_bay
 execute if score $base.timer_20 du_data matches 12 as @e[type=minecraft:item_frame,tag=mech_item_extractor] at @s run function mechanization:assembly/machines/item_extractor/item_extractor
