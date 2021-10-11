@@ -10,7 +10,7 @@ execute if score @s du_data matches 1.. if score $temp_1 mech_data matches 100..
 execute if score @s du_data matches 1.. if score $temp_1 mech_data matches 100.. if score $temp_0 mech_data matches 0 run scoreboard players set $in_0 mech_data 0
 
 execute unless score @s du_data matches 1.. if data block ~ ~ ~ Items[{Slot:6b,id:"minecraft:lava_bucket"}] run scoreboard players set $in_0 mech_data 0
-execute if score @s du_data matches 1.. if data block ~ ~ ~ Items[{Slot:6b,id:"minecraft:lava_bucket"}] if data entity @s Item.tag.tank.tag.ctc.traits.liquid{id:"lava"} run scoreboard players set $in_0 mech_data 0
+execute if score @s du_data matches 1.. if data block ~ ~ ~ Items[{Slot:6b,id:"minecraft:lava_bucket"}] if data entity @s Item.tag.tank_2.tag.ctc.traits.liquid{id:"lava"} run scoreboard players set $in_0 mech_data 0
 
 execute if data block ~ ~ ~ Items[{Slot:6b,id:"minecraft:bucket"}] run scoreboard players set $in_0 mech_data 0
 execute if data block ~ ~ ~ Items[{Slot:6b,id:"minecraft:glass_bottle"}] run scoreboard players set $in_0 mech_data 0
