@@ -6,7 +6,7 @@
 		"#minecraft:carpets",
 		"#minecraft:corals",
 		"#minecraft:candles",
-		"#du:air",
+		"#du:place_block_through",
 		"minecraft:grass",
 		"minecraft:fern",
 		"minecraft:dead_bush",
@@ -35,8 +35,6 @@
 		"minecraft:soul_wall_torch",
 		"minecraft:redstone_torch",
 		"minecraft:redstone_wall_torch",
-		"minecraft:lily_pad",
-		"minecraft:water",
-		"minecraft:lava"
+		"minecraft:lily_pad"
 	]
 }
