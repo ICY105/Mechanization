@@ -34,9 +34,14 @@ execute if score $temp_0 mech_data matches 0 positioned ~ ~1 ~ if block ~ ~ ~ mi
 execute if score $temp_0 mech_data matches 6 run loot replace block -29999999 0 1601 container.0 loot mechanization:base/liquids/vial_of_milk
 execute if score $temp_0 mech_data matches 6 run scoreboard players add @s mech_fluid 250
 
-execute if score $temp_0 mech_data matches 0 positioned ~ ~1 ~ if block ~ ~ ~ minecraft:air as @p[distance=..1,level=31..] run function mechanization:machines/machines/liquid_accumulator/collect_xp
-execute if score $temp_0 mech_data matches 7 run loot replace block -29999999 0 1601 container.0 loot mechanization:base/liquids/vial_of_experience
-execute if score $temp_0 mech_data matches 7 run scoreboard players add @s mech_fluid 25
+execute if score $temp_0 mech_data matches 0 positioned ~ ~1 ~ if block ~ ~ ~ minecraft:air if entity @e[type=mooshroom,distance=..1] run scoreboard players set $temp_0 mech_data 6
+execute if score $temp_0 mech_data matches 6 run loot replace block -29999999 0 1601 container.0 loot mechanization:base/liquids/vial_of_mushroom_stew
+execute if score $temp_0 mech_data matches 6 run scoreboard players add @s mech_fluid 250
+
+execute if score $temp_0 mech_data matches 0 positioned ~ ~1 ~ if block ~ ~ ~ minecraft:air as @p[distance=..1,level=31..] run function mechanization:machines/machines/liquid_accumulator/collect_xp_player
+execute if score $temp_0 mech_data matches 0 positioned ~ ~1 ~ if block ~ ~ ~ minecraft:air as @e[type=experience_orb,distance=..1,limit=1] run function mechanization:machines/machines/liquid_accumulator/collect_xp_orb
+execute if score $temp_0 mech_data matches 8 run loot replace block -29999999 0 1601 container.0 loot mechanization:base/liquids/vial_of_experience
+execute if score $temp_0 mech_data matches 8 run scoreboard players operation @s mech_fluid += $temp_1 mech_data
 
 #cleanup
 execute if data block -29999999 0 1601 Items[{Slot:0b}] run data modify entity @s Item.tag.tank set from block -29999999 0 1601 Items[{Slot:0b}]
