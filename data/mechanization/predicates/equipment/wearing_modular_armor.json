@@ -22,7 +22,8 @@
         "equipment": {
           "chest": {
             "items": [
-              "minecraft:leather_chestplate"
+              "minecraft:leather_chestplate",
+			  "minecraft:elytra"
             ],
             "nbt": "{mech_upgrades:{type:3b}}"
           }
