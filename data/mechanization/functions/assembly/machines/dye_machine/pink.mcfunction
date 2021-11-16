@@ -85,6 +85,24 @@ execute if data storage du:temp obj{id:"minecraft:green_stained_glass"} store su
 execute if data storage du:temp obj{id:"minecraft:red_stained_glass"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass",Count:8b}}
 execute if data storage du:temp obj{id:"minecraft:black_stained_glass"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass",Count:8b}}
 
+execute if data storage du:temp obj{id:"minecraft:glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+execute if data storage du:temp obj{id:"minecraft:white_stained_glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+execute if data storage du:temp obj{id:"minecraft:orange_stained_glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+execute if data storage du:temp obj{id:"minecraft:magenta_stained_glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+execute if data storage du:temp obj{id:"minecraft:light_blue_stained_glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+execute if data storage du:temp obj{id:"minecraft:yellow_stained_glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+execute if data storage du:temp obj{id:"minecraft:lime_stained_glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+execute if data storage du:temp obj{id:"minecraft:pink_stained_glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+execute if data storage du:temp obj{id:"minecraft:gray_stained_glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+execute if data storage du:temp obj{id:"minecraft:light_gray_stained_glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+execute if data storage du:temp obj{id:"minecraft:cyan_stained_glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+execute if data storage du:temp obj{id:"minecraft:purple_stained_glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+execute if data storage du:temp obj{id:"minecraft:blue_stained_glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+execute if data storage du:temp obj{id:"minecraft:brown_stained_glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+execute if data storage du:temp obj{id:"minecraft:green_stained_glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+execute if data storage du:temp obj{id:"minecraft:red_stained_glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+execute if data storage du:temp obj{id:"minecraft:black_stained_glass_pane"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_stained_glass_pane",Count:8b}}
+
 execute if data storage du:temp obj{id:"minecraft:terracotta"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_terracotta",Count:8b}}
 execute if data storage du:temp obj{id:"minecraft:white_terracotta"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_terracotta",Count:8b}}
 execute if data storage du:temp obj{id:"minecraft:orange_terracotta"} store success score $temp_2 mech_data run summon item ^ ^ ^1 {Item:{id:"minecraft:pink_terracotta",Count:8b}}
