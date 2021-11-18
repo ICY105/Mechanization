@@ -7,8 +7,8 @@
 
 ### Ore Generation
 
-# [0,1] Use 1.18 Generation (changes ore gen to take advantage of extended world height).
-scoreboard players set $base.cf.ext_height mech_data 0
+# [0,1] Use small world height generation (0-255).
+scoreboard players set $base.cf.small_world mech_data 0
 
 # [0,32] Veins of Tin per Chunk
 scoreboard players set $base.cf.tin_rarity mech_data 8

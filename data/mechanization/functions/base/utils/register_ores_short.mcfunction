@@ -2,8 +2,8 @@
 #### Tin Ore
 
 # Y elevation [1,255]
-scoreboard players set $world.in_0 du_data -16
-scoreboard players set $world.in_1 du_data 32
+scoreboard players set $world.in_0 du_data 24
+scoreboard players set $world.in_1 du_data 64
 # number of veins [1,32]
 scoreboard players operation $world.in_2 du_data = $base.cf.tin_rarity mech_data
 scoreboard players operation $world.in_3 du_data = $base.cf.tin_rarity mech_data
@@ -23,8 +23,8 @@ scoreboard players operation $cons.tin_ore mech_data = $world.out_0 du_data
 #### Titanium Ore
 
 # Y elevation [1,255]
-scoreboard players set $world.in_0 du_data -60
-scoreboard players set $world.in_1 du_data -28
+scoreboard players set $world.in_0 du_data 1
+scoreboard players set $world.in_1 du_data 16
 # number of veins [1,32]
 scoreboard players operation $world.in_2 du_data = $base.cf.titanium_rarity mech_data
 scoreboard players operation $world.in_3 du_data = $base.cf.titanium_rarity mech_data
@@ -44,8 +44,8 @@ scoreboard players operation $cons.titanium_ore mech_data = $world.out_0 du_data
 #### Uranium Ore
 
 # Y elevation [1,255]
-scoreboard players set $world.in_0 du_data -48
-scoreboard players set $world.in_1 du_data -16
+scoreboard players set $world.in_0 du_data 1
+scoreboard players set $world.in_1 du_data 24
 # number of veins [1,32]
 scoreboard players operation $world.in_2 du_data = $base.cf.uranium_rarity mech_data
 scoreboard players operation $world.in_3 du_data = $base.cf.uranium_rarity mech_data
@@ -65,8 +65,8 @@ scoreboard players operation $cons.uranium_ore mech_data = $world.out_0 du_data
 #### Emerald Ore
 
 # Y elevation [1,255]
-scoreboard players set $world.in_0 du_data -48
-scoreboard players set $world.in_1 du_data 0
+scoreboard players set $world.in_0 du_data 1
+scoreboard players set $world.in_1 du_data 16
 # number of veins [1,32]
 scoreboard players operation $world.in_2 du_data = $base.cf.emerald_rarity mech_data
 scoreboard players operation $world.in_3 du_data = $base.cf.emerald_rarity mech_data
