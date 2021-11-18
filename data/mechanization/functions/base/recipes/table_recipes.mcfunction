@@ -24,9 +24,9 @@ execute if predicate mechanization:recipes/base/tier_2_battery run loot replace 
 execute if predicate mechanization:recipes/base/tier_3_battery run loot replace block ~ ~ ~ container.16 loot mechanization:base/tier_3_battery
 execute if predicate mechanization:recipes/base/quantum_battery run loot replace block ~ ~ ~ container.16 loot mechanization:base/quantum_battery
 
-execute if predicate mechanization:recipes/base/tier_1_capacitor run loot replace block ~ ~ ~ container.16 loot mechanization:base/tier_1_capacitor
-execute if predicate mechanization:recipes/base/tier_2_capacitor run loot replace block ~ ~ ~ container.16 loot mechanization:base/tier_2_capacitor
-execute if predicate mechanization:recipes/base/tier_3_capacitor run loot replace block ~ ~ ~ container.16 loot mechanization:base/tier_3_capacitor
+#execute if predicate mechanization:recipes/base/tier_1_capacitor run loot replace block ~ ~ ~ container.16 loot mechanization:base/tier_1_capacitor
+#execute if predicate mechanization:recipes/base/tier_2_capacitor run loot replace block ~ ~ ~ container.16 loot mechanization:base/tier_2_capacitor
+#execute if predicate mechanization:recipes/base/tier_3_capacitor run loot replace block ~ ~ ~ container.16 loot mechanization:base/tier_3_capacitor
 
 #Energy relay
 execute if predicate mechanization:recipes/base/energy_relay run loot replace block ~ ~ ~ container.16 loot mechanization:base/energy_relay
