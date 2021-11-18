@@ -3,8 +3,9 @@
 	"values":[
 		"#du:air",
 		"#du:colors/glass",
-		"#du:flowers",
-		"#du:pressure_plates",
+		"#du:colors/glass_panes",
+		"#du:plants",
+		"#minecraft:pressure_plates",
 		"#minecraft:saplings",
 		"#minecraft:signs",
 		"#minecraft:buttons",

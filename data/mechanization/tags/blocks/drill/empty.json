@@ -1,12 +1,15 @@
 {
 	"required":false,
 	"values":[
+		"#du:air",
+		"#du:fluids",
+		
 		"#minecraft:saplings",
 		"#minecraft:flowers",
 		"#minecraft:carpets",
 		"#minecraft:corals",
 		"#minecraft:candles",
-		"#du:place_block_through",
+		
 		"minecraft:grass",
 		"minecraft:fern",
 		"minecraft:dead_bush",

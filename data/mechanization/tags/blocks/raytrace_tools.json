@@ -1,11 +1,8 @@
 {
 	"required":false,
 	"values":[
-		"minecraft:air",
-		"minecraft:cave_air",
-		"minecraft:void_air",
-		"minecraft:water",
-		"minecraft:lava",
+		"#du:air",
+		"#du:fluids",
 		"minecraft:snow",
 		"minecraft:light"
 	]
