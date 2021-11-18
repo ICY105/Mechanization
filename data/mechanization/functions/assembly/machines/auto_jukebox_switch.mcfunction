@@ -76,6 +76,9 @@ execute if data storage du:temp obj{id:"minecraft:music_disc_wait"} unless data 
 execute if data storage du:temp obj{id:"minecraft:music_disc_pigstep"} unless data storage du:temp obj.tag.mech_itemid run playsound minecraft:music_disc.pigstep record @a ~ ~ ~ 6
 execute if data storage du:temp obj{id:"minecraft:music_disc_pigstep"} unless data storage du:temp obj.tag.mech_itemid run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":["Lena Raine - Pigstep"],"color":"light_purple"}]
 
+execute if data storage du:temp obj{id:"minecraft:music_disc_otherside"} unless data storage du:temp obj.tag.mech_itemid run playsound minecraft:music_disc.otherside record @a ~ ~ ~ 6
+execute if data storage du:temp obj{id:"minecraft:music_disc_otherside"} unless data storage du:temp obj.tag.mech_itemid run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":["Lena Raine - Otherside"],"color":"light_purple"}]
+
 execute if data storage du:temp obj.tag{mech_itemid:5101} run playsound mechanization:assembly.music.end_of_the_world record @a ~ ~ ~ 6
 execute if data storage du:temp obj.tag{mech_itemid:5101} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_end_of_the_world"}],"color":"light_purple"}]
 
