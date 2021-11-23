@@ -12,7 +12,7 @@ execute positioned ~1 ~ ~ if entity @s[distance=..0.1] run scoreboard players ad
 execute positioned ~-1 ~ ~ if entity @s[distance=..0.1] run scoreboard players add $temp_0 mech_data 16
 execute positioned ~-1 ~ ~ if entity @s[distance=..0.1] run scoreboard players add @s mech_data 32
 
-scoreboard players set $temp_2 mech_data 6425900
+scoreboard players set $temp_2 mech_data 6421000
 scoreboard players operation $temp_2 mech_data += @s mech_data
 execute store result entity @s Item.tag.CustomModelData int 1 run scoreboard players get $temp_2 mech_data
 

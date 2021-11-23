@@ -78,7 +78,7 @@ execute if score $id mech_data matches 5011 run setblock ~ ~ ~ minecraft:barrel[
 
 #item pipe
 execute if score $id mech_data matches 5012 run setblock ~ ~ ~ minecraft:air
-execute if score $id mech_data matches 5012 align xyz positioned ~0.5 ~0.1 ~0.5 unless entity @e[tag=mech_item_pipe,distance=..0.1] run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_item_pipe","mech_new","global.ignore"],CustomName:'{"translate":"mech.block.item_pipe"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Facing:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6425900}}}
+execute if score $id mech_data matches 5012 align xyz positioned ~0.5 ~0.1 ~0.5 unless entity @e[tag=mech_item_pipe,distance=..0.1] run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_item_pipe","mech_new","global.ignore"],CustomName:'{"translate":"mech.block.item_pipe"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Facing:1b,Silent:1b,Item:{id:"minecraft:exposed_copper",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421000}}}
 execute if score $id mech_data matches 5012 align xyz positioned ~0.5 ~0.1 ~0.5 as @e[tag=mech_item_pipe,tag=mech_new,distance=..0.1,sort=nearest,limit=1] run function mechanization:assembly/machines/item_pipe/place
 
 
