@@ -151,7 +151,7 @@ execute if score $id mech_data matches 2023..2025 if data entity @s SelectedItem
 execute if score $id mech_data matches 2023..2025 as @e[tag=mech_liquid_tank,sort=nearest,limit=1,distance=..0.5] run function mechanization:machines/machines/liquid_pipe/add_adjacent_pipes
 
 #pipe
-execute if score $id mech_data matches 2026 align xyz positioned ~0.5 ~0.9 ~0.5 unless entity @e[tag=mech_pipe,distance=..0.1] run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_pipe","mech_new"],CustomName:'{"translate":"mech.block.liquid_pipe"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422900}}}
+execute if score $id mech_data matches 2026 align xyz positioned ~0.5 ~0.9 ~0.5 unless entity @e[tag=mech_pipe,distance=..0.1] run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_pipe","mech_new"],CustomName:'{"translate":"mech.block.liquid_pipe"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:copper_block",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421000}}}
 execute if score $id mech_data matches 2026 align xyz positioned ~0.5 ~0.9 ~0.5 as @e[tag=mech_pipe,tag=mech_new,distance=..0.1,sort=nearest,limit=1] run function mechanization:machines/machines/liquid_pipe/place
 
 #arc furnace

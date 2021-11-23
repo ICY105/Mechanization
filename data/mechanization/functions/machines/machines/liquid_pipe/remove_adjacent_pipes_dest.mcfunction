@@ -6,7 +6,7 @@ execute if score $in_0 mech_data matches 3 run scoreboard players remove @s mech
 execute if score $in_0 mech_data matches 4 run scoreboard players remove @s mech_data 16
 execute if score $in_0 mech_data matches 5 run scoreboard players remove @s mech_data 32
 
-scoreboard players set $temp_0 mech_data 6422900
+scoreboard players set $temp_0 mech_data 6421000
 scoreboard players operation $temp_0 mech_data += @s mech_data
 execute store result entity @s Item.tag.CustomModelData int 1 run scoreboard players get $temp_0 mech_data
 

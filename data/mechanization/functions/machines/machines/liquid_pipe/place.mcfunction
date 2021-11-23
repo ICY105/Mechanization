@@ -10,7 +10,7 @@ execute as @e[type=#mechanization:valid_block_entities,tag=mech_liquid_dest,dist
 execute as @e[type=#mechanization:valid_block_entities,tag=mech_liquid_src,tag=!mech_liquid_dest,distance=0.5..1.3] run function mechanization:machines/machines/liquid_pipe/place_src
 
 scoreboard players operation @s mech_data = $temp_0 mech_data
-scoreboard players add $temp_0 mech_data 6422900
+scoreboard players add $temp_0 mech_data 6421000
 execute store result entity @s Item.tag.CustomModelData int 1 run scoreboard players get $temp_0 mech_data
 
 execute if score $temp_1 mech_data matches -1 run scoreboard players operation @s du_uuid = $uuid.incr du_uuid
