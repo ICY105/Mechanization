@@ -17,5 +17,6 @@ execute if score $base.timer_20 du_data matches 4 run function mechanization:bas
 #Energy Relay
 execute if score $base.timer_20 du_data matches 8 as @e[type=item_frame,tag=mech_energy_relay] at @s run function mechanization:base/machines/relay/energy_relay
 
-#cleanup abandoned resource blocks
+#cleanup abandoned blocks
+execute if score $base.timer_100 du_data matches 98 as @e[type=item_frame,tag=mech_cable] at @s run function mechanization:base/machines/cable/cable
 execute if score $base.timer_100 du_data matches 99 as @e[type=item_frame,tag=mech_resource_block] at @s unless block ~ ~ ~ minecraft:barrier run kill @s

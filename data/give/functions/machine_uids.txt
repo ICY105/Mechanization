@@ -17,6 +17,7 @@ Base Module [01]: {
 		Tier 1 Capacitor		[10-1010]
 		Tier 2 Capacitor		[11-1011]
 		Tier 3 Capacitor		[12-1012]
+		Copper Cable			[13-1013]
 	}
 	Items [1]: {
 		Wrench				[00-1100]

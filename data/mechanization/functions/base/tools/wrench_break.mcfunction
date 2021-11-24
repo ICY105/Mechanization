@@ -1,4 +1,7 @@
 
+#break adjacent cables
+execute if score @s[tag=!mech_cable] mech_power matches -2147483648.. at @s run function mechanization:base/machines/cable/remove_adjacent_cable
+
 #get data
 scoreboard players set $base.temp_0 mech_data 0
 scoreboard players operation $base.temp_0 mech_data = @s[tag=!mech_battery_qu] mech_power
@@ -33,6 +36,9 @@ kill @s[tag=mech_energy_relay]
 execute if entity @s[tag=mech_machine_crafter] run loot spawn ~ ~ ~ loot mechanization:base/machine_crafting_table
 execute if entity @s[tag=mech_machine_crafter] at @s run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_machine_crafter]
+
+#Cable
+execute if entity @s[tag=mech_cable] at @s run function mechanization:base/machines/cable/break
 
 #resource blocks
 execute if entity @s[tag=mech_t1_machine_frame] at @s run loot spawn ~ ~ ~ loot mechanization:base/tier_1_machine_frame
