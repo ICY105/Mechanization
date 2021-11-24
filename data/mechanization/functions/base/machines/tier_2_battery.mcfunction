@@ -6,34 +6,11 @@ execute unless score @s mech_gridid matches -2147483648.. store result score @s 
 execute store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power
 execute store result entity @s Item.tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
 
-
-### Call API
-
-#rate
-scoreboard players operation $in_0 mech_data = $base.cf.t2_battery.rate mech_data
-execute if entity @s[tag=mech_upgraded] run scoreboard players operation $in_0 mech_data = $base.cf.t2_battery.rate_mu mech_data
-execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation $in_0 mech_data = $base.cf.t2_battery.rate_eu mech_data
-execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation $in_0 mech_data = $base.cf.t2_battery.rate_nu mech_data
-
-#buffer
-scoreboard players set $in_1 mech_data 4000
-
-#capacity
+#get capacity
 scoreboard players operation $in_2 mech_data = $base.cf.t2_battery.capacity mech_data
 execute if entity @s[tag=mech_upgraded] run scoreboard players operation $in_2 mech_data = $base.cf.t2_battery.capacity_mu mech_data
 execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation $in_2 mech_data = $base.cf.t2_battery.capacity_eu mech_data
-execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation $in_2 mech_data = $base.cf.t2_battery.capacity_nu mech_data
-
-#range
-scoreboard players operation $in_3 mech_data = $base.cf.t2_battery.range mech_data
-
-#effects
-execute if entity @s[tag=mech_no_effects] run scoreboard players set $in_4 mech_data 0
-execute if entity @s[tag=mech_effects] run scoreboard players set $in_4 mech_data 1
-
-#call
-function mechanization:base/energy/battery
-
+execute if entity @stag=mech_upgrade_nether] run scoreboard players operation $in_2 mech_data = $base.cf.t2_battery.capacity_nu mech_data
 
 ### energy display
 scoreboard players operation $in_0 mech_data = $in_2 mech_data
@@ -51,9 +28,9 @@ scoreboard players operation $in_1 mech_data += $in_2 mech_data
 execute store result entity @s Item.tag.CustomModelData int 1 run scoreboard players get $in_1 mech_data
 
 #Ambient Sounds
-execute if entity @s[scores={mech_timer=1}] run playsound mechanization:base.battery_ambient ambient @a[distance=..16] ~ ~ ~ 0.05
+execute if entity @s[scores={mech_timer=1}] run playsound mechanization:base.battery_ambient block @a[distance=..16] ~ ~ ~ 0.05
 scoreboard players add @s mech_timer 1
 scoreboard players set @s[scores={mech_timer=3}] mech_timer 0
 
 #Break
-execute at @s unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_machine_t2
+execute unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_machine_t2

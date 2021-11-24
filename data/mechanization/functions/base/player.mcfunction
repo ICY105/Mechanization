@@ -25,7 +25,3 @@ execute if score @s mech_usedid matches 1105 run scoreboard players set @s mech_
 execute if score @s mech_usedid matches 1105 run scoreboard players enable @s mech_manual
 execute if score @s mech_usedid matches 1105 store result score temp_0 mech_data run data get entity @s SelectedItem.tag.mech_version
 execute if score @s mech_usedid matches 1105 if score temp_0 mech_data matches ..5 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/start
-
-#assign grid id
-execute unless score @s mech_gridid matches -2147483648.. run scoreboard players set @s mech_gridid 0
-scoreboard players enable @s mech_gridid

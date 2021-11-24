@@ -5,23 +5,20 @@ kill @e[tag=du_furnace,distance=..0.5]
 #### Machines
 
 #batteries
-execute if score $id mech_data matches 1000 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery1","mech_power_storage","mech_effects","global.ignore"],CustomName:'{"translate":"mech.block.battery.tier_1"}',Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421900},Count:1b}}
-execute if score $id mech_data matches 1001 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery2","mech_power_storage","mech_effects","global.ignore"],CustomName:'{"translate":"mech.block.battery.tier_2"}',Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421909},Count:1b}}
-execute if score $id mech_data matches 1002 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery3","mech_power_storage","mech_effects","global.ignore"],CustomName:'{"translate":"mech.block.battery.tier_3"}',Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421918},Count:1b}}
+execute if score $id mech_data matches 1000 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery1","mech_power_storage","global.ignore"],CustomName:'{"translate":"mech.block.battery.tier_1"}',Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421900},Count:1b}}
+execute if score $id mech_data matches 1001 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery2","mech_power_storage","global.ignore"],CustomName:'{"translate":"mech.block.battery.tier_2"}',Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421909},Count:1b}}
+execute if score $id mech_data matches 1002 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery3","mech_power_storage","global.ignore"],CustomName:'{"translate":"mech.block.battery.tier_3"}',Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421918},Count:1b}}
 
 #capacitors
-#execute if score $id mech_data matches 1010 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_capacitor1","mech_power_storage","mech_effects","global.ignore"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421936},Count:1b}}
-#execute if score $id mech_data matches 1011 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_capacitor2","mech_power_storage","mech_effects","global.ignore"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421945},Count:1b}}
-#execute if score $id mech_data matches 1012 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_capacitor3","mech_power_storage","mech_effects","global.ignore"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421954},Count:1b}}
-execute if score $id mech_data matches 1010 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery1","mech_power_storage","mech_effects","global.ignore"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421900},Count:1b}}
-execute if score $id mech_data matches 1011 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery2","mech_power_storage","mech_effects","global.ignore"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421909},Count:1b}}
-execute if score $id mech_data matches 1012 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery3","mech_power_storage","mech_effects","global.ignore"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421918},Count:1b}}
+execute if score $id mech_data matches 1010 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery1","mech_power_storage","global.ignore"],CustomName:'{"translate":"mech.block.battery.tier_1"}',Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421900},Count:1b}}
+execute if score $id mech_data matches 1011 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery2","mech_power_storage","global.ignore"],CustomName:'{"translate":"mech.block.battery.tier_2"}',Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421909},Count:1b}}
+execute if score $id mech_data matches 1012 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery3","mech_power_storage","global.ignore"],CustomName:'{"translate":"mech.block.battery.tier_3"}',Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421918},Count:1b}}
 
 #creative battery
-execute if score $id mech_data matches 1006 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery3","mech_power_storage","mech_effects","mech_creative_battery","global.ignore"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421923},Count:1b}}
+execute if score $id mech_data matches 1006 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery3","mech_power_storage","mech_creative_battery","global.ignore"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421923},Count:1b}}
 
 #Quantum Battery
-execute if score $id mech_data matches 1003 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery_qu","mech_power_storage","mech_effects","global.ignore"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421927},Count:1b}}
+execute if score $id mech_data matches 1003 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_battery_qu","mech_power_storage","global.ignore"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421927},Count:1b}}
 execute if score $id mech_data matches 1003 run scoreboard players set @e[tag=mech_storage_qu,distance=..0.5] mech_data 0
 
 #Energy Relay
@@ -43,14 +40,20 @@ execute if score $id mech_data matches 1013 run setblock ~ ~ ~ minecraft:air
 execute if score $id mech_data matches 1013 align xyz positioned ~0.5 ~0.1 ~0.5 unless entity @e[tag=mech_cable,distance=..0.1] run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_cable","mech_copper_cable","mech_new","global.ignore"],CustomName:'{"translate":"mech.block.copper_cable"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Facing:1b,Silent:1b,Item:{id:"minecraft:weathered_copper",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421000}}}
 execute if score $id mech_data matches 1013 align xyz positioned ~0.5 ~0.1 ~0.5 as @e[tag=mech_copper_cable,tag=mech_new,distance=..0.1,sort=nearest,limit=1] run function mechanization:base/machines/cable/place
 
+
 ### run global functions
 
+#run plae block tage
 function #mechanization:place_block
+
+#init power score
 scoreboard players set @e[tag=mech_receiver,distance=..0.75] mech_power 0
 scoreboard players set @e[tag=mech_transmitter,distance=..0.75] mech_power 0
-#scoreboard players operation @e[scores={mech_power=0..},sort=nearest,limit=1,distance=..0.75] mech_gridid = @p mech_gridid
-kill @e[tag=du_furnace,type=area_effect_cloud,distance=..0.75]
 
+#kill du furnace cloud
+kill @e[tag=du_furnace,type=marker,distance=..0.75,sort=nearest,limit=1]
+
+#connect to cables
 execute as @e[type=#mechanization:valid_block_entities,tag=!mech_cable_init,tag=mech_receiver,sort=nearest,limit=1,distance=..0.75] at @s run function mechanization:base/machines/cable/add_adjacent_cable
 execute as @e[type=#mechanization:valid_block_entities,tag=!mech_cable_init,tag=mech_transmitter,sort=nearest,limit=1,distance=..0.75] at @s run function mechanization:base/machines/cable/add_adjacent_cable
 execute as @e[type=#mechanization:valid_block_entities,tag=!mech_cable_init,tag=mech_power_storage,sort=nearest,limit=1,distance=..0.75] at @s run function mechanization:base/machines/cable/add_adjacent_cable
