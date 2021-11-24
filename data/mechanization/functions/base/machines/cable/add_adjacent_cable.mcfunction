@@ -1,4 +1,5 @@
 
+tag @s add mech_cable_init
 scoreboard players set $temp_1 mech_data 0
 
 scoreboard players set $in_0 mech_data 0

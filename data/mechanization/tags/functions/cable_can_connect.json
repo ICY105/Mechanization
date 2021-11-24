@@ -1,6 +1,6 @@
 {
 	"required":false,
 	"values":[
-	
+		"mechanization:base/tools/cable_can_connect"
 	]
 }

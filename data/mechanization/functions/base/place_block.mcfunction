@@ -43,18 +43,17 @@ execute if score $id mech_data matches 1013 run setblock ~ ~ ~ minecraft:air
 execute if score $id mech_data matches 1013 align xyz positioned ~0.5 ~0.1 ~0.5 unless entity @e[tag=mech_cable,distance=..0.1] run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_cable","mech_copper_cable","mech_new","global.ignore"],CustomName:'{"translate":"mech.block.copper_cable"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Facing:1b,Silent:1b,Item:{id:"minecraft:weathered_copper",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421000}}}
 execute if score $id mech_data matches 1013 align xyz positioned ~0.5 ~0.1 ~0.5 as @e[tag=mech_copper_cable,tag=mech_new,distance=..0.1,sort=nearest,limit=1] run function mechanization:base/machines/cable/place
 
-
-
-
-
 ### run global functions
 
 function #mechanization:place_block
 scoreboard players set @e[tag=mech_receiver,distance=..0.75] mech_power 0
 scoreboard players set @e[tag=mech_transmitter,distance=..0.75] mech_power 0
 #scoreboard players operation @e[scores={mech_power=0..},sort=nearest,limit=1,distance=..0.75] mech_gridid = @p mech_gridid
-execute as @e[scores={mech_power=0..},sort=nearest,limit=1,distance=..0.5] at @s run function mechanization:base/machines/cable/add_adjacent_cable
 kill @e[tag=du_furnace,type=area_effect_cloud,distance=..0.75]
+
+execute as @e[type=#mechanization:valid_block_entities,tag=!mech_cable_init,tag=mech_receiver,sort=nearest,limit=1,distance=..0.75] at @s run function mechanization:base/machines/cable/add_adjacent_cable
+execute as @e[type=#mechanization:valid_block_entities,tag=!mech_cable_init,tag=mech_transmitter,sort=nearest,limit=1,distance=..0.75] at @s run function mechanization:base/machines/cable/add_adjacent_cable
+execute as @e[type=#mechanization:valid_block_entities,tag=!mech_cable_init,tag=mech_power_storage,sort=nearest,limit=1,distance=..0.75] at @s run function mechanization:base/machines/cable/add_adjacent_cable
 
 #set stored data
 execute store result score $temp_1 mech_data run data get entity @s SelectedItem.tag.mech_upgrade

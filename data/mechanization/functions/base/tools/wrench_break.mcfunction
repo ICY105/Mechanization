@@ -1,6 +1,8 @@
 
 #break adjacent cables
-execute if score @s[tag=!mech_cable] mech_power matches -2147483648.. at @s run function mechanization:base/machines/cable/remove_adjacent_cable
+execute if score @s[tag=mech_receiver] mech_power matches -2147483648.. at @s run function mechanization:base/machines/cable/remove_adjacent_cable
+execute if score @s[tag=mech_transmitter] mech_power matches -2147483648.. at @s run function mechanization:base/machines/cable/remove_adjacent_cable
+execute if score @s[tag=mech_power_storage] mech_power matches -2147483648.. at @s run function mechanization:base/machines/cable/remove_adjacent_cable
 
 #get data
 scoreboard players set $base.temp_0 mech_data 0
