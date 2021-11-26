@@ -10,6 +10,9 @@ scoreboard objectives add mech_usedid dummy
 scoreboard objectives add mech_tele trigger
 scoreboard objectives add mech_manual trigger
 
+scoreboard objectives add mechanization.grid_energy dummy
+scoreboard objectives add mechanization.storage_capacity dummy
+
 scoreboard objectives add mech_firerate dummy
 scoreboard objectives add mech_weaponheat dummy
 scoreboard objectives add mech_itemslot dummy

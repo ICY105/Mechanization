@@ -1,0 +1,10 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "mech_gridid": 0
+    }
+  }
+}

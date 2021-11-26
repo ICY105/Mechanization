@@ -1,0 +1,22 @@
+[
+  {
+    "condition": "minecraft:entity_scores",
+    "entity": "this",
+    "scores": {
+      "mech_gridid": {
+        "min": -2147483648,
+        "max": 2147483647
+      }
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "mech_gridid": 0
+      }
+    }
+  }
+]

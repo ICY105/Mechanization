@@ -10,7 +10,9 @@ execute store result entity @s Item.tag.mech_gridid int 1 run scoreboard players
 scoreboard players operation $in_2 mech_data = $base.cf.t2_battery.capacity mech_data
 execute if entity @s[tag=mech_upgraded] run scoreboard players operation $in_2 mech_data = $base.cf.t2_battery.capacity_mu mech_data
 execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation $in_2 mech_data = $base.cf.t2_battery.capacity_eu mech_data
-execute if entity @stag=mech_upgrade_nether] run scoreboard players operation $in_2 mech_data = $base.cf.t2_battery.capacity_nu mech_data
+execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation $in_2 mech_data = $base.cf.t2_battery.capacity_nu mech_data
+
+scoreboard players operation @s mechanization.storage_capacity = $in_2 mech_data
 
 ### energy display
 scoreboard players operation $in_0 mech_data = $in_2 mech_data
