@@ -13,6 +13,7 @@ execute if entity @s[tag=mech_upgrade_ender] run scoreboard players operation $i
 execute if entity @s[tag=mech_upgrade_nether] run scoreboard players operation $in_2 mech_data = $base.cf.t3_battery.capacity_nu mech_data
 
 scoreboard players operation @s mechanization.storage_capacity = $in_2 mech_data
+scoreboard players set @s[tag=mech_creative_battery] mech_power 250000
 
 ### energy display
 scoreboard players operation $in_0 mech_data = $in_2 mech_data
