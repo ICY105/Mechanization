@@ -17,7 +17,8 @@ execute if entity @s[tag=mech_upgrade_ender] run scoreboard players set $base.te
 execute if entity @s[tag=mech_battery1] run loot spawn ~ ~ ~ loot mechanization:base/tier_1_battery
 execute if entity @s[tag=mech_battery2] run loot spawn ~ ~ ~ loot mechanization:base/tier_2_battery
 execute if entity @s[tag=mech_battery3] run loot spawn ~ ~ ~ loot mechanization:base/tier_3_battery
-execute if entity @s[tag=mech_battery_qu] run loot spawn ~ ~ ~ loot mechanization:base/quantum_battery
+#execute if entity @s[tag=mech_battery_qu] run loot spawn ~ ~ ~ loot mechanization:base/quantum_battery
+execute if entity @s[tag=mech_battery_qu] run loot spawn ~ ~ ~ loot mechanization:base/tier_3_battery
 
 #execute if entity @s[tag=mech_capacitor1] run loot spawn ~ ~ ~ loot mechanization:base/tier_1_capacitor
 #execute if entity @s[tag=mech_capacitor2] run loot spawn ~ ~ ~ loot mechanization:base/tier_2_capacitor
