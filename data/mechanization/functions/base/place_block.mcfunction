@@ -37,13 +37,23 @@ execute if score $id mech_data matches 1005 run setblock ~ ~ ~ minecraft:barrel{
 
 #copper cable
 execute if score $id mech_data matches 1013 run setblock ~ ~ ~ minecraft:air
-execute if score $id mech_data matches 1013 align xyz positioned ~0.5 ~0.1 ~0.5 unless entity @e[tag=mech_cable,distance=..0.1] run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_cable","mech_copper_cable","mech_new","global.ignore"],CustomName:'{"translate":"mech.block.copper_cable"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Facing:1b,Silent:1b,Item:{id:"minecraft:weathered_copper",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421000}}}
+execute if score $id mech_data matches 1013 align xyz positioned ~0.5 ~0.1 ~0.5 unless entity @e[tag=mech_cable,distance=..0.1] run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_cable","mech_copper_cable","mech_new","global.ignore"],CustomName:'{"translate":"mech.block.copper_cable"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Facing:1b,Silent:1b,Item:{id:"minecraft:copper_block",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421000}}}
 execute if score $id mech_data matches 1013 align xyz positioned ~0.5 ~0.1 ~0.5 as @e[tag=mech_copper_cable,tag=mech_new,distance=..0.1,sort=nearest,limit=1] run function mechanization:base/machines/cable/place
+
+#conductive cable
+execute if score $id mech_data matches 1014 run setblock ~ ~ ~ minecraft:air
+execute if score $id mech_data matches 1014 align xyz positioned ~0.5 ~0.1 ~0.5 unless entity @e[tag=mech_cable,distance=..0.1] run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_cable","mech_conductive_cable","mech_new","global.ignore"],CustomName:'{"translate":"mech.block.conductive_cable"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Facing:1b,Silent:1b,Item:{id:"minecraft:exposed_copper",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421000}}}
+execute if score $id mech_data matches 1014 align xyz positioned ~0.5 ~0.1 ~0.5 as @e[tag=mech_conductive_cable,tag=mech_new,distance=..0.1,sort=nearest,limit=1] run function mechanization:base/machines/cable/place
+
+#super conductive cable
+execute if score $id mech_data matches 1015 run setblock ~ ~ ~ minecraft:air
+execute if score $id mech_data matches 1015 align xyz positioned ~0.5 ~0.1 ~0.5 unless entity @e[tag=mech_cable,distance=..0.1] run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_cable","mech_super_conductive_cable","mech_new","global.ignore"],CustomName:'{"translate":"mech.block.super_conductive_cable"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Facing:1b,Silent:1b,Item:{id:"minecraft:weathered_copper",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6421000}}}
+execute if score $id mech_data matches 1015 align xyz positioned ~0.5 ~0.1 ~0.5 as @e[tag=mech_super_conductive_cable,tag=mech_new,distance=..0.1,sort=nearest,limit=1] run function mechanization:base/machines/cable/place
 
 
 ### run global functions
 
-#run plae block tage
+#run place block tage
 function #mechanization:place_block
 
 #init power score

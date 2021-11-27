@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.block.copper_cable","color":"dark_aqua","italic":false}
+			  "name": {"translate":"mech.block.super_conductive_cable","color":"dark_purple","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1013, CustomModelData: 6421013, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{mech_itemid: 1015, CustomModelData: 6421015, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
             }
           ]
         }

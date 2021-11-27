@@ -7,10 +7,10 @@ execute positioned ~ ~ ~-1 if entity @s[distance=..0.1] run scoreboard players a
 execute positioned ~ ~ ~-1 if entity @s[distance=..0.1] run scoreboard players add @s mech_data 8
 execute positioned ~ ~ ~1 if entity @s[distance=..0.1] run scoreboard players add $temp_0 mech_data 8
 execute positioned ~ ~ ~1 if entity @s[distance=..0.1] run scoreboard players add @s mech_data 4
-execute positioned ~1 ~ ~ if entity @s[distance=..0.1] run scoreboard players add $temp_0 mech_data 32
-execute positioned ~1 ~ ~ if entity @s[distance=..0.1] run scoreboard players add @s mech_data 16
-execute positioned ~-1 ~ ~ if entity @s[distance=..0.1] run scoreboard players add $temp_0 mech_data 16
-execute positioned ~-1 ~ ~ if entity @s[distance=..0.1] run scoreboard players add @s mech_data 32
+execute positioned ~1 ~ ~ if entity @s[distance=..0.1] run scoreboard players add $temp_0 mech_data 16
+execute positioned ~1 ~ ~ if entity @s[distance=..0.1] run scoreboard players add @s mech_data 32
+execute positioned ~-1 ~ ~ if entity @s[distance=..0.1] run scoreboard players add $temp_0 mech_data 32
+execute positioned ~-1 ~ ~ if entity @s[distance=..0.1] run scoreboard players add @s mech_data 16
 
 scoreboard players set $temp_2 mech_data 6421000
 scoreboard players operation $temp_2 mech_data += @s mech_data
