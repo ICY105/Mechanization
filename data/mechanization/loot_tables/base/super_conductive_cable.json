@@ -15,6 +15,7 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
+				{"translate":"mech.lore.transfer","color":"white","italic":false,"with":["Infinite"]},
 			    {"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
