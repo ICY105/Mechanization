@@ -1,7 +1,7 @@
 
 #start
-execute unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s Item.tag.mech_power
-execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s Item.tag.mech_gridid
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s Item.tag.mech_power
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s Item.tag.mech_gridid
 
 #check for disk
 execute unless score @s mech_data matches 1.. run scoreboard players set @s mech_data 1
@@ -51,8 +51,8 @@ execute if score $base.timer_20 du_data matches 0 if entity @s[tag=mech_active] 
 execute if entity @s[tag=!mech_active] store result entity @s Item.tag.CustomModelData int 6425903 if entity @s
 
 #cleanup
-execute store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power
-execute store result entity @s Item.tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
+execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power
+execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
 
 execute unless block ~ ~ ~ minecraft:barrel if entity @s[tag=mech_active] run function mechanization:assembly/machines/mss/get_drive/terminal_insert
 execute unless block ~ ~ ~ minecraft:barrel if entity @s[tag=mech_active] run kill @e[type=item,distance=..0.5]

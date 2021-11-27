@@ -1,10 +1,10 @@
 
 ## load scoreboard values
-execute unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s Item.tag.mech_power
-execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s Item.tag.mech_gridid
-execute unless score @s mech_fluid matches -2147483648.. store result score @s mech_fluid run data get entity @s Item.tag.mech_fluid
-execute unless score @s du_data matches -2147483648.. store result score @s du_data run data get entity @s Item.tag.du_data
-execute unless score @s mech_usedid matches -2147483648.. store result score @s mech_usedid run data get entity @s Item.tag.mech_usedid
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s Item.tag.mech_power
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s Item.tag.mech_gridid
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_fluid matches -2147483648.. store result score @s mech_fluid run data get entity @s Item.tag.mech_fluid
+execute if score $base.cf.backup mech_data matches 1 unless score @s du_data matches -2147483648.. store result score @s du_data run data get entity @s Item.tag.du_data
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_usedid matches -2147483648.. store result score @s mech_usedid run data get entity @s Item.tag.mech_usedid
 
 ### Main
 
@@ -32,11 +32,11 @@ execute if data block ~ ~ ~ Items[{Slot:7b}] run function mechanization:machines
 function mechanization:machines/machines/alloy_furnace/gui
 
 ## store scoreboard values
-execute store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power
-execute store result entity @s Item.tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
-execute store result entity @s Item.tag.mech_fluid int 1 run scoreboard players get @s mech_fluid
-execute store result entity @s Item.tag.du_data int 1 run scoreboard players get @s du_data
-execute store result entity @s Item.tag.mech_usedid int 1 run scoreboard players get @s mech_usedid
+execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power
+execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
+execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_fluid int 1 run scoreboard players get @s mech_fluid
+execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.du_data int 1 run scoreboard players get @s du_data
+execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_usedid int 1 run scoreboard players get @s mech_usedid
 
 ## cleanup
 execute unless block ~ ~ ~ minecraft:barrel run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes

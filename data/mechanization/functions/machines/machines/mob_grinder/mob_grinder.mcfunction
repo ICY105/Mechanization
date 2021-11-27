@@ -1,8 +1,8 @@
 
 #load scoreboard values
-execute unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s Item.tag.mech_power
-execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s Item.tag.mech_gridid
-execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s Item.tag.mech_fluid
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s Item.tag.mech_power
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s Item.tag.mech_gridid
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s Item.tag.mech_fluid
 
 ## Main
 function du:world/blocks/is_active
@@ -22,9 +22,9 @@ execute if score $world.out_0 du_data matches 0 if score $temp_0 mech_data match
 execute if score $world.out_0 du_data matches 0 if score $temp_0 mech_data matches 1.. if entity @s[tag=mech_upgraded] run scoreboard players operation @s mech_fluid += $temp_0 mech_data
 
 #store scoreboard values
-execute store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power
-execute store result entity @s Item.tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
-execute store result entity @s Item.tag.mech_fluid int 1 run scoreboard players get @s mech_fluid
+execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power
+execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
+execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_fluid int 1 run scoreboard players get @s mech_fluid
 
 #cleanup
 execute unless block ~ ~ ~ minecraft:barrier run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes

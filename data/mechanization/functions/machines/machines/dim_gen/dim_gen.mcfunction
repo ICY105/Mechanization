@@ -1,8 +1,8 @@
 
 #load scoreboard values
-execute unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s Item.tag.mech_power
-execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s Item.tag.mech_gridid
-execute unless score @s mech_data matches -2147483648.. store result score @s mech_data run data get entity @s Item.tag.mech_data
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s Item.tag.mech_power
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s Item.tag.mech_gridid
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_data matches -2147483648.. store result score @s mech_data run data get entity @s Item.tag.mech_data
 
 #main
 execute if entity @s[scores={mech_power=..4000,mech_data=..0},tag=!mech_upgrade_ender,tag=!mech_upgrade_nether] if data block ~ ~ ~ Items[{Slot:0b}] run function mechanization:machines/machines/dim_gen/fuel_overworld
@@ -27,9 +27,9 @@ execute if entity @s[scores={mech_power=..4000,mech_data=1..},tag=mech_upgraded]
 execute if entity @s[scores={mech_power=..4000,mech_data=1..}] run scoreboard players remove @s mech_data 1
 
 #store scoreboard values
-execute store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power
-execute store result entity @s Item.tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
-execute store result entity @s Item.tag.mech_data int 1 run scoreboard players get @s mech_data
+execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power
+execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
+execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_data int 1 run scoreboard players get @s mech_data
 
 #cleanup
 execute unless block ~ ~ ~ minecraft:furnace run function mechanization:base/utils/break_machine_t3

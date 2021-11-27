@@ -5,6 +5,11 @@
 #   scoreboard players set $base.cf.tin_rarity mech_data 24
 # This would greatly increase how much tin ore generates per chunk
 
+
+# [0,1] Use scoreboard backup systems. This will restore certain data lost do to corruption or updates.
+# Disabling can improve performance but may result in loss of data- take backups!
+scoreboard players set $base.cf.backup mech_data 1
+
 ### Ore Generation
 
 # [0,1] Use small world height generation (0-255).
@@ -21,6 +26,8 @@ scoreboard players set $base.cf.uranium_rarity mech_data 2
 
 # [0,32] Veins of Additional Emerald ore per Chunk (not biome restricted)
 scoreboard players set $base.cf.emerald_rarity mech_data 1
+
+### Machines
 
 # [1,2000000000] Tier 1 Battery Capacity (no upgrade, machine upgrade, ender upgrade, nether upgrade)
 scoreboard players set $base.cf.t1_battery.capacity mech_data 50000

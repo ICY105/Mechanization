@@ -1,7 +1,7 @@
 
 #load scoreboard values
-execute unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s HandItems[1].tag.mech_power
-execute unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s HandItems[1].tag.mech_gridid
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s HandItems[1].tag.mech_power
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s HandItems[1].tag.mech_gridid
 
 ### Main
 
@@ -37,8 +37,8 @@ scoreboard players operation temp_3 mech_data += temp_0 mech_data
 execute if score temp_1 mech_data matches 1.. if score temp_2 mech_data matches 1.. store result entity @s HandItems[0].tag.CustomModelData int 1 run scoreboard players get temp_3 mech_data
 
 #store scoreboard values
-execute store result entity @s HandItems[1].tag.mech_power int 1 run scoreboard players get @s mech_power
-execute store result entity @s HandItems[1].tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
+execute if score $base.cf.backup mech_data matches 1 store result entity @s HandItems[1].tag.mech_power int 1 run scoreboard players get @s mech_power
+execute if score $base.cf.backup mech_data matches 1 store result entity @s HandItems[1].tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
 
 ### cleanup
 execute unless block ~ ~ ~ barrier run kill @s

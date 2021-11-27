@@ -1,6 +1,6 @@
 
 ## load scoreboard values
-execute unless score @s mech_fluid matches -2147483648.. store result score @s mech_fluid run data get entity @s Item.tag.mech_fluid
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_fluid matches -2147483648.. store result score @s mech_fluid run data get entity @s Item.tag.mech_fluid
 
 ### Main
 
@@ -19,7 +19,7 @@ execute if score @s mech_fluid matches 1.. if entity @s[tag=mech_t1_liquid_tank]
 execute if score @s mech_fluid matches 1.. if entity @s[tag=mech_t2_liquid_tank] if data entity @s Item.tag.tank.tag.ctc.traits.liquid.gas run function mechanization:machines/machines/liquid_tank/burst
 
 ## store scoreboard values
-execute store result entity @s Item.tag.mech_fluid int 1 run scoreboard players get @s mech_fluid
+execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_fluid int 1 run scoreboard players get @s mech_fluid
 
 ## cleanup
 execute unless block ~ ~ ~ minecraft:dropper run function mechanization:machines/machines/liquid_tank/break_hard
