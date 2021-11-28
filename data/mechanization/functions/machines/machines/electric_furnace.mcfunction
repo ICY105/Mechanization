@@ -29,7 +29,7 @@ execute if block ~ ~ ~ furnace[lit=false] unless block ~ ~ ~ furnace{BurnTime:0s
 
 execute if block ~ ~ ~ furnace[lit=false] store success entity @s Item.tag.CustomModelData int 6422003 if entity @s
 execute if block ~ ~ ~ furnace[lit=true] store success entity @s Item.tag.CustomModelData int 6422905 if entity @s
-execute if block ~ ~ ~ furnace[lit=true] run playsound mechanization:machines.electric_furnace block @a[distance=..16] ~ ~ ~ 0.75 1
+execute if block ~ ~ ~ furnace[lit=true] if entity @s[tag=!mech_muffler] run playsound mechanization:machines.electric_furnace block @a[distance=..16] ~ ~ ~ 0.75 1
 
 ## store scoreboard values
 execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power

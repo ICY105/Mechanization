@@ -31,6 +31,7 @@ Base Module [01]: {
 		Bucket				[06-1106]
 		Bottle				[07-1107]
 		Vial				[08-1108]
+		Muffler Upgrade		[09-1109]
 	}
 	Resources [3]: {		
 		Tin Ore				[10-1310]

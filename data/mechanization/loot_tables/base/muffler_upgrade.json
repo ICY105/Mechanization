@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.muffler_upgrade","color":"dark_aqua","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{mech_itemid: 1109, CustomModelData: 6421109, HideFlags: 6, Unbreakable:1b, ctc:{ id:\"muffler_upgrade\", from:\"mechanization\", traits:{ item:1b }} }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

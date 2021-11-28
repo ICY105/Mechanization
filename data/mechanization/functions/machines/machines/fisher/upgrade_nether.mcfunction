@@ -5,4 +5,4 @@ execute if score @s mech_power >= $machines.cf.fisher.power mech_data store resu
 execute if score temp_0 mech_data matches 120.. run scoreboard players operation @s mech_power -= $machines.cf.fisher.power mech_data
 execute if score temp_0 mech_data matches 120.. run loot spawn ~ ~-1 ~ loot mechanization:gameplay/fishing
 execute if score temp_0 mech_data matches 120.. run loot spawn ~ ~-1 ~ loot mechanization:gameplay/fishing
-execute if score temp_0 mech_data matches 120.. run playsound mechanization:machines.fisher block @a[distance=..16] ~ ~ ~
+execute if score temp_0 mech_data matches 120.. if entity @s[tag=!mech_muffler] run playsound mechanization:machines.fisher block @a[distance=..16] ~ ~ ~

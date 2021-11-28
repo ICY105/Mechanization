@@ -16,7 +16,7 @@ execute store success entity @s Item.tag.CustomModelData int 6422015 if entity @
 execute if entity @s[scores={mech_power=..4000,mech_data=1..}] store success entity @s Item.tag.CustomModelData int 6422911 if entity @s
 
 #effect
-execute if entity @s[scores={mech_power=..4000,mech_data=1..}] run playsound mechanization:machines.ender_generator block @a[distance=..16] ~ ~ ~ 0.2 1
+execute if entity @s[scores={mech_power=..4000,mech_data=1..},tag=!mech_muffler] run playsound mechanization:machines.ender_generator block @a[distance=..16] ~ ~ ~ 0.2 1
 scoreboard players set temp_0 mech_data 20
 scoreboard players operation temp_0 mech_data *= @s mech_data
 execute store result block ~ ~ ~ BurnTime short 1 run scoreboard players get temp_0 mech_data

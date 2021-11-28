@@ -26,7 +26,7 @@ execute if score @s mech_timer matches 1.. run scoreboard players operation @s m
 execute if score @s mech_timer matches 1.. run scoreboard players remove @s mech_timer 1
 execute if score @s mech_timer matches 1.. unless data block ~ ~ ~ Items[{Slot:0b}] run scoreboard players set @s mech_timer 0
 
-execute if score @s mech_timer matches 1.. run playsound mechanization:machines.grinder block @a[distance=..16] ~ ~ ~ 0.75 0.9
+execute if score @s mech_timer matches 1.. if entity @s[tag=!mech_muffler] run playsound mechanization:machines.grinder block @a[distance=..16] ~ ~ ~ 0.75 0.9
 execute if score @s mech_timer matches 1.. store success entity @s Item.tag.CustomModelData int 6422907 if entity @s
 execute if score @s mech_timer matches 0 store success entity @s Item.tag.CustomModelData int 6422009 if entity @s
 

@@ -11,7 +11,7 @@ execute if score $base.cf.backup mech_data matches 1 unless score @s mech_usedid
 #effects
 execute if score @s mech_timer matches 0 store success entity @s Item.tag.CustomModelData int 6422000 if entity @s
 execute if score @s mech_timer matches 1.. store success entity @s Item.tag.CustomModelData int 6422901 if entity @s
-execute if score @s mech_timer matches 1.. run playsound mechanization:machines.electric_furnace block @a[distance=..16] ~ ~ ~ 0.3 1
+execute if score @s[tag=!mech_muffler] mech_timer matches 1.. run playsound mechanization:machines.electric_furnace block @a[distance=..16] ~ ~ ~ 0.3 1
 
 #function
 execute if score @s[tag=!mech_upgraded] mech_timer matches 1 run function mechanization:machines/machines/alloy_furnace/recipes/output_normal

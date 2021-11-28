@@ -22,7 +22,7 @@ execute if score temp_0 mech_data matches 1.. positioned ~ ~ ~1 store result ent
 
 #power & effects
 execute if score temp_0 mech_data matches 1.. run scoreboard players remove @s mech_power 160
-execute if score temp_0 mech_data matches 1.. run playsound mechanization:machines.tree_feller block @a[distance=..16] ~ ~ ~
+execute if score temp_0 mech_data matches 1.. if entity @s[tag=!mech_muffler] run playsound mechanization:machines.tree_feller block @a[distance=..16] ~ ~ ~
 
 #replant
 execute if entity @s[tag=mech_upgraded,tag=!mech_active] positioned ~ ~ ~-1 run function mechanization:machines/machines/tree_feller/replant

@@ -30,7 +30,7 @@ scoreboard players operation $in_1 mech_data += $in_2 mech_data
 execute store result entity @s Item.tag.CustomModelData int 1 run scoreboard players get $in_1 mech_data
 
 #Ambient Sounds
-execute if entity @s[scores={mech_timer=1}] run playsound mechanization:base.battery_ambient block @a[distance=..16] ~ ~ ~ 0.05
+execute if entity @s[scores={mech_timer=1},tag=!mech_muffler] run playsound mechanization:base.battery_ambient block @a[distance=..16] ~ ~ ~ 0.05
 scoreboard players add @s mech_timer 1
 scoreboard players set @s[scores={mech_timer=3}] mech_timer 0
 

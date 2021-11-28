@@ -14,6 +14,7 @@ execute if entity @s[tag=du_right_click] if score @s mech_usedid matches 1101 ru
 execute if entity @s[tag=mech_right_click] if score @s mech_usedid matches 1102 run function mechanization:base/tools/machine_upgrade
 execute if entity @s[tag=mech_right_click] if score @s mech_usedid matches 1103 run function mechanization:base/tools/nether_upgrade
 execute if entity @s[tag=mech_right_click] if score @s mech_usedid matches 1104 run function mechanization:base/tools/ender_upgrade
+execute if entity @s[tag=mech_right_click] if score @s mech_usedid matches 1109 run function mechanization:base/tools/muffler_upgrade
 
 #manual
 loot give @s[tag=!mech_has_manual] loot mechanization:base/manual/start
