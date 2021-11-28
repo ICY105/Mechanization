@@ -28,7 +28,7 @@ execute if score $id mech_data matches 1000..1004 run scoreboard players set @e[
 execute if score $id mech_data matches 1010..1012 run scoreboard players set @e[tag=mech_power_storage,distance=..0.75] mech_power 0
 
 #Energy Relay
-execute if score $id mech_data matches 1004 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_energy_relay","mech_receiver","mech_no_upgrade","global.ignore"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{mech_power:0,mech_gridid:0,CustomModelData:6421004},Count:1b}}
+execute if score $id mech_data matches 1004 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_energy_relay","mech_receiver","mech_no_upgrade","global.ignore"],Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:carrot_on_a_stick",tag:{mech_data:0,mech_power:0,mech_gridid:0,CustomModelData:6421004},Count:1b}}
 execute if score $id mech_data matches 1004 run scoreboard players set @e[tag=mech_energy_relay,distance=..0.5] mech_power 0
 
 #machine crafter
