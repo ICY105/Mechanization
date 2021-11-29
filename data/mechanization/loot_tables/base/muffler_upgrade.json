@@ -15,6 +15,7 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
+			    {"translate":"mech.item.machine_upgrade.lore_1","color":"white","italic":false,"with":[{"translate":"mech.lore.sneak"},{"text":"\uee08","font":"mechanization:gui"}]},
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},

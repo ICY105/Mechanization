@@ -9,6 +9,7 @@ execute if predicate mechanization:recipes/base/multimeter run loot replace bloc
 execute if predicate mechanization:recipes/base/vial run loot replace block ~ ~ ~ container.16 loot mechanization:base/vial
 
 #machine upgrades
+execute if predicate mechanization:recipes/base/muffler_upgrade run loot replace block ~ ~ ~ container.16 loot mechanization:base/muffler_upgrade
 execute if predicate mechanization:recipes/base/machine_upgrade run loot replace block ~ ~ ~ container.16 loot mechanization:base/machine_upgrade
 execute if predicate mechanization:recipes/base/ender_upgrade run loot replace block ~ ~ ~ container.16 loot mechanization:base/ender_upgrade
 execute if predicate mechanization:recipes/base/nether_upgrade run loot replace block ~ ~ ~ container.16 loot mechanization:base/nether_upgrade
@@ -22,7 +23,7 @@ execute if predicate mechanization:recipes/base/tier_3_machine_frame run loot re
 execute if predicate mechanization:recipes/base/tier_1_battery run loot replace block ~ ~ ~ container.16 loot mechanization:base/tier_1_battery
 execute if predicate mechanization:recipes/base/tier_2_battery run loot replace block ~ ~ ~ container.16 loot mechanization:base/tier_2_battery
 execute if predicate mechanization:recipes/base/tier_3_battery run loot replace block ~ ~ ~ container.16 loot mechanization:base/tier_3_battery
-execute if predicate mechanization:recipes/base/quantum_battery run loot replace block ~ ~ ~ container.16 loot mechanization:base/quantum_battery
+#execute if predicate mechanization:recipes/base/quantum_battery run loot replace block ~ ~ ~ container.16 loot mechanization:base/quantum_battery
 
 #execute if predicate mechanization:recipes/base/tier_1_capacitor run loot replace block ~ ~ ~ container.16 loot mechanization:base/tier_1_capacitor
 #execute if predicate mechanization:recipes/base/tier_2_capacitor run loot replace block ~ ~ ~ container.16 loot mechanization:base/tier_2_capacitor
@@ -30,6 +31,11 @@ execute if predicate mechanization:recipes/base/quantum_battery run loot replace
 
 #Energy relay
 execute if predicate mechanization:recipes/base/energy_relay run loot replace block ~ ~ ~ container.16 loot mechanization:base/energy_relay
+
+#Cables
+execute if predicate mechanization:recipes/base/copper_cable run loot replace block ~ ~ ~ container.16 loot mechanization:base/resources_x8/copper_cable
+execute if predicate mechanization:recipes/base/conductive_cable run loot replace block ~ ~ ~ container.16 loot mechanization:base/resources_x8/conductive_cable
+execute if predicate mechanization:recipes/base/super_conductive_cable run loot replace block ~ ~ ~ container.16 loot mechanization:base/resources_x8/super_conductive_cable
 
 #manual
 execute if predicate mechanization:recipes/base/mechanical_manual run loot replace block ~ ~ ~ container.16 loot mechanization:base/manual/start

@@ -21,7 +21,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1105, CustomModelData: 6421105, HideFlags: 32, author:\"ImCoolYeah105\", title:\"Mechanical Manual\", mech_version:6 }"
+              "tag":"{mech_itemid: 1105, CustomModelData: 6421105, HideFlags: 32, author:\"ImCoolYeah105\", title:\"Mechanical Manual\", mech_version:7 }"
             },
             {
               "function": "minecraft:set_nbt",

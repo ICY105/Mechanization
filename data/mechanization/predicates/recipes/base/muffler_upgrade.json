@@ -1,0 +1,21 @@
+
+[
+  {
+	"condition": "minecraft:location_check",
+	"predicate": {
+	  "block": {
+		"nbt": "{Items:[
+		  {Slot:2b, id:\"minecraft:copper_ingot\"},
+		  {Slot:3b, id:\"minecraft:white_wool\"},
+		  {Slot:4b, id:\"minecraft:copper_ingot\"},
+		  {Slot:11b, id:\"minecraft:white_wool\"},
+		  {Slot:12b, id:\"minecraft:note_block\"},
+		  {Slot:13b, id:\"minecraft:white_wool\"},
+		  {Slot:20b, id:\"minecraft:copper_ingot\"},
+		  {Slot:21b, id:\"minecraft:white_wool\"},
+		  {Slot:22b, id:\"minecraft:copper_ingot\"}
+		]}"
+	  }
+	}
+  }
+]
