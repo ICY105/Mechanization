@@ -1,5 +1,5 @@
 
-scoreboard players operation $predicate mechanization.data = @s mech_gridid
+scoreboard players operation $predicate mech_data = @s mech_gridid
 
 execute if entity @s[tag=mech_copper_cable] run loot spawn ~ ~ ~ loot mechanization:base/copper_cable
 execute if entity @s[tag=mech_conductive_cable] run loot spawn ~ ~ ~ loot mechanization:base/conductive_cable

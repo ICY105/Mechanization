@@ -54,8 +54,8 @@ execute if entity @s[tag=mech_quarry] run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_quarry]
 
 #Teleporter
-execute if entity @s[tag=mechanization.player.teleportporter] run loot spawn ~ ~ ~ loot mechanization:machines/teleporter
-execute if entity @s[tag=mechanization.player.teleportporter] run function mechanization:machines/machines/teleporter/remove
+execute if entity @s[tag=mech_teleporter] run loot spawn ~ ~ ~ loot mechanization:machines/teleporter
+execute if entity @s[tag=mech_teleporter] run function mechanization:machines/machines/teleporter/remove
 
 #Growth Accelerator
 execute if entity @s[tag=mech_growth_accelerator] run loot spawn ~ ~ ~ loot mechanization:machines/growth_accelerator

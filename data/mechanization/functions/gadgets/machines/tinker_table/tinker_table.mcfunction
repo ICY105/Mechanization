@@ -8,7 +8,7 @@ item replace block -29999999 0 1601 container.10 with air
 data remove block -29999999 0 1601 Items[{tag:{du_gui:1b}}]
 loot give @p mine -29999999 0 1601 minecraft:air{drop_contents:true}
 
-scoreboard players set $in_0 mechanization.data 0
+scoreboard players set $in_0 mech_data 0
 function mechanization:gadgets/machines/tinker_table/reset_ui
 
 ### Main

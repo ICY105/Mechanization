@@ -19,7 +19,7 @@ execute if score $base.timer_20 du_data matches 12 as @e[type=minecraft:glow_ite
 
 execute if score $base.timer_20 du_data matches 5 as @e[type=minecraft:armor_stand,tag=mech_solar_panel] at @s run function mechanization:machines/machines/solar_panel/solar_panel
 execute if score $base.timer_20 du_data matches 6 as @e[type=minecraft:marker,tag=mech_block_breaker] at @s run function mechanization:machines/machines/block_breaker/block_breaker
-execute if score $base.timer_20 du_data matches 7 as @e[type=minecraft:item_frame,tag=mechanization.player.teleportporter] at @s run function mechanization:machines/machines/teleporter/teleporter
+execute if score $base.timer_20 du_data matches 7 as @e[type=minecraft:item_frame,tag=mech_teleporter] at @s run function mechanization:machines/machines/teleporter/teleporter
 execute if score $base.timer_20 du_data matches 8 as @e[type=minecraft:glow_item_frame,tag=mech_reformer] at @s run function mechanization:machines/machines/reformer/reformer
 execute if score $base.timer_20 du_data matches 9 as @e[type=minecraft:glow_item_frame,tag=mech_ench_station] at @s run function mechanization:machines/machines/ench_station/ench_station
 execute if score $base.timer_20 du_data matches 10 as @e[type=minecraft:glow_item_frame,tag=mech_dim_generator] at @s run function mechanization:machines/machines/dim_gen/dim_gen
@@ -39,10 +39,10 @@ execute if score $base.timer_100 du_data matches 50 as @e[type=minecraft:item_fr
 execute if score $base.timer_100 du_data matches 60 as @e[type=minecraft:item_frame,tag=mech_spawner_controller] at @s run function mechanization:machines/machines/spawner_controller
 
 #player tele trigger
-execute as @a at @s unless score @s mechanization.player.teleport matches 0 positioned ~ ~-0.5 ~ run scoreboard players operation @e[type=item_frame,tag=mechanization.player.teleportporter,distance=..1,limit=1] mechanization.data = @s mechanization.player.teleport
-scoreboard players set @a mechanization.player.teleport 0
+execute as @a at @s unless score @s mech_tele matches 0 positioned ~ ~-0.5 ~ run scoreboard players operation @e[type=item_frame,tag=mech_teleporter,distance=..1,limit=1] mech_data = @s mech_tele
+scoreboard players set @a mech_tele 0
 
 #Spawner Pickup
-execute as @a[gamemode=!adventure,tag=mech_right_click,scores={mechanization.player.used_item_id=2200}] at @s run function mechanization:machines/tools/spawner_mover/spawner_box
-execute as @a[gamemode=!adventure,tag=mech_right_click,scores={mechanization.player.used_item_id=2201}] at @s run function mechanization:machines/tools/spawner_mover/spawner_place
-execute as @a[gamemode=!adventure,tag=mech_right_click,scores={mechanization.player.used_item_id=2019}] at @s run function mechanization:machines/tools/spawner_mover/place_spawner_controller
+execute as @a[gamemode=!adventure,tag=mech_right_click,scores={mech_usedid=2200}] at @s run function mechanization:machines/tools/spawner_mover/spawner_box
+execute as @a[gamemode=!adventure,tag=mech_right_click,scores={mech_usedid=2201}] at @s run function mechanization:machines/tools/spawner_mover/spawner_place
+execute as @a[gamemode=!adventure,tag=mech_right_click,scores={mech_usedid=2019}] at @s run function mechanization:machines/tools/spawner_mover/place_spawner_controller

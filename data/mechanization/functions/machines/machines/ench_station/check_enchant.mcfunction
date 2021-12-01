@@ -13,13 +13,13 @@
 #10: swords
 #11: trident
 #12: fishing rod
-scoreboard players set $temp_1 mechanization.data -1
+scoreboard players set $temp_1 mech_data -1
 #cost multiplier
-scoreboard players set $out_1 mechanization.data -1
+scoreboard players set $out_1 mech_data -1
 #max lvl
-scoreboard players set $out_2 mechanization.data -1
+scoreboard players set $out_2 mech_data -1
 #max overenchant lvl
-scoreboard players set $out_3 mechanization.data -1
+scoreboard players set $out_3 mech_data -1
 
 #set output
 execute if data storage du:temp {var:"minecraft:unbreaking"} run function mechanization:machines/machines/ench_station/enchantments/unbreaking
@@ -72,18 +72,18 @@ execute if data storage du:temp {var:"minecraft:luck_of_the_sea"} run function m
 execute if data storage du:temp {var:"minecraft:lure"} run function mechanization:machines/machines/ench_station/enchantments/lure
 
 #get valid
-scoreboard players set $out_0 mechanization.data 0
+scoreboard players set $out_0 mech_data 0
 
-execute if score $temp_1 mechanization.data matches 0 if score $in_0 mechanization.data matches 0.. run scoreboard players set $out_0 mechanization.data 1
-execute if score $temp_1 mechanization.data matches 1 if score $in_0 mechanization.data matches 1..2 run scoreboard players set $out_0 mechanization.data 1
-execute if score $temp_1 mechanization.data matches 2 if score $in_0 mechanization.data matches 3..5 run scoreboard players set $out_0 mechanization.data 1
-execute if score $temp_1 mechanization.data matches 3 if score $in_0 mechanization.data matches 6..9 run scoreboard players set $out_0 mechanization.data 1
-execute if score $temp_1 mechanization.data matches 4 if score $in_0 mechanization.data matches 6 run scoreboard players set $out_0 mechanization.data 1
-execute if score $temp_1 mechanization.data matches 5 if score $in_0 mechanization.data matches 7 run scoreboard players set $out_0 mechanization.data 1
-execute if score $temp_1 mechanization.data matches 6 if score $in_0 mechanization.data matches 8 run scoreboard players set $out_0 mechanization.data 1
-execute if score $temp_1 mechanization.data matches 7 if score $in_0 mechanization.data matches 9 run scoreboard players set $out_0 mechanization.data 1
-execute if score $temp_1 mechanization.data matches 8 if score $in_0 mechanization.data matches 10 run scoreboard players set $out_0 mechanization.data 1
-execute if score $temp_1 mechanization.data matches 9 if score $in_0 mechanization.data matches 11 run scoreboard players set $out_0 mechanization.data 1
-execute if score $temp_1 mechanization.data matches 10 if score $in_0 mechanization.data matches 1 run scoreboard players set $out_0 mechanization.data 1
-execute if score $temp_1 mechanization.data matches 11 if score $in_0 mechanization.data matches 12 run scoreboard players set $out_0 mechanization.data 1
-execute if score $temp_1 mechanization.data matches 12 if score $in_0 mechanization.data matches 13 run scoreboard players set $out_0 mechanization.data 1
+execute if score $temp_1 mech_data matches 0 if score $in_0 mech_data matches 0.. run scoreboard players set $out_0 mech_data 1
+execute if score $temp_1 mech_data matches 1 if score $in_0 mech_data matches 1..2 run scoreboard players set $out_0 mech_data 1
+execute if score $temp_1 mech_data matches 2 if score $in_0 mech_data matches 3..5 run scoreboard players set $out_0 mech_data 1
+execute if score $temp_1 mech_data matches 3 if score $in_0 mech_data matches 6..9 run scoreboard players set $out_0 mech_data 1
+execute if score $temp_1 mech_data matches 4 if score $in_0 mech_data matches 6 run scoreboard players set $out_0 mech_data 1
+execute if score $temp_1 mech_data matches 5 if score $in_0 mech_data matches 7 run scoreboard players set $out_0 mech_data 1
+execute if score $temp_1 mech_data matches 6 if score $in_0 mech_data matches 8 run scoreboard players set $out_0 mech_data 1
+execute if score $temp_1 mech_data matches 7 if score $in_0 mech_data matches 9 run scoreboard players set $out_0 mech_data 1
+execute if score $temp_1 mech_data matches 8 if score $in_0 mech_data matches 10 run scoreboard players set $out_0 mech_data 1
+execute if score $temp_1 mech_data matches 9 if score $in_0 mech_data matches 11 run scoreboard players set $out_0 mech_data 1
+execute if score $temp_1 mech_data matches 10 if score $in_0 mech_data matches 1 run scoreboard players set $out_0 mech_data 1
+execute if score $temp_1 mech_data matches 11 if score $in_0 mech_data matches 12 run scoreboard players set $out_0 mech_data 1
+execute if score $temp_1 mech_data matches 12 if score $in_0 mech_data matches 13 run scoreboard players set $out_0 mech_data 1

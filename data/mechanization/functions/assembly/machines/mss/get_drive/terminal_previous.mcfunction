@@ -5,7 +5,7 @@ data modify storage mechanization:networks mss.item set from entity @s Item.tag.
 data modify entity @s Item.tag.drive set value {}
 execute if data storage mechanization:networks mss.item.id run function mechanization:assembly/machines/mss/get_drive/insert_drive
 
-scoreboard players remove @s mechanization.data 1
+scoreboard players remove @s mech_data 1
 
 function mechanization:assembly/machines/mss/get_drive/start
 execute if data storage mechanization:networks mss.item.id run data modify entity @s Item.tag.drive set from storage mechanization:networks mss.item

@@ -4,6 +4,6 @@ data modify block -29999999 1 1601 Items[{Slot:22b}] set from storage mechanizat
 data remove block -29999999 1 1601 Items[].tag.display
 data remove block -29999999 1 1601 Items[].tag.mss
 
-execute store result score temp_0 mechanization.data run loot insert -29999999 1 1601 mine -29999999 0 1601 air{drop_contents:true}
-execute if score temp_0 mechanization.data matches 1.. run function mechanization:assembly/machines/mss/insert_item_drive/insert_slot_22
-execute if score temp_0 mechanization.data matches 0 if data storage mechanization:networks mss.drive[{Slot:23b}] run function mechanization:assembly/machines/mss/insert_item_drive/check_slot_23
+execute store result score temp_0 mech_data run loot insert -29999999 1 1601 mine -29999999 0 1601 air{drop_contents:true}
+execute if score temp_0 mech_data matches 1.. run function mechanization:assembly/machines/mss/insert_item_drive/insert_slot_22
+execute if score temp_0 mech_data matches 0 if data storage mechanization:networks mss.drive[{Slot:23b}] run function mechanization:assembly/machines/mss/insert_item_drive/check_slot_23

@@ -35,8 +35,8 @@ kill @s[tag=mech_auto_jukebox]
 
 #Unlimited Storage Unit
 execute if entity @s[tag=mech_unlimited_storage] run loot spawn ~ ~ ~ loot mechanization:assembly/storage_unit
-execute if entity @s[tag=mech_unlimited_storage] at @s if score @s mechanization.data matches 1.. store result entity @e[type=item,sort=nearest,limit=1,distance=..1] Item.tag.stored_count int 1 run scoreboard players get @s mech_data
-execute if entity @s[tag=mech_unlimited_storage] at @s if score @s mechanization.data matches 1.. run data modify entity @e[type=item,sort=nearest,limit=1,distance=..1] Item.tag.stored_item set from entity @s Item.tag.item
+execute if entity @s[tag=mech_unlimited_storage] at @s if score @s mech_data matches 1.. store result entity @e[type=item,sort=nearest,limit=1,distance=..1] Item.tag.stored_count int 1 run scoreboard players get @s mech_data
+execute if entity @s[tag=mech_unlimited_storage] at @s if score @s mech_data matches 1.. run data modify entity @e[type=item,sort=nearest,limit=1,distance=..1] Item.tag.stored_item set from entity @s Item.tag.item
 execute if entity @s[tag=mech_unlimited_storage] at @s run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_unlimited_storage]
 

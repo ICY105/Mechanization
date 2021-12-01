@@ -8,5 +8,5 @@ data modify block -29999999 0 1601 Items[0].tag.display.Lore set value []
 data modify block -29999999 0 1601 Items[0].tag.display.Lore prepend from block -29999999 0 1602 Text1
 function du:player/inv/restore_equipment
 
-scoreboard players set in_0 mechanization.data -1
+scoreboard players set in_0 mech_data -1
 setblock ~ ~ ~ air

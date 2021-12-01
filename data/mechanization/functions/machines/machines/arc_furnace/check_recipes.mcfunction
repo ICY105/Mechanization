@@ -13,10 +13,10 @@ execute if entity @s[tag=!mech_upgrade_nether,tag=!mech_upgrade_ender] if data s
 execute if entity @s[tag=!mech_upgrade_nether,tag=!mech_upgrade_ender] if data storage du:temp obj.input_item.tag.ctc.traits{packed:1b} run function mechanization:machines/machines/arc_furnace/check_recipes_block
 execute if entity @s[tag=!mech_upgrade_nether,tag=!mech_upgrade_ender] if data storage du:temp obj.input_item.tag.ctc.traits{nugget:1b} run function mechanization:machines/machines/arc_furnace/check_recipes_nugget
 
-execute if score @s[tag=mech_upgraded] mechanization.timer matches 3.. run scoreboard players operation @s mechanization.timer *= $cons.3 du_data
-execute if score @s[tag=mech_upgraded] mechanization.timer matches 3.. run scoreboard players operation @s mechanization.timer /= $cons.4 du_data
+execute if score @s[tag=mech_upgraded] mech_timer matches 3.. run scoreboard players operation @s mech_timer *= $cons.3 du_data
+execute if score @s[tag=mech_upgraded] mech_timer matches 3.. run scoreboard players operation @s mech_timer /= $cons.4 du_data
 
 #calculate needed power
-scoreboard players operation $temp_0 mechanization.data = $machines.cf.arc_furnace.power mech_data
-scoreboard players operation $temp_0 mechanization.data *= @s mechanization.timer
-execute if score @s mechanization.stored_energy < $temp_0 mechanization.data run scoreboard players set @s mechanization.timer 0
+scoreboard players operation $temp_0 mech_data = $machines.cf.arc_furnace.power mech_data
+scoreboard players operation $temp_0 mech_data *= @s mech_timer
+execute if score @s mech_power < $temp_0 mech_data run scoreboard players set @s mech_timer 0

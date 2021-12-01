@@ -1,8 +1,8 @@
 
 #load scoreboard values
-execute if score $base.cf.backup mechanization.data matches 1 unless score @s mechanization.stored_energy matches -2147483648.. store result score @s mechanization.stored_energy run data get entity @s Item.tag.mech_power
-execute if score $base.cf.backup mechanization.data matches 1 unless score @s mechanization.network_id matches -2147483648.. store result score @s mechanization.network_id run data get entity @s Item.tag.mech_gridid
-execute if score $base.cf.backup mechanization.data matches 1 unless score @s mechanization.stored_fluid matches -2147483648.. store result score @s mechanization.stored_fluid run data get entity @s Item.tag.mech_fluid
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s Item.tag.mech_power
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s Item.tag.mech_gridid
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_fluid matches -2147483648.. store result score @s mech_fluid run data get entity @s Item.tag.mech_fluid
 
 ### Main
 particle minecraft:enchant ~ ~1 ~ 0 0 0 1 25
@@ -12,9 +12,9 @@ execute if data block ~ ~ ~ Items[{Slot:6b}] run function mechanization:machines
 function mechanization:machines/machines/ench_station/gui
 
 #function
-execute if score $base.cf.backup mechanization.data matches 1 if entity @s[tag=!mech_upgrade_nether,scores={mech_power=1000..}] if data block ~ ~ ~ Items[{Slot:10b}] if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:enchanted_book"}] unless data block ~ ~ ~ Items[{Slot:14b}] run function mechanization:machines/machines/ench_station/add_enchant
-execute if score $base.cf.backup mechanization.data matches 1 if entity @s[tag=mech_upgrade_nether,scores={mech_power=1000..}] if data block ~ ~ ~ Items[{Slot:10b}] if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:enchanted_book"}] unless data block ~ ~ ~ Items[{Slot:14b}] run function mechanization:machines/machines/ench_station/add_overenchant
-execute if score $base.cf.backup mechanization.data matches 1 if entity @s[tag=mech_upgrade_ender,scores={mech_power=1000..}] if data block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:book"}] unless data block ~ ~ ~ Items[{Slot:14b}] run function mechanization:machines/machines/ench_station/disenchant
+execute if score $base.cf.backup mech_data matches 1 if entity @s[tag=!mech_upgrade_nether,scores={mech_power=1000..}] if data block ~ ~ ~ Items[{Slot:10b}] if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:enchanted_book"}] unless data block ~ ~ ~ Items[{Slot:14b}] run function mechanization:machines/machines/ench_station/add_enchant
+execute if score $base.cf.backup mech_data matches 1 if entity @s[tag=mech_upgrade_nether,scores={mech_power=1000..}] if data block ~ ~ ~ Items[{Slot:10b}] if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:enchanted_book"}] unless data block ~ ~ ~ Items[{Slot:14b}] run function mechanization:machines/machines/ench_station/add_overenchant
+execute if score $base.cf.backup mech_data matches 1 if entity @s[tag=mech_upgrade_ender,scores={mech_power=1000..}] if data block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments if data block ~ ~ ~ Items[{Slot:12b,id:"minecraft:book"}] unless data block ~ ~ ~ Items[{Slot:14b}] run function mechanization:machines/machines/ench_station/disenchant
 
 ## store scoreboard values
 execute store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power

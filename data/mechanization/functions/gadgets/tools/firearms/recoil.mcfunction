@@ -11,7 +11,7 @@ execute if score $math.out_0 du_data matches 6 at @s run tp @s ~ ~ ~ ~ ~-3
 execute if score $math.out_0 du_data matches 7 at @s run tp @s ~ ~ ~ ~ ~-3.5
 
 #horizontal
-execute store result score $temp_0 mechanization.data run data get entity @s SelectedItem.tag.mech_gun.recoil_x
+execute store result score $temp_0 mech_data run data get entity @s SelectedItem.tag.mech_gun.recoil_x
 scoreboard players operation $math.in_0 du_data = $temp_0 mech_data
 scoreboard players operation $math.in_0 du_data *= $cons.2 du_data
 function du:math/random

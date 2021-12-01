@@ -7,7 +7,7 @@ execute if entity @s[tag=mech_filtered] at @p[tag=mech_interact] run loot spawn 
 execute if entity @s[tag=mech_filtered] run data remove entity @s Item.tag.filter_item
 
 execute if entity @s[tag=!mech_filtered] if data storage du:temp obj.tag{mech_itemid:5100} run data modify entity @s Item.tag.filter_item set from storage du:temp obj
-execute if entity @s[tag=!mech_filtered] run scoreboard players set $temp_0 mechanization.data 1
+execute if entity @s[tag=!mech_filtered] run scoreboard players set $temp_0 mech_data 1
 
 tag @s remove mech_filtered
 execute if data entity @s Item.tag.filter_item run tag @s add mech_filtered

@@ -1,12 +1,12 @@
 
 #load scoreboard values
-execute if score $base.cf.backup mechanization.data matches 1 unless score @s mechanization.stored_energy matches -2147483648.. store result score @s mechanization.stored_energy run data get entity @s ArmorItems[3].tag.mech_power
-execute if score $base.cf.backup mechanization.data matches 1 unless score @s mechanization.network_id matches -2147483648.. store result score @s mechanization.network_id run data get entity @s ArmorItems[3].tag.mech_gridid
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s ArmorItems[3].tag.mech_power
+execute if score $base.cf.backup mech_data matches 1 unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s ArmorItems[3].tag.mech_gridid
 
 #main
-execute store result score $temp_0 mechanization.data run time query daytime
-execute if score $temp_0 mechanization.data matches 12000.. run scoreboard players remove $temp_0 mechanization.data 12000
-scoreboard players remove $temp_0 mechanization.data 6000
+execute store result score $temp_0 mech_data run time query daytime
+execute if score $temp_0 mech_data matches 12000.. run scoreboard players remove $temp_0 mech_data 12000
+scoreboard players remove $temp_0 mech_data 6000
 
 execute store result entity @s Pose.Head[0] float 0.0075 run scoreboard players get $temp_0 mech_data
 execute if block ~ ~ ~ minecraft:daylight_detector[inverted=false] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 6422909
@@ -23,5 +23,5 @@ execute store result entity @s ArmorItems[3].tag.mech_power int 1 run scoreboard
 execute store result entity @s ArmorItems[3].tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
 
 #cleanup
-execute if score $base.cf.backup mechanization.data matches 1 unless block ~ ~ ~ minecraft:daylight_detector run function mechanization:base/utils/break_machine_t2
-execute if score $base.cf.backup mechanization.data matches 1 unless block ~ ~ ~ minecraft:daylight_detector positioned ~ ~0.4 ~ run kill @e[type=item_frame,tag=mech_solar_panel_model,distance=..0.5]
+execute if score $base.cf.backup mech_data matches 1 unless block ~ ~ ~ minecraft:daylight_detector run function mechanization:base/utils/break_machine_t2
+execute if score $base.cf.backup mech_data matches 1 unless block ~ ~ ~ minecraft:daylight_detector positioned ~ ~0.4 ~ run kill @e[type=item_frame,tag=mech_solar_panel_model,distance=..0.5]
