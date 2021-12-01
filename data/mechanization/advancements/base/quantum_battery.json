@@ -12,7 +12,8 @@
             "item": "minecraft:blast_furnace",
             "nbt": "{CustomModelData:6421003}"
         },
-        "frame": "task"
+        "frame": "task",
+		"hidden": true
     },
     "criteria": {
         "have_battery_1": {
