@@ -8,9 +8,9 @@ execute if score $install mech_data matches -1 run tellraw @a [{"text":"Error: M
 
 #check DU
 execute if score $install mech_data matches 0 unless score $du.ver.major load.status matches 2 run scoreboard players set $install mech_data -2
-execute if score $install mech_data matches 0 unless score $du.ver.minor load.status matches 4.. run scoreboard players set $install mech_data -2
-execute if score $install mech_data matches 0 unless score $du.ver.fix load.status matches 0 run scoreboard players set $install mech_data -2
-execute if score $install mech_data matches -2 run tellraw @a [{"text":"Error: Mechanization requires Datapack Utilities version +2.4.0. You can download that [here].","color":"red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/Datapack-Utilities/releases"}}]
+execute if score $install mech_data matches 0 unless score $du.ver.minor load.status matches 4 run scoreboard players set $install mech_data -2
+execute if score $install mech_data matches 0 unless score $du.ver.fix load.status matches 1.. run scoreboard players set $install mech_data -2
+execute if score $install mech_data matches -2 run tellraw @a [{"text":"Error: Mechanization requires Datapack Utilities version +2.4.1. You can download that [here].","color":"red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/Datapack-Utilities/releases"}}]
 
 #check for realms
 execute if score $install mech_data matches 0 run scoreboard players set $install mech_data -3
