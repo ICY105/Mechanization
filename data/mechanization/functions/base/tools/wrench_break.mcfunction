@@ -1,17 +1,17 @@
 
 #break adjacent cables
-execute if score @s[tag=mech_receiver] mech_power matches -2147483648.. at @s run function mechanization:base/machines/cable/remove_adjacent_cable
-execute if score @s[tag=mech_transmitter] mech_power matches -2147483648.. at @s run function mechanization:base/machines/cable/remove_adjacent_cable
-execute if score @s[tag=mech_power_storage] mech_power matches -2147483648.. at @s run function mechanization:base/machines/cable/remove_adjacent_cable
+execute if score @s[tag=mech_receiver] mechanization.stored_energy matches -2147483648.. at @s run function mechanization:base/machines/cable/remove_adjacent_cable
+execute if score @s[tag=mech_transmitter] mechanization.stored_energy matches -2147483648.. at @s run function mechanization:base/machines/cable/remove_adjacent_cable
+execute if score @s[tag=mech_power_storage] mechanization.stored_energy matches -2147483648.. at @s run function mechanization:base/machines/cable/remove_adjacent_cable
 
 #get data
-scoreboard players set $base.temp_0 mech_data 0
-scoreboard players operation $base.temp_0 mech_data = @s[tag=!mech_battery_qu] mech_power
+scoreboard players set $base.temp_0 mechanization.data 0
+scoreboard players operation $base.temp_0 mechanization.data = @s[tag=!mech_battery_qu] mech_power
 
-scoreboard players set $base.temp_1 mech_data 0
-execute if entity @s[tag=mech_upgraded] run scoreboard players set $base.temp_1 mech_data 1
-execute if entity @s[tag=mech_upgrade_nether] run scoreboard players set $base.temp_1 mech_data 2
-execute if entity @s[tag=mech_upgrade_ender] run scoreboard players set $base.temp_1 mech_data 3
+scoreboard players set $base.temp_1 mechanization.data 0
+execute if entity @s[tag=mech_upgraded] run scoreboard players set $base.temp_1 mechanization.data 1
+execute if entity @s[tag=mech_upgrade_nether] run scoreboard players set $base.temp_1 mechanization.data 2
+execute if entity @s[tag=mech_upgrade_ender] run scoreboard players set $base.temp_1 mechanization.data 3
 
 #Batteries
 execute if entity @s[tag=mech_battery1] run loot spawn ~ ~ ~ loot mechanization:base/tier_1_battery
@@ -84,14 +84,14 @@ execute if block ~ ~ ~ #mechanization:inv run data remove block -29999999 0 1601
 function #mechanization:wrench_break
 
 #store data to item
-execute if score $base.temp_0 mech_data matches 1.. store result entity @e[type=item,sort=nearest,limit=1,distance=..0.5] Item.tag.mech_energy int 1 run scoreboard players get $base.temp_0 mech_data
-execute if score $base.temp_0 mech_data matches 1.. run data merge block -29999999 0 1602 {Text1:'[{"translate":"mech.text.multimeter.energy","color":"gray","italic":false,"with":[{"score":{"name":"$base.temp_0","objective":"mech_data"},"color":"gray"}]}]'}
-execute if score $base.temp_0 mech_data matches 1.. as @e[type=item,sort=nearest,limit=1,distance=..0.5] run data modify entity @s Item.tag.display.Lore append from block -29999999 0 1602 Text1
+execute if score $base.temp_0 mechanization.data matches 1.. store result entity @e[type=item,sort=nearest,limit=1,distance=..0.5] Item.tag.mech_energy int 1 run scoreboard players get $base.temp_0 mech_data
+execute if score $base.temp_0 mechanization.data matches 1.. run data merge block -29999999 0 1602 {Text1:'[{"translate":"mech.text.multimeter.energy","color":"gray","italic":false,"with":[{"score":{"name":"$base.temp_0","objective":"mech_data"},"color":"gray"}]}]'}
+execute if score $base.temp_0 mechanization.data matches 1.. as @e[type=item,sort=nearest,limit=1,distance=..0.5] run data modify entity @s Item.tag.display.Lore append from block -29999999 0 1602 Text1
 
-execute if score $base.temp_1 mech_data matches 1 as @e[type=item,sort=nearest,limit=1,distance=..0.5] run data modify entity @s Item.tag.display.Lore append value "{\"translate\":\"mech.item.machine_upgrade\",\"color\":\"gray\",\"italic\":false}"
-execute if score $base.temp_1 mech_data matches 2 as @e[type=item,sort=nearest,limit=1,distance=..0.5] run data modify entity @s Item.tag.display.Lore append value "{\"translate\":\"mech.item.nether_upgrade\",\"color\":\"gray\",\"italic\":false}"
-execute if score $base.temp_1 mech_data matches 3 as @e[type=item,sort=nearest,limit=1,distance=..0.5] run data modify entity @s Item.tag.display.Lore append value "{\"translate\":\"mech.item.ender_upgrade\",\"color\":\"gray\",\"italic\":false}"
-execute if score $base.temp_1 mech_data matches 1.. store result entity @e[type=item,sort=nearest,limit=1,distance=..0.5] Item.tag.mech_upgrade int 1 run scoreboard players get $base.temp_1 mech_data
+execute if score $base.temp_1 mechanization.data matches 1 as @e[type=item,sort=nearest,limit=1,distance=..0.5] run data modify entity @s Item.tag.display.Lore append value "{\"translate\":\"mech.item.machine_upgrade\",\"color\":\"gray\",\"italic\":false}"
+execute if score $base.temp_1 mechanization.data matches 2 as @e[type=item,sort=nearest,limit=1,distance=..0.5] run data modify entity @s Item.tag.display.Lore append value "{\"translate\":\"mech.item.nether_upgrade\",\"color\":\"gray\",\"italic\":false}"
+execute if score $base.temp_1 mechanization.data matches 3 as @e[type=item,sort=nearest,limit=1,distance=..0.5] run data modify entity @s Item.tag.display.Lore append value "{\"translate\":\"mech.item.ender_upgrade\",\"color\":\"gray\",\"italic\":false}"
+execute if score $base.temp_1 mechanization.data matches 1.. store result entity @e[type=item,sort=nearest,limit=1,distance=..0.5] Item.tag.mech_upgrade int 1 run scoreboard players get $base.temp_1 mech_data
 
 #drop items 2
 execute if data block -29999999 0 1601 Items if entity @e[type=item,distance=..0.5] run loot spawn ~ ~ ~ mine -29999999 0 1601 minecraft:air{drop_contents:true}

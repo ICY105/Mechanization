@@ -11,6 +11,6 @@ execute if data entity @s SelectedItem.tag.mech_upgrades.items[].tag.mech_upgrad
 
 #add damage
 item replace block -29999999 0 1601 container.0 from entity @s weapon.mainhand
-scoreboard players set $in_0 mech_data 1
+scoreboard players set $in_0 mechanization.data 1
 execute if entity @s[gamemode=!creative] run function mechanization:gadgets/tools/damage_upgrades
 item replace entity @s weapon.mainhand from block -29999999 0 1601 container.0

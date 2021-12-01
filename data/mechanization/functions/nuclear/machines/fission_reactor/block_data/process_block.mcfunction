@@ -20,16 +20,16 @@ execute if block ~ ~ ~ ice run function mechanization:nuclear/machines/fission_r
 execute if block ~ ~ ~ packed_ice run function mechanization:nuclear/machines/fission_reactor/block_data/packed_ice
 
 #Steam
-execute if score out_2 mech_data matches 1.. if score in_0 mech_data matches 1.. if block ~ ~1 ~ water run function mechanization:nuclear/machines/fission_reactor/block_data/create_steam
+execute if score out_2 mechanization.data matches 1.. if score in_0 mechanization.data matches 1.. if block ~ ~1 ~ water run function mechanization:nuclear/machines/fission_reactor/block_data/create_steam
 
 #Exchange
-execute if score out_0 mech_data matches 1.. run scoreboard players operation temp_1 mech_data = in_0 mech_data
-execute if score out_0 mech_data matches 1.. run scoreboard players operation temp_1 mech_data /= temp_0 mech_data
-execute if score out_0 mech_data matches 1.. run execute if score out_0 mech_data >= temp_1 mech_data run scoreboard players operation out_0 mech_data = temp_1 mech_data
+execute if score out_0 mechanization.data matches 1.. run scoreboard players operation temp_1 mechanization.data = in_0 mech_data
+execute if score out_0 mechanization.data matches 1.. run scoreboard players operation temp_1 mechanization.data /= temp_0 mech_data
+execute if score out_0 mechanization.data matches 1.. run execute if score out_0 mechanization.data >= temp_1 mechanization.data run scoreboard players operation out_0 mechanization.data = temp_1 mech_data
 
 #Cooling
-execute if score out_1 mech_data matches 1.. run scoreboard players operation temp_1 mech_data = out_0 mech_data
-execute if score out_1 mech_data matches 1.. run scoreboard players operation temp_1 mech_data *= temp_0 mech_data
-execute if score out_1 mech_data matches 1.. run scoreboard players operation in_0 mech_data -= temp_1 mech_data
-execute if score out_1 mech_data matches 1.. run execute if score in_0 mech_data > out_1 mech_data run scoreboard players operation @s mech_x -= out_1 mech_data
-execute if score out_1 mech_data matches 1.. run execute if score in_0 mech_data <= out_1 mech_data run scoreboard players operation @s mech_x -= in_0 mech_data
+execute if score out_1 mechanization.data matches 1.. run scoreboard players operation temp_1 mechanization.data = out_0 mech_data
+execute if score out_1 mechanization.data matches 1.. run scoreboard players operation temp_1 mechanization.data *= temp_0 mech_data
+execute if score out_1 mechanization.data matches 1.. run scoreboard players operation in_0 mechanization.data -= temp_1 mech_data
+execute if score out_1 mechanization.data matches 1.. run execute if score in_0 mechanization.data > out_1 mechanization.data run scoreboard players operation @s mech_x -= out_1 mech_data
+execute if score out_1 mechanization.data matches 1.. run execute if score in_0 mechanization.data <= out_1 mechanization.data run scoreboard players operation @s mech_x -= in_0 mech_data

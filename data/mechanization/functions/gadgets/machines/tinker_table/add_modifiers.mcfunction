@@ -5,18 +5,18 @@ data modify storage du:temp obj.tag.display.Lore set value []
 execute if data storage du:temp obj.tag.mech_battery run data modify storage du:temp obj.tag.mech_battery.max_energy set value 0
 
 #battery modifier
-scoreboard players set $temp_0 mech_data 0
-execute store result score $temp_1 mech_data run data get storage du:temp obj.tag.mech_battery.energy
+scoreboard players set $temp_0 mechanization.data 0
+execute store result score $temp_1 mechanization.data run data get storage du:temp obj.tag.mech_battery.energy
 data modify storage du:test list set from storage du:temp list
-execute if data storage du:temp list[0].tag{mech_itemid:4110} run scoreboard players add $temp_0 mech_data 32000
-execute if data storage du:temp list[1].tag{mech_itemid:4110} run scoreboard players add $temp_0 mech_data 32000
-execute if data storage du:temp list[2].tag{mech_itemid:4110} run scoreboard players add $temp_0 mech_data 32000
-execute if data storage du:temp list[3].tag{mech_itemid:4110} run scoreboard players add $temp_0 mech_data 32000
-execute if data storage du:temp list[4].tag{mech_itemid:4110} run scoreboard players add $temp_0 mech_data 32000
-execute if data storage du:temp list[5].tag{mech_itemid:4110} run scoreboard players add $temp_0 mech_data 32000
-execute if score $temp_0 mech_data matches 1.. run data modify storage du:temp obj.tag.mech_battery set value {models:0,base_model:0,max_energy:0,energy:0}
-execute if score $temp_0 mech_data matches 1.. store result storage du:temp obj.tag.mech_battery.max_energy int 1 run scoreboard players get $temp_0 mech_data
-execute if score $temp_1 mech_data > $temp_0 mech_data run scoreboard players operation $temp_1 mech_data = $temp_0 mech_data
+execute if data storage du:temp list[0].tag{mech_itemid:4110} run scoreboard players add $temp_0 mechanization.data 32000
+execute if data storage du:temp list[1].tag{mech_itemid:4110} run scoreboard players add $temp_0 mechanization.data 32000
+execute if data storage du:temp list[2].tag{mech_itemid:4110} run scoreboard players add $temp_0 mechanization.data 32000
+execute if data storage du:temp list[3].tag{mech_itemid:4110} run scoreboard players add $temp_0 mechanization.data 32000
+execute if data storage du:temp list[4].tag{mech_itemid:4110} run scoreboard players add $temp_0 mechanization.data 32000
+execute if data storage du:temp list[5].tag{mech_itemid:4110} run scoreboard players add $temp_0 mechanization.data 32000
+execute if score $temp_0 mechanization.data matches 1.. run data modify storage du:temp obj.tag.mech_battery set value {models:0,base_model:0,max_energy:0,energy:0}
+execute if score $temp_0 mechanization.data matches 1.. store result storage du:temp obj.tag.mech_battery.max_energy int 1 run scoreboard players get $temp_0 mech_data
+execute if score $temp_1 mechanization.data > $temp_0 mechanization.data run scoreboard players operation $temp_1 mechanization.data = $temp_0 mech_data
 execute store result storage du:temp obj.tag.mech_battery.energy int 1 run scoreboard players get $temp_1 mech_data
 
 #copy modifier items

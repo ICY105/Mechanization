@@ -1,9 +1,9 @@
 
 #stop loop
-scoreboard players remove temp_0 mech_data 0
+scoreboard players remove temp_0 mechanization.data 0
 
 #add filler
-execute store result score temp_1 mech_data run data get block ~ ~ ~ Items
+execute store result score temp_1 mechanization.data run data get block ~ ~ ~ Items
 execute unless data block ~ ~ ~ Items[{Slot:0b}] run item replace block ~ ~ ~ container.0 with minecraft:blast_furnace{du_gui:1b}
 execute unless data block ~ ~ ~ Items[{Slot:1b}] run item replace block ~ ~ ~ container.1 with minecraft:blast_furnace{du_gui:1b}
 execute unless data block ~ ~ ~ Items[{Slot:2b}] run item replace block ~ ~ ~ container.2 with minecraft:blast_furnace{du_gui:1b}
@@ -35,10 +35,10 @@ execute unless data block ~ ~ ~ Items[{Slot:27b}] run item replace block ~ ~ ~ c
 
 #copy items
 data remove block -29999999 0 1601 Items
-execute if score temp_1 mech_data matches 1.. run function du:player/inv/get_equipment
-execute if score temp_1 mech_data matches 1.. run data modify block -29999999 0 1601 Items[{Slot:0b}].tag.mech_filter set from block ~ ~ ~ Items
-execute if score temp_1 mech_data matches 1.. if data block -29999999 0 1601 Items[{Slot:0b}].tag.mech_filter[{}] run data modify block -29999999 0 1601 Items[{Slot:0b}].tag.Enchantments set value [{id:"mech:filter",lvl:1}]
-execute if score temp_1 mech_data matches 1.. run function du:player/inv/restore_equipment
+execute if score temp_1 mechanization.data matches 1.. run function du:player/inv/get_equipment
+execute if score temp_1 mechanization.data matches 1.. run data modify block -29999999 0 1601 Items[{Slot:0b}].tag.mech_filter set from block ~ ~ ~ Items
+execute if score temp_1 mechanization.data matches 1.. if data block -29999999 0 1601 Items[{Slot:0b}].tag.mech_filter[{}] run data modify block -29999999 0 1601 Items[{Slot:0b}].tag.Enchantments set value [{id:"mech:filter",lvl:1}]
+execute if score temp_1 mechanization.data matches 1.. run function du:player/inv/restore_equipment
 
 #remove filler
 data remove block ~ ~ ~ Items[{tag:{du_gui:1b}}]

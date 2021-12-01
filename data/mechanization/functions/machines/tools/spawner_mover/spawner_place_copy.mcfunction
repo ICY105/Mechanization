@@ -1,5 +1,5 @@
 
-scoreboard players set in_0 mech_data -1
+scoreboard players set in_0 mechanization.data -1
 setblock ~ ~ ~ spawner
 
 data modify block ~ ~ ~ MaxNearbyEntities set from entity @s SelectedItem.tag.spawner_data.MaxNearbyEntities

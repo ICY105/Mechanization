@@ -1,10 +1,10 @@
 
 #start
-execute if score $base.cf.backup mech_data matches 1 unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s Item.tag.mech_power
-execute if score $base.cf.backup mech_data matches 1 unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s Item.tag.mech_gridid
+execute if score $base.cf.backup mechanization.data matches 1 unless score @s mechanization.stored_energy matches -2147483648.. store result score @s mechanization.stored_energy run data get entity @s Item.tag.mech_power
+execute if score $base.cf.backup mechanization.data matches 1 unless score @s mechanization.network_id matches -2147483648.. store result score @s mechanization.network_id run data get entity @s Item.tag.mech_gridid
 
 #check for disk
-execute unless score @s mech_data matches 1.. run scoreboard players set @s mech_data 1
+execute unless score @s mechanization.data matches 1.. run scoreboard players set @s mechanization.data 1
 tag @s remove mech_active
 execute if data entity @s Item.tag.drive.tag.mech_storage run tag @s add mech_active
 
@@ -37,7 +37,7 @@ execute if entity @s[tag=!mech_active,scores={mech_power=128..}] unless data blo
 
 tag @s remove mech_active
 execute if data entity @s Item.tag.drive.tag.mech_storage run tag @s add mech_active
-scoreboard players remove @s[tag=mech_active,scores={mech_power=6..}] mech_power 6
+scoreboard players remove @s[tag=mech_active,scores={mech_power=6..}] mechanization.stored_energy 6
 
 #set ui
 data merge block ~ ~ ~ {Items:[ {id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:0b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:0b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:1b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:1b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:2b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:2b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:3b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:3b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:4b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:4b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:5b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:5b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:6b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:6b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:7b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:7b},{id:"minecraft:structure_block",tag:{CustomModelData:6425901,mss:{ui:1b,slot:8b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:8b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:9b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:9b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:10b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:10b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:11b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:11b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:12b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:12b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:13b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:13b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:14b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:14b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:15b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:15b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:16b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:16b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:18b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:18b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:19b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:19b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:20b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:20b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:21b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:21b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:22b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:22b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:23b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:23b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:24b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:24b},{id:"minecraft:structure_block",tag:{CustomModelData:6421202,mss:{ui:1b,slot:25b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:25b},{id:"minecraft:structure_block",tag:{CustomModelData:6425902,mss:{ui:1b,slot:26b},display:{Name:'{"text":" "}'},du_gui:1b},Count:1b,Slot:26b} ]}
@@ -51,8 +51,8 @@ execute if score $base.timer_20 du_data matches 0 if entity @s[tag=mech_active] 
 execute if entity @s[tag=!mech_active] store result entity @s Item.tag.CustomModelData int 6425903 if entity @s
 
 #cleanup
-execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power
-execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
+execute if score $base.cf.backup mechanization.data matches 1 store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power
+execute if score $base.cf.backup mechanization.data matches 1 store result entity @s Item.tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
 
 execute unless block ~ ~ ~ minecraft:barrel if entity @s[tag=mech_active] run function mechanization:assembly/machines/mss/get_drive/terminal_insert
 execute unless block ~ ~ ~ minecraft:barrel if entity @s[tag=mech_active] run kill @e[type=item,distance=..0.5]
