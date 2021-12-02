@@ -34,6 +34,7 @@ kill @s[tag=mech_tree_feller]
 execute positioned ~ ~-0.5 ~ run kill @e[tag=mech_tree_feller_model,distance=..0.75]
 
 #Block Breaker
+execute if entity @s[tag=mech_block_breaker] unless block ~ ~ ~ #du:air run function mechanization:base/machines/cable/remove_adjacent_cable
 execute if entity @s[tag=mech_block_breaker] run loot spawn ~ ~ ~ loot mechanization:machines/block_breaker
 kill @s[tag=mech_block_breaker]
 
