@@ -64,9 +64,9 @@ scoreboard players set @e[tag=mech_transmitter,distance=..0.75] mech_power 0
 kill @e[tag=du_furnace,type=marker,distance=..0.75,sort=nearest,limit=1]
 
 #connect to cables
-execute as @e[type=#mechanization:valid_block_entities,tag=!mech_cable_init,tag=mech_receiver,sort=nearest,limit=1,distance=..0.75] at @s run function mechanization:base/machines/cable/add_adjacent_cable
-execute as @e[type=#mechanization:valid_block_entities,tag=!mech_cable_init,tag=mech_transmitter,sort=nearest,limit=1,distance=..0.75] at @s run function mechanization:base/machines/cable/add_adjacent_cable
-execute as @e[type=#mechanization:valid_block_entities,tag=!mech_cable_init,tag=mech_power_storage,sort=nearest,limit=1,distance=..0.75] at @s run function mechanization:base/machines/cable/add_adjacent_cable
+execute align xyz as @e[type=#mechanization:valid_block_entities,tag=!mech_cable_init,tag=mech_receiver,dx=0,dy=0,dz=0] at @s run function mechanization:base/machines/cable/add_adjacent_cable
+execute align xyz as @e[type=#mechanization:valid_block_entities,tag=!mech_cable_init,tag=mech_transmitter,dx=0,dy=0,dz=0] at @s run function mechanization:base/machines/cable/add_adjacent_cable
+execute align xyz as @e[type=#mechanization:valid_block_entities,tag=!mech_cable_init,tag=mech_power_storage,dx=0,dy=0,dz=0] at @s run function mechanization:base/machines/cable/add_adjacent_cable
 
 #set stored data
 execute store result score $temp_1 mech_data run data get entity @s SelectedItem.tag.mech_upgrade

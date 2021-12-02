@@ -36,7 +36,7 @@ execute if score $base.timer_100 du_data matches 30 as @e[type=minecraft:item_fr
 execute if score $base.timer_100 du_data matches 30 as @e[type=minecraft:item_frame,tag=mech_electric_lamp] at @s run function mechanization:machines/machines/electric_lamp/electric_lamp
 execute if score $base.timer_100 du_data matches 40 as @e[type=minecraft:item_frame,tag=mech_growth_accelerator] at @s run function mechanization:machines/machines/growth_accelerator/growth_accelerator
 execute if score $base.timer_100 du_data matches 50 as @e[type=minecraft:item_frame,tag=mech_fisher] at @s run function mechanization:machines/machines/fisher/fisher
-execute if score $base.timer_100 du_data matches 60 as @e[type=minecraft:item_frame,tag=mech_spawner_controller] at @s run function mechanization:machines/machines/spawner_controller
+execute if score $base.timer_100 du_data matches 60 as @e[type=minecraft:armor_stand,tag=mech_spawner_controller] at @s run function mechanization:machines/machines/spawner_controller
 
 #player tele trigger
 execute as @a at @s unless score @s mech_tele matches 0 positioned ~ ~-0.5 ~ run scoreboard players operation @e[type=item_frame,tag=mech_teleporter,distance=..1,limit=1] mech_data = @s mech_tele
