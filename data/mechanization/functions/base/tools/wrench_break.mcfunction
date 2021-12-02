@@ -1,9 +1,4 @@
 
-#break adjacent cables
-execute if entity @s[tag=mech_cable_init,tag=mech_receiver] at @s run function mechanization:base/machines/cable/remove_adjacent_cable
-execute if entity @s[tag=mech_cable_init,tag=mech_transmitter] at @s run function mechanization:base/machines/cable/remove_adjacent_cable
-execute if entity @s[tag=mech_cable_init,tag=mech_power_storage] at @s run function mechanization:base/machines/cable/remove_adjacent_cable
-
 #get data
 scoreboard players set $base.temp_0 mech_data 0
 scoreboard players operation $base.temp_0 mech_data = @s[tag=!mech_battery_qu] mech_power
@@ -82,6 +77,11 @@ execute if block ~ ~ ~ #mechanization:inv run data modify block -29999999 0 1601
 execute if block ~ ~ ~ #mechanization:inv run data remove block -29999999 0 1601 Items[{tag:{du_gui:1b}}]
 
 function #mechanization:wrench_break
+
+#break adjacent cables
+execute if block ~ ~ ~ #du:air if entity @s[tag=mech_cable_init,tag=mech_receiver] at @s run function mechanization:base/machines/cable/remove_adjacent_cable
+execute if block ~ ~ ~ #du:air if entity @s[tag=mech_cable_init,tag=mech_transmitter] at @s run function mechanization:base/machines/cable/remove_adjacent_cable
+execute if block ~ ~ ~ #du:air if entity @s[tag=mech_cable_init,tag=mech_power_storage] at @s run function mechanization:base/machines/cable/remove_adjacent_cable
 
 #store data to item
 execute if score $base.temp_0 mech_data matches 1.. store result entity @e[type=item,sort=nearest,limit=1,distance=..0.5] Item.tag.mech_energy int 1 run scoreboard players get $base.temp_0 mech_data
