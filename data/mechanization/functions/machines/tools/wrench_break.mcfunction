@@ -68,6 +68,7 @@ execute if entity @s[tag=mech_fisher] run setblock ~ ~ ~ minecraft:air replace
 kill @s[tag=mech_fisher]
 
 #Spawner Controller
+execute if entity @s[tag=mech_spawner_controller] run function mechanization:base/machines/cable/remove_adjacent_cable
 execute if entity @s[tag=mech_spawner_controller] run loot spawn ~ ~ ~ loot mechanization:machines/spawner_controller
 execute if entity @s[tag=mech_spawner_controller] run data merge block ~ ~ ~ {RequiredPlayerRange: 16s, MaxSpawnDelay: 800s, MinSpawnDelay: 200s, Delay: 600s}
 kill @s[tag=mech_spawner_controller]
