@@ -37,6 +37,9 @@ data merge storage mechanization:networks {mss_temp:{drive:[],item:{}}}
 #load config
 function mechanization:base/config/load_config
 
+#optional dependencies
+scoreboard players set $energy_flux.enabled mech_data 0
+
 #schedule message
 schedule function mechanization:tick 1t
 schedule function mechanization:load_message 2s
