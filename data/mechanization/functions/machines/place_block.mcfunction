@@ -106,9 +106,8 @@ execute if score $id mech_data matches 2016 run setblock ~ ~ ~ minecraft:barrel[
 execute if score $id mech_data matches 2016 as @e[tag=mech_ench_station,sort=nearest,limit=1,distance=..0.5] run function mechanization:machines/machines/liquid_pipe/add_adjacent_pipes
 
 #teleporter
-execute if score $id mech_data matches 2017 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_teleporter","mech_receiver","global.ignore","smithed.block"],CustomName:'{"translate":"mech.block.teleporter"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422017}}}
-execute if score $id mech_data matches 2017 run data modify storage du:temp var set from entity @s SelectedItem.tag.display.Name
-execute if score $id mech_data matches 2017 as @e[tag=mech_teleporter,distance=..0.5,limit=1] at @s run function mechanization:machines/machines/teleporter/place
+execute if score $id mech_data matches 2017 run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_teleporter","mech_receiver","global.ignore","smithed.block"],CustomName:'{"translate":"mech.block.teleporter"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,dest:{x:0,y:0,z:0,dimension:""},CustomModelData:6422017}}}
+execute if score $id mech_data matches 2017 run setblock ~ ~ ~ minecraft:barrier
 
 #super piston
 execute if score $id mech_data matches 2020 if block ~ ~ ~ minecraft:blast_furnace[facing=north] run summon minecraft:item_frame ~ ~ ~ {Tags:["mech_super_piston","global.ignore","smithed.block"],CustomName:'{"translate":"mech.block.super_piston"}',ItemRotation:0,Invisible:1,Invulnerable:1,Fixed:1b,Silent:1b,Item:{id:"minecraft:blast_furnace",Count:1b,tag:{mech_power:0,mech_gridid:0,CustomModelData:6422020}}}
