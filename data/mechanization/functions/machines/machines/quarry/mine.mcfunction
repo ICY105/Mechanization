@@ -23,6 +23,7 @@ scoreboard players add in_2 mech_data 1
 
 #test for depth
 execute store result score temp_0 mech_data run data get entity @s Pos[1]
+scoreboard players add temp_0 mech_data 64
 execute if score in_0 mech_data > temp_0 mech_data run scoreboard players set @s mech_data -2
 
 #mine block

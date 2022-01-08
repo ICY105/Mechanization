@@ -1,4 +1,5 @@
 
+execute if score in_0 mech_data matches -64..-1 positioned ~ ~64 ~ run function mechanization:machines/machines/quarry/mine_pos_depth_2
 execute if score in_0 mech_data matches 0..63 positioned ~ ~ ~ run function mechanization:machines/machines/quarry/mine_pos_depth_2
 execute if score in_0 mech_data matches 64..127 positioned ~ ~-64 ~ run function mechanization:machines/machines/quarry/mine_pos_depth_2
 execute if score in_0 mech_data matches 128..191 positioned ~ ~-128 ~ run function mechanization:machines/machines/quarry/mine_pos_depth_2
