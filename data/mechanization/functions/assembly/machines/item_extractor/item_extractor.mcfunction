@@ -7,8 +7,8 @@ execute if score $base.cf.backup mech_data matches 1 unless score @s du_uuid mat
 #main
 execute unless block ~ ~ ~ minecraft:moving_piston run function mechanization:assembly/machines/item_extractor/break
 
-execute if score @s mech_power matches 24.. run function du:world/blocks/is_active
-execute if score $world.out_0 du_data matches 0 if score @s mech_power matches 24.. positioned ^ ^ ^-0.5 align xyz positioned ~0.5 ~0.9 ~0.5 if block ~ ~ ~ #mechanization:inv run function mechanization:assembly/machines/item_extractor/move_item
+function du:world/blocks/is_active
+execute if score $world.out_0 du_data matches 0 positioned ^ ^ ^-0.5 align xyz positioned ~0.5 ~0.9 ~0.5 if block ~ ~ ~ #mechanization:inv run function mechanization:assembly/machines/item_extractor/move_item
 
 #store scoreboard values
 execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power
