@@ -27,3 +27,6 @@ execute align xyz positioned ~0.5 ~0.5 ~0.5 run particle scrape ~-0.45 ~ ~-0.45 
 
 #move
 scoreboard players add @s mech_data 1
+
+#test for world bottom
+execute if predicate chunk_scan:world_bottom run scoreboard players set @s mech_data -1
