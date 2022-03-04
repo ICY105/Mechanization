@@ -13,7 +13,7 @@ execute if data block ~ ~ ~ Items[{Slot:6b}] run function mechanization:machines
 
 #active
 tag @s remove mech_active
-execute if score @s mech_fluid matches 5.. if score @s du_data matches 5.. run tag @s add mech_active
+execute if score @s mech_power matches ..4000 if score @s mech_fluid matches 5.. if score @s du_data matches 5.. run tag @s add mech_active
 execute if score @s[tag=mech_upgrade_nether] mech_fluid matches 5.. run tag @s add mech_active
 execute if score @s[tag=mech_upgrade_ender] du_data matches 5.. run tag @s add mech_active
 
