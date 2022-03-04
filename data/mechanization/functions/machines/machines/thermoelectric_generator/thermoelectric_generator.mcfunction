@@ -13,7 +13,7 @@ execute if data block ~ ~ ~ Items[{Slot:6b}] run function mechanization:machines
 
 #active
 tag @s remove mech_active
-execute if score @s mech_fluid matches 5.. if score @s du_data matches 5.. run tag @s add mech_active
+execute if score @s mech_power matches ..4000 if score @s mech_fluid matches 5.. if score @s du_data matches 5.. run tag @s add mech_active
 execute if score @s[tag=mech_upgrade_nether] mech_fluid matches 5.. run tag @s add mech_active
 execute if score @s[tag=mech_upgrade_ender] du_data matches 5.. run tag @s add mech_active
 
@@ -37,7 +37,7 @@ scoreboard players operation $temp_1 mech_data /= $cons.100 du_data
 
 execute if entity @s[tag=mech_upgraded] run scoreboard players operation $temp_1 mech_data *= $cons.3 du_data
 execute if entity @s[tag=mech_upgraded] run scoreboard players operation $temp_1 mech_data /= $cons.2 du_data
-execute if entity @s[tag=mech_active] if score @s mech_power matches ..4000 run scoreboard players operation @s mech_power += $temp_1 mech_data
+execute if entity @s[tag=mech_active] run scoreboard players operation @s mech_power += $temp_1 mech_data
 execute if entity @s[tag=mech_active] if score @s mech_fluid matches 5.. run scoreboard players remove @s mech_fluid 5
 execute if entity @s[tag=mech_active] if score @s du_data matches 5.. run scoreboard players remove @s du_data 5
 execute if entity @s[tag=mech_active] if score @s mech_fluid matches 0 run data modify entity @s Item.tag.tank_1 set value {}
