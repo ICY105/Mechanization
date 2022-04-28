@@ -1,0 +1,51 @@
+{
+  "namespaces": [
+    "mechanization",
+    "minecraft",
+	"give"
+  ],
+  "dependencies": [
+    {
+      "name": "Lantern Load",
+      "url": "https://github.com/LanternMC/load"
+    },
+    {
+      "name": "ChunkScan",
+      "local": "ChunkScan"
+    },
+    {
+      "name": "ChunkScan.Ores",
+      "local": "ChunkScan.Ores"
+    },
+    {
+      "name": "Loot-Table Autosmelt",
+      "local": "LoottableAutosmelt"
+    },
+    {
+      "name": "Block Utils",
+      "local": "BlockUtils"
+    },
+    {
+      "name": "Player Action",
+      "local": "PlayerAction"
+    },
+    {
+      "name": "Smithed Crafting",
+      "local": "external-libraries/Smithed Crafter.zip"
+    },
+    {
+      "name": "Smithed Damage",
+      "local": "external-libraries/Smithed Damage.zip"
+    },
+    {
+      "name": "Smithed Actionbar",
+      "local": "external-libraries/Smithed Actionbar.zip"
+    }
+  ],
+  "append_function_tags": [
+    {
+      "tag": "load:load",
+      "value": "mechanization:load"
+    }
+  ]
+}
