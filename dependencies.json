@@ -30,6 +30,10 @@
       "local": "PlayerAction"
     },
     {
+      "name": "Fluids",
+      "local": "Fluids"
+    },
+    {
       "name": "Smithed Crafting",
       "local": "external-libraries/Smithed Crafter.zip"
     },
