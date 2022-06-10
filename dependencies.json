@@ -18,7 +18,7 @@
       "local": "ChunkScan.Ores"
     },
     {
-      "name": "Loot-Table Autosmelt",
+      "name": "Loot Table Autosmelt",
       "local": "LoottableAutosmelt"
     },
     {
@@ -28,10 +28,6 @@
     {
       "name": "Player Action",
       "local": "PlayerAction"
-    },
-    {
-      "name": "Fluids",
-      "local": "Fluids"
     },
     {
       "name": "Smithed Crafting",
@@ -44,6 +40,14 @@
     {
       "name": "Smithed Actionbar",
       "local": "external-libraries/Smithed Actionbar.zip"
+    },
+    {
+      "name": "Smithed Item",
+      "local": "external-libraries/Smithed Item.zip"
+    },
+    {
+      "name": "Smithed Chunk",
+      "local": "SmithedChunk-Unofficial"
     }
   ],
   "append_function_tags": [
