@@ -1,0 +1,342 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:the_void" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:the_void\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:plains" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:plains\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:sunflower_plains" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:sunflower_plains\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:snowy_plains" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:snowy_plains\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:ice_spikes" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:ice_spikes\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:desert" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:desert\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:swamp" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:swamp\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:forest" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:forest\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:flower_forest" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:flower_forest\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:birch_forest" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:birch_forest\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:dark_forest" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:dark_forest\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:old_growth_birch_forest" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:old_growth_birch_forest\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:old_growth_pine_taiga" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:old_growth_pine_taiga\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:old_growth_spruce_taiga" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:old_growth_spruce_taiga\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:taiga" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:taiga\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:snowy_taiga" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:snowy_taiga\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:savanna" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:savanna\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:savanna_plateau" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:savanna_plateau\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:windswept_hills" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:windswept_hills\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:windswept_gravelly_hills" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:windswept_gravelly_hills\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:windswept_forest" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:windswept_forest\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:windswept_savanna" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:windswept_savanna\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:jungle" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:jungle\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:sparse_jungle" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:sparse_jungle\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:bamboo_jungle" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:bamboo_jungle\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:badlands" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:badlands\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:eroded_badlands" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:eroded_badlands\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:wooded_badlands" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:wooded_badlands\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:meadow" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:meadow\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:grove" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:grove\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:snowy_slopes" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:snowy_slopes\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:frozen_peaks" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:frozen_peaks\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:jagged_peaks" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:jagged_peaks\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:stony_peaks" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:stony_peaks\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:river" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:river\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:frozen_river" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:frozen_river\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:beach" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:beach\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:snowy_beach" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:snowy_beach\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:stony_shore" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:stony_shore\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:warm_ocean" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:warm_ocean\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:lukewarm_ocean" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:lukewarm_ocean\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:deep_lukewarm_ocean" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:deep_lukewarm_ocean\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:ocean" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:ocean\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:deep_ocean" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:deep_ocean\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:cold_ocean" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:cold_ocean\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:deep_cold_ocean" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:deep_cold_ocean\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:frozen_ocean" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:frozen_ocean\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:deep_frozen_ocean" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:deep_frozen_ocean\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:mushroom_fields" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:mushroom_fields\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:dripstone_caves" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:dripstone_caves\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:lush_caves" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:lush_caves\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:nether_wastes" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:nether_wastes\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:warped_forest" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:warped_forest\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:crimson_forest" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:crimson_forest\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:soul_sand_valley" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:soul_sand_valley\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:basalt_deltas" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:basalt_deltas\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:the_end" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:the_end\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:end_highlands" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:end_highlands\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:end_midlands" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:end_midlands\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:small_end_islands" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:small_end_islands\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:end_barrens" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:end_barrens\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:deep_dark" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:deep_dark\"}" } ]
+            },
+            { 
+              "type": "minecraft:item", "name": "minecraft:golden_hoe",
+              "conditions": [ { "condition": "minecraft:location_check", "predicate": { "biome": "minecraft:mangrove_swamp" } } ],
+              "functions": [  { "function": "minecraft:set_nbt", "tag": "{             biome_id:\"minecraft:mangrove_swamp\"}" } ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:golden_hoe",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{biome_id:\"unknown\"}"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+

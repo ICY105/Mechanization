@@ -1,0 +1,29 @@
+{
+	"values": [
+		"minecraft:husk",
+		"minecraft:zombie_villager",
+		"minecraft:zombie",
+		"minecraft:zoglin",
+		"minecraft:wither",
+		"minecraft:witch",
+		"minecraft:vindicator",
+		"minecraft:vex",
+		"minecraft:wither_skeleton",
+		"minecraft:stray",
+		"minecraft:skeleton",
+		"minecraft:silverfish",
+		"minecraft:ravager",
+		"minecraft:phantom",
+		"minecraft:pillager",
+		"minecraft:piglin_brute",
+		"minecraft:illusioner",
+		"minecraft:elder_guardian",
+		"minecraft:guardian",
+		"minecraft:giant",
+		"minecraft:evoker",
+		"minecraft:endermite",
+		"minecraft:drowned",
+		"minecraft:creeper",
+		"minecraft:blaze"
+	]
+}

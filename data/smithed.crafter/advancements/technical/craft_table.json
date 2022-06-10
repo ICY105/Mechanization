@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "craft": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "smithed.crafter:table"
+      }
+    }
+  },
+  "rewards": {
+    "function": "smithed.crafter:zint/technical/craft_table",
+    "loot": [
+      "smithed.crafter:blocks/table"
+    ]
+  }
+}

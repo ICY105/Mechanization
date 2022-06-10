@@ -1,0 +1,87 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:air",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "nbt": "{void_drop:1b}"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:deepslate",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "nbt": "{auto_smelt:1b}"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "minecraft:deepslate"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:survives_explosion"
+                }
+              ],
+              "name": "minecraft:cobbled_deepslate"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "__smithed__": {
+    "rules":[
+      {
+        "type":"smithed:prepend",
+        "target":"pools[0].entries[0].children",
+        "source": {
+          "type":"smithed:reference",
+          "path":"pools[0].entries[0].children[1]"
+        }
+      },
+      {
+        "type":"smithed:prepend",
+        "target":"pools[0].entries[0].children",
+        "source": {
+          "type":"smithed:reference",
+          "path":"pools[0].entries[0].children[0]"
+        }
+      }
+    ]
+  }
+}

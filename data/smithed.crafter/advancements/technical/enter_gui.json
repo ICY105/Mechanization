@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "click_paleontology_table": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": {
+          "block": {
+            "blocks": [
+              "minecraft:barrel"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "smithed.crafter:zint/technical/enter_gui"
+  }
+}

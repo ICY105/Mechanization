@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "interact_hopper": {
+      "trigger": "minecraft:item_used_on_block",
+	  "conditions": {
+	    "location": {
+          "block": {
+		    "blocks": [
+		      "minecraft:hopper"
+		    ]
+          }
+        }
+      }
+	}
+  },
+  "rewards":{ 
+    "function":"player_action:v1/internal/interact_hopper"
+  }
+}

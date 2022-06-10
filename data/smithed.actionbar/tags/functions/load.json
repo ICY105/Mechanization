@@ -1,0 +1,10 @@
+{
+  "values": [
+    {
+      "id": "#smithed.actionbar:load/dependencies",
+      "required": false
+    },
+    "#smithed.actionbar:load/enumerate",
+    "#smithed.actionbar:load/resolve"
+  ]
+}

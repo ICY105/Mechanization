@@ -1,0 +1,13 @@
+{
+	"values":[
+		"#minecraft:buttons",
+		"#block_utils:v1.1/pressure_plates",
+		"minecraft:lever",
+		"minecraft:detector_rail",
+		"minecraft:tripwire_hook",
+		"minecraft:redstone_torch",
+		"minecraft:redstone_block",
+		"minecraft:daylight_detector",
+		"minecraft:sculk_sensor"
+	]
+}

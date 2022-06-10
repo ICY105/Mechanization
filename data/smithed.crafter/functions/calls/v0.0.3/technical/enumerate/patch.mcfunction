@@ -1,0 +1,1 @@
+execute if score #smithed.crafter.patch load.status matches ..3 unless score #smithed.crafter.patch load.status matches 3 run function smithed.crafter:calls/v0.0.3/technical/enumerate/set_version

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "interact_brewingstand": {
+      "trigger": "minecraft:item_used_on_block",
+	  "conditions": {
+	    "location": {
+          "block": {
+		    "blocks": [
+		      "minecraft:brewing_stand"
+		    ]
+          }
+        }
+      }
+	}
+  },
+  "rewards":{ 
+    "function":"player_action:v1/internal/interact_brewingstand"
+  }
+}

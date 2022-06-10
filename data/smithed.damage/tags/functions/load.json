@@ -1,0 +1,10 @@
+{
+  "values": [
+    {
+      "id": "#smithed.damage:load/dependencies",
+      "required": false
+    },
+    "#smithed.damage:load/enumerate",
+    "#smithed.damage:load/resolve"
+  ]
+}

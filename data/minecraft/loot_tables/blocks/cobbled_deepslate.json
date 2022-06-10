@@ -1,0 +1,99 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobbled_deepslate",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "nbt": "{auto_smelt:1b}"
+                }
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "nbt": "{void_drop:1b}"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:deepslate",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "nbt": "{auto_smelt:1b}"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "nbt": "{void_drop:1b}"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ],
+  "__smithed__": {
+    "rules": [
+      {
+        "type":"smithed:append",
+        "target":"pools[0].entries",
+        "source":{
+          "type":"smithed:reference",
+          "path":"pools[0].entries[1]"
+        }
+      },
+      {
+        "type":"smithed:append",
+        "target":"pools[0].entries",
+        "source":{
+          "type":"smithed:reference",
+          "path":"pools[0].entries[2]"
+        }
+      },
+      {
+        "type":"smithed:append",
+        "target":"pools[0].entries[0].conditions",
+        "source":{
+          "type":"smithed:reference",
+          "path":"pools[0].entries[0].conditions[0]"
+        }
+      },
+      {
+        "type":"smithed:append",
+        "target":"pools[0].entries[0].conditions",
+        "source":{
+          "type":"smithed:reference",
+          "path":"pools[0].entries[0].conditions[1]"
+        }
+      }
+    ]
+  }
+}
