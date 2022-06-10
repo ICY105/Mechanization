@@ -1,6 +1,8 @@
 {
 	"required":false,
 	"values":[
-		"#du:internal/furnace-like"
+		"minecraft:furnace",
+		"minecraft:blast_furnace",
+		"minecraft:smoker"
 	]
 }

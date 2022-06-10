@@ -1,8 +1,8 @@
 {
 	"required":false,
 	"values":[
-		"#du:air",
-		"#du:fluids",
+		"#mechanization:air",
+		"#mechanization:fluids",
 		"minecraft:snow",
 		"minecraft:light"
 	]

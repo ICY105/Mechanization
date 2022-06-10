@@ -2,8 +2,8 @@
 	"required":false,
 	"values":[
 		"#minecraft:beds",
-		"#du:unbreakable",
-		"#du:colors/shulker_boxes",
+		"#minecraft:shulker_boxes",
+		"#mechanization:unbreakable",
 		"minecraft:spawner",
 		"minecraft:chest",
 		"minecraft:trapped_chest",
@@ -22,6 +22,9 @@
 		"minecraft:beehive",
 		"minecraft:bee_nest",
 		"minecraft:campfire",
-		"minecraft:soul_campfire"
+		"minecraft:soul_campfire",
+		"minecraft:sculk_catalyst",
+		"minecraft:sculk_shrieker",
+		"minecraft:sculk_sensor"
 	]
 }

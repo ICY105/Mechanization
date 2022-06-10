@@ -1,12 +1,12 @@
 {
 	"required":false,
 	"values":[
-		"#du:air",
-		"#du:fluids",
+		"#mechanization:air",
+		"#mechanization:fluids",
 		
 		"#minecraft:saplings",
 		"#minecraft:flowers",
-		"#minecraft:carpets",
+		"#minecraft:wool_carpets",
 		"#minecraft:corals",
 		"#minecraft:candles",
 		
@@ -38,6 +38,7 @@
 		"minecraft:soul_wall_torch",
 		"minecraft:redstone_torch",
 		"minecraft:redstone_wall_torch",
-		"minecraft:lily_pad"
+		"minecraft:lily_pad",
+		"minecraft:moss_carpet"
 	]
 }

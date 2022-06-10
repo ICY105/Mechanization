@@ -1,0 +1,8 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:lava",
+		"minecraft:water",
+		"minecraft:bubble_column"
+	]
+}

@@ -1,9 +1,9 @@
 {
 	"required":false,
 	"values":[
-		"#du:air",
+		"#mechanization:air",
 		"#mechanization:piston_nopush",
-		"#du:colors/glazed_terracotta",
+		"#mechanization:glazed_terracotta",
 		"minecraft:light"
 	]
 }
