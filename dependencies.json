@@ -54,6 +54,10 @@
     {
       "tag": "load:load",
       "value": "mechanization:load"
+    },
+	{
+      "tag": "chunk_scan.ores:v1/place_ore",
+      "value": "mechanization:base/utils/ore_gen"
     }
   ]
 }
