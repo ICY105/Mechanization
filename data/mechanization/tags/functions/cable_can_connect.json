@@ -1,8 +1,0 @@
-{
-	"required":false,
-	"values":[
-		"mechanization:base/tools/cable_can_connect",
-		"mechanization:machines/tools/cable_can_connect",
-		"mechanization:nuclear/tools/cable_can_connect"
-	]
-}
