@@ -26,7 +26,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1356, CustomModelData: 6421356, HideFlags: 32, mech_upgrade:{type:1b, effect:\"none\", max_durability:1500, base_stats:{attack_damage:5, attack_speed:-2.75, energy_saber_range:5}, bonus_stats:{attack_speed:0.5}}, ctc:{ id:\"conductive_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/conductive_alloy\":1b }}}"
+              "tag":"{CustomModelData: 6421356, HideFlags: 32, mechanization:{ id:\"conductive_rod\", modular_upgrade:{type:1b, effect:\"none\", max_durability:1500, base_stats:{attack_damage:5, attack_speed:-2.75, energy_saber_range:5}, bonus_stats:{attack_speed:0.5}} }, smithed:{dict:{rod:{conductive_alloy:1b}}} }"
             }
           ]
         }

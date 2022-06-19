@@ -26,7 +26,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1346, CustomModelData: 6421346, HideFlags: 32, mech_upgrade:{type:1b, effect:\"none\", max_durability:1500, base_stats:{attack_damage:5, attack_speed:-2.75, energy_saber_range:5}, bonus_stats:{energy_saber_range:2}}, ctc:{ id:\"structural_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/structural_alloy\":1b }}}"
+              "tag":"{CustomModelData: 6421346, HideFlags: 32, mechaniation:{ id:\"structural_rod\", modular_upgrade:{type:1b, effect:\"none\", max_durability:1500, base_stats:{attack_damage:5, attack_speed:-2.75, energy_saber_range:5}, bonus_stats:{energy_saber_range:2}} }, smithed:{dict:{rod:{structural_alloy:1b}}} }"
             }
           ]
         }

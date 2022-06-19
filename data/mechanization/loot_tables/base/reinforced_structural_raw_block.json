@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1377, CustomModelData: 6421377, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"reinforced_structural_alloy_raw_block\", from:\"mechanization\", traits:{ block:1b, raw_packed:1b, \"metal/reinforced_structural_alloy\":1b }} }"
+              "tag":"{CustomModelData: 6421377, HideFlags: 32, ctc:{ id:\"raw_reinforced_structural_alloy_block\" }, smithed:{dict:{raw_block:{reinforced_structural_alloy:1b}}}, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:raw_reinforced_structural_alloy_block\"}}}}]}  }"
             }
           ]
         }

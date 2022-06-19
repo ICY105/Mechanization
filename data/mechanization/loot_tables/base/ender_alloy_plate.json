@@ -25,7 +25,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1394, CustomModelData: 6421394, HideFlags: 32, mech_upgrade:{type:3b, effect:\"none\", max_durability:1550, base_stats:{armor:5, armor_toughness:2}, bonus_stats:{armor:1, armor_toughness:2}}, ctc:{ id:\"ender_alloy_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"metal/ender_alloy\":1b }}}"
+              "tag":"{CustomModelData: 6421394, HideFlags: 32, mechanization:{ id:\"ender_alloy_plate\", modular_upgrade:{type:3b, effect:\"none\", max_durability:1550, base_stats:{armor:5, armor_toughness:2}, bonus_stats:{armor:1, armor_toughness:2}} }, smithed:{dict:{plate:{ender_alloy:1b}}} }"
             }
           ]
         }

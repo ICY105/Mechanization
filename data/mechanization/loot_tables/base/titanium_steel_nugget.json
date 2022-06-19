@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1361, CustomModelData: 6421361, HideFlags: 32, ctc:{ id:\"titanium_steel_nugget\", from:\"mechanization\", traits:{ item:1b, nugget:1b, \"metal/titanium_steel\":1b }} }"
+              "tag":"{CustomModelData: 6421361, HideFlags: 32, mechanization:{ id:\"titanium_steel_nugget\" }, smithed:{dict:{nugget:{titanium_steel:1b}}}  }"
             }
           ]
         }

@@ -1,7 +1,7 @@
 {
 	"required":false,
 	"values":[
-		"mechanization:base/tools/multimeter_readout",
+		"mechanization:base/player/multimeter/readout",
 		"mechanization:machines/tools/multimeter_readout",
 		"mechanization:nuclear/tools/multimeter_readout",
 		"mechanization:gadgets/tools/multimeter_readout",

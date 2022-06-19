@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1363, CustomModelData: 6421363, HideFlags: 32, BlockEntityTag: {Lock: \"§mechanization\"}, ctc:{ id:\"titanium_steel_block\", from:\"mechanization\", traits:{ block:1b, packed:1b, \"metal/titanium_steel\":1b }} }"
+              "tag":"{CustomModelData: 6421363, HideFlags: 32, ctc:{ id:\"titanium_steel_block\" }, smithed:{dict:{block:{titanium_steel:1b}}}, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:titanium_steel_block\"}}}}]}  }"
             }
           ]
         }

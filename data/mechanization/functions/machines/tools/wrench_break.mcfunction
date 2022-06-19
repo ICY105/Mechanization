@@ -1,4 +1,26 @@
 
+
+
+# Batteries
+execute if entity @s[tag=mechanization.battery.t1] run loot spawn ~ ~ ~ loot mechanization:base/tier_1_battery
+execute if entity @s[tag=mechanization.battery.t2] run loot spawn ~ ~ ~ loot mechanization:base/tier_2_battery
+execute if entity @s[tag=mechanization.battery.t3] run loot spawn ~ ~ ~ loot mechanization:base/tier_3_battery
+#execute if entity @s[tag=mechanization.battery.quantum] run loot spawn ~ ~ ~ loot mechanization:base/quantum_battery
+execute if entity @s[tag=mechanization.battery.quantum] run loot spawn ~ ~ ~ loot mechanization:base/tier_3_battery
+
+execute if entity @s[tag=mechanization.energy_storage] at @s run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mechanization.energy_storage]
+
+# Energy Relay
+execute if entity @s[tag=mechanization.energy_relay] run loot spawn ~ ~ ~ loot mechanization:base/energy_relay
+execute if entity @s[tag=mechanization.energy_relay] at @s run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mechanization.energy_relay]
+
+
+
+# Cable
+execute if entity @s[tag=mechanization.cable] at @s run function mechanization:base/machines/cable/break
+
 #Steam Generator
 execute if entity @s[tag=mech_steam_generator] run loot spawn ~ ~ ~ loot mechanization:machines/steam_generator
 execute if entity @s[tag=mech_steam_generator] run setblock ~ ~ ~ minecraft:air replace

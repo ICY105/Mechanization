@@ -23,7 +23,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1101, CustomModelData: 6421101, HideFlags: 6, Unbreakable:1b, du_click_detect:1b, ctc:{ id:\"multimeter\", from:\"mechanization\", traits:{ item:1b }} }"
+              "tag":"{CustomModelData: 6421101, HideFlags: 6, Unbreakable:1b, mechanization:{ id:\"multimeter\" }, player_action:{click_detection:1b} }"
             }
           ]
         }

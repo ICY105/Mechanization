@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1552, CustomModelData: 6421552, HideFlags: 32, mech_upgrade:{type:1b, effect:\"illuminating\", max_durability:1000, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"glowstone_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"gem/glowstone\":1b }}}"
+              "tag":"{CustomModelData: 6421552, HideFlags: 32, mechanization:{ id:\"glowstone_rod\", modular_upgrade:{type:1b, effect:\"illuminating\", max_durability:1000, base_stats:{}, bonus_stats:{}} }, smithed:{dict:{rod:{glowstone:1b}}} }"
             }
           ]
         }

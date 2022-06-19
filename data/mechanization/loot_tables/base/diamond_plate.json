@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1510, CustomModelData: 6421510, HideFlags: 32, mech_upgrade:{type:3b, effect:\"reinforced\", max_durability:800, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"diamond_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"gem/diamond\":1b }}}"
+              "tag":"{CustomModelData: 6421510, HideFlags: 32, mechanization:{ id:\"diamond_plate\", modular_upgrade:{type:3b, effect:\"reinforced\", max_durability:800, base_stats:{}, bonus_stats:{}} }, smithed:{ dict:{plate:{diamond:1b}} }}"
             }
           ]
         }

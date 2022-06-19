@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1451, CustomModelData: 6421451, HideFlags: 32, mech_upgrade:{type:2b, effect:\"none\", max_durability:750, bonus_stats:{mining_area:1}}, ctc:{ id:\"iron_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/iron\":1b }}}"
+              "tag":"{CustomModelData: 6421451, HideFlags: 32, mechanization:{ id:\"iron_gear\", modular_upgrade:{type:2b, effect:\"none\", max_durability:750, bonus_stats:{mining_area:1}} }, smithed:{dict:{gear:{iron:1b}}} }"
             }
           ]
         }

@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1542, CustomModelData: 6421542, HideFlags: 32, mech_upgrade:{type:1b, effect:\"weakness\", max_durability:750, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"amethyst_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"gem/amethyst\":1b }}}"
+              "tag":"{CustomModelData: 6421542, HideFlags: 32, mechanization:{ id:\"amethyst_rod\", upgrade:{type:1b, effect:\"weakness\", max_durability:750, base_stats:{}, bonus_stats:{}} }, smithed:{ dict:{rod:{amethyst:1b}} }}"
             }
           ]
         }

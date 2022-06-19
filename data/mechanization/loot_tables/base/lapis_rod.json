@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1532, CustomModelData: 6421532, HideFlags: 32, mech_upgrade:{type:1b, effect:\"slowness\", max_durability:750, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"lapis_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"gem/lapis\":1b }}}"
+              "tag":"{CustomModelData: 6421532, HideFlags: 32, mechanization:{ id:\"lapis_rod\", modular_upgrade:{type:1b, effect:\"slowness\", max_durability:750, base_stats:{}, bonus_stats:{}} }, smithed:{dict:{rod:{lapis:1b}}} }"
             }
           ]
         }

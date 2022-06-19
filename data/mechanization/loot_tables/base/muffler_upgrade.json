@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1109, CustomModelData: 6421109, HideFlags: 6, Unbreakable:1b, ctc:{ id:\"muffler_upgrade\", from:\"mechanization\", traits:{ item:1b }} }"
+              "tag":"{CustomModelData: 6421109, HideFlags: 6, Unbreakable:1b, mechanization:{ id:\"muffler_upgrade\" } }"
             }
           ]
         }

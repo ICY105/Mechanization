@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1345, CustomModelData: 6421345, HideFlags: 32, mech_upgrade:{type:2b, effect:\"fortune_2\", max_durability:1500, bonus_stats:{}}, ctc:{ id:\"structural_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/structural_alloy\":1b }}}"
+              "tag":"{CustomModelData: 6421345, HideFlags: 32, mechaniation:{ id:\"structural_gear\", modular_upgrade:{type:2b, effect:\"fortune_2\", max_durability:1500, bonus_stats:{}} }, smithed:{dict:{gear:{structural_alloy:1b}}} }"
             }
           ]
         }

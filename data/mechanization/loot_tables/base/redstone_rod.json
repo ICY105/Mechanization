@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1522, CustomModelData: 6421522, HideFlags: 32, mech_upgrade:{type:1b, effect:\"vampiric\", max_durability:750, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"redstone_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"gem/redstone\":1b }}}"
+              "tag":"{CustomModelData: 6421522, HideFlags: 32, mechanization:{ id:\"redstone_rod\", modular_upgrade:{type:1b, effect:\"vampiric\", max_durability:750, base_stats:{}, bonus_stats:{}} }, smithed:{dict:{rod:{redstone:1b}}} }"
             }
           ]
         }

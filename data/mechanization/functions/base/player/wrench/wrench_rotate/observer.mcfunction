@@ -1,0 +1,6 @@
+execute if score #success mechanization.data matches 0 if block ~ ~ ~ minecraft:observer[facing=up] store success score #success mechanization.data run setblock ~ ~ ~ minecraft:observer[facing=down]
+execute if score #success mechanization.data matches 0 if block ~ ~ ~ minecraft:observer[facing=down] store success score #success mechanization.data run setblock ~ ~ ~ minecraft:observer[facing=north]
+execute if score #success mechanization.data matches 0 if block ~ ~ ~ minecraft:observer[facing=north] store success score #success mechanization.data run setblock ~ ~ ~ minecraft:observer[facing=east]
+execute if score #success mechanization.data matches 0 if block ~ ~ ~ minecraft:observer[facing=east] store success score #success mechanization.data run setblock ~ ~ ~ minecraft:observer[facing=south]
+execute if score #success mechanization.data matches 0 if block ~ ~ ~ minecraft:observer[facing=south] store success score #success mechanization.data run setblock ~ ~ ~ minecraft:observer[facing=west]
+execute if score #success mechanization.data matches 0 if block ~ ~ ~ minecraft:observer[facing=west] store success score #success mechanization.data run setblock ~ ~ ~ minecraft:observer[facing=up]

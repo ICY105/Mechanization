@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1104, CustomModelData: 6421104, HideFlags: 6, Unbreakable:1b, ctc:{ id:\"ender_upgrade\", from:\"mechanization\", traits:{ item:1b }} }"
+              "tag":"{CustomModelData: 6421104, HideFlags: 6, Unbreakable:1b, mechanization:{ id:\"ender_upgrade\" } }"
             }
           ]
         }

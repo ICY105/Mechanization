@@ -25,8 +25,8 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1482, CustomModelData: 6421482, HideFlags: 32, mech_upgrade:{type:1b, effect:\"none\", max_durability:2000, base_stats:{attack_damage:8, attack_speed:-2.25, energy_saber_range:9}, bonus_stats:{}}, ctc:{ id:\"netherite_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/netherite\":1b }}}"
-            }
+              "tag":"{CustomModelData: 6421482, HideFlags: 32, mechanization:{ id:\"netherite_rod\", modular_upgrade:{type:1b, effect:\"none\", max_durability:2000, base_stats:{attack_damage:8, attack_speed:-2.25, energy_saber_range:9}, bonus_stats:{}} }, smithed:{dict:{rod:{netherite:1b}}} }"
+            } 
           ]
         }
       ]

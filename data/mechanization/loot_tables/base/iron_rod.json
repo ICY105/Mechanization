@@ -26,7 +26,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1452, CustomModelData: 6421452, HideFlags: 32, mech_upgrade:{type:1b, effect:\"none\", max_durability:750, base_stats:{attack_damage:4, attack_speed:-3, energy_saber_range:3}, bonus_stats:{attack_damage:0.5}}, ctc:{ id:\"iron_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/iron\":1b }}}"
+              "tag":"{CustomModelData: 6421452, HideFlags: 32, mechanization:{ id:\"iron_rod\", modular_upgrade:{type:1b, effect:\"none\", max_durability:750, base_stats:{attack_damage:4, attack_speed:-3, energy_saber_range:3}, bonus_stats:{attack_damage:0.5}} }, smithed:{dict:{rod:{iron:1b}}} }"
             }
           ]
         }

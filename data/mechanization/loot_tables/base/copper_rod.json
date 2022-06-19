@@ -26,7 +26,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1472, CustomModelData: 6421472, HideFlags: 32, mech_upgrade:{type:1b, effect:\"none\", max_durability:750, base_stats:{attack_damage:4, attack_speed:-3, energy_saber_range:3}, bonus_stats:{attack_speed:0.25}}, ctc:{ id:\"copper_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/copper\":1b }}}"
+              "tag":"{CustomModelData: 6421472, HideFlags: 32, mechanization:{ id:\"copper_rod\", modular_upgrade:{type:1b, effect:\"none\", max_durability:750, base_stats:{attack_damage:4, attack_speed:-3, energy_saber_range:3}, bonus_stats:{attack_speed:0.25}} }, smithed:{dict:{rod:{copper:1b}}} }"
             }
           ]
         }

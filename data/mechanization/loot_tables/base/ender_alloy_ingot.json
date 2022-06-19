@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1390, CustomModelData: 6421390, HideFlags: 32, ctc:{ id:\"ender_alloy_ingot\", from:\"mechanization\", traits:{ item:1b, ingot:1b, \"metal/ender_alloy\":1b }} }"
+              "tag":"{CustomModelData: 6421390, HideFlags: 32, mechanization:{ id:\"ender_alloy_ingot\" }, smithed:{dict:{ingot:{ender_alloy:1b}}} }"
             }
           ]
         }

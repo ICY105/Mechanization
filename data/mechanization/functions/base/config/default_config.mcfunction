@@ -51,10 +51,10 @@ scoreboard players set #base.cf.qu_battery.capacity.nether_upgrade mechanization
 # [1,2000000000] Copper cable transfer rate
 scoreboard players set #base.cf.copper_cable.transfer_rate mechanization.data 256
 
-# [1,2000000000] Copper cable transfer rate
+# [1,2000000000] Conductive Cable cable transfer rate
 scoreboard players set #base.cf.conductive_cable.transfer_rate mechanization.data 2048
 
-# [1,2000000000] Copper cable transfer rate
+# [1,2000000000] Super Conductive cable transfer rate
 scoreboard players set #base.cf.super_conductive_cable.transfer_rate mechanization.data 2000000000
 
 

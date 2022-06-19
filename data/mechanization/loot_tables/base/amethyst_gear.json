@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1541, CustomModelData: 6421541, HideFlags: 32, mech_upgrade:{type:2b, effect:\"silk_touch\", max_durability:750, bonus_stats:{}}, ctc:{ id:\"amethyst_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"gem/amethyst\":1b }}}"
+              "tag":"{CustomModelData: 6421541, HideFlags: 32, mechanization:{ id:\"amethyst_gear\", modular_upgrade:{type:2b, effect:\"silk_touch\", max_durability:750, bonus_stats:{}} }, smithed:{dict:{gear:{amethyst:1b}}} }"
             }
           ]
         }

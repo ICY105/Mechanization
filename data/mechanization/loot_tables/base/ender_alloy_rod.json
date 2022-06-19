@@ -26,7 +26,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1396, CustomModelData: 6421396, HideFlags: 32, mech_upgrade:{type:1b, effect:\"looting_4\", max_durability:3000, base_stats:{attack_damage:7, attack_speed:-2.5, energy_saber_range:9}, bonus_stats:{}}, ctc:{ id:\"ender_alloy_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/ender_alloy\":1b }}}"
+              "tag":"{CustomModelData: 6421396, HideFlags: 32, mechanization:{ id:\"ender_alloy_rod\", modular_upgrade:{type:1b, effect:\"looting_4\", max_durability:3000, base_stats:{attack_damage:7, attack_speed:-2.5, energy_saber_range:9}, bonus_stats:{}} }, smithed:{dict:{rod:{ender_alloy:1b}}} }"
             }
           ]
         }

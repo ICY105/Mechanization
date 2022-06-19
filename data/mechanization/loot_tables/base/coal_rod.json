@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1492, CustomModelData: 6421492, HideFlags: 32, mech_upgrade:{type:1b, effect:\"fire_aspect\", max_durability:750, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"coal_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"gem/coal\":1b }}}"
+              "tag":"{CustomModelData: 6421492, HideFlags: 32, mechanization:{ id:\"coal_rod\", modular_upgrade:{type:1b, effect:\"fire_aspect\", max_durability:750, base_stats:{}, bonus_stats:{}} }, smithed:{dict:{rod:{coal:1b}}} }"
             }
           ]
         }

@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1462, CustomModelData: 6421462, HideFlags: 32, mech_upgrade:{type:1b, effect:\"none\", max_durability:128, base_stats:{}, bonus_stats:{attack_speed:2}}, ctc:{ id:\"gold_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/gold\":1b }}}"
+              "tag":"{CustomModelData: 6421462, HideFlags: 32, mechanization:{ id:\"gold_rod\", modular_upgrade:{type:1b, effect:\"none\", max_durability:128, base_stats:{}, bonus_stats:{attack_speed:2}} }, smithed:{dict:{rod:{gold:1b}}} }"
             }
           ]
         }

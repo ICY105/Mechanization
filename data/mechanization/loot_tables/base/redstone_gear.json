@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1521, CustomModelData: 6421521, HideFlags: 32, mech_upgrade:{type:2b, effect:\"magnetic\", max_durability:750, bonus_stats:{}}, ctc:{ id:\"redstone_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"gem/redstone\":1b }}}"
+              "tag":"{CustomModelData: 6421521, HideFlags: 32, mechanization:{ id:\"redstone_gear\", modular_upgrade:{type:2b, effect:\"magnetic\", max_durability:750, bonus_stats:{}} }, smithed:{dict:{gear:{redstone:1b}}} }"
             }
           ]
         }

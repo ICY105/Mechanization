@@ -28,7 +28,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1446, CustomModelData: 6421446, HideFlags: 32, mech_upgrade:{type:1b, effect:\"wither\", max_durability:750, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"plutonium_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/plutonium\":1b }}}"
+              "tag":"{CustomModelData: 6421446, HideFlags: 32, mechanization:{ id:\"plutonium_rod\", modular_upgrade:{type:1b, effect:\"wither\", max_durability:750, base_stats:{}, bonus_stats:{}} }, smithed:{dict:{rod:{plutonium:1b}}} }"
             }
           ]
         }

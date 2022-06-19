@@ -28,7 +28,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1436, CustomModelData: 6421436, HideFlags: 32, mech_upgrade:{type:1b, effect:\"poison\", max_durability:750, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"uranium_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/uranium\":1b }}}"
+              "tag":"{CustomModelData: 6421436, HideFlags: 32, mechaniation:{ id:\"uranium_rod\", modular_upgrade:{type:1b, effect:\"poison\", max_durability:750, base_stats:{}, bonus_stats:{}} }, smithed:{dict:{rod:{uranium:1b}}} }"
             }
           ]
         }

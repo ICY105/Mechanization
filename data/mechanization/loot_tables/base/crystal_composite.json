@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1410, CustomModelData: 6421410, HideFlags: 6, ctc:{ id:\"crystal_composite\", from:\"mechanization\", traits:{ item:1b, ingot:1b, gem:1b, \"gem/crystal_composite\":1b }} }"
+              "tag":"{CustomModelData: 6421410, HideFlags: 6, mechanization:{ id:\"crystal_composite\" }, smithed:{dict:{gem:{crystal_composite:1b}}}  }"
             }
           ]
         }

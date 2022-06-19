@@ -1,0 +1,4 @@
+execute if score #success mechanization.data matches 0 if block ~ ~ ~ minecraft:jack_o_lantern[facing=south] store success score #success mechanization.data run setblock ~ ~ ~ minecraft:jack_o_lantern[facing=west]
+execute if score #success mechanization.data matches 0 if block ~ ~ ~ minecraft:jack_o_lantern[facing=west] store success score #success mechanization.data run setblock ~ ~ ~ minecraft:jack_o_lantern[facing=north]
+execute if score #success mechanization.data matches 0 if block ~ ~ ~ minecraft:jack_o_lantern[facing=north] store success score #success mechanization.data run setblock ~ ~ ~ minecraft:jack_o_lantern[facing=east]
+execute if score #success mechanization.data matches 0 if block ~ ~ ~ minecraft:jack_o_lantern[facing=east] store success score #success mechanization.data run setblock ~ ~ ~ minecraft:jack_o_lantern[facing=south]

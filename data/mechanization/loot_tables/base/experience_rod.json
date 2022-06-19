@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1572, CustomModelData: 6421572, HideFlags: 32, mech_upgrade:{type:1b, effect:\"repair\", max_durability:1000, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"experience_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"liquid/experience\":1b }}}"
+              "tag":"{CustomModelData: 6421572, HideFlags: 32, mechanization:{ id:\"experience_rod\", modular_upgrade:{type:1b, effect:\"repair\", max_durability:1000, base_stats:{}, bonus_stats:{}} }, smithed:{dict:{rod:{experience:1b}}} }"
             }
           ]
         }

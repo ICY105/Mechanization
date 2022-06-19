@@ -8,6 +8,6 @@
 		}
 	},
 	"rewards":{ 
-		"function":"mechanization:base/triggers/unlock_all_recipes"
+		"function":"mechanization:base/player/crafting/unlock_all_recipes"
 	}
 }

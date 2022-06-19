@@ -1,6 +1,22 @@
 
 #### Machine Ticks
 
+
+
+# Batteries
+execute if score #timer.20 mechanization.data matches 0 as @e[type=item_frame,tag=mechanization.battery.t1] at @s run function mechanization:base/machines/tier_1_battery
+execute if score #timer.20 mechanization.data matches 1 as @e[type=item_frame,tag=mechanization.battery.t2] at @s run function mechanization:base/machines/tier_2_battery
+execute if score #timer.20 mechanization.data matches 2 as @e[type=item_frame,tag=mechanization.battery.t3] at @s run function mechanization:base/machines/tier_3_battery
+#execute if score #timer.20 mechanization.data matches 4 as @e[type=item_frame,tag=mechanization.battery.quantum] at @s run function mechanization:base/machines/quantum_battery
+
+# Energy Relay
+execute if score #timer.20 mechanization.data matches 5 as @e[type=item_frame,tag=mechanization.energy_relay] at @s run function mechanization:base/machines/relay/energy_relay
+
+# Energy Cable
+execute if score #timer.100 mechanization.data matches 0 as @e[type=item_frame,tag=mechanization.cable] at @s unless block ~ ~ ~ minecraft:moving_piston run function mechanization:base/machines/cable/break
+
+
+
 # 2 tick clock
 execute if score $base.timer_2 du_data matches 0 as @e[type=minecraft:item_frame,tag=mech_super_piston] at @s run function mechanization:machines/machines/super_piston/super_piston
 execute if score $base.timer_2 du_data matches 0 as @e[type=minecraft:item_frame,tag=mech_super_sticky_piston] at @s run function mechanization:machines/machines/super_piston/super_piston

@@ -8,6 +8,6 @@
 		}
 	},
 	"rewards":{ 
-		"function":"mechanization:base/triggers/craft_mechanical_manual"
+		"function":"mechanization:base/player/crafting/mechanical_manual"
 	}
 }

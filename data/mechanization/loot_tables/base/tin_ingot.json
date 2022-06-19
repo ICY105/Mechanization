@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1311, CustomModelData: 6421311, HideFlags: 32, ctc:{ id:\"tin_ingot\", from:\"mechanization\", traits:{ item:1b, ingot:1b, \"metal/tin\":1b }} }"
+              "tag":"{CustomModelData: 6421311, HideFlags: 32, mechanization:{ id:\"tin_ingot\" }, smithed:{dict:{ingot:{tin:1b}}}  }"
             }
           ]
         }
