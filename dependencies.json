@@ -72,6 +72,14 @@
       "value": "mechanization:base/utils/ore_gen"
     },
 	{
+      "tag": "nbt_smelting:v1/furnace",
+      "value": "mechanization:base/recipes/smelting"
+    },
+	{
+      "tag": "nbt_smelting:v1/blast_furnace",
+      "value": "mechanization:base/recipes/smelting"
+    },
+	{
       "tag": "player_action:v1/right_click",
       "value": "mechanization:base/player/right_click"
     },
