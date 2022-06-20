@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "place_furnace": {
+      "trigger": "minecraft:placed_block",
+        "conditions": {
+          "item": {
+            "items": [
+              "minecraft:furnace",
+              "minecraft:blast_furnace",
+              "minecraft:smoker",
+              "minecraft:campfire",
+              "minecraft:soul_campfire"
+			]
+          }
+        }
+      }
+  },
+  "rewards":{ 
+    "function":"nbt_smelting:v1.0/versioning/place_smelting_block"
+  }
+}

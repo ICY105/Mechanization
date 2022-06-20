@@ -30,6 +30,10 @@
       "local": "PlayerAction"
     },
     {
+      "name": "NBT Smelting",
+      "local": "NBTSmelting"
+    },
+    {
       "name": "Datapack Energy",
       "local": "DatapackEnergy"
     },

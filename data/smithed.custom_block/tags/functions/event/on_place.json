@@ -1,6 +1,5 @@
 {
     "values":[
-        "#smithed.crafter:block/place",
-		"mechanization:base/machines/place_block"
+        "#smithed.crafter:block/place"
     ]
 }
