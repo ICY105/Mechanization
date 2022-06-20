@@ -1,8 +1,11 @@
 
+execute store result score #id mechanization.data run data get storage smithed.custom_block:main blockApi.id
+
+execute if score #id mechanization.data matches 36 if data storage smithed.custom_block:main blockApi{id:"mechanization:machine_crafting_table"} run function mechanization:base/machines/machine_crafting_table/place
+
 ### Resources
 
 scoreboard players set #success mechanization.data 0
-execute store result score #id mechanization.data run data get storage smithed.custom_block:main blockApi.id
 
 # machine frames
 execute if score #id mechanization.data matches 34 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier_1_machine_frame"} store success score #success mechanization.data run summon minecraft:item_frame ~ ~ ~ {Tags:["mechanization.resource_block","mechanization.machine_frame.t1","smithed.block"], Item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421007},Count:1b}, Invisible:1, Invulnerable:1, Fixed:1b, Silent:1b}

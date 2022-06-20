@@ -12,49 +12,51 @@ scoreboard players set #muffled mechanization.data 0
 execute if entity @s[tag=mechanization.muffled] run scoreboard players set #muffled mechanization.data 1
 
 # drop items 1
-execute if entity @s[tag=mechanization.machine_crafter] run item replace block ~ ~ ~ container.16 with minecraft:air
+execute if entity @s[tag=mechanization.machine_crafting_table] run item replace block ~ ~ ~ container.16 with minecraft:air
 
 data remove block -30000000 0 3201 Items
 execute if block ~ ~ ~ #mechanization:inv run data modify block -30000000 0 3201 Items set from block ~ ~ ~ Items
 execute if block ~ ~ ~ #mechanization:inv run data remove block -30000000 0 3201 Items[{tag:{mechanization:{gui_item:1b}}}]
 
 # Machine Crafting Table
-execute if entity @s[tag=mechanization.machine_crafter] run loot spawn ~ ~ ~ loot mechanization:base/machine_crafting_table
-execute if entity @s[tag=mechanization.machine_crafter] at @s run setblock ~ ~ ~ minecraft:air replace
-kill @s[tag=mechanization.machine_crafter]
+execute if entity @s[tag=mechanization.machine_crafting_table] run loot spawn ~ ~ ~ loot mechanization:base/machine_crafting_table
+execute if entity @s[tag=mechanization.machine_crafting_table] at @s run setblock ~ ~ ~ minecraft:air replace
+kill @s[tag=mechanization.machine_crafting_table]
 
 # Resource Blocks
-execute if entity @s[tag=mechanization.t1_machine_frame] at @s run loot spawn ~ ~ ~ loot mechanization:base/tier_1_machine_frame
-execute if entity @s[tag=mechanization.t2_machine_frame] at @s run loot spawn ~ ~ ~ loot mechanization:base/tier_2_machine_frame
-execute if entity @s[tag=mechanization.t3_machine_frame] at @s run loot spawn ~ ~ ~ loot mechanization:base/tier_3_machine_frame
+execute if entity @s[tag=mechanization.machine_frame.t1] at @s run loot spawn ~ ~ ~ loot mechanization:base/tier_1_machine_frame
+execute if entity @s[tag=mechanization.machine_frame.t2] at @s run loot spawn ~ ~ ~ loot mechanization:base/tier_2_machine_frame
+execute if entity @s[tag=mechanization.machine_frame.t3] at @s run loot spawn ~ ~ ~ loot mechanization:base/tier_3_machine_frame
 execute if entity @s[tag=mechanization.crystal_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/crystal_composite_block
-execute if entity @s[tag=mechanization.tin] at @s run loot spawn ~ ~ ~ loot mechanization:base/tin_block
-execute if entity @s[tag=mechanization.raw_tin] at @s run loot spawn ~ ~ ~ loot mechanization:base/tin_raw_block
-execute if entity @s[tag=mechanization.titanium] at @s run loot spawn ~ ~ ~ loot mechanization:base/titanium_block
-execute if entity @s[tag=mechanization.raw_titanium] at @s run loot spawn ~ ~ ~ loot mechanization:base/titanium_raw_block
-execute if entity @s[tag=mechanization.steel] at @s run loot spawn ~ ~ ~ loot mechanization:base/steel_block
-execute if entity @s[tag=mechanization.raw_steel] at @s run loot spawn ~ ~ ~ loot mechanization:base/steel_raw_block
-execute if entity @s[tag=mechanization.structural] at @s run loot spawn ~ ~ ~ loot mechanization:base/structural_block
-execute if entity @s[tag=mechanization.raw_structural] at @s run loot spawn ~ ~ ~ loot mechanization:base/structural_raw_block
-execute if entity @s[tag=mechanization.conductive] at @s run loot spawn ~ ~ ~ loot mechanization:base/conductive_block
-execute if entity @s[tag=mechanization.raw_conductive] at @s run loot spawn ~ ~ ~ loot mechanization:base/conductive_raw_block
-execute if entity @s[tag=mechanization.titanium_steel] at @s run loot spawn ~ ~ ~ loot mechanization:base/titanium_steel_block
-execute if entity @s[tag=mechanization.raw_titanium_steel] at @s run loot spawn ~ ~ ~ loot mechanization:base/titanium_steel_raw_block
-execute if entity @s[tag=mechanization.reinforced_structural] at @s run loot spawn ~ ~ ~ loot mechanization:base/reinforced_structural_block
-execute if entity @s[tag=mechanization.raw_reinforced_structural] at @s run loot spawn ~ ~ ~ loot mechanization:base/reinforced_structural_raw_block
-execute if entity @s[tag=mechanization.super_conductive] at @s run loot spawn ~ ~ ~ loot mechanization:base/super_conductive_block
-execute if entity @s[tag=mechanization.raw_super_conductive] at @s run loot spawn ~ ~ ~ loot mechanization:base/super_conductive_raw_block
-execute if entity @s[tag=mechanization.ender] at @s run loot spawn ~ ~ ~ loot mechanization:base/ender_block
-execute if entity @s[tag=mechanization.raw_ender] at @s run loot spawn ~ ~ ~ loot mechanization:base/ender_raw_block
-execute if entity @s[tag=mechanization.nether] at @s run loot spawn ~ ~ ~ loot mechanization:base/nether_block
-execute if entity @s[tag=mechanization.raw_nether] at @s run loot spawn ~ ~ ~ loot mechanization:base/nether_raw_block
-execute if entity @s[tag=mechanization.uranium] at @s run loot spawn ~ ~ ~ loot mechanization:base/uranium_block
-execute if entity @s[tag=mechanization.raw_uranium] at @s run loot spawn ~ ~ ~ loot mechanization:base/uranium_raw_block
-execute if entity @s[tag=mechanization.plutonium] at @s run loot spawn ~ ~ ~ loot mechanization:base/plutonium_block
-execute if entity @s[tag=mechanization.raw_plutonium] at @s run loot spawn ~ ~ ~ loot mechanization:base/plutonium_raw_block
+execute if entity @s[tag=mechanization.tin_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/tin_block
+execute if entity @s[tag=mechanization.raw_tin_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/tin_raw_block
+execute if entity @s[tag=mechanization.titanium_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/titanium_block
+execute if entity @s[tag=mechanization.raw_titanium_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/titanium_raw_block
+execute if entity @s[tag=mechanization.steel_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/steel_block
+execute if entity @s[tag=mechanization.raw_steel_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/steel_raw_block
+execute if entity @s[tag=mechanization.structural_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/structural_block
+execute if entity @s[tag=mechanization.raw_structural_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/structural_raw_block
+execute if entity @s[tag=mechanization.conductive_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/conductive_block
+execute if entity @s[tag=mechanization.raw_conductive_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/conductive_raw_block
+execute if entity @s[tag=mechanization.titanium_steel_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/titanium_steel_block
+execute if entity @s[tag=mechanization.raw_titanium_steel_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/titanium_steel_raw_block
+execute if entity @s[tag=mechanization.reinforced_structural_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/reinforced_structural_block
+execute if entity @s[tag=mechanization.raw_reinforced_structural_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/reinforced_structural_raw_block
+execute if entity @s[tag=mechanization.super_conductive_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/super_conductive_block
+execute if entity @s[tag=mechanization.raw_super_conductive_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/super_conductive_raw_block
+execute if entity @s[tag=mechanization.ender_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/ender_block
+execute if entity @s[tag=mechanization.raw_ender_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/ender_raw_block
+execute if entity @s[tag=mechanization.nether_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/nether_block
+execute if entity @s[tag=mechanization.raw_nether_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/nether_raw_block
+execute if entity @s[tag=mechanization.uranium_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/uranium_block
+execute if entity @s[tag=mechanization.raw_uranium_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/uranium_raw_block
+execute if entity @s[tag=mechanization.plutonium_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/plutonium_block
+execute if entity @s[tag=mechanization.raw_plutonium_block] at @s run loot spawn ~ ~ ~ loot mechanization:base/plutonium_raw_block
 
 execute if entity @s[tag=mechanization.resource_block] at @s run setblock ~ ~ ~ minecraft:air replace
 execute if entity @s[tag=mechanization.resource_block] at @s run kill @s
+
+# run break tag
 
 function #mechanization:wrench_break
 

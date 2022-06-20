@@ -2,7 +2,6 @@
 #init scores
 scoreboard objectives add mechanization.data dummy
 scoreboard objectives add mechanization.fluid dummy
-#scoreboard objectives add mechanization.usedid dummy
 scoreboard objectives add mechanization.item_id dummy
 
 scoreboard objectives add mechanization.tele trigger
