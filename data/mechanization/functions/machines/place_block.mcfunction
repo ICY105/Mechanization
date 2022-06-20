@@ -1,14 +1,16 @@
 
+execute store result score #id mechanization.data run data get storage smithed.custom_block:main blockApi.id
+
 # Batteries
-execute if score #id mechanization.data matches 28 if data storage smd:core blockApi{id:"mechanization:tier_1_battery"} run function mechanization:base/machines/battery/place_tier_1_battery
-execute if score #id mechanization.data matches 28 if data storage smd:core blockApi{id:"mechanization:tier_2_battery"} run function mechanization:base/machines/battery/place_tier_2_battery
-execute if score #id mechanization.data matches 28 if data storage smd:core blockApi{id:"mechanization:tier_3_battery"} run function mechanization:base/machines/battery/place_tier_3_battery
-execute if score #id mechanization.data matches 30 if data storage smd:core blockApi{id:"mechanization:creative_battery"} run function mechanization:base/machines/battery/place_creative_battery
+execute if score #id mechanization.data matches 28 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier_1_battery"} run function mechanization:base/machines/battery/place_tier_1_battery
+execute if score #id mechanization.data matches 28 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier_2_battery"} run function mechanization:base/machines/battery/place_tier_2_battery
+execute if score #id mechanization.data matches 28 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier_3_battery"} run function mechanization:base/machines/battery/place_tier_3_battery
+execute if score #id mechanization.data matches 30 if data storage smithed.custom_block:main blockApi{id:"mechanization:creative_battery"} run function mechanization:base/machines/battery/place_creative_battery
 
 # Cables
-execute if score #id mechanization.data matches 26 if data storage smd:core blockApi{id:"mechanization:copper_cable"} run function mechanization:base/machines/cable/place_copper_cable
-execute if score #id mechanization.data matches 31 if data storage smd:core blockApi{id:"mechanization:conductive_cable"} run function mechanization:base/machines/cable/place_conductive_cable
-execute if score #id mechanization.data matches 37 if data storage smd:core blockApi{id:"mechanization:super_conductive_cable"} run function mechanization:base/machines/cable/place_super_conductive_cable
+execute if score #id mechanization.data matches 26 if data storage smithed.custom_block:main blockApi{id:"mechanization:copper_cable"} run function mechanization:base/machines/cable/place_copper_cable
+execute if score #id mechanization.data matches 31 if data storage smithed.custom_block:main blockApi{id:"mechanization:conductive_cable"} run function mechanization:base/machines/cable/place_conductive_cable
+execute if score #id mechanization.data matches 37 if data storage smithed.custom_block:main blockApi{id:"mechanization:super_conductive_cable"} run function mechanization:base/machines/cable/place_super_conductive_cable
 
 
 #### Machines
