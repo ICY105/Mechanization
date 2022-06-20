@@ -76,7 +76,7 @@
       "value": "mechanization:base/player/right_click"
     },
 	{
-      "tag": "energy:v1/energy_upgrade",
+      "tag": "energy:v1/energy_update",
       "value": "mechanization:base/machines/energy_update"
     },
 	{
@@ -92,7 +92,7 @@
       "value": "mechanization:gadgets/update_energy_item"
     },
 	{
-      "tag": "smithed.custom_block:on_place",
+      "tag": "smithed.custom_block:event/on_place",
       "value": "mechanization:base/machines/place_block"
     }
   ]

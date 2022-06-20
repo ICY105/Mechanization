@@ -1,3 +1,5 @@
 {
-	"values": []
-} 
+  "values": [
+    "mechanization:base/machines/energy_update"
+  ]
+}
