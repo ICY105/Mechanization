@@ -14,8 +14,8 @@ function mechanization:machines/machines/arc_furnace/gui
 
 # processing
 scoreboard players operation #needed_energy mechanization.data = #machines.cf.arc_furnace.power mechanization.data
-execute if entity @s[mechanization.upgraded] run scoreboard players operation #needed_energy mechanization.data *= #cons.5 mechanization.data
-execute if entity @s[mechanization.upgraded] run scoreboard players operation #needed_energy mechanization.data /= #cons.4 mechanization.data
+execute if entity @s[tag=mechanization.upgraded] run scoreboard players operation #needed_energy mechanization.data *= #cons.5 mechanization.data
+execute if entity @s[tag=mechanization.upgraded] run scoreboard players operation #needed_energy mechanization.data /= #cons.4 mechanization.data
 
 execute if score @s mechanization.timer matches 1.. if score @s energy.storage < #needed_energy mechanization.data run scoreboard players set @s mechanization.timer 0
 execute if score @s mechanization.timer matches 1.. if score @s energy.storage >= #needed_energy mechanization.data run scoreboard players operation @s energy.storage -= #needed_energy mechanization.data

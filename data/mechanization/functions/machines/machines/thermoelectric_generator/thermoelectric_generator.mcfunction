@@ -5,9 +5,9 @@ execute if data block ~ ~ ~ Items[{Slot:6b}] run function mechanization:machines
 
 # active
 function mechanization:base/utils/redstone_active
-execute if score @s energy.storage matches 4000.. run scoreboard players score #active mechanization.data 0
-execute if score @s[tag=!mechanization.upgraded.ender] mechanization.fluid.0 matches ..4 run scoreboard players score #active mechanization.data 0
-execute if score @s[tag=!mechanization.upgraded.nether] mechanization.fluid.1 matches ..4 run scoreboard players score #active mechanization.data 0
+execute if score @s energy.storage matches 4000.. run scoreboard players set #active mechanization.data 0
+execute if score @s[tag=!mechanization.upgraded.ender] mechanization.fluid.0 matches ..4 run scoreboard players set #active mechanization.data 0
+execute if score @s[tag=!mechanization.upgraded.nether] mechanization.fluid.1 matches ..4 run scoreboard players set #active mechanization.data 0
 
 # gui
 function mechanization:machines/machines/thermoelectric_generator/gui
@@ -30,10 +30,10 @@ scoreboard players operation #temp.1 mechanization.data /= #cons.100 mechanizati
 execute if entity @s[tag=mechanization.upgraded] run scoreboard players operation #temp.1 mechanization.data *= #cons.3 mechanization.data
 execute if entity @s[tag=mechanization.upgraded] run scoreboard players operation #temp.1 mechanization.data /= #cons.2 mechanization.data
 execute if score #active mechanization.data matches 1 run scoreboard players operation @s energy.storage += #temp.1 mechanization.data
-execute if score #active mechanization.data matches 1 mechanization.fluid.0 matches 5.. run scoreboard players remove @s mechanization.fluid.0 5
-execute if score #active mechanization.data matches 1 mechanization.fluid.1 matches 5.. run scoreboard players remove @s mechanization.fluid.1 5
-execute if score #active mechanization.data matches 1 mechanization.fluid.0 matches 0 run data modify entity @s Item.tag.tank_1 set value {}
-execute if score #active mechanization.data matches 1 mechanization.fluid.1 matches 0 run data modify entity @s Item.tag.tank_2 set value {}
+execute if score #active mechanization.data matches 1 if score @s mechanization.fluid.0 matches 5.. run scoreboard players remove @s mechanization.fluid.0 5
+execute if score #active mechanization.data matches 1 if score @s mechanization.fluid.1 matches 5.. run scoreboard players remove @s mechanization.fluid.1 5
+execute if score #active mechanization.data matches 1 if score @s mechanization.fluid.0 matches 0 run data modify entity @s Item.tag.tank_1 set value {}
+execute if score #active mechanization.data matches 1 if score @s mechanization.fluid.1 matches 0 run data modify entity @s Item.tag.tank_2 set value {}
 
 ## cleanup
 execute unless block ~ ~ ~ minecraft:barrel run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
