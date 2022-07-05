@@ -1,6 +1,41 @@
 
 scoreboard players set #failed mechanization.data 0
 
+## Batteries
+# [0,2000000000] Tier 1 battery Capacity (no upgrade, machine upgrade, ender upgrade, nether upgrade)
+execute unless score #machines.cf.t1_battery.capacity mechanization.data matches 0..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t1_battery.capacity]","color":"green"}]
+execute unless score #machines.cf.t1_battery.capacity.machine_upgrade mechanization.data matches 0..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t1_battery.capacity.machine_upgrade]","color":"green"}]
+execute unless score #machines.cf.t1_battery.capacity.ender_upgrade mechanization.data matches 0..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t1_battery.capacity.ender_upgrade]","color":"green"}]
+execute unless score #machines.cf.t1_battery.capacity.nether_upgrade mechanization.data matches 0..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t1_battery.capacity.nether_upgrade]","color":"green"}]
+
+# [0,2000000000] Tier 2 battery Capacity (no upgrade, machine upgrade, ender upgrade, nether upgrade)
+execute unless score #machines.cf.t2_battery.capacity mechanization.data matches 0..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t2_battery.capacity]","color":"green"}]
+execute unless score #machines.cf.t2_battery.capacity.machine_upgrade mechanization.data matches 0..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t2_battery.capacity.machine_upgrade]","color":"green"}]
+execute unless score #machines.cf.t2_battery.capacity.ender_upgrade mechanization.data matches 0..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t2_battery.capacity.ender_upgrade]","color":"green"}]
+execute unless score #machines.cf.t2_battery.capacity.nether_upgrade mechanization.data matches 0..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t2_battery.capacity.nether_upgrade]","color":"green"}]
+
+# [0,2000000000] Tier 3 battery Capacity (no upgrade, machine upgrade, ender upgrade, nether upgrade)
+execute unless score #machines.cf.t3_battery.capacity mechanization.data matches 0..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t3_battery.capacity]","color":"green"}]
+execute unless score #machines.cf.t3_battery.capacity.machine_upgrade mechanization.data matches 0..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t3_battery.capacity.machine_upgrade]","color":"green"}]
+execute unless score #machines.cf.t3_battery.capacity.ender_upgrade mechanization.data matches 0..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t3_battery.capacity.ender_upgrade]","color":"green"}]
+execute unless score #machines.cf.t3_battery.capacity.nether_upgrade mechanization.data matches 0..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t3_battery.capacity.nether_upgrade]","color":"green"}]
+
+# [0,2000000000] Quantum Battery Capacity (no upgrade, machine upgrade, ender upgrade, nether upgrade)
+execute unless score #machines.cf.qu_battery.capacity mechanization.data matches 0..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.qu_battery.capacity]","color":"green"}]
+execute unless score #machines.cf.qu_battery.capacity.machine_upgrade mechanization.data matches 0..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.qu_battery.capacity.machine_upgrade]","color":"green"}]
+execute unless score #machines.cf.qu_battery.capacity.ender_upgrade mechanization.data matches 0..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.qu_battery.capacity.ender_upgrade]","color":"green"}]
+execute unless score #machines.cf.qu_battery.capacity.nether_upgrade mechanization.data matches 0..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.qu_battery.capacity.nether_upgrade]","color":"green"}]
+
+## Cables
+# [1,2000000000] Time required to create an alloy in seconds. May be modified by upgrades.
+execute unless score #machines.cf.copper_cable.transfer_rate mechanization.data matches 1..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.copper_cable.transfer_rate]","color":"green"}]
+
+# [1,2000000000] Time required to create an alloy in seconds. May be modified by upgrades.
+execute unless score #machines.cf.conductive_cable.transfer_rate mechanization.data matches 1..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.conductive_cable.transfer_rate]","color":"green"}]
+
+# [1,2000000000] Time required to create an alloy in seconds. May be modified by upgrades.
+execute unless score #machines.cf.super_conductive_cable.transfer_rate mechanization.data matches 1..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.super_conductive_cable.transfer_rate]","color":"green"}]
+
 ## Alloy Furnace
 # [2,2000000000] Time required to create an alloy in seconds. May be modified by upgrades.
 execute unless score #machines.cf.alloy_furnace.speed mechanization.data matches 2..2000000000 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.alloy_furnace.speed]","color":"green"}]

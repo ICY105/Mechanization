@@ -1,6 +1,6 @@
 {
 	"required":false,
 	"values":[
-		"mechanization:machines/tools/liquid_pipe_can_accept"
+		"mechanization:machines/machines/liquid_pipe_can_accept"
 	]
 }

@@ -3,7 +3,7 @@
   "value": {
     "type": "minecraft:score",
     "target": "this",
-    "score": "du_uuid"
+    "score": "mechanization.item_id"
   },
   "range": {
     "min": {

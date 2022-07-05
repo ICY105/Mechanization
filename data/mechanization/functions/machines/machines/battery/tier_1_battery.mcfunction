@@ -1,4 +1,9 @@
 
+# set state
+function mechanization:base/utils/redstone_active
+execute if score #active mechanization.data matches 1 run tag @s[tag=energy.send] add energy.send
+execute if score #active mechanization.data matches 0 run tag @s[tag=!energy.send] remove energy.send
+
 # set capacity
 scoreboard players operation @s mechanization.storage_capacity = #base.cf.t1_battery.capacity mechanization.data
 scoreboard players operation @s[tag=mechanization.upgraded] mechanization.storage_capacity = #base.cf.t1_battery.capacity.machine_upgrade mechanization.data

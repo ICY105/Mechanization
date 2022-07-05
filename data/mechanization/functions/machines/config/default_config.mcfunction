@@ -1,4 +1,39 @@
 
+## Batteries
+# [1,2000000000] Tier 1 Battery Capacity
+scoreboard players set #machines.cf.t1_battery.capacity mechanization.data 50000
+scoreboard players set #machines.cf.t1_battery.capacity.machine_upgrade mechanization.data 62500
+scoreboard players set #machines.cf.t1_battery.capacity.ender_upgrade mechanization.data 62500
+scoreboard players set #machines.cf.t1_battery.capacity.nether_upgrade mechanization.data 100000
+
+# [1,2000000000] Tier 2 Battery capacity
+scoreboard players set #machines.cf.t2_battery.capacity mechanization.data 200000
+scoreboard players set #machines.cf.t2_battery.capacity.machine_upgrade mechanization.data 250000
+scoreboard players set #machines.cf.t2_battery.capacity.ender_upgrade mechanization.data 250000
+scoreboard players set #machines.cf.t2_battery.capacity.nether_upgrade mechanization.data 400000
+
+# [1,2000000000] Tier 3 Battery Capacity
+scoreboard players set #machines.cf.t3_battery.capacity mechanization.data 500000
+scoreboard players set #machines.cf.t3_battery.capacity.machine_upgrade mechanization.data 62500
+scoreboard players set #machines.cf.t3_battery.capacity.ender_upgrade mechanization.data 6250000
+scoreboard players set #machines.cf.t3_battery.capacity.nether_upgrade mechanization.data 1000000
+
+# [1,2000000000] Quantum Battery Capacity
+scoreboard players set #machines.cf.qu_battery.capacity mechanization.data 200000
+scoreboard players set #machines.cf.qu_battery.capacity.machine_upgrade mechanization.data 250000
+scoreboard players set #machines.cf.qu_battery.capacity.ender_upgrade mechanization.data 250000
+scoreboard players set #machines.cf.qu_battery.capacity.nether_upgrade mechanization.data 400000
+
+## Cables
+# [1,2000000000] Copper cable transfer rate
+scoreboard players set #machines.cf.copper_cable.transfer_rate mechanization.data 256
+
+# [1,2000000000] Conductive Cable cable transfer rate
+scoreboard players set #machines.cf.conductive_cable.transfer_rate mechanization.data 2048
+
+# [1,2000000000] Super Conductive cable transfer rate
+scoreboard players set #machines.cf.super_conductive_cable.transfer_rate mechanization.data 2000000000
+
 ## Alloy Furnace
 # [2,2000000000] Time required to create an alloy in seconds. May be modified by upgrades.
 scoreboard players set #machines.cf.alloy_furnace.speed mechanization.data 8

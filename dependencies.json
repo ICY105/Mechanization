@@ -85,11 +85,7 @@
     },
 	{
       "tag": "energy:v1/energy_update",
-      "value": "mechanization:base/machines/energy_update"
-    },
-	{
-      "tag": "energy:v1/cable_can_connect",
-      "value": "mechanization:base/machines/cable_can_connect"
+      "value": "mechanization:machines/machines/energy_update"
     },
 	{
       "tag": "energy:v1/cable_update",
@@ -102,6 +98,10 @@
 	{
       "tag": "smithed.custom_block:event/on_place",
       "value": "mechanization:base/machines/place_block"
+    },
+	{
+      "tag": "smithed.custom_block:event/on_place",
+      "value": "mechanization:machines/machines/place_block"
     }
   ]
 }

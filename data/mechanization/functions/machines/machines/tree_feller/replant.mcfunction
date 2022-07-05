@@ -1,16 +1,32 @@
 
-scoreboard players set temp_0 mech_data 0
-execute store success score temp_0 mech_data if block ~ ~ ~ air as @e[type=item,sort=nearest,limit=1,distance=..12,nbt={Item:{id:"minecraft:oak_sapling"}}] run function mechanization:machines/machines/tree_feller/reduce_item_count
-execute if score temp_0 mech_data matches 1 run setblock ~ ~ ~ oak_sapling
+scoreboard players set #success mechanization.data 0
+execute store success score #success mechanization.data if block ~ ~ ~ #mechanization:air as @e[type=item,sort=nearest,limit=1,distance=..12,nbt={Item:{id:"minecraft:oak_sapling"}}] run function mechanization:machines/machines/tree_feller/reduce_item_count
+execute if score #success mechanization.data matches 1 run setblock ~ ~ ~ minecraft:oak_sapling
 
-scoreboard players set temp_0 mech_data 0
-execute store success score temp_0 mech_data if block ~ ~ ~ air as @e[type=item,sort=nearest,limit=1,distance=..12,nbt={Item:{id:"minecraft:spruce_sapling"}}] run function mechanization:machines/machines/tree_feller/reduce_item_count
-execute if score temp_0 mech_data matches 1 run setblock ~ ~ ~ spruce_sapling
+scoreboard players set #success mechanization.data 0
+execute store success score #success mechanization.data if block ~ ~ ~ #mechanization:air as @e[type=item,sort=nearest,limit=1,distance=..12,nbt={Item:{id:"minecraft:spruce_sapling"}}] run function mechanization:machines/machines/tree_feller/reduce_item_count
+execute if score #success mechanization.data matches 1 run setblock ~ ~ ~ minecraft:spruce_sapling
 
-scoreboard players set temp_0 mech_data 0
-execute store success score temp_0 mech_data if block ~ ~ ~ air as @e[type=item,sort=nearest,limit=1,distance=..12,nbt={Item:{id:"minecraft:birch_sapling"}}] run function mechanization:machines/machines/tree_feller/reduce_item_count
-execute if score temp_0 mech_data matches 1 run setblock ~ ~ ~ birch_sapling
+scoreboard players set #success mechanization.data 0
+execute store success score #success mechanization.data if block ~ ~ ~ #mechanization:air as @e[type=item,sort=nearest,limit=1,distance=..12,nbt={Item:{id:"minecraft:birch_sapling"}}] run function mechanization:machines/machines/tree_feller/reduce_item_count
+execute if score #success mechanization.data matches 1 run setblock ~ ~ ~ minecraft:birch_sapling
 
-scoreboard players set temp_0 mech_data 0
-execute store success score temp_0 mech_data if block ~ ~ ~ air as @e[type=item,sort=nearest,limit=1,distance=..12,nbt={Item:{id:"minecraft:jungle_sapling"}}] run function mechanization:machines/machines/tree_feller/reduce_item_count
-execute if score temp_0 mech_data matches 1 run setblock ~ ~ ~ jungle_sapling
+scoreboard players set #success mechanization.data 0
+execute store success score #success mechanization.data if block ~ ~ ~ #mechanization:air as @e[type=item,sort=nearest,limit=1,distance=..12,nbt={Item:{id:"minecraft:jungle_sapling"}}] run function mechanization:machines/machines/tree_feller/reduce_item_count
+execute if score #success mechanization.data matches 1 run setblock ~ ~ ~ minecraft:jungle_sapling
+
+scoreboard players set #success mechanization.data 0
+execute store success score #success mechanization.data if block ~ ~ ~ #mechanization:air as @e[type=item,sort=nearest,limit=1,distance=..12,nbt={Item:{id:"minecraft:acacia_sapling"}}] run function mechanization:machines/machines/tree_feller/reduce_item_count
+execute if score #success mechanization.data matches 1 run setblock ~ ~ ~ minecraft:acacia_sapling
+
+scoreboard players set #success mechanization.data 0
+execute store success score #success mechanization.data if block ~ ~ ~ #mechanization:air as @e[type=item,sort=nearest,limit=1,distance=..12,nbt={Item:{id:"minecraft:mangrove_propagule"}}] run function mechanization:machines/machines/tree_feller/reduce_item_count
+execute if score #success mechanization.data matches 1 run setblock ~ ~ ~ minecraft:mangrove_propagule
+
+scoreboard players set #success mechanization.data 0
+execute store success score #success mechanization.data if block ~ ~ ~ #mechanization:air as @e[type=item,sort=nearest,limit=1,distance=..12,nbt={Item:{id:"minecraft:crimson_fungus"}}] run function mechanization:machines/machines/tree_feller/reduce_item_count
+execute if score #success mechanization.data matches 1 run setblock ~ ~ ~ minecraft:crimson_fungus
+
+scoreboard players set #success mechanization.data 0
+execute store success score #success mechanization.data if block ~ ~ ~ #mechanization:air as @e[type=item,sort=nearest,limit=1,distance=..12,nbt={Item:{id:"minecraft:warped_fungus"}}] run function mechanization:machines/machines/tree_feller/reduce_item_count
+execute if score #success mechanization.data matches 1 run setblock ~ ~ ~ minecraft:warped_fungus

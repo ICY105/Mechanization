@@ -57,7 +57,6 @@ execute if entity @s[tag=mechanization.resource_block] at @s run setblock ~ ~ ~ 
 execute if entity @s[tag=mechanization.resource_block] at @s run kill @s
 
 # run break tag
-
 function #mechanization:wrench_break
 
 # store data to item
