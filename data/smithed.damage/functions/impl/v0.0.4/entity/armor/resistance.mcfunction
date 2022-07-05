@@ -9,8 +9,9 @@
 scoreboard players set #reduction smithed.damage 0
 
 # First, lets grab the values
-execute if data storage smithed.damage:main temp.ActiveEffects[{Id: 11b}] store result score #reduction smithed.damage run data get storage smithed.damage:main temp.ActiveEffects[{Id: 11b}].Amplifier
-execute if data storage smithed.damage:main temp.ActiveEffects[{Id: 11b}] run scoreboard players add #reduction smithed.damage 1
+execute if data storage smithed.damage:main temp.ActiveEffects[{Id: 11}] store result score #reduction smithed.damage run data get storage smithed.damage:main temp.ActiveEffects[{Id: 11}].Amplifier
+execute if data storage smithed.damage:main temp.ActiveEffects[{Id: 11}] if score #reduction smithed.damage matches ..-1 run scoreboard players set #reduction smithed.damage 4
+execute if data storage smithed.damage:main temp.ActiveEffects[{Id: 11}] run scoreboard players add #reduction smithed.damage 1
 
 # 1
 scoreboard players operation #reduction smithed.damage *= 20 smithed.const

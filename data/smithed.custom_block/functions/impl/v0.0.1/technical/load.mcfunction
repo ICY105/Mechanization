@@ -1,7 +1,7 @@
 scoreboard objectives add smithed.data dummy
 scoreboard objectives add smithed.custom_block dummy
 
-scoreboard objectives add smithed.id dummy
+scoreboard objectives add geomancy.id dummy
 
 scoreboard objectives add smithed.logLevel dummy
 scoreboard objectives add smithed.const dummy

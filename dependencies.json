@@ -96,6 +96,10 @@
       "value": "mechanization:gadgets/update_energy_item"
     },
 	{
+      "tag": "energy:v1/cable_can_connect",
+      "value": "mechanization:machines/machines/cable_can_connect"
+    },
+	{
       "tag": "smithed.custom_block:event/on_place",
       "value": "mechanization:base/machines/place_block"
     },

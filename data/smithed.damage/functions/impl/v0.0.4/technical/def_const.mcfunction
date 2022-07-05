@@ -6,6 +6,7 @@ scoreboard players set 4 smithed.const 4
 scoreboard players set 5 smithed.const 5
 scoreboard players set 6 smithed.const 6
 scoreboard players set 7 smithed.const 7
+scoreboard players set 8 smithed.const 8
 scoreboard players set 9 smithed.const 9
 scoreboard players set 10 smithed.const 10
 scoreboard players set 15 smithed.const 15

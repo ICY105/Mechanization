@@ -1,12 +1,19 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "##",
-        "##"
+        "###",
+        "#C#",
+        "SSS"
     ],
     "key": {
         "#": {
-            "tag": "minecraft:stone_crafting_materials"
+            "tag": "minecraft:logs"
+        },
+        "C": {
+            "item": "minecraft:crafting_table"
+        },
+        "S": {
+            "item": "minecraft:smooth_stone"
         }
     },
     "result": {

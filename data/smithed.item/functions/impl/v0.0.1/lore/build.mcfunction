@@ -5,7 +5,7 @@
 #> input: smithed.item:main item
 #> output: smithed.item:main item
 
-execute unless data storage smithed.item:main item.tag.smithed.hasLore run function smithed.item:impl/v0.0.1/lore/setup
+execute unless data storage smithed.item:main item.tag.smithed{hasLore: 1b} run function smithed.item:impl/v0.0.1/lore/setup
 
 
 

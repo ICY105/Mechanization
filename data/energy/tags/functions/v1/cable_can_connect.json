@@ -1,5 +1,5 @@
 {
-  "values": [
-    "mechanization:base/machines/cable_can_connect"
-  ]
-}
+	"values": [
+		"mechanization:machines/machines/cable_can_connect"
+	]
+} 

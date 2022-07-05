@@ -6,7 +6,7 @@ scoreboard players reset @s smithed.data
 # Recreate the output and check if it's the same thing, if so add a tag to invalidate shift-clicking
 
 data modify storage smithed.crafter:main root.temp.export_items set value []
-data modify storage smithed.crafter:main root.temp.export_items append from block ~ ~ ~ Items[{Slot: 16b}]
+data modify storage smithed.crafter:main root.temp.export_items append from storage smithed.crafter:main root.Items[{Slot: 16b}]
 
 function smithed.crafter:impl/v0.0.3/block/table/crafting/input/read_barrel
 data modify storage smithed.crafter:main root.temp.item set from block ~ ~ ~ Items[{Slot: 16b}]
