@@ -10,11 +10,11 @@ execute if score @s mechanization.fluid.0 matches 1.. if score $temp_1 mechaniza
 execute if score @s mechanization.fluid.0 matches 1.. if score $temp_1 mechanization.data matches ..99 if score $temp_0 mechanization.data matches 0 run scoreboard players set $in_0 mechanization.data 0
 
 execute unless score @s mechanization.fluid.0 matches 1.. if data block ~ ~ ~ Items[{Slot:1b,id:"minecraft:water_bucket"}] run scoreboard players set $in_0 mechanization.data 0
-execute if score @s mechanization.fluid.0 matches 1.. if data block ~ ~ ~ Items[{Slot:1b,id:"minecraft:water_bucket"}] if data entity @s Item.tag.tank.tag.mechanization.liquid{id:"water"} run scoreboard players set $in_0 mechanization.data 0
+execute if score @s mechanization.fluid.0 matches 1.. if data block ~ ~ ~ Items[{Slot:1b,id:"minecraft:water_bucket"}] if data entity @s Item.tag.tank_1.tag.mechanization.liquid{id:"water"} run scoreboard players set $in_0 mechanization.data 0
 execute unless score @s mechanization.fluid.0 matches 1.. if data block ~ ~ ~ Items[{Slot:1b,id:"minecraft:potion",tag:{Potion:"minecraft:water"}}] run scoreboard players set $in_0 mechanization.data 0
-execute if score @s mechanization.fluid.0 matches 1.. if data block ~ ~ ~ Items[{Slot:1b,id:"minecraft:potion",tag:{Potion:"minecraft:water"}}] if data entity @s Item.tag.tank.tag.mechanization.liquid{id:"water"} run scoreboard players set $in_0 mechanization.data 0
+execute if score @s mechanization.fluid.0 matches 1.. if data block ~ ~ ~ Items[{Slot:1b,id:"minecraft:potion",tag:{Potion:"minecraft:water"}}] if data entity @s Item.tag.tank_1.tag.mechanization.liquid{id:"water"} run scoreboard players set $in_0 mechanization.data 0
 execute unless score @s mechanization.fluid.0 matches 1.. if data block ~ ~ ~ Items[{Slot:1b,id:"minecraft:powder_snow_bucket"}] run scoreboard players set $in_0 mechanization.data 0
-execute if score @s mechanization.fluid.0 matches 1.. if data block ~ ~ ~ Items[{Slot:1b,id:"minecraft:powder_snow_bucket"}] if data entity @s Item.tag.tank.tag.mechanization.liquid{id:"powder_snow"} run scoreboard players set $in_0 mechanization.data 0
+execute if score @s mechanization.fluid.0 matches 1.. if data block ~ ~ ~ Items[{Slot:1b,id:"minecraft:powder_snow_bucket"}] if data entity @s Item.tag.tank_1.tag.mechanization.liquid{id:"powder_snow"} run scoreboard players set $in_0 mechanization.data 0
 
 execute if data block ~ ~ ~ Items[{Slot:1b,id:"minecraft:bucket"}] run scoreboard players set $in_0 mechanization.data 0
 execute if data block ~ ~ ~ Items[{Slot:1b,id:"minecraft:glass_bottle"}] run scoreboard players set $in_0 mechanization.data 0

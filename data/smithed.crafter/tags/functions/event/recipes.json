@@ -1,5 +1,6 @@
 {
     "values":[
-        "#smithed.crafter:recipes/shaped"
+        "#smithed.crafter:recipes/shaped",
+		"mechanization:base/recipes/shaped"
     ]
 }

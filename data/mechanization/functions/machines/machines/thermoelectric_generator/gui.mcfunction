@@ -19,31 +19,36 @@ data remove block ~ ~ ~ Items[{tag:{ mechanization:{gui_item:1b} }}]
 
 #tank 1
 item replace block ~ ~ ~ container.11 with minecraft:leather_boots{mechanization:{gui_item:1b},CustomModelData:0,HideFlags:127,display:{Name:'{"translate":"mech.liquid.empty","italic":false}',Lore:[],color:0}}
-scoreboard players operation $temp_0 mechanization.data = @s mechanization
-scoreboard players add $temp_0 mechanization.data 249
-scoreboard players operation $temp_0 mechanization.data /= #cons.250 mechanization.data
-scoreboard players add $temp_0 mechanization.data 6422900
-execute if data entity @s Item.tag.tank_1.tag.mechanization.liquid.molten run scoreboard players add $temp_0 mechanization.data 17
-execute store result block ~ ~ ~ Items[{Slot:11b}].tag.CustomModelData int 1 run scoreboard players get $temp_0 mechanization.data
-execute if score @s mechanization matches 1.. run data modify storage mechanization:temp var set from entity @s Item.tag.tank_1.tag.mechanization.liquid.name
-execute if score @s mechanization matches 1.. run data modify block -30000000 0 3202 Text1 set value '{"nbt":"var","storage":"mechanization:temp","interpret":true,"italic":false}'
-execute if score @s mechanization matches 1.. run data modify block ~ ~ ~ Items[{Slot:11b}].tag.display.Name set from block -30000000 0 3202 Text1
-execute if score @s mechanization matches 1.. run data modify block -30000000 0 3202 Text1 set value '{"translate":"mech.lore.liquid_amount","italic":false,"color":"gray","with":[{"score":{"name":"@s","objective":"mechanization.fluid.0"}}]}'
-execute if score @s mechanization matches 1.. run data modify block ~ ~ ~ Items[{Slot:11b}].tag.display.Lore append from block -30000000 0 3202 Text1
-execute if score @s mechanization matches 1.. run data modify block ~ ~ ~ Items[{Slot:11b}].tag.display.color set from entity @s Item.tag.tank_1.tag.mechanization.liquid.color
+scoreboard players operation #storage mechanization.data = @s mechanization.fluid.0
+scoreboard players operation $temp_1 mechanization.data = @s mechanization.fluid.0
+scoreboard players add #storage mechanization.data 249
+scoreboard players operation #storage mechanization.data /= #cons.250 mechanization.data
+scoreboard players add #storage mechanization.data 6422900
+execute if data entity @s Item.tag.tank_1.tag.mechanization.liquid.molten run scoreboard players add #storage mechanization.data 17
+execute store result block ~ ~ ~ Items[{Slot:11b}].tag.CustomModelData int 1 run scoreboard players get #storage mechanization.data
+
+scoreboard players operation #storage mechanization.data = @s mechanization.fluid.0
+execute if score @s mechanization.fluid.0 matches 1.. run data modify storage mechanization:temp var set from entity @s Item.tag.tank_1.tag.mechanization.liquid.name
+execute if score @s mechanization.fluid.0 matches 1.. run data modify block -30000000 0 3202 Text1 set value '{"nbt":"var","storage":"mechanization:temp","interpret":true,"italic":false}'
+execute if score @s mechanization.fluid.0 matches 1.. run data modify block ~ ~ ~ Items[{Slot:11b}].tag.display.Name set from block -30000000 0 3202 Text1
+execute if score @s mechanization.fluid.0 matches 1.. run data modify block -30000000 0 3202 Text1 set value '{"translate":"mech.lore.liquid_amount","italic":false,"color":"gray","with":[{"score":{"name":"#storage","objective":"mechanization.data"}}]}'
+execute if score @s mechanization.fluid.0 matches 1.. run data modify block ~ ~ ~ Items[{Slot:11b}].tag.display.Lore append from block -30000000 0 3202 Text1
+execute if score @s mechanization.fluid.0 matches 1.. run data modify block ~ ~ ~ Items[{Slot:11b}].tag.display.color set from entity @s Item.tag.tank_1.tag.mechanization.liquid.color
 
 #tank 2
 item replace block ~ ~ ~ container.16 with minecraft:leather_boots{mechanization:{gui_item:1b},CustomModelData:0,HideFlags:127,display:{Name:'{"translate":"mech.liquid.empty","italic":false}',Lore:[],color:0}}
-scoreboard players operation $temp_0 mechanization.data = @s mechanization.fluid.1
-scoreboard players add $temp_0 mechanization.data 249
-scoreboard players operation $temp_0 mechanization.data /= #cons.250 mechanization.data
-scoreboard players add $temp_0 mechanization.data 6422900
-execute if data entity @s Item.tag.tank_2.tag.mechanization.liquid.molten run scoreboard players add $temp_0 mechanization.data 17
-execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData int 1 run scoreboard players get $temp_0 mechanization.data
+scoreboard players operation #storage mechanization.data = @s mechanization.fluid.1
+scoreboard players add #storage mechanization.data 249
+scoreboard players operation #storage mechanization.data /= #cons.250 mechanization.data
+scoreboard players add #storage mechanization.data 6422900
+execute if data entity @s Item.tag.tank_2.tag.mechanization.liquid.molten run scoreboard players add #storage mechanization.data 17
+execute store result block ~ ~ ~ Items[{Slot:16b}].tag.CustomModelData int 1 run scoreboard players get #storage mechanization.data
+
+scoreboard players operation #storage mechanization.data = @s mechanization.fluid.1
 execute if score @s mechanization.fluid.1 matches 1.. run data modify storage mechanization:temp var set from entity @s Item.tag.tank_2.tag.mechanization.liquid.name
 execute if score @s mechanization.fluid.1 matches 1.. run data modify block -30000000 0 3202 Text1 set value '{"nbt":"var","storage":"mechanization:temp","interpret":true,"italic":false}'
 execute if score @s mechanization.fluid.1 matches 1.. run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Name set from block -30000000 0 3202 Text1
-execute if score @s mechanization.fluid.1 matches 1.. run data modify block -30000000 0 3202 Text1 set value '{"translate":"mech.lore.liquid_amount","italic":false,"color":"gray","with":[{"score":{"name":"@s","objective":"mechanization.fluid.1"}}]}'
+execute if score @s mechanization.fluid.1 matches 1.. run data modify block -30000000 0 3202 Text1 set value '{"translate":"mech.lore.liquid_amount","italic":false,"color":"gray","with":[{"score":{"name":"#storage","objective":"mechanization.data"}}]}'
 execute if score @s mechanization.fluid.1 matches 1.. run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.Lore append from block -30000000 0 3202 Text1
 execute if score @s mechanization.fluid.1 matches 1.. run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.color set from entity @s Item.tag.tank_2.tag.mechanization.liquid.color
 

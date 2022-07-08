@@ -11,6 +11,9 @@ execute if entity @s[tag=mechanization.upgraded.ender] run scoreboard players se
 scoreboard players set #muffled mechanization.data 0
 execute if entity @s[tag=mechanization.muffled] run scoreboard players set #muffled mechanization.data 1
 
+# disconnect from network
+execute if score @s energy.storage matches -2000000000.. run function energy:v1/api/break_machine
+
 # drop items 1
 execute if entity @s[tag=mechanization.machine_crafting_table] run item replace block ~ ~ ~ container.16 with minecraft:air
 

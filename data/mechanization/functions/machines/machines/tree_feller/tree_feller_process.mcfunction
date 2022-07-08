@@ -1,13 +1,13 @@
 
 # check block
-execute unless block ^ ^ ^ #minecraft:logs run scoreboard players score #active mechanization.data 0
+execute unless block ^ ^ ^ #minecraft:logs run scoreboard players set #active mechanization.data 0
 
 # active animation
-execute if score @s #active mechanization.data matches 0 if entity @s[tag=mechanization.active] run tag @e[type=armor_stand,tag=mechanization.tree_feller.model,limit=1,sort=nearest] remove mechanization.active
-execute if score @s #active mechanization.data matches 0 if entity @s[tag=mechanization.active] run tag @s remove mechanization.active
+execute if score #active mechanization.data matches 0 if entity @s[tag=mechanization.active] run tag @e[type=armor_stand,tag=mechanization.tree_feller.model,limit=1,sort=nearest] remove mechanization.active
+execute if score #active mechanization.data matches 0 if entity @s[tag=mechanization.active] run tag @s remove mechanization.active
 
-execute if score @s #active mechanization.data matches 1 if entity @s[tag=!mechanization.active] run tag @e[type=armor_stand,tag=mechanization.tree_feller.model,limit=1,sort=nearest] add mechanization.active
-execute if score @s #active mechanization.data matches 1 if entity @s[tag=!mechanization.active] run tag @s add mechanization.active
+execute if score #active mechanization.data matches 1 if entity @s[tag=!mechanization.active] run tag @e[type=armor_stand,tag=mechanization.tree_feller.model,limit=1,sort=nearest] add mechanization.active
+execute if score #active mechanization.data matches 1 if entity @s[tag=!mechanization.active] run tag @s add mechanization.active
 
 # break wood
 scoreboard players set #loop mechanization.data 64

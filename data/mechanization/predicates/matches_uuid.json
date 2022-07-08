@@ -12,7 +12,7 @@
         "type": "minecraft:fixed",
         "name": "$predicate"
       },
-      "score": "mech_data"
+      "score": "mechanization.data"
     },
     "max": {
       "type": "minecraft:score",
@@ -20,7 +20,7 @@
         "type": "minecraft:fixed",
         "name": "$predicate"
       },
-      "score": "mech_data"
+      "score": "mechanization.data"
     }
   }
 }

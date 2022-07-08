@@ -1,4 +1,2 @@
 
-function mechanization:base/utils/break_machine
-loot spawn ~ ~ ~ loot mechanization:base/machine_crafting_table
-kill @e[type=item,distance=..2]
+execute if entity @s[tag=mechanization.machine_crafting_table] align xyz run loot spawn ~0.5 ~0.5 ~0.5 loot mechanization:base/machine_crafting_table
