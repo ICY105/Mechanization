@@ -11,11 +11,12 @@ execute if score #active mechanization.data matches 0 run scoreboard players set
 execute if score @s[tag=!mechanization.upgraded] mechanization.timer matches 1 run function mechanization:machines/machines/alloy_furnace/recipes/output_normal
 execute if score @s[tag=mechanization.upgraded] mechanization.timer matches 1 run function mechanization:machines/machines/alloy_furnace/recipes/output_upgrade
 
-execute if score #active mechanization.data matches 1 unless score @s mechanization.timer matches 2.. if score @s mechanization.power >= #machines.cf.alloy_furnace.power mechanization.data run function mechanization:machines/machines/alloy_furnace/recipes/input_normal
-execute if score #active mechanization.data matches 1 unless score @s mechanization.timer matches 2.. if score @s mechanization.power >= #machines.cf.alloy_furnace.power mechanization.data run function mechanization:machines/machines/alloy_furnace/recipes/input_upgrade
 
-execute if score @s mechanization.timer matches 1.. if score @s mechanization.power < #machines.cf.alloy_furnace.power mechanization.data run scoreboard players set @s mechanization.timer 0
-execute if score @s mechanization.timer matches 1.. if score @s mechanization.power >= #machines.cf.alloy_furnace.power mechanization.data run scoreboard players operation @s mechanization.power -= #machines.cf.alloy_furnace.power mechanization.data
+execute if score #active mechanization.data matches 1 unless score @s mechanization.timer matches 2.. if score @s energy.storage >= #machines.cf.alloy_furnace.power mechanization.data run function mechanization:machines/machines/alloy_furnace/recipes/input_normal
+execute if score #active mechanization.data matches 1 unless score @s mechanization.timer matches 2.. if score @s energy.storage >= #machines.cf.alloy_furnace.power mechanization.data run function mechanization:machines/machines/alloy_furnace/recipes/input_upgrade
+
+execute if score @s mechanization.timer matches 1.. if score @s energy.storage < #machines.cf.alloy_furnace.power mechanization.data run scoreboard players set @s mechanization.timer 0
+execute if score @s mechanization.timer matches 1.. if score @s energy.storage >= #machines.cf.alloy_furnace.power mechanization.data run scoreboard players operation @s energy.storage -= #machines.cf.alloy_furnace.power mechanization.data
 execute if score @s mechanization.timer matches 1.. run scoreboard players remove @s mechanization.timer 1
 
 # ui

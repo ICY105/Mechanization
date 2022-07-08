@@ -5,8 +5,8 @@
 function mechanization:base/utils/redstone_active
 execute if score #active mechanization.data matches 0 run scoreboard players set @s mechanization.timer 0
 
-execute if score @s mechanization.timer matches 1 if data block ~ ~ ~ Items[{Slot:3b}] run function mechanization:machines/machines/arc_furnace/recipe/output
-execute if score #active mechanization.data matches 1 unless score @s mechanization.timer matches 2.. if score @s energy.storage matches 60.. if data block ~ ~ ~ Items[{Slot:3b}] run function mechanization:machines/machines/arc_furnace/recipe/input
+execute if score @s mechanization.timer matches 1 if data block ~ ~ ~ Items[{Slot:3b}] run function mechanization:machines/machines/arc_furnace/recipes/output
+execute if score #active mechanization.data matches 1 unless score @s mechanization.timer matches 2.. if score @s energy.storage matches 60.. if data block ~ ~ ~ Items[{Slot:3b}] run function mechanization:machines/machines/arc_furnace/recipes/input
 
 # ui
 execute if data block ~ ~ ~ Items[{Slot:1b}] run function mechanization:machines/machines/arc_furnace/tank_input

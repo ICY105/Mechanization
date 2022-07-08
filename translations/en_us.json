@@ -9,7 +9,7 @@
     "mech.item.multimeter": "Multimeter",
 	"mech.item.multimeter.lore_1": "%s to see machine stats",
 	"mech.item.multimeter.lore_2": "Shift+%s to toggle redstone control state",
-    "mech.item.gps": "Multimeter",
+    "mech.item.gps": "GPS",
 	"mech.item.gps.lore_1": "%s to transfer cords to block",
 	"mech.item.gps.lore_2": "Shift+%s to save cords",
     "mech.item.machine_upgrade": "Machine Upgrade",

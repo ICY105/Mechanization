@@ -11,7 +11,7 @@ execute if score #id mechanization.data matches 30 if data storage smithed.custo
 # Cables
 execute if score #id mechanization.data matches 26 if data storage smithed.custom_block:main blockApi{id:"mechanization:copper_cable"} run function mechanization:machines/machines/cable/place_copper_cable
 execute if score #id mechanization.data matches 30 if data storage smithed.custom_block:main blockApi{id:"mechanization:conductive_cable"} run function mechanization:machines/machines/cable/place_conductive_cable
-execute if score #id mechanization.data matches 37 if data storage smithed.custom_block:main blockApi{id:"mechanization:super_conductive_cable"} run function mechanization:machines/machines/cable/place_super_conductive_cable
+execute if score #id mechanization.data matches 36 if data storage smithed.custom_block:main blockApi{id:"mechanization:super_conductive_cable"} run function mechanization:machines/machines/cable/place_super_conductive_cable
 
 # Liquid Tanks
 execute if score #id mechanization.data matches 32 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier_1_liquid_tank"} run function mechanization:machines/machines/liquid_tank/place_tier_1
