@@ -17,9 +17,9 @@ execute if score #success nbt_smelting.data matches 1 run data remove entity @s 
 execute if score #success nbt_smelting.data matches 1 run data modify storage nbt_smelting:io item set from block ~ ~ ~ Items[{Slot:0b}]
 
 # Get Output
-execute if score #success nbt_smelting.data matches 1 if block ~ ~ ~ minecraft:blast_furnace run function #nbt_smelting:blast_furnace
-execute if score #success nbt_smelting.data matches 1 if block ~ ~ ~ minecraft:furnace run function #nbt_smelting:furnace
-execute if score #success nbt_smelting.data matches 1 if block ~ ~ ~ minecraft:smoker run function #nbt_smelting:smoker
+execute if score #success nbt_smelting.data matches 1 if block ~ ~ ~ minecraft:blast_furnace run function #nbt_smelting:v1/blast_furnace
+execute if score #success nbt_smelting.data matches 1 if block ~ ~ ~ minecraft:furnace run function #nbt_smelting:v1/furnace
+execute if score #success nbt_smelting.data matches 1 if block ~ ~ ~ minecraft:smoker run function #nbt_smelting:v1/smoker
 
 # Set Counts
 execute if score #success nbt_smelting.data matches 1 store result score #recipe_count nbt_smelting.data run data get block ~ ~ ~ Items[{Slot:2b}].Count

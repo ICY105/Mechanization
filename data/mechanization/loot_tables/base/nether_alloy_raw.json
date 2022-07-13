@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421402, du_smelt_id: 1402, HideFlags: 32, ctc:{ id:\"raw_nether_alloy\" }, smithed:{dict:{raw:{nether_alloy:1b}}} }"
+              "tag":"{CustomModelData: 6421402, nbt_smelting:1b, HideFlags: 32, ctc:{ id:\"raw_nether_alloy\" }, smithed:{dict:{raw:{nether_alloy:1b}}} }"
             }
           ]
         }
