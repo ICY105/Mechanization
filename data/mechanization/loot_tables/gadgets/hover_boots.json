@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4114, CustomModelData: 6424114, Unbreakable:1b, HideFlags:70, mech_upgrade:{type:3b,effect:\"slowfall\"},display:{color:13421772}}"
+              "tag":"{CustomModelData: 6424114, Unbreakable:1b, HideFlags:70, mechanization:{ id:\"hover_boots\", upgrade:{type:3b,effect:\"slowfall\"}}, display:{color:13421772}}"
             },
 			{
 			  "function":"set_attributes",

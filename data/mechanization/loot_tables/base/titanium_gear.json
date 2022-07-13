@@ -15,14 +15,15 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_drill","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"6000"},{"text":"6000"}]}],
 				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"mech.lore.upgrade_reinforced"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421326, HideFlags: 32, mechaniation:{ id:\"titanium_gear\", modular_upgrade:{type:2b, effect:\"reinforced\", max_durability:2000, bonus_stats:{}} }, smithed:{dict:{gear:{titanium:1b}}} }"
+              "tag":"{CustomModelData: 6421326, HideFlags: 32, mechaniation:{ id:\"titanium_gear\", upgrade:{type:2b, effect:\"magnetic\", max_durability:6000, stats:{}} }, smithed:{dict:{gear:{titanium:1b}}} }"
             }
           ]
         }

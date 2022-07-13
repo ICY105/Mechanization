@@ -10,4 +10,4 @@ execute if block ~ ~ ~ #du:internal/furnace-like unless data storage du:temp lis
 execute if block ~ ~ ~ minecraft:brewing_stand run data remove storage du:temp list[{Slot:4b}]
 
 #camp fire removal
-execute if block ~ ~ ~ #minecraft:camp_fires run data modify storage du:temp list set value []
+execute if block ~ ~ ~ #minecraft:campfires run data modify storage du:temp list set value []

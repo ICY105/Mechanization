@@ -15,14 +15,15 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_drill","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"3000"},{"text":"3000"}]}],
 				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"mech.lore.upgrade_trash"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421581, HideFlags: 32, mechanization:{ id:\"obsidian_gear\", modular_upgrade:{type:2b, effect:\"trash\", max_durability:1500, bonus_stats:{}} }, smithed:{dict:{gear:{obsidian:1b}}} }"
+              "tag":"{CustomModelData: 6421581, HideFlags: 32, mechanization:{ id:\"obsidian_gear\", upgrade:{type:2b, effect:\"trash\", max_durability:3000, stats:{}} }, smithed:{dict:{gear:{obsidian:1b}}} }"
             }
           ]
         }

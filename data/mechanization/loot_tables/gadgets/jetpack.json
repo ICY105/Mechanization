@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4111, CustomModelData: 6424111, Unbreakable:1b, HideFlags:70, mech_upgrade:{type:3b,effect:\"jetpack\"}}"
+              "tag":"{CustomModelData: 6424111, Unbreakable:1b, HideFlags:70, mechanization:{ id:\"jetpack\", upgrade:{type:3b,effect:\"jetpack\"}} }"
             }
           ]
         }

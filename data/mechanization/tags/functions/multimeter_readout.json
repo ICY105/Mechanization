@@ -3,7 +3,7 @@
 	"values":[
 		"mechanization:base/player/multimeter/readout",
 		"mechanization:nuclear/tools/multimeter_readout",
-		"mechanization:gadgets/tools/multimeter_readout",
+		"mechanization:gadgets/player/multimeter_readout",
 		"mechanization:assembly/tools/multimeter_readout"
 	]
 }

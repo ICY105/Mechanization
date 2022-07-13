@@ -15,14 +15,15 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"enchantment.minecraft.fortune"},{"text":" "},{"translate":"enchantment.level.2"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.upgrade_drill","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"3000"},{"text":"3000"}]}],
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"enchantment.minecraft.unbreaking"},{"text":" "},{"translate":"enchantment.level.2"}],
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421345, HideFlags: 32, mechaniation:{ id:\"structural_gear\", modular_upgrade:{type:2b, effect:\"fortune_2\", max_durability:1500, bonus_stats:{}} }, smithed:{dict:{gear:{structural_alloy:1b}}} }"
+              "tag":"{CustomModelData: 6421345, HideFlags: 32, mechaniation:{ id:\"structural_gear\", upgrade:{type:2b, effect:\"none\", max_durability:3000, stats:{unbreaking:2}} }, smithed:{dict:{gear:{structural_alloy:1b}}} }"
             }
           ]
         }

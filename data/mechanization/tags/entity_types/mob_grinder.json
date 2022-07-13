@@ -61,6 +61,8 @@
 		"minecraft:zombie_horse",
 		"minecraft:zombified_piglin",
 		"minecraft:zombie_villager",
-		"minecraft:zoglin"
+		"minecraft:zoglin",
+		"minecraft:frog",
+		"minecraft:tadpole"
 	]
 } 

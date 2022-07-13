@@ -10,7 +10,7 @@
             "items": [
               "minecraft:leather_helmet"
             ],
-            "nbt": "{mech_upgrades:{type:3b}}"
+            "nbt": "{mechanization:{id:\"modular_helmet\"}}"
           }
         }
       }
@@ -25,7 +25,7 @@
               "minecraft:leather_chestplate",
 			  "minecraft:elytra"
             ],
-            "nbt": "{mech_upgrades:{type:3b}}"
+            "nbt": "{mechanization:{id:\"modular_chestplate\"}}"
           }
         }
       }
@@ -39,7 +39,7 @@
             "items": [
               "minecraft:leather_leggings"
             ],
-            "nbt": "{mech_upgrades:{type:3b}}"
+            "nbt": "{mechanization:{id:\"modular_leggings\"}}"
           }
         }
       }
@@ -53,7 +53,7 @@
             "items": [
               "minecraft:leather_boots"
             ],
-            "nbt": "{mech_upgrades:{type:3b}}"
+            "nbt": "{mechanization:{id:\"modular_boots\"}}"
           }
         }
       }

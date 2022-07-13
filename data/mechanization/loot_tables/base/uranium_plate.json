@@ -15,14 +15,17 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"500"},{"text":"500"}]}],
 				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +1 "},{"translate":"mech.lore.shield_recharge"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.upgrade_stats","color":"gray","italic":false}],
+				[{"text":"  0.25 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor"}],
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421434, HideFlags: 32, mechaniation:{ id:\"uranium_plate\", modular_upgrade:{type:3b, effect:\"shield_recharge\", max_durability:350, base_stats:{}, bonus_stats:{}} }, smithed:{dict:{plate:{uranium:1b}}} }"
+              "tag":"{CustomModelData: 6421434, HideFlags: 32, mechaniation:{ id:\"uranium_plate\", upgrade:{type:3b, effect:\"shield_recharge\", max_durability:500, stats:{armor:0.25}, bonus_stats:{}} }, smithed:{dict:{plate:{uranium:1b}}} }"
             }
           ]
         }

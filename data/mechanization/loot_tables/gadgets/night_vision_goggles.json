@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4113, CustomModelData: 6424113, Unbreakable:1b, HideFlags:70, mech_upgrade:{type:3b,effect:\"night_vision\"},display:{color:13421772}}"
+              "tag":"{CustomModelData: 6424113, Unbreakable:1b, HideFlags:70, mechanization:{ id:\"night_vision_goggles\", upgrade:{type:3b, effect:\"night_vision\"}}, display:{color:13421772}}"
             },
 			{
 			  "function":"set_attributes",

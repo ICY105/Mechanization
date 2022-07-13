@@ -15,14 +15,15 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"mech.lore.upgrade_magnetic"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.upgrade_drill","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"6000"},{"text":"6000"}]}],
+				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"enchantment.minecraft.unbreaking"},{"text":" "},{"translate":"enchantment.level.4"}],
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421481, HideFlags: 32, mechanization:{ id:\"netherite_gear\", modular_upgrade:{type:2b, effect:\"magnetic\", max_durability:2000, bonus_stats:{}} }, smithed:{dict:{gear:{netherite:1b}}} }"
+              "tag":"{CustomModelData: 6421481, HideFlags: 32, mechanization:{ id:\"netherite_gear\", upgrade:{type:2b, effect:\"none\", max_durability:6000, stats:{unbeaking:4}} }, smithed:{dict:{gear:{netherite:1b}}} }"
             }
           ]
         }

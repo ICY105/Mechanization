@@ -15,14 +15,18 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false},
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +2 "},{"translate":"attribute.name.generic.max_health"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"1500"},{"text":"1500"}]}],
+				[{"translate":"mech.lore.upgrade_stats","color":"gray","italic":false}],
+				[{"text":"  0.5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor"}],
+				[{"text":"  0.25 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor_toughness"}],
+				[{"text":"  1.5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.max_health"}],
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421530, HideFlags: 32, mechanization:{ id:\"lapis_plate\", modular_upgrade:{type:3b, effect:\"none\", max_durability:350, base_stats:{}, bonus_stats:{health:2}} }, smithed:{dict:{plate:{lapis:1b}}} }"
+              "tag":"{CustomModelData: 6421530, HideFlags: 32, mechanization:{ id:\"lapis_plate\", upgrade:{type:3b, effect:\"none\", max_durability:1500, stats:{armor:0.5, armor_toughness:0.25, health:1.5}} }, smithed:{dict:{plate:{lapis:1b}}} }"
             }
           ]
         }

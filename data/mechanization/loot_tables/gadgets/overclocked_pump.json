@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.overclocked_pump","color":"dark_red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"translate":"mech.lore.upgrade_plasma_weapon","color":"gray","italic":false},
+			    [{"text":"20% ","color":"blue","italic":false},{"translate":"mech.lore.damage"}],
+			    [{"text":"40% ","color":"red","italic":false},{"translate":"mech.lore.heat"}],
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData: 6424208, mechanization:{id:\"overclocked_pump\", upgrade:{type:4b}}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -15,17 +15,17 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false},
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +1 "},{"translate":"attribute.name.generic.armor"},{"text":", +2 "},{"translate":"attribute.name.generic.armor_toughness"}],
-				 {"translate":"mech.lore.upgrade_base_stats","color":"gray","italic":false},
-				[{"text":"  5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor"}],
-				[{"text":"  2 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor_toughness"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"4500"},{"text":"4500"}]}],
+				[{"translate":"mech.lore.upgrade_stats","color":"gray","italic":false}],
+				[{"text":"  1.5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor"}],
+				[{"text":"  1 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor_toughness"}],
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421394, HideFlags: 32, mechanization:{ id:\"ender_alloy_plate\", modular_upgrade:{type:3b, effect:\"none\", max_durability:1550, base_stats:{armor:5, armor_toughness:2}, bonus_stats:{armor:1, armor_toughness:2}} }, smithed:{dict:{plate:{ender_alloy:1b}}} }"
+              "tag":"{CustomModelData: 6421394, HideFlags: 32, mechanization:{ id:\"ender_alloy_plate\", upgrade:{type:3b, effect:\"none\", max_durability:4500, stats:{armor:1.5, armor_toughness:1}} }, smithed:{dict:{plate:{ender_alloy:1b}}} }"
             }
           ]
         }

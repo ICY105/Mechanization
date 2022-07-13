@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4001, CustomModelData: 6424001, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{CustomModelData: 6424001, mechanization:{ id:\"tinker_table\" }, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:tinker_table\"}}}}]} }"
             }
           ]
         }

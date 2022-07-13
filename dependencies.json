@@ -68,6 +68,9 @@
       "value": "mechanization:load"
     },
 	{
+      "tag": "load:post_load",
+      "value": "mechanization:post_load"
+    },{
       "tag": "chunk_scan.ores:v1/place_ore",
       "value": "mechanization:base/utils/ore_gen"
     },
@@ -84,6 +87,10 @@
       "value": "mechanization:base/player/right_click"
     },
 	{
+      "tag": "player_action:v1/right_click",
+      "value": "mechanization:gadgets/player/right_click"
+    },
+	{
       "tag": "energy:v1/energy_update",
       "value": "mechanization:machines/machines/energy_update"
     },
@@ -93,7 +100,7 @@
     },
 	{
       "tag": "energy:v1/update_energy_item",
-      "value": "mechanization:gadgets/update_energy_item"
+      "value": "mechanization:gadgets/player/update_energy_item"
     },
 	{
       "tag": "energy:v1/cable_can_connect",
@@ -122,6 +129,10 @@
 	{
       "tag": "smithed.custom_block:event/on_place",
       "value": "mechanization:machines/machines/place_block"
+    },
+	{
+      "tag": "smithed.custom_block:event/on_place",
+      "value": "mechanization:gadgets/machines/place_block"
     }
   ]
 }

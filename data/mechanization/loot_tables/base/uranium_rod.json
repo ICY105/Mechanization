@@ -15,20 +15,19 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"1000"},{"text":"1000"}]}],
 				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"mech.lore.upgrade_poison"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
-			  ]
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.upgrade_stats","color":"gray","italic":false}],
+				[{"text":"  2 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
+				[{"text":"  0.2 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_speed"}],
+				[{"text":"  0 ","color":"dark_green","italic":false},{"translate":"mech.lore.energy_saber_range"}],
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421436, HideFlags: 32, mechaniation:{ id:\"uranium_rod\", modular_upgrade:{type:1b, effect:\"poison\", max_durability:750, base_stats:{}, bonus_stats:{}} }, smithed:{dict:{rod:{uranium:1b}}} }"
+              "tag":"{CustomModelData: 6421436, HideFlags: 32, mechaniation:{ id:\"uranium_rod\", upgrade:{type:1b, effect:\"poison\", max_durability:1000, stats:{attack_damage:2, attack_speed:0.2, energy_saber_range:0}} }, smithed:{dict:{rod:{uranium:1b}}} }"
             }
           ]
         }

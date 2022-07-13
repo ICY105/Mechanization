@@ -15,14 +15,15 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_drill","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"9000"},{"text":"9000"}]}],
 				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +4 "},{"translate":"mech.lore.mining_area"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421405, HideFlags: 32, mechanization:{ id:\"nether_alloy_gear\", modular_upgrade:{type:2b, effect:\"none\", max_durability:3000, bonus_stats:{mining_area:4}} }, smithed:{dict:{gear:{nether_alloy:1b}}} }"
+              "tag":"{CustomModelData: 6421405, HideFlags: 32, mechanization:{ id:\"nether_alloy_gear\", upgrade:{type:2b, effect:\"none\", max_durability:9000, stats:{mining_area:4}} }, smithed:{dict:{gear:{nether_alloy:1b}}} }"
             }
           ]
         }

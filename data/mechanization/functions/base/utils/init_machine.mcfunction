@@ -14,5 +14,5 @@ execute if data entity @s SelectedItem.tag.mechanization{ender_upgrade:1b} run t
 execute if data entity @s SelectedItem.tag.mechanization{muffled:1b} run tag @e[tag=mechanization.new,sort=nearest,limit=1] add mechanization.muffled
 
 # Init
-function energy:v1/api/init_machine
+execute as @e[tag=mechanization.new] at @s run function energy:v1/api/init_machine
 tag @e[tag=mechanization.new] remove mechanization.new

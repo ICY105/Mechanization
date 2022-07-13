@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.blazing_chamber","color":"dark_aqua","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    [{"translate":"mech.lore.upgrade_plasma_weapon","color":"gray","italic":false}],
+			    [{"text":" 30 ","color":"green","italic":false},{"translate":"mech.lore.damage"}],
+			    [{"text":" 20 ","color":"green","italic":false},{"translate":"mech.lore.fire_rate"}],
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData: 6424206, mechanization:{id:\"blazing_chamber\", upgrade:{type:4b}}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

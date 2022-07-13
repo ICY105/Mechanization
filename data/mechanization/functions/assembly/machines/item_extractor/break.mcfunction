@@ -4,6 +4,6 @@ execute if entity @s[tag=mech_filtered] run data modify block -29999999 0 1601 I
 execute if entity @s[tag=mech_filtered] at @p[tag=mech_interact] run loot spawn ~ ~ ~ mine -29999999 0 1601 minecraft:air{drop_contents:true}
 execute if entity @s[tag=mech_filtered] run data remove entity @s Item.tag.filter_item
 
-execute if block ~ ~ ~ #minecraft:moving_piston run setblock ~ ~ ~ minecraft:air
+execute if block ~ ~ ~ minecraft:moving_piston run setblock ~ ~ ~ minecraft:air
 loot spawn ~ ~ ~ loot mechanization:assembly/item_extractor
 kill @s

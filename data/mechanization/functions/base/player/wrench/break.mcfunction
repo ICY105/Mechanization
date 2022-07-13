@@ -12,7 +12,7 @@ scoreboard players set #muffled mechanization.data 0
 execute if entity @s[tag=mechanization.muffled] run scoreboard players set #muffled mechanization.data 1
 
 # disconnect from network
-execute if score @s energy.storage matches -2000000000.. run function energy:v1/api/break_machine
+execute if score @s energy.storage >= #cons.min_int mechanization.data run function energy:v1/api/break_machine
 
 # drop items 1
 execute if entity @s[tag=mechanization.machine_crafting_table] run item replace block ~ ~ ~ container.16 with minecraft:air
@@ -63,7 +63,7 @@ execute if entity @s[tag=mechanization.resource_block] at @s run kill @s
 function #mechanization:wrench_break
 
 # store data to item
-execute if score #stored_power mechanization.data matches 1.. store result entity @e[type=item,sort=nearest,limit=1,distance=..0.5] Item.tag.mechanization.energy int 1 run scoreboard players get #stored_power mechanization.data
+execute if score #stored_power mechanization.data matches 1.. as @e[type=item,sort=nearest,limit=1,distance=..0.5] if data entity @s Item.tag.mechanization.id store result entity @s Item.tag.mechanization.energy int 1 run scoreboard players get #stored_power mechanization.data
 execute if score #stored_power mechanization.data matches 1.. run data merge block -30000000 0 3202 {Text1:'[{"translate":"mech.text.multimeter.energy","color":"gray","italic":false,"with":[{"score":{"name":"#stored_power","objective":"mechanization.data"},"color":"gray"}]}]'}
 execute if score #stored_power mechanization.data matches 1.. as @e[type=item,sort=nearest,limit=1,distance=..0.5] run data modify entity @s Item.tag.display.Lore append from block -30000000 0 3202 Text1
 

@@ -10,20 +10,20 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.supercharged_chamber","color":"dark_red","italic":false}
+			  "name": {"translate":"mech.item.supercharged_chamber","color":"dark_aqua","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"translate":"mech.lore.upgrade_plasma_weapon","color":"gray","italic":false},
-			    [{"text":"+500% ","color":"blue","italic":false},{"translate":"mech.lore.damage"}],
-			    [{"text":"-80% ","color":"red","italic":false},{"translate":"mech.lore.fire_rate"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			    [{"translate":"mech.lore.upgrade_plasma_weapon","color":"gray","italic":false}],
+			    [{"text":" 60 ","color":"green","italic":false},{"translate":"mech.lore.damage"}],
+			    [{"text":" 40 ","color":"green","italic":false},{"translate":"mech.lore.fire_rate"}],
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4206, CustomModelData: 6424206, mech_upgrade:{type:4b}}"
+              "tag":"{CustomModelData: 6424207, mechanization:{id:\"supercharged_chamber\", upgrade:{type:4b}}}"
             }
           ]
         }

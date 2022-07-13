@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4000, CustomModelData: 6424000, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{CustomModelData: 6424000, HideFlags: 6, mechanization:{ id:\"charging_station\" }, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:charging_station\"}}}}]} }"
             }
           ]
         }

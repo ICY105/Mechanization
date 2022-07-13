@@ -1,0 +1,102 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+	  
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:copy_name",
+              "source": "block_entity"
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": "block_entity",
+              "ops": [
+                {
+                  "source": "Lock",
+                  "target": "BlockEntityTag.Lock",
+                  "op": "replace"
+                },
+                {
+                  "source": "LootTable",
+                  "target": "BlockEntityTag.LootTable",
+                  "op": "replace"
+                },
+                {
+                  "source": "LootTableSeed",
+                  "target": "BlockEntityTag.LootTableSeed",
+                  "op": "replace"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_contents",
+              "type": "minecraft:shulker_box",
+              "entries": [
+                {
+                  "type": "minecraft:dynamic",
+                  "name": "minecraft:contents"
+                }
+              ]
+            }
+          ],
+		  "conditions":[
+			{
+			  "condition": "minecraft:inverted",
+			  "term": {
+				"condition": "minecraft:match_tool",
+				"predicate": {
+				  "items":[
+					"minecraft:air"
+				  ],
+				  "nbt": "{drop_contents:1b}"
+				}
+			  }
+			}
+		  ],
+          "name": "minecraft:yellow_shulker_box"
+        },
+		{
+		  "type": "minecraft:dynamic",
+		  "name": "minecraft:contents",
+		  "conditions": [
+			{
+			  "condition": "minecraft:match_tool",
+			  "predicate": {
+				"items": [
+				  "minecraft:air"
+				],
+				"nbt": "{drop_contents:1b}"
+			  }
+			}
+		  ]
+		}
+      ]
+    }
+  ],
+  "__smithed__": {
+	"rules": [
+	  {
+		"type":"smithed:append",
+		"target":"pools[0].entries",
+		"source":{
+		  "type":"smithed:reference",
+		  "path":"pools[0].entries[1]"
+		}
+	  },
+	  {
+		"type":"smithed:append",
+		"target":"pools[0].entries[0].conditions",
+		"source":{
+		  "type":"smithed:reference",
+		  "path":"pools[0].entries[0].conditions[0]"
+		}
+	  }
+	]
+  }
+}
