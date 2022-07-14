@@ -1,8 +1,8 @@
 
 # machine frames split
-execute if score @s smithed.data matches 0 if data storage smithed.crafter:input recipe.1[].mechanization{id:"tier_1_machine_frame"} run function mechanization:machines/recipes/recipes_t1
-execute if score @s smithed.data matches 0 if data storage smithed.crafter:input recipe.1[].mechanization{id:"tier_2_machine_frame"} run function mechanization:machines/recipes/recipes_t2
-execute if score @s smithed.data matches 0 if data storage smithed.crafter:input recipe.1[].mechanization{id:"tier_3_machine_frame"} run function mechanization:machines/recipes/recipes_t3
+execute if score @s smithed.data matches 0 if data storage smithed.crafter:input recipe.1[].tag.mechanization{id:"tier_1_machine_frame"} run function mechanization:machines/recipes/recipes_t1
+execute if score @s smithed.data matches 0 if data storage smithed.crafter:input recipe.1[].tag.mechanization{id:"tier_2_machine_frame"} run function mechanization:machines/recipes/recipes_t2
+execute if score @s smithed.data matches 0 if data storage smithed.crafter:input recipe.1[].tag.mechanization{id:"tier_3_machine_frame"} run function mechanization:machines/recipes/recipes_t3
 
 # other
 execute if predicate mechanization:recipes/machines/pipe run loot replace block ~ ~ ~ container.16 loot mechanization:machines/liquid_pipe_x2
@@ -25,4 +25,4 @@ execute if score @s smithed.data matches 0 store result score @s smithed.data if
 execute if score @s smithed.data matches 0 store result score @s smithed.data if data storage smithed.crafter:input recipe{0:[{Slot:0b, tag:{smithed:{dict:{ plate:{copper:1b}} }}}, {Slot:1b, tag:{smithed:{dict:{ gear:{iron:1b}} }}}, {Slot:2b, tag:{smithed:{dict:{ plate:{copper:1b}} }}}], 1:[], 2:[]} run loot replace block ~ ~ ~ container.16 loot mechanization:machines/liquid_pipe_x2
 
 # Spawner Mover
-execute if score @s smithed.data matches 0 store result score @s smithed.data if data storage smithed.crafter:input recipe{0:[{Slot:0b, id:"minecraft:iron_bars"}, {Slot:1b, id:"minecraft:shulker_shell"}, {Slot:2b, id:"minecraft:iron_bars"}], 1:[{Slot:0b, tag:{smithed:{dict:{ ingot:{ender_alloy:1b}} }}}, {Slot:1b, tag:{smithed:{dict:{ ingot:{nether_alloy:1b}} }}}, {Slot:2b, tag:{smithed:{dict:{ rod:{ender_alloy:1b}} }}}],   2:[{Slot:0b, id:"minecraft:iron_bars"}, {Slot:1b, id:"minecraft:shulker_shell"}, {Slot:2b, id:"minecraft:iron_bars"} ]} run loot replace block ~ ~ ~ container.16 loot mechanization:machines/spawner_mover
+execute if score @s smithed.data matches 0 store result score @s smithed.data if data storage smithed.crafter:input recipe{0:[{Slot:0b, id:"minecraft:iron_bars"}, {Slot:1b, id:"minecraft:shulker_shell"}, {Slot:2b, id:"minecraft:iron_bars"}], 1:[{Slot:0b, tag:{smithed:{dict:{ ingot:{ender_alloy:1b}} }}}, {Slot:1b, tag:{smithed:{dict:{ ingot:{nether_alloy:1b}} }}}, {Slot:2b, tag:{smithed:{dict:{ ingot:{ender_alloy:1b}} }}}],   2:[{Slot:0b, id:"minecraft:iron_bars"}, {Slot:1b, id:"minecraft:shulker_shell"}, {Slot:2b, id:"minecraft:iron_bars"} ]} run loot replace block ~ ~ ~ container.16 loot mechanization:machines/spawner_mover

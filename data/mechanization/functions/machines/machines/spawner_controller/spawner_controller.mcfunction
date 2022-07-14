@@ -8,7 +8,7 @@ execute if score #active mechanization.data matches 0 run data merge block ~ ~ ~
 execute if score #active mechanization.data matches 1 if entity @s[tag=!mechanization.upgraded] run data merge block ~ ~ ~ {RequiredPlayerRange: 24s, MaxSpawnDelay: 401s, MinSpawnDelay: 400s}
 execute if score #active mechanization.data matches 1 if entity @s[tag=mechanization.upgraded,tag=!mechanization.upgraded.ender,tag=!mechanization.upgraded.nether] run data merge block ~ ~ ~ {RequiredPlayerRange: 24s, MaxSpawnDelay: 200s, MinSpawnDelay: 200s}
 execute if score #active mechanization.data matches 1 if entity @s[tag=mechanization.upgraded.ender] run data merge block ~ ~ ~ {RequiredPlayerRange: 48s, MaxSpawnDelay: 200s, MinSpawnDelay: 200s}
-execute if score #active mechanization.data matches 1 if entity @s[tag=!mechanization.upgraded.nether] run data merge block ~ ~ ~ {RequiredPlayerRange: 24s, MaxSpawnDelay: 100s, MinSpawnDelay: 100s}
+execute if score #active mechanization.data matches 1 if entity @s[tag=mechanization.upgraded.nether] run data merge block ~ ~ ~ {RequiredPlayerRange: 24s, MaxSpawnDelay: 100s, MinSpawnDelay: 100s}
 
 execute if score #active mechanization.data matches 1 run scoreboard players remove @s energy.storage 320
 

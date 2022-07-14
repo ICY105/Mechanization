@@ -6,8 +6,23 @@
   },
   "ops": [
     {
-      "source": "object.tag",
-      "target": "{}",
+      "source": "object.tag.mechanization",
+      "target": "mechanization",
+      "op": "replace"
+    },
+    {
+      "source": "object.tag.CustomModelData",
+      "target": "CustomModelData",
+      "op": "replace"
+    },
+    {
+      "source": "object.tag.display",
+      "target": "display",
+      "op": "replace"
+    },
+    {
+      "source": "object.tag.smithed",
+      "target": "smithed",
       "op": "replace"
     }
   ]

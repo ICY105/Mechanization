@@ -36,5 +36,5 @@ execute if score #timer.100 mechanization.data matches 3 as @e[type=#mechanizati
 execute if score #timer.100 mechanization.data matches 3 as @e[type=#mechanization:item_frames,tag=mechanization.electric_lamp] at @s run function mechanization:machines/machines/electric_lamp/electric_lamp
 execute if score #timer.100 mechanization.data matches 4 as @e[type=#mechanization:item_frames,tag=mechanization.growth_accelerator] at @s run function mechanization:machines/machines/growth_accelerator/growth_accelerator
 execute if score #timer.100 mechanization.data matches 5 as @e[type=#mechanization:item_frames,tag=mechanization.fisher] at @s run function mechanization:machines/machines/fisher/fisher
-execute if score #timer.100 mechanization.data matches 6 as @e[type=minecraft:armor_stand,tag=mechanization.spawner_controller] at @s run function mechanization:machines/machines/spawner_controller
+execute if score #timer.100 mechanization.data matches 6 as @e[type=minecraft:armor_stand,tag=mechanization.spawner_controller] at @s run function mechanization:machines/machines/spawner_controller/spawner_controller
  
