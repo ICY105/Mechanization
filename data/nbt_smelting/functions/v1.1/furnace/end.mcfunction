@@ -17,9 +17,9 @@ execute if score #success nbt_smelting.data matches 1 run data remove entity @s 
 execute if score #success nbt_smelting.data matches 1 run data modify storage nbt_smelting:io item set from block ~ ~ ~ Items[{Slot:0b}]
 
 # Get Output
-execute if score #success nbt_smelting.data matches 1 if block ~ ~ ~ minecraft:blast_furnace run function #nbt_smelting:v1/blast_furnace
-execute if score #success nbt_smelting.data matches 1 if block ~ ~ ~ minecraft:furnace run function #nbt_smelting:v1/furnace
-execute if score #success nbt_smelting.data matches 1 if block ~ ~ ~ minecraft:smoker run function #nbt_smelting:v1/smoker
+execute if score #success nbt_smelting.data matches 1 if block ~ ~ ~ minecraft:blast_furnace run function #nbt_smelting:blast_furnace
+execute if score #success nbt_smelting.data matches 1 if block ~ ~ ~ minecraft:furnace run function #nbt_smelting:furnace
+execute if score #success nbt_smelting.data matches 1 if block ~ ~ ~ minecraft:smoker run function #nbt_smelting:smoker
 
 # Set Counts
 execute if score #success nbt_smelting.data matches 1 store result score #recipe_count nbt_smelting.data run data get block ~ ~ ~ Items[{Slot:2b}].Count
@@ -35,4 +35,4 @@ execute if score #success nbt_smelting.data matches 1 store result block ~ ~ ~ I
 tag @s remove nbt_smelting.furnace.active
 data merge block ~ ~ ~ {CookTime:0s}
 scoreboard players set @s nbt_smelting.data 0
-execute if entity @s if data block ~ ~ ~ Items[{Slot:0b}].tag.nbt_smelting run function nbt_smelting:v1.0/furnace/start_smelt
+execute if entity @s if data block ~ ~ ~ Items[{Slot:0b}].tag.nbt_smelting run function nbt_smelting:v1.1/furnace/start_smelt

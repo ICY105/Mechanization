@@ -104,15 +104,15 @@
       "value": "mechanization:machines/machines/cable_can_connect"
     },
 	{
-      "tag": "smithed.custom_crafter:event/break",
+      "tag": "smithed.crafter:event/break",
       "value": "mechanization:base/machines/machine_crafting_table/break"
     },
 	{
-      "tag": "smithed.custom_crafter:event/recipes",
+      "tag": "smithed.crafter:event/recipes",
       "value": "#mechanization:calls/shaped_recipes"
     },
 	{
-      "tag": "smithed.custom_crafter:event/shapeless_recipes",
+      "tag": "smithed.crafter:event/shapeless_recipes",
       "value": "#mechanization:calls/shapeless_recipes"
     },
 	{

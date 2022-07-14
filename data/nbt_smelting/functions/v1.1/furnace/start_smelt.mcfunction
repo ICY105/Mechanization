@@ -15,10 +15,10 @@ execute if score #output_count nbt_smelting.data matches 1.. store success score
 execute if score #output_count nbt_smelting.data matches 1.. if score #failed nbt_smelting.data matches 0 run scoreboard players set #enable nbt_smelting.data 1
 
 # Check Stack Sizes
-execute if score #enable nbt_smelting.data matches 1 if score #output_count nbt_smelting.data matches 1 run function nbt_smelting:v1.0/furnace/check_out_stackable
-execute if score #enable nbt_smelting.data matches 1 if score #output_count nbt_smelting.data matches 16 run function nbt_smelting:v1.0/furnace/check_out_stackable_16
+execute if score #enable nbt_smelting.data matches 1 if score #output_count nbt_smelting.data matches 1 run function nbt_smelting:v1.1/furnace/check_out_stackable
+execute if score #enable nbt_smelting.data matches 1 if score #output_count nbt_smelting.data matches 16 run function nbt_smelting:v1.1/furnace/check_out_stackable_16
 execute if score #enable nbt_smelting.data matches 1 if score #output_count nbt_smelting.data matches 64 run scoreboard players set #enable nbt_smelting.data 0
 
 # Start Smelting
-execute if score #enable nbt_smelting.data matches 1 if block ~ ~ ~ #nbt_smelting:furnaces{BurnTime:0s,Items:[{Slot:1b}]} run function nbt_smelting:v1.0/furnace/fuel
+execute if score #enable nbt_smelting.data matches 1 if block ~ ~ ~ #nbt_smelting:furnaces{BurnTime:0s,Items:[{Slot:1b}]} run function nbt_smelting:v1.1/furnace/fuel
 execute if score #enable nbt_smelting.data matches 1 unless block ~ ~ ~ #nbt_smelting:furnaces{BurnTime:0s} run tag @s add nbt_smelting.furnace.active

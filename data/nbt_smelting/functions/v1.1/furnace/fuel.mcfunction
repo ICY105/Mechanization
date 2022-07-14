@@ -30,9 +30,9 @@ execute if data storage nbt_smelting:io item{id:"minecraft:dark_oak_planks"} run
 execute if data storage nbt_smelting:io item{id:"minecraft:crimson_planks"} run data merge block ~ ~ ~ {BurnTime:300s}
 execute if data storage nbt_smelting:io item{id:"minecraft:warped_planks"} run data merge block ~ ~ ~ {BurnTime:300s}
 
-execute if block ~ ~ ~ #nbt_smelting:furnaces{BurnTime:0s} run function nbt_smelting:v1.0/furnace/fuel_2
+execute if block ~ ~ ~ #nbt_smelting:furnaces{BurnTime:0s} run function nbt_smelting:v1.1/furnace/fuel_2
 
 execute unless block ~ ~ ~ #nbt_smelting:furnaces{BurnTime:0s} store result score #fuel_count nbt_smelting.data run data get block ~ ~ ~ Items[{Slot:1b}].Count
 execute unless block ~ ~ ~ #nbt_smelting:furnaces{BurnTime:0s} run scoreboard players remove #fuel_count nbt_smelting.data 1
 execute unless block ~ ~ ~ #nbt_smelting:furnaces{BurnTime:0s} store result block ~ ~ ~ Items[{Slot:1b}].Count byte 1 run scoreboard players get #fuel_count nbt_smelting.data
-execute unless block ~ ~ ~ #nbt_smelting:furnaces{BurnTime:0s} if block ~ ~ ~ #nbt_smelting:furnaces[lit=false] run function nbt_smelting:v1.0/furnace/make_lit
+execute unless block ~ ~ ~ #nbt_smelting:furnaces{BurnTime:0s} if block ~ ~ ~ #nbt_smelting:furnaces[lit=false] run function nbt_smelting:v1.1/furnace/make_lit
