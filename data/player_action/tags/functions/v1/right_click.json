@@ -1,6 +1,5 @@
 {
   "values": [
-    "mechanization:base/player/right_click",
-    "mechanization:gadgets/player/right_click"
+    "#mechanization:calls/right_click"
   ]
 }

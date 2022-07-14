@@ -1,0 +1,8 @@
+{
+	"required":false,
+	"values":[
+		"mechanization:base/recipes/shaped",
+		"mechanization:machines/recipes/shaped",
+		"mechanization:gadgets/recipes/shaped"
+	]
+}

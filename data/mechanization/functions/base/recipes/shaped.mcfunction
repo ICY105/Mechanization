@@ -5,6 +5,9 @@ execute if score @s smithed.data matches 0 store result score @s smithed.data if
 # Multimeter
 execute if score @s smithed.data matches 0 store result score @s smithed.data if data storage smithed.crafter:input recipe{0:[{id:"minecraft:redstone", Slot:0b},{id:"minecraft:copper_ingot", Slot:1b},{id:"minecraft:redstone", Slot:2b}],1:[{id:"minecraft:gold_ingot", Slot:0b},{id:"minecraft:glass", Slot:1b},{id:"minecraft:gold_ingot", Slot:2b}],2:[{id:"minecraft:gold_ingot", Slot:0b},{id:"minecraft:copper_ingot", Slot:1b},{id:"minecraft:gold_ingot", Slot:2b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:base/multimeter
 
+# GPS
+execute if score @s smithed.data matches 0 store result score @s smithed.data if data storage smithed.crafter:input recipe{0:[{id:"minecraft:air", Slot:0b},{id:"minecraft:copper_ingot", Slot:1b},{id:"minecraft:ender_eye", Slot:2b}],1:[{id:"minecraft:gold_ingot", Slot:0b},{id:"minecraft:glass", Slot:1b},{id:"minecraft:gold_ingot", Slot:2b}],2:[{id:"minecraft:gold_ingot", Slot:0b},{id:"minecraft:copper_ingot", Slot:1b},{id:"minecraft:gold_ingot", Slot:2b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:base/gps
+
 # Vial
 execute if score @s smithed.data matches 0 store result score @s smithed.data if data storage smithed.crafter:input recipe{0:[{ tag:{smithed:{dict:{ingot:{steel:1b}}}}, Slot:0b},{id:"minecraft:air", Slot:1b},{id:"minecraft:air", Slot:2b}],1:[{id:"minecraft:glass", Slot:0b},{id:"minecraft:air", Slot:1b},{id:"minecraft:air", Slot:2b}],2:[{ tag:{smithed:{dict:{ingot:{steel:1b}}}}, Slot:0b},{id:"minecraft:air", Slot:1b},{id:"minecraft:air", Slot:2b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:base/vial
 

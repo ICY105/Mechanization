@@ -11,4 +11,4 @@ execute if score #damage mechanization.data matches 1.. run item modify entity @
 
 # effects
 execute if score #timer.10 mechanization.data matches 0 if data entity @s Inventory[{Slot:100b}].tag.mechanization.upgrades.items[].tag.mechanization.upgrade{effect:"slowfall"} run function mechanization:gadgets/player/modular_armor/slowfall
-execute if data entity @s[tag=player_action.walking] Inventory[{Slot:100b}].tag.mechanization.upgrades.items[].tag.mechanization.upgrade{effect:"wall_walk"} run function mechanization:gadgets/player/modular_armor/wall_walk
+execute if data entity @s Inventory[{Slot:100b}].tag.mechanization.upgrades.items[].tag.mechanization.upgrade{effect:"wall_walk"} run function mechanization:gadgets/player/modular_armor/wall_walk

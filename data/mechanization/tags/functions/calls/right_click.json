@@ -1,0 +1,7 @@
+{
+	"required":false,
+	"values":[
+		"mechanization:base/player/right_click",
+		"mechanization:gadgets/player/right_click"
+	]
+}

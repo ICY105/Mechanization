@@ -1,0 +1,7 @@
+{
+	"required":false,
+	"values":[
+		"mechanization:base/recipes/shapeless",
+		"mechanization:gadgets/recipes/shapeless"
+	]
+}
