@@ -1,6 +1,6 @@
 
 # Summon Entity & Init
-summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mechanization.new", "mechanization.liquid_tank", "mechanization.liquid_tank.t1", "mechanization.mufflable", "mechanization.rotatable", "mechanization.liquid.send", "mechanization.liquid.receive", "smithed.block"], CustomName:'{"translate":"mech.block.tier_1_liquid_tank"}', Item:{id:"minecraft:blast_furnace", tag:{CustomModelData:6422023}, Count:1b}, ItemRotation:0, Invisible:1b, Invulnerable:1b, Fixed:1b, Silent:1b}
+summon minecraft:glow_item_frame ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.liquid_tank", "mechanization.liquid_tank.t1", "mechanization.mufflable", "mechanization.rotatable", "mechanization.liquid.send", "mechanization.liquid.receive", "smithed.block"], CustomName:'{"translate":"mech.block.tier_1_liquid_tank"}', Item:{id:"minecraft:blast_furnace", tag:{CustomModelData:6422023}, Count:1b}, ItemRotation:0, Invisible:1b, Invulnerable:1b, Fixed:1b, Silent:1b}
 
 execute as @e[tag=mechanization.new,sort=nearest,limit=1] run function mechanization:machines/machines/liquid_pipe/add_adjacent_pipes
 execute if data entity @s SelectedItem.tag.mechanzation{muffled:1b} run tag @e[tag=mechanization.new,sort=nearest,limit=1] add mechanization.muffled

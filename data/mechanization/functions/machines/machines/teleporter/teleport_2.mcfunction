@@ -5,5 +5,5 @@ execute store result score #z mechanization.data run data get entity @s Item.tag
 
 execute positioned ~ ~1 ~ align xyz run tag @a[dx=0,dy=0,dz=0] add mechanization.teleporter.player
 
-summon minecraft:marker ~ ~ ~ {Tags:["mechanization.teleporter.marker"]}
+summon minecraft:marker ~ ~ ~ {Tags:["mechanization", "mechanization.teleporter.marker"]}
 execute as @e[type=minecraft:marker,tag=mechanization.teleporter.marker,limit=1] run function mechanization:machines/machines/teleporter/teleport_3
