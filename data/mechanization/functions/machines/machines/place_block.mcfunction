@@ -37,6 +37,7 @@ execute if score #id mechanization.data matches 25 if data storage smithed.custo
 execute if score #id mechanization.data matches 25 if data storage smithed.custom_block:main blockApi{id:"mechanization:arc_furnace"} run function mechanization:machines/machines/arc_furnace/place
 execute if score #id mechanization.data matches 25 if data storage smithed.custom_block:main blockApi{id:"mechanization:mob_grinder"} run function mechanization:machines/machines/mob_grinder/place
 execute if score #id mechanization.data matches 25 if data storage smithed.custom_block:main blockApi{id:"mechanization:liquid_pipe"} run function mechanization:machines/machines/liquid_pipe/place
+execute if score #id mechanization.data matches 26 if data storage smithed.custom_block:main blockApi{id:"mechanization:energy_relay"} run function mechanization:machines/machines/energy_relay/place
 execute if score #id mechanization.data matches 26 if data storage smithed.custom_block:main blockApi{id:"mechanization:super_piston"} run function mechanization:machines/machines/super_piston/place
 execute if score #id mechanization.data matches 27 if data storage smithed.custom_block:main blockApi{id:"mechanization:electric_lamp"} run function mechanization:machines/machines/electric_lamp/place
 execute if score #id mechanization.data matches 27 if data storage smithed.custom_block:main blockApi{id:"mechanization:block_breaker"} run function mechanization:machines/machines/block_breaker/place

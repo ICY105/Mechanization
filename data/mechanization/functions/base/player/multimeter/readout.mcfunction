@@ -9,7 +9,3 @@ execute if entity @s[tag=mechanization.upgraded,tag=!mechanization.upgraded.neth
 execute if entity @s[tag=mechanization.upgraded.nether] run tellraw @p [{"translate":"mech.item.nether_upgrade","color":"dark_aqua"}]
 execute if entity @s[tag=mechanization.upgraded.ender] run tellraw @p [{"translate":"mech.item.ender_upgrade","color":"dark_aqua"}]
 execute if entity @s[tag=mechanization.muffled] run tellraw @p [{"translate":"mech.item.muffler_upgrade","color":"dark_aqua"}]
-
-# Energy Relay
-execute if entity @s[tag=mechanization.energy_relay,scores={mechanization.data=0}] run tellraw @p [{"translate":"mech.text.multimeter.mode","color":"dark_green"},{"translate":"mech.text.multimeter.transmission","color":"dark_aqua"}]
-execute if entity @s[tag=mechanization.energy_relay,scores={mechanization.data=0}] run tellraw @p [{"translate":"mech.text.multimeter.mode","color":"dark_green"},{"translate":"mech.text.multimeter.collection","color":"dark_aqua"}]

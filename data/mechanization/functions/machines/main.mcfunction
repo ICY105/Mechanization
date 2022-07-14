@@ -7,7 +7,7 @@ execute if score #timer.20 mechanization.data matches 0 as @e[type=#mechanizatio
 execute if score #timer.20 mechanization.data matches 1 as @e[type=#mechanization:item_frames,tag=mechanization.battery.t2] at @s run function mechanization:machines/machines/battery/tier_2_battery
 execute if score #timer.20 mechanization.data matches 2 as @e[type=#mechanization:item_frames,tag=mechanization.battery.t3] at @s run function mechanization:machines/machines/battery/tier_3_battery
 #execute if score #timer.20 mechanization.data matches 3 as @e[type=#mechanization:item_frames,tag=mechanization.battery.quantum] at @s run function mechanization:machines/machines/quantum_battery
-execute if score #timer.20 mechanization.data matches 4 as @e[type=#mechanization:item_frames,tag=mechanization.energy_relay] at @s run function mechanization:machines/machines/relay/energy_relay
+execute if score #timer.20 mechanization.data matches 4 as @e[type=#mechanization:item_frames,tag=mechanization.energy_relay] at @s run function mechanization:machines/machines/energy_relay/energy_relay
 execute if score #timer.20 mechanization.data matches 5 as @e[type=#mechanization:item_frames,tag=mechanization.pipe] at @s run function mechanization:machines/machines/liquid_pipe/liquid_pipe
 execute if score #timer.20 mechanization.data matches 6 as @e[type=#mechanization:item_frames,tag=mechanization.steam_generator] at @s run function mechanization:machines/machines/steam_generator/steam_generator
 execute if score #timer.20 mechanization.data matches 7 as @e[type=#mechanization:item_frames,tag=mechanization.alloy_furnace] at @s run function mechanization:machines/machines/alloy_furnace/alloy_furnace
