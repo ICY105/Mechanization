@@ -53,5 +53,5 @@ execute if score @s mechanization.fluid.1 matches 1.. run data modify block ~ ~ 
 execute if score @s mechanization.fluid.1 matches 1.. run data modify block ~ ~ ~ Items[{Slot:16b}].tag.display.color set from entity @s Item.tag.tank_2.tag.mechanization.liquid.color
 
 #model
-execute if score #active mechanization.data matches 1 run data modify entity @s Item.tag.CustomModelData set value 6422030
+execute if score #active mechanization.data matches 0 run data modify entity @s Item.tag.CustomModelData set value 6422030
 execute if score #active mechanization.data matches 1 run data modify entity @s Item.tag.CustomModelData set value 6422951

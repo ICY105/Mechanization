@@ -1,6 +1,7 @@
 {
 	"required":false,
 	"values":[
+		"mechanization:base/player/wrench/break",
 		"mechanization:machines/player/wrench/break",
 		"mechanization:nuclear/tools/wrench_break",
 		"mechanization:gadgets/player/wrench_break",

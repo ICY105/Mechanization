@@ -6,8 +6,8 @@ execute if data block ~ ~ ~ Items[{Slot:6b}] run function mechanization:machines
 # active
 function mechanization:base/utils/redstone_active
 execute if score @s energy.storage matches 4000.. run scoreboard players set #active mechanization.data 0
-execute if score @s[tag=!mechanization.upgraded.ender] mechanization.fluid.0 matches ..4 run scoreboard players set #active mechanization.data 0
-execute if score @s[tag=!mechanization.upgraded.nether] mechanization.fluid.1 matches ..4 run scoreboard players set #active mechanization.data 0
+execute unless score @s[tag=!mechanization.upgraded.ender] mechanization.fluid.0 matches 5.. run scoreboard players set #active mechanization.data 0
+execute unless score @s[tag=!mechanization.upgraded.nether] mechanization.fluid.1 matches 5.. run scoreboard players set #active mechanization.data 0
 
 # gui
 function mechanization:machines/machines/thermoelectric_generator/gui

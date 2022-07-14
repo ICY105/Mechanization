@@ -16,4 +16,4 @@ execute if score @s energy.storage matches ..2000 if entity @s[tag=mechanization
 
 # cleanup
 execute unless block ~ ~ ~ minecraft:daylight_detector run function mechanization:base/utils/break_machine_t2
-execute unless block ~ ~ ~ minecraft:daylight_detector positioned ~ ~0.4 ~ run kill @e[type=item_frame,tag=mechanization.solar_panel.model,distance=..0.5]
+execute unless block ~ ~ ~ minecraft:daylight_detector positioned ~ ~0.8 ~ run kill @e[type=item_frame,tag=mechanization.solar_panel.model,distance=..0.2]
