@@ -1,5 +1,5 @@
 
-scoreboard players set out_0 du_data 64
+scoreboard players set #complete.1 mechanization.data 64
 
 
 

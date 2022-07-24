@@ -1,6 +1,8 @@
 
 scoreboard players operation #player.in energy.data = #gadgets.cf.flight_power mechanization.data
 scoreboard players operation #player.in energy.data *= #cons.-1 mechanization.data
+
+scoreboard players set #player.out energy.data 0
 execute if block ~ ~-1 ~ #mechanization:air if block ~ ~-2 ~ #mechanization:air run function energy:v1/api/modify_player_energy
 
 effect clear @s minecraft:levitation

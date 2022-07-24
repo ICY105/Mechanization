@@ -1,7 +1,7 @@
 
 execute store result score #cooling mechanization.data run data get entity @s SelectedItem.tag.mechanization.epac.cooling
 execute if score #cooling mechanization.data matches ..0 run scoreboard players set #cooling mechanization.data 6
-execute if score @s mechanization.firerate matches 0 if score @s mechanization.weaponheat matches 1.. run scoreboard players operation @s mechanization.weaponheat -= #cooling mechanization.data
+execute if score @s mechanization.firerate matches ..-60 if score @s mechanization.weaponheat matches 1.. run scoreboard players operation @s mechanization.weaponheat -= #cooling mechanization.data
 
 execute if score @s mechanization.weaponheat matches ..49 run title @s actionbar [{"translate":"mech.text.guns.heat","color":"gold"},    {"text":"\uee05\uee01\uee01\uee01\uee01\uee01\uee01\uee01\uee01\uee03","color":"white","font":"mechanization:gui"}]
 execute if score @s mechanization.weaponheat matches 50..149 run title @s actionbar [{"translate":"mech.text.guns.heat","color":"gold"}, {"text":"\uee04\uee01\uee01\uee01\uee01\uee01\uee01\uee01\uee01\uee03","color":"white","font":"mechanization:gui"}]

@@ -26,7 +26,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421384, HideFlags: 32, mechaniation:{ id:\"super_conductive_plate\", upgrade:{type:3b, effect:\"none\", max_durability:4500, stats:{armor:1, armor_toughness:0.5, shield:3}} }, smithed:{dict:{plate:{super_conductive_alloy:1b}}} }"
+              "tag":"{CustomModelData: 6421384, HideFlags: 32, mechanization:{ id:\"super_conductive_plate\", upgrade:{type:3b, effect:\"none\", max_durability:4500, stats:{armor:1, armor_toughness:0.5, shield:3}} }, smithed:{dict:{plate:{super_conductive_alloy:1b}}} }"
             }
           ]
         }

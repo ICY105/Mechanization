@@ -45,8 +45,8 @@ execute if score @s mechanization.fluid.0 matches 1.. run data modify block ~ ~ 
 execute if score @s mechanization.fluid.0 matches 1.. run data modify block ~ ~ ~ Items[{Slot:10b}].tag.display.color set from entity @s Item.tag.tank.tag.mechanization.liquid.color
 
 # model
-execute if score @s mechanization.timer matches 0 run data modify entity @s Item.tag.CustomModelData set value 6422028
-execute if score @s mechanization.timer matches 1.. run data modify entity @s Item.tag.CustomModelData set value 6422950
+execute if score @s mechanization.time matches 0 run data modify entity @s Item.tag.CustomModelData set value 6422028
+execute if score @s mechanization.time matches 1.. run data modify entity @s Item.tag.CustomModelData set value 6422950
 
 #casts
 item replace block ~ ~ ~ container.4 with minecraft:carrot_on_a_stick{mechanization:{gui_item:1b},CustomModelData:6422964,HideFlags:127,display:{Name:'{"translate":"mech.item.ingot_cast","italic":false}',Lore:['{"translate":"mech.lore.cast_cost","italic":false,"color":"gray","with":[{"text":"144"},{"text":"1"}]}']}}

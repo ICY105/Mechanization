@@ -1,6 +1,6 @@
 
-scoreboard players set $out_0 mech_data 0
-execute align xyz positioned ~0.5 ~0.5 ~0.5 as @e[type=#mechanization:valid_block_entities,distance=..0.49] run function #mechanization:custom_item_extraction
-execute if score $out_0 mech_data matches 0 run function mechanization:assembly/machines/item_extractor/default_item_selection
+scoreboard players set #allowed mechanization.data -1
+execute align xyz as @e[type=#mechanization:valid_block_entities,dx=0,dy=0,dz=0] run function #mechanization:custom_item_extraction
+execute if score #allowed mechanization.data matches -1 run function mechanization:assembly/machines/item_extractor/default_item_selection
 
-execute if data storage du:temp list[0] run function mechanization:assembly/machines/item_extractor/move_item_2
+execute if score #allowed mechanization.data matches 1 if data storage mechanization:temp list[0] run function mechanization:assembly/machines/item_extractor/move_item_2

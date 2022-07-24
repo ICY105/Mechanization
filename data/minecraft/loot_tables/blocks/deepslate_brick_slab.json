@@ -21,7 +21,7 @@
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "nbt": "{du_auto_smelt:1b}"
+                    "nbt": "{auto_smelt:1b}"
                   }
                 },
 				{

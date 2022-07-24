@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 5104, CustomModelData: 6425104, HideFlags: 6, Unbreakable:1b}"
+              "tag":"{CustomModelData: 6425104, HideFlags: 6, Unbreakable:1b, mechanization:{id:\"music_disc_wanderer\"}}"
             }
           ]
         }

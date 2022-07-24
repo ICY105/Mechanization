@@ -34,8 +34,8 @@ execute if score @s mechanization.fluid.0 matches 1.. run data modify block ~ ~ 
 execute if score @s mechanization.fluid.0 matches 1.. run data modify block ~ ~ ~ Items[{Slot:5b}].tag.display.color set from entity @s Item.tag.tank.tag.mechanization.liquid.color
 
 #model
-execute if score @s mechanization.timer matches 0 run data modify entity @s Item.tag.CustomModelData set value 6422027
-execute if score @s mechanization.timer matches 1.. run data modify entity @s Item.tag.CustomModelData set value 6422949
+execute if score @s mechanization.time matches 0 run data modify entity @s Item.tag.CustomModelData set value 6422027
+execute if score @s mechanization.time matches 1.. run data modify entity @s Item.tag.CustomModelData set value 6422949
 
-execute unless score @s mechanization.timer matches 1.. run item replace block ~ ~ ~ container.6 with minecraft:structure_block{mechanization:{gui_item:1b},CustomModelData:6422900,display:{Name:'{"text":""}'}}
-execute if score @s mechanization.timer matches 1.. run item replace block ~ ~ ~ container.6 with minecraft:structure_block{mechanization:{gui_item:1b},CustomModelData:6422901,display:{Name:'{"text":""}'}}
+execute unless score @s mechanization.time matches 1.. run item replace block ~ ~ ~ container.6 with minecraft:structure_block{mechanization:{gui_item:1b},CustomModelData:6422900,display:{Name:'{"text":""}'}}
+execute if score @s mechanization.time matches 1.. run item replace block ~ ~ ~ container.6 with minecraft:structure_block{mechanization:{gui_item:1b},CustomModelData:6422901,display:{Name:'{"text":""}'}}

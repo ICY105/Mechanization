@@ -23,7 +23,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421435, mechaniation:{ id:\"uranium_gear\", upgrade:{type:2b, effect:\"auto_smelt\", max_durability:1000, stats:{}} }, smithed:{dict:{gear:{uranium:1b}}} }"
+              "tag":"{CustomModelData: 6421435, mechanization:{ id:\"uranium_gear\", upgrade:{type:2b, effect:\"auto_smelt\", max_durability:1000, stats:{}} }, smithed:{dict:{gear:{uranium:1b}}} }"
             }
           ]
         }

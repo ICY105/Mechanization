@@ -1,9 +1,9 @@
 
-data modify storage mechanization.temp var set from entity @s Item.tag.tank.tag.mechanization.liquid.id
-execute store success score $temp_4 mechanization.data run data modify storage mechanization.temp var set from storage mechanization.temp obj.tag.mechanization.liquid.id
+data modify storage mechanization:temp var set from entity @s Item.tag.tank.tag.mechanization.liquid.id
+execute store success score $temp_4 mechanization.data run data modify storage mechanization:temp var set from storage mechanization:temp obj.tag.mechanization.liquid.id
 
 execute unless score @s mechanization.fluid.0 matches 1.. run scoreboard players set $temp_4 mechanization.data 0
-execute unless score @s mechanization.fluid.0 matches 1.. run data modify entity @s Item.tag.tank set from storage mechanization.temp obj
+execute unless score @s mechanization.fluid.0 matches 1.. run data modify entity @s Item.tag.tank set from storage mechanization:temp obj
 
 execute if score $temp_4 mechanization.data matches 0 if entity @s[tag=mechanization.liquid_tank.t1] run scoreboard players operation $temp_5 mechanization.data = #machines.cf.t1_tank.capacity mechanization.data
 execute if score $temp_4 mechanization.data matches 0 if entity @s[tag=mechanization.liquid_tank.t2] run scoreboard players operation $temp_5 mechanization.data = #machines.cf.t2_tank.capacity mechanization.data

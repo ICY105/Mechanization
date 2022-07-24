@@ -27,7 +27,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421317, HideFlags: 32, mechaniation:{ id:\"tin_rod\", upgrade:{type:1b, effect:\"none\", max_durability:750, stats:{attack_damage:2, attack_speed:0.2, energy_saber_range:0, unbreaking:1}, bonus_stats:{energy_saber_range:1}} }, smithed:{dict:{rod:{tin:1b}}} }"
+              "tag":"{CustomModelData: 6421317, HideFlags: 32, mechanization:{ id:\"tin_rod\", upgrade:{type:1b, effect:\"none\", max_durability:750, stats:{attack_damage:2, attack_speed:0.2, energy_saber_range:0, unbreaking:1}, bonus_stats:{energy_saber_range:1}} }, smithed:{dict:{rod:{tin:1b}}} }"
             }
           ]
         }

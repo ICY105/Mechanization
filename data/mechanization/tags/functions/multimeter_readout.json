@@ -5,6 +5,6 @@
 		"mechanization:machines/player/readout",
 		"mechanization:nuclear/tools/multimeter_readout",
 		"mechanization:gadgets/player/multimeter_readout",
-		"mechanization:assembly/tools/multimeter_readout"
+		"mechanization:assembly/player/multimeter_readout"
 	]
 }

@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421341, HideFlags: 32, ctc:{ id:\"structural_alloy_nugget\" }, smithed:{dict:{nugget:{structural_alloy:1b}}}  }"
+              "tag":"{CustomModelData: 6421341, HideFlags: 32, mechanization:{ id:\"structural_alloy_nugget\" }, smithed:{dict:{nugget:{structural_alloy:1b}}}  }"
             }
           ]
         }

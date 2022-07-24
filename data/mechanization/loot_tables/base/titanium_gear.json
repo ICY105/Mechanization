@@ -23,7 +23,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421326, HideFlags: 32, mechaniation:{ id:\"titanium_gear\", upgrade:{type:2b, effect:\"magnetic\", max_durability:6000, stats:{}} }, smithed:{dict:{gear:{titanium:1b}}} }"
+              "tag":"{CustomModelData: 6421326, HideFlags: 32, mechanization:{ id:\"titanium_gear\", upgrade:{type:2b, effect:\"magnetic\", max_durability:6000, stats:{}} }, smithed:{dict:{gear:{titanium:1b}}} }"
             }
           ]
         }

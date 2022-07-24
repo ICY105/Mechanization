@@ -20,11 +20,11 @@ execute if score #timer.20 mechanization.data matches 13 as @e[type=minecraft:ar
 execute if score #timer.20 mechanization.data matches 14 as @e[type=minecraft:marker,tag=mechanization.block_breaker] at @s run function mechanization:machines/machines/block_breaker/block_breaker
 execute if score #timer.20 mechanization.data matches 15 as @e[type=#mechanization:item_frames,tag=mechanization.teleporter] at @s run function mechanization:machines/machines/teleporter/teleporter
 execute if score #timer.20 mechanization.data matches 16 as @e[type=#mechanization:item_frames,tag=mechanization.reformer] at @s run function mechanization:machines/machines/reformer/reformer
-execute if score #timer.20 mechanization.data matches 17 as @e[type=#mechanization:item_frames,tag=mechanization.enchanting_station] at @s run function mechanization:machines/machines/ench_station/ench_station
+execute if score #timer.20 mechanization.data matches 17 as @e[type=#mechanization:item_frames,tag=mechanization.enchanting_station] at @s run function mechanization:machines/machines/enchanting_station/enchanting_station
 execute if score #timer.20 mechanization.data matches 18 as @e[type=#mechanization:item_frames,tag=mechanization.dimensional_generator] at @s run function mechanization:machines/machines/dimensional_generator/dimensional_generator
-execute if score #timer.20 mechanization.data matches 19 as @e[type=#mechanization:item_frames,tag=mechanization.bio_gen] at @s run function mechanization:machines/machines/bio_generator/bio_generator
+execute if score #timer.20 mechanization.data matches 19 as @e[type=#mechanization:item_frames,tag=mechanization.bio_generator] at @s run function mechanization:machines/machines/bio_generator/bio_generator
 execute if score #timer.20 mechanization.data matches 0 as @e[type=#mechanization:item_frames,tag=mechanization.quarry] at @s run function mechanization:machines/machines/quarry/quarry
-execute if score #timer.20 mechanization.data matches 1 as @e[type=#mechanization:item_frames,tag=mechanization.electric_furnace] at @s run function mechanization:machines/machines/electric_furnace
+execute if score #timer.20 mechanization.data matches 1 as @e[type=#mechanization:item_frames,tag=mechanization.electric_furnace] at @s run function mechanization:machines/machines/electric_furnace/electric_furnace
 execute if score #timer.20 mechanization.data matches 2 as @e[type=#mechanization:item_frames,tag=mechanization.grinder] at @s run function mechanization:machines/machines/grinder/grinder
 
 # 100 tick clock

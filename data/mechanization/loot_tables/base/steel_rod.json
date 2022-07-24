@@ -26,7 +26,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421336, HideFlags: 32, mechaniation:{ id:\"steel_rod\", upgrade:{type:1b, effect:\"none\", max_durability:3000, stats:{attack_damage:3.5, attack_speed:0.3, energy_saber_range:1}} }, smithed:{dict:{rod:{steel:1b}}} }"
+              "tag":"{CustomModelData: 6421336, HideFlags: 32, mechanization:{ id:\"steel_rod\", upgrade:{type:1b, effect:\"none\", max_durability:3000, stats:{attack_damage:3.5, attack_speed:0.3, energy_saber_range:1}} }, smithed:{dict:{rod:{steel:1b}}} }"
             }
           ]
         }

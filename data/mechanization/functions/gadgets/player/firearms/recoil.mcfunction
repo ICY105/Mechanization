@@ -1,6 +1,6 @@
 
 #vertical
-execute store result score #rng.in mechanization.data run data get entity @s SelectedItem.tag.mech_gun.recoil_y
+execute store result score #rng.in mechanization.data run data get entity @s SelectedItem.tag.mechanization.epac.recoil_y
 function mechanization:base/utils/random
 execute if score #rng.out mechanization.data matches 1 at @s run tp @s ~ ~ ~ ~ ~-0.5
 execute if score #rng.out mechanization.data matches 2 at @s run tp @s ~ ~ ~ ~ ~-1
@@ -11,7 +11,7 @@ execute if score #rng.out mechanization.data matches 6 at @s run tp @s ~ ~ ~ ~ ~
 execute if score #rng.out mechanization.data matches 7 at @s run tp @s ~ ~ ~ ~ ~-3.5
 
 #horizontal
-execute store result score #recoil_x mechanization.data run data get entity @s SelectedItem.tag.mech_gun.recoil_x
+execute store result score #recoil_x mechanization.data run data get entity @s SelectedItem.tag.mechanization.epac.recoil_x
 scoreboard players operation #rng.in mechanization.data = #recoil_x mechanization.data
 scoreboard players operation #rng.in mechanization.data *= #cons.2 mechanization.data
 function mechanization:base/utils/random

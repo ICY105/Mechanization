@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421433, nbt_smelting:1b, HideFlags: 32, ctc:{ id:\"raw_uranium\" }, smithed:{dict:{raw:{uranium:1b}}}  }"
+              "tag":"{CustomModelData: 6421433, nbt_smelting:1b, HideFlags: 32, mechanization:{ id:\"raw_uranium\" }, smithed:{dict:{raw:{uranium:1b}}}  }"
             }
           ]
         }

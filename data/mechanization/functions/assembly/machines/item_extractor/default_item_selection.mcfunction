@@ -1,13 +1,16 @@
 
-data modify storage du:temp list set from block ~ ~ ~ Items
-data remove storage du:temp list[{tag:{du_gui:1b}}]
+scoreboard players set #allowed mechanization.data 1
 
-#furnace-like removal
-execute if block ~ ~ ~ #du:internal/furnace-like run data remove storage du:temp list[{Slot:0b}]
-execute if block ~ ~ ~ #du:internal/furnace-like unless data storage du:temp list[{Slot:1b,id:"minecraft:bucket"}] run data remove storage du:temp list[{Slot:1b}]
+data modify storage mechanization:temp list set from block ~ ~ ~ Items
+data remove storage mechanization:temp list[{tag:{ mechanization:{gui_item:1b} }}]
 
-#brewing stand removal
-execute if block ~ ~ ~ minecraft:brewing_stand run data remove storage du:temp list[{Slot:4b}]
+# furnace-like removal
+execute if block ~ ~ ~ #mechanization:furnace-like run data remove storage mechanization:temp list[{Slot:0b}]
+execute if block ~ ~ ~ #mechanization:furnace-like unless data storage mechanization:temp list[{Slot:1b,id:"minecraft:bucket"}] run data remove storage mechanization:temp list[{Slot:1b}]
 
-#camp fire removal
-execute if block ~ ~ ~ #minecraft:campfires run data modify storage du:temp list set value []
+# brewing stand removal
+execute if block ~ ~ ~ minecraft:brewing_stand run data remove storage mechanization:temp list[{Slot:3b}]
+execute if block ~ ~ ~ minecraft:brewing_stand run data remove storage mechanization:temp list[{Slot:4b}]
+
+# camp fire removal
+execute if block ~ ~ ~ #minecraft:campfires run data modify storage mechanization:temp list set value []

@@ -19,26 +19,26 @@ execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id
 
 execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"rapid_chamber"} run scoreboard players set #damage mechanization.data 30
 execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"rapid_chamber"} run scoreboard players set #fire_rate mechanization.data 2
-execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"accelerated_chamber"} run scoreboard players set #heat mechanization.data 18
-execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"accelerated_chamber"} run scoreboard players set #energy mechanization.data 36
+execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"rapid_chamber"} run scoreboard players set #heat mechanization.data 18
+execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"rapid_chamber"} run scoreboard players set #energy mechanization.data 36
 execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"rapid_chamber"} run scoreboard players add #model mechanization.data 2
 
 execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"pressurized_chamber"} run scoreboard players set #damage mechanization.data 150
 execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"pressurized_chamber"} run scoreboard players set #fire_rate mechanization.data 10
-execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"accelerated_chamber"} run scoreboard players set #heat mechanization.data 90
-execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"accelerated_chamber"} run scoreboard players set #energy mechanization.data 180
+execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"pressurized_chamber"} run scoreboard players set #heat mechanization.data 90
+execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"pressurized_chamber"} run scoreboard players set #energy mechanization.data 180
 execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"pressurized_chamber"} run scoreboard players add #model mechanization.data 3
 
 execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"blazing_chamber"} run scoreboard players set #damage mechanization.data 300
 execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"blazing_chamber"} run scoreboard players set #fire_rate mechanization.data 20
-execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"accelerated_chamber"} run scoreboard players set #heat mechanization.data 180
-execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"accelerated_chamber"} run scoreboard players set #energy mechanization.data 360
+execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"blazing_chamber"} run scoreboard players set #heat mechanization.data 180
+execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"blazing_chamber"} run scoreboard players set #energy mechanization.data 360
 execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"blazing_chamber"} run scoreboard players add #model mechanization.data 4
 
 execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"supercharged_chamber"} run scoreboard players set #damage mechanization.data 600
 execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"supercharged_chamber"} run scoreboard players set #fire_rate mechanization.data 40
-execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"accelerated_chamber"} run scoreboard players set #heat mechanization.data 360
-execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"accelerated_chamber"} run scoreboard players set #energy mechanization.data 720
+execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"supercharged_chamber"} run scoreboard players set #heat mechanization.data 360
+execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"supercharged_chamber"} run scoreboard players set #energy mechanization.data 720
 execute if data storage mechanization:temp list[{Slot:14b}].tag.mechanization{id:"supercharged_chamber"} run scoreboard players add #model mechanization.data 5
 
 # pump

@@ -23,7 +23,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421385, HideFlags: 32, mechaniation:{ id:\"super_conductive_gear\", upgrade:{type:2b, effect:\"none\", max_durability:9000, stats:{mining_speed:21}} }, smithed:{dict:{gear:{super_conductive_alloy:1b}}} }"
+              "tag":"{CustomModelData: 6421385, HideFlags: 32, mechanization:{ id:\"super_conductive_gear\", upgrade:{type:2b, effect:\"none\", max_durability:9000, stats:{mining_speed:21}} }, smithed:{dict:{gear:{super_conductive_alloy:1b}}} }"
             }
           ]
         }

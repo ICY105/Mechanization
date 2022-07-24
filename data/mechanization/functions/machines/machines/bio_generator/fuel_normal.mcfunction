@@ -30,7 +30,7 @@ execute if block ~ ~ ~ minecraft:dropper{Items:[{id:"minecraft:crimson_fungus"}]
 execute if block ~ ~ ~ minecraft:dropper{Items:[{id:"minecraft:chorus_flower"}]} run scoreboard players add #energy mechanization.data 32
 execute if block ~ ~ ~ minecraft:dropper{Items:[{id:"minecraft:hay_block"}]} run scoreboard players add #energy mechanization.data 32
 
-scoreboard players operation #energy mechanization.data *= $machines.cf.bio_gen.power mechanization.data
+scoreboard players operation #energy mechanization.data *= #machines.cf.bio_gen.power mechanization.data
 scoreboard players operation #energy mechanization.data /= #cons.100 mechanization.data
 scoreboard players operation @s energy.storage += #energy mechanization.data
 execute if score #energy mechanization.data matches 1.. run function mechanization:machines/machines/bio_generator/decrease_counts

@@ -25,10 +25,10 @@ execute if score #count mechanization.data matches ..63 if score @s[tag=mechaniz
 execute if score #count mechanization.data matches ..63 if score @s[tag=mechanization.upgraded.ender] mechanization.data matches 7 if score @s mechanization.fluid.0 matches 576.. run function mechanization:machines/machines/casting_basin/recipes/input_gear
 
 #speed upgrade
-execute if score @s[tag=mechanization.upgraded.nether] mechanization.timer matches 2..5 run scoreboard players set @s mechanization.timer 2
-execute if score @s[tag=mechanization.upgraded.nether] mechanization.timer matches 6.. run scoreboard players operation @s mechanization.timer /= #cons.2 mechanization.data
+execute if score @s[tag=mechanization.upgraded.nether] mechanization.time matches 2..5 run scoreboard players set @s mechanization.time 2
+execute if score @s[tag=mechanization.upgraded.nether] mechanization.time matches 6.. run scoreboard players operation @s mechanization.time /= #cons.2 mechanization.data
 
 #calculate needed power
 scoreboard players operation #energy mechanization.data = $machines.cf.casting_basin.power mechanization.data
-scoreboard players operation #energy mechanization.data *= @s mechanization.timer
-execute if score @s energy.storage < #energy mechanization.data run scoreboard players set @s mechanization.timer 0
+scoreboard players operation #energy mechanization.data *= @s mechanization.time
+execute if score @s energy.storage < #energy mechanization.data run scoreboard players set @s mechanization.time 0

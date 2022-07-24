@@ -27,7 +27,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421436, HideFlags: 32, mechaniation:{ id:\"uranium_rod\", upgrade:{type:1b, effect:\"poison\", max_durability:1000, stats:{attack_damage:2, attack_speed:0.2, energy_saber_range:0}} }, smithed:{dict:{rod:{uranium:1b}}} }"
+              "tag":"{CustomModelData: 6421436, HideFlags: 32, mechanization:{ id:\"uranium_rod\", upgrade:{type:1b, effect:\"poison\", max_durability:1000, stats:{attack_damage:2, attack_speed:0.2, energy_saber_range:0}} }, smithed:{dict:{rod:{uranium:1b}}} }"
             }
           ]
         }

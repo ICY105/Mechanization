@@ -5,4 +5,4 @@ execute if entity @s[tag=mechanization.alloy_furnace] if score $in_0 mechanizati
 execute if entity @s[tag=mechanization.casting_basin] run scoreboard players set $out_0 mechanization.data 1
 execute if entity @s[tag=mechanization.thermoelectric_generator] run scoreboard players set $out_0 mechanization.data 1
 execute if entity @s[tag=mechanization.reformer] run scoreboard players set $out_0 mechanization.data 1
-execute if entity @s[tag=mechanization.ench_station] run scoreboard players set $out_0 mechanization.data 1
+execute if entity @s[tag=mechanization.enchanting_station] run scoreboard players set $out_0 mechanization.data 1

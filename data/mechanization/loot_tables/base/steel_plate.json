@@ -25,7 +25,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421334, HideFlags: 32, mechaniation:{ id:\"steel_plate\", upgrade:{type:3b, effect:\"none\", max_durability:1500, stats:{armor:1, armor_toughness:0.25}} }, smithed:{dict:{plate:{steel:1b}}} }"
+              "tag":"{CustomModelData: 6421334, HideFlags: 32, mechanization:{ id:\"steel_plate\", upgrade:{type:3b, effect:\"none\", max_durability:1500, stats:{armor:1, armor_toughness:0.25}} }, smithed:{dict:{plate:{steel:1b}}} }"
             }
           ]
         }

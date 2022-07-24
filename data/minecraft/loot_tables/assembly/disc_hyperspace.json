@@ -18,7 +18,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 5102, CustomModelData: 6425102, HideFlags: 6, Unbreakable:1b}"
+              "tag":"{CustomModelData: 6425102, HideFlags: 6, Unbreakable:1b, mechanization:{id:\"music_disc_hyperspace\"}}"
             }
           ]
         }

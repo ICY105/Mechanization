@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421432, HideFlags: 32, ctc:{ id:\"uranium_nugget\" }, smithed:{dict:{nugget:{uranium:1b}}}  }"
+              "tag":"{CustomModelData: 6421432, HideFlags: 32, mechanization:{ id:\"uranium_nugget\" }, smithed:{dict:{nugget:{uranium:1b}}}  }"
             }
           ]
         }

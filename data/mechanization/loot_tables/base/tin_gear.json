@@ -23,7 +23,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421316, HideFlags: 32, mechaniation:{ id:\"tin_gear\", upgrade:{type:2b, effect:\"none\", max_durability:1000, stats:{unbreaking: 1}} }, smithed:{dict:{gear:{tin:1b}}} }"
+              "tag":"{CustomModelData: 6421316, HideFlags: 32, mechanization:{ id:\"tin_gear\", upgrade:{type:2b, effect:\"none\", max_durability:1000, stats:{unbreaking: 1}} }, smithed:{dict:{gear:{tin:1b}}} }"
             }
           ]
         }

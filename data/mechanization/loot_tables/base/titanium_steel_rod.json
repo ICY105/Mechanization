@@ -26,7 +26,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421366, HideFlags: 32, mechaniation:{ id:\"titanium_steel_rod\", upgrade:{type:1b, effect:\"none\", max_durability:9000, stats:{attack_damage:4, attack_speed:0.4, energy_saber_range:2}} }, smithed:{dict:{rod:{titanium_steel:1b}}} }"
+              "tag":"{CustomModelData: 6421366, HideFlags: 32, mechanization:{ id:\"titanium_steel_rod\", upgrade:{type:1b, effect:\"none\", max_durability:9000, stats:{attack_damage:4, attack_speed:0.4, energy_saber_range:2}} }, smithed:{dict:{rod:{titanium_steel:1b}}} }"
             }
           ]
         }
