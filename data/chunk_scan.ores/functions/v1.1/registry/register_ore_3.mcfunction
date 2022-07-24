@@ -8,4 +8,4 @@ execute if score #registry.failed chunk_scan.ores.data matches 1 run data modify
 execute if score #registry.failed chunk_scan.ores.data matches 1 run data remove storage chunk_scan.ores:registry custom[0]
 
 execute if score #registry.failed chunk_scan.ores.data matches 1 run scoreboard players remove #registry.loop chunk_scan.ores.data 1
-execute if score #registry.failed chunk_scan.ores.data matches 1.. if score #registry.loop chunk_scan.ores.data matches 1.. run function chunk_scan.ores:v1.0/registry/register_ore_3
+execute if score #registry.failed chunk_scan.ores.data matches 1.. if score #registry.loop chunk_scan.ores.data matches 1.. run function chunk_scan.ores:v1.1/registry/register_ore_3
