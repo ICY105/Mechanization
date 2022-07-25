@@ -4,10 +4,12 @@ scoreboard players set #output_count mechanization.data 0
 scoreboard players set #custom_item mechanization.data 0
 scoreboard players set #valid mechanization.data 1
 
+execute store result score #input_count mechanization.data run data get block ~ ~ ~ Items[{Slot:0b}].Count
 execute store result score #output_count mechanization.data run data get block ~ ~ ~ Items[{Slot:2b}].Count
 execute if score #output_count mechanization.data matches 1.. run function mechanization:machines/machines/grinder/verify_input
 
 ## Set Output
+item replace block ~ ~ ~ container.2 with minecraft:air 1
 
 #ores
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:coal_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:coal 2
