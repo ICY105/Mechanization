@@ -7,7 +7,7 @@ execute if entity @s[tag=mechanization.filtered] at @p[tag=mechanization.interac
 execute if entity @s[tag=mechanization.filtered] run data remove entity @s Item.tag.filter
 
 execute if entity @s[tag=!mechanization.filtered] if data storage mechanization:temp obj.tag.mechanization{id:"item_filter"} run data modify entity @s Item.tag.filter set from storage mechanization:temp obj
-execute if entity @s[tag=!mechanization.filtered] run scoreboard players set #success mechanization.data 1
+execute if entity @s[tag=!mechanization.filtered] if data storage mechanization:temp obj.tag.mechanization{id:"item_filter"} run scoreboard players set #success mechanization.data 1
 
 tag @s remove mechanization.filtered
 execute if data entity @s Item.tag.filter run tag @s add mechanization.filtered
