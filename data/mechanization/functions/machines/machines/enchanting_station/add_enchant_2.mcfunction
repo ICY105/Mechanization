@@ -9,6 +9,7 @@ function mechanization:machines/machines/enchanting_station/check_enchant
 execute if entity @s[tag=!mechanization.upgraded] run function mechanization:machines/machines/enchanting_station/check_conflicting
 execute if entity @s[tag=mechanization.upgraded] run function mechanization:machines/machines/enchanting_station/check_conflicting_upgrade
 
+
 execute if score #valid mechanization.data matches 1 store result score #level mechanization.data run data get storage mechanization:temp list[0].lvl
 execute if score #valid mechanization.data matches 1 run function mechanization:machines/machines/enchanting_station/get_enchant_level
 

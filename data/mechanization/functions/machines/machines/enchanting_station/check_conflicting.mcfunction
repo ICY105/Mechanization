@@ -14,10 +14,10 @@ execute if data storage mechanization:temp {var:"minecraft:projectile_protection
 execute if data storage mechanization:temp {var:"minecraft:projectile_protection"} if data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:protection"}] run scoreboard players set #valid mechanization.data 0
 
 execute if data storage mechanization:temp {var:"minecraft:sharpness"} if data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:smite"}] run scoreboard players set #valid mechanization.data 0
-execute if data storage mechanization:temp {var:"minecraft:bane_of_arthopods"} if data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:sharpness"}] run scoreboard players set #valid mechanization.data 0
-execute if data storage mechanization:temp {var:"minecraft:bane_of_arthopods"} if data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:smite"}] run scoreboard players set #valid mechanization.data 0
-execute if data storage mechanization:temp {var:"minecraft:sharpness"} if data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:bane_of_arthopods"}] run scoreboard players set #valid mechanization.data 0
-execute if data storage mechanization:temp {var:"minecraft:smite"} if data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:bane_of_arthopods"}] run scoreboard players set #valid mechanization.data 0
+execute if data storage mechanization:temp {var:"minecraft:sharpness"} if data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:bane_of_arthropods"}] run scoreboard players set #valid mechanization.data 0
+execute if data storage mechanization:temp {var:"minecraft:bane_of_arthropods"} if data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:sharpness"}] run scoreboard players set #valid mechanization.data 0
+execute if data storage mechanization:temp {var:"minecraft:bane_of_arthropods"} if data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:smite"}] run scoreboard players set #valid mechanization.data 0
+execute if data storage mechanization:temp {var:"minecraft:smite"} if data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:bane_of_arthropods"}] run scoreboard players set #valid mechanization.data 0
 execute if data storage mechanization:temp {var:"minecraft:smite"} if data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:sharpness"}] run scoreboard players set #valid mechanization.data 0
 
 execute if data storage mechanization:temp {var:"minecraft:riptide"} if data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:channeling"}] run scoreboard players set #valid mechanization.data 0

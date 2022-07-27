@@ -8,7 +8,7 @@ execute if data storage mechanization:temp {var:"minecraft:vanishing_curse"} if 
 
 execute if data storage mechanization:temp {var:"minecraft:sharpness"			} store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:sharpness"}].lvl
 execute if data storage mechanization:temp {var:"minecraft:smite"				} store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:smite"}].lvl
-execute if data storage mechanization:temp {var:"minecraft:bane_of_arthopods"	} store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:bane_of_arthopods"}].lvl
+execute if data storage mechanization:temp {var:"minecraft:bane_of_arthropods"	} store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:bane_of_arthropods"}].lvl
 execute if data storage mechanization:temp {var:"minecraft:knockback"			} store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:knockback"}].lvl
 execute if data storage mechanization:temp {var:"minecraft:fire_aspect"		} store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:fire_aspect"}].lvl
 execute if data storage mechanization:temp {var:"minecraft:looting"			} store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:looting"}].lvl
@@ -32,6 +32,8 @@ execute if data storage mechanization:temp {var:"minecraft:depth_strider"	} stor
 execute if data storage mechanization:temp {var:"minecraft:frost_walker"	} store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:frost_walker"}].lvl
 execute if data storage mechanization:temp {var:"minecraft:soul_speed"		} store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:soul_speed"}].lvl
 
+execute if data storage mechanization:temp {var:"minecraft:swift_sneak"		} store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:swift_sneak"}].lvl
+
 execute if data storage mechanization:temp {var:"minecraft:power"	 } store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:power"}].lvl
 execute if data storage mechanization:temp {var:"minecraft:punch"	 } store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:punch"}].lvl
 execute if data storage mechanization:temp {var:"minecraft:infinity"} if data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:infinity"}] run scoreboard players set #current_level mechanization.data 2000000
@@ -41,7 +43,7 @@ execute if data storage mechanization:temp {var:"minecraft:multishot"	 } if data
 execute if data storage mechanization:temp {var:"minecraft:piercing"	 } store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:multishot"}].lvl
 execute if data storage mechanization:temp {var:"minecraft:quick_charge"} store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:piercing"}].lvl
 
-execute if data storage mechanization:temp {var:"minecraft:sweeping_edge"} store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:sweeping_edge"}].lvl
+execute if data storage mechanization:temp {var:"minecraft:sweeping"} store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:sweeping"}].lvl
 
 execute if data storage mechanization:temp {var:"minecraft:impaling"	} store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:impaling"}].lvl
 execute if data storage mechanization:temp {var:"minecraft:riptide"	} store result score #current_level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:riptide"}].lvl

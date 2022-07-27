@@ -70,6 +70,6 @@ scoreboard players operation #storage mechanization.data = @s mechanization.flui
 execute if score @s mechanization.fluid.2 matches 1.. run data modify storage mechanization:temp var set from entity @s Item.tag.tank_3.tag.mechanization.liquid.name
 execute if score @s mechanization.fluid.2 matches 1.. run data modify block -30000000 0 3202 Text1 set value '{"nbt":"var","storage":"mechanization:temp","interpret":true,"italic":false}'
 execute if score @s mechanization.fluid.2 matches 1.. run data modify block ~ ~ ~ Items[{Slot:17b}].tag.display.Name set from block -30000000 0 3202 Text1
-execute if score @s mechanization.fluid.2 matches 1.. run data modify block -30000000 0 3202 Text1 set value '{"translate":"mech.lore.liquid_amount","italic":false,"color":"gray","with":[{"score":{"name#storage","objective":"mechanization.data"}}]}'
+execute if score @s mechanization.fluid.2 matches 1.. run data modify block -30000000 0 3202 Text1 set value '{"translate":"mech.lore.liquid_amount","italic":false,"color":"gray","with":[{"score":{"name":"#storage","objective":"mechanization.data"}}]}'
 execute if score @s mechanization.fluid.2 matches 1.. run data modify block ~ ~ ~ Items[{Slot:17b}].tag.display.Lore append from block -30000000 0 3202 Text1
 execute if score @s mechanization.fluid.2 matches 1.. run data modify block ~ ~ ~ Items[{Slot:17b}].tag.display.color set from entity @s Item.tag.tank_3.tag.mechanization.liquid.color

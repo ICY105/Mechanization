@@ -25,13 +25,15 @@ scoreboard players set #max_over_lvl mechanization.data -1
 execute if data storage mechanization:temp {var:"minecraft:unbreaking"} run function mechanization:machines/machines/enchanting_station/enchantments/unbreaking
 execute if data storage mechanization:temp {var:"minecraft:mending"} run function mechanization:machines/machines/enchanting_station/enchantments/mending
 execute if data storage mechanization:temp {var:"minecraft:vanishing_curse"} run function mechanization:machines/machines/enchanting_station/enchantments/vanishing_curse
+execute if data storage mechanization:temp {var:"minecraft:binding_curse"} run function mechanization:machines/machines/enchanting_station/enchantments/binding_curse
 
 execute if data storage mechanization:temp {var:"minecraft:sharpness"} run function mechanization:machines/machines/enchanting_station/enchantments/sharpness
 execute if data storage mechanization:temp {var:"minecraft:smite"} run function mechanization:machines/machines/enchanting_station/enchantments/smite
-execute if data storage mechanization:temp {var:"minecraft:bane_of_arthopods"} run function mechanization:machines/machines/enchanting_station/enchantments/bane_of_arthopods
+execute if data storage mechanization:temp {var:"minecraft:bane_of_arthropods"} run function mechanization:machines/machines/enchanting_station/enchantments/bane_of_arthropods
 execute if data storage mechanization:temp {var:"minecraft:knockback"} run function mechanization:machines/machines/enchanting_station/enchantments/knockback
 execute if data storage mechanization:temp {var:"minecraft:fire_aspect"} run function mechanization:machines/machines/enchanting_station/enchantments/fire_aspect
 execute if data storage mechanization:temp {var:"minecraft:looting"} run function mechanization:machines/machines/enchanting_station/enchantments/looting
+execute if data storage mechanization:temp {var:"minecraft:sweeping"} run function mechanization:machines/machines/enchanting_station/enchantments/sweeping
 
 execute if data storage mechanization:temp {var:"minecraft:efficiency"} run function mechanization:machines/machines/enchanting_station/enchantments/efficiency
 execute if data storage mechanization:temp {var:"minecraft:fortune"} run function mechanization:machines/machines/enchanting_station/enchantments/fortune
@@ -42,7 +44,6 @@ execute if data storage mechanization:temp {var:"minecraft:fire_protection"} run
 execute if data storage mechanization:temp {var:"minecraft:blast_protection"} run function mechanization:machines/machines/enchanting_station/enchantments/blast_protection
 execute if data storage mechanization:temp {var:"minecraft:projectile_protection"} run function mechanization:machines/machines/enchanting_station/enchantments/projectile_protection
 execute if data storage mechanization:temp {var:"minecraft:thorns"} run function mechanization:machines/machines/enchanting_station/enchantments/thorns
-execute if data storage mechanization:temp {var:"minecraft:binding_curse"} run function mechanization:machines/machines/enchanting_station/enchantments/binding_curse
 
 execute if data storage mechanization:temp {var:"minecraft:respiration"} run function mechanization:machines/machines/enchanting_station/enchantments/respiration
 execute if data storage mechanization:temp {var:"minecraft:aqua_affinity"} run function mechanization:machines/machines/enchanting_station/enchantments/aqua_affinity
@@ -52,6 +53,8 @@ execute if data storage mechanization:temp {var:"minecraft:depth_strider"} run f
 execute if data storage mechanization:temp {var:"minecraft:frost_walker"} run function mechanization:machines/machines/enchanting_station/enchantments/frost_walker
 execute if data storage mechanization:temp {var:"minecraft:soul_speed"} run function mechanization:machines/machines/enchanting_station/enchantments/soul_speed
 
+execute if data storage mechanization:temp {var:"minecraft:swift_sneak"} run function mechanization:machines/machines/enchanting_station/enchantments/swift_sneak
+
 execute if data storage mechanization:temp {var:"minecraft:power"} run function mechanization:machines/machines/enchanting_station/enchantments/power
 execute if data storage mechanization:temp {var:"minecraft:punch"} run function mechanization:machines/machines/enchanting_station/enchantments/punch
 execute if data storage mechanization:temp {var:"minecraft:infinity"} run function mechanization:machines/machines/enchanting_station/enchantments/infinity
@@ -60,8 +63,6 @@ execute if data storage mechanization:temp {var:"minecraft:flame"} run function 
 execute if data storage mechanization:temp {var:"minecraft:multishot"} run function mechanization:machines/machines/enchanting_station/enchantments/multishot
 execute if data storage mechanization:temp {var:"minecraft:piercing"} run function mechanization:machines/machines/enchanting_station/enchantments/piercing
 execute if data storage mechanization:temp {var:"minecraft:quick_charge"} run function mechanization:machines/machines/enchanting_station/enchantments/quick_charge
-
-execute if data storage mechanization:temp {var:"minecraft:sweeping_edge"} run function mechanization:machines/machines/enchanting_station/enchantments/sweeping_edge
 
 execute if data storage mechanization:temp {var:"minecraft:impaling"} run function mechanization:machines/machines/enchanting_station/enchantments/impaling
 execute if data storage mechanization:temp {var:"minecraft:riptide"} run function mechanization:machines/machines/enchanting_station/enchantments/riptide

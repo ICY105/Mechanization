@@ -2,9 +2,9 @@
 # add fuel
 function mechanization:base/utils/redstone_active
 
-execute if score #active mechanization.data matches 1 if score @s[tag=!mechanization.upgraded.ender,tag=!mechanization.upgraded.nether] energy.storage matches ..4000 if score @s mechanization.data matches ..0 if data block ~ ~ ~ Items[{Slot:0b}] run function mechanization:machines/machines/dimensional_gen/fuel_overworld
-execute if score #active mechanization.data matches 1 if score @s[tag=mechanization.upgraded.ender] energy.storage matches ..4000 if score @s mechanization.data matches ..0 if data block ~ ~ ~ Items[{Slot:0b}] run function mechanization:machines/machines/dimensional_gen/fuel_end
-execute if score #active mechanization.data matches 1 if score @s[tag=mechanization.upgraded.nether] energy.storage matches ..4000 if score @s mechanization.data matches ..0 if data block ~ ~ ~ Items[{Slot:0b}] run function mechanization:machines/machines/dimensional_gen/fuel_nether
+execute if score #active mechanization.data matches 1 if score @s[tag=!mechanization.upgraded.ender,tag=!mechanization.upgraded.nether] energy.storage matches ..4000 if score @s mechanization.data matches ..0 if data block ~ ~ ~ Items[{Slot:0b}] run function mechanization:machines/machines/dimensional_generator/fuel_overworld
+execute if score #active mechanization.data matches 1 if score @s[tag=mechanization.upgraded.ender] energy.storage matches ..4000 if score @s mechanization.data matches ..0 if data block ~ ~ ~ Items[{Slot:0b}] run function mechanization:machines/machines/dimensional_generator/fuel_end
+execute if score #active mechanization.data matches 1 if score @s[tag=mechanization.upgraded.nether] energy.storage matches ..4000 if score @s mechanization.data matches ..0 if data block ~ ~ ~ Items[{Slot:0b}] run function mechanization:machines/machines/dimensional_generator/fuel_nether
 
 # display
 item replace block ~ ~ ~ container.1 with minecraft:structure_block{CustomModelData:6421202,HideFlags:63,display:{Name:'{"text":""}'},mechanization:{gui_item:1b}}

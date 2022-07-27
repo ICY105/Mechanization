@@ -6,7 +6,7 @@ execute if data storage mechanization:temp {var:"minecraft:vanishing_curse"} unl
 
 execute if data storage mechanization:temp {var:"minecraft:sharpness"			} unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:sharpness"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:sharpness",lvl:1}
 execute if data storage mechanization:temp {var:"minecraft:smite"				} unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:smite"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:smite",lvl:1}
-execute if data storage mechanization:temp {var:"minecraft:bane_of_arthopods"	} unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:bane_of_arthopods"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:bane_of_arthopods",lvl:1}
+execute if data storage mechanization:temp {var:"minecraft:bane_of_arthropods"	} unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:bane_of_arthropods"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:bane_of_arthropods",lvl:1}
 execute if data storage mechanization:temp {var:"minecraft:knockback"			} unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:knockback"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:knockback",lvl:1}
 execute if data storage mechanization:temp {var:"minecraft:fire_aspect"		} unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:fire_aspect"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:fire_aspect",lvl:1}
 execute if data storage mechanization:temp {var:"minecraft:looting"			} unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:looting"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:looting",lvl:1}
@@ -30,6 +30,8 @@ execute if data storage mechanization:temp {var:"minecraft:depth_strider"	} unle
 execute if data storage mechanization:temp {var:"minecraft:frost_walker"	} unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:frost_walker"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:frost_walker",lvl:1}
 execute if data storage mechanization:temp {var:"minecraft:soul_speed"		} unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:soul_speed"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:soul_speed",lvl:1}
 
+execute if data storage mechanization:temp {var:"minecraft:soul_speed"		} unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:swift_sneak"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:swift_sneak",lvl:1}
+
 execute if data storage mechanization:temp {var:"minecraft:power"	 } unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:power"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:power",lvl:1}
 execute if data storage mechanization:temp {var:"minecraft:punch"	 } unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:punch"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:punch",lvl:1}
 execute if data storage mechanization:temp {var:"minecraft:infinity"} unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:infinity"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:infinity",lvl:1}
@@ -39,7 +41,7 @@ execute if data storage mechanization:temp {var:"minecraft:multishot"	 } unless 
 execute if data storage mechanization:temp {var:"minecraft:piercing"	 } unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:piercing"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:piercing",lvl:1}
 execute if data storage mechanization:temp {var:"minecraft:quick_charge"} unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:quick_charge"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:quick_charge",lvl:1}
 
-execute if data storage mechanization:temp {var:"minecraft:sweeping_edge"} unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:sweeping_edge"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:sweeping_edge",lvl:1}
+execute if data storage mechanization:temp {var:"minecraft:sweeping"} unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:sweeping"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:sweeping",lvl:1}
 
 execute if data storage mechanization:temp {var:"minecraft:impaling"	} unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:impaling"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:impaling",lvl:1}
 execute if data storage mechanization:temp {var:"minecraft:riptide"	} unless data storage mechanization:temp obj.tag.Enchantments[{id:"minecraft:riptide"}] run data modify block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments append value {id:"minecraft:riptide",lvl:1}
@@ -56,7 +58,7 @@ execute if data storage mechanization:temp {var:"minecraft:vanishing_curse"} sto
 
 execute if data storage mechanization:temp {var:"minecraft:sharpness"			} store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:sharpness"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
 execute if data storage mechanization:temp {var:"minecraft:smite"				} store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:smite"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
-execute if data storage mechanization:temp {var:"minecraft:bane_of_arthopods"	} store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:bane_of_arthopods"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
+execute if data storage mechanization:temp {var:"minecraft:bane_of_arthropods"	} store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:bane_of_arthropods"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
 execute if data storage mechanization:temp {var:"minecraft:knockback"			} store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:knockback"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
 execute if data storage mechanization:temp {var:"minecraft:fire_aspect"		} store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:fire_aspect"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
 execute if data storage mechanization:temp {var:"minecraft:looting"			} store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:looting"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
@@ -80,6 +82,8 @@ execute if data storage mechanization:temp {var:"minecraft:depth_strider"	} stor
 execute if data storage mechanization:temp {var:"minecraft:frost_walker"	} store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:frost_walker"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
 execute if data storage mechanization:temp {var:"minecraft:soul_speed"		} store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:soul_speed"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
 
+execute if data storage mechanization:temp {var:"minecraft:swift_sneak"		} store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:swift_sneak"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
+
 execute if data storage mechanization:temp {var:"minecraft:power"	 } store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:power"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
 execute if data storage mechanization:temp {var:"minecraft:punch"	 } store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:punch"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
 execute if data storage mechanization:temp {var:"minecraft:infinity"} store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:infinity"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
@@ -89,7 +93,7 @@ execute if data storage mechanization:temp {var:"minecraft:multishot"	 } store r
 execute if data storage mechanization:temp {var:"minecraft:piercing"	 } store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:piercing"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
 execute if data storage mechanization:temp {var:"minecraft:quick_charge"} store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:quick_charge"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
 
-execute if data storage mechanization:temp {var:"minecraft:sweeping_edge"} store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:sweeping_edge"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
+execute if data storage mechanization:temp {var:"minecraft:sweeping"} store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:sweeping"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
 
 execute if data storage mechanization:temp {var:"minecraft:impaling"	} store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:impaling"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
 execute if data storage mechanization:temp {var:"minecraft:riptide"	} store result block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[{id:"minecraft:riptide"}].lvl int 1 run scoreboard players get #corrected_level mechanization.data
