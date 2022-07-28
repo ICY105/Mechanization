@@ -19,8 +19,8 @@ execute if score #active mechanization.data matches 1 run scoreboard players ope
 execute if score #active mechanization.data matches 1 store result block ~ ~ ~ BurnTime short 1 run scoreboard players get #burn_time mechanization.data
 
 # power & fuel
-execute if score #active mechanization.data matches 1 if score @s[tag=!mechanization.upgraded] energy.storage matches ..4000 if score @s mechanization.data matches 1.. run scoreboard players operation @s energy.storage += #machines.cf.dim_gen.power mechanization.data
-execute if score #active mechanization.data matches 1 if score @s[tag=mechanization.upgraded] energy.storage matches ..4000 if score @s mechanization.data matches 1.. run scoreboard players operation @s energy.storage += #machines.cf.dim_gen.power.machine_upgrade mechanization.data
+execute if score #active mechanization.data matches 1 if score @s[tag=!mechanization.upgraded] energy.storage matches ..4000 if score @s mechanization.data matches 1.. run scoreboard players operation @s energy.storage += #machines.cf.dimensional_generator.power mechanization.data
+execute if score #active mechanization.data matches 1 if score @s[tag=mechanization.upgraded] energy.storage matches ..4000 if score @s mechanization.data matches 1.. run scoreboard players operation @s energy.storage += #machines.cf.dimensional_generator.power.machine_upgrade mechanization.data
 execute if score #active mechanization.data matches 1 if score @s energy.storage matches ..4000 if score @s mechanization.data matches 1.. run scoreboard players remove @s mechanization.data 1
 
 # cleanup

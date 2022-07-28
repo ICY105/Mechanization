@@ -9,7 +9,7 @@ execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:shulker_shell"}] run sc
 execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:dragon_head"}] run scoreboard players add @s mechanization.data 2000
 execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:elytra"}] run scoreboard players add @s mechanization.data 8000
 
-scoreboard players operation @s mechanization.data *= #machines.cf.dim_gen.fuel mechanization.data
+scoreboard players operation @s mechanization.data *= #machines.cf.dimensional_generator.fuel mechanization.data
 scoreboard players operation @s mechanization.data /= #cons.100 mechanization.data
 
 item modify block ~ ~ ~ container.0 mechanization:decrement_count

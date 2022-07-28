@@ -539,9 +539,9 @@
 	"mech.manual.battery.ender_upgrade":"+100%% Transer Rate\n",
 	"mech.manual.battery.nether_upgrade":"+100%% Capacity\n",
 	"mech.manual.copper_cable.title":"Copper Cable",
-	"mech.manual.copper_cable.body":"Transfer Rate: 100 kW\n\nCabling is used to transfer power between machines. Simply place a line of cables connecting the machines.\n\n\n\n\n",
+	"mech.manual.copper_cable.body":"Transfer Rate: 256 kW\n\nCabling is used to transfer power between machines. Simply place a line of cables connecting the machines.\n\n\n\n\n",
 	"mech.manual.conductive_cable.title":"Conductive Cable",
-	"mech.manual.conductive_cable.body":"Transfer Rate: 1000 kW\n\nCabling is used to transfer power between machines. Simply place a line of cables connecting the machines.\n\n\n\n",
+	"mech.manual.conductive_cable.body":"Transfer Rate: 2048 kW\n\nCabling is used to transfer power between machines. Simply place a line of cables connecting the machines.\n\n\n\n",
 	"mech.manual.super_conductive_cable.title":"Super Conductive Cable",
 	"mech.manual.super_conductive_cable.body":"Transfer Rate: Infinite kW\n\nCabling is used to transfer power between machines. Simply place a line of cables connecting the machines.\n\n\n\n",
 

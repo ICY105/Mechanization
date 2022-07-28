@@ -22,7 +22,7 @@ execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:music_disc_wait"}] run 
 execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:heart_of_the_sea"}] run scoreboard players add @s mechanization.data 1000
 execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:totem_of_undying"}] run scoreboard players add @s mechanization.data 1000
 
-scoreboard players operation @s mechanization.data *= #machines.cf.dim_gen.fuel mechanization.data
+scoreboard players operation @s mechanization.data *= #machines.cf.dimensional_generator.fuel mechanization.data
 scoreboard players operation @s mechanization.data /= #cons.100 mechanization.data
 
 item modify block ~ ~ ~ container.0 mechanization:decrement_count
