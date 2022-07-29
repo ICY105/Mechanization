@@ -1,6 +1,8 @@
 
 scoreboard players set #success mechanization.data 0
 
+# break abandonded moving piston
+
 #### vanilla blocks
 execute if score #success mechanization.data matches 0 if block ~ ~ ~ #minecraft:logs run function mechanization:base/player/wrench/rotate/logs
 execute if score #success mechanization.data matches 0 if block ~ ~ ~ minecraft:piston run function mechanization:base/player/wrench/rotate/piston

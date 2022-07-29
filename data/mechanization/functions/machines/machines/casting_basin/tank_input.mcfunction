@@ -3,7 +3,7 @@
 scoreboard players set $in_0 mechanization.data -1
 execute unless score @s mechanization.fluid.0 matches 1.. run scoreboard players set $in_0 mechanization.data 0
 execute if score @s mechanization.fluid.0 matches 1.. if data block ~ ~ ~ Items[{Slot:0b}].tag.mechanization{id:"vial"}.liquid.molten run data modify storage mechanization:temp var set from entity @s Item.tag.tank.tag.mechanization.liquid.id
-execute if score @s mechanization.fluid.0 matches 1.. if data block ~ ~ ~ Items[{Slot:0b}].tag.mechanization{id:"vial"}.liquid.molten store success score $temp_0 mechanization.data run data modify storage du:test var set from block ~ ~ ~ Items[{Slot:0b}].tag.mechanization.liquid.id
+execute if score @s mechanization.fluid.0 matches 1.. if data block ~ ~ ~ Items[{Slot:0b}].tag.mechanization{id:"vial"}.liquid.molten store success score $temp_0 mechanization.data run data modify storage mechanization:test var set from block ~ ~ ~ Items[{Slot:0b}].tag.mechanization.liquid.id
 execute if score @s mechanization.fluid.0 matches 1.. if data block ~ ~ ~ Items[{Slot:0b}].tag.mechanization{id:"vial"}.liquid.molten if score $temp_0 mechanization.data matches 0 run scoreboard players set $in_0 mechanization.data 0
 
 execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:bucket"}] run scoreboard players set $in_0 mechanization.data 0

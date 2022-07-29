@@ -1,5 +1,5 @@
 
-execute if data storage du:temp obj.tag.mechanization.liquid{id:"experience"} run scoreboard players set $temp_4 mechanization.data 0
+execute if data storage mechanization:temp obj.tag.mechanization.liquid{id:"experience"} run scoreboard players set $temp_4 mechanization.data 0
 execute unless score @s mechanization.fluid.0 matches 1.. run data modify entity @s Item.tag.tank set from storage mechanization:temp obj
 
 execute if score $temp_4 mechanization.data matches 0 run scoreboard players set $temp_5 mechanization.data 4000
