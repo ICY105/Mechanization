@@ -24,6 +24,12 @@ execute if score #count mechanization.data matches ..63 if score @s[tag=mechaniz
 execute if score #count mechanization.data matches ..63 if score @s[tag=mechanization.upgraded.ender] mechanization.data matches 6 if score @s mechanization.fluid.0 matches 432.. run function mechanization:machines/machines/casting_basin/recipes/input_plate
 execute if score #count mechanization.data matches ..63 if score @s[tag=mechanization.upgraded.ender] mechanization.data matches 7 if score @s mechanization.fluid.0 matches 576.. run function mechanization:machines/machines/casting_basin/recipes/input_gear
 
+scoreboard players set #upgrade mechanization.data 0
+execute if entity @s[tag=mechanization.upgraded] run scoreboard players set #upgrade mechanization.data 1
+execute if entity @s[tag=mechanization.upgraded.ender] run scoreboard players set #upgrade mechanization.data 2
+execute if entity @s[tag=mechanization.upgraded.nether] run scoreboard players set #upgrade mechanization.data 3
+function #mechanization:machines/casting_basin_input
+
 #speed upgrade
 execute if score @s[tag=mechanization.upgraded.nether] mechanization.time matches 2..5 run scoreboard players set @s mechanization.time 2
 execute if score @s[tag=mechanization.upgraded.nether] mechanization.time matches 6.. run scoreboard players operation @s mechanization.time /= #cons.2 mechanization.data

@@ -4,6 +4,7 @@
 		"mechanization:base/recipes/shaped",
 		"mechanization:machines/recipes/shaped",
 		"mechanization:gadgets/recipes/shaped",
-		"mechanization:assembly/recipes/shaped"
+		"mechanization:assembly/recipes/shaped",
+		"mechanization:compat/calls/shaped_crafting"
 	]
 }

@@ -1,7 +1,7 @@
 
 scoreboard players set #allowed mechanization.data -1
 data modify storage mechanization:temp obj set from storage mechanization:temp list[0]
-execute align xyz positioned ~0.5 ~0.5 ~0.5 as @e[type=#mechanization:valid_block_entities,dx=0,dy=0,dz=0] run function #mechanization:custom_item_insertion
+execute align xyz as @e[type=#mechanization:valid_block_entities,dx=0,dy=0,dz=0] run function #mechanization:custom_item_insertion
 execute if score #allowed mechanization.data matches -1 run function mechanization:assembly/machines/item_inserter/default_item_selection
 
 execute if score #slot mechanization.data matches -1 run scoreboard players set #allowed mechanization.data 0

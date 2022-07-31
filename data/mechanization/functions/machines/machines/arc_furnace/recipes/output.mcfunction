@@ -15,6 +15,12 @@ execute if entity @s[tag=!mechanization.upgraded.nether,tag=!mechanization.upgra
 execute if entity @s[tag=!mechanization.upgraded.nether,tag=!mechanization.upgraded.ender] if data storage mechanization:temp obj.input_item.tag.smithed.dict.packed run function mechanization:machines/machines/arc_furnace/recipes/output_block
 execute if entity @s[tag=!mechanization.upgraded.nether,tag=!mechanization.upgraded.ender] if data storage mechanization:temp obj.input_item.tag.smithed.dict.nugget run function mechanization:machines/machines/arc_furnace/recipes/output_nugget
 
+scoreboard players set #upgrade mechanization.data 0
+execute if entity @s[tag=mechanization.upgraded] run scoreboard players set #upgrade mechanization.data 1
+execute if entity @s[tag=mechanization.upgraded.ender] run scoreboard players set #upgrade mechanization.data 2
+execute if entity @s[tag=mechanization.upgraded.nether] run scoreboard players set #upgrade mechanization.data 3
+function #mechanization:machines/arc_furnace_output
+
 #cleanup
 execute if data block -30000000 0 3201 Items[{Slot:0b}] run data modify entity @s Item.tag.tank set from block -30000000 0 3201 Items[0]
 item modify block ~ ~ ~ container.3 mechanization:decrement_count

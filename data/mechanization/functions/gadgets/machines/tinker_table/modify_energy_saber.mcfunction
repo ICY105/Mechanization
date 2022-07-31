@@ -1,5 +1,6 @@
 
 data remove storage mechanization:temp obj.tag.Enchantments
+data remove storage mechanization:temp obj.tag.flor_dat
 
 scoreboard players set #attack_damage mechanization.data 10
 scoreboard players set #attack_speed mechanization.data -40
@@ -90,6 +91,13 @@ execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effe
 execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"slowness"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_slowness","color":"gray","italic":false}'
 execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"vampiric"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_vampiric","color":"gray","italic":false}'
 execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"illuminating"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_illuminating","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"throwing_speed"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_throwing_speed","color":"gray","italic":false}'
+
+# x-compat effects
+execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"flor_arid"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_blazing_sweep","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"flor_arid"} run data modify storage mechanization:temp obj.tag.flor_dat.scorching_arc_sword set value 1b
+execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"flor_verdant"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_scepter","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"flor_verdant"} run data modify storage mechanization:temp obj.tag.flor_dat.druidic_scepter set value 1b
 
 # add stats lore
 data modify storage mechanization:temp obj.tag.display.Lore append value '{"text":""}'

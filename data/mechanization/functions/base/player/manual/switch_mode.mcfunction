@@ -7,6 +7,7 @@ execute if score @s mechanization.manual matches -2 run loot replace entity @s w
 execute if score @s mechanization.manual matches -3 run tellraw @p {"text":"Mechanization: Nuclear is being remade and is currently unavailable. Stay tuned for great things!", "color":"gray"}
 execute if score @s mechanization.manual matches -4 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/gadgets
 execute if score @s mechanization.manual matches -5 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/assembly
+execute if score @s mechanization.manual matches -9 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/compat
 
 execute if score @s mechanization.manual matches -6 run data remove block -30000000 0 3201 Items
 execute if score @s mechanization.manual matches -6 run loot replace block -30000000 0 3201 container.0 loot tcc:items/compendium

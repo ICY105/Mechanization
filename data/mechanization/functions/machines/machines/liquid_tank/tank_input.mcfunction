@@ -28,6 +28,9 @@ execute if score $in_0 mechanization.data matches 0.. if data block ~ ~ ~ Items[
 execute if score $in_0 mechanization.data matches 0.. if data entity @s Item.tag.tank run data modify storage mechanization:temp obj.liquid_item set from entity @s Item.tag.tank
 
 # run function
+execute if entity @s[tag=mechanization.liquid_tank.t1] run scoreboard players operation $in_1 mechanization.data = #machines.cf.t1_tank.capacity mechanization.data
+execute if entity @s[tag=mechanization.liquid_tank.t2] run scoreboard players operation $in_1 mechanization.data = #machines.cf.t2_tank.capacity mechanization.data
+execute if entity @s[tag=mechanization.liquid_tank.t3] run scoreboard players operation $in_1 mechanization.data = #machines.cf.t3_tank.capacity mechanization.data
 execute if score $in_0 mechanization.data matches 0.. run function mechanization:base/liquids/slot_io
 
 # store data

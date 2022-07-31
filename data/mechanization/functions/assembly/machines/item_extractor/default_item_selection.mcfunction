@@ -3,6 +3,7 @@ scoreboard players set #allowed mechanization.data 1
 
 data modify storage mechanization:temp list set from block ~ ~ ~ Items
 data remove storage mechanization:temp list[{tag:{ mechanization:{gui_item:1b} }}]
+data remove storage mechanization:temp list[{tag:{ simplenergy:{texture_item:1b} }}]
 
 # furnace-like removal
 execute if block ~ ~ ~ #mechanization:furnace-like run data remove storage mechanization:temp list[{Slot:0b}]

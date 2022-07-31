@@ -1,0 +1,6 @@
+{
+	"required":false,
+	"values":[
+		"mechanization:compat/calls/grinder_input"
+	]
+}

@@ -65,6 +65,10 @@ execute if score #output_count mechanization.data matches 0..63 if data block ~ 
 execute if score #output_count mechanization.data matches 0..61 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:blaze_rod"}] run scoreboard players operation @s mechanization.time = #machines.cf.grinder.speed_other mechanization.data
 execute if score #output_count mechanization.data matches 0..60 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:bone"}] run scoreboard players operation @s mechanization.time = #machines.cf.grinder.speed_other mechanization.data
 
+# custom
+scoreboard players set #upgrade mechanization.data 1
+function #mechanization:machines/grinder_input
+
 #calculate needed power
 scoreboard players operation #output_count mechanization.data = #machines.cf.grinder.power mechanization.data
 scoreboard players operation #output_count mechanization.data *= @s mechanization.time
