@@ -1,19 +1,16 @@
-## Download: visit the [Releases Page](https://github.com/ImCoolYeah105/Mechanization/releases)
-
-Also grab the required library [Datapack Utils](https://github.com/ICY105/Datapack-Utilities/releases)
-
-[Installation Instructions](https://github.com/ImCoolYeah105/Mechanization/wiki/Installion)
-
 # Mechanization
-Mechanization aims to recreate popular tech mods like IC2 and Thermal Expansion and is the single largest survival content expansion datapack for Minecraft with over 60 machines and 260 items. Seriously, look around. I can wait.
+### Download: visit the [Releases Page](https://github.com/ImCoolYeah105/Mechanization/releases)
 
-Mechanization has been in development for over 5 years, with a feature set including:
-- A complete power system- generate power to run machines
+Mechanization is a Technology datapack adding an energy system with over 60 machines and 250 items that use it. Mechanization draws inspiration from popular tech mods like IC2, Thermal Expansion, Mekanism, and others. It is the single largest and longest continuously developed (6 years!) survival content datapack.
+
+Mechanization's feature set includes:
+- A complete energy system- generate power to run machines (now using the DatapackEnergy library)
 - Custom ore generation
+- In-depth progression system
 - Automation of farming, fishing, mob grinding, mining, and more
 - Item Pipes with filtering support- who needs hoppers, am I right?
 - Mass item storage, Applied Energistics style
-- New Tool and Armor sets with over 25 new upgrades to enhance your equipment
+- New modular tool and armor sets with tons of upgrades
 - Nuclear reactors
 - The Extreme Plasma Annihilator Cannon (patent pending)
 - And so much more...
