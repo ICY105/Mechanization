@@ -30,5 +30,7 @@ execute if entity @s[tag=mechanization.upgraded.ender] run scoreboard players se
 execute if entity @s[tag=mechanization.upgraded.nether] run scoreboard players set #upgrade mechanization.data 3
 function #mechanization:machines/casting_basin_output
 
+playsound minecraft:block.fire.extinguish player @a[distance=..16]
+
 #cleanup
 execute if score @s mechanization.fluid.0 matches 0 run data modify entity @s Item.tag.tank set value {}

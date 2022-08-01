@@ -15,9 +15,7 @@ scoreboard players operation @s[tag=mechanization.battery.creative] energy.stora
 scoreboard players operation @s[tag=mechanization.battery.creative] energy.storage /= #cons.2 mechanization.data
 
 # Ambient Sounds
-execute if entity @s[scores={mechanization.data=1},tag=!mechanization.muffled] run playsound mechanization:base.battery_ambient block @a[distance=..16] ~ ~ ~ 0.05
-scoreboard players add @s mechanization.data 1
-scoreboard players set @s[scores={mechanization.data=3..}] mechanization.data 0
+execute if predicate mechanization:chance_0.5 if predicate mechanization:chance_0.5 run playsound mechanization:base.battery_ambient block @a[distance=..16] ~ ~ ~ 0.05
 
 # Break
 execute unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_machine_t3

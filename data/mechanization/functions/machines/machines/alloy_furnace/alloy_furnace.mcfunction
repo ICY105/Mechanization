@@ -19,6 +19,8 @@ execute if score @s mechanization.time matches 1.. if score @s energy.storage < 
 execute if score @s mechanization.time matches 1.. if score @s energy.storage >= #machines.cf.alloy_furnace.power mechanization.data run scoreboard players operation @s energy.storage -= #machines.cf.alloy_furnace.power mechanization.data
 execute if score @s mechanization.time matches 1.. run scoreboard players remove @s mechanization.time 1
 
+execute if score @s mechanization.time matches 1.. if entity @s[tag=!mechanization.muffled] if score #timer.100 mechanization.data matches 0..19 run playsound mechanization:machines.alloy_furnace block @a[distance=..16] ~ ~ ~
+
 # ui
 execute if data block ~ ~ ~ Items[{Slot:1b}] run function mechanization:machines/machines/alloy_furnace/tank_1_input
 execute if data block ~ ~ ~ Items[{Slot:4b}] run function mechanization:machines/machines/alloy_furnace/tank_2_input
