@@ -100,6 +100,5 @@ execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_
 execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_atomic_amnesia"} run playsound mechanization:assembly.music.atomic_amnesia record @a ~ ~ ~ 6
 execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_atomic_amnesia"} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_atomic_amnesia"}],"color":"light_purple"}]
 
-
-
-
+# TCC compat
+execute if data storage mechanization:temp obj.tag.tcc{id:"charged_music_disc"} run function mechanization:compat/tcc/charged_music_disc
