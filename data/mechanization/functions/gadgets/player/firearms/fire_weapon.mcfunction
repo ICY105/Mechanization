@@ -4,7 +4,7 @@ execute store result score #player.in energy.data run data get entity @s Selecte
 scoreboard players operation #player.in energy.data *= #cons.-1 mechanization.data
 function energy:v1/api/modify_player_energy
 
-execute if score #player.out energy.data matches 1 run playsound mechanization:gadgets.laser_gun player @a[distance=..24] ~ ~1 ~ 4
+execute if score #player.out energy.data matches 1 run playsound mechanization:gadgets.laser_gun player @a[distance=..24] ~ ~1 ~
 
 # summon bullet
 execute if score #player.out energy.data matches 1 store result score #damage mechanization.data run data get entity @s SelectedItem.tag.mechanization.epac.damage
@@ -27,6 +27,7 @@ execute if score #player.out energy.data matches 1 if score #count mechanization
 # weapon heat
 execute if score #player.out energy.data matches 1 store result score #heat mechanization.data run data get entity @s SelectedItem.tag.mechanization.epac.heat
 execute if score #player.out energy.data matches 1 run scoreboard players operation @s mechanization.weaponheat += #heat mechanization.data
+execute if score #player.out energy.data matches 1 if score @s mechanization.weaponheat matches 1001.. run playsound mechanization:gadgets.epac_overheat block @a[distance=..16] ~ ~ ~
 execute if score #player.out energy.data matches 1 if score @s mechanization.weaponheat matches 1001.. run scoreboard players add @s mechanization.weaponheat 250
 
 # set fire rate
