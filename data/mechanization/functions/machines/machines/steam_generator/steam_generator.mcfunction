@@ -43,6 +43,8 @@ execute if score @s mechanization.data matches 1.. store success entity @s Item.
 execute if score @s mechanization.fluid.1 matches 1.. unless data entity @s Item.tag.steam_item.id run loot replace block -30000000 0 3201 container.0 loot mechanization:base/liquids/vial_of_steam
 execute if score @s mechanization.fluid.1 matches 1.. unless data entity @s Item.tag.steam_item.id run data modify entity @s Item.tag.steam_item set from block -30000000 0 3201 Items[0]
 
+execute if score @s[tag=!mechanization.muffled] mechanization.data matches 1.. if score #timer.100 mechanization.data matches 0..19 run playsound mechanization:machines.steam_generator block @a[distance=..16] ~ ~ ~
+
 ## cleanup
 execute unless block ~ ~ ~ minecraft:barrel run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
 execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_machine_t1

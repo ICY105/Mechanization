@@ -18,5 +18,5 @@ execute if score #failed mechanization.data matches 0 run scoreboard players set
 execute if score #dimension mechanization.data matches 0 positioned ~ ~1 ~ align xyz run title @a[dx=0,dy=0,dz=0] actionbar [{"translate":"mech.block.teleporter.no_destination","color":"green"}]
 
 execute if score #dimension mechanization.data matches 1.. run scoreboard players add @s mechanization.time 1
-execute if score #dimension mechanization.data matches 1.. if score @s mechanization.time matches 1 run playsound mechanization:machines.teleporter_charging block @a ~ ~ ~ 1 1
+execute if score #dimension mechanization.data matches 1.. if score @s mechanization.time matches 1 run playsound minecraft:block.portal.trigger block @a[distance=..16] ~ ~ ~
 execute if score #dimension mechanization.data matches 1.. if score @s mechanization.time matches 5 run function mechanization:machines/machines/teleporter/teleport_2

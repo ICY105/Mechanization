@@ -13,5 +13,5 @@ execute if score #dimension mechanization.data matches 3 at @s in minecraft:the_
 
 #cleanup
 tag @a[tag=mechanization.teleporter.player] remove mechanization.teleporter.player
-execute at @s run playsound mechanization:machines.teleporter_boom block @a ~ ~ ~ 1 1
+execute at @s run playsound minecraft:block.portal.travel block @a[distance=..16] ~ ~ ~
 kill @s

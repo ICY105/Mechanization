@@ -25,7 +25,7 @@ execute if block ~ ~ ~ minecraft:furnace[lit=false] unless block ~ ~ ~ minecraft
 
 execute if block ~ ~ ~ minecraft:furnace[lit=false] store success entity @s Item.tag.CustomModelData int 6422003 if entity @s
 execute if block ~ ~ ~ minecraft:furnace[lit=true] store success entity @s Item.tag.CustomModelData int 6422905 if entity @s
-execute if block ~ ~ ~ minecraft:furnace[lit=true] if entity @s[tag=!mechanization.muffled] run playsound mechanization:machines.electric_furnace block @a[distance=..16] ~ ~ ~ 0.75 1
+execute if block ~ ~ ~ minecraft:furnace[lit=true] if entity @s[tag=!mechanization.muffled] if score #timer.100 mechanization.data matches 0..19 run playsound mechanization:machines.electric_furnace block @a[distance=..16] ~ ~ ~
 
 ## cleanup
 execute unless block ~ ~ ~ minecraft:furnace run function mechanization:base/utils/break_machine_t1

@@ -19,7 +19,7 @@ execute if score @s energy.storage < #machines.cf.grinder.power mechanization.da
 execute if score @s mechanization.time matches 1.. run scoreboard players operation @s energy.storage -= #machines.cf.grinder.power mechanization.data
 execute if score @s mechanization.time matches 1.. run scoreboard players remove @s mechanization.time 1
 execute if score @s mechanization.time matches 1.. unless data block ~ ~ ~ Items[{Slot:0b}] run scoreboard players set @s mechanization.time 0
-execute if score @s mechanization.time matches 1.. if entity @s[tag=!mechanization.muffled] run playsound mechanization:machines.grinder block @a[distance=..16] ~ ~ ~ 0.75 0.9
+execute if score @s mechanization.time matches 1.. if entity @s[tag=!mechanization.muffled] if score #timer.100 mechanization.data matches 0..19 run playsound mechanization:machines.grinder block @a[distance=..16] ~ ~ ~ 0.75 0.9
 
 # ui
 item replace block ~ ~ ~ container.1 with minecraft:structure_block{CustomModelData:6421202,HideFlags:63,display:{Name:'{"text":""}'},mechanization:{gui_item:1b}}

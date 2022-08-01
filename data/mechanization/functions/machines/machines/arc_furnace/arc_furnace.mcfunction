@@ -20,6 +20,8 @@ execute if score @s mechanization.time matches 1.. if score @s energy.storage < 
 execute if score @s mechanization.time matches 1.. if score @s energy.storage >= #needed_energy mechanization.data run scoreboard players operation @s energy.storage -= #needed_energy mechanization.data
 execute if score @s mechanization.time matches 1.. run scoreboard players remove @s mechanization.time 1
 
+execute if score @s[tag=!mechanization.muffled] mechanization.time matches 1.. if score #timer.100 mechanization.data matches 0..19 run playsound mechanization:machines.arc_furnace block @a[distance=..16] ~ ~ ~
+
 ## cleanup
 execute unless block ~ ~ ~ minecraft:dropper run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
 execute unless block ~ ~ ~ minecraft:dropper run function mechanization:base/utils/break_machine_t1

@@ -35,6 +35,8 @@ execute if score #active mechanization.data matches 1 if score @s mechanization.
 execute if score #active mechanization.data matches 1 if score @s mechanization.fluid.0 matches 0 run data modify entity @s Item.tag.tank_1 set value {}
 execute if score #active mechanization.data matches 1 if score @s mechanization.fluid.1 matches 0 run data modify entity @s Item.tag.tank_2 set value {}
 
+execute if entity @s[tag=!mechanization.muffled] if score #active mechanization.data matches 1 if score #timer.100 mechanization.data matches 0..19 run playsound mechanization:machines.thermoelectric_generator block @a[distance=..16] ~ ~ ~
+
 ## cleanup
 execute unless block ~ ~ ~ minecraft:barrel run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
 execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_machine_t1
