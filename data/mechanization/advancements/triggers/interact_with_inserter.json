@@ -6,12 +6,12 @@
       "conditions": {
         "entity": {
           "type": "minecraft:item_frame",
-          "nbt": "{Tags:[\"mech_item_inserter\"]}"
+          "nbt": "{Tags:[\"mechanization.item_inserter\"]}"
         }
       }
     }
   },
   "rewards": {
-    "function": "mechanization:assembly/tools/item_filter/interact_with_inserter"
+    "function": "mechanization:assembly/player/item_filter/interact_with_inserter"
   }
 }

@@ -1,0 +1,123 @@
+{
+  "namespaces": [
+    "mechanization",
+    "minecraft",
+	"give"
+  ],
+  "dependencies": [
+    {
+      "name": "Lantern Load",
+      "url": "https://github.com/LanternMC/load"
+    },
+    {
+      "name": "ChunkScan",
+      "local": "ChunkScan"
+    },
+    {
+      "name": "ChunkScan.Ores",
+      "local": "ChunkScan.Ores"
+    },
+    {
+      "name": "Loot Table Autosmelt",
+      "local": "LoottableAutosmelt"
+    },
+    {
+      "name": "Block Utils",
+      "local": "BlockUtils"
+    },
+    {
+      "name": "Player Action",
+      "local": "PlayerAction"
+    },
+    {
+      "name": "NBT Smelting",
+      "local": "NBTSmelting"
+    },
+    {
+      "name": "Datapack Energy",
+      "local": "DatapackEnergy"
+    },
+    {
+      "name": "Smithed Crafting",
+      "local": "external-libraries/Smithed Crafter.zip"
+    },
+    {
+      "name": "Smithed Damage",
+      "local": "external-libraries/Smithed Damage.zip"
+    },
+    {
+      "name": "Smithed Actionbar",
+      "local": "external-libraries/Smithed Actionbar.zip"
+    },
+    {
+      "name": "Smithed Item",
+      "local": "external-libraries/Smithed Item.zip"
+    },
+    {
+      "name": "Smithed Custom Block",
+      "local": "external-libraries/Smithed Custom Block.zip"
+    },
+    {
+      "name": "Smithed Chunk",
+      "local": "SmithedChunk-Unofficial"
+    }
+  ],
+  "append_function_tags": [
+    {
+      "tag": "load:load",
+      "value": "mechanization:load"
+    },
+	{
+      "tag": "load:post_load",
+      "value": "mechanization:post_load"
+    },
+	{
+      "tag": "chunk_scan.ores:v1/place_ore",
+      "value": "mechanization:base/utils/ore_gen"
+    },
+	{
+      "tag": "nbt_smelting:v1/furnace",
+      "value": "mechanization:base/recipes/smelting"
+    },
+	{
+      "tag": "nbt_smelting:v1/blast_furnace",
+      "value": "mechanization:base/recipes/smelting"
+    },
+	{
+      "tag": "player_action:v1/right_click",
+      "value": "#mechanization:calls/right_click"
+    },
+	{
+      "tag": "energy:v1/energy_update",
+      "value": "mechanization:machines/machines/energy_update"
+    },
+	{
+      "tag": "energy:v1/cable_update",
+      "value": "mechanization:machines/machines/cable_update"
+    },
+	{
+      "tag": "energy:v1/update_energy_item",
+      "value": "mechanization:gadgets/player/update_energy_item"
+    },
+	{
+      "tag": "energy:v1/cable_can_connect",
+      "value": "mechanization:machines/machines/cable_can_connect"
+    },
+	{
+      "tag": "smithed.crafter:event/break",
+      "value": "mechanization:base/machines/machine_crafting_table/break"
+    },
+	{
+      "tag": "smithed.crafter:event/recipes",
+      "value": "#mechanization:calls/shaped_recipes"
+    },
+	{
+      "tag": "smithed.crafter:event/shapeless_recipes",
+      "value": "#mechanization:calls/shapeless_recipes"
+    },
+	{
+      "tag": "smithed.custom_block:event/on_place",
+      "value": "#mechanization:calls/place_block"
+    }
+  ]
+}

@@ -1,19 +1,13 @@
 
-## load scoreboard values
-execute if score $base.cf.backup mech_data matches 1 unless score @s mech_fluid matches -2147483648.. store result score @s mech_fluid run data get entity @s Item.tag.mech_fluid
+# process recipes
+function mechanization:base/utils/redstone_active
 
-### Main
+execute if score #active mechanization.data matches 1 if score @s mechanization.fluid.0 matches 1.. run function mechanization:machines/machines/liquid_accumulator/collect_liquid_checked
+execute if score #active mechanization.data matches 1 unless score @s mechanization.fluid.0 matches 1.. run function mechanization:machines/machines/liquid_accumulator/collect_liquid_unchecked
 
-#process recipes
-execute if score @s mech_fluid matches 1.. run function mechanization:machines/machines/liquid_accumulator/collect_liquid_checked
-execute unless score @s mech_fluid matches 1.. run function mechanization:machines/machines/liquid_accumulator/collect_liquid_unchecked
-
-#ui
+# ui
 execute if data block ~ ~ ~ Items[{Slot:0b}] run function mechanization:machines/machines/liquid_accumulator/tank_input
 function mechanization:machines/machines/liquid_accumulator/gui
-
-## store scoreboard values
-execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_fluid int 1 run scoreboard players get @s mech_fluid
 
 ## cleanup
 execute unless block ~ ~ ~ minecraft:dropper run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes

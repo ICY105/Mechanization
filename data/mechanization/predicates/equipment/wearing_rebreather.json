@@ -7,7 +7,7 @@
 		"items": [
 		  "minecraft:leather_helmet"
 		],
-		"nbt": "{mech_itemid:4112}"
+		"nbt": "{mechanization:{id:\"rebreather\"}}"
 	  }
 	}
   }

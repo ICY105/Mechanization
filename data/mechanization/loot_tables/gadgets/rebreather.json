@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4112, CustomModelData: 6424112, Unbreakable:1b, HideFlags:70, mech_upgrade:{type:3b,effect:\"rebreather\"},display:{color:39168}}"
+              "tag":"{CustomModelData: 6424112, Unbreakable:1b, HideFlags:70, mechanization:{ id:\"rebreather\", upgrade:{type:3b,effect:\"rebreather\"},display:{color:39168}} }"
             },
 			{
 			  "function":"set_attributes",

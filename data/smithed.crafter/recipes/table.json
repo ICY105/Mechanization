@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#C#",
+        "SSS"
+    ],
+    "key": {
+        "#": {
+            "tag": "minecraft:logs"
+        },
+        "C": {
+            "item": "minecraft:crafting_table"
+        },
+        "S": {
+            "item": "minecraft:smooth_stone"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "count": 1
+    }
+}

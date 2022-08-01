@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1431, CustomModelData: 6421431, HideFlags: 32, ctc:{ id:\"uranium_ingot\", from:\"mechanization\", traits:{ item:1b, ingot:1b, \"metal/uranium\":1b }} }"
+              "tag":"{CustomModelData: 6421431, HideFlags: 32, mechanization:{ id:\"uranium_ingot\" }, smithed:{dict:{ingot:{uranium:1b}}}  }"
             }
           ]
         }

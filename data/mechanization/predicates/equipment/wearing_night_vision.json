@@ -7,7 +7,7 @@
 		"items": [
 		  "minecraft:leather_helmet"
 		],
-		"nbt": "{mech_itemid:4113}"
+		"nbt": "{mechanization:{id:\"night_vision_goggles\"}}"
 	  }
 	}
   }

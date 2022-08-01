@@ -1,0 +1,37 @@
+[
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "mainhand": {
+                        "nbt": "{smithed:{not_bucket:1b}}"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "condition": "minecraft:entity_properties",
+        "entity": "this",
+        "predicate": {
+            "equipment": {
+                "mainhand": {
+                    "items": [
+                        "minecraft:water_bucket",
+                        "minecraft:lava_bucket",
+                        "minecraft:milk_bucket",
+                        "minecraft:tropical_fish_bucket",
+                        "minecraft:cod_bucket",
+                        "minecraft:salmon_bucket",
+                        "minecraft:axolotl_bucket",
+                        "minecraft:pufferfish_bucket",
+                        "minecraft:powder_snow_bucket"
+                    ]
+                }
+            }
+        }
+    }
+]

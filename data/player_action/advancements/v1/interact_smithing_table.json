@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "interact_smithing_table": {
+      "trigger": "minecraft:item_used_on_block",
+	  "conditions": {
+	    "location": {
+          "block": {
+		    "blocks": [
+		      "minecraft:smithing_table"
+		    ]
+          }
+        }
+      }
+	}
+  },
+  "rewards":{ 
+    "function":"player_action:v1/internal/interact_smithing_table"
+  }
+}

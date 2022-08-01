@@ -7,7 +7,7 @@
 		"items": [
 		  "minecraft:elytra"
 		],
-		"nbt": "{mech_itemid:4111}"
+		"nbt": "{mechanization:{id:\"jetpack\"}}"
 	  }
 	}
   }

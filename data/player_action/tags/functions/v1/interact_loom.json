@@ -1,0 +1,6 @@
+{
+  "values": [
+    "#player_action:v1/interact_block",
+	"#player_action:v1/open_gui"
+  ]
+}

@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 5100, CustomModelData: 6425100, HideFlags: 6, Unbreakable:1b}"
+              "tag":"{CustomModelData: 6425100, HideFlags: 6, Unbreakable:1b, mechanization:{id:\"item_filter\", items:[]}}"
             }
           ]
         }

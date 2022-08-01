@@ -1,53 +1,41 @@
 
-## load scoreboard values
-execute if score $base.cf.backup mech_data matches 1 unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s Item.tag.mech_power
-execute if score $base.cf.backup mech_data matches 1 unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s Item.tag.mech_gridid
-execute if score $base.cf.backup mech_data matches 1 unless score @s mech_gridid matches -2147483648.. store result score @s mech_fluid run data get entity @s Item.tag.mech_fluid
-execute if score $base.cf.backup mech_data matches 1 unless score @s mech_gridid matches -2147483648.. store result score @s du_data run data get entity @s Item.tag.du_data
-
-## Main
-
-#ui
+# ui
 execute if data block ~ ~ ~ Items[{Slot:1b}] run function mechanization:machines/machines/thermoelectric_generator/tank_1_input
 execute if data block ~ ~ ~ Items[{Slot:6b}] run function mechanization:machines/machines/thermoelectric_generator/tank_2_input
 
-#active
-tag @s remove mech_active
-execute if score @s mech_power matches ..4000 if score @s mech_fluid matches 5.. if score @s du_data matches 5.. run tag @s add mech_active
-execute if score @s[tag=mech_upgrade_nether] mech_fluid matches 5.. run tag @s add mech_active
-execute if score @s[tag=mech_upgrade_ender] du_data matches 5.. run tag @s add mech_active
+# active
+function mechanization:base/utils/redstone_active
+execute if score @s energy.storage matches 4000.. run scoreboard players set #active mechanization.data 0
+execute unless score @s[tag=!mechanization.upgraded.ender] mechanization.fluid.0 matches 5.. run scoreboard players set #active mechanization.data 0
+execute unless score @s[tag=!mechanization.upgraded.nether] mechanization.fluid.1 matches 5.. run scoreboard players set #active mechanization.data 0
 
-#gui
+# gui
 function mechanization:machines/machines/thermoelectric_generator/gui
 
-#power
-execute if entity @s[tag=mech_active] store result score $temp_0 mech_data run data get entity @s Item.tag.tank_1.tag.ctc.traits.liquid.temperature
-execute if entity @s[tag=mech_active] store result score $temp_1 mech_data run data get entity @s Item.tag.tank_2.tag.ctc.traits.liquid.temperature
-execute if score @s[tag=mech_active,tag=mech_upgrade_nether] du_data matches ..4 run scoreboard players set $temp_0 mech_data 500
-execute if score @s[tag=mech_active,tag=mech_upgrade_ender] mech_fluid matches ..4 run scoreboard players set $temp_0 mech_data 100
+# power
+execute if score #active mechanization.data matches 1 store result score #temp.0 mechanization.data run data get entity @s Item.tag.tank_1.tag.mechanization.liquid.temperature
+execute if score #active mechanization.data matches 1 store result score #temp.1 mechanization.data run data get entity @s Item.tag.tank_2.tag.mechanization.liquid.temperature
+execute if score #active mechanization.data matches 1 if score @s[tag=mechanization.upgraded.nether] mechanization.fluid.1 matches ..4 run scoreboard players set #temp.0 mechanization.data 500
+execute if score #active mechanization.data matches 1 if score @s[tag=mechanization.upgraded.ender] mechanization.fluid.0 matches ..4 run scoreboard players set #temp.0 mechanization.data 100
 
-scoreboard players remove $temp_0 mech_data 100
-scoreboard players operation $temp_1 mech_data /= $cons.10 du_data
-scoreboard players operation $temp_1 mech_data -= $temp_0 mech_data
-scoreboard players operation $temp_1 mech_data /= $cons.10 du_data
+scoreboard players remove #temp.0 mechanization.data 100
+scoreboard players operation #temp.1 mechanization.data /= #cons.10 mechanization.data
+scoreboard players operation #temp.1 mechanization.data -= #temp.0 mechanization.data
+scoreboard players operation #temp.1 mechanization.data /= #cons.10 mechanization.data
 
-execute if score $temp_1 mech_data matches ..0 run scoreboard players set $temp_1 mech_data 1
-scoreboard players operation $temp_1 mech_data *= $machines.cf.thermoelectric.power mech_data
-scoreboard players operation $temp_1 mech_data /= $cons.100 du_data
+execute if score #temp.1 mechanization.data matches ..0 run scoreboard players set #temp.1 mechanization.data 1
+scoreboard players operation #temp.1 mechanization.data *= #machines.cf.thermoelectric.power mechanization.data
+scoreboard players operation #temp.1 mechanization.data /= #cons.100 mechanization.data
 
-execute if entity @s[tag=mech_upgraded] run scoreboard players operation $temp_1 mech_data *= $cons.3 du_data
-execute if entity @s[tag=mech_upgraded] run scoreboard players operation $temp_1 mech_data /= $cons.2 du_data
-execute if entity @s[tag=mech_active] run scoreboard players operation @s mech_power += $temp_1 mech_data
-execute if entity @s[tag=mech_active] if score @s mech_fluid matches 5.. run scoreboard players remove @s mech_fluid 5
-execute if entity @s[tag=mech_active] if score @s du_data matches 5.. run scoreboard players remove @s du_data 5
-execute if entity @s[tag=mech_active] if score @s mech_fluid matches 0 run data modify entity @s Item.tag.tank_1 set value {}
-execute if entity @s[tag=mech_active] if score @s du_data matches 0 run data modify entity @s Item.tag.tank_2 set value {}
+execute if entity @s[tag=mechanization.upgraded] run scoreboard players operation #temp.1 mechanization.data *= #cons.3 mechanization.data
+execute if entity @s[tag=mechanization.upgraded] run scoreboard players operation #temp.1 mechanization.data /= #cons.2 mechanization.data
+execute if score #active mechanization.data matches 1 run scoreboard players operation @s energy.storage += #temp.1 mechanization.data
+execute if score #active mechanization.data matches 1 if score @s mechanization.fluid.0 matches 5.. run scoreboard players remove @s mechanization.fluid.0 5
+execute if score #active mechanization.data matches 1 if score @s mechanization.fluid.1 matches 5.. run scoreboard players remove @s mechanization.fluid.1 5
+execute if score #active mechanization.data matches 1 if score @s mechanization.fluid.0 matches 0 run data modify entity @s Item.tag.tank_1 set value {}
+execute if score #active mechanization.data matches 1 if score @s mechanization.fluid.1 matches 0 run data modify entity @s Item.tag.tank_2 set value {}
 
-## store scoreboard values
-execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_power int 1 run scoreboard players get @s mech_power
-execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
-execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_water_tank int 1 run scoreboard players get @s mech_fluid
-execute if score $base.cf.backup mech_data matches 1 store result entity @s Item.tag.mech_steam_tank int 1 run scoreboard players get @s du_data
+execute if entity @s[tag=!mechanization.muffled] if score #active mechanization.data matches 1 if score #timer.100 mechanization.data matches 0..19 run playsound mechanization:machines.thermoelectric_generator block @a[distance=..16] ~ ~ ~
 
 ## cleanup
 execute unless block ~ ~ ~ minecraft:barrel run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes

@@ -15,14 +15,18 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false},
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +0.01 "},{"translate":"attribute.name.generic.movement_speed"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"1500"},{"text":"1500"}]}],
+				[{"translate":"mech.lore.upgrade_stats","color":"gray","italic":false}],
+				[{"text":"  0.5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor"}],
+				[{"text":"  0.25 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor_toughness"}],
+				[{"text":"  0.03 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.movement_speed"}],
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1540, CustomModelData: 6421540, HideFlags: 32, mech_upgrade:{type:3b, effect:\"none\", max_durability:350, base_stats:{}, bonus_stats:{speed:0.01}}, ctc:{ id:\"amethyst_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"gem/amethyst\":1b }}}"
+              "tag":"{CustomModelData: 6421540, HideFlags: 32, mechanization:{ id:\"amethyst_plate\", upgrade:{type:3b, effect:\"none\", max_durability:1500, stats:{armor:0.5, armor_toughness:0.25, speed:0.03}} }, smithed:{ dict:{plate:{amethyst:1b}} }}"
             }
           ]
         }

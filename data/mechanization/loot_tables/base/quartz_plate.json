@@ -15,14 +15,19 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"1500"},{"text":"1500"}]}],
 				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +10% "},{"translate":"attribute.name.generic.attack_damage"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.upgrade_stats","color":"gray","italic":false}],
+				[{"text":"  0.5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor"}],
+				[{"text":"  0.25 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor_toughness"}],
+				[{"text":"  10% ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1560, CustomModelData: 6421560, HideFlags: 32, mech_upgrade:{type:3b, effect:\"attack_bonus\", max_durability:800, base_stats:{}, bonus_stats:{}}, ctc:{ id:\"quartz_plate\", from:\"mechanization\", traits:{ item:1b, plate:1b, \"gem/quartz\":1b }}}"
+              "tag":"{CustomModelData: 6421560, HideFlags: 32, mechanization:{ id:\"quartz_plate\", upgrade:{type:3b, effect:\"attack_bonus\", max_durability:1500, stats:{armor:0.5, armor_toughness:0.25}} }, smithed:{dict:{plate:{quartz:1b}}} }"
             }
           ]
         }

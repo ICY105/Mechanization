@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 2019, CustomModelData: 6422019, HideFlags: 6}"
+              "tag":"{CustomModelData: 6422019, HideFlags: 6, mechanization:{id:\"spawner_controller\"}}"
             }
           ]
         }

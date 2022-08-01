@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 2025, CustomModelData: 6422025, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{CustomModelData: 6422025, HideFlags: 6, mechanization:{ id:\"tier_3_liquid_tank\" }, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:tier_3_liquid_tank\"}}}}]} }"
             }
           ]
         }

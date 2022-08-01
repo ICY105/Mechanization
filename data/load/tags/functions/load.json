@@ -1,5 +1,16 @@
 {
-    "values": [
-		"mechanization:load"
-	]
+  "values": [
+    "#chunk_scan:load",
+    "#chunk_scan.ores:load",
+    "#block_utils:load",
+    "#player_action:load",
+    "#nbt_smelting:load",
+    "#energy:load",
+    "#smithed.crafter:load",
+    "#smithed.damage:load",
+    "#smithed.actionbar:load",
+    "#smithed.item:load",
+    "#smithed.custom_block:load",
+    "mechanization:load"
+  ]
 }

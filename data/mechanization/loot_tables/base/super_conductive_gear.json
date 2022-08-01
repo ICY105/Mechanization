@@ -15,14 +15,15 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_drill","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"9000"},{"text":"9000"}]}],
 				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +21 "},{"translate":"mech.lore.mining_speed"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1385, CustomModelData: 6421385, HideFlags: 32, mech_upgrade:{type:2b, effect:\"none\", max_durability:2500, bonus_stats:{mining_speed:21}}, ctc:{ id:\"super_conductive_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/super_conductive_alloy\":1b }}}"
+              "tag":"{CustomModelData: 6421385, HideFlags: 32, mechanization:{ id:\"super_conductive_gear\", upgrade:{type:2b, effect:\"none\", max_durability:9000, stats:{mining_speed:21}} }, smithed:{dict:{gear:{super_conductive_alloy:1b}}} }"
             }
           ]
         }

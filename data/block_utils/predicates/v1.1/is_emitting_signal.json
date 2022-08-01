@@ -1,0 +1,96 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "block": {
+          "state": {
+            "powered": "true"
+          }
+        }
+      }
+    },
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": {
+		"block": {
+		  "tag": "block_utils:v1.1/redstone_torch",
+		  "state": {
+			"lit": "true"
+		  }
+		}
+	  }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": {
+		"block": {
+		  "blocks": [
+		    "minecraft:redstone_block"
+		  ]
+		}
+	  }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": { "block": { "state": { "power": "1" } } }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": { "block": { "state": { "power": "2" } } }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": { "block": { "state": { "power": "3" } } }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": { "block": { "state": { "power": "4" } } }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": { "block": { "state": { "power": "5" } } }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": { "block": { "state": { "power": "6" } } }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": { "block": { "state": { "power": "7" } } }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": { "block": { "state": { "power": "8" } } }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": { "block": { "state": { "power": "9" } } }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": { "block": { "state": { "power": "10" } } }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": { "block": { "state": { "power": "11" } } }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": { "block": { "state": { "power": "12" } } }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": { "block": { "state": { "power": "13" } } }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": { "block": { "state": { "power": "14" } } }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": { "block": { "state": { "power": "15" } } }
+	}
+  ]
+}

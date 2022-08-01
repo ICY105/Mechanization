@@ -1,3 +1,3 @@
-scoreboard players operation out_0 mech_data = temp_0 mech_data
-scoreboard players operation out_1 mech_data = temp_1 mech_data
+scoreboard players operation #x mechanization.data = #temp.x mechanization.data
+scoreboard players operation #z mechanization.data = #temp.y mechanization.data
 function mechanization:machines/machines/quarry/scan_3

@@ -15,14 +15,15 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_drill","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"1000"},{"text":"1000"}]}],
 				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"mech.lore.upgrade_trash"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1491, CustomModelData: 6421491, HideFlags: 32, mech_upgrade:{type:2b, effect:\"trash\", max_durability:750, bonus_stats:{}}, ctc:{ id:\"coal_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"gem/coal\":1b }}}"
+              "tag":"{CustomModelData: 6421491, HideFlags: 32, mechanization:{ id:\"coal_gear\", upgrade:{type:2b, effect:\"trash\", max_durability:1000, stats:{}} }, smithed:{ dict:{gear:{coal:1b}} }}"
             }
           ]
         }

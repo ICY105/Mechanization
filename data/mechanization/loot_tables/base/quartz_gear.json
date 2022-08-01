@@ -15,14 +15,15 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_drill","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"3000"},{"text":"3000"}]}],
 				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +3 "},{"translate":"attribute.name.generic.attack_damage"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1561, CustomModelData: 6421561, HideFlags: 32, mech_upgrade:{type:2b, effect:\"none\", max_durability:1500, bonus_stats:{attack_damage:3}}, ctc:{ id:\"quartz_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"gem/quartz\":1b }}}"
+              "tag":"{CustomModelData: 6421561, HideFlags: 32, mechanization:{ id:\"quartz_gear\", upgrade:{type:2b, effect:\"none\", max_durability:3000, stats:{attack_damage:3}} }, smithed:{dict:{gear:{quartz:1b}}} }"
             }
           ]
         }

@@ -1,0 +1,45 @@
+{
+	"values":[
+		"minecraft:terracotta",
+		"minecraft:white_terracotta",
+		"minecraft:orange_terracotta",
+		"minecraft:magenta_terracotta",
+		"minecraft:light_blue_terracotta",
+		"minecraft:yellow_terracotta",
+		"minecraft:lime_terracotta",
+		"minecraft:pink_terracotta",
+		"minecraft:gray_terracotta",
+		"minecraft:light_gray_terracotta",
+		"minecraft:cyan_terracotta",
+		"minecraft:purple_terracotta",
+		"minecraft:blue_terracotta",
+		"minecraft:brown_terracotta",
+		"minecraft:green_terracotta",
+		"minecraft:red_terracotta",
+		"minecraft:black_terracotta",
+		
+		"minecraft:gravel",
+		"minecraft:dirt",
+		"minecraft:coarse_dirt",
+		"minecraft:sandstone",
+		"minecraft:red_sandstone",
+		"minecraft:stone",
+		"minecraft:deepslate",
+		"minecraft:granite",
+		"minecraft:diorite",
+		"minecraft:andesite",
+		"minecraft:infested_stone",
+		"minecraft:tuff",
+		
+		"minecraft:netherrack",
+		"minecraft:soul_sand",
+		"minecraft:soul_soil",
+		"minecraft:blackstone",
+		"minecraft:magma_block",
+		"minecraft:warped_nylium",
+		"minecraft:basalt",
+		"minecraft:crimson_nylium",
+		
+		"minecraft:end_stone"
+	]
+}

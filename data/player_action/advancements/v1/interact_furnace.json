@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "interact_furnace": {
+      "trigger": "minecraft:item_used_on_block",
+	  "conditions": {
+	    "location": {
+          "block": {
+		    "blocks": [
+		      "minecraft:furnace"
+		    ]
+          }
+        }
+      }
+	}
+  },
+  "rewards":{ 
+    "function":"player_action:v1/internal/interact_furnace"
+  }
+}

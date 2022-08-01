@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 5008, CustomModelData: 6425008, EntityTag:{Tags:[\"mech_item_extractor\",\"mech_receiver\",\"mech_no_upgrade\"],CustomName:'{\"translate\":\"mech.block.item_extractor\"}',Invulnerable:1b,Invisible:1b,Silent:1b,Item:{id:\"minecraft:blast_furnace\",Count:1b,tag:{mech_itemid:5008,block:1b,mech_power:0,mech_gridid:0,CustomModelData:6425008}}}}"
+              "tag":"{CustomModelData: 6425008, mechanization:{id:\"item_extractor\"}, EntityTag:{Tags:[\"mechanization\", \"mechanization.item_extractor\", \"mechanization.redstone_control\", \"smithed.block\"], CustomName:'{\"translate\":\"mech.block.item_extractor\"}', Invulnerable:1b, Invisible:1b, Silent:1b, Item:{id:\"minecraft:blast_furnace\", Count:1b,tag:{CustomModelData:6425008}}}}"
             }
           ]
         }

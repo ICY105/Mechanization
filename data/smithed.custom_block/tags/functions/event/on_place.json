@@ -1,0 +1,6 @@
+{
+  "values": [
+    "#smithed.crafter:block/place",
+    "#mechanization:calls/place_block"
+  ]
+}

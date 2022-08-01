@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1102, CustomModelData: 6421102, HideFlags: 6, Unbreakable:1b, ctc:{ id:\"machine_upgrade\", from:\"mechanization\", traits:{ item:1b }} }"
+              "tag":"{CustomModelData: 6421102, HideFlags: 6, Unbreakable:1b, mechanization:{ id:\"machine_upgrade\" } }"
             }
           ]
         }

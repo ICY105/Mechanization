@@ -1,0 +1,22 @@
+[
+  {
+    "condition": "minecraft:location_check",
+    "predicate": {
+      "block": {
+        "tag": "chunk_scan:all"
+      }
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:location_check",
+      "offsetY": -1,
+      "predicate": {
+        "block": {
+          "tag": "chunk_scan:all"
+        }
+      }
+    }
+  }
+]

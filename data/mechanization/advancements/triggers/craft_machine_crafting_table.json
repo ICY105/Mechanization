@@ -8,6 +8,6 @@
 		}
 	},
 	"rewards":{ 
-		"function":"mechanization:base/triggers/craft_machine_crafting_table"
+		"function":"mechanization:base/player/crafting/machine_crafting_table"
 	}
 }

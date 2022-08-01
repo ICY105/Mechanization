@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1401, CustomModelData: 6421401, OreDict:[\"nuggetNetherAlloy\"], HideFlags: 32, ctc:{ id:\"nether_alloy_nugget\", from:\"mechanization\", traits:{ item:1b, nugget:1b, \"metal/nether_alloy\":1b }} }"
+              "tag":"{CustomModelData: 6421401, HideFlags: 32, mechanization:{ id:\"nether_alloy_nugget\" }, smithed:{dict:{nugget:{nether_alloy:1b}}}  }"
             }
           ]
         }

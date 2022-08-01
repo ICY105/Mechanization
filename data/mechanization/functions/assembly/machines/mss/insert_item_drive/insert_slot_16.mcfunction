@@ -1,20 +1,20 @@
 
-scoreboard players set out_0 mech_data 1
+scoreboard players set #complete mechanization.data 1
 
-execute store result score temp_1 mech_data run data get storage mechanization:networks mss.drive[{Slot:16b}].tag.mss.count
-execute store result score temp_2 mech_data run data get storage mechanization:networks mss.item.Count
+execute store result score #count.3 mechanization.data run data get storage mechanization:networks mss.drive[{Slot:16b}].tag.mss.count
+execute store result score #count.4 mechanization.data run data get storage mechanization:networks mss.item.Count
 
-scoreboard players operation temp_1 mech_data += temp_2 mech_data
-execute if score temp_1 mech_data matches ..-1 run scoreboard players set out_0 mech_data -1
+scoreboard players operation #count.3 mechanization.data += #count.4 mechanization.data
+execute if score #count.3 mechanization.data matches ..-1 run scoreboard players set #complete mechanization.data -1
 
-execute if score out_0 mech_data matches 1 store result storage mechanization:networks mss.drive[{Slot:16b}].tag.mss.count int 1 run scoreboard players get temp_1 mech_data
-execute if score out_0 mech_data matches 1 run data merge block -29999999 0 1602 {Text1:'[{"translate":"mech.mss.item_count","color":"gray","italic":false,"with":[{"score":{"name":"temp_1","objective":"mech_data"}}]}]'}
-execute if score out_0 mech_data matches 1 run data modify storage mechanization:networks mss.drive[{Slot:16b}].tag.display.Lore[0] set from block -29999999 0 1602 Text1
+execute if score #complete mechanization.data matches 1 store result storage mechanization:networks mss.drive[{Slot:16b}].tag.mss.count int 1 run scoreboard players get #count.3 mechanization.data
+execute if score #complete mechanization.data matches 1 run data merge block -29999999 0 1602 {Text1:'[{"translate":"mech.mss.item_count","color":"gray","italic":false,"with":[{"score":{"name":"#count.3","objective":"mechanization.data"}}]}]'}
+execute if score #complete mechanization.data matches 1 run data modify storage mechanization:networks mss.drive[{Slot:16b}].tag.display.Lore[0] set from block -29999999 0 1602 Text1
 
-execute if score out_0 mech_data matches 1 store result score temp_2 mech_data run data get storage mechanization:networks mss.drive[{Slot:16b}].Count
-execute if score temp_2 mech_data matches 1.. run scoreboard players set out_0 du_data 64
-execute if score temp_2 mech_data matches 1.. run data modify entity @s ArmorItems[0] set from storage mechanization:networks mss.drive[{Slot:16b}]
-execute if score temp_2 mech_data matches 1.. if predicate mechanization:is_stacksize_16 run scoreboard players set out_0 du_data 16
-execute if score temp_2 mech_data matches 1.. if predicate mechanization:is_unstackable run scoreboard players set out_0 du_data 1
-execute if score temp_2 mech_data matches 1.. if score temp_2 mech_data matches ..63 if score temp_1 mech_data < out_0 du_data run scoreboard players operation out_0 du_data = temp_1 mech_data
-execute if score temp_2 mech_data matches 1.. store result storage mechanization:networks mss.drive[{Slot:16b}].Count byte 1 run scoreboard players get out_0 du_data
+execute if score #complete mechanization.data matches 1 store result score #count.4 mechanization.data run data get storage mechanization:networks mss.drive[{Slot:16b}].Count
+execute if score #count.4 mechanization.data matches 1.. run scoreboard players set #complete.1 mechanization.data 64
+execute if score #count.4 mechanization.data matches 1.. run data modify entity @s ArmorItems[0] set from storage mechanization:networks mss.drive[{Slot:16b}]
+execute if score #count.4 mechanization.data matches 1.. if predicate mechanization:is_stacksize_16 run scoreboard players set #complete.1 mechanization.data 16
+execute if score #count.4 mechanization.data matches 1.. if predicate mechanization:is_unstackable run scoreboard players set #complete.1 mechanization.data 1
+execute if score #count.4 mechanization.data matches 1.. if score #count.4 mechanization.data matches ..63 if score #count.3 mechanization.data < #complete.1 mechanization.data run scoreboard players operation #complete.1 mechanization.data = #count.3 mechanization.data
+execute if score #count.4 mechanization.data matches 1.. store result storage mechanization:networks mss.drive[{Slot:16b}].Count byte 1 run scoreboard players get #complete.1 mechanization.data

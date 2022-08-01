@@ -25,7 +25,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4109, CustomModelData: 6424109, HideFlags:70, mech_upgrades:{type:3b,count:5b,shield:0,items:[]}, display:{color:15170646}}"
+              "tag":"{CustomModelData: 6424109, HideFlags:70, mechanization:{ id:\"modular_boots\", upgrades:{type:3b, count:5b, shield:0, items:[]}}, display:{color:15170646}}"
             },
 			{
 			  "function":"set_attributes",

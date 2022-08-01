@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:structure_block",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.sonic_barrel","color":"dark_red","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    [{"translate":"mech.lore.upgrade_plasma_weapon","color":"gray","italic":false}],
+			    [{"text":" 6 -> 1000 ","color":"blue","italic":false},{"translate":"mech.lore.velocity"}],
+			    [{"text":" 128 -> 16 ","color":"red","italic":false},{"translate":"mech.lore.range"}],
+			    [{"text":" 50% ","color":"blue","italic":false},{"translate":"mech.lore.damage"}],
+			    [{"text":" 300% ","color":"red","italic":false},{"translate":"mech.lore.heat"}],
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData: 6424200, mechanization:{id:\"sonic_barrel\", upgrade:{type:4b}}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

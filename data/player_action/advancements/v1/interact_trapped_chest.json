@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "interact_trapped_chest": {
+      "trigger": "minecraft:item_used_on_block",
+	  "conditions": {
+	    "location": {
+          "block": {
+		    "blocks": [
+		      "minecraft:trapped_chest"
+		    ]
+          }
+        }
+      }
+	}
+  },
+  "rewards":{ 
+    "function":"player_action:v1/internal/interact_trapped_chest"
+  }
+}

@@ -22,7 +22,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1100, CustomModelData: 6421100, HideFlags: 6, Unbreakable:1b, du_click_detect:1b, ctc:{ id:\"wrench\", from:\"mechanization\", traits:{ item:1b }} }"
+              "tag":"{CustomModelData: 6421100, HideFlags: 6, Unbreakable:1b, mechanization:{ id:\"wrench\" }, player_action:{click_detection:1b} }"
             }
           ]
         }

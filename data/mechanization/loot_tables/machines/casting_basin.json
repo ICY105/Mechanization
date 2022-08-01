@@ -21,7 +21,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 2028, CustomModelData: 6422028, HideFlags: 6, BlockEntityTag: {Lock: \"§mechanization\"}}"
+              "tag":"{CustomModelData: 6422028, HideFlags: 6, mechanization:{ id:\"casting_basin\" }, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:casting_basin\"}}}}]} }"
             }
           ]
         }

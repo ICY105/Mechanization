@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+			  "function": "minecraft:set_name",
+			  "name": {"translate":"mech.item.gps","color":"gray","italic":false}
+			},
+			{
+			  "function": "minecraft:set_lore",
+			  "lore": [
+			    {"translate":"mech.item.gps.lore_1","color":"white","italic":false,"with":[{"text":"\uee08","font":"mechanization:gui"}]},
+			    {"translate":"mech.item.gps.lore_2","color":"white","italic":false,"with":[{"text":"\uee08","font":"mechanization:gui"}]},
+				{"text":""},
+				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			  ]
+			},
+			{
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData: 6421110, HideFlags: 6, Unbreakable:1b, mechanization:{ id:\"gps\" }, player_action:{click_detection:1b} }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

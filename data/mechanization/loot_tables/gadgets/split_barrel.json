@@ -15,15 +15,16 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"translate":"mech.lore.upgrade_plasma_weapon","color":"gray","italic":false},
-			    [{"text":"+8 ","color":"blue","italic":false},{"translate":"mech.lore.shot_count"}],
-			    [{"text":"-2 ","color":"red","italic":false},{"translate":"mech.lore.velocity"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			    [{"translate":"mech.lore.upgrade_plasma_weapon","color":"gray","italic":false}],
+			    [{"text":" 1 -> 9 ","color":"blue","italic":false},{"translate":"mech.lore.shot_count"}],
+			    [{"text":" 6 -> 4 ","color":"red","italic":false},{"translate":"mech.lore.velocity"}],
+			    [{"text":" 128 -> 32 ","color":"red","italic":false},{"translate":"mech.lore.epac_range"}],
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4201, CustomModelData: 6424201, mech_upgrade:{type:4b}}"
+              "tag":"{CustomModelData: 6424201, mechanization:{id:\"split_barrel\", upgrade:{type:4b}}}"
             }
           ]
         }

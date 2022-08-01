@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 2200, CustomModelData: 6422200, HideFlags: 6}"
+              "tag":"{CustomModelData: 6422200, HideFlags: 6, mechanization:{id:\"spawner_mover\", has_spawner:0b}}"
             }
           ]
         }

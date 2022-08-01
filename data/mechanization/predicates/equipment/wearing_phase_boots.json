@@ -7,7 +7,7 @@
 		"items": [
 		  "minecraft:leather_boots"
 		],
-		"nbt": "{mech_itemid:4115}"
+		"nbt": "{mechanization:{id:\"phase_boots\"}}"
 	  }
 	}
   }

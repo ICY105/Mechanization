@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:armor_stand",
+        "minecraft:area_effect_cloud",
+        "minecraft:marker"
+    ]
+}

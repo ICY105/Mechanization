@@ -20,12 +20,13 @@
 				[{"text":"  9 ","color":"dark_green","italic":false},{"translate":"mech.lore.mining_speed"}],
 				[{"text":"  1 ","color":"dark_green","italic":false},{"translate":"mech.lore.mining_area"}],
 				[{"text":"  3 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
+				[{"text":"  1 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_speed"}],
 				 {"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4101, CustomModelData: 6424101, HideFlags:2, mech_upgrades:{type:2b,count:5b,mining_speed:9,mining_area:0,items:[]}}"
+              "tag":"{CustomModelData: 6424101, HideFlags:2, mechanization:{id:\"drill\", upgrades:{type:2b, count:5b, mining_speed:9, mining_area:1, items:[]}}}"
             },
 			{
 			  "function":"set_attributes",

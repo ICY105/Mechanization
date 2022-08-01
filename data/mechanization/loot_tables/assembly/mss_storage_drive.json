@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 5106, CustomModelData: 6425106, HideFlags: 6, Unbreakable:1b, mech_storage:[]}"
+              "tag":"{CustomModelData: 6425106, HideFlags: 6, Unbreakable:1b, mechanization:{id:\"mss_storage_drive\", storage:[]}}"
             }
           ]
         }

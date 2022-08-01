@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "interact_cartography_table": {
+      "trigger": "minecraft:item_used_on_block",
+	  "conditions": {
+	    "location": {
+          "block": {
+		    "blocks": [
+		      "minecraft:cartography_table"
+		    ]
+          }
+        }
+      }
+	}
+  },
+  "rewards":{ 
+    "function":"player_action:v1/internal/interact_cartography_table"
+  }
+}

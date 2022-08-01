@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "interact_click_entity": {
+      "trigger": "minecraft:player_interacted_with_entity",
+	  "conditions": {
+        "entity":{
+          "type":"minecraft:villager",
+		  "nbt":"{Tags:[\"player_action.click_entity\"]}"
+        },
+        "player": {
+          "nbt":"{Tags:[\"player_action.click_detection\"]}"
+        }
+	  }
+	}
+  },
+  "rewards":{ 
+    "function":"player_action:v1/internal/interact_click_entity"
+  }
+}

@@ -1,4 +1,4 @@
 
 experience add @s -50 points
-scoreboard players set $temp_0 mech_data 8
-scoreboard players set $temp_1 mech_data 50
+scoreboard players set #fluid mechanization.data 8
+scoreboard players set #amount mechanization.data 50

@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1352, CustomModelData: 6421352, du_smelt_id: 1352, HideFlags: 32, ctc:{ id:\"raw_conductive_alloy\", from:\"mechanization\", traits:{ item:1b, raw:1b, \"metal/conductive_alloy\":1b }}}"
+              "tag":"{CustomModelData: 6421352, nbt_smelting:1b, HideFlags: 32, mechanization:{ id:\"raw_conductive_alloy\" }, smithed:{dict:{raw:{conductive_alloy:1b}}} }"
             }
           ]
         }

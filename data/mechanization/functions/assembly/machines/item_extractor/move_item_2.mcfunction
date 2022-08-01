@@ -1,13 +1,13 @@
 
-#copy to shulker box
-data remove block -29999999 0 1601 Items
-data modify block -29999999 0 1601 Items append from storage du:temp list[0]
+# copy to shulker box
+data remove block -30000000 0 3201 Items
+data modify block -30000000 0 3201 Items append from storage mechanization:temp list[0]
 
-#check filter
-scoreboard players set $out_0 mech_data 1
-execute if entity @s[tag=mech_filtered] run function mechanization:assembly/machines/item_extractor/check_filter
-execute if score $out_0 mech_data matches 1 run function mechanization:assembly/machines/item_extractor/move_item_3
+# check filter
+scoreboard players set #success mechanization.data 1
+execute if entity @s[tag=mechanization.filtered] run function mechanization:assembly/machines/item_extractor/check_filter
+execute if score #success mechanization.data matches 1 run function mechanization:assembly/machines/item_extractor/move_item_3
 
-#loop
-data remove storage du:temp list[0]
-execute if data storage du:temp list[0] run function mechanization:assembly/machines/item_extractor/move_item_2
+# loop
+data remove storage mechanization:temp list[0]
+execute if data storage mechanization:temp list[0] run function mechanization:assembly/machines/item_extractor/move_item_2

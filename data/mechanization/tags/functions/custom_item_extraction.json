@@ -1,10 +1,11 @@
 {
 	"required":false,
 	"values":[
-	  "mechanization:base/tools/custom_item_extraction",
-	  "mechanization:machines/tools/custom_item_extraction",
+	  "mechanization:base/machines/custom_item_extraction",
+	  "mechanization:machines/machines/custom_item_extraction",
 	  "mechanization:nuclear/tools/custom_item_extraction",
-	  "mechanization:gadgets/tools/custom_item_extraction",
-	  "mechanization:assembly/tools/custom_item_extraction"
+	  "mechanization:gadgets/machines/custom_item_extraction",
+	  "mechanization:assembly/machines/custom_item_extraction",
+	  "mechanization:compat/calls/custom_item_extraction"
 	]
 }

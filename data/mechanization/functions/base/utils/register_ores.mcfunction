@@ -1,82 +1,76 @@
 
 #### Tin Ore
 
-# Y elevation [1,255]
-scoreboard players set $world.in_0 du_data -16
-scoreboard players set $world.in_1 du_data 32
+# Y elevation [-2048,2048]
+scoreboard players set #registry.min_y chunk_scan.ores.data -16
+scoreboard players set #registry.max_y chunk_scan.ores.data 32
 # number of veins [1,32]
-scoreboard players operation $world.in_2 du_data = $base.cf.tin_rarity mech_data
-scoreboard players operation $world.in_3 du_data = $base.cf.tin_rarity mech_data
+scoreboard players operation #registry.min_veins chunk_scan.ores.data = #base.cf.tin_rarity mechanization.data
+scoreboard players operation #registry.max_veins chunk_scan.ores.data = #base.cf.tin_rarity mechanization.data
 # ores per vein [1,16]
-scoreboard players set $world.in_4 du_data 4
-scoreboard players set $world.in_5 du_data 6
-execute if score $base.cf.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_4 du_data 1
-execute if score $base.cf.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_5 du_data 1
+scoreboard players set #registry.min_vein_size chunk_scan.ores.data 4
+scoreboard players set #registry.max_vein_size chunk_scan.ores.data 6
 # ignore placement restrictions
-scoreboard players set $world.in_6 du_data 0
+scoreboard players set #registry.ignore_restrictions chunk_scan.ores.data 0
 
 #Call Registry Function
-data merge storage du:temp {object:{dimension:"minecraft:overworld"}}
-execute if score $base.cf.tin_rarity mech_data matches 1.. run function du:world/registry/register_ore
-scoreboard players operation $cons.tin_ore mech_data = $world.out_0 du_data
+data modify storage chunk_scan.ores:registry input set value {dimension:"minecraft:overworld"}
+execute if score #base.cf.tin_rarity mechanization.data matches 1.. run function chunk_scan.ores:v1/api/register_ore
+scoreboard players operation #cons.tin_ore mechanization.data = #registry.result_id chunk_scan.ores.data
 
 #### Titanium Ore
 
-# Y elevation [1,255]
-scoreboard players set $world.in_0 du_data -60
-scoreboard players set $world.in_1 du_data -28
+# Y elevation [-2048,2048]
+scoreboard players set #registry.min_y chunk_scan.ores.data -60
+scoreboard players set #registry.max_y chunk_scan.ores.data -28
 # number of veins [1,32]
-scoreboard players operation $world.in_2 du_data = $base.cf.titanium_rarity mech_data
-scoreboard players operation $world.in_3 du_data = $base.cf.titanium_rarity mech_data
+scoreboard players operation #registry.min_veins chunk_scan.ores.data = #base.cf.titanium_rarity mechanization.data
+scoreboard players operation #registry.max_veins chunk_scan.ores.data = #base.cf.titanium_rarity mechanization.data
 # ores per vein [1,16]
-scoreboard players set $world.in_4 du_data 1
-scoreboard players set $world.in_5 du_data 4
-execute if score $base.cf.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_4 du_data 1
-execute if score $base.cf.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_5 du_data 1
+scoreboard players set #registry.min_vein_size chunk_scan.ores.data 1
+scoreboard players set #registry.max_vein_size chunk_scan.ores.data 4
 # ignore placement restrictions
-scoreboard players set $world.in_6 du_data 0
+scoreboard players set #registry.ignore_restrictions chunk_scan.ores.data 0
 
 #Call Registry Function
-data merge storage du:temp {object:{dimension:"minecraft:overworld"}}
-execute if score $base.cf.titanium_rarity mech_data matches 1.. run function du:world/registry/register_ore
-scoreboard players operation $cons.titanium_ore mech_data = $world.out_0 du_data
+data modify storage chunk_scan.ores:registry input set value {dimension:"minecraft:overworld"}
+execute if score #base.cf.titanium_rarity mechanization.data matches 1.. run function chunk_scan.ores:v1/api/register_ore
+scoreboard players operation #cons.titanium_ore mechanization.data = #registry.result_id chunk_scan.ores.data
 
 #### Uranium Ore
 
-# Y elevation [1,255]
-scoreboard players set $world.in_0 du_data -48
-scoreboard players set $world.in_1 du_data -16
+# Y elevation [-2048,2048]
+scoreboard players set #registry.min_y chunk_scan.ores.data -48
+scoreboard players set #registry.max_y chunk_scan.ores.data -16
 # number of veins [1,32]
-scoreboard players operation $world.in_2 du_data = $base.cf.uranium_rarity mech_data
-scoreboard players operation $world.in_3 du_data = $base.cf.uranium_rarity mech_data
+scoreboard players operation #registry.min_veins chunk_scan.ores.data = #base.cf.uranium_rarity mechanization.data
+scoreboard players operation #registry.max_veins chunk_scan.ores.data = #base.cf.uranium_rarity mechanization.data
 # ores per vein [1,16]
-scoreboard players set $world.in_4 du_data 2
-scoreboard players set $world.in_5 du_data 4
-execute if score $base.cf.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_4 du_data 1
-execute if score $base.cf.ore_compatibility mech_data matches 1 run scoreboard players set $world.in_5 du_data 1
+scoreboard players set #registry.min_vein_size chunk_scan.ores.data 2
+scoreboard players set #registry.max_vein_size chunk_scan.ores.data 4
 # ignore placement restrictions
-scoreboard players set $world.in_6 du_data 0
+scoreboard players set #registry.ignore_restrictions chunk_scan.ores.data 0
 
 #Call Registry Function
-data merge storage du:temp {object:{dimension:"minecraft:overworld"}}
-execute if score $base.cf.uranium_rarity mech_data matches 1.. run function du:world/registry/register_ore
-scoreboard players operation $cons.uranium_ore mech_data = $world.out_0 du_data
+data modify storage chunk_scan.ores:registry input set value {dimension:"minecraft:overworld"}
+execute if score #base.cf.uranium_rarity mechanization.data matches 1.. run function chunk_scan.ores:v1/api/register_ore
+scoreboard players operation #cons.uranium_ore mechanization.data = #registry.result_id chunk_scan.ores.data
 
 #### Emerald Ore
 
-# Y elevation [1,255]
-scoreboard players set $world.in_0 du_data -48
-scoreboard players set $world.in_1 du_data 0
+# Y elevation [-2048,2048]
+scoreboard players set #registry.min_y chunk_scan.ores.data -48
+scoreboard players set #registry.max_y chunk_scan.ores.data 0
 # number of veins [1,32]
-scoreboard players operation $world.in_2 du_data = $base.cf.emerald_rarity mech_data
-scoreboard players operation $world.in_3 du_data = $base.cf.emerald_rarity mech_data
+scoreboard players operation #registry.min_veins chunk_scan.ores.data = #base.cf.emerald_rarity mechanization.data
+scoreboard players operation #registry.max_veins chunk_scan.ores.data = #base.cf.emerald_rarity mechanization.data
 # ores per vein [1,16]
-scoreboard players set $world.in_4 du_data 1
-scoreboard players set $world.in_5 du_data 2
+scoreboard players set #registry.min_vein_size chunk_scan.ores.data 1
+scoreboard players set #registry.max_vein_size chunk_scan.ores.data 2
 # ignore placement restrictions
-scoreboard players set $world.in_6 du_data 0
+scoreboard players set #registry.ignore_restrictions chunk_scan.ores.data 0
 
 #Call Registry Function
-data merge storage du:temp {object:{dimension:"minecraft:overworld"}}
-execute if score $base.cf.emerald_rarity mech_data matches 1.. run function du:world/registry/register_ore
-scoreboard players operation $cons.emerald_ore mech_data = $world.out_0 du_data
+data modify storage chunk_scan.ores:registry input set value {dimension:"minecraft:overworld"}
+execute if score #base.cf.emerald_rarity mechanization.data matches 1.. run function chunk_scan.ores:v1/api/register_ore
+scoreboard players operation #cons.emerald_ore mechanization.data = #registry.result_id chunk_scan.ores.data

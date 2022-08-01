@@ -1,0 +1,21 @@
+{
+  "__public__": true,
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+          "nbt": "{BlockEntityTag:{Items:[{tag:{smithed:{block:{}}}}]}}"
+        },
+        "location": {
+          "block": {
+            "tag": "smithed.custom_block:placeable"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "smithed.custom_block:calls/v0.0.1/place"
+  }
+}

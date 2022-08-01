@@ -20,7 +20,7 @@
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1380, CustomModelData: 6421380, HideFlags: 32, ctc:{ id:\"super_conductive_alloy_ingot\", from:\"mechanization\", traits:{ item:1b, ingot:1b, \"metal/super_conductive_alloy\":1b }} }"
+              "tag":"{CustomModelData: 6421380, HideFlags: 32, mechanization:{ id:\"super_conductive_alloy_ingot\" }, smithed:{dict:{ingot:{super_conductive_alloy:1b}}}  }"
             }
           ]
         }

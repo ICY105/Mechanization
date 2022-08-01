@@ -15,14 +15,15 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_drill","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"250"},{"text":"250"}]}],
 				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +16 "},{"translate":"mech.lore.mining_speed"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1461, CustomModelData: 6421461, HideFlags: 32, mech_upgrade:{type:2b, effect:\"none\", max_durability:128, bonus_stats:{mining_speed:16}}, ctc:{ id:\"gold_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"metal/gold\":1b }}}"
+              "tag":"{CustomModelData: 6421461, HideFlags: 32, mechanization:{ id:\"gold_gear\", upgrade:{type:2b, effect:\"none\", max_durability:250, stats:{mining_speed:16}} }, smithed:{dict:{gear:{gold:1b}}} }"
             }
           ]
         }

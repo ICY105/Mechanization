@@ -1,0 +1,19 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:furnace",
+            "functions": [
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{CustomModelData:4250001,display:{Name:'{\"translate\":\"block.smithed.crafter\",\"italic\":false}'},BlockEntityTag:{Items:[{id:\"minecraft:stone\",Count:1b,Slot:0b,tag:{smithed:{block:{id:\"smithed:crafter\"}}}}]}}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

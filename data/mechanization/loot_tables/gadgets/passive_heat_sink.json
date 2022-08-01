@@ -15,15 +15,15 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"translate":"mech.lore.upgrade_plasma_weapon","color":"gray","italic":false},
-			    [{"text":"-50% ","color":"blue","italic":false},{"translate":"mech.lore.energy"}],
-			    [{"text":"+15% ","color":"red","italic":false},{"translate":"mech.lore.heat"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			    [{"translate":"mech.lore.upgrade_plasma_weapon","color":"gray","italic":false}],
+			    [{"text":" 6 -> 4 ","color":"blue","italic":false},{"translate":"mech.lore.cooling"}],
+			    [{"text":" -15% ","color":"red","italic":false},{"translate":"mech.lore.energy"}],
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 4217, CustomModelData: 6424217, mech_upgrade:{type:4b}}"
+              "tag":"{CustomModelData: 6424211, mechanization:{id:\"passive_heat_sink\", upgrade:{type:4b}}}"
             }
           ]
         }

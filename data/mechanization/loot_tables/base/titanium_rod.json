@@ -15,24 +15,24 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false},
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"mech.lore.upgrade_reinforced"}],
-				 {"translate":"mech.lore.upgrade_base_stats","color":"gray","italic":false},
-				[{"text":"  5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
-				[{"text":"  1.25 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_speed"}],
-				[{"text":"  5 ","color":"dark_green","italic":false},{"translate":"mech.lore.energy_saber_range"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"6000"},{"text":"6000"}]}],
+				[{"translate":"mech.lore.upgrade_stats","color":"gray","italic":false}],
+				[{"text":"  3 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
+				[{"text":"  0.4 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_speed"}],
+				[{"text":"  4 ","color":"dark_green","italic":false},{"translate":"mech.lore.energy_saber_range"}],
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1327, CustomModelData: 6421327, HideFlags: 32, mech_upgrade:{type:1b, effect:\"reinforced\", max_durability:2000, base_stats:{attack_damage:5, attack_speed:-2.75, energy_saber_range:5}, bonus_stats:{}}, ctc:{ id:\"titanium_rod\", from:\"mechanization\", traits:{ item:1b, rod:1b, \"metal/titanium\":1b }}}"
+              "tag":"{CustomModelData: 6421327, HideFlags: 32, mechanization:{ id:\"titanium_rod\", upgrade:{type:1b, effect:\"none\", max_durability:6000, stats:{attack_damage:3, attack_speed:0.4, energy_saber_range:4}} }, smithed:{dict:{rod:{titanium:1b}}} }"
             }
           ]
         }

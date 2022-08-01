@@ -15,14 +15,15 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				 {"translate":"mech.lore.upgrade_drill","color":"gray","italic":false},
+				[{"translate":"mech.lore.upgrade_drill","color":"gray","italic":false}],
+			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"3000"},{"text":"3000"}]}],
 				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"mech.lore.upgrade_reinforced"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{mech_itemid: 1511, CustomModelData: 6421511, HideFlags: 32, mech_upgrade:{type:2b, effect:\"reinforced\", max_durability:1500, bonus_stats:{}}, ctc:{ id:\"diamond_gear\", from:\"mechanization\", traits:{ item:1b, gear:1b, \"gem/diamond\":1b }}}"
+              "tag":"{CustomModelData: 6421511, HideFlags: 32, mechanization:{ id:\"diamond_gear\", upgrade:{type:2b, effect:\"fortune_3\", max_durability:3000, stats:{}} }, smithed:{dict:{gear:{diamond:1b}}} }"
             }
           ]
         }
