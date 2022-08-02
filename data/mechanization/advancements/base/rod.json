@@ -19,7 +19,8 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{ctc:{traits:{rod:1b}}}"
+					    "id": "minecraft:structure_block",
+                        "nbt": "{smithed:{dict:{rod:{}}}}"
                     }
                 ]
             }

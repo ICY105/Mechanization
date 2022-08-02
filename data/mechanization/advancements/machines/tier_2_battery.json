@@ -1,16 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.tier_3_battery.title",
+            "translate": "mech.advancements.tier_2_battery.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.tier_3_battery.desc",
+            "translate": "mech.advancements.tier_2_battery.desc",
 			"color":"dark_aqua"
         },
         "icon": {
             "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6421002}"
+            "nbt": "{CustomModelData:6421001}"
         },
         "frame": "task"
     },
@@ -19,11 +19,12 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:1002}"
+					    "id": "minecraft:blast_furnace",
+                        "nbt": "{mechanization:{id:\"tier_2_battery\"}}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:base/tier_3_machine_frame"
+    "parent": "mechanization:base/tier_2_machine_frame"
 }

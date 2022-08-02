@@ -19,11 +19,12 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:2013}"
+					    "id": "minecraft:blast_furnace",
+                        "nbt": "{mechanization:{id:\"quarry\"}}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:base/tier_2_battery"
+    "parent": "mechanization:machines/tier_2_battery"
 }

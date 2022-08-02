@@ -19,7 +19,8 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:4101}"
+					    "id": "minecraft:carrot_on_a_stick",
+                        "nbt": "{mechanization:{id:\"drill\"}}"
                     }
                 ]
             }

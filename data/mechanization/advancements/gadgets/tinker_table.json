@@ -19,11 +19,12 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:4001}"
+					    "id": "minecraft:blast_furnace",
+                        "nbt": "{mechanization:{id:\"tinker_table\"}}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:base/tier_1_battery"
+    "parent": "mechanization:machines/tier_1_battery"
 }

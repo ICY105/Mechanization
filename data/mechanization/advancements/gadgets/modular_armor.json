@@ -20,16 +20,20 @@
             "conditions": {
                 "items": [
 					{
-                        "nbt": "{mech_itemid:4106}"
+					    "id": "minecraft:leather_helmet",
+                        "nbt": "{mechanization:{id:\"modular_helmet\"}}"
                     },
 					{
-                        "nbt": "{mech_itemid:4107}"
+					    "id": "minecraft:leather_chestplate",
+                        "nbt": "{mechanization:{id:\"modular_chestplate\"}}"
                     },
 					{
-                        "nbt": "{mech_itemid:4108}"
+					    "id": "minecraft:leather_leggings",
+                        "nbt": "{mechanization:{id:\"modular_leggings\"}}"
                     },
 					{
-                        "nbt": "{mech_itemid:4109}"
+					    "id": "minecraft:leather_boots",
+                        "nbt": "{mechanization:{id:\"modular_boots\"}}"
                     }
                 ]
             }

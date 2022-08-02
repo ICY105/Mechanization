@@ -19,11 +19,12 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:2014}"
+					    "id": "minecraft:blast_furnace",
+                        "nbt": "{mechanization:{id:\"solar_panel\"}}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:base/tier_2_battery"
+    "parent": "mechanization:machines/tier_2_battery"
 }

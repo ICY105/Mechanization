@@ -22,7 +22,8 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:1005}"
+					    "id": "minecraft:blast_furnace",
+                        "nbt": "{mechanization:{id:\"machine_crafting_table\"}}"
                     }
                 ]
             }

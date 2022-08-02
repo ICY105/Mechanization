@@ -19,7 +19,8 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:1313}"
+					    "id": "minecraft:blast_furnace",
+                        "nbt": "{smithed:{dict:{ore:{tin:1b}}}}"
                     }
                 ]
             }

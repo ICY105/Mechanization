@@ -19,11 +19,12 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:2005}"
+					    "id": "minecraft:blast_furnace",
+                        "nbt": "{mechanization:{id:\"auto_farm\"}}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:base/tier_2_battery"
+    "parent": "mechanization:machines/tier_2_battery"
 }

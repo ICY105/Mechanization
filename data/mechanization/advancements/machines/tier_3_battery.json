@@ -1,16 +1,16 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.centrifuge.title",
+            "translate": "mech.advancements.tier_3_battery.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.centrifuge.desc",
+            "translate": "mech.advancements.tier_3_battery.desc",
 			"color":"dark_aqua"
         },
         "icon": {
             "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6423000}"
+            "nbt": "{CustomModelData:6421002}"
         },
         "frame": "task"
     },
@@ -19,11 +19,12 @@
             "trigger": "minecraft:inventory_changed",
             "conditions": {
                 "items": [{
-                        "nbt": "{mech_itemid:3000}"
+					    "id": "minecraft:blast_furnace",
+                        "nbt": "{mechanization:{id:\"tier_3_battery\"}}"
                     }
                 ]
             }
         }
     },
-    "parent": "mechanization:base/tier_2_battery"
+    "parent": "mechanization:base/tier_3_machine_frame"
 }
