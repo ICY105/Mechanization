@@ -37,68 +37,74 @@ execute if score #rng.out mechanization.data matches 26 run data modify storage 
 execute if score #rng.out mechanization.data matches 27 run data modify storage mechanization:temp obj set from block ~ ~ ~ Items[27]
 
 # play record
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_ward"} unless data storage mechanization:temp obj.tag.mechanization.id run playsound minecraft:music_disc.ward record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_ward"} unless data storage mechanization:temp obj.tag.mechanization.id run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Ward"],"color":"light_purple"}]
 
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_13"} unless data storage mechanization:temp obj.tag.mechanization.id run playsound minecraft:music_disc.13 record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_13"} unless data storage mechanization:temp obj.tag.mechanization.id run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - 13"],"color":"light_purple"}]
+# custom discs
+scoreboard players set #custom_disc mechanization.data 0
 
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_cat"} unless data storage mechanization:temp obj.tag.mechanization.id run playsound minecraft:music_disc.cat record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_cat"} unless data storage mechanization:temp obj.tag.mechanization.id run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Cat"],"color":"light_purple"}]
-
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_blocks"} unless data storage mechanization:temp obj.tag.mechanization.id run playsound minecraft:music_disc.blocks record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_blocks"} unless data storage mechanization:temp obj.tag.mechanization.id run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Blocks"],"color":"light_purple"}]
-
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_chirp"} unless data storage mechanization:temp obj.tag.mechanization.id run playsound minecraft:music_disc.chirp record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_chirp"} unless data storage mechanization:temp obj.tag.mechanization.id run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Chirp"],"color":"light_purple"}]
-
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_far"} unless data storage mechanization:temp obj.tag.mechanization.id run playsound minecraft:music_disc.far record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_far"} unless data storage mechanization:temp obj.tag.mechanization.id run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Far"],"color":"light_purple"}]
-
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_mall"} unless data storage mechanization:temp obj.tag.mechanization.id run playsound minecraft:music_disc.mall record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_mall"} unless data storage mechanization:temp obj.tag.mechanization.id run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Mall"],"color":"light_purple"}]
-
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_mellohi"} unless data storage mechanization:temp obj.tag.mechanization.id run playsound minecraft:music_disc.mellohi record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_mellohi"} unless data storage mechanization:temp obj.tag.mechanization.id run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Mellohi"],"color":"light_purple"}]
-
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_stal"} unless data storage mechanization:temp obj.tag.mechanization.id run playsound minecraft:music_disc.stal record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_stal"} unless data storage mechanization:temp obj.tag.mechanization.id run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Stal"],"color":"light_purple"}]
-
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_strad"} unless data storage mechanization:temp obj.tag.mechanization.id run playsound minecraft:music_disc.strad record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_strad"} unless data storage mechanization:temp obj.tag.mechanization.id run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Strad"],"color":"light_purple"}]
-
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_11"} unless data storage mechanization:temp obj.tag.mechanization.id run playsound minecraft:music_disc.11 record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_11"} unless data storage mechanization:temp obj.tag.mechanization.id run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - 11"],"color":"light_purple"}]
-
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_wait"} unless data storage mechanization:temp obj.tag.mechanization.id run playsound minecraft:music_disc.wait record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_wait"} unless data storage mechanization:temp obj.tag.mechanization.id run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Wait"],"color":"light_purple"}]
-
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_pigstep"} unless data storage mechanization:temp obj.tag.mechanization.id run playsound minecraft:music_disc.pigstep record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_pigstep"} unless data storage mechanization:temp obj.tag.mechanization.id run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":["Lena Raine - Pigstep"],"color":"light_purple"}]
-
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_otherside"} unless data storage mechanization:temp obj.tag.mechanization.id run playsound minecraft:music_disc.otherside record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_otherside"} unless data storage mechanization:temp obj.tag.mechanization.id run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":["Lena Raine - Otherside"],"color":"light_purple"}]
-
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_5"} unless data storage mechanization:temp obj.tag.mechanization.id run playsound minecraft:music_disc.5 record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj{id:"minecraft:music_disc_5"} unless data storage mechanization:temp obj.tag.mechanization.id run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":["Samuel Aberg - 5"],"color":"light_purple"}]
+execute if data storage mechanization:temp obj.tag.tcc{id:"charged_music_disc"} run function mechanization:compat/tcc/charged_music_disc
+execute if data storage mechanization:temp obj.tag.oa run function mechanization:compat/ocean_additions/play_music_disc
+execute if data storage mechanization:temp obj.tag.manic run function mechanization:compat/manic/play_music_disc
 
 execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_end_of_the_world"} run playsound mechanization:assembly.music.end_of_the_world record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_end_of_the_world"} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_end_of_the_world"}],"color":"light_purple"}]
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_end_of_the_world"} store success score #custom_disc mechanization.data run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_end_of_the_world"}],"color":"light_purple"}]
 
 execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_hyperspace"} run playsound mechanization:assembly.music.hyperspace record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_hyperspace"} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_hyperspace"}],"color":"light_purple"}]
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_hyperspace"} store success score #custom_disc mechanization.data run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_hyperspace"}],"color":"light_purple"}]
 
 execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_money_for_nothing"} run playsound mechanization:assembly.music.money_for_nothing record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_money_for_nothing"} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_money_for_nothing"}],"color":"light_purple"}]
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_money_for_nothing"} store success score #custom_disc mechanization.data run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_money_for_nothing"}],"color":"light_purple"}]
 
 execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_wanderer"} run playsound mechanization:assembly.music.wanderer record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_wanderer"} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_wanderer"}],"color":"light_purple"}]
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_wanderer"} store success score #custom_disc mechanization.data run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_wanderer"}],"color":"light_purple"}]
 
 execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_stranger_think"} run playsound mechanization:assembly.music.stranger_think record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_stranger_think"} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_stranger_think"}],"color":"light_purple"}]
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_stranger_think"} store success score #custom_disc mechanization.data run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_stranger_think"}],"color":"light_purple"}]
 
 execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_atomic_amnesia"} run playsound mechanization:assembly.music.atomic_amnesia record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_atomic_amnesia"} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_atomic_amnesia"}],"color":"light_purple"}]
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_atomic_amnesia"} store success score #custom_disc mechanization.data run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":[{"translate":"mech.item.disc_atomic_amnesia"}],"color":"light_purple"}]
 
-# TCC compat
-execute if data storage mechanization:temp obj.tag.tcc{id:"charged_music_disc"} run function mechanization:compat/tcc/charged_music_disc
+# vanilla discs
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_ward"} run playsound minecraft:music_disc.ward record @a ~ ~ ~ 6
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_ward"} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Ward"],"color":"light_purple"}]
+
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_13"} run playsound minecraft:music_disc.13 record @a ~ ~ ~ 6
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_13"} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - 13"],"color":"light_purple"}]
+
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_cat"} run playsound minecraft:music_disc.cat record @a ~ ~ ~ 6
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_cat"} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Cat"],"color":"light_purple"}]
+
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_blocks"} run playsound minecraft:music_disc.blocks record @a ~ ~ ~ 6
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_blocks"} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Blocks"],"color":"light_purple"}]
+
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_chirp"} run playsound minecraft:music_disc.chirp record @a ~ ~ ~ 6
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_chirp"} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Chirp"],"color":"light_purple"}]
+
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_far"} run playsound minecraft:music_disc.far record @a ~ ~ ~ 6
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_far"} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Far"],"color":"light_purple"}]
+
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_mall"} run playsound minecraft:music_disc.mall record @a ~ ~ ~ 6
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_mall"} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Mall"],"color":"light_purple"}]
+
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_mellohi"} run playsound minecraft:music_disc.mellohi record @a ~ ~ ~ 6
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_mellohi"} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Mellohi"],"color":"light_purple"}]
+
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_stal"} run playsound minecraft:music_disc.stal record @a ~ ~ ~ 6
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_stal"} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Stal"],"color":"light_purple"}]
+
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_strad"} run playsound minecraft:music_disc.strad record @a ~ ~ ~ 6
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_strad"} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Strad"],"color":"light_purple"}]
+
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_11"} run playsound minecraft:music_disc.11 record @a ~ ~ ~ 6
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_11"} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - 11"],"color":"light_purple"}]
+
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_wait"} run playsound minecraft:music_disc.wait record @a ~ ~ ~ 6
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_wait"} run title @a[distance=..32] actionbar ["",{"translate":"mech.block.auto_jukebox.switch","with":["C418 - Wait"],"color":"light_purple"}]
+
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_pigstep"} run playsound minecraft:music_disc.pigstep record @a ~ ~ ~ 6
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_pigstep"} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":["Lena Raine - Pigstep"],"color":"light_purple"}]
+
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_otherside"} run playsound minecraft:music_disc.otherside record @a ~ ~ ~ 6
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_otherside"} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":["Lena Raine - Otherside"],"color":"light_purple"}]
+
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_5"} run playsound minecraft:music_disc.5 record @a ~ ~ ~ 6
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_5"} run title @a[distance=..32] actionbar [{"translate":"mech.block.auto_jukebox.switch","with":["Samuel Aberg - 5"],"color":"light_purple"}]
