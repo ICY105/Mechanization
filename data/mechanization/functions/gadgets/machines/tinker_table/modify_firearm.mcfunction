@@ -55,7 +55,7 @@ execute if data storage mechanization:temp list[{Slot:13b}].tag.mechanization{id
 # heat sink
 execute if data storage mechanization:temp list[{Slot:12b}].tag.mechanization{id:"passive_heat_sink"} run scoreboard players set #cooling mechanization.data 4
 execute if data storage mechanization:temp list[{Slot:12b}].tag.mechanization{id:"passive_heat_sink"} run scoreboard players operation #energy mechanization.data *= #cons.85 mechanization.data
-execute if data storage mechanization:temp list[{Slot:12b}].tag.mechanization{id:"passive_heat_sink"} run scoreboard players operation #energy mechanization.data /= #cons.100 mechanization.
+execute if data storage mechanization:temp list[{Slot:12b}].tag.mechanization{id:"passive_heat_sink"} run scoreboard players operation #energy mechanization.data /= #cons.100 mechanization.data
 
 execute if data storage mechanization:temp list[{Slot:12b}].tag.mechanization{id:"energized_heat_sink"} run scoreboard players set #cooling mechanization.data 10
 execute if data storage mechanization:temp list[{Slot:12b}].tag.mechanization{id:"energized_heat_sink"} run scoreboard players operation #energy mechanization.data *= #cons.125 mechanization.data
