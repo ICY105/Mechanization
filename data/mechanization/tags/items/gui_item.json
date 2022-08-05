@@ -2,6 +2,7 @@
 	"required":false,
 	"values":[
 		"minecraft:leather_boots",
-		"minecraft:structure_block"
+		"minecraft:structure_block",
+		"minecraft:barrier"
 	]
 }

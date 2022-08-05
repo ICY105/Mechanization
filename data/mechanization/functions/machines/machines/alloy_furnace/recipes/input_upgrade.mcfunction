@@ -156,8 +156,8 @@ execute if score #success mechanization.data matches 1 if score #storage.0 mecha
 execute if score #success mechanization.data matches 1 if score #storage.1 mechanization.data matches 576.. if data storage mechanization:temp obj.tank_2.tag.mechanization.liquid{id:"molten_gold"} run scoreboard players set #success mechanization.data 2
 execute if score #success mechanization.data matches 2 if score #storage.2 mechanization.data matches 1.. unless data storage mechanization:temp obj.tank_3.tag.mechanization.liquid{id:"molten_netherite"} run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 2 if score #storage.2 mechanization.data matches 3857.. run scoreboard players set #success mechanization.data 0
-execute if score #success mechanization.data matches 3 run scoreboard players operation @s mechanization.time = #machines.cf.alloy_furnace.speed mechanization.data
-execute if score #success mechanization.data matches 3 if score @s mechanization.time matches 3.. run scoreboard players operation @s[tag=mechanization.upgraded.nether] mechanization.time /= #cons.2 mechanization.data
+execute if score #success mechanization.data matches 2 run scoreboard players operation @s mechanization.time = #machines.cf.alloy_furnace.speed mechanization.data
+execute if score #success mechanization.data matches 2 if score @s mechanization.time matches 3.. run scoreboard players operation @s[tag=mechanization.upgraded.nether] mechanization.time /= #cons.2 mechanization.data
 
 #calculate needed power
 scoreboard players operation #count.0 mechanization.data = #machines.cf.alloy_furnace.power mechanization.data

@@ -21,7 +21,7 @@ execute if data block -30000000 0 3201 Items[0] run loot give @p mine -30000000 
 ### fill in items
 
 data remove block ~ ~ ~ Items[{tag:{ mechanization:{gui_item:1b} }}]
-execute if entity @s[tag=mechanization.errored] run item replace block ~ ~ ~ container.16 with minecraft:leather_boots{display:{Name:'{"translate":"mech.lore.alloy_furnace_error","italic":false}'}, mechanization:{gui_item:1b}}
+execute if entity @s[tag=mechanization.errored] run item replace block ~ ~ ~ container.16 with minecraft:barrier{display:{Name:'{"translate":"mech.lore.alloy_furnace_error","italic":false}'}, mechanization:{gui_item:1b}}
 
 # tank 1
 item replace block ~ ~ ~ container.11 with minecraft:leather_boots{CustomModelData:0,HideFlags:127,display:{Name:'{"translate":"mech.liquid.empty","italic":false}',Lore:[],color:0}, mechanization:{gui_item:1b}}

@@ -12,8 +12,8 @@ execute if score @s[tag=!mechanization.upgraded] mechanization.time matches 1 ru
 execute if score @s[tag=mechanization.upgraded] mechanization.time matches 1 run function mechanization:machines/machines/alloy_furnace/recipes/output_upgrade
 
 
-execute if score #active mechanization.data matches 1 unless score @s mechanization.time matches 2.. if score @s energy.storage >= #machines.cf.alloy_furnace.power mechanization.data run function mechanization:machines/machines/alloy_furnace/recipes/input_normal
-execute if score #active mechanization.data matches 1 unless score @s mechanization.time matches 2.. if score @s energy.storage >= #machines.cf.alloy_furnace.power mechanization.data run function mechanization:machines/machines/alloy_furnace/recipes/input_upgrade
+execute if score #active mechanization.data matches 1 unless score @s[tag=!mechanization.upgraded] mechanization.time matches 2.. if score @s energy.storage >= #machines.cf.alloy_furnace.power mechanization.data run function mechanization:machines/machines/alloy_furnace/recipes/input_normal
+execute if score #active mechanization.data matches 1 unless score @s[tag=mechanization.upgraded] mechanization.time matches 2.. if score @s energy.storage >= #machines.cf.alloy_furnace.power mechanization.data run function mechanization:machines/machines/alloy_furnace/recipes/input_upgrade
 
 execute if score @s mechanization.time matches 1.. if score @s energy.storage < #machines.cf.alloy_furnace.power mechanization.data run scoreboard players set @s mechanization.time 0
 execute if score @s mechanization.time matches 1.. if score @s energy.storage >= #machines.cf.alloy_furnace.power mechanization.data run scoreboard players operation @s energy.storage -= #machines.cf.alloy_furnace.power mechanization.data
