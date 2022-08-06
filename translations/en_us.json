@@ -524,7 +524,7 @@
 	"mech.manual.app_compat":"Mechanization: Compat",
 	"mech.manual.app_compat_desc":"Cross-Compatibility features with other datapacks.",
 	"mech.manual.app_tcc":"The Creeper's Compendium",
-	"mech.manual.app_tcc_desc":"Loads The Creeper's Compendium if The Creeper's Code is installed.\n3rd party datapack by _CreeperMagnet et cetera.",
+	"mech.manual.app_tcc_desc":"Loads The Creeper's Compendium if The Creeper's Code is installed.\n3rd party datapack by _CreeperMagneta.",
 	"mech.manual.app_accessory_bag":"Accessory Bag",
 	"mech.manual.app_accessory_bag_desc":"Loads Accessory Bag's manual if installed.\n3rd party datapack by Asdru22.",
 	"mech.manual.app_simplenergy":"SimplEnergy Manual",
@@ -737,7 +737,7 @@
 	"mech.manual.spawner_mover.title":"Spawner Mover",
 	"mech.manual.spawner_mover.body":"The Spawner Mover is a 1 time use item that can pick up and move a spawner. Great when paired with the Spawner Controller.\n\n\n\n\n\n\n",
 		
-	"mech.manual.nuclear_physics.title":"A Note on Nucler Physics",
+	"mech.manual.nuclear_physics.title":"A Note on Nuclear Physics",
 	"mech.manual.nuclear_physics.body":"Fission Reactors in Mech are very complicated, and can explode if unmanaged. It is difficult to fit all the relavant information in a book, so consider using the [wiki] instead.",
 	"mech.manual.centrifuge.title":"Centrifuge",
 	"mech.manual.centrifuge.body":"The Centrifuge refines nuclear fuel rods into higher grades. Insert a fuel rod by right clicking on top of the centrifuge, then wait a few minutes. The higher the grade, the hotter a reactor will run, but the more power you can get.\n",
