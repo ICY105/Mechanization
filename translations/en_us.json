@@ -699,7 +699,7 @@
 	"mech.manual.electric_lamp.body":"The Electric Lamp lights up an area with a 30 block radius- twice that of Glowstone. Requires redstone power.\n\n\n\n\n\n\n",
 	"mech.manual.super_piston.title":"Super Piston",
 	"mech.manual.super_piston.body":"The Super Piston is like a normal piston, but can move Tile Entities and Machines. Does not work with slime/honey blocks.\n\n\n\n\n\n\n",
-	"mech.manual.super_sticky_piston.title":"Super Stick Piston",
+	"mech.manual.super_sticky_piston.title":"Super Sticky Piston",
 	"mech.manual.super_sticky_piston.body":"A sticky varient of the Super Piston.\n\n\n\n\n\n\n\n\n\n\n",
 	"mech.manual.turn_table.title":"Turn Table",
 	"mech.manual.turn_table.body":"The Turn Table 'right clicks with a wrench' any block above it. This can be used to rotate blocks, switch machine states, or activate a Quarry.\n\n\n\n\n\n",
