@@ -820,7 +820,7 @@
 	"mech.manual.energized_heat_sink.title":"Energized Heat Sink",
 	"mech.manual.energized_heat_sink.body":"The Energized Heat Sink reduces the EPAC's heat output at the cost of additional power ussage. Apply at a Tinker Table.\n\n\n\n\n\n\n",
 	"mech.manual.passive_heat_sink.title":"Passive Heat Sink",
-	"mech.manual.passive_heat_sink.body":"The Passive Heat Sink decreases power ussage at the cost of increases heat output. Apply at a Tinker Table.\n\n\n\n\n\n\n",
+	"mech.manual.passive_heat_sink.body":"The Passive Heat Sink decreases power usage at the cost of increases heat output. Apply at a Tinker Table.\n\n\n\n\n\n\n",
 	
 	"mech.manual.compressor.title":"Compressor",
 	"mech.manual.compressor.body":"The Compressor can compact any item by following 2x2 and 3x3 recipes. (ie. 9 Iron Ingots -> Iron Block). Great for automating melon farms.\n\n\n\n\n\n",
