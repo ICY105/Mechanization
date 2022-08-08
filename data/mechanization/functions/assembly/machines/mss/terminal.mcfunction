@@ -47,6 +47,8 @@ execute if score #timer.20 mechanization.data matches 0 if entity @s[tag=mechani
 execute if entity @s[tag=!mechanization.active] store result entity @s Item.tag.CustomModelData int 6425903 if entity @s
 
 # cleanup
+execute if entity @s[tag=mechanization.active] as @a[distance=..12] at @s if data entity @s Inventory[].tag.mss run function mechanization:assembly/machines/mss/clear_item_data
+
 execute unless block ~ ~ ~ minecraft:barrel if entity @s[tag=mechanization.active] run function mechanization:assembly/machines/mss/get_drive/terminal_insert
 execute unless block ~ ~ ~ minecraft:barrel if entity @s[tag=mechanization.active] run kill @e[type=item,distance=..0.5]
 execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_machine_t3

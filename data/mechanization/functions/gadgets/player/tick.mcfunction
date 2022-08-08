@@ -1,6 +1,6 @@
 
 # drill
-execute if score @s mechanization.item_id matches 5 if data entity @s SelectedItem.tag.mechanization{id:"drill"} run function mechanization:gadgets/player/drill/tick
+execute if score @s mechanization.item_id matches 5 if data block -30000000 0 3201 Items[0].tag.mechanization{id:"drill"} run function mechanization:gadgets/player/drill/tick
 
 # armor
 execute if predicate mechanization:equipment/wearing_modular_armor run function mechanization:gadgets/player/modular_armor/tick
@@ -14,8 +14,8 @@ execute if score #timer.10 mechanization.data matches 0 if predicate mechanizati
 execute if predicate mechanization:equipment/wearing_phase_boots run function mechanization:gadgets/player/modular_armor/wall_walk
 
 # firearm
-execute if score @s mechanization.item_id matches 4 if data entity @s SelectedItem.tag.mechanization{id:"epac"} if entity @s[scores={mechanization.time=1..,mechanization.weaponheat=..1000,mechanization.firerate=..0}] run function mechanization:gadgets/player/firearms/fire_weapon
-execute if score @s mechanization.item_id matches 4 if data entity @s SelectedItem.tag.mechanization{id:"epac"} if score @s mechanization.time matches 1.. if score @s mechanization.weaponheat matches ..1000 run function mechanization:gadgets/player/firearms/recoil
+execute if score @s mechanization.item_id matches 4 if data block -30000000 0 3201 Items[0].tag.mechanization{id:"epac"} if entity @s[scores={mechanization.time=1..,mechanization.weaponheat=..1000,mechanization.firerate=..0}] run function mechanization:gadgets/player/firearms/fire_weapon
+execute if score @s mechanization.item_id matches 4 if data block -30000000 0 3201 Items[0].tag.mechanization{id:"epac"} if score @s mechanization.time matches 1.. if score @s mechanization.weaponheat matches ..1000 run function mechanization:gadgets/player/firearms/recoil
 
 execute if score @s mechanization.time matches 1.. run scoreboard players remove @s mechanization.time 1
 execute if score @s mechanization.firerate matches -59.. run scoreboard players remove @s mechanization.firerate 1

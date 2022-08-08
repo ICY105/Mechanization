@@ -17,6 +17,3 @@ execute if score #timer.20 mechanization.data matches 12 as @e[type=#mechanizati
 execute if score #timer.20 mechanization.data matches 11 as @e[type=#mechanization:item_frames,tag=mechanization.item_inserter] at @s run function mechanization:assembly/machines/item_inserter/item_inserter
 
 execute if score #timer.100 mechanization.data matches 90 as @e[type=#mechanization:item_frames,tag=mechanization.item_pipe] at @s run function mechanization:assembly/machines/item_pipe/item_pipe
-
-# player
-execute as @a at @s run function mechanization:assembly/player/tick
