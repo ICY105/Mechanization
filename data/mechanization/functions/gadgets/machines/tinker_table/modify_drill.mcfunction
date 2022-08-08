@@ -4,7 +4,7 @@ data remove storage mechanization:temp obj.tag.auto_smelt
 data remove storage mechanization:temp obj.tag.flor_dat
 
 scoreboard players set #mining_speed mechanization.data 0
-scoreboard players set #mining_area mechanization.data 0
+scoreboard players set #mining_area mechanization.data 1
 scoreboard players set #attack_damage mechanization.data 30
 scoreboard players set #unbreaking mechanization.data 0
 
