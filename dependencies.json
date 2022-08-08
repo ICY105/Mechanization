@@ -88,6 +88,10 @@
       "value": "#mechanization:calls/right_click"
     },
 	{
+      "tag": "player_action:v1/tick",
+      "value": "#mechanization:calls/player_tick"
+    },
+	{
       "tag": "energy:v1/energy_update",
       "value": "mechanization:machines/machines/energy_update"
     },

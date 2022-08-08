@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{mechanization:{gui_item:1b}}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards":{ 
+    "function":"mechanization:base/player/has_gui_item"
+  }
+}
