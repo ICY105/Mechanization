@@ -11,7 +11,7 @@ execute if data entity @s[gamemode=!creative] SelectedItem.tag.mechanization{id:
 
 #add effects
 data modify storage mechanization:temp obj set from entity @s SelectedItem.tag.mechanization.liquid
-function mechanization:base/players/drink_liquid/drink_liquid_2
+function mechanization:base/player/drink_liquid/drink_liquid_2
 
 #clear bottle
-execute if entity @s[tag=mechanization.clear_bottle] run schedule function mechanization:base/players/drink_liquid/drink_liquid_clear 1t
+execute if entity @s[tag=mechanization.clear_bottle] run schedule function mechanization:base/player/drink_liquid/drink_liquid_clear 1t

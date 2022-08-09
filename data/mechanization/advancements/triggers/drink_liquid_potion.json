@@ -5,7 +5,7 @@
 			"conditions": {
                 "item": {
                     "item": "minecraft:potion",
-					"nbt": "{mech_itemid:1107,ctc:{traits:{liquid:{}}}}"
+					"nbt": "{mechanization:{id:\"glass_bottle\"}}"
                 }
             }
 		}

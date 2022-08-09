@@ -6,4 +6,4 @@ execute if score #amount mechanization.data matches 10.. run scoreboard players 
 execute if score #amount mechanization.data matches 1.. run experience add @s 1 points
 execute if score #amount mechanization.data matches 1.. run scoreboard players remove #amount mechanization.data 1
 
-execute if score #amount mechanization.data matches 1.. run function mechanization:base/players/drink_liquid/drink_liquid_experience
+execute if score #amount mechanization.data matches 1.. run function mechanization:base/player/drink_liquid/drink_liquid_experience

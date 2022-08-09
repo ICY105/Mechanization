@@ -6,4 +6,4 @@ execute if data storage mechanization:temp obj{gas:1b} run effect give @s minecr
 
 
 execute if data storage mechanization:temp obj{id:"milk"} run effect clear @s
-execute if data storage mechanization:temp obj{id:"experience"} run function mechanization:base/players/drink_liquid/drink_liquid_experience
+execute if data storage mechanization:temp obj{id:"experience"} run function mechanization:base/player/drink_liquid/drink_liquid_experience
