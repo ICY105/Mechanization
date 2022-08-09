@@ -1,6 +1,4 @@
 
-# 2 tick clock
-execute if score #timer.2 mechanization.data matches 0 as @e[type=#mechanization:item_frames,tag=mechanization.lightning_generator] at @s run function mechanization:machines/machines/lightning_generator
 
 # 20 tick clock
 execute if score #timer.20 mechanization.data matches 0 as @e[type=#mechanization:item_frames,tag=mechanization.battery.t1] at @s run function mechanization:machines/machines/battery/tier_1_battery
@@ -30,7 +28,6 @@ execute if score #timer.20 mechanization.data matches 2 as @e[type=#mechanizatio
 # 100 tick clock
 execute if score #timer.100 mechanization.data matches 0 as @e[type=#mechanization:item_frames,tag=mechanization.cable] at @s unless block ~ ~ ~ minecraft:moving_piston run function mechanization:machines/machines/cable/break
 execute if score #timer.100 mechanization.data matches 1 as @e[type=#mechanization:item_frames,tag=mechanization.tree_feller] at @s run function mechanization:machines/machines/tree_feller/tree_feller
-execute as @e[type=armor_stand,tag=mechanization.tree_feller.model,tag=mechanization.active] run function mechanization:machines/machines/tree_feller/tree_feller_model
 execute if score #timer.100 mechanization.data matches 2 as @e[type=#mechanization:item_frames,tag=mechanization.auto_farm] at @s run function mechanization:machines/machines/auto_farm/auto_farm
 execute if score #timer.100 mechanization.data matches 3 as @e[type=#mechanization:item_frames,tag=mechanization.mob_grinder] at @s run function mechanization:machines/machines/mob_grinder/mob_grinder
 execute if score #timer.100 mechanization.data matches 3 as @e[type=#mechanization:item_frames,tag=mechanization.electric_lamp] at @s run function mechanization:machines/machines/electric_lamp/electric_lamp

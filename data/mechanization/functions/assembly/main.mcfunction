@@ -1,10 +1,5 @@
 																					
-# machine tick
-execute if score #timer.2 mechanization.data matches 1 as @e[type=#mechanization:item_frames,tag=mechanization.unlimited_storage_unit] at @s run function mechanization:assembly/machines/unlimited_storage_unit/unlimited_storage_unit
-execute if score #timer.2 mechanization.data matches 0 as @e[type=#mechanization:item_frames,tag=mechanization.fast_hopper] at @s run function mechanization:assembly/machines/fast_hopper/fast_hopper
-
 execute if score #timer.10 mechanization.data matches 9 as @e[type=#mechanization:item_frames,tag=mechanization.terminal,tag=!mechanization.active] at @s run function mechanization:assembly/machines/mss/terminal
-execute as @e[type=#mechanization:item_frames,tag=mechanization.terminal,tag=mechanization.active] at @s run function mechanization:assembly/machines/mss/terminal
 
 execute if score #timer.20 mechanization.data matches 19 as @e[type=#mechanization:item_frames,tag=mechanization.compressor] at @s run function mechanization:assembly/machines/compressor/compressor
 execute if score #timer.20 mechanization.data matches 18 as @e[type=#mechanization:item_frames,tag=mechanization.decompressor] at @s run function mechanization:assembly/machines/decompressor/decompressor

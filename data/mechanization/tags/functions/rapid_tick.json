@@ -1,0 +1,8 @@
+{
+	"required":false,
+	"values":[
+		"mechanization:machines/rapid_tick",
+		"mechanization:gadgets/rapid_tick",
+		"mechanization:assembly/rapid_tick"
+	]
+}
