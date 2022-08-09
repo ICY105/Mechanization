@@ -4,7 +4,7 @@ item replace block -30000000 0 3201 container.0 with minecraft:air
 execute if score @s mechanization.manual matches -1 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/base
 execute if score @s mechanization.manual matches -2 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/machines
 #execute if score @s mechanization.manual matches -3 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/nuclear
-execute if score @s mechanization.manual matches -3 run tellraw @p {"text":"Mechanization: Nuclear is being remade and is currently unavailable. Stay tuned for great things!", "color":"gray"}
+execute if score @s mechanization.manual matches -3 run tellraw @s {"text":"Mechanization: Nuclear is being remade and is currently unavailable. Stay tuned for great things!", "color":"gray"}
 execute if score @s mechanization.manual matches -4 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/gadgets
 execute if score @s mechanization.manual matches -5 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/assembly
 execute if score @s mechanization.manual matches -9 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/compat
