@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:cracked_deepslate_bricks",
+          "name": "minecraft:deepslate_bricks",
           "conditions": [
             {
               "condition": "minecraft:inverted",
@@ -21,7 +21,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:deepslate_bricks",
+          "name": "minecraft:cracked_deepslate_bricks",
           "conditions": [
             {
               "condition": "minecraft:match_tool",
