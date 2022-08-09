@@ -1,4 +1,6 @@
 
+tag @s remove mechanization.speed
+
 # copy item
 data remove block -30000000 0 3201 Items
 item replace block -30000000 0 3201 container.0 from entity @s armor.head
