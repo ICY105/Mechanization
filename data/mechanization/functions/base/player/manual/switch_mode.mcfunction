@@ -33,3 +33,6 @@ execute if score @s mechanization.manual matches -8 if data block -30000000 0 32
 execute if score @s mechanization.manual matches -8 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block -30000000 0 3201 Items[{Slot:0b}].tag.pages[0] set from block -30000000 0 3201 Items[{Slot:1b}].tag.pages[2]
 execute if score @s mechanization.manual matches -8 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block -30000000 0 3201 Items[{Slot:1b}].tag.pages set from block -30000000 0 3201 Items[{Slot:0b}].tag.pages
 execute if score @s mechanization.manual matches -8 if data block -30000000 0 3201 Items[{Slot:0b}] run item replace entity @s weapon.mainhand from block -30000000 0 3201 container.1
+
+execute if score @s mechanization.manual matches -1.. run item replace block -30000000 0 3201 container.0 with minecraft:air
+execute if score @s mechanization.manual matches -1.. run item replace block -30000000 0 3201 container.1 with minecraft:air
