@@ -17,9 +17,9 @@ execute if block ~ ~1 ~ minecraft:warped_nylium if block ~ ~2 ~ minecraft:warped
 execute if score #tree mechanization.data matches 1.. run setblock ~ ~2 ~ minecraft:air
 
 execute if score #tree mechanization.data matches 1 positioned ~ ~2 ~ run place feature minecraft:oak
-execute if score #tree mechanization.data matches 2 positioned ~ ~2 ~ run place feature minecraft:spruce
-execute if score #tree mechanization.data matches 3 positioned ~ ~2 ~ run place feature minecraft:birch
-execute if score #tree mechanization.data matches 4 positioned ~ ~2 ~ run place feature minecraft:jungle_tree
+execute if score #tree mechanization.data matches 2 positioned ~ ~2 ~ run place feature minecraft:birch
+execute if score #tree mechanization.data matches 3 positioned ~ ~2 ~ run place feature minecraft:jungle_tree
+execute if score #tree mechanization.data matches 4 positioned ~ ~2 ~ run place feature minecraft:spruce
 execute if score #tree mechanization.data matches 5 positioned ~ ~2 ~ run place feature minecraft:acacia
 execute if score #tree mechanization.data matches 6 positioned ~ ~2 ~ run place feature minecraft:dark_oak
 execute if score #tree mechanization.data matches 7 positioned ~ ~2 ~ run place feature minecraft:mangrove
@@ -30,8 +30,8 @@ execute if score #tree mechanization.data matches 9 positioned ~ ~2 ~ run place 
 # replace sapling if tree didn't grow
 execute if score #tree mechanization.data matches 1 unless block ~ ~2 ~ minecraft:oak_log run setblock ~ ~2 ~ minecraft:oak_sapling
 execute if score #tree mechanization.data matches 2 unless block ~ ~2 ~ minecraft:birch_log run setblock ~ ~2 ~ minecraft:birch_sapling
-execute if score #tree mechanization.data matches 3 unless block ~ ~2 ~ minecraft:spruce_log run setblock ~ ~2 ~ minecraft:jungle_sapling
-execute if score #tree mechanization.data matches 4 unless block ~ ~2 ~ minecraft:jungle_log run setblock ~ ~2 ~ minecraft:spruce_sapling
+execute if score #tree mechanization.data matches 3 unless block ~ ~2 ~ minecraft:jungle_log run setblock ~ ~2 ~ minecraft:jungle_sapling
+execute if score #tree mechanization.data matches 4 unless block ~ ~2 ~ minecraft:spruce_log run setblock ~ ~2 ~ minecraft:spruce_log
 execute if score #tree mechanization.data matches 5 unless block ~ ~2 ~ minecraft:acacia_log run setblock ~ ~2 ~ minecraft:acacia_sapling
 execute if score #tree mechanization.data matches 6 unless block ~ ~2 ~ minecraft:dark_oak_log run setblock ~ ~2 ~ minecraft:dark_oak_sapling
 

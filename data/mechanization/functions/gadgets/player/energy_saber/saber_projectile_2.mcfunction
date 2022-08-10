@@ -1,9 +1,4 @@
 
-# damage
-scoreboard players operation #predicate mechanization.data = @s player_action.uuid.0
-scoreboard players operation #damage mechanization.data = @s mechanization.weaponheat
-execute positioned ~ ~-1 ~ as @e[distance=..0.75,type=#mechanization:living,nbt={HurtTime:0s},predicate=!mechanization:is_player] run function mechanization:base/utils/damage_entity
-
 # movement
 tp @s[tag=!mechanization.invert] ^ ^ ^0.5
 scoreboard players remove @s[tag=!mechanization.invert] mechanization.data 1

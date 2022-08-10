@@ -1,1 +1,0 @@
-execute if score #smithed.item.patch load.status matches ..1 unless score #smithed.item.patch load.status matches 1 run function smithed.item:calls/v0.0.1/technical/enumerate/set_version

@@ -46,14 +46,6 @@
       "local": "external-libraries/Smithed Damage.zip"
     },
     {
-      "name": "Smithed Actionbar",
-      "local": "external-libraries/Smithed Actionbar.zip"
-    },
-    {
-      "name": "Smithed Item",
-      "local": "external-libraries/Smithed Item.zip"
-    },
-    {
       "name": "Smithed Custom Block",
       "local": "external-libraries/Smithed Custom Block.zip"
     },

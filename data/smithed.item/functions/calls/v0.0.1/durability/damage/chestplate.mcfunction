@@ -1,1 +1,0 @@
-execute if score #smithed.item.major load.status matches 0 if score #smithed.item.minor load.status matches 0 if score #smithed.item.patch load.status matches 1 run function smithed.item:impl/v0.0.1/durability/damage/chestplate
