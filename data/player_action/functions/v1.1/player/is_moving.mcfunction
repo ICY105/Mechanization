@@ -1,8 +1,6 @@
 
 # cache position
-summon minecraft:marker ~ ~ ~ {Tags:["player_action.temp"]}
-execute as @e[type=minecraft:marker,tag=player_action.temp,distance=..1] run function player_action:v1.1/utils/get_marker_pos
-#data modify storage player_action:temp list set from entity @s Pos
+data modify storage player_action:temp list set from entity @s Pos
 
 # calc difference
 execute store result score #x player_action.data run data get storage player_action:temp list[0] 70
