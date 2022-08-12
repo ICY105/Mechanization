@@ -20,7 +20,7 @@
             "conditions": {
                 "items": [{
 					    "id": "minecraft:blast_furnace",
-                        "nbt": "{smithed:{dict:{ore:{tin:1b}}}}"
+                        "nbt": "{smithed:{dict:{raw:{tin:1b}}}}"
                     }
                 ]
             }
