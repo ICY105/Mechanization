@@ -3194,11 +3194,459 @@
 			"required": false
 		},
 		{
-			"id": "minecraft:shrieker",
+			"id": "minecraft:sculk_shrieker",
 			"required": false
 		},
 		{
-			"id": "minecraft:sensor",
+			"id": "minecraft:sculk_sensor",
+			"required": false
+		},
+		{
+			"id": "minecraft:big_dripleaf",
+			"required": false
+		},
+		{
+			"id": "minecraft:big_dripleaf_stem",
+			"required": false
+		},
+		{
+			"id": "minecraft:small_dripleaf",
+			"required": false
+		},
+		{
+			"id": "minecraft:amethyst_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:budding_amethyst",
+			"required": false
+		},
+		{
+			"id": "minecraft:small_amethyst_bud",
+			"required": false
+		},
+		{
+			"id": "minecraft:medium_amethyst_bud",
+			"required": false
+		},
+		{
+			"id": "minecraft:large_amethyst_bud",
+			"required": false
+		},
+		{
+			"id": "minecraft:amethyst_cluster",
+			"required": false
+		},
+		{
+			"id": "minecraft:azalea_leaves",
+			"required": false
+		},
+		{
+			"id": "minecraft:flowering_azalea_leaves",
+			"required": false
+		},
+		{
+			"id": "minecraft:azalea",
+			"required": false
+		},
+		{
+			"id": "minecraft:flowering_azalea",
+			"required": false
+		},
+		{
+			"id": "minecraft:copper_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_copper_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:raw_copper_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:copper_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:exposed_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:weathered_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:oxidized_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:cut_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:exposed_cut_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:weathered_cut_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:oxidized_cut_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:cut_copper_stairs",
+			"required": false
+		},
+		{
+			"id": "minecraft:exposed_cut_copper_stairs",
+			"required": false
+		},
+		{
+			"id": "minecraft:weathered_cut_copper_stairs",
+			"required": false
+		},
+		{
+			"id": "minecraft:oxidized_cut_copper_stairs",
+			"required": false
+		},
+		{
+			"id": "minecraft:cut_copper_slab",
+			"required": false
+		},
+		{
+			"id": "minecraft:exposed_cut_copper_slab",
+			"required": false
+		},
+		{
+			"id": "minecraft:weathered_cut_copper_slab",
+			"required": false
+		},
+		{
+			"id": "minecraft:oxidized_cut_copper_slab",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_copper_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_exposed_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_weathered_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_oxidized_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_cut_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_exposed_cut_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_weathered_cut_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_oxidized_cut_copper",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_cut_copper_stairs",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_exposed_cut_copper_stairs",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_weathered_cut_copper_stairs",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_oxidized_cut_copper_stairs",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_cut_copper_slab",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_exposed_cut_copper_slab",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_weathered_cut_copper_slab",
+			"required": false
+		},
+		{
+			"id": "minecraft:waxed_oxidized_cut_copper_slab",
+			"required": false
+		},
+		{
+			"id": "minecraft:raw_iron_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:raw_gold_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:calcite",
+			"required": false
+		},
+		{
+			"id": "minecraft:candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:white_candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:orange_candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:magenta_candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:light_blue_candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:yellow_candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:lime_candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:pink_candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:gray_candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:light_gray_candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:cyan_candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:purple_candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:blue_candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:brown_candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:green_candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:red_candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:black_candle",
+			"required": false
+		},
+		{
+			"id": "minecraft:cave_vines",
+			"required": false
+		},
+		{
+			"id": "minecraft:cave_vines_plant",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate",
+			"required": false
+		},
+		{
+			"id": "minecraft:cobbled_deepslate",
+			"required": false
+		},
+		{
+			"id": "minecraft:polished_deepslate",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_coal_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_iron_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_gold_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_redstone_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_emerald_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_lapis_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_diamond_ore",
+			"required": false
+		},
+		{
+			"id": "minecraft:infested_deepslate",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_bricks",
+			"required": false
+		},
+		{
+			"id": "minecraft:cracked_deepslate_bricks",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_tiles",
+			"required": false
+		},
+		{
+			"id": "minecraft:cracked_deepslate_tiles",
+			"required": false
+		},
+		{
+			"id": "minecraft:chiseled_deepslate",
+			"required": false
+		},
+		{
+			"id": "minecraft:cobbled_deepslate_wall",
+			"required": false
+		},
+		{
+			"id": "minecraft:polished_deepslate_wall",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_brick_wall",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_tile_wall",
+			"required": false
+		},
+		{
+			"id": "minecraft:cobbled_deepslate_stairs",
+			"required": false
+		},
+		{
+			"id": "minecraft:polished_deepslate_stairs",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_brick_stairs",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_tile_stairs",
+			"required": false
+		},
+		{
+			"id": "minecraft:cobbled_deepslate_slab",
+			"required": false
+		},
+		{
+			"id": "minecraft:polished_deepslate_slab",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_brick_slab",
+			"required": false
+		},
+		{
+			"id": "minecraft:deepslate_tile_slab",
+			"required": false
+		},
+		{
+			"id": "minecraft:dripstone",
+			"required": false
+		},
+		{
+			"id": "minecraft:pointed_dripstone",
+			"required": false
+		},
+		{
+			"id": "minecraft:glow_lichen",
+			"required": false
+		},
+		{
+			"id": "minecraft:hanging_roots",
+			"required": false
+		},
+		{
+			"id": "minecraft:rooted_dirt",
+			"required": false
+		},
+		{
+			"id": "minecraft:light",
+			"required": false
+		},
+		{
+			"id": "minecraft:moss_block",
+			"required": false
+		},
+		{
+			"id": "minecraft:moss_carpet",
+			"required": false
+		},
+		{
+			"id": "minecraft:potted_azalea_bush",
+			"required": false
+		},
+		{
+			"id": "minecraft:potted_flowering_azalea_bush",
+			"required": false
+		},
+		{
+			"id": "minecraft:powder_snow",
+			"required": false
+		},
+		{
+			"id": "minecraft:smooth_basalt",
+			"required": false
+		},
+		{
+			"id": "minecraft:spore_blossom",
+			"required": false
+		},
+		{
+			"id": "minecraft:tinted_glass",
 			"required": false
 		}
 	]
