@@ -1,19 +1,12 @@
 
-execute as @s[nbt={Rotation:[-90f,0f]}] run data merge entity @s {Rotation:[270f,0f]}
-execute as @s[nbt={Rotation:[-180f,0f]}] run data merge entity @s {Rotation:[180f,0f]}
-execute as @s[nbt={Rotation:[-270f,0f]}] run data merge entity @s {Rotation:[90f,0f]}
-execute as @s[nbt={Rotation:[-359.99f,0f]}] run data merge entity @s {Rotation:[0.01f,0f]}
+execute store result score #rotation mechanization.data run data get entity @s Rotation[0]
 
-execute as @s[nbt={Rotation:[270f,0f]}] run data merge entity @s {Rotation:[-0.01f,0f]}
-execute as @s[nbt={Rotation:[180f,0f]}] run data merge entity @s {Rotation:[270f,0f]}
-execute as @s[nbt={Rotation:[90f,0f]}] run data merge entity @s {Rotation:[180f,0f]}
-execute as @s[nbt={Rotation:[0.01f,0f]}] run data merge entity @s {Rotation:[90f,0f]}
-execute as @s[nbt={Rotation:[-0.01f,0f]}] run data merge entity @s {Rotation:[0.01f,0f]}
+execute if score #rotation mechanization.data matches ..-1 run scoreboard players add #rotation mechanization.data 360
+scoreboard players add #rotation mechanization.data 90
+execute if score #rotation mechanization.data matches 360.. run scoreboard players remove #rotation mechanization.data 360
 
-execute if entity @s[nbt={Rotation:[270f,0f]}] align xyz positioned ~0.5 ~ ~0.5 run tp @s ~-0.2 ~ ~
-execute if entity @s[nbt={Rotation:[180f,0f]}] align xyz positioned ~0.5 ~ ~0.5 run tp @s ~ ~ ~0.2
-execute if entity @s[nbt={Rotation:[90f,0f]}] align xyz positioned ~0.5 ~ ~0.5 run tp @s ~0.2 ~ ~
-execute if entity @s[nbt={Rotation:[0.01f,0f]}] align xyz positioned ~0.5 ~ ~0.5 run tp @s ~ ~ ~-0.2
-
-execute if entity @s[nbt={Rotation:[-180f,0f]}] run data merge entity @s {Rotation:[180f,0f]}
-execute if entity @s[nbt={Rotation:[-90f,0f]}] run data merge entity @s {Rotation:[270f,0f]}
+execute store result entity @s Rotation[0] float 1 run scoreboard players get #rotation mechanization.data
+execute if score #rotation mechanization.data matches 0..89 align xyz run tp @s ~0.5 ~ ~0.3
+execute if score #rotation mechanization.data matches 90..179 align xyz run tp @s ~0.7 ~ ~0.5
+execute if score #rotation mechanization.data matches 180..269 align xyz run tp @s ~0.5 ~ ~0.7
+execute if score #rotation mechanization.data matches 270..359 align xyz run tp @s ~0.3 ~ ~0.5
