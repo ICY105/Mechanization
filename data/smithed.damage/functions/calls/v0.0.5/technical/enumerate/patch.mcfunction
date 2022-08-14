@@ -1,0 +1,1 @@
+execute if score #smithed.damage.patch load.status matches ..5 unless score #smithed.damage.patch load.status matches 5 run function smithed.damage:calls/v0.0.5/technical/enumerate/set_version

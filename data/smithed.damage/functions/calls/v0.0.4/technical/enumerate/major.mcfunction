@@ -1,2 +1,0 @@
-execute if score #smithed.damage.major load.status matches ..0 unless score #smithed.damage.major load.status matches 0 run function smithed.damage:calls/v0.0.4/technical/enumerate/set_version
-execute unless score #smithed.damage.set load.status matches 1 if score #smithed.damage.major load.status matches ..0 if score #smithed.damage.major load.status matches 0 run function smithed.damage:calls/v0.0.4/technical/enumerate/minor
