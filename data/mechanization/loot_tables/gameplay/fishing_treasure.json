@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 85,
+          "quality": -2,
+          "name": "minecraft:gameplay/fishing/junk"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 15,
+          "quality": 2,
+          "name": "minecraft:gameplay/fishing/treasure"
+        }
+      ]
+    }
+  ]
+}
