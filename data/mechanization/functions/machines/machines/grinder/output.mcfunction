@@ -15,7 +15,7 @@ execute if score #output_count mechanization.data matches 1.. run function mecha
 #ores
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:coal_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:coal 1
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:iron_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:raw_iron 1
-execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:copper_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:raw_copper 1
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:copper_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:raw_copper 4
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:gold_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:raw_gold 1
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:diamond_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:diamond 1
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:emerald_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:emerald 1
@@ -24,7 +24,7 @@ execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{
 
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:deepslate_coal_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:coal 1
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:deepslate_iron_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:raw_iron 1
-execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:deepslate_copper_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:raw_copper 1
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:deepslate_copper_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:raw_copper 4
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:deepslate_gold_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:raw_gold 1
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:deepslate_diamond_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:diamond 1
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:deepslate_emerald_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:emerald 1

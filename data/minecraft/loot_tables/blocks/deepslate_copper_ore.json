@@ -13,6 +13,15 @@
               "name": "minecraft:copper_ingot",
               "functions": [
                 {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 2.0,
+                    "max": 5.0
+                  },
+                  "add": false
+                },
+				{
                   "function": "minecraft:apply_bonus",
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:ore_drops"
@@ -44,12 +53,21 @@
                   }
                 }
               ],
-              "name": "minecraft:deepslate_copper_ore"
+              "name": "minecraft:copper_ore"
             },
             {
               "type": "minecraft:item",
               "functions": [
                 {
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 2.0,
+                    "max": 5.0
+                  },
+                  "add": false
+                },
+				{
                   "function": "minecraft:apply_bonus",
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:ore_drops"
