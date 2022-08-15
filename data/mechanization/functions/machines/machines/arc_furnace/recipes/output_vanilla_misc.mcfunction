@@ -39,3 +39,11 @@ execute if score @s mechanization.fluid.0 matches 0 if data storage mechanizatio
 execute if score @s mechanization.fluid.0 matches 1..3000 if data storage mechanization:temp obj.input_item{id:"minecraft:obsidian"} if data storage mechanization:temp obj.fluid_item.tag.mechanization.liquid{id:"lava"} run scoreboard players add @s mechanization.fluid.0 1000
 execute if score @s mechanization.fluid.0 matches 0 if data storage mechanization:temp obj.input_item{id:"minecraft:obsidian"} run loot replace block -30000000 0 3201 container.0 loot mechanization:base/liquids/vial_of_lava
 execute if score @s mechanization.fluid.0 matches 0 if data storage mechanization:temp obj.input_item{id:"minecraft:obsidian"} run scoreboard players add @s mechanization.fluid.0 1000
+
+execute if score @s mechanization.fluid.0 matches 1..3999 if data storage mechanization:temp obj.input_item{id:"minecraft:sculk"} if data storage mechanization:temp obj.fluid_item.tag.mechanization.liquid{id:"experience"} run scoreboard players add @s mechanization.fluid.0 1
+execute if score @s mechanization.fluid.0 matches 0 if data storage mechanization:temp obj.input_item{id:"minecraft:sculk"} run loot replace block -30000000 0 3201 container.0 loot mechanization:base/liquids/vial_of_experience
+execute if score @s mechanization.fluid.0 matches 0 if data storage mechanization:temp obj.input_item{id:"minecraft:sculk"} run scoreboard players add @s mechanization.fluid.0 1
+
+execute if score @s mechanization.fluid.0 matches 1..3995 if data storage mechanization:temp obj.input_item{id:"minecraft:sculk_catalyst"} if data storage mechanization:temp obj.fluid_item.tag.mechanization.liquid{id:"experience"} run scoreboard players add @s mechanization.fluid.0 5
+execute if score @s mechanization.fluid.0 matches 0 if data storage mechanization:temp obj.input_item{id:"minecraft:sculk_catalyst"} run loot replace block -30000000 0 3201 container.0 loot mechanization:base/liquids/vial_of_experience
+execute if score @s mechanization.fluid.0 matches 0 if data storage mechanization:temp obj.input_item{id:"minecraft:sculk_catalyst"} run scoreboard players add @s mechanization.fluid.0 5

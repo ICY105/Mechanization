@@ -20,3 +20,8 @@ execute if score @s mechanization.fluid.0 matches 1..3000 if data storage mechan
 execute if score @s mechanization.fluid.0 matches 0 if data storage mechanization:temp obj.input_item{	    id:"minecraft:magma_block"} run scoreboard players set @s mechanization.time 140
 execute if score @s mechanization.fluid.0 matches 1..3000 if data storage mechanization:temp obj.input_item{id:"minecraft:obsidian"} if data storage mechanization:temp obj.fluid_item.tag.mechanization.liquid{id:"lava"} run scoreboard players set @s mechanization.time 120
 execute if score @s mechanization.fluid.0 matches 0 if data storage mechanization:temp obj.input_item{	    id:"minecraft:obsidian"} run scoreboard players set @s mechanization.time 120
+
+execute if score @s mechanization.fluid.0 matches 1..3999 if data storage mechanization:temp obj.input_item{id:"minecraft:sculk"} if data storage mechanization:temp obj.fluid_item.tag.mechanization.liquid{id:"experience"} run scoreboard players set @s mechanization.time 3
+execute if score @s mechanization.fluid.0 matches 0 if data storage mechanization:temp obj.input_item{	    id:"minecraft:sculk"} run scoreboard players set @s mechanization.time 3
+execute if score @s mechanization.fluid.0 matches 1..3995 if data storage mechanization:temp obj.input_item{id:"minecraft:sculk_catalyst"} if data storage mechanization:temp obj.fluid_item.tag.mechanization.liquid{id:"experience"} run scoreboard players set @s mechanization.time 3
+execute if score @s mechanization.fluid.0 matches 0 if data storage mechanization:temp obj.input_item{	    id:"minecraft:sculk_catalyst"} run scoreboard players set @s mechanization.time 3
