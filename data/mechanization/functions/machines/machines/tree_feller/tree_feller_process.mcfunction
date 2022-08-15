@@ -15,7 +15,7 @@ execute if entity @s[tag=mechanization.upgraded.ender] run scoreboard players se
 
 scoreboard players set #radius mechanization.data 6
 execute if score #active mechanization.data matches 1 run function mechanization:machines/machines/tree_feller/tree_feller_break_wood 
-execute if score #active mechanization.data matches 1 run tp @e[type=item,distance=..64,nbt={Age:0s}] ^ ^ ^-2
+execute if score #active mechanization.data matches 1 run tp @e[type=item,distance=..64,nbt={Age:0s}] ^ ^-0.5 ^-2
 
 # power & effects
 execute if score #active mechanization.data matches 1 run scoreboard players remove @s energy.storage 160
