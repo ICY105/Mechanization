@@ -28,6 +28,7 @@ scoreboard players set #cons.3 mechanization.data 3
 scoreboard players set #cons.4 mechanization.data 4
 scoreboard players set #cons.5 mechanization.data 5
 scoreboard players set #cons.7 mechanization.data 7
+scoreboard players set #cons.8 mechanization.data 8
 scoreboard players set #cons.10 mechanization.data 10
 scoreboard players set #cons.16 mechanization.data 16
 scoreboard players set #cons.25 mechanization.data 25
