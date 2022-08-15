@@ -137,3 +137,15 @@ data modify storage mechanization:temp obj.tag.display.Lore append from block -3
 
 data modify block -30000000 0 3202 Text1 set value '[{"translate":"mech.lore.added_by","color":"blue","italic":false}]'
 data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 Text1
+
+# store enchantment level
+scoreboard players set #enchants mechanization.data 0
+
+execute store result score #level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[0].lvl
+scoreboard players operation #enchants mechanization.data += #level mechanization.data
+execute store result score #level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[1].lvl
+scoreboard players operation #enchants mechanization.data += #level mechanization.data
+execute store result score #level mechanization.data run data get storage mechanization:temp obj.tag.Enchantments[2].lvl
+scoreboard players operation #enchants mechanization.data += #level mechanization.data
+
+execute store result storage mechanization:temp obj.tag.mechanization.upgrade.enchantment_level int 1 run scoreboard players get #enchants mechanization.data

@@ -9,6 +9,7 @@
 		"#minecraft:wool_carpets",
 		"#minecraft:corals",
 		"#minecraft:candles",
+		"#minecraft:buttons",
 		
 		"minecraft:grass",
 		"minecraft:fern",
@@ -39,6 +40,11 @@
 		"minecraft:redstone_torch",
 		"minecraft:redstone_wall_torch",
 		"minecraft:lily_pad",
-		"minecraft:moss_carpet"
+		"minecraft:moss_carpet",
+		"minecraft:redstone_wire",
+		"minecraft:repeater",
+		"minecraft:comparator",
+		"minecraft:vine",
+		"minecraft:glow_lichen"
 	]
 }
