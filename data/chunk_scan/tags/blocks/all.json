@@ -3648,6 +3648,10 @@
 		{
 			"id": "minecraft:tinted_glass",
 			"required": false
+		},
+		{
+			"id": "minecraft:tuff",
+			"required": false
 		}
 	]
 }

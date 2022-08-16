@@ -45,6 +45,7 @@
 		"minecraft:repeater",
 		"minecraft:comparator",
 		"minecraft:vine",
-		"minecraft:glow_lichen"
+		"minecraft:glow_lichen",
+		"minecraft:moving_piston"
 	]
 }
