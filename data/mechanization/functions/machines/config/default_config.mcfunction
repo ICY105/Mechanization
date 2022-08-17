@@ -43,11 +43,11 @@ scoreboard players set #machines.cf.alloy_furnace.power mechanization.data 30
 
 ## Arc Furnace
 # [2,2147483647] Time required to melt resources in seconds. May be modified by upgrades.
-scoreboard players set #machines.cf.arc_furnace.speed_ingot mechanization.data 12
-scoreboard players set #machines.cf.arc_furnace.speed_block mechanization.data 108
+scoreboard players set #machines.cf.arc_furnace.speed_ingot mechanization.data 8
+scoreboard players set #machines.cf.arc_furnace.speed_block mechanization.data 72
 
 # [0,2147483647] Power used by the Arc Furnace. May be modified by upgrades.
-scoreboard players set #machines.cf.arc_furnace.power mechanization.data 60
+scoreboard players set #machines.cf.arc_furnace.power mechanization.data 64
 
 ## Auto Farm
 # [0,2147483647] Power used by the Auto Farm. May be modified by upgrades.
@@ -63,14 +63,14 @@ scoreboard players set #machines.cf.block_breaker.power mechanization.data 24
 
 ## Casting Basin
 # [0,2147483647] Power used by the Casting Basin. May be modified by upgrades.
-scoreboard players set #machines.cf.casting_basin.power mechanization.data 15
+scoreboard players set #machines.cf.casting_basin.power mechanization.data 12
 
 # [2,2147483647] Time to cast items, in seconds. May be modified by upgrades.
-scoreboard players set #machines.cf.casting_basin.speed_ingot mechanization.data 8
-scoreboard players set #machines.cf.casting_basin.speed_block mechanization.data 60
-scoreboard players set #machines.cf.casting_basin.speed_rod mechanization.data 16
-scoreboard players set #machines.cf.casting_basin.speed_plate mechanization.data 24
-scoreboard players set #machines.cf.casting_basin.speed_gear mechanization.data 32
+scoreboard players set #machines.cf.casting_basin.speed_ingot mechanization.data 6
+scoreboard players set #machines.cf.casting_basin.speed_block mechanization.data 56
+scoreboard players set #machines.cf.casting_basin.speed_rod mechanization.data 9
+scoreboard players set #machines.cf.casting_basin.speed_plate mechanization.data 12
+scoreboard players set #machines.cf.casting_basin.speed_gear mechanization.data 15
 
 ## Dimensional Generator
 # [0,2147483647] Power created by the Dimensional Generator (normal, machine upgrade).
@@ -82,7 +82,7 @@ scoreboard players set #machines.cf.dimensional_generator.fuel mechanization.dat
 
 ## Electric Lamp
 # [0,2147483647] Power used by the Electric Lamp.
-scoreboard players set #machines.cf.lamp.power mechanization.data 8
+scoreboard players set #machines.cf.lamp.power mechanization.data 4
 
 ## Auto Fisher
 # [0,2147483647] Power used by the Auto Fisher
@@ -98,7 +98,7 @@ scoreboard players set #machines.cf.grinder.speed_other mechanization.data 4
 
 ## Growth Accelerator
 # [0,2147483647] Power used by the Grinder
-scoreboard players set #machines.cf.growth.power mechanization.data 16
+scoreboard players set #machines.cf.growth.power mechanization.data 8
 
 ## Liquid Pipe
 # [0,2147483647] How much liquid a pipe can move per second, in liters.
@@ -119,12 +119,12 @@ scoreboard players set #machines.cf.mob_grinder.power mechanization.data 48
 scoreboard players set #machines.cf.mob_grinder.xp mechanization.data 2
 
 ## Quarry
-# [1,2147483647] How much power the Quarry uses per block mined (so by default, quarry used 32 * 2 = 64 kW)
-scoreboard players set #machines.cf.quarry.power mechanization.data 32
+# [1,2147483647] How much power the Quarry uses per block mined (so by default, quarry used 16 * 4 = 64 kW)
+scoreboard players set #machines.cf.quarry.power mechanization.data 16
 
 # [0,2147483647] How many blocks the Quarry mines per cycle. Higher number may reduce performance.
-scoreboard players set #machines.cf.quarry.speed mechanization.data 2
-scoreboard players set #machines.cf.quarry.speed.machine_upgrade mechanization.data 4
+scoreboard players set #machines.cf.quarry.speed mechanization.data 4
+scoreboard players set #machines.cf.quarry.speed.machine_upgrade mechanization.data 8
 
 ## Steam Generator
 # [0,10000] Power Output Modifier, in percent
