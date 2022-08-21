@@ -16,6 +16,7 @@ execute if score @s mechanization.fluid.0 matches 1.. run scoreboard players ope
 execute if score @s mechanization.fluid.0 matches 1.. run data modify block -30000000 0 3202 Text1 set value '{"translate":"mech.lore.stored_liquid_amount","color":"gray","italic":false,"with":[{"score":{"name":"$temp_2","objective":"mechanization.data"}}]}'
 execute if score @s mechanization.fluid.0 matches 1.. run data modify entity @e[type=item,sort=nearest,limit=1,distance=..1] Item.tag.display.Lore insert 2 from block -30000000 0 3202 Text1
 
+function mechanization:base/utils/break_drop_inv
 function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
 
 #kill
