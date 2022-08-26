@@ -20,13 +20,13 @@
 				[{"translate":"mech.lore.upgrade_stats","color":"gray","italic":false}],
 				[{"text":"  0.75 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor"}],
 				[{"text":"  0.5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor_toughness"}],
-				[{"text":"  0.05 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.movement_speed"}],
+				[{"text":"  0.04 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.movement_speed"}],
 				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421412, HideFlags: 32, mechanization:{ id:\"crystal_composite_plate\", upgrade:{type:3b, effect:\"none\", max_durability:3000, stats:{armor:0.75, armor_toughness:0.5, speed:0.05}} }, smithed:{dict:{plate:{crystal_composite:1b}}} }"
+              "tag":"{CustomModelData: 6421412, HideFlags: 32, mechanization:{ id:\"crystal_composite_plate\", upgrade:{type:3b, effect:\"none\", max_durability:3000, stats:{armor:0.75, armor_toughness:0.5, speed:0.04}} }, smithed:{dict:{plate:{crystal_composite:1b}}} }"
             }
           ]
         }

@@ -97,7 +97,7 @@ execute if data storage mechanization:temp obj{id:"minecraft:leather_boots"} run
 execute store result storage mechanization:temp obj.tag.AttributeModifiers[{AttributeName:"minecraft:generic.armor",Operation:0}].Amount double 0.01 run scoreboard players get #armor mechanization.data
 execute store result storage mechanization:temp obj.tag.AttributeModifiers[{AttributeName:"minecraft:generic.armor_toughness",Operation:0}].Amount double 0.01 run scoreboard players get #toughness mechanization.data
 execute store result storage mechanization:temp obj.tag.mechanization.upgrades.shield int 1 run scoreboard players get #shield mechanization.data
-execute if score #health mechanization.data matches 11.. run scoreboard players set #health mechanization.data 10
+execute if score #health mechanization.data matches 51.. run scoreboard players set #health mechanization.data 50
 execute store result storage mechanization:temp obj.tag.AttributeModifiers[{AttributeName:"minecraft:generic.max_health",Operation:0}].Amount double 0.1 run scoreboard players get #health mechanization.data
 execute store result storage mechanization:temp obj.tag.AttributeModifiers[{AttributeName:"minecraft:generic.movement_speed",Operation:0}].Amount double 0.01 run scoreboard players get #speed mechanization.data
 execute store result storage mechanization:temp obj.tag.AttributeModifiers[{AttributeName:"minecraft:generic.knockback_resistance",Operation:0}].Amount double 0.1 run scoreboard players get #knockback mechanization.data
