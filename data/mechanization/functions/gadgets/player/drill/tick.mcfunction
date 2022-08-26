@@ -7,7 +7,7 @@ scoreboard players operation #used mechanization.data += @s mechanization.use_sh
 scoreboard players operation #used mechanization.data += @s mechanization.use_hoe
 
 execute if score #used mechanization.data matches 1.. store result score #mining_area mechanization.data run data get entity @s SelectedItem.tag.mechanization.upgrades.mining_area
-execute if score #used mechanization.data matches 1.. if score #mining_area mechanization.data matches 2.. at @e[type=item,sort=nearest,limit=1,nbt={Age:0s}] rotated as @s run function mechanization:gadgets/player/drill/mine_area
+execute if score #used mechanization.data matches 1.. if entity @s[tag=!player_action.sneaking] if score #mining_area mechanization.data matches 2.. at @e[type=item,sort=nearest,limit=1,nbt={Age:0s}] rotated as @s run function mechanization:gadgets/player/drill/mine_area
 execute if score #used mechanization.data matches 1.. if data entity @s SelectedItem.tag.mechanization.upgrades.items[].tag.mechanization.upgrade{effect:"magnetic"} run tp @e[type=item,distance=..10] ~ ~ ~
 execute if score #used mechanization.data matches 1.. if data entity @s SelectedItem.tag.mechanization.upgrades.items[].tag.mechanization.upgrade{effect:"trash"} as @e[type=item,distance=..10] run function mechanization:gadgets/player/drill/trash
 
