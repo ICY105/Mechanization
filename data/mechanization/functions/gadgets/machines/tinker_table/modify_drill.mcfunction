@@ -124,7 +124,6 @@ scoreboard players add #mining_speed mechanization.data 9
 data modify block -30000000 0 3202 Text1 set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#mining_speed","objective":"mechanization.data"}}," ",{"translate":"mech.lore.mining_speed"}]'
 data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 Text1
 
-scoreboard players add #mining_area mechanization.data 1
 data modify block -30000000 0 3202 Text1 set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#mining_area","objective":"mechanization.data"}}," ",{"translate":"mech.lore.mining_area"}]'
 data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 Text1
 
