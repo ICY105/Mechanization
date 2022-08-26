@@ -26,7 +26,3 @@ execute if score #upgrade mechanization.data matches 3 run data modify entity @e
 
 execute if score #muffled mechanization.data matches 1 as @e[type=item,sort=nearest,limit=1,distance=..1] run data modify entity @s Item.tag.display.Lore append value '{"translate":"mech.item.muffler_upgrade", "color":"gray", "italic":false}'
 execute if score #muffled mechanization.data matches 1.. run data modify entity @e[type=item,sort=nearest,limit=1,distance=..1] Item.tag.mechanization.muffled set value 1b
-
-execute as @e[type=item,sort=nearest,limit=1,distance=..1] run say item
-execute as @e[type=item,sort=nearest,limit=1,distance=..1] if data entity @s Item run say item 2
-data modify storage mechanization:test obj set from entity @e[type=item,sort=nearest,limit=1,distance=..1]
