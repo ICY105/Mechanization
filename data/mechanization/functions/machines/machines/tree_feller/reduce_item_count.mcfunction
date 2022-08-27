@@ -4,4 +4,6 @@ scoreboard players remove #count mechanization.data 1
 execute store result entity @s Item.Count byte 1 run scoreboard players get #count mechanization.data
 execute if score #count mechanization.data matches ..0 run kill @s
 
+data modify entity @s Age set value 0s
+
 scoreboard players set #success mechanization.data 1
