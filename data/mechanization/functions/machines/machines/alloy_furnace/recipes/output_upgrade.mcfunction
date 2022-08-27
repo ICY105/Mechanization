@@ -42,9 +42,9 @@ execute if score #success mechanization.data matches 3 run function mechanizatio
 
 # Conductive Ingot
 scoreboard players set #success mechanization.data 0
-execute if score #success mechanization.data matches 0 if score #count.0 mechanization.data matches 16.. if data storage mechanization:temp obj.slot1{id:"minecraft:redstone"} run scoreboard players set #success mechanization.data 1
-execute if score #success mechanization.data matches 0 if score #count.1 mechanization.data matches 16.. if data storage mechanization:temp obj.slot2{id:"minecraft:redstone"} run scoreboard players set #success mechanization.data 1
-execute if score #success mechanization.data matches 0 if score #count.2 mechanization.data matches 16.. if data storage mechanization:temp obj.slot3{id:"minecraft:redstone"} run scoreboard players set #success mechanization.data 1
+execute if score #success mechanization.data matches 0 if score #count.0 mechanization.data matches 8.. if data storage mechanization:temp obj.slot1{id:"minecraft:redstone"} run scoreboard players set #success mechanization.data 1
+execute if score #success mechanization.data matches 0 if score #count.1 mechanization.data matches 8.. if data storage mechanization:temp obj.slot2{id:"minecraft:redstone"} run scoreboard players set #success mechanization.data 1
+execute if score #success mechanization.data matches 0 if score #count.2 mechanization.data matches 8.. if data storage mechanization:temp obj.slot3{id:"minecraft:redstone"} run scoreboard players set #success mechanization.data 1
 execute if score #success mechanization.data matches 1 if score #storage.0 mechanization.data matches 576.. if data storage mechanization:temp obj.tank_1.tag.mechanization.liquid{id:"molten_copper"} run scoreboard players set #success mechanization.data 2
 execute if score #success mechanization.data matches 1 if score #storage.1 mechanization.data matches 576.. if data storage mechanization:temp obj.tank_2.tag.mechanization.liquid{id:"molten_copper"} run scoreboard players set #success mechanization.data 2
 execute if score #success mechanization.data matches 2 if score #storage.0 mechanization.data matches 288.. if data storage mechanization:temp obj.tank_1.tag.mechanization.liquid{id:"molten_gold"} run scoreboard players set #success mechanization.data 3
@@ -55,9 +55,9 @@ execute if score #success mechanization.data matches 3 run function mechanizatio
 
 # Crystal Composite
 scoreboard players set #success mechanization.data 0
-execute if score #success mechanization.data matches 0 if score #count.0 mechanization.data matches 2.. if data storage mechanization:temp obj.slot1{id:"minecraft:amethyst_shard"} run scoreboard players set #success mechanization.data 1
-execute if score #success mechanization.data matches 0 if score #count.1 mechanization.data matches 2.. if data storage mechanization:temp obj.slot2{id:"minecraft:amethyst_shard"} run scoreboard players set #success mechanization.data 1
-execute if score #success mechanization.data matches 0 if score #count.2 mechanization.data matches 2.. if data storage mechanization:temp obj.slot3{id:"minecraft:amethyst_shard"} run scoreboard players set #success mechanization.data 1
+execute if score #success mechanization.data matches 0 if score #count.0 mechanization.data matches 8.. if data storage mechanization:temp obj.slot1{id:"minecraft:amethyst_shard"} run scoreboard players set #success mechanization.data 1
+execute if score #success mechanization.data matches 0 if score #count.1 mechanization.data matches 8.. if data storage mechanization:temp obj.slot2{id:"minecraft:amethyst_shard"} run scoreboard players set #success mechanization.data 1
+execute if score #success mechanization.data matches 0 if score #count.2 mechanization.data matches 8.. if data storage mechanization:temp obj.slot3{id:"minecraft:amethyst_shard"} run scoreboard players set #success mechanization.data 1
 execute if score #success mechanization.data matches 1 if score #storage.0 mechanization.data matches 144.. if data storage mechanization:temp obj.tank_1.tag.mechanization.liquid{id:"molten_diamond"} run scoreboard players set #success mechanization.data 2
 execute if score #success mechanization.data matches 1 if score #storage.1 mechanization.data matches 144.. if data storage mechanization:temp obj.tank_2.tag.mechanization.liquid{id:"molten_diamond"} run scoreboard players set #success mechanization.data 2
 execute if score #success mechanization.data matches 2 if score #storage.0 mechanization.data matches 144.. if data storage mechanization:temp obj.tank_1.tag.mechanization.liquid{id:"molten_emerald"} run scoreboard players set #success mechanization.data 3
