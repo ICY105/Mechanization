@@ -1,7 +1,7 @@
 
 scoreboard players set #cost mechanization.data 432
-execute if entity @s[tag=mechanization.upgraded] run scoreboard players set #cost mechanization.data 360
-execute if entity @s[tag=mechanization.upgraded.ender] run scoreboard players set #cost mechanization.data 288
+execute if entity @s[tag=mechanization.upgraded] run scoreboard players set #cost mechanization.data 288
+execute if entity @s[tag=mechanization.upgraded.ender] run scoreboard players set #cost mechanization.data 144
 
 execute if data storage mechanization:temp obj.fluid_item.tag.mechanization.liquid{id:"molten_iron"} run scoreboard players operation @s mechanization.fluid.0 -= #cost mechanization.data
 execute if score #count mechanization.data matches ..0 if data storage mechanization:temp obj.fluid_item.tag.mechanization.liquid{id:"molten_iron"} run loot replace block ~ ~ ~ container.12 loot mechanization:base/iron_rod
