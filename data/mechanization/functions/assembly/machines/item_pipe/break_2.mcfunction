@@ -11,6 +11,6 @@ scoreboard players operation #model mechanization.data += @s mechanization.data
 execute store result entity @s Item.tag.CustomModelData int 1 run scoreboard players get #model mechanization.data
 
 scoreboard players operation $predicate mechanization.data = @s mechanization.item_id
-scoreboard players operation #id mechanization.data = #uuid.incr mechanization.item_id
-scoreboard players add #uuid.incr mechanization.item_id 1
+scoreboard players add #global_id mechanization.item_id 1
+scoreboard players operation #id mechanization.data = #global_id mechanization.item_id
 execute at @s run function mechanization:assembly/machines/item_pipe/break_update
