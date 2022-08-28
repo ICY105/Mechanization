@@ -20,5 +20,5 @@ scoreboard players operation @s energy.network_id = #cable.network_id energy.dat
 function energy:v1.3/cable/update
 
 #setup network transfer capacity
-scoreboard players reset * energy.transfer_capacity
+scoreboard players set @e[type=#energy:valid_block_entities,tag=energy.cable] energy.transfer_capacity -1
 execute as @e[type=#energy:valid_block_entities,tag=energy.cable] at @s run function energy:v1.3/cable/setup_cable_network
