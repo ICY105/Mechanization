@@ -15,7 +15,7 @@
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"translate":"mech.lore.generate","with":["1-27"],"color":"white","italic":false},
+			    {"translate":"mech.lore.generate","with":["4-232"],"color":"white","italic":false},
 				{"translate":"mech.lore.added_by","color":"blue","italic":false}
 			  ]
 			},
