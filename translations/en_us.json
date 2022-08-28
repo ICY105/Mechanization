@@ -623,7 +623,7 @@
 	"mech.manual.arc_furnace.title":"Arc Furnace",
 	"mech.manual.arc_furnace.body":"The Arc Furnace is 1 of 4 machines needed to make Alloys, and is the first machine in the process. It melts resources into their molten forms- ie. Iron Ingots are melted into Molten Iron, which can be used in the Alloy Furnace to create Steel.\n",
 	"mech.manual.arc_furnace.machine_upgrade":"+50%% Speed\n",
-	"mech.manual.arc_furnace.ender_upgrade":"+25%% molten metal created from raw metals (Raw Iron), but can only process raw metals.\n",
+	"mech.manual.arc_furnace.ender_upgrade":"+33%% bonus output from raw metals (Raw Iron), but can only process raw metals.\n",
 	"mech.manual.arc_furnace.nether_upgrade":"+25%% Speed, +25%% Efficiency, but can only melt non-metals (ie. Diamond).\n",
 	"mech.manual.casting_basin.title":"Casting Basin",
 	"mech.manual.casting_basin.body":"The Casting Basin is 1 of 4 machines needed to make Alloys, and is the last step in the process. It converts liquids into ingots, blocks, rods, plates, gears, and more. Select the desired output type in the UI.\n\n\n",
