@@ -1,5 +1,4 @@
 
-summon minecraft:marker ~ ~ ~ {Tags:["mechanization", "mechanization.bullet", "mechanization.new", "smithed.ignore"]}
 tp @s ^ ^ ^2 ~ ~
 
 scoreboard players operation @s mechanization.weaponheat = #damage mechanization.data
