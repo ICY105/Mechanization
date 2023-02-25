@@ -39,15 +39,11 @@
     },
     {
       "name": "Smithed Crafting",
-      "local": "external-libraries/Smithed Crafter.zip"
-    },
-    {
-      "name": "Smithed Damage",
-      "local": "external-libraries/Smithed Damage.zip"
+      "local": "external-libraries/crafter"
     },
     {
       "name": "Smithed Custom Block",
-      "local": "external-libraries/Smithed Custom Block.zip"
+      "local": "external-libraries/custom-block"
     },
     {
       "name": "Smithed Chunk",
