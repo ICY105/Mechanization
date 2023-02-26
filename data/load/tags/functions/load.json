@@ -7,7 +7,6 @@
     "#nbt_smelting:load",
     "#energy:load",
     "#smithed.crafter:load",
-    "#smithed.damage:load",
     "#smithed.custom_block:load",
     "mechanization:load"
   ]
