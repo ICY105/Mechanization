@@ -39,11 +39,11 @@
     },
     {
       "name": "Smithed Crafting",
-      "local": "external-libraries/crafter"
+      "local": "external-libraries/Smithed Crafter.zip"
     },
     {
       "name": "Smithed Custom Block",
-      "local": "external-libraries/custom-block"
+      "local": "external-libraries/Smithed Custom Block.zip"
     },
     {
       "name": "Smithed Chunk",

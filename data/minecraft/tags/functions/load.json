@@ -1,6 +1,5 @@
 {
     "values": [
-        "#load:_private/load",
         "smithed_u.chunk:load"
     ]
 }

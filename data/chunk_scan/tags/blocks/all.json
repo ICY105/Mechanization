@@ -3650,7 +3650,55 @@
 			"required": false
 		},
 		{
-			"id": "minecraft:tuff",
+			"id": "minecraft:mangrove_log",
+			"required": false
+		},
+		{
+			"id": "minecraft:mangrove_wood",
+			"required": false
+		},
+		{
+			"id": "minecraft:stripped_mangrove_log",
+			"required": false
+		},
+		{
+			"id": "minecraft:stripped_mangrove_wood",
+			"required": false
+		},
+		{
+			"id": "minecraft:mangrove_planks",
+			"required": false
+		},
+		{
+			"id": "minecraft:mangrove_stairs",
+			"required": false
+		},
+		{
+			"id": "minecraft:mangrove_slab",
+			"required": false
+		},
+		{
+			"id": "minecraft:mangrove_fence",
+			"required": false
+		},
+		{
+			"id": "minecraft:mangrove_fence_gate",
+			"required": false
+		},
+		{
+			"id": "minecraft:mangrove_door",
+			"required": false
+		},
+		{
+			"id": "minecraft:mangrove_trapdoor",
+			"required": false
+		},
+		{
+			"id": "minecraft:mangrove_pressure_plate",
+			"required": false
+		},
+		{
+			"id": "minecraft:mangrove_button",
 			"required": false
 		}
 	]

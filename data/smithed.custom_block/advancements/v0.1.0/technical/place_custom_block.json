@@ -1,0 +1,58 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "item": {
+          "nbt": "{BlockEntityTag:{Items:[{tag:{smithed:{block:{}}}}]}}"
+        },
+        "location": {
+          "block": {
+            "tag": "smithed.custom_block:placeable"
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#smithed.custom_block.major"
+              },
+              "score": "load.status"
+            },
+            "range": 0
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#smithed.custom_block.minor"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#smithed.custom_block.patch"
+              },
+              "score": "load.status"
+            },
+            "range": 0
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "smithed.custom_block:v0.1.0/place"
+  }
+}

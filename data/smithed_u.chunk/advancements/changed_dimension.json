@@ -2,10 +2,10 @@
   "criteria": {
     "interact_click_entity": {
       "trigger": "minecraft:changed_dimension",
-      "conditions": {}
-    }
+	  "conditions": {}
+	}
   },
-  "rewards": {
-    "function": "smithed_u.chunk:changed_dimension"
+  "rewards":{ 
+    "function":"smithed_u.chunk:changed_dimension"
   }
 }

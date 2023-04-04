@@ -4,6 +4,9 @@
 		"minecraft:glow_item_frame",
 		"minecraft:armor_stand",
 		"minecraft:area_effect_cloud",
-		"minecraft:marker"
+		"minecraft:marker",
+		{"required": false, "id": "minecraft:interaction"},
+		{"required": false, "id": "minecraft:block_display"},
+		{"required": false, "id": "minecraft:item_display"}
 	]
 } 
