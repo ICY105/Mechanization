@@ -1,0 +1,9 @@
+{
+	"values": [
+		{"required": false, "id": "minecraft:item_display"},
+		{"required": false, "id": "minecraft:marker"},
+		{"required": false, "id": "minecraft:armor_stand"},
+		{"required": false, "id": "minecraft:item_frame"},
+		{"required": false, "id": "minecraft:glow_item_frame"}
+	]
+} 

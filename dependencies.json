@@ -38,6 +38,10 @@
       "local": "DatapackEnergy"
     },
     {
+      "name": "Fluid Crafting",
+      "local": "FluidCrafting"
+    },
+    {
       "name": "Smithed Crafting",
       "local": "external-libraries/Smithed Crafter.zip"
     },
@@ -46,6 +50,10 @@
       "local": "external-libraries/Smithed Custom Block.zip"
     },
     {
+      "name": "Smithed Actionbar",
+      "local": "external-libraries/Smithed Actionbar.zip"
+    },
+	{
       "name": "Smithed Chunk",
       "local": "SmithedChunk-Unofficial"
     }

@@ -1,0 +1,46 @@
+[
+    {
+        "condition": "minecraft:weather_check",
+        "thundering": false
+    },
+    {
+        "condition": "minecraft:alternative",
+        "terms": [
+            {
+                "condition": "minecraft:weather_check",
+                "raining": true
+            },
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:time_check",
+                    "value": {
+                        "min": 12542,
+                        "max": 23459
+                    },
+                    "period": 24000
+                }
+            }
+        ]
+    },
+    {
+        "condition": "minecraft:alternative",
+        "terms": [
+            {
+                "condition": "minecraft:weather_check",
+                "raining": false
+            },
+            {
+                "condition": "minecraft:inverted",
+                "term": {
+                    "condition": "minecraft:time_check",
+                    "value": {
+                        "min": 12010,
+                        "max": 23991
+                    },
+                    "period": 24000
+                }
+            }
+        ]
+    }
+]

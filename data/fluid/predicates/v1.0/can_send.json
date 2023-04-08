@@ -1,0 +1,66 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "fluid.io.up": {
+        "min": -2147483649,
+        "max": -1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "fluid.io.down": {
+        "min": -2147483649,
+        "max": -1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "fluid.io.north": {
+        "min": -2147483649,
+        "max": -1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "fluid.io.south": {
+        "min": -2147483649,
+        "max": -1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "fluid.io.east": {
+        "min": -2147483649,
+        "max": -1
+        }
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "fluid.io.west": {
+        "min": -2147483649,
+        "max": -1
+        }
+      }
+    }
+  ]
+}
+  
