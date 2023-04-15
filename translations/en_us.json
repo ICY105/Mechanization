@@ -1,6 +1,6 @@
 {
-	"Looks like you don't have the resourcepack for Mechanization. You can download that [here].":"",
-    "mech.text.version":"Version %s.%s.%s",
+	"text.mechanization.resourcepack":"",
+    "text.mechanization.version":"Version %s.%s.%s",
    
 "__comment":"Mechanization: Base",
     "mech.item.wrench": "Wrench",

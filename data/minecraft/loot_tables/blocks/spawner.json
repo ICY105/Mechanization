@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrier",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{mechanization:{drop_spawner:1b}}"
+            },
+            {
+              "function": "minecraft:copy_nbt",
+              "source": "block_entity",
+              "ops": [
+                {
+                  "source": "SpawnRange",
+                  "target": "mechanization.SpawnRange",
+                  "op": "replace"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "__smithed__": {
+	  "rules": [
+		  {
+			  "type":"smithed:append",
+			  "target":"pools",
+			  "source": {
+				  "type":"smithed:reference",
+				  "path":"pools[0]"
+			  }
+		  }
+	  ]
+  }
+}

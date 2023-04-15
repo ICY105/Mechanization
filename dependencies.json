@@ -60,6 +60,10 @@
   ],
   "append_function_tags": [
     {
+      "tag": "minecraft:load",
+      "value": "#load:_private/load"
+    },
+	{
       "tag": "load:load",
       "value": "mechanization:load"
     },
@@ -69,7 +73,7 @@
     },
 	{
       "tag": "chunk_scan.ores:v1/place_ore",
-      "value": "mechanization:base/utils/ore_gen"
+      "value": "mechanization:base/utils/ores/ore_gen"
     },
 	{
       "tag": "nbt_smelting:v1/furnace",
@@ -105,7 +109,7 @@
     },
 	{
       "tag": "smithed.crafter:event/break",
-      "value": "mechanization:base/machines/machine_crafting_table/break"
+      "value": "mechanization:base/blocks/machine_crafting_table/break"
     },
 	{
       "tag": "smithed.crafter:event/recipes",

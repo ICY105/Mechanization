@@ -3,10 +3,6 @@
 scoreboard objectives add mechanization.data dummy
 scoreboard objectives add mechanization.time dummy
 scoreboard objectives add mechanization.item_id dummy
-scoreboard objectives add mechanization.fluid.0 dummy
-scoreboard objectives add mechanization.fluid.1 dummy
-scoreboard objectives add mechanization.fluid.2 dummy
-scoreboard objectives add mechanization.fluid.3 dummy
 scoreboard objectives add mechanization.redstone dummy
 
 scoreboard objectives add mechanization.manual trigger
@@ -49,13 +45,12 @@ scoreboard players set #cons.rng_a mechanization.data 1103515245
 
 # mark version
 scoreboard players set #mech.ver.major load.status 4
-scoreboard players set #mech.ver.minor load.status 0
-scoreboard players set #mech.ver.fix load.status 5
+scoreboard players set #mech.ver.minor load.status 1
+scoreboard players set #mech.ver.fix load.status 0
 
 # configure storage
 data merge storage mechanization:temp {obj:{}, list:[], var:""}
 data merge storage mechanization:networks {mss_temp:{drive:[],item:{}}}
-execute unless data storage mechanization:networks quantum run data merge storage mechanization:networks {quantum:[]}
 execute unless data storage mechanization:networks teleporter run data merge storage mechanization:networks {teleporter:[]}
 
 # load config

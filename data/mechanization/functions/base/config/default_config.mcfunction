@@ -21,7 +21,3 @@ scoreboard players set #base.cf.uranium_rarity mechanization.data 2
 
 # [0,32] Veins of Additional Emerald ore per Chunk (not biome restricted)
 scoreboard players set #base.cf.emerald_rarity mechanization.data 1
-
-### Machines
-
-

@@ -1,7 +1,7 @@
 {
 	"required":false,
 	"values":[
-	  "mechanization:base/machines/custom_item_insertion",
+	  "mechanization:base/blocks/custom_item_insertion",
 	  "mechanization:machines/machines/custom_item_insertion",
 	  "mechanization:nuclear/tools/custom_item_insertion",
 	  "mechanization:gadgets/machines/custom_item_insertion",
