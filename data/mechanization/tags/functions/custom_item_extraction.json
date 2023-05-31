@@ -2,7 +2,7 @@
 	"required":false,
 	"values":[
 	  "mechanization:base/blocks/custom_item_extraction",
-	  "mechanization:machines/machines/custom_item_extraction",
+	  "mechanization:machines/blocks/custom_item_extraction",
 	  "mechanization:nuclear/tools/custom_item_extraction",
 	  "mechanization:gadgets/machines/custom_item_extraction",
 	  "mechanization:assembly/machines/custom_item_extraction",

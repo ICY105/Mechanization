@@ -73,6 +73,5 @@ execute if score #id mechanization.data matches 29 if data storage smithed.custo
 execute if score #id mechanization.data matches 33 if data storage smithed.custom_block:main blockApi{id:"mechanization:raw_plutonium_block"} store success score #success mechanization.data run summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.resource_block","mechanization.raw_plutonium_block","smithed.block"], item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421447},Count:1b}}
 
 ## Init
-setblock ~ ~ ~ spawner{SpawnCount:-1,MinSpawnDelay:32000,RequiredPlayerRange:-2,SpawnRange:642,SpawnPotentials:[]} replace
-execute if score #success mechanization.data matches 1 if block ~ ~ ~ minecraft:blast_furnace run setblock ~ ~ ~ minecraft:lodestone
-execute if score #success mechanization.data matches 1 as @e[type=item_display,tag=mechanization.resource_block,distance=..2,sort=nearest,limit=1] run function mechanization:base/blocks/resource_blocks/init
+execute if score #success mechanization.data matches 1 if block ~ ~ ~ minecraft:blast_furnace run setblock ~ ~ ~ spawner{SpawnCount:-1,MinSpawnDelay:32000,RequiredPlayerRange:-2,SpawnRange:642,SpawnPotentials:[]} replace
+execute if score #success mechanization.data matches 1 as @e[type=minecraft:item_display,tag=mechanization.resource_block,distance=..2,sort=nearest,limit=1] run function mechanization:base/blocks/resource_blocks/init
