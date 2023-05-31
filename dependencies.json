@@ -93,11 +93,11 @@
     },
 	{
       "tag": "energy:v1/energy_update",
-      "value": "mechanization:machines/machines/energy_update"
+      "value": "mechanization:machines/blocks/energy_update"
     },
 	{
       "tag": "energy:v1/cable_update",
-      "value": "mechanization:machines/machines/cable_update"
+      "value": "mechanization:machines/blocks/cable_update"
     },
 	{
       "tag": "energy:v1/update_energy_item",
@@ -105,7 +105,7 @@
     },
 	{
       "tag": "energy:v1/cable_can_connect",
-      "value": "mechanization:machines/machines/cable_can_connect"
+      "value": "mechanization:machines/blocks/cable_can_connect"
     },
 	{
       "tag": "smithed.crafter:event/break",

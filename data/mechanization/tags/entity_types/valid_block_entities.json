@@ -5,6 +5,7 @@
 		"minecraft:glow_item_frame",
 		"minecraft:armor_stand",
 		"minecraft:area_effect_cloud",
-		"minecraft:marker"
+		"minecraft:marker",
+		"minecraft:item_display"
 	]
 } 
