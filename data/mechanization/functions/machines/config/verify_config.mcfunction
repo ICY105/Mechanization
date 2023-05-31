@@ -20,12 +20,6 @@ execute unless score #machines.cf.t3_battery.capacity.machine_upgrade mechanizat
 execute unless score #machines.cf.t3_battery.capacity.ender_upgrade mechanization.data matches 0..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t3_battery.capacity.ender_upgrade]","color":"green"}]
 execute unless score #machines.cf.t3_battery.capacity.nether_upgrade mechanization.data matches 0..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t3_battery.capacity.nether_upgrade]","color":"green"}]
 
-# [0,2147483647] Quantum Battery Capacity (no upgrade, machine upgrade, ender upgrade, nether upgrade)
-execute unless score #machines.cf.qu_battery.capacity mechanization.data matches 0..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.qu_battery.capacity]","color":"green"}]
-execute unless score #machines.cf.qu_battery.capacity.machine_upgrade mechanization.data matches 0..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.qu_battery.capacity.machine_upgrade]","color":"green"}]
-execute unless score #machines.cf.qu_battery.capacity.ender_upgrade mechanization.data matches 0..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.qu_battery.capacity.ender_upgrade]","color":"green"}]
-execute unless score #machines.cf.qu_battery.capacity.nether_upgrade mechanization.data matches 0..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.qu_battery.capacity.nether_upgrade]","color":"green"}]
-
 ## Cables
 # [1,2147483647] Time required to create an alloy in seconds. May be modified by upgrades.
 execute unless score #machines.cf.copper_cable.transfer_rate mechanization.data matches 1..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.copper_cable.transfer_rate]","color":"green"}]

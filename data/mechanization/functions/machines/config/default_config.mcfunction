@@ -18,12 +18,6 @@ scoreboard players set #machines.cf.t3_battery.capacity.machine_upgrade mechaniz
 scoreboard players set #machines.cf.t3_battery.capacity.ender_upgrade mechanization.data 1000000
 scoreboard players set #machines.cf.t3_battery.capacity.nether_upgrade mechanization.data 1000000
 
-# [1,2147483647] Quantum Battery Capacity
-scoreboard players set #machines.cf.qu_battery.capacity mechanization.data 200000
-scoreboard players set #machines.cf.qu_battery.capacity.machine_upgrade mechanization.data 250000
-scoreboard players set #machines.cf.qu_battery.capacity.ender_upgrade mechanization.data 400000
-scoreboard players set #machines.cf.qu_battery.capacity.nether_upgrade mechanization.data 400000
-
 ## Cables
 # [1,2147483647] Copper cable transfer rate
 scoreboard players set #machines.cf.copper_cable.transfer_rate mechanization.data 256
