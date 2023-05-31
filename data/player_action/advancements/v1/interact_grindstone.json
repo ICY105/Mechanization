@@ -1,17 +1,22 @@
 {
   "criteria": {
-    "interact_grindstone": {
+    "interact_anvil": {
       "trigger": "minecraft:item_used_on_block",
-	  "conditions": {
-	    "location": {
-          "block": {
-		    "blocks": [
-		      "minecraft:grindstone"
-		    ]
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:grindstone"
+                ]
+              }
+            }
           }
-        }
+        ]
       }
-	}
+	  }
   },
   "rewards":{ 
     "function":"player_action:v1/internal/interact_grindstone"

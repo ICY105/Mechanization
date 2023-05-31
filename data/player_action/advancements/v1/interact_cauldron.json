@@ -1,17 +1,22 @@
 {
   "criteria": {
-    "interact_cauldron": {
+    "interact_anvil": {
       "trigger": "minecraft:item_used_on_block",
-	  "conditions": {
-	    "location": {
-          "block": {
-		    "blocks": [
-		      "minecraft:cauldron"
-		    ]
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:cauldron"
+                ]
+              }
+            }
           }
-        }
+        ]
       }
-	}
+	  }
   },
   "rewards":{ 
     "function":"player_action:v1/internal/interact_cauldron"

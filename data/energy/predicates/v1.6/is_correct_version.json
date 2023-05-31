@@ -1,0 +1,50 @@
+[
+  {
+    "condition": "minecraft:value_check",
+    "value": 1,
+    "range": {
+      "min": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#energy.major"
+        },
+        "score": "load.status",
+        "scale": 1
+      },
+      "max": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#energy.major"
+        },
+        "score": "load.status",
+        "scale": 1
+      }
+    }
+  },
+  {
+    "condition": "minecraft:value_check",
+    "value": 6,
+    "range": {
+      "min": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#energy.minor"
+        },
+        "score": "load.status",
+        "scale": 1
+      },
+      "max": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#energy.minor"
+        },
+        "score": "load.status",
+        "scale": 1
+      }
+    }
+  }
+]

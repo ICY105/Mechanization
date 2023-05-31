@@ -1,19 +1,24 @@
 {
   "criteria": {
-    "interact_beacon": {
+    "interact_anvil": {
       "trigger": "minecraft:item_used_on_block",
-	  "conditions": {
-	    "location": {
-          "block": {
-		    "blocks": [
-		      "minecraft:beacon"
-		    ]
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:beacon"
+                ]
+              }
+            }
           }
-        }
+        ]
       }
-	}
+	  }
   },
   "rewards":{ 
-    "function":"player_action:v1/internal/interact_beacon"
+    "function":"player_action:v1/internal/interact_beaon"
   }
 }

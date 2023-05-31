@@ -1,18 +1,23 @@
 {
   "criteria": {
-    "interact_campfire": {
+    "interact_anvil": {
       "trigger": "minecraft:item_used_on_block",
-	  "conditions": {
-	    "location": {
-          "block": {
-		    "blocks": [
-		      "minecraft:campfire",
-		      "minecraft:soul_campfire"
-		    ]
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:campfire",
+                  "minecraft:soul_campfire"
+                ]
+              }
+            }
           }
-        }
+        ]
       }
-	}
+	  }
   },
   "rewards":{ 
     "function":"player_action:v1/internal/interact_campfire"

@@ -1,17 +1,22 @@
 {
   "criteria": {
-    "interact_hopper": {
+    "interact_anvil": {
       "trigger": "minecraft:item_used_on_block",
-	  "conditions": {
-	    "location": {
-          "block": {
-		    "blocks": [
-		      "minecraft:hopper"
-		    ]
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:hopper"
+                ]
+              }
+            }
           }
-        }
+        ]
       }
-	}
+	  }
   },
   "rewards":{ 
     "function":"player_action:v1/internal/interact_hopper"

@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:furnace",
+                  "minecraft:blast_furnace",
+                  "minecraft:smoker",
+                  "minecraft:campfire",
+                  "minecraft:soul_campfire"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards":{ 
+    "function":"nbt_smelting:v1.4/versioning/place_smelting_block"
+  }
+}

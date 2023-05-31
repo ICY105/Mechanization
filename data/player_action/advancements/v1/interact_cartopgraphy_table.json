@@ -1,19 +1,24 @@
 {
   "criteria": {
-    "interact_cartography_table": {
+    "interact_anvil": {
       "trigger": "minecraft:item_used_on_block",
-	  "conditions": {
-	    "location": {
-          "block": {
-		    "blocks": [
-		      "minecraft:cartography_table"
-		    ]
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": [
+                  "minecraft:cartography_table"
+                ]
+              }
+            }
           }
-        }
+        ]
       }
-	}
+	  }
   },
   "rewards":{ 
-    "function":"player_action:v1/internal/interact_cartography_table"
+    "function":"player_action:v1/internal/interact_cartopgraphy_table"
   }
 }
