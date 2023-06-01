@@ -4,7 +4,7 @@
         "thundering": false
     },
     {
-        "condition": "minecraft:alternative",
+        "condition": "minecraft:any_of",
         "terms": [
             {
                 "condition": "minecraft:weather_check",
@@ -24,7 +24,7 @@
         ]
     },
     {
-        "condition": "minecraft:alternative",
+        "condition": "minecraft:any_of",
         "terms": [
             {
                 "condition": "minecraft:weather_check",

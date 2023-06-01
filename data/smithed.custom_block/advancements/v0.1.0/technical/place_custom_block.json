@@ -6,11 +6,16 @@
         "item": {
           "nbt": "{BlockEntityTag:{Items:[{tag:{smithed:{block:{}}}}]}}"
         },
-        "location": {
-          "block": {
-            "tag": "smithed.custom_block:placeable"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "smithed.custom_block:placeable"
+              }
+            }
           }
-        },
+        ],
         "player": [
           {
             "condition": "minecraft:value_check",

@@ -55,11 +55,16 @@
             "range": 0
           }
         ],
-        "location": {
-          "block": {
-            "tag": "smithed.actionbar:v0.2.0/lockable"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "smithed.actionbar:v0.2.0/lockable"
+              }
+            }
           }
-        }
+        ]
       }
     },
     "click_empty": {
@@ -108,11 +113,16 @@
             "minecraft:air"
           ]
         },
-        "location": {
-          "block": {
-            "tag": "smithed.actionbar:v0.2.0/lockable"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "smithed.actionbar:v0.2.0/lockable"
+              }
+            }
           }
-        }
+        ]
       }
     }
   },
