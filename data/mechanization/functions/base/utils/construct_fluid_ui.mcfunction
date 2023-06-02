@@ -14,8 +14,8 @@ execute if score #temperature mechanization.data matches 1000.. run scoreboard p
 execute store result block -30000000 0 3201 Items[{Slot:0b}].tag.CustomModelData int 1 run scoreboard players get #model mechanization.data
 
 # set name & color
-execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3202 Text1 set value '{"nbt":"var","storage":"mechanization:temp","interpret":true,"italic":false}'
-execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3201 Items[{Slot:0b}].tag.display.Name set from block -30000000 0 3202 Text1
-execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3202 Text1 set value '{"translate":"lore.mechanization.fluid_amount","italic":false,"color":"gray","with":[{"score":{"name":"#storage","objective":"mechanization.data"}}]}'
-execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3201 Items[{Slot:0b}].tag.display.Lore append from block -30000000 0 3202 Text1
-execute if score #storage mechanization.data matches 1.. store result block -30000000 0 3201 Items[{Slot:0b}] int 1 run scoreboard players get #color mechanization.data
+execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value '{"nbt":"var","storage":"mechanization:temp","interpret":true,"italic":false}'
+execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3201 Items[{Slot:0b}].tag.display.Name set from block -30000000 0 3202 front_text.messages[0]
+execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value '{"translate":"lore.mechanization.fluid_amount","italic":false,"color":"gray","with":[{"score":{"name":"#storage","objective":"mechanization.data"}}]}'
+execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3201 Items[{Slot:0b}].tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
+execute if score #storage mechanization.data matches 1.. store result block -30000000 0 3201 Items[{Slot:0b}].tag.display.color int 1 run scoreboard players get #color mechanization.data
