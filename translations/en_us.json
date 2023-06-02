@@ -275,8 +275,7 @@
 	"item.mechanization.rod_cast": "Rod Cast",
 	"item.mechanization.plate_cast": "Plate Cast",
 	"item.mechanization.gear_cast": "Gear Cast",
-	"lore.mechanization.alloy_furnace_error":"Error: Recipe requires Machine Upgrade",
-    
+
     "block.mechanization.energy_relay": "Energy Relay",
 	"lore.mechanization.energy_relay": "Use wrench to toggle modes.",
     "block.mechanization.battery.tier_1": "Tier 1 Battery",
@@ -287,12 +286,8 @@
     "block.mechanization.conductive_cable": "Conductive Cable",
     "block.mechanization.super_conductive_cable": "Super Conductive Cable",
 	
-	"lore.mechanization.cast_cost": "Cost: %sL (%s Ingots)",
-	"lore.mechanization.cast_cost_gem": "Cost: %sL (%s Gems)",
-    
     "block.mechanization.steam_generator": "Steam Generator",
     "block.mechanization.tree_feller": "Tree Feller",
-    "block.mechanization.alloy_furnace": "Alloy Furnace",
     "block.mechanization.auto_farm": "Auto Farm",
     "block.mechanization.auto_fisher": "Auto Fisher",
     "block.mechanization.bio_generator": "Bio Generator",
@@ -304,29 +299,32 @@
     "block.mechanization.growth_accelerator": "Growth Accelerator",
     "block.mechanization.item_reformer": "Item Reformer",
     "block.mechanization.mob_grinder": "Mob Grinder",
-    "block.mechanization.quarry": "Quarry",
     "block.mechanization.solar_panel": "Solar Panel",
     "block.mechanization.spawner_controller": "Spawner Controller",
-	"block.mechanization.super_piston": "Super Piston",
-    "block.mechanization.super_sticky_piston": "Super Sticky Piston",
-    "block.mechanization.turn_table": "Turn Table",
     "block.mechanization.tier_1_liquid_tank": "Wooden Liquid Tank",
     "block.mechanization.tier_2_liquid_tank": "Hardened Liquid Tank",
     "block.mechanization.tier_3_liquid_tank": "Pressurized Liquid Tank",
     "block.mechanization.liquid_pipe": "Pipe",
     "block.mechanization.arc_furnace": "Arc Furnace",
-    "block.mechanization.casting_basin": "Casting Basin",
     "block.mechanization.liquid_accumulator": "Liquid Accumulator",
     "block.mechanization.thermoelectric_generator": "Thermoelectric Generator",
     "block.mechanization.lightning_generator": "Lightning Generator",
     "block.mechanization.electric_lamp": "Electric Lamp",
-    "block.mechanization.teleporter": "Teleporter",
+
+    "block.mechanization.alloy_furnace": "Alloy Furnace",
+	"lore.mechanization.alloy_furnace_error":"Error: Recipe requires Machine Upgrade",
+    
+    "block.mechanization.casting_basin": "Casting Basin",
+	"lore.mechanization.cast_cost": "Cost: %sL (%s Ingots)",
+	"lore.mechanization.cast_cost_gem": "Cost: %sL (%s Gems)",
 	
+    "block.mechanization.quarry": "Quarry",
 	"text.mechanization.quarry.no_boundary": "No Boundary",
 	"text.mechanization.quarry.invalid_boundary": "Incomplete Boundary",
 	"text.mechanization.quarry.formed_boundary": "Formed Boundary",
+
+    "block.mechanization.teleporter": "Teleporter",
     "text.mechanization.teleporter.no_destination": "No Valid Destination",
-    "text.mechanization.teleporter.select_destination": "Click on destination and enter ID:",
 
 "__comment":"Mechanization: Nuclear",
 	"item.mechanization.spent_fuel_cell": "Spent Fuel Cell",
@@ -354,7 +352,7 @@
 
 "__comment.gadgets":"Mechanization: Gadgets",
     "item.mechanization.portable_battery": "Portable Battery",
-	"item.mechanization.portable_battery.lore": "Energy: %s kJ/%s kJ",
+	"lore.mechanization.portable_battery": "Energy: %s kJ/%s kJ",
     "item.mechanization.energy_saber": "Energy Saber",
     "item.mechanization.drill": "Drill",
     "item.mechanization.modular_helmet": "Modular Helmet",
@@ -491,7 +489,6 @@
 	"lore.mechanization.upgrade_scepter":"Druidic Scepter",
 	"lore.mechanization.upgrade_fortune_seeker":"Fortune Seeker",
 	
-    
 "__comment.manual":"Mechanical Manual",
 	"mech.manual.recipe":"Recipe\n",
 	

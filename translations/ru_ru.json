@@ -286,7 +286,6 @@
 	"item.mechanization.rod_cast": "Литье стержней",
 	"item.mechanization.plate_cast": "Литье пластин",
 	"item.mechanization.gear_cast": "Литье шестерен",
-	"lore.mechanization.alloy_furnace_error":"Ошибка: Рецепт требует \"Улушчение машины\"",
 
 	"block.mechanization.energy_relay": "Энергореле",
 	"lore.mechanization.energy_relay": "Используйте гаечный ключ для переключения режимов.",
@@ -298,15 +297,8 @@
 	"block.mechanization.conductive_cable": "Проводящий кабель",
 	"block.mechanization.super_conductive_cable": "Сверхпроводящий кабель",
 	
-	"lore.mechanization.cast_cost": "Цена: %sл (%s железа)",
-	"lore.mechanization.cast_cost_gem": "Цена: %sл (%s самоцветов)",
-    
     "block.mechanization.steam_generator": "Парогенератор",
-    "block.mechanization.teleporter": "Телепортер",
-    "block.mechanization.teleporter.no_destination": "Нет действительного места назначения",
-    "block.mechanization.teleporter.select_destination": "Нажмите на пункт назначения и введите ID:",
     "block.mechanization.tree_feller": "Авто дровосек",
-    "block.mechanization.alloy_furnace": "Плавильня сплавов",
     "block.mechanization.auto_farm": "Авто фермер",
     "block.mechanization.auto_fisher": "Авто рыбак",
     "block.mechanization.bio_generator": "Био-генератор",
@@ -318,7 +310,6 @@
     "block.mechanization.growth_accelerator": "Ускоритель роста",
     "block.mechanization.item_reformer": "Реформатор предметов",
     "block.mechanization.mob_grinder": "Крушитель мобов",
-    "block.mechanization.quarry": "Карьер",
     "block.mechanization.solar_panel": "Солнечная панель",
     "block.mechanization.spawner_controller": "Контроллер спавнеров",
     "block.mechanization.tier_1_liquid_tank": "Деревянная ёмкость для жидкости",
@@ -326,21 +317,31 @@
     "block.mechanization.tier_3_liquid_tank": "Ёмкость для жидкостей под давлением",
     "block.mechanization.liquid_pipe": "Труба",
     "block.mechanization.arc_furnace": "Дуговая печь",
-    "block.mechanization.casting_basin": "Литейная ванна",
     "block.mechanization.liquid_accumulator": "Накопитель жидкости",
     "block.mechanization.thermoelectric_generator": "Термоэлектрический генератор",
     "block.mechanization.lightning_generator": "Генератор молний",
     "block.mechanization.electric_lamp": "Электрическая лампа",
+	
+    "block.mechanization.alloy_furnace": "Плавильня сплавов",
+	"lore.mechanization.alloy_furnace_error":"Ошибка: Рецепт требует \"Улушчение машины\"",
 
+    "block.mechanization.casting_basin": "Литейная ванна",
+	"lore.mechanization.cast_cost": "Цена: %sл (%s железа)",
+	"lore.mechanization.cast_cost_gem": "Цена: %sл (%s самоцветов)",
+
+    "block.mechanization.quarry": "Карьер",
 	"text.mechanization.quarry.no_boundary": "Границы нет",
 	"text.mechanization.quarry.invalid_boundary": "Неполная граница",
 	"text.mechanization.quarry.formed_boundary": "Сформированная граница",
 
+    "block.mechanization.teleporter": "Телепортер",
+    "text.mechanization.teleporter.no_destination": "Нет действительного места назначения",
+
 "__comment":"Mechanization: Ядерная физика",
-"text.mechanization.multimeter.fuel_spent": "Израсходованное топливо: ",
-"text.mechanization.multimeter.temperature": "Температура: ",
-"text.mechanization.multimeter.refined": "%% Рафинировано ",
-"text.mechanization.multimeter.reaction_rate": "Скорость реакции: ",
+	"text.mechanization.multimeter.fuel_spent": "Израсходованное топливо: ",
+	"text.mechanization.multimeter.temperature": "Температура: ",
+	"text.mechanization.multimeter.refined": "%% Рафинировано ",
+	"text.mechanization.multimeter.reaction_rate": "Скорость реакции: ",
 	"item.mechanization.spent_fuel_cell": "Отработанная топливная ячейка",
 	"item.mechanization.uranium_cell": "Урановая ячейка",
 	"item.mechanization.depleted_uranium_cell": "Истощенная урановая ячейка",
@@ -366,7 +367,7 @@
 
 "__comment":"Mechanization: Гаджеты",
     "item.mechanization.portable_battery": "Портативная батарея",
-	"item.mechanization.portable_battery.lore": "Энергия: %s кДж/%s кДж",
+	"lore.mechanization.portable_battery": "Энергия: %s кДж/%s кДж",
     "item.mechanization.energy_saber": "Энергетическая сабля",
     "item.mechanization.drill": "Дрель",
     "item.mechanization.modular_helmet": "Модульный шлем",
@@ -435,7 +436,7 @@
 	"lore.mechanization.upgrade_aquatic":"Вода",
 	"lore.mechanization.upgrade_magnetic":"Магнит",
 	
-    "text.mechanization.guns.heat": "Тепло: ",
+    "text.mechanization.weapon_heat": "Тепло: ",
 	
 "__comment":"Mechanization: Автоматизация",
     "block.mechanization.auto_jukebox": "Автоматический проигрыватель",
@@ -449,15 +450,15 @@
     "block.mechanization.ender_hopper": "Эндер-воронка",
 	"block.mechanization.mss_drive_bay": "Отсек накопителя MSS",
 	"block.mechanization.mss_terminal": "Терминал MSS",
-	"mech.mss.item_count": "Хранимые предметы: %s",
+	"lore.mechanization.mss_item_count": "Хранимые предметы: %s",
 	"block.mechanization.item_pipe": "Пневматическая трубка",
 	"block.mechanization.item_extractor": "Пневматическая точка входа",
 	"block.mechanization.item_inserter": "Пневматическая точка выхода",
 		
 	"item.mechanization.mss_storage_drive": "Накопитель MSS",
 	"item.mechanization.item_filter": "Фильтр предметов",
-	"item.mechanization.item_filter.lore_1": "Щелкните ПКМ на сундуке с",
-	"item.mechanization.item_filter.lore_2": "предметами для настройки фильтра.",
+	"lore.mechanization.item_filter.1": "Щелкните ПКМ на сундуке с",
+	"lore.mechanization.item_filter.2": "предметами для настройки фильтра.",
 	
 	"item.mechanization.disc_end_of_the_world": "Skeeter Davis - The End of the World",
 	"item.mechanization.disc_end_of_the_world2": "8-битный кавер от \"GermanPikachuGaming\"",
@@ -474,24 +475,24 @@
 	
 "__comment":"Compat",
 	"fluid.mechanization.molten_simplunium": "Расплавленный Симплуний",
-	"item.mechanization.simplunium":"Симплуниевый стержень",
-	"item.mechanization.simplunium":"Симплуниевая шестерня",
-	"item.mechanization.simplunium":"Симплуниевая пластина",
+	"item.mechanization.simplunium_rod":"Симплуниевый стержень",
+	"item.mechanization.simplunium_gear":"Симплуниевая шестерня",
+	"item.mechanization.simpluniumv":"Симплуниевая пластина",
 	
 	"fluid.mechanization.molten_arid_alloy": "Расплавленный засухоустойчивый сплав",
-	"item.mechanization.arid":"Засухоустойчивый стержень",
-	"item.mechanization.arid":"Засухоустойчивая шестерня",
-	"item.mechanization.arid":"Засухоустойчивая пластина",
+	"item.mechanization.arid_rod":"Засухоустойчивый стержень",
+	"item.mechanization.arid_gear":"Засухоустойчивая шестерня",
+	"item.mechanization.arid_plate":"Засухоустойчивая пластина",
 	
 	"fluid.mechanization.molten_verdant_alloy": "Расплавленный вердантный сплав",
-	"item.mechanization.verdant":"Вердантный стержень",
-	"item.mechanization.verdant":"Вердантная шестерня",
-	"item.mechanization.verdant":"Вердантная пластина",
+	"item.mechanization.verdant_rod":"Вердантный стержень",
+	"item.mechanization.verdant_gear":"Вердантная шестерня",
+	"item.mechanization.verdant_plate":"Вердантная пластина",
 	
 	"fluid.mechanization.molten_aqueous_alloy": "Расплавленный водный сплав",
-	"item.mechanization.aqueous":"Водный стержень",
-	"item.mechanization.aqueous":"Водная шестерня",
-	"item.mechanization.aqueous":"Водная пластина",
+	"item.mechanization.aqueous_rod":"Водный стержень",
+	"item.mechanization.aqueous_gear":"Водная шестерня",
+	"item.mechanization.aqueous_plate":"Водная пластина",
 	
 	"lore.mechanization.upgrade_arid_resist":"+20% Засухоустойчивость",
 	"lore.mechanization.upgrade_aqueous_resist":"+20% Устойчивость к воздействию воды",
@@ -503,7 +504,6 @@
 	"lore.mechanization.upgrade_scepter":"Друидический скипетр",
 	"lore.mechanization.upgrade_fortune_seeker":"Искатель удачи",
 	
-    
 "__comment":"Mechanical Manual",
 	"mech.manual.recipe":"Рецепт\n",
 	
