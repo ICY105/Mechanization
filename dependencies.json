@@ -53,7 +53,7 @@
       "name": "Smithed Actionbar",
       "local": "external-libraries/Smithed Actionbar.zip"
     },
-	{
+	  {
       "name": "Smithed Chunk",
       "local": "SmithedChunk-Unofficial"
     }
@@ -63,63 +63,67 @@
       "tag": "minecraft:load",
       "value": "#load:_private/load"
     },
-	{
+	  {
       "tag": "load:load",
       "value": "mechanization:load"
     },
-	{
+	  {
       "tag": "load:post_load",
       "value": "mechanization:post_load"
     },
-	{
+	  {
       "tag": "chunk_scan.ores:v1/place_ore",
       "value": "mechanization:base/utils/ores/ore_gen"
     },
-	{
+	  {
       "tag": "nbt_smelting:v1/furnace",
       "value": "mechanization:base/recipes/smelting"
     },
-	{
+	  {
       "tag": "nbt_smelting:v1/blast_furnace",
       "value": "mechanization:base/recipes/smelting"
     },
-	{
+	  {
       "tag": "player_action:v1/right_click",
       "value": "#mechanization:calls/right_click"
     },
-	{
+	  {
       "tag": "player_action:v1/tick",
       "value": "#mechanization:calls/player_tick"
     },
-	{
+	  {
       "tag": "energy:v1/energy_update",
       "value": "mechanization:machines/blocks/energy_update"
     },
-	{
+	  {
       "tag": "energy:v1/cable_update",
       "value": "mechanization:machines/blocks/cable_update"
     },
-	{
+	  {
       "tag": "energy:v1/update_energy_item",
       "value": "mechanization:gadgets/player/update_energy_item"
     },
-	{
+	  {
       "tag": "energy:v1/cable_can_connect",
       "value": "mechanization:machines/blocks/cable_can_connect"
     },
-	{
+	  {
+      "tag": "fluidcrafting:v1/modify_fluid_item",
+      "value": "mechanization:base/utils/update_fluid_item"
+    },
+	  {
       "tag": "smithed.crafter:event/break",
       "value": "mechanization:base/blocks/machine_crafting_table/break"
     },
-	{
+	  {
       "tag": "smithed.crafter:event/recipes",
       "value": "#mechanization:calls/shaped_recipes"
     },
-	{
+	  {
       "tag": "smithed.crafter:event/shapeless_recipes",
       "value": "#mechanization:calls/shapeless_recipes"
     },
-	{
+	  {
       "tag": "smithed.custom_block:event/on_place",
       "value": "#mechanization:calls/place_block"
     }
