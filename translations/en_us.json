@@ -41,7 +41,7 @@
 	"lore.mechanization.storage": "Stores: %s kJ",
 	"lore.mechanization.range": "Range: %s blocks",
 	"lore.mechanization.upgrade":"Max Upgrades: %s",
-	"lore.mechanization.liquid_amount":"Volume: %sL",
+	"lore.mechanization.fluid_amount":"Volume: %sL",
 	"lore.mechanization.stored_liquid":"Stored: %s",
 	
     "text.mechanization.stored_energy": "Energy Stored: %s kJ",
@@ -55,6 +55,8 @@
 	"text.mechanization.redstone.normal": "Redstone Control On",
 	"text.mechanization.redstone.inverted": "Redstone Control On - Inverted",
 	"text.mechanization.gps_set_pos": "Set Pos: (%s, %s, %s) @ %s",
+
+    "death.attack.drink_molten_fluid": "%s drank too much liquid metal.",
 
 "__comment.base_resources":"Resources",
 	"block.mechanization.tier_1_machine_frame": "Tier 1 Machine Frame",

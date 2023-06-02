@@ -22,7 +22,7 @@ execute if score #id mechanization.data matches 34 if data storage smithed.custo
 execute if score #id mechanization.data matches 34 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier_3_machine_frame"} store success score #success mechanization.data run summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.resource_block","mechanization.machine_frame.t3","smithed.block"], item:{id:"minecraft:carrot_on_a_stick",tag:{CustomModelData:6421009},Count:1b}}
 
 # tin
-execute if score #id mechanization.data matches 23 if data storage smithed.custom_block:main blockApi{id:"mechanization:tin_block"} store success score #success mechanization.data run summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.resource_block","mechanization.tin_block","smithed.block"], item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421314},Count:1b},brightness:{sky:15,block:15}}
+execute if score #id mechanization.data matches 23 if data storage smithed.custom_block:main blockApi{id:"mechanization:tin_block"} store success score #success mechanization.data run summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.resource_block","mechanization.tin_block","smithed.block"], item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421314},Count:1b}}
 execute if score #id mechanization.data matches 27 if data storage smithed.custom_block:main blockApi{id:"mechanization:raw_tin_block"} store success score #success mechanization.data run summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.resource_block","mechanization.raw_tin_block","smithed.block"], item:{id:"minecraft:blast_furnace",tag:{CustomModelData:6421318},Count:1b}}
 
 # titanium

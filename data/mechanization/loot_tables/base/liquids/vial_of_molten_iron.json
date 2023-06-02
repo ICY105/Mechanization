@@ -6,22 +6,22 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:potion",
+          "name": "minecraft:potion",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.mechanization.filled_vial","italic":false,"with":[{"translate":"mech.liquid.molten_iron"}]}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-				{"translate":"lore.mechanization.liquid_amount","color":"gray","italic":false,"with":[{"text":"1000"}]},
-				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
-			  ]
-			},
-			{
+              "function": "minecraft:set_name",
+              "name": {"translate":"item.mechanization.filled_vial","italic":false,"with":[{"translate":"fluid.mechanization.molten_iron"}]}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"translate":"lore.mechanization.fluid_amount","color":"gray","italic":false,"with":[{"text":"1000"}]},
+                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+              ]
+            },
+            {
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:14194583, mechanization:{ id:\"vial\", liquid:{id:\"molten_iron\", molten:1b, amount:1000, temperature:1500, color:14194583, name:'{\"translate\":\"mech.liquid.molten_iron\"}'} }}"
+              "tag":"{CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:14194583, mechanization:{id:\"vial\"}, fluid:{id:\"molten_iron\", temperature:1500, color:14194583, gas: 0b, name: '{\"translate\":\"fluid.mechanization.molten_iron\"}', amount:1000, max_storage: 1000, fixed_storage: 0b}}"
             }
           ]
         }
