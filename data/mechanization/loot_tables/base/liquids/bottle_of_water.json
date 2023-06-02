@@ -21,7 +21,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag":"{HideFlags: 38, CustomPotionColor:3432410, mechanization:{id:\"glass_bottle\"}, fluid:{id:\"water\", temperature:25, color:3432410, gas: 0b, name: '{\"translate\":\"fluid.fluidcrafting.water\",\"fallback\":\"Water\"}', amount:333, max_storage: 333, fixed_storage: 1b}}"
+              "tag":"{HideFlags: 38, CustomPotionColor:3432410, mechanization:{id:\"glass_bottle\"}, fluid:{id:\"water\", temperature:25, color:3432410, gas: 0b, name: '{\"translate\":\"fluid.fluidcrafting.water\",\"fallback\":\"Water\"}', storage:333, max_storage: 333, fixed_storage: 1b}}"
             }
           ]
         }

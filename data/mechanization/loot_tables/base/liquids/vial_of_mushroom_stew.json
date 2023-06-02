@@ -21,7 +21,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:13470831, mechanization:{id:\"vial\"}, fluid:{id:\"mushroom_stew\", temperature:25, color:13470831, gas: 0b, name: '{\"translate\":\"fluid.fluidcrafting.mushroom_stew\",\"fallback\":\"Mushroom Stew\"}', amount:1000, max_storage: 1000, fixed_storage: 0b}}"
+              "tag":"{CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:13470831, mechanization:{id:\"vial\"}, fluid:{id:\"mushroom_stew\", temperature:25, color:13470831, gas: 0b, name: '{\"translate\":\"fluid.fluidcrafting.mushroom_stew\",\"fallback\":\"Mushroom Stew\"}', storage:1000, max_storage: 1000, fixed_storage: 0b}}"
             }
           ]
         }

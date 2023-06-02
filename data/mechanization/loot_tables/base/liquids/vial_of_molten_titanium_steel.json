@@ -21,7 +21,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:9401989, mechanization:{id:\"vial\"}, fluid:{id:\"molten_titanium_steel\", temperature:3500, color:9401989, gas: 0b, name: '{\"translate\":\"fluid.mechanization.molten_titanium_steel\"}', amount:1000, max_storage: 1000, fixed_storage: 0b}}"
+              "tag":"{CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:9401989, mechanization:{id:\"vial\"}, fluid:{id:\"molten_titanium_steel\", temperature:3500, color:9401989, gas: 0b, name: '{\"translate\":\"fluid.mechanization.molten_titanium_steel\"}', storage:1000, max_storage: 1000, fixed_storage: 0b}}"
             }
           ]
         }

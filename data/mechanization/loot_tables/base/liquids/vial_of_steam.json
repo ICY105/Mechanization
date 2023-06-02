@@ -21,7 +21,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:14540253, mechanization:{id:\"vial\"}, fluid:{id:\"steam\", temperature:100, color:14540253, gas: 1b, name: '{\"translate\":\"fluid.mechanization.steam\"}', amount:1000, max_storage: 1000, fixed_storage: 0b}}"
+              "tag":"{CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:14540253, mechanization:{id:\"vial\"}, fluid:{id:\"steam\", temperature:100, color:14540253, gas: 1b, name: '{\"translate\":\"fluid.mechanization.steam\"}', storage:1000, max_storage: 1000, fixed_storage: 0b}}"
             }
           ]
         }

@@ -21,7 +21,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:14304324, mechanization:{id:\"vial\"}, fluid:{id:\"molten_nether_alloy\", temperature:3500, color:14304324, gas: 0b, name: '{\"translate\":\"fluid.mechanization.molten_nether_alloy\"}', amount:1000, max_storage: 1000, fixed_storage: 0b}}"
+              "tag":"{CustomModelData: 6421108, HideFlags: 38, CustomPotionColor:14304324, mechanization:{id:\"vial\"}, fluid:{id:\"molten_nether_alloy\", temperature:3500, color:14304324, gas: 0b, name: '{\"translate\":\"fluid.mechanization.molten_nether_alloy\"}', storage:1000, max_storage: 1000, fixed_storage: 0b}}"
             }
           ]
         }
