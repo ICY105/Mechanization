@@ -31,6 +31,11 @@ execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data match
 execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data matches 0..1 run scoreboard players operation @s fluid.io.west = #fluid.in mechanization.data
 execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data matches 2 run scoreboard players operation @s fluid.io.west = #fluid.out mechanization.data
 
+scoreboard players operation @s fluid.max_storage.0 = #fluid.max_storage.0 mechanization.data
+scoreboard players operation @s fluid.max_storage.1 = #fluid.max_storage.1 mechanization.data
+scoreboard players operation @s fluid.max_storage.2 = #fluid.max_storage.2 mechanization.data
+scoreboard players operation @s fluid.max_storage.3 = #fluid.max_storage.3 mechanization.data
+
 scoreboard players operation @s fluid.transfer_rate = #cons.max_int mechanization.data
 execute if entity @s[tag=fluid.tank] run function fluid:v1/api/init_tank
 

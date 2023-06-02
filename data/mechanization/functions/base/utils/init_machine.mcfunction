@@ -7,4 +7,4 @@ execute store result score #ender_upgrade mechanization.data if data entity @s S
 execute store result score #muffled mechanization.data if data entity @s SelectedItem.tag.mechanization{muffled:1b}
 
 # sub-function
-execute as @e[type=minecraft:item_display,tag=mechanization.new,distance=..12,sort=nearest,limit=1] at @s run function mechanization:base/utils/init_machine_2
+execute as @e[type=minecraft:item_display,tag=mechanization.new,distance=..2,sort=nearest,limit=1] at @s run function mechanization:base/utils/init_machine_2
