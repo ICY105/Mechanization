@@ -8,5 +8,5 @@ function fluid:v1/api/slot_io
 
 item replace block ~ ~ ~ container.8 with minecraft:air
 item replace block ~ ~ ~ container.26 with minecraft:air
-data modify block ~ ~ ~ Items append from storage fluid:io output.input_slot
-data modify block ~ ~ ~ Items append from storage fluid:io output.output_slot
+execute if data storage fluid:io output.input_slot.id run data modify block ~ ~ ~ Items append from storage fluid:io output.input_slot
+execute if data storage fluid:io output.output_slot.id run data modify block ~ ~ ~ Items append from storage fluid:io output.output_slot
