@@ -9,24 +9,29 @@ scoreboard players operation @s energy.transfer_rate = #cons.max_int mechanizati
 function energy:v1/api/init_machine
 
 # init fluid api
+# 0 = all input, 1 = top out, sides in, 2 = all output
 execute if entity @s[tag=fluid.tank] run scoreboard players operation @s mechanization.fluid.in = #fluid.in mechanization.data
 execute if entity @s[tag=fluid.tank] run scoreboard players operation @s mechanization.fluid.out = #fluid.out mechanization.data
 
 execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data matches 0 run scoreboard players operation @s fluid.io.up = #fluid.in mechanization.data
-execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data matches 1 run scoreboard players operation @s fluid.io.up = #fluid.out mechanization.data
+execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data matches 1..2 run scoreboard players operation @s fluid.io.up = #fluid.out mechanization.data
+
 execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data matches 0 run scoreboard players operation @s fluid.io.down = #fluid.in mechanization.data
-execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data matches 1 run scoreboard players operation @s fluid.io.down = #fluid.out mechanization.data
+execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data matches 1..2 run scoreboard players operation @s fluid.io.down = #fluid.out mechanization.data
 
 execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data matches 0..1 run scoreboard players operation @s fluid.io.north = #fluid.in mechanization.data
+execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data matches 2 run scoreboard players operation @s fluid.io.north = #fluid.out mechanization.data
+
 execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data matches 0..1 run scoreboard players operation @s fluid.io.south = #fluid.in mechanization.data
+execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data matches 2 run scoreboard players operation @s fluid.io.south = #fluid.out mechanization.data
+
 execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data matches 0..1 run scoreboard players operation @s fluid.io.east = #fluid.in mechanization.data
+execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data matches 2 run scoreboard players operation @s fluid.io.east = #fluid.out mechanization.data
+
 execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data matches 0..1 run scoreboard players operation @s fluid.io.west = #fluid.in mechanization.data
+execute if entity @s[tag=fluid.tank] if score #fluid.io mechanization.data matches 2 run scoreboard players operation @s fluid.io.west = #fluid.out mechanization.data
 
-execute if entity @s[tag=fluid.tank] run scoreboard players operation @s fluid.storage.0 = #fluid.storage.0 mechanization.data
-execute if entity @s[tag=fluid.tank] run scoreboard players operation @s fluid.storage.1 = #fluid.storage.1 mechanization.data
-execute if entity @s[tag=fluid.tank] run scoreboard players operation @s fluid.storage.2 = #fluid.storage.2 mechanization.data
-execute if entity @s[tag=fluid.tank] run scoreboard players operation @s fluid.storage.3 = #fluid.storage.3 mechanization.data
-
+scoreboard players operation @s fluid.transfer_rate = #cons.max_int mechanization.data
 execute if entity @s[tag=fluid.tank] run function fluid:v1/api/init_tank
 
 # add upgrades
