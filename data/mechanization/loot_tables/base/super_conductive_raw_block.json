@@ -10,12 +10,12 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.raw_block.super_conductive","color":"dark_green","italic":false}
+			  "name": {"translate":"block.mechanization.super_conductive_raw","color":"dark_green","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{

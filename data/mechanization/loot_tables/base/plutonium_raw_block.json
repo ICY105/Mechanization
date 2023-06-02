@@ -10,12 +10,12 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.raw_block.plutonium","color":"blue","italic":false}
+			  "name": {"translate":"block.mechanization.plutonium_raw","color":"blue","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{

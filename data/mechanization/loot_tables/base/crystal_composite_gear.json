@@ -10,15 +10,15 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.gear.crystal_composite","color":"dark_red","italic":false}
+			  "name": {"translate":"item.mechanization.crystal_composite_gear","color":"dark_red","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				[{"translate":"mech.lore.upgrade_drill","color":"gray","italic":false}],
+				[{"translate":"lore.mechanization.upgrade_drill","color":"gray","italic":false}],
 			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"6000"},{"text":"6000"}]}],
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"enchantment.minecraft.silk_touch"}],
-				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
+				[{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"enchantment.minecraft.silk_touch"}],
+				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{

@@ -10,12 +10,12 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.block.nether_alloy","color":"dark_red","italic":false}
+			  "name": {"translate":"block.mechanization.nether_alloy","color":"dark_red","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{

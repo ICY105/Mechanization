@@ -10,19 +10,19 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.plate.quartz","color":"white","italic":false}
+			  "name": {"translate":"item.mechanization.quartz_plate","color":"white","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				[{"translate":"mech.lore.upgrade_modular_armor","color":"gray","italic":false}],
+				[{"translate":"lore.mechanization.upgrade_modular_armor","color":"gray","italic":false}],
 			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"1500"},{"text":"1500"}]}],
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +10% "},{"translate":"attribute.name.generic.attack_damage"}],
-				[{"translate":"mech.lore.upgrade_stats","color":"gray","italic":false}],
+				[{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" +10% "},{"translate":"attribute.name.generic.attack_damage"}],
+				[{"translate":"lore.mechanization.upgrade_stats","color":"gray","italic":false}],
 				[{"text":"  0.5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor"}],
 				[{"text":"  0.25 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor_toughness"}],
 				[{"text":"  10% ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
-				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
+				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{

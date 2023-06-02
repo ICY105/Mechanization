@@ -10,15 +10,15 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.gear.ender_alloy","color":"dark_purple","italic":false}
+			  "name": {"translate":"item.mechanization.ender_alloy_gear","color":"dark_purple","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				[{"translate":"mech.lore.upgrade_drill","color":"gray","italic":false}],
+				[{"translate":"lore.mechanization.upgrade_drill","color":"gray","italic":false}],
 			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"9000"},{"text":"9000"}]}],
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"enchantment.minecraft.fortune"},{"text":" "},{"translate":"enchantment.level.4"}],
-				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
+				[{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"enchantment.minecraft.fortune"},{"text":" "},{"translate":"enchantment.level.4"}],
+				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{

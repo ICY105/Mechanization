@@ -10,15 +10,15 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.gear.copper","color":"white","italic":false}
+			  "name": {"translate":"item.mechanization.copper_gear","color":"white","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				[{"translate":"mech.lore.upgrade_drill","color":"gray","italic":false}],
+				[{"translate":"lore.mechanization.upgrade_drill","color":"gray","italic":false}],
 			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"1000"},{"text":"1000"}]}],
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" +8 "},{"translate":"mech.lore.mining_speed"}],
-				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
+				[{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" +8 "},{"translate":"lore.mechanization.mining_speed"}],
+				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{

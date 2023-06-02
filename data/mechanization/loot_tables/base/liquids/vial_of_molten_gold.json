@@ -10,13 +10,13 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.filled_vial","italic":false,"with":[{"translate":"mech.liquid.molten_gold"}]}
+			  "name": {"translate":"item.mechanization.filled_vial","italic":false,"with":[{"translate":"mech.liquid.molten_gold"}]}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				{"translate":"mech.lore.liquid_amount","color":"gray","italic":false,"with":[{"text":"1000"}]},
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+				{"translate":"lore.mechanization.liquid_amount","color":"gray","italic":false,"with":[{"text":"1000"}]},
+				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{

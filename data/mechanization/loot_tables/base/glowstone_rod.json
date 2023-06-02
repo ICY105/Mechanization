@@ -10,19 +10,19 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.rod.glowstone","color":"yellow","italic":false}
+			  "name": {"translate":"item.mechanization.glowstone_rod","color":"yellow","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-				[{"translate":"mech.lore.upgrade_energy_saber","color":"gray","italic":false}],
+				[{"translate":"lore.mechanization.upgrade_energy_saber","color":"gray","italic":false}],
 			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"3000"},{"text":"3000"}]}],
-				[{"translate":"mech.lore.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"mech.lore.upgrade_illuminating"}],
-				[{"translate":"mech.lore.upgrade_stats","color":"gray","italic":false}],
+				[{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"lore.mechanization.upgrade_illuminating"}],
+				[{"translate":"lore.mechanization.upgrade_stats","color":"gray","italic":false}],
 				[{"text":"  2.5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
 				[{"text":"  0.3 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_speed"}],
-				[{"text":"  1 ","color":"dark_green","italic":false},{"translate":"mech.lore.energy_saber_range"}],
-				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
+				[{"text":"  1 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.energy_saber_range"}],
+				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
