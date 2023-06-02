@@ -108,7 +108,7 @@
       "value": "mechanization:machines/blocks/cable_can_connect"
     },
 	  {
-      "tag": "fluidcrafting:v1/modify_fluid_item",
+      "tag": "fluid:v1/modify_fluid_item",
       "value": "mechanization:base/utils/update_fluid_item"
     },
 	  {
