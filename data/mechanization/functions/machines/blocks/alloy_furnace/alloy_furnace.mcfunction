@@ -1,7 +1,7 @@
 
 # effects
-execute if score @s mechanization.time matches 0 store success entity @s Item.tag.CustomModelData int 6422000 if entity @s
-execute if score @s mechanization.time matches 1.. store success entity @s Item.tag.CustomModelData int 6422901 if entity @s
+execute if score @s mechanization.time matches 0 store success entity @s item.tag.CustomModelData int 6422000 if entity @s
+execute if score @s mechanization.time matches 1.. store success entity @s item.tag.CustomModelData int 6422901 if entity @s
 execute if score @s[tag=!mechanization.muffled] mechanization.time matches 1.. run playsound mechanization:machines.electric_furnace block @a[distance=..16] ~ ~ ~ 0.3 1
 
 # processing
@@ -22,13 +22,6 @@ execute if score @s mechanization.time matches 1.. run scoreboard players remove
 execute if score @s mechanization.time matches 1.. if entity @s[tag=!mechanization.muffled] if score #timer.100 mechanization.data matches 0..19 run playsound mechanization:machines.alloy_furnace block @a[distance=..16] ~ ~ ~
 
 # ui
-scoreboard players set #slot_io.in fluid.data 0
-execute if data block ~ ~ ~ Items[{Slot:1b}] run function mechanization:base/utils/fluid_slot_io/slot_io_1
-scoreboard players set #slot_io.in fluid.data 1
-execute if data block ~ ~ ~ Items[{Slot:4b}] run function mechanization:base/utils/fluid_slot_io/slot_io_4
-scoreboard players set #slot_io.in fluid.data 2
-execute if data block ~ ~ ~ Items[{Slot:7b}] run function mechanization:base/utils/fluid_slot_io/slot_io_7
-
 function mechanization:machines/blocks/alloy_furnace/gui
 
 # cleanup
