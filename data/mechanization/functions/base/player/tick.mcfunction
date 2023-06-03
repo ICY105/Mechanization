@@ -10,3 +10,6 @@ execute if score @s mechanization.item_id matches 17 if data block -30000000 0 3
 
 # process pipe wrench
 execute if score #timer.2 mechanization.data matches 1 if score @s mechanization.item_id matches 11 if data block -30000000 0 3201 Items[0].tag.mechanization{id:"pipe_wrench"} run function mechanization:base/player/pipe_wrench/display_state
+
+# scores
+execute if score @s mechanization.data matches 1.. run scoreboard players remove @s mechanization.data 1
