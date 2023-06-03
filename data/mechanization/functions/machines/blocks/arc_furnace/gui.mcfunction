@@ -24,6 +24,8 @@ scoreboard players operation #storage mechanization.data = @s fluid.storage.0
 data modify storage mechanization:temp obj set from entity @s item.tag.fluids[0]
 function mechanization:base/utils/construct_fluid_ui
 item replace block ~ ~ ~ container.5 from block -30000000 0 3201 container.0
+data modify block ~ ~ ~ Items[{Slot:2b}].tag.display set from block -30000000 0 3201 Items[0].tag.display
+data modify block ~ ~ ~ Items[{Slot:8b}].tag.display set from block -30000000 0 3201 Items[0].tag.display
 
 # model
 execute unless score @s mechanization.time matches 1.. run item replace block ~ ~ ~ container.6 with minecraft:structure_block{mechanization:{gui_item:1b},CustomModelData:6422900,display:{Name:'{"text":""}'}}

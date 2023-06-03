@@ -35,15 +35,21 @@ scoreboard players operation #storage mechanization.data = @s fluid.storage.0
 data modify storage mechanization:temp obj set from entity @s item.tag.fluids[0]
 function mechanization:base/utils/construct_fluid_ui
 item replace block ~ ~ ~ container.11 from block -30000000 0 3201 container.0
+data modify block ~ ~ ~ Items[{Slot:2b}].tag.display set from block -30000000 0 3201 Items[0].tag.display
+data modify block ~ ~ ~ Items[{Slot:20b}].tag.display set from block -30000000 0 3201 Items[0].tag.display
 
 # tank 2
 scoreboard players operation #storage mechanization.data = @s fluid.storage.1
 data modify storage mechanization:temp obj set from entity @s item.tag.fluids[1]
 function mechanization:base/utils/construct_fluid_ui
 item replace block ~ ~ ~ container.14 from block -30000000 0 3201 container.0
+data modify block ~ ~ ~ Items[{Slot:5b}].tag.display set from block -30000000 0 3201 Items[0].tag.display
+data modify block ~ ~ ~ Items[{Slot:23b}].tag.display set from block -30000000 0 3201 Items[0].tag.display
 
 # tank 3
 scoreboard players operation #storage mechanization.data = @s fluid.storage.2
 data modify storage mechanization:temp obj set from entity @s item.tag.fluids[2]
 function mechanization:base/utils/construct_fluid_ui
 item replace block ~ ~ ~ container.17 from block -30000000 0 3201 container.0
+data modify block ~ ~ ~ Items[{Slot:8b}].tag.display set from block -30000000 0 3201 Items[0].tag.display
+data modify block ~ ~ ~ Items[{Slot:26b}].tag.display set from block -30000000 0 3201 Items[0].tag.display

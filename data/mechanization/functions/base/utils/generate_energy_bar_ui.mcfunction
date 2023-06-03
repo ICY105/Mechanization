@@ -9,8 +9,8 @@ scoreboard players operation #model mechanization.data /= #max_storage mechaniza
 execute if block ~ ~ ~ #mechanization:inv_9 run scoreboard players add #model mechanization.data 6422960
 execute if block ~ ~ ~ #mechanization:inv_27 run scoreboard players add #model mechanization.data 6422920
 
-execute if block ~ ~ ~ #mechanization:inv_9 run item replace block ~ ~ ~ container.8 with minecraft:structure_block{CustomModelData:0,display:{Name:'{"text":""}'},mechanization:{gui_item:1b}}
-execute if block ~ ~ ~ #mechanization:inv_27 run item replace block ~ ~ ~ container.26 with minecraft:structure_block{CustomModelData:0,display:{Name:'{"text":""}'},mechanization:{gui_item:1b}}
+execute if block ~ ~ ~ #mechanization:inv_9 run item replace block ~ ~ ~ container.8 with minecraft:structure_block{CustomModelData:0,HideFlags:127,display:{Name:'{"text":""}'},mechanization:{gui_item:1b}}
+execute if block ~ ~ ~ #mechanization:inv_27 run item replace block ~ ~ ~ container.26 with minecraft:structure_block{CustomModelData:0,HideFlags:127,display:{Name:'{"text":""}'},mechanization:{gui_item:1b}}
 
 execute if block ~ ~ ~ #mechanization:inv_9 store result block ~ ~ ~ Items[{Slot:8b}].tag.CustomModelData int 1 run scoreboard players get #model mechanization.data
 execute if block ~ ~ ~ #mechanization:inv_27 store result block ~ ~ ~ Items[{Slot:26b}].tag.CustomModelData int 1 run scoreboard players get #model mechanization.data
