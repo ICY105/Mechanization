@@ -5,11 +5,14 @@
 function mechanization:base/utils/redstone_active
 execute if score #active mechanization.data matches 0 run scoreboard players set @s mechanization.time 0
 
-execute if score @s mechanization.time matches 1 if data block ~ ~ ~ Items[{Slot:3b}] run function mechanization:machines/machines/arc_furnace/recipes/output
-execute if score #active mechanization.data matches 1 unless score @s mechanization.time matches 2.. if score @s energy.storage matches 60.. if data block ~ ~ ~ Items[{Slot:3b}] run function mechanization:machines/machines/arc_furnace/recipes/input
+execute if score @s mechanization.time matches 1 if data block ~ ~ ~ Items[{Slot:3b}] run function mechanization:machines/blocks/arc_furnace/recipes/output
+execute if score #active mechanization.data matches 1 unless score @s mechanization.time matches 2.. if score @s energy.storage matches 60.. if data block ~ ~ ~ Items[{Slot:3b}] run function mechanization:machines/blocks/arc_furnace/recipes/input
+
 # ui
-execute if data block ~ ~ ~ Items[{Slot:1b}] run function mechanization:machines/machines/arc_furnace/tank_input
-function mechanization:machines/machines/arc_furnace/gui
+execute if score @s mechanization.time matches 0 run data modify entity @s item.tag.CustomModelData set value 6422027
+execute if score @s mechanization.time matches 1.. run data modify entity @s item.tag.CustomModelData set value 6422949
+
+function mechanization:machines/blocks/arc_furnace/gui
 
 # processing
 scoreboard players operation #needed_energy mechanization.data = #machines.cf.arc_furnace.power mechanization.data
@@ -23,5 +26,4 @@ execute if score @s mechanization.time matches 1.. run scoreboard players remove
 execute if score @s[tag=!mechanization.muffled] mechanization.time matches 1.. if score #timer.100 mechanization.data matches 0..19 run playsound mechanization:machines.arc_furnace block @a[distance=..16] ~ ~ ~
 
 ## cleanup
-execute unless block ~ ~ ~ minecraft:dropper run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
-execute unless block ~ ~ ~ minecraft:dropper run function mechanization:base/utils/break_machine_t1
+execute unless block ~ ~ ~ minecraft:dropper run function mechanization:base/utils/break_block/break_machine_t1
