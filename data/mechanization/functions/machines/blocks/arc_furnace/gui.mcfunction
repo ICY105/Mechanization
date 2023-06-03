@@ -13,6 +13,7 @@ execute if data block -30000000 0 3201 Items[0] run loot spawn ^ ^ ^1 mine -3000
 function mechanization:machines/blocks/arc_furnace/gui_clear
 
 ### fill in items
+function mechanization:base/utils/generate_energy_bar_ui
 
 # handle fluid slot IO
 scoreboard players set #slot_io.in fluid.data 0

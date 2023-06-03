@@ -19,6 +19,7 @@ execute if data block -30000000 0 3201 Items[0] run loot spawn ^ ^ ^1 mine -3000
 function mechanization:machines/blocks/alloy_furnace/gui_clear
 
 ### fill in items
+function mechanization:base/utils/generate_energy_bar_ui
 execute if entity @s[tag=mechanization.errored] run item replace block ~ ~ ~ container.16 with minecraft:barrier{display:{Name:'{"translate":"lore.mechanization.alloy_furnace_error","italic":false}'}, mechanization:{gui_item:1b}}
 
 # handle fluid slot IO

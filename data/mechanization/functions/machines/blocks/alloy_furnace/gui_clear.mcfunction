@@ -15,7 +15,6 @@ item replace block ~ ~ ~ container.20 with minecraft:structure_block{CustomModel
 item replace block ~ ~ ~ container.21 with minecraft:structure_block{CustomModelData:6421200,display:{Name:'{"text":""}'},mechanization:{gui_item:1b}}
 item replace block ~ ~ ~ container.23 with minecraft:structure_block{CustomModelData:6421200,display:{Name:'{"text":""}'},mechanization:{gui_item:1b}}
 item replace block ~ ~ ~ container.24 with minecraft:structure_block{CustomModelData:6421200,display:{Name:'{"text":""}'},mechanization:{gui_item:1b}}
-item replace block ~ ~ ~ container.26 with minecraft:structure_block{CustomModelData:6421200,display:{Name:'{"text":""}'},mechanization:{gui_item:1b}}
 
 execute if data block ~ ~ ~ Items[{Slot:0b}].tag.mechanization{gui_item:1b} run item replace block ~ ~ ~ container.0 with minecraft:air
 execute if data block ~ ~ ~ Items[{Slot:1b}].tag.mechanization{gui_item:1b} run item replace block ~ ~ ~ container.1 with minecraft:air
