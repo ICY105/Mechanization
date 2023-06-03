@@ -20,7 +20,7 @@ function mechanization:machines/blocks/alloy_furnace/gui_clear
 
 ### fill in items
 function mechanization:base/utils/generate_energy_bar_ui
-execute if entity @s[tag=mechanization.errored] run item replace block ~ ~ ~ container.16 with minecraft:barrier{display:{Name:'{"translate":"lore.mechanization.alloy_furnace_error","italic":false}'}, mechanization:{gui_item:1b}}
+execute if entity @s[tag=mechanization.errored] run item replace block ~ ~ ~ container.15 with minecraft:barrier{display:{Name:'{"translate":"lore.mechanization.alloy_furnace_error","italic":false,"color":"red"}'}, mechanization:{gui_item:1b}}
 
 # handle fluid slot IO
 scoreboard players set #slot_io.in fluid.data 0

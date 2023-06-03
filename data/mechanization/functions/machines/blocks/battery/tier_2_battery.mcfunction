@@ -18,4 +18,4 @@ scoreboard players operation @s[tag=mechanization.battery.creative] energy.stora
 execute if predicate mechanization:chance_0.5 if predicate mechanization:chance_0.5 run playsound mechanization:base.battery_ambient block @a[distance=..16] ~ ~ ~ 0.05
 
 # Break
-execute unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_machine_t2
+execute unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_block/break_machine_t2

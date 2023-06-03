@@ -1,6 +1,8 @@
 
 # Summon Entity & Init
-summon minecraft:item_frame ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.battery", "mechanization.battery.t3", "mechanization.redstone_control", "mechanization.upgradable", "mechanization.mufflable", "energy.send", "energy.receive", "smithed.block"], CustomName:'{"translate":"mech.block.battery.tier_3"}', Item:{id:"minecraft:carrot_on_a_stick", tag:{CustomModelData:6421918}, Count:1b}, Invisible:1b, Invulnerable:1b, Fixed:1b, Silent:1b}
+summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.battery", "mechanization.battery.t3", "mechanization.redstone_control", "mechanization.upgradable", "mechanization.mufflable", "mechanization.has_block_hitbox", "energy.send", "energy.receive", "smithed.block"], CustomName:'{"translate":"block.mechanization.battery.tier_3"}', item:{id:"minecraft:carrot_on_a_stick", tag:{CustomModelData:6421918}, Count:1b}}
+summon minecraft:interaction ~ ~-0.51 ~ {width:1.02f,height:1.02f,response:1b,Tags:["mechanization","mechanization.block_hitbox","mechanization.block_hitbox.tier_3","mechanization.block_hitbox.tier_3_battery"]}
+
 function mechanization:base/utils/init_machine
 scoreboard players operation #rate mechanization.data = #machines.cf.conductive_cable.transfer_rate mechanization.data
 scoreboard players operation #rate mechanization.data *= #cons.16 mechanization.data
