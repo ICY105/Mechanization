@@ -14,7 +14,7 @@ execute if score #timer.20 mechanization.data matches 10 as @e[type=minecraft:it
 execute if score #timer.20 mechanization.data matches 11 as @e[type=minecraft:item_display,tag=mechanization.liquid_accumulator] at @s run function mechanization:machines/blocks/liquid_accumulator/liquid_accumulator
 execute if score #timer.20 mechanization.data matches 12 as @e[type=minecraft:item_display,tag=mechanization.thermoelectric_generator] at @s run function mechanization:machines/blocks/thermoelectric_generator/thermoelectric_generator
 execute if score #timer.20 mechanization.data matches 13 as @e[type=minecraft:armor_stand,tag=mechanization.solar_panel] at @s run function mechanization:machines/blocks/solar_panel/solar_panel
-execute if score #timer.20 mechanization.data matches 14 as @e[type=minecraft:marker,tag=mechanization.block_breaker] at @s run function mechanization:machines/blocks/block_breaker/block_breaker
+execute if score #timer.20 mechanization.data matches 14 as @e[type=minecraft:item_display,tag=mechanization.block_breaker] at @s run function mechanization:machines/blocks/block_breaker/block_breaker
 execute if score #timer.20 mechanization.data matches 15 as @e[type=minecraft:item_display,tag=mechanization.teleporter] at @s run function mechanization:machines/blocks/teleporter/teleporter
 execute if score #timer.20 mechanization.data matches 16 as @e[type=minecraft:item_display,tag=mechanization.reformer] at @s run function mechanization:machines/blocks/reformer/reformer
 execute if score #timer.20 mechanization.data matches 17 as @e[type=minecraft:item_display,tag=mechanization.enchanting_station] at @s run function mechanization:machines/blocks/enchanting_station/enchanting_station
