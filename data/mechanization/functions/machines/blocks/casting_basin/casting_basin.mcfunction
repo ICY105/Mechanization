@@ -5,12 +5,14 @@
 function mechanization:base/utils/redstone_active
 execute if score #active mechanization.data matches 0 run scoreboard players set @s mechanization.time 0
 
-execute if score @s mechanization.time matches 1 if score @s mechanization.fluid.0 matches 1.. if score @s mechanization.data matches 1.. run function mechanization:machines/machines/casting_basin/recipes/output
-execute if score #active mechanization.data matches 1 unless score @s mechanization.time matches 2.. if score @s mechanization.fluid.0 matches 1.. if score @s mechanization.data matches 1.. if score @s energy.storage > #machines.cf.casting_basin.power mechanization.data run function mechanization:machines/machines/casting_basin/recipes/input
+execute if score @s mechanization.time matches 1 if score @s fluid.storage.0 matches 1.. if score @s mechanization.data matches 1.. run function mechanization:machines/blocks/casting_basin/recipes/output
+execute if score #active mechanization.data matches 1 unless score @s mechanization.time matches 2.. if score @s fluid.storage.0 matches 1.. if score @s mechanization.data matches 1.. if score @s energy.storage > #machines.cf.casting_basin.power mechanization.data run function mechanization:machines/blocks/casting_basin/recipes/input
 
 # ui
-execute if data block ~ ~ ~ Items[{Slot:0b}] run function mechanization:machines/machines/casting_basin/tank_input
-function mechanization:machines/machines/casting_basin/gui
+execute if score @s mechanization.time matches 0 run data modify entity @s item.tag.CustomModelData set value 6422028
+execute if score @s mechanization.time matches 1.. run data modify entity @s item.tag.CustomModelData set value 6422950
+
+function mechanization:machines/blocks/casting_basin/gui
 
 # update
 execute if score @s mechanization.time matches 1.. if score @s energy.storage < #machines.cf.casting_basin.power mechanization.data run scoreboard players set @s mechanization.time 0
@@ -18,5 +20,4 @@ execute if score @s mechanization.time matches 1.. if score @s energy.storage >=
 execute if score @s mechanization.time matches 1.. run scoreboard players remove @s mechanization.time 1
 
 ## cleanup
-execute unless block ~ ~ ~ minecraft:barrel run function mechanization:machines/machines/liquid_pipe/remove_adjacent_pipes
-execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_machine_t1
+execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_block/break_machine_t1
