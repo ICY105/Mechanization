@@ -1,6 +1,6 @@
 
 # Summon Entity & Init
-summon minecraft:item_frame ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.cable", "mechanization.cable.conductive", "energy.cable", "smithed.block", "smithed.strict"], CustomName:'{"translate":"mech.block.copper_cable.tier_1"}', Item:{id:"minecraft:exposed_copper", tag:{CustomModelData:6421000}, Count:1b}, Invisible:1b, Invulnerable:1b, Fixed:1b, Silent:1b}
+summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.cable", "mechanization.cable.conductive", "energy.cable", "smithed.block", "smithed.strict"], CustomName:'{"translate":"block.mechanization.copper_cable.tier_1"}', item:{id:"minecraft:exposed_copper", tag:{CustomModelData:6421000}, Count:1b}}
 
 # Set Data
 scoreboard players operation @e[tag=mechanization.new,sort=nearest,limit=1] energy.transfer_rate = #machines.cf.conductive_cable.transfer_rate mechanization.data
