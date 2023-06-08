@@ -17,7 +17,6 @@ item replace block ~ ~ ~ container.22 with minecraft:structure_block{CustomModel
 item replace block ~ ~ ~ container.23 with minecraft:structure_block{CustomModelData:6421200,HideFlags:127,display:{Name:'{"text":""}'},mechanization:{gui_item:1b}}
 item replace block ~ ~ ~ container.24 with minecraft:structure_block{CustomModelData:6421200,HideFlags:127,display:{Name:'{"text":""}'},mechanization:{gui_item:1b}}
 item replace block ~ ~ ~ container.25 with minecraft:structure_block{CustomModelData:6421200,HideFlags:127,display:{Name:'{"text":""}'},mechanization:{gui_item:1b}}
-item replace block ~ ~ ~ container.26 with minecraft:structure_block{CustomModelData:6421200,HideFlags:127,display:{Name:'{"text":""}'},mechanization:{gui_item:1b}}
 
 item replace block ~ ~ ~ container.4 with minecraft:carrot_on_a_stick{mechanization:{gui_item:1b},CustomModelData:6422964,HideFlags:127,display:{Name:'{"translate":"item.mechanization.ingot_cast","italic":false}',Lore:['{"translate":"lore.mechanization.cast_cost","italic":false,"color":"gray","with":[{"text":"144"},{"text":"1"}]}']}}
 item replace block ~ ~ ~ container.5 with minecraft:carrot_on_a_stick{mechanization:{gui_item:1b},CustomModelData:6422965,HideFlags:127,display:{Name:'{"translate":"item.mechanization.block_cast","italic":false}',Lore:['{"translate":"lore.mechanization.cast_cost","italic":false,"color":"gray","with":[{"text":"1296"},{"text":"9"}]}','{"translate":"lore.mechanization.cast_cost_gem","italic":false,"color":"gray","with":[{"text":"648"},{"text":"9"}]}']}}
