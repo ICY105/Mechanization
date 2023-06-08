@@ -1,6 +1,6 @@
 
 # Active Effects
-execute store success entity @s Item.tag.CustomModelData int 6422906 if entity @s
+execute store success entity @s item.tag.CustomModelData int 6422906 if entity @s
 particle minecraft:smoke ~ ~1.2 ~ 0.1 0 0.1 0 15
 
 # Reduce Counts

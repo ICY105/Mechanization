@@ -41,4 +41,4 @@ execute if block ~ ~ ~ minecraft:dropper{Items:[{id:"minecraft:hay_block"}]} run
 scoreboard players operation #energy mechanization.data *= #machines.cf.bio_generator.power mechanization.data
 scoreboard players operation #energy mechanization.data /= #cons.100 mechanization.data
 scoreboard players operation @s energy.storage += #energy mechanization.data
-execute if score #energy mechanization.data matches 1.. run function mechanization:machines/machines/bio_generator/decrease_counts
+execute if score #energy mechanization.data matches 1.. run function mechanization:machines/blocks/bio_generator/decrease_counts
