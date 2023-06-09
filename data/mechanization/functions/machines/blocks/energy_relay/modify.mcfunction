@@ -9,5 +9,5 @@ execute if score @s mechanization.data matches 2.. run scoreboard players set @s
 execute if score @s mechanization.data matches 0 run tag @s add energy.receive
 execute if score @s mechanization.data matches 1 run tag @s add energy.send
 
-execute if score @s mechanization.data matches 0 run title @p actionbar [{"translate":"mech.text.multimeter.mode","color":"dark_aqua","bold":false},{"translate":"mech.text.multimeter.transmission","color":"dark_aqua","bold":false}]
-execute if score @s mechanization.data matches 1 run title @p actionbar [{"translate":"mech.text.multimeter.mode","color":"dark_aqua","bold":false},{"translate":"mech.text.multimeter.collection","color":"dark_aqua","bold":false}]
+execute if score @s mechanization.data matches 0 run title @p actionbar [{"translate":"text.mechanization.machine_mode","color":"dark_aqua","bold":false},{"translate":"text.mechanization.transmission","color":"dark_aqua","bold":false}]
+execute if score @s mechanization.data matches 1 run title @p actionbar [{"translate":"text.mechanization.machine_mode","color":"dark_aqua","bold":false},{"translate":"text.mechanization.collection","color":"dark_aqua","bold":false}]
