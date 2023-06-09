@@ -10,34 +10,30 @@ scoreboard players set #network.dest.tank fluid.data -1
 execute if score #utils.out.3 fluid.data matches 1 if score @s fluid.storage.3 matches 1.. if data storage fluid:io fluids2[3].id run data modify storage fluid:io id set from storage fluid:io fluids2[3].id
 execute if score #utils.out.3 fluid.data matches 1 if score @s fluid.storage.3 matches 1.. if data storage fluid:io fluids2[3].id run function fluid:v1.2/utils/check_id
 execute if score #utils.out.3 fluid.data matches 1 if score @s fluid.storage.3 matches 1.. if score #utils.out fluid.data matches 1 if data storage fluid:io fluids2[3].id run scoreboard players set #network.dest.tank fluid.data 3
-execute if score #utils.out.3 fluid.data matches 1 unless score @s fluid.storage.3 matches 1.. run scoreboard players set #network.dest.tank fluid.data 3
-execute if score #network.dest.tank fluid.data matches 3 run scoreboard players set #out fluid.data 1
-execute if score #network.dest.tank fluid.data matches 3 run function #fluid:v1/tank_fluid_accept
-execute if score #network.dest.tank fluid.data matches 3 if score #out fluid.data matches 0 run scoreboard players set #network.tank fluid.data -1
+execute if score #utils.out.0 fluid.data matches 1 unless score @s fluid.storage.3 matches 1.. run scoreboard players set #out fluid.data 1
+execute if score #utils.out.0 fluid.data matches 1 unless score @s fluid.storage.3 matches 1.. run function #fluid:v1/tank_fluid_accept
+execute if score #utils.out.0 fluid.data matches 1 unless score @s fluid.storage.3 matches 1.. if score #out fluid.data matches 1 run scoreboard players set #network.dest.tank fluid.data 3
 
 execute if score #utils.out.2 fluid.data matches 1 if score @s fluid.storage.2 matches 1.. if data storage fluid:io fluids2[2].id run data modify storage fluid:io id set from storage fluid:io fluids2[2].id
 execute if score #utils.out.2 fluid.data matches 1 if score @s fluid.storage.2 matches 1.. if data storage fluid:io fluids2[2].id run function fluid:v1.2/utils/check_id
 execute if score #utils.out.2 fluid.data matches 1 if score @s fluid.storage.2 matches 1.. if score #utils.out fluid.data matches 1 if data storage fluid:io fluids2[2].id run scoreboard players set #network.dest.tank fluid.data 2
-execute if score #utils.out.2 fluid.data matches 1 unless score @s fluid.storage.2 matches 1.. run scoreboard players set #network.dest.tank fluid.data 2
-execute if score #network.dest.tank fluid.data matches 2 run scoreboard players set #out fluid.data 1
-execute if score #network.dest.tank fluid.data matches 2 run function #fluid:v1/tank_fluid_accept
-execute if score #network.dest.tank fluid.data matches 2 if score #out fluid.data matches 0 run scoreboard players set #network.tank fluid.data -1
+execute if score #utils.out.0 fluid.data matches 1 unless score @s fluid.storage.2 matches 1.. run scoreboard players set #out fluid.data 1
+execute if score #utils.out.0 fluid.data matches 1 unless score @s fluid.storage.2 matches 1.. run function #fluid:v1/tank_fluid_accept
+execute if score #utils.out.0 fluid.data matches 1 unless score @s fluid.storage.2 matches 1.. if score #out fluid.data matches 1 run scoreboard players set #network.dest.tank fluid.data 2
 
 execute if score #utils.out.1 fluid.data matches 1 if score @s fluid.storage.1 matches 1.. if data storage fluid:io fluids2[1].id run data modify storage fluid:io id set from storage fluid:io fluids2[1].id
 execute if score #utils.out.1 fluid.data matches 1 if score @s fluid.storage.1 matches 1.. if data storage fluid:io fluids2[1].id run function fluid:v1.2/utils/check_id
 execute if score #utils.out.1 fluid.data matches 1 if score @s fluid.storage.1 matches 1.. if score #utils.out fluid.data matches 1 if data storage fluid:io fluids2[1].id run scoreboard players set #network.dest.tank fluid.data 1
-execute if score #utils.out.1 fluid.data matches 1 unless score @s fluid.storage.1 matches 1.. run scoreboard players set #network.dest.tank fluid.data 1
-execute if score #network.dest.tank fluid.data matches 1 run scoreboard players set #out fluid.data 1
-execute if score #network.dest.tank fluid.data matches 1 run function #fluid:v1/tank_fluid_accept
-execute if score #network.dest.tank fluid.data matches 1 if score #out fluid.data matches 0 run scoreboard players set #network.tank fluid.data -1
+execute if score #utils.out.0 fluid.data matches 1 unless score @s fluid.storage.1 matches 1.. run scoreboard players set #out fluid.data 1
+execute if score #utils.out.0 fluid.data matches 1 unless score @s fluid.storage.1 matches 1.. run function #fluid:v1/tank_fluid_accept
+execute if score #utils.out.0 fluid.data matches 1 unless score @s fluid.storage.1 matches 1.. if score #out fluid.data matches 1 run scoreboard players set #network.dest.tank fluid.data 1
 
 execute if score #utils.out.0 fluid.data matches 1 if score @s fluid.storage.0 matches 1.. if data storage fluid:io fluids2[0].id run data modify storage fluid:io id set from storage fluid:io fluids2[0].id
 execute if score #utils.out.0 fluid.data matches 1 if score @s fluid.storage.0 matches 1.. if data storage fluid:io fluids2[0].id run function fluid:v1.2/utils/check_id
 execute if score #utils.out.0 fluid.data matches 1 if score @s fluid.storage.0 matches 1.. if score #utils.out fluid.data matches 1 if data storage fluid:io fluids2[0].id run scoreboard players set #network.dest.tank fluid.data 0
-execute if score #utils.out.0 fluid.data matches 1 unless score @s fluid.storage.0 matches 1.. run scoreboard players set #network.dest.tank fluid.data 0
-execute if score #network.dest.tank fluid.data matches 0 run scoreboard players set #out fluid.data 1
-execute if score #network.dest.tank fluid.data matches 0 run function #fluid:v1/tank_fluid_accept
-execute if score #network.dest.tank fluid.data matches 0 if score #out fluid.data matches 0 run scoreboard players set #network.tank fluid.data -1
+execute if score #utils.out.0 fluid.data matches 1 unless score @s fluid.storage.0 matches 1.. run scoreboard players set #out fluid.data 1
+execute if score #utils.out.0 fluid.data matches 1 unless score @s fluid.storage.0 matches 1.. run function #fluid:v1/tank_fluid_accept
+execute if score #utils.out.0 fluid.data matches 1 unless score @s fluid.storage.0 matches 1.. if score #out fluid.data matches 1 run scoreboard players set #network.dest.tank fluid.data 0
 
 # copy scoreboard data
 execute if score #network.dest.tank fluid.data matches 0 run scoreboard players operation #network.dest.storage fluid.data = @s fluid.storage.0

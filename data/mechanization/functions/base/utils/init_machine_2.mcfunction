@@ -40,6 +40,13 @@ scoreboard players operation @s fluid.max_storage.1 = #fluid.max_storage.1 mecha
 scoreboard players operation @s fluid.max_storage.2 = #fluid.max_storage.2 mechanization.data
 scoreboard players operation @s fluid.max_storage.3 = #fluid.max_storage.3 mechanization.data
 
+scoreboard players operation @s fluid.storage.0 = #fluid.storage.0 mechanization.data
+scoreboard players operation @s fluid.storage.1 = #fluid.storage.1 mechanization.data
+scoreboard players operation @s fluid.storage.2 = #fluid.storage.2 mechanization.data
+scoreboard players operation @s fluid.storage.3 = #fluid.storage.3 mechanization.data
+
+execute if data storage mechanization:temp list[0] run data modify entity @s item.tag.fluids set from storage mechanization:temp list
+
 scoreboard players operation @s fluid.transfer_rate = #cons.max_int mechanization.data
 execute if entity @s[tag=fluid.tank] run function fluid:v1/api/init_tank
 

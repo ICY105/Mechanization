@@ -31,24 +31,21 @@ scoreboard players set #slot_io.in fluid.data 2
 execute if data block ~ ~ ~ Items[{Slot:7b}] run function mechanization:base/utils/fluid_slot_io/slot_io_7
 
 # tank 1
-scoreboard players operation #storage mechanization.data = @s fluid.storage.0
-data modify storage mechanization:temp obj set from entity @s item.tag.fluids[0]
+scoreboard players set #tank mechanization.data 0
 function mechanization:base/utils/construct_fluid_ui
 item replace block ~ ~ ~ container.11 from block -30000000 0 3201 container.0
 data modify block ~ ~ ~ Items[{Slot:2b}].tag.display set from block -30000000 0 3201 Items[0].tag.display
 data modify block ~ ~ ~ Items[{Slot:20b}].tag.display set from block -30000000 0 3201 Items[0].tag.display
 
 # tank 2
-scoreboard players operation #storage mechanization.data = @s fluid.storage.1
-data modify storage mechanization:temp obj set from entity @s item.tag.fluids[1]
+scoreboard players set #tank mechanization.data 1
 function mechanization:base/utils/construct_fluid_ui
 item replace block ~ ~ ~ container.14 from block -30000000 0 3201 container.0
 data modify block ~ ~ ~ Items[{Slot:5b}].tag.display set from block -30000000 0 3201 Items[0].tag.display
 data modify block ~ ~ ~ Items[{Slot:23b}].tag.display set from block -30000000 0 3201 Items[0].tag.display
 
 # tank 3
-scoreboard players operation #storage mechanization.data = @s fluid.storage.2
-data modify storage mechanization:temp obj set from entity @s item.tag.fluids[2]
+scoreboard players set #tank mechanization.data 2
 function mechanization:base/utils/construct_fluid_ui
 item replace block ~ ~ ~ container.17 from block -30000000 0 3201 container.0
 data modify block ~ ~ ~ Items[{Slot:8b}].tag.display set from block -30000000 0 3201 Items[0].tag.display
