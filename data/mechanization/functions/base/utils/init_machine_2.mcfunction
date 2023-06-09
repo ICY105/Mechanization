@@ -2,11 +2,15 @@
 scoreboard players set @s mechanization.redstone 0
 
 # init energy api data
-scoreboard players set @s energy.max_storage 4000
-scoreboard players operation @s energy.storage = #energy mechanization.data
-scoreboard players operation @s energy.transfer_rate = #cons.max_int mechanization.data
+execute if entity @s[tag=energy.send] run tag @s add mechanization.temp
+execute if entity @s[tag=energy.receive] run tag @s add mechanization.temp
 
-function energy:v1/api/init_machine
+execute if entity @s[tag=mechanization.temp] run scoreboard players set @s energy.max_storage 4000
+execute if entity @s[tag=mechanization.temp] run scoreboard players operation @s energy.storage = #energy mechanization.data
+execute if entity @s[tag=mechanization.temp] run scoreboard players operation @s energy.transfer_rate = #cons.max_int mechanization.data
+execute if entity @s[tag=mechanization.temp] run function energy:v1/api/init_machine
+
+tag @s remove mechanization.temp
 
 # init fluid api
 # 0 = all input, 1 = top out, sides in, 2 = all output

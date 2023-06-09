@@ -8,9 +8,8 @@ execute if score #slot mechanization.data matches -1 unless data block ~ ~ ~ Ite
 #move item
 execute if score #slot mechanization.data matches -1 run data modify block -29999999 0 1601 Items append from storage mechanization:temp list[0]
 execute if score #slot mechanization.data matches 0.. store result storage mechanization:temp list[0].Slot byte 1 run scoreboard players get #slot mechanization.data
-data modify storage mechanization:temp obj set from storage mechanization:temp list[0]
 execute if score #slot mechanization.data matches 0.. run data modify block ~ ~ ~ Items append from storage mechanization:temp list[0]
 
 #cycle
 data remove storage mechanization:temp list[0]
-execute if data storage mechanization:temp list[0] run function mechanization:machines/machines/liquid_accumulator/gui_move
+execute if data storage mechanization:temp list[0] run function mechanization:machines/blocks/liquid_accumulator/gui_move
