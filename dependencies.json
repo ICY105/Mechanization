@@ -120,6 +120,10 @@
       "value": "mechanization:machines/blocks/pipe_update"
     },
 	  {
+      "tag": "fluid:v1/pipe_can_connect",
+      "value": "mechanization:machines/blocks/pipe_can_connect"
+    },
+	  {
       "tag": "smithed.crafter:event/break",
       "value": "mechanization:base/blocks/machine_crafting_table/break"
     },
