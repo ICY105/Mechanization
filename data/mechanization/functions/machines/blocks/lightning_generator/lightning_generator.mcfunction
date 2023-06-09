@@ -10,4 +10,4 @@ execute if score @s mechanization.data matches 1.. run scoreboard players set @s
 execute if score @s mechanization.data matches 0 run scoreboard players set @s energy.storage 0
 
 # cleanup
-execute unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_machine_t3
+execute unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_block/break_machine_t3
