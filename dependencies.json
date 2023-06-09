@@ -112,6 +112,10 @@
       "value": "mechanization:base/utils/update_fluid_item"
     },
 	  {
+      "tag": "fluid:v1/tank_fluid_accept",
+      "value": "mechanization:machines/blocks/fluid_accept"
+    },
+	  {
       "tag": "smithed.crafter:event/break",
       "value": "mechanization:base/blocks/machine_crafting_table/break"
     },
