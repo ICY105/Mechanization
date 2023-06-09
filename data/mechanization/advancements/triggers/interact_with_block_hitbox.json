@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": [
+          {
+            "entity": "this",
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "type": "minecraft:interaction",
+              "nbt": "{Tags:[\"mechanization.block_hitbox\"]}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "mechanization:base/player/right_click"
+  }
+}

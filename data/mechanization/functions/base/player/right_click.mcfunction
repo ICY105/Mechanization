@@ -1,4 +1,6 @@
 
+advancement revoke @s only mechanization:triggers/interact_with_block_hitbox
+
 scoreboard players set @s mechanization.item_id 0
 execute store result score @s mechanization.item_id run data get entity @s SelectedItem.tag.mechanization.id
 
