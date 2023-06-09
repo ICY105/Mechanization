@@ -1,6 +1,7 @@
 
 # Summon Entity & Init
-summon minecraft:item_frame ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.growth_accelerator", "mechanization.redstone_control", "mechanization.upgradable", "mechanization.mufflable", "energy.receive", "smithed.block"], CustomName:'{"translate":"mech.block.growth_accelerator"}', Item:{id:"minecraft:blast_furnace", tag:{CustomModelData:6422004}, Count:1b}, ItemRotation:0, Invisible:1b, Invulnerable:1b, Fixed:1b, Silent:1b}
+summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.growth_accelerator", "mechanization.redstone_control", "mechanization.upgradable", "mechanization.mufflable", "mechanization.has_block_hitbox", "energy.receive", "smithed.block"], CustomName:'{"translate":"block.mechanization.growth_accelerator"}', item:{id:"minecraft:blast_furnace", tag:{CustomModelData:6422004}, Count:1b}}
+summon minecraft:interaction ~ ~-0.51 ~ {width:1.02f,height:1.02f,response:1b,Tags:["mechanization","mechanization.block_hitbox","mechanization.block_hitbox.tier_2","mechanization.block_hitbox.growth_accelerator"]}
+setblock ~ ~ ~ minecraft:barrier
 
 function mechanization:base/utils/init_machine
-setblock ~ ~ ~ minecraft:barrier
