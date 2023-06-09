@@ -6,7 +6,7 @@ setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'[{"translate":"offset.16
 # init data
 scoreboard players set #fluid.io mechanization.data 2
 scoreboard players set #fluid.in mechanization.data 0
-scoreboard players set #fluid.out mechanization.data 1
+scoreboard players set #fluid.out mechanization.data -1
 scoreboard players set #fluid.max_storage.0 mechanization.data 4000
 scoreboard players set #fluid.max_storage.1 mechanization.data 0
 scoreboard players set #fluid.max_storage.2 mechanization.data 0

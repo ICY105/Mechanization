@@ -1,7 +1,7 @@
 
 execute if entity @s[tag=mechanization.quarry] run function mechanization:machines/blocks/quarry/break
 execute if entity @s[tag=mechanization.grinder] run function mechanization:machines/blocks/grinder/break
-execute if entity @s[tag=mechanization.pipe] run function mechanization:machines/blocks/liquid_pipe/break
+execute if entity @s[tag=mechanization.fluid_pipe] run function mechanization:machines/blocks/fluid_pipe/break
 execute if entity @s[tag=mechanization.reformer] run function mechanization:machines/blocks/reformer/break
 execute if entity @s[tag=mechanization.cable] run function mechanization:machines/blocks/cable/break
 execute if entity @s[tag=mechanization.auto_fisher] run function mechanization:machines/blocks/fisher/break

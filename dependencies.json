@@ -116,6 +116,10 @@
       "value": "mechanization:machines/blocks/fluid_accept"
     },
 	  {
+      "tag": "fluid:v1/pipe_update",
+      "value": "mechanization:machines/blocks/pipe_update"
+    },
+	  {
       "tag": "smithed.crafter:event/break",
       "value": "mechanization:base/blocks/machine_crafting_table/break"
     },
