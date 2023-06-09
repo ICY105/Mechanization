@@ -8,7 +8,7 @@ scoreboard players set #valid mechanization.data 1
 
 execute store result score #input_count mechanization.data run data get block ~ ~ ~ Items[{Slot:0b}].Count
 execute store result score #output_count mechanization.data run data get block ~ ~ ~ Items[{Slot:2b}].Count
-execute if score #output_count mechanization.data matches 1.. run function mechanization:machines/machines/grinder/verify_input
+execute if score #output_count mechanization.data matches 1.. run function mechanization:machines/blocks/grinder/verify_input
 
 ## Set Output
 
