@@ -1,7 +1,7 @@
 
 scoreboard players remove @s energy.storage 128
-scoreboard players remove @s mechanization.fluid.0 1
-scoreboard players remove @s[tag=mechanization.upgraded,tag=!mechanization.upgraded.ender,tag=!mechanization.upgraded.nether] mechanization.fluid.0 1
+scoreboard players remove @s fluid.storage.0 1
+scoreboard players remove @s[tag=mechanization.upgraded,tag=!mechanization.upgraded.ender,tag=!mechanization.upgraded.nether] fluid.storage.0 1
 
 execute if entity @s[tag=!mechanization.muffled] run playsound mechanization:machines.reformer block @a[distance=..16] ~ ~ ~ 0.3 1.0
 

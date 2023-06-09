@@ -1,7 +1,8 @@
 
 data modify storage fluid:io input set value {input_slot:{},output_slot:{}}
 data modify storage fluid:io input.input_slot set from block ~ ~ ~ Items[{Slot:0b}]
-data modify storage fluid:io input.output_slot set from block ~ ~ ~ Items[{Slot:18b}]
+execute if block ~ ~ ~ #mechanization:inv_9 run data modify storage fluid:io input.output_slot set from block ~ ~ ~ Items[{Slot:6b}]
+execute if block ~ ~ ~ #mechanization:inv_27 run data modify storage fluid:io input.output_slot set from block ~ ~ ~ Items[{Slot:18b}]
 
 function fluid:v1/api/slot_io
 

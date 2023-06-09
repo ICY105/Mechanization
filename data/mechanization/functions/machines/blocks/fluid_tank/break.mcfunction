@@ -20,7 +20,7 @@ execute if score @s fluid.storage.0 matches 1.. run data modify entity @e[type=i
 
 # run break functions
 function mechanization:base/utils/break_block/break_drop_inv
-function fluid:v1/api/break_pipe
+function fluid:v1/api/break_tank
 
 # kill
 setblock ~ ~ ~ minecraft:air
