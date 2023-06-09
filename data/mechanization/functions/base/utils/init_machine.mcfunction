@@ -14,4 +14,4 @@ execute store result score #fluid.storage.2 mechanization.data run data get enti
 execute store result score #fluid.storage.3 mechanization.data run data get entity @s SelectedItem.tag.mechanization.stored_fluids_amount[3]
 
 # sub-function
-execute as @e[type=minecraft:item_display,tag=mechanization.new,distance=..2,sort=nearest,limit=1] at @s run function mechanization:base/utils/init_machine_2
+execute as @e[tag=mechanization.new,distance=..2,sort=nearest,limit=1] at @s run function mechanization:base/utils/init_machine_2

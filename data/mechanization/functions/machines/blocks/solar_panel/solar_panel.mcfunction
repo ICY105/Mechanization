@@ -9,11 +9,11 @@ execute if block ~ ~ ~ minecraft:daylight_detector[inverted=false] run data modi
 execute if block ~ ~ ~ minecraft:daylight_detector[inverted=true] run data modify entity @s ArmorItems[3].tag.CustomModelData set value 6422910
 execute unless block ~ ~ ~ minecraft:daylight_detector run kill @s
 
-execute if score @s energy.storage matches ..2000 if entity @s[tag=!mechanization.upgraded] run function mechanization:machines/machines/solar_panel/normal
-execute if score @s energy.storage matches ..2000 if entity @s[tag=mechanization.upgraded,tag=!mechanization.upgraded.ender,tag=!mechanization.upgraded.nether] run function mechanization:machines/machines/solar_panel/upgraded
-execute if score @s energy.storage matches ..2000 if entity @s[tag=mechanization.upgraded.ender] run function mechanization:machines/machines/solar_panel/ender
-execute if score @s energy.storage matches ..2000 if entity @s[tag=mechanization.upgraded.nether] run function mechanization:machines/machines/solar_panel/nether
+execute if score @s energy.storage matches ..2000 if entity @s[tag=!mechanization.upgraded] run function mechanization:machines/blocks/solar_panel/normal
+execute if score @s energy.storage matches ..2000 if entity @s[tag=mechanization.upgraded,tag=!mechanization.upgraded.ender,tag=!mechanization.upgraded.nether] run function mechanization:machines/blocks/solar_panel/upgraded
+execute if score @s energy.storage matches ..2000 if entity @s[tag=mechanization.upgraded.ender] run function mechanization:machines/blocks/solar_panel/ender
+execute if score @s energy.storage matches ..2000 if entity @s[tag=mechanization.upgraded.nether] run function mechanization:machines/blocks/solar_panel/nether
 
 # cleanup
-execute unless block ~ ~ ~ minecraft:daylight_detector run function mechanization:base/utils/break_machine_t2
-execute unless block ~ ~ ~ minecraft:daylight_detector positioned ~ ~0.8 ~ run kill @e[type=item_frame,tag=mechanization.solar_panel.model,distance=..0.2]
+execute unless block ~ ~ ~ minecraft:daylight_detector run function mechanization:base/utils/break_block/break_machine_t2
+execute unless block ~ ~ ~ minecraft:daylight_detector align xyz positioned ~0.5 ~0.5 ~0.5 run kill @e[type=minecraft:item_display,tag=mechanization.solar_panel.model,distance=..0.2]
