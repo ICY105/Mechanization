@@ -56,7 +56,8 @@
 	"text.mechanization.redstone.inverted": "Redstone Control On - Inverted",
 	"text.mechanization.gps_set_pos": "Set Pos: (%s, %s, %s) @ %s",
 
-    "death.attack.drink_molten_fluid": "%s drank too much liquid metal.",
+    "death.attack.mechanization.drink_molten_fluid": "%s drank too much liquid metal.",
+    "death.attack.mechanization.annihilated": "%s was annihilated by %s.",
 
 "__comment.base_resources":"Resources",
 	"block.mechanization.tier_1_machine_frame": "Tier 1 Machine Frame",

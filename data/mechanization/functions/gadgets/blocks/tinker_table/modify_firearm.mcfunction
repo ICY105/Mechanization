@@ -97,6 +97,9 @@ scoreboard players operation #range mechanization.data /= #cons.2 mechanization.
 execute store result storage mechanization:temp obj.tag.CustomModelData int 1 run scoreboard players get #model mechanization.data
 
 # display data
+data modify storage mechanization:temp obj.tag.display.Lore append value '{"text":""}'
+data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"item.modifiers.mainhand","color":"gray","italic":false}'
+
 scoreboard players operation #damage mechanization.data /= #cons.10 mechanization.data
 execute if score #damage mechanization.data matches 0 run scoreboard players set #damage mechanization.data 1
 data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#damage","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.damage"}]'
@@ -124,4 +127,4 @@ data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" 
 data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
 execute if score #bouncy mechanization.data matches 1 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"translate":"lore.mechanization.bouncy","color":"dark_green","italic":"false"}]'
-data modify storage mechanization:temp obj.tag.display.Lore append value '[{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]'
+
