@@ -1,7 +1,7 @@
 
 
 # configure input slots
-execute if data entity @s ArmorItems[].id run function mechanization:gadgets/machines/charging_station/move_armor 
+execute if data entity @s ArmorItems[].id run function mechanization:gadgets/blocks/charging_station/move_armor 
 execute if data entity @s HandItems[0].Count run data merge entity @s {DisabledSlots:4136992}
 execute unless data entity @s HandItems[0].Count run data merge entity @s {DisabledSlots:2105376}
 

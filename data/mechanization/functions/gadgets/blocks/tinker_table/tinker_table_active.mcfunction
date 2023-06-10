@@ -57,7 +57,7 @@ execute if score #active_slots mechanization.data matches 6.. unless score #upgr
 execute if data block -30000000 0 3201 Items[0] run loot give @p mine -30000000 0 3201 minecraft:air{drop_contents:true}
 
 # update ui
-function mechanization:gadgets/machines/tinker_table/reset_ui
+function mechanization:gadgets/blocks/tinker_table/reset_ui
 
 # add modifiers
 data modify storage mechanization:temp obj set from block ~ ~ ~ Items[{Slot:10b}]
@@ -69,10 +69,10 @@ execute unless data block ~ ~ ~ Items[{Slot:15b}].tag.mechanization.gui_item run
 execute unless data block ~ ~ ~ Items[{Slot:16b}].tag.mechanization.gui_item run data modify storage mechanization:temp list append from block ~ ~ ~ Items[{Slot:16b}]
 execute unless data block ~ ~ ~ Items[{Slot:17b}].tag.mechanization.gui_item run data modify storage mechanization:temp list append from block ~ ~ ~ Items[{Slot:17b}]
 
-execute if entity @s[tag=mechanization.active] run function mechanization:gadgets/machines/tinker_table/add_modifiers
+execute if entity @s[tag=mechanization.active] run function mechanization:gadgets/blocks/tinker_table/add_modifiers
 execute if entity @s[tag=mechanization.active] run data modify block ~ ~ ~ Items append from storage mechanization:temp obj 
 
 # cleanup
-execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_machine_t2
+execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_block/break_machine_t1
 execute if entity @s[tag=mechanization.active] run data modify entity @s Item.tag.stored_item set from block ~ ~ ~ Items[{Slot:10b}]
 execute if entity @s[tag=!mechanization.active] run data modify entity @s Item.tag.stored_item set value {}

@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"mech.block.charging_station","color":"dark_red","italic":false}
+              "name": {"translate":"block.mechanization.charging_station","color":"dark_red","italic":false}
             },
             {
               "function": "minecraft:set_lore",

@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"mech.block.tinker_table","color":"dark_red","italic":false}
+              "name": {"translate":"block.mechanization.tinker_table","color":"dark_red","italic":false}
             },
             {
               "function": "minecraft:set_lore",

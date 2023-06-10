@@ -97,5 +97,5 @@ execute if score #broken mechanization.data matches 0 run data modify block -300
 
 execute if score #broken mechanization.data matches 1 run playsound minecraft:entity.item.break player @s
 data modify storage mechanization:temp obj set from block -30000000 0 3201 Items[0]
-execute if score #broken mechanization.data matches 1 run function mechanization:gadgets/blocks/tinker_table/add_modifiers
+function mechanization:gadgets/blocks/tinker_table/add_modifiers
 data modify block -30000000 0 3201 Items[0] set from storage mechanization:temp obj 

@@ -1,7 +1,6 @@
 
 # store power and upgrade state
 scoreboard players set #stored_power mechanization.data 0
-scoreboard players operation #stored_power mechanization.data = @s[tag=!mechanization.battery.quantum] energy.storage
 
 scoreboard players set #upgrade mechanization.data 0
 execute if entity @s[tag=mechanization.upgraded] run scoreboard players set #upgrade mechanization.data 1

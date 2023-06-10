@@ -103,8 +103,8 @@ execute store result storage mechanization:temp obj.tag.AttributeModifiers[{Attr
 execute store result storage mechanization:temp obj.tag.AttributeModifiers[{AttributeName:"minecraft:generic.knockback_resistance",Operation:0}].Amount double 0.1 run scoreboard players get #knockback mechanization.data
 
 # special effects
-execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"illuminating"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_illuminating","color":"gray","italic":false}'
-execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"shield_recharge"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.shield_recharge","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"illuminating"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"lore.mechanization.upgrade_illuminating","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"shield_recharge"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"lore.mechanization.shield_recharge","color":"gray","italic":false}'
 
 execute if score #type mechanization.data matches 1 if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"rebreather"} run data modify storage mechanization:temp obj.tag.CustomModelData set value 6424900
 execute if score #type mechanization.data matches 1 if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"night_vision"} run data modify storage mechanization:temp obj.tag.CustomModelData set value 6424901
@@ -130,44 +130,41 @@ execute if data storage mechanization:temp obj.tag.mechanization{id:"modular_boo
 scoreboard players operation #value mechanization.data = #armor mechanization.data
 scoreboard players operation #armor mechanization.data /= #cons.100 mechanization.data
 scoreboard players operation #value mechanization.data %= #cons.100 mechanization.data
-execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#armor","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.armor"}]'
-execute unless score #value mechanization.data matches 0 run data modify block -30000000 0 3202 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#armor","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.armor"}]'
-data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 Text1
+execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#armor","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.armor"}]'
+execute unless score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#armor","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.armor"}]'
+data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
 scoreboard players operation #value mechanization.data = #toughness mechanization.data
 scoreboard players operation #toughness mechanization.data /= #cons.100 mechanization.data
 scoreboard players operation #value mechanization.data %= #cons.100 mechanization.data
-execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#toughness","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.armor_toughness"}]'
-execute unless score #value mechanization.data matches 0 run data modify block -30000000 0 3202 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#toughness","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.armor_toughness"}]'
-data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 Text1
+execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#toughness","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.armor_toughness"}]'
+execute unless score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#toughness","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.armor_toughness"}]'
+data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
-data modify block -30000000 0 3202 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#shield","objective":"mechanization.data"}}," ",{"translate":"mech.lore.shield_capacity"}]'
-data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 Text1
+data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#shield","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.shield_capacity"}]'
+data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
 scoreboard players operation #value mechanization.data = #health mechanization.data
 scoreboard players operation #value mechanization.data %= #cons.10 mechanization.data
 execute if score #health mechanization.data matches 0 run scoreboard players set #value mechanization.data -1000
 scoreboard players operation #health mechanization.data /= #cons.10 mechanization.data
-execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#health","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.max_health"}]'
-execute if score #value mechanization.data matches 1.. run data modify block -30000000 0 3202 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#health","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.max_health"}]'
-execute if score #value mechanization.data matches 0.. run data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 Text1
+execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#health","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.max_health"}]'
+execute if score #value mechanization.data matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#health","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.max_health"}]'
+execute if score #value mechanization.data matches 0.. run data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
 scoreboard players operation #value mechanization.data = #speed mechanization.data
 scoreboard players operation #value mechanization.data %= #cons.100 mechanization.data
 execute if score #speed mechanization.data matches 0 run scoreboard players set #value mechanization.data -1000
 scoreboard players operation #speed mechanization.data /= #cons.100 mechanization.data
-execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#speed","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.movement_speed"}]'
-execute if score #value mechanization.data matches 1..9 run data modify block -30000000 0 3202 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#speed","objective":"mechanization.data"}},".0",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.movement_speed"}]'
-execute if score #value mechanization.data matches 10.. run data modify block -30000000 0 3202 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#speed","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.movement_speed"}]'
-execute if score #value mechanization.data matches 0.. run data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 Text1
+execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#speed","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.movement_speed"}]'
+execute if score #value mechanization.data matches 1..9 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#speed","objective":"mechanization.data"}},".0",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.movement_speed"}]'
+execute if score #value mechanization.data matches 10.. run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#speed","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.movement_speed"}]'
+execute if score #value mechanization.data matches 0.. run data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
 scoreboard players operation #value mechanization.data = #knockback mechanization.data
 scoreboard players operation #value mechanization.data %= #cons.10 mechanization.data
 execute if score #knockback mechanization.data matches 0 run scoreboard players set #value mechanization.data -1000
 scoreboard players operation #knockback mechanization.data /= #cons.10 mechanization.data
-execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#knockback","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.knockback_resistance"}]'
-execute if score #value mechanization.data matches 1.. run data modify block -30000000 0 3202 Text1 set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#knockback","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.knockback_resistance"}]'
-execute if score #value mechanization.data matches 0.. run data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 Text1
-
-data modify block -30000000 0 3202 Text1 set value '[{"translate":"mech.lore.added_by","color":"blue","italic":false}]'
-data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 Text1
+execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#knockback","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.knockback_resistance"}]'
+execute if score #value mechanization.data matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":"+","color":"blue","italic":"false"},{"score":{"name":"#knockback","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.knockback_resistance"}]'
+execute if score #value mechanization.data matches 0.. run data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]

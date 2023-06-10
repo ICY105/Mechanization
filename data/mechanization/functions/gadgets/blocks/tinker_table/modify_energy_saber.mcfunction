@@ -85,18 +85,18 @@ execute if score #value mechanization.data matches 5 run data modify storage mec
 
 execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"fire_aspect"} run data modify storage mechanization:temp obj.tag.Enchantments append value {id:"minecraft:fire_aspect",lvl:2}
 
-execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"poison"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_poison","color":"gray","italic":false}'
-execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"wither"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_wither","color":"gray","italic":false}'
-execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"weakness"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_weakness","color":"gray","italic":false}'
-execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"slowness"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_slowness","color":"gray","italic":false}'
-execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"vampiric"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_vampiric","color":"gray","italic":false}'
-execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"illuminating"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_illuminating","color":"gray","italic":false}'
-execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"throwing_speed"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_throwing_speed","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"poison"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"lore.mechanization.upgrade_poison","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"wither"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"lore.mechanization.upgrade_wither","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"weakness"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"lore.mechanization.upgrade_weakness","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"slowness"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"lore.mechanization.upgrade_slowness","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"vampiric"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"lore.mechanization.upgrade_vampiric","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"illuminating"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"lore.mechanization.upgrade_illuminating","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"throwing_speed"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"lore.mechanization.upgrade_throwing_speed","color":"gray","italic":false}'
 
 # x-compat effects
-execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"flor_arid"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_blazing_sweep","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"flor_arid"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"lore.mechanization.upgrade_blazing_sweep","color":"gray","italic":false}'
 execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"flor_arid"} run data modify storage mechanization:temp obj.tag.flor_dat.scorching_arc_sword set value 1b
-execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"flor_verdant"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"mech.lore.upgrade_scepter","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"flor_verdant"} run data modify storage mechanization:temp obj.tag.display.Lore append value '{"translate":"lore.mechanization.upgrade_scepter","color":"gray","italic":false}'
 execute if data storage mechanization:temp list[].tag.mechanization.upgrade{effect:"flor_verdant"} run data modify storage mechanization:temp obj.tag.flor_dat.druidic_scepter set value 1b
 
 # add stats lore
@@ -106,20 +106,18 @@ data modify storage mechanization:temp obj.tag.display.Lore append value '{"tran
 scoreboard players operation #value mechanization.data = #attack_damage mechanization.data
 scoreboard players operation #attack_damage mechanization.data /= #cons.10 mechanization.data
 scoreboard players operation #value mechanization.data %= #cons.10 mechanization.data
-execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 Text1 set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#attack_damage","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.attack_damage"}]'
-execute unless score #value mechanization.data matches 0 run data modify block -30000000 0 3202 Text1 set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#attack_damage","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.attack_damage"}]'
-data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 Text1
+execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#attack_damage","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.attack_damage"}]'
+execute unless score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#attack_damage","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.attack_damage"}]'
+data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
 scoreboard players add #attack_speed mechanization.data 40
 scoreboard players operation #value mechanization.data = #attack_speed mechanization.data
 scoreboard players operation #attack_speed mechanization.data /= #cons.10 mechanization.data
 scoreboard players operation #value mechanization.data %= #cons.10 mechanization.data
-execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 Text1 set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#attack_speed","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.attack_speed"}]'
-execute unless score #value mechanization.data matches 0 run data modify block -30000000 0 3202 Text1 set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#attack_speed","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.attack_speed"}]'
-data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 Text1
+execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#attack_speed","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.attack_speed"}]'
+execute unless score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#attack_speed","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.generic.attack_speed"}]'
+data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
-data modify block -30000000 0 3202 Text1 set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#throw_range","objective":"mechanization.data"}}," ",{"translate":"mech.lore.energy_saber_range"}]'
-data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 Text1
+data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#throw_range","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.energy_saber_range"}]'
+data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
-data modify block -30000000 0 3202 Text1 set value '[{"translate":"mech.lore.added_by","color":"blue","italic":false}]'
-data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 Text1
