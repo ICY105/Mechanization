@@ -1,5 +1,5 @@
 
-execute store result score #amount mechanization.data run data get storage mechanization:temp obj.amount
+execute store result score #amount mechanization.data run data get storage mechanization:temp obj.storage
 execute store result score #temperature mechanization.data run data get storage mechanization:temp obj.temperature
 
 execute if score #temperature mechanization.data matches 1000.. run fill ~-1 ~-1 ~-1 ~1 ~1 ~1 minecraft:fire replace #mechanization:air

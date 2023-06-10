@@ -1,11 +1,9 @@
 
-advancement revoke @s only mechanization:triggers/drink_liquid_vial
-advancement revoke @s only mechanization:triggers/drink_liquid_bucket
-advancement revoke @s only mechanization:triggers/drink_liquid_potion
+advancement revoke @s only mechanization:triggers/drink_fluid
 
 # give custom
 execute if data entity @s[gamemode=!creative] SelectedItem.tag.mechanization{id:"bucket"} run give @s minecraft:bucket
-execute if data entity @s[gamemode=!creative] SelectedItem.tag.mechanization{id:"glass_bottle"} run tag @s add mechanization.clear_bottle
+execute if data entity @s[gamemode=!creative] SelectedItem.tag.mechanization{id:"bucket"} run tag @s add mechanization.clear_bottle
 execute if data entity @s[gamemode=!creative] SelectedItem.tag.mechanization{id:"vial"} run loot give @s loot mechanization:base/vial
 execute if data entity @s[gamemode=!creative] SelectedItem.tag.mechanization{id:"vial"} run tag @s add mechanization.clear_bottle
 

@@ -5,7 +5,7 @@
 			"conditions": {
                 "item": {
                     "item": "minecraft:potion",
-					"nbt": "{mechanization:{id:\"bucket\"}}"
+					"nbt": "{fluid:{}}"
                 }
             }
 		}

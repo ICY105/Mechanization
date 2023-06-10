@@ -16,7 +16,11 @@ function mechanization:machines/blocks/reformer/gui_clear
 function mechanization:base/utils/generate_energy_bar_ui
 
 scoreboard players set #slot_io.in fluid.data 0
-execute if data block ~ ~ ~ Items[{Slot:1b}].tag.fluid{id:"experience"} run function mechanization:base/utils/fluid_slot_io/slot_io_1
+data modify storage mechanization:temp obj set from block ~ ~ ~ Items[{Slot:1b}]
+function mechanization:base/utils/get_fluid_from_item
+execute if data storage mechanization:temp obj.tag.fluid{id:"experience"} run function mechanization:base/utils/fluid_slot_io/slot_io_1
+execute if data storage mechanization:temp obj.tag.fluid{id:"empty"} run function mechanization:base/utils/fluid_slot_io/slot_io_1
+data modify storage mechanization:test obj set from storage mechanization:temp obj
 
 # tank
 scoreboard players set #tank mechanization.data 0
