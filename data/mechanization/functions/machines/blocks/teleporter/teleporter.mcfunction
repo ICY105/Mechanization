@@ -11,7 +11,7 @@ execute if score #success mechanization.data matches 0 run scoreboard players se
 execute if score #success mechanization.data matches 0 run scoreboard players set @s mechanization.data 0
 
 # run proper mode
-execute if score #success mechanization.data matches 1.. run function mechanization:machines/machines/teleporter/teleport
+execute if score #success mechanization.data matches 1.. run function mechanization:machines/blocks/teleporter/teleport
 
 # cleanup
-execute unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_machine_t3
+execute unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_block/break_machine_t3
