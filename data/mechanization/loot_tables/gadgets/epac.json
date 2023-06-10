@@ -10,19 +10,19 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.plasma_weapon","color":"dark_red","italic":false}
+			  "name": {"translate":"item.mechanization.plasma_weapon","color":"dark_red","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    [{"text":" 5 ","color":"dark_green","italic":"false"},{"translate":"mech.lore.damage"}],
-			    [{"text":" 4 ","color":"dark_green","italic":"false"},{"translate":"mech.lore.fire_rate"}],
-			    [{"text":" 6 ","color":"dark_green","italic":"false"},{"translate":"mech.lore.velocity"}],
-			    [{"text":" 128 ","color":"dark_green","italic":"false"},{"translate":"mech.lore.epac_range"}],
-			    [{"text":" 40 ","color":"dark_green","italic":"false"},{"translate":"mech.lore.heat"}],
-			    [{"text":" 6 ","color":"dark_green","italic":"false"},{"translate":"mech.lore.cooling"}],
-			    [{"text":" 20 ","color":"dark_green","italic":"false"},{"translate":"mech.lore.energy"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			    [{"text":" 5 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.damage"}],
+			    [{"text":" 4 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.fire_rate"}],
+			    [{"text":" 6 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.velocity"}],
+			    [{"text":" 128 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.epac_range"}],
+			    [{"text":" 40 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.heat"}],
+			    [{"text":" 6 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.cooling"}],
+			    [{"text":" 20 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.energy"}],
+				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{

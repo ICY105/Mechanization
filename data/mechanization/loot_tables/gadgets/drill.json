@@ -10,18 +10,18 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.drill","color":"dark_aqua","italic":false}
+			  "name": {"translate":"item.mechanization.drill","color":"dark_aqua","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
 			     {"text":""},
 				 {"translate":"item.modifiers.mainhand","color":"gray","italic":false},
-				[{"text":"  9 ","color":"dark_green","italic":false},{"translate":"mech.lore.mining_speed"}],
-				[{"text":"  1 ","color":"dark_green","italic":false},{"translate":"mech.lore.mining_area"}],
+				[{"text":"  9 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.mining_speed"}],
+				[{"text":"  1 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.mining_area"}],
 				[{"text":"  3 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
 				[{"text":"  1 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_speed"}],
-				 {"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{

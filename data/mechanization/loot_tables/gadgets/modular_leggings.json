@@ -10,7 +10,7 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.modular_leggings","color":"dark_aqua","italic":false}
+			  "name": {"translate":"item.mechanization.modular_leggings","color":"dark_aqua","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
@@ -19,13 +19,13 @@
 				 {"translate":"item.modifiers.legs","color":"gray","italic":false},
 				[{"text":"+0 ","color":"blue","italic":false},{"translate":"attribute.name.generic.armor"}],
 				[{"text":"+0 ","color":"blue","italic":false},{"translate":"attribute.name.generic.armor_toughness"}],
-				[{"text":"+0 ","color":"blue","italic":false},{"translate":"mech.lore.shield_capacity"}],
-				 {"translate":"mech.lore.added_by","color":"blue","italic":false}
+				[{"text":"+0 ","color":"blue","italic":false},{"translate":"lore.mechanization.shield_capacity"}],
+				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6424108, HideFlags:70, mechanization:{ id:\"modular_leggings\", upgrades:{type:3b, count:5b, shield:0, items:[]}}, display:{color:15170646}}"
+              "tag":"{CustomModelData: 6424108, HideFlags:70, mechanization:{id:\"modular_leggings\", upgrades:{type:3b, count:5b, shield:0, items:[]}}, display:{color:15170646}}"
             },
 			{
 			  "function":"set_attributes",

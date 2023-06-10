@@ -6,22 +6,22 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:structure_block",
+		      "name": "minecraft:structure_block",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.passive_heat_sink","color":"dark_aqua","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-			    [{"translate":"mech.lore.upgrade_plasma_weapon","color":"gray","italic":false}],
-			    [{"text":" 6 -> 4 ","color":"blue","italic":false},{"translate":"mech.lore.cooling"}],
-			    [{"text":" -15% ","color":"red","italic":false},{"translate":"mech.lore.energy"}],
-				[{"translate":"mech.lore.added_by","color":"blue","italic":false}]
-			  ]
-			},
-			{
+              "function": "minecraft:set_name",
+              "name": {"translate":"item.mechanization.passive_heat_sink","color":"dark_aqua","italic":false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [{"translate":"lore.mechanization.upgrade_plasma_weapon","color":"gray","italic":false}],
+                [{"text":" 6 -> 4 ","color":"blue","italic":false},{"translate":"lore.mechanization.cooling"}],
+                [{"text":" -15% ","color":"red","italic":false},{"translate":"lore.mechanization.energy"}],
+                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+              ]
+            },
+            {
               "function": "minecraft:set_nbt",
               "tag":"{CustomModelData: 6424211, mechanization:{id:\"passive_heat_sink\", upgrade:{type:4b}}}"
             }

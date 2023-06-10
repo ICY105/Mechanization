@@ -6,19 +6,19 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:blast_furnace",
+		      "name": "minecraft:blast_furnace",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.block.tinker_table","color":"dark_red","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
-			   ]
-			},
-			{
+              "function": "minecraft:set_name",
+              "name": {"translate":"mech.block.tinker_table","color":"dark_red","italic":false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+              ]
+            },
+            {
               "function": "minecraft:set_nbt",
               "tag":"{CustomModelData: 6424001, mechanization:{ id:\"tinker_table\" }, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:tinker_table\"}}}}]} }"
             }

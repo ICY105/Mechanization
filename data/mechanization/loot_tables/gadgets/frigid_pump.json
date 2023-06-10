@@ -6,22 +6,22 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:structure_block",
+		      "name": "minecraft:structure_block",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.frigid_pump","color":"dark_aqua","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-			    {"translate":"mech.lore.upgrade_plasma_weapon","color":"gray","italic":false},
-			    [{"text":"-20% ","color":"red","italic":false},{"translate":"mech.lore.damage"}],
-			    [{"text":"-40% ","color":"blue","italic":false},{"translate":"mech.lore.heat"}],
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
-			  ]
-			},
-			{
+              "function": "minecraft:set_name",
+              "name": {"translate":"item.mechanization.frigid_pump","color":"dark_aqua","italic":false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"translate":"lore.mechanization.upgrade_plasma_weapon","color":"gray","italic":false},
+                [{"text":"-20% ","color":"red","italic":false},{"translate":"lore.mechanization.damage"}],
+                [{"text":"-40% ","color":"blue","italic":false},{"translate":"lore.mechanization.heat"}],
+                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+              ]
+            },
+            {
               "function": "minecraft:set_nbt",
               "tag":"{CustomModelData: 6424209, mechanization:{id:\"frigid_pump\", upgrade:{type:4b}} }"
             }

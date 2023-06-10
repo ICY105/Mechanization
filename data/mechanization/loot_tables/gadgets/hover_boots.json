@@ -10,18 +10,18 @@
           "functions": [
             {
 			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.hover_boots","color":"dark_aqua","italic":false}
+			  "name": {"translate":"item.mechanization.hover_boots","color":"dark_aqua","italic":false}
 			},
 			{
 			  "function": "minecraft:set_lore",
 			  "lore": [
-			    {"translate":"mech.lore.upgrade_modular_boots","color":"gray","italic":false},
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
+			    {"translate":"lore.mechanization.upgrade_modular_boots","color":"gray","italic":false},
+				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
 			  ]
 			},
 			{
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6424114, Unbreakable:1b, HideFlags:70, mechanization:{ id:\"hover_boots\", upgrade:{type:3b,effect:\"slowfall\"}}, display:{color:13421772}}"
+              "tag":"{CustomModelData: 6424114, Unbreakable:1b, HideFlags:70, mechanization:{id:\"hover_boots\", upgrade:{type:3b,effect:\"slowfall\"}}, display:{color:13421772}}"
             },
 			{
 			  "function":"set_attributes",
