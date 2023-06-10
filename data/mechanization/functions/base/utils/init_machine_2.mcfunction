@@ -57,7 +57,7 @@ execute if score #ender_upgrade mechanization.data matches 1 run tag @s add mech
 execute if score #muffled mechanization.data matches 1 run tag @s add mechanization.muffled
 
 # init item displays
-data modify entity @s[type=minecraft:item_display] transformation.scale set value [1.01,1.01,1.01]
+data modify entity @s[type=minecraft:item_display] transformation.scale set value [1.01f, 1.01f, 1.01f]
 execute if entity @s[type=minecraft:item_display] run function mechanization:base/utils/light_level/set_display_brightness
 
 # clear new tags
