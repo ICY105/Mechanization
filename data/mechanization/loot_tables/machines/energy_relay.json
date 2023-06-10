@@ -6,24 +6,24 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:blast_furnace",
+		      "name": "minecraft:blast_furnace",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.block.energy_relay","color":"dark_red","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-			    {"translate":"mech.block.energy_relay.lore_1","color":"white","italic":false},
-				{"translate":"mech.lore.transfer","color":"white","italic":false,"with":[600]},
-				{"translate":"mech.lore.range","color":"white","italic":false,"with":[48]},
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
-			  ]
-			},
-			{
+			        "function": "minecraft:set_name",
+			        "name": {"translate":"block.mechanization.energy_relay","color":"dark_red","italic":false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"translate":"block.mechanization.energy_relay.lore_1","color":"white","italic":false},
+                {"translate":"lore.mechanization.transfer","color":"white","italic":false,"with":[600]},
+                {"translate":"lore.mechanization.range","color":"white","italic":false,"with":[48]},
+                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+              ]
+            },
+            {
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421004, HideFlags: 6, HideFlags: 6, mechanization:{ id:\"energy_relay\" }, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:energy_relay\"}}}}]} }"
+              "tag":"{CustomModelData: 6421004, HideFlags: 6, mechanization:{ id:\"energy_relay\" }, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:energy_relay\"}}}}]} }"
             }
           ]
         }

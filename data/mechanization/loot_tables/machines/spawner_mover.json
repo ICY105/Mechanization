@@ -6,19 +6,19 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:carrot_on_a_stick",
+		      "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.spawner_mover","color":"dark_purple","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
-			  ]
-			},
-			{
+              "function": "minecraft:set_name",
+              "name": {"translate":"item.mechanization.spawner_mover","color":"dark_purple","italic":false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+              ]
+            },
+            {
               "function": "minecraft:set_nbt",
               "tag":"{CustomModelData: 6422200, HideFlags: 6, mechanization:{id:\"spawner_mover\", has_spawner:0b}}"
             }

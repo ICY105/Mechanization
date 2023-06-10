@@ -6,22 +6,22 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:blast_furnace",
+		      "name": "minecraft:blast_furnace",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.block.enchanting_station","color":"dark_purple","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-			    {"translate":"mech.lore.consume","with":["1024"],"color":"white","italic":false},
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
-			  ]
-			},
-			{
+              "function": "minecraft:set_name",
+              "name": {"translate":"block.mechanization.enchanting_station","color":"dark_purple","italic":false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"translate":"lore.mechanization.consume","with":["1024"],"color":"white","italic":false},
+                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+              ]
+            },
+            {
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6422016, HideFlags: 6, mechanization:{ id:\"enchanting_station\" }, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:enchanting_station\"}}}}]} }"
+              "tag":"{CustomModelData: 6422016, HideFlags: 6, mechanization:{id:\"enchanting_station\"}, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:enchanting_station\"}}}}]} }"
             }
           ]
         }

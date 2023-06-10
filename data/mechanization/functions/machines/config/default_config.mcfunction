@@ -103,7 +103,7 @@ scoreboard players set #machines.cf.liquid_pipe.rate mechanization.data 1000
 # [0,2147483647] How much liquid can be stored, in liters (tier 1, 2, 3)
 scoreboard players set #machines.cf.t1_tank.capacity mechanization.data 64000
 scoreboard players set #machines.cf.t2_tank.capacity mechanization.data 256000
-scoreboard players set #machines.cf.t3_tank.capacity mechanization.data 512000
+scoreboard players set #machines.cf.t3_tank.capacity mechanization.data 1024000
 
 ## Mob Grinder
 # [0,2147483647] How much power the Mob Grinder uses

@@ -20,7 +20,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6422026, HideFlags: 6, mechanization:{ id:\"fluid_pipe\" }, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:fluid_pipe\"}}}}]} }"
+              "tag":"{CustomModelData: 6422026, HideFlags: 6, mechanization:{id:\"fluid_pipe\"}, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:fluid_pipe\"}}}}]} }"
             }
           ]
         }
