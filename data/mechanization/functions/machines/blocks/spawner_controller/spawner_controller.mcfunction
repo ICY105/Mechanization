@@ -13,4 +13,4 @@ execute if score #active mechanization.data matches 1 if entity @s[tag=mechaniza
 execute if score #active mechanization.data matches 1 run scoreboard players remove @s energy.storage 320
 
 # cleanup
-execute unless block ~ ~ ~ minecraft:spawner run function mechanization:base/utils/break_machine_t3
+execute unless block ~ ~ ~ minecraft:spawner run function mechanization:base/utils/break_block/break_machine_t3
