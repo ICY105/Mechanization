@@ -25,10 +25,8 @@ execute if score #slot_io.input_item fluid.data matches 9 run data modify storag
 execute if score #slot_io.input_item fluid.data matches 10 run data modify storage fluid:io fluid2 set from storage fluid:definitions fluid_data[{id:"water"}]
 
 # set IO amount
-execute if score #slot_io.input_item fluid.data matches 2 run scoreboard players set #slot_io.input_amount fluid.data 1000
-execute if score #slot_io.input_item fluid.data matches 3 run scoreboard players set #slot_io.input_amount fluid.data 333
-execute if score #slot_io.input_item fluid.data matches 4..6 run scoreboard players set #slot_io.input_amount fluid.data 1000
-execute if score #slot_io.input_item fluid.data matches 7..10 run scoreboard players set #slot_io.input_amount fluid.data 333
+execute if score #slot_io.input_item fluid.data matches 2..5 run scoreboard players set #slot_io.input_amount fluid.data 1000
+execute if score #slot_io.input_item fluid.data matches 6..10 run scoreboard players set #slot_io.input_amount fluid.data 333
 
 execute if score #slot_io.input_item fluid.data matches -2 run scoreboard players set #slot_io.output_amount fluid.data 1000
 execute if score #slot_io.input_item fluid.data matches -4..-3 run scoreboard players set #slot_io.output_amount fluid.data 333
