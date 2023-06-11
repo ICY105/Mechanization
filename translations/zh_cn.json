@@ -441,7 +441,7 @@
 
 "__comment.assembly":"Mechanization: Assembly",
   "block.mechanization.auto_jukebox": "自动唱片机",
-  "block.mechanization.auto_jukebox.switch": "正在播放：%s",
+  "text.mechanization.auto_jukebox.switch": "正在播放：%s",
   "block.mechanization.unlimited_storage_unit": "无限储存单元",
   "block.mechanization.compressor": "压缩机",
   "block.mechanization.decompressor": "分解机",

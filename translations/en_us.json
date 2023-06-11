@@ -435,7 +435,7 @@
 	
 "__comment.assembly":"Mechanization: Assembly",
     "block.mechanization.auto_jukebox": "Auto Jukebox",
-	"block.mechanization.auto_jukebox.switch": "Now Playing: %s",
+	"text.mechanization.auto_jukebox.switch": "Now Playing: %s",
     "block.mechanization.unlimited_storage_unit": "Unlimited Storage Unit",
     "block.mechanization.compressor": "Compressor",
     "block.mechanization.decompressor": "Decompressor",

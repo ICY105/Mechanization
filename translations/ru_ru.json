@@ -447,7 +447,7 @@
 	
 "__comment":"Mechanization: Автоматизация",
     "block.mechanization.auto_jukebox": "Автоматический проигрыватель",
-	"block.mechanization.auto_jukebox.switch": "Сейчас играет: %s",
+	"text.mechanization.auto_jukebox.switch": "Сейчас играет: %s",
     "block.mechanization.unlimited_storage_unit": "Безлимитная единица хранения",
     "block.mechanization.compressor": "Компрессор",
     "block.mechanization.decompressor": "Декомпрессор",
