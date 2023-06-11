@@ -6,17 +6,17 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:carrot_on_a_stick",
+		      "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.minecraft.music_disc_ward","color":"aqua","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [{"translate":"mech.item.disc_money_for_nothing","color":"gray","italic":false},{"translate":"mech.item.disc_money_for_nothing2","color":"gray","italic":false}]
-			},
-			{
+              "function": "minecraft:set_name",
+              "name": {"translate":"item.minecraft.music_disc_ward","color":"aqua","italic":false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [{"translate":"item.mechanization.disc_money_for_nothing","color":"gray","italic":false},{"translate":"item.mechanization.disc_money_for_nothing2","color":"gray","italic":false}]
+            },
+            {
               "function": "minecraft:set_nbt",
               "tag":"{CustomModelData: 6425103, HideFlags: 6, Unbreakable:1b, mechanization:{id:\"music_disc_money_for_nothing\"}}"
             }

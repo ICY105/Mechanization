@@ -6,22 +6,22 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:blast_furnace",
+		      "name": "minecraft:blast_furnace",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.block.compressor","color":"dark_red","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-			    {"translate":"mech.lore.consume","with":["16"],"color":"white","italic":false},
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
-			  ]
-			},
-			{
+              "function": "minecraft:set_name",
+              "name": {"translate":"block.mechanization.compressor","color":"dark_red","italic":false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"translate":"lore.mechanization.consume","with":["16"],"color":"white","italic":false},
+                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+              ]
+            },
+            {
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6425000, HideFlags: 6, mechanization:{ id:\"compressor\" }, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:compressor\"}}}}]} }"
+              "tag":"{CustomModelData: 6425000, HideFlags: 6, mechanization:{id:\"compressor\"}, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:compressor\"}}}}]} }"
             }
           ]
         }

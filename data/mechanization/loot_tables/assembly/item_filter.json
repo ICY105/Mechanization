@@ -6,21 +6,21 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:carrot_on_a_stick",
+		      "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"mech.item.item_filter","color":"gray","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-			    {"translate":"mech.item.item_filter.lore_1","color":"white","italic":false},
-				{"translate":"mech.item.item_filter.lore_2","color":"white","italic":false},
-				{"translate":"mech.lore.added_by","color":"blue","italic":false}
-			  ]
-			},
-			{
+              "function": "minecraft:set_name",
+              "name": {"translate":"item.mechanization.item_filter","color":"gray","italic":false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"translate":"lore.mechanization.item_filter.1","color":"white","italic":false},
+                {"translate":"lore.mechanization.item_filter.2","color":"white","italic":false},
+              [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+              ]
+            },
+            {
               "function": "minecraft:set_nbt",
               "tag":"{CustomModelData: 6425100, HideFlags: 6, Unbreakable:1b, mechanization:{id:\"item_filter\", items:[]}}"
             }
