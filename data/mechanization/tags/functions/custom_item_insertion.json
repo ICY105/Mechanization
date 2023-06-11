@@ -5,7 +5,7 @@
 	  "mechanization:machines/blocks/custom_item_insertion",
 	  "mechanization:nuclear/tools/custom_item_insertion",
 	  "mechanization:gadgets/blocks/custom_item_insertion",
-	  "mechanization:assembly/machines/custom_item_insertion",
+	  "mechanization:assembly/blocks/custom_item_insertion",
 	  "mechanization:compat/calls/custom_item_insertion"
 	]
 }
