@@ -439,7 +439,7 @@
     "block.mechanization.unlimited_storage_unit": "Unlimited Storage Unit",
     "block.mechanization.compressor": "Compressor",
     "block.mechanization.decompressor": "Decompressor",
-    "block.mechanization.stone_cutter": "Stone Cutter",
+    "block.mechanization.stone_cutter": "Auto Stonecutter",
     "block.mechanization.dye_machine": "Dye Machine",
     "block.mechanization.fast_hopper": "Fast Hopper",
     "block.mechanization.ender_hopper": "Ender Hopper",
