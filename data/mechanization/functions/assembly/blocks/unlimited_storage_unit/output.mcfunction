@@ -1,9 +1,9 @@
 
 execute unless data block ~ ~ ~ Items[{Slot:2b}] run scoreboard players remove @s mechanization.data 1
-execute unless data block ~ ~ ~ Items[{Slot:2b}] run data modify storage mechanization:temp object set from entity @s Item.tag.item
-execute unless data block ~ ~ ~ Items[{Slot:2b}] run data modify storage mechanization:temp object.Slot set value 2b
-execute unless data block ~ ~ ~ Items[{Slot:2b}] run data modify storage mechanization:temp object.Count set value 1b
-execute unless data block ~ ~ ~ Items[{Slot:2b}] run data modify block ~ ~ ~ Items append from storage mechanization:temp object
+execute unless data block ~ ~ ~ Items[{Slot:2b}] run data modify storage mechanization:temp obj set from entity @s item.tag.item
+execute unless data block ~ ~ ~ Items[{Slot:2b}] run data modify storage mechanization:temp obj.Slot set value 2b
+execute unless data block ~ ~ ~ Items[{Slot:2b}] run data modify storage mechanization:temp obj.Count set value 1b
+execute unless data block ~ ~ ~ Items[{Slot:2b}] run data modify block ~ ~ ~ Items append from storage mechanization:temp obj
 
 execute store result score #count mechanization.data run data get block ~ ~ ~ Items[{Slot:2b}].Count
 scoreboard players set #new_count mechanization.data 64
