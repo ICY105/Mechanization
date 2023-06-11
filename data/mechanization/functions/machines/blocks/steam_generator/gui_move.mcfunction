@@ -23,11 +23,10 @@ execute if data storage mechanization:temp obj{id:"minecraft:blaze_rod"} run sco
 execute if score #slot mechanization.data matches 10 if data block ~ ~ ~ Items[{Slot:10b}] run scoreboard players set #slot mechanization.data 0
 
 #move item
-execute if score #slot mechanization.data matches 0 run data modify block -29999999 0 1601 Items append from storage mechanization:temp list[0]
+execute if score #slot mechanization.data matches 0 run data modify block -30000000 0 3201 Items append from storage mechanization:temp list[0]
 execute if score #slot mechanization.data matches 1.. store result storage mechanization:temp list[0].Slot byte 1 run scoreboard players get #slot mechanization.data
-data modify storage mechanization:temp obj set from storage mechanization:temp list[0]
 execute if score #slot mechanization.data matches 1.. run data modify block ~ ~ ~ Items append from storage mechanization:temp list[0]
 
 #cycle
 data remove storage mechanization:temp list[0]
-execute if data storage mechanization:temp list[0] run function mechanization:machines/machines/steam_generator/gui_move
+execute if data storage mechanization:temp list[0] run function mechanization:machines/blocks/steam_generator/gui_move

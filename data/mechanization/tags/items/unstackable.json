@@ -93,8 +93,21 @@
 		"minecraft:jungle_boat",
 		"minecraft:birch_boat",
 		"minecraft:acacia_boat",
+		"minecraft:mangrove_boat",
+		"minecraft:cherry_boat",
+		"minecraft:bamboo_raft",
+		"minecraft:oak_chest_boat",
+		"minecraft:dark_oak_chest_boat",
+		"minecraft:spruce_chest_boat",
+		"minecraft:jungle_chest_boat",
+		"minecraft:birch_chest_boat",
+		"minecraft:acacia_chest_boat",
+		"minecraft:mangrove_chest_boat",
+		"minecraft:cherry_chest_boat",
+		"minecraft:bamboo_chest_raft",
 
 		"minecraft:elytra",
+		"minecraft:spyglass",
 
 		"minecraft:minecart",
 		"minecraft:chest_minecart",
@@ -153,6 +166,9 @@
 		"minecraft:salmon_bucket",
 		"minecraft:cod_bucket",
 		"minecraft:tropical_fish_bucket",
+		"minecraft:axolotl_bucket",
+		"minecraft:tadpole_bucket",
+		"minecraft:powder_snow_bucket",
 
 		"minecraft:writable_book",
 		"minecraft:knowledge_book",
@@ -170,6 +186,8 @@
 		"minecraft:music_disc_11",
 		"minecraft:music_disc_wait",
 		"minecraft:music_disc_pigstep",
+		"minecraft:music_disc_5",
+		"minecraft:music_disc_relic",
 
 		"minecraft:saddle",
 
@@ -181,16 +199,13 @@
 		"minecraft:mushroom_stew",
 		"minecraft:rabbit_stew",
 		"minecraft:cake",
-
 		"minecraft:enchanted_book",
-
 		"minecraft:totem_of_undying",
-
 		"minecraft:debug_stick",
-
 		"minecraft:fishing_rod",
 		"minecraft:flint_and_steel",
-
-		"minecraft:shears"
+		"minecraft:shears",
+		"minecraft:brush",
+		"minecraft:goat_horn"
 	]
 }

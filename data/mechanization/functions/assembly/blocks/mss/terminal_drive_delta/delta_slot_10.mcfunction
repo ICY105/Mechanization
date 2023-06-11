@@ -6,5 +6,5 @@ execute store result storage mechanization:temp list[{Slot:10b}].tag.mss.count i
 execute if score #count.2 mechanization.data matches 1.. if score #count.2 mechanization.data < #count.1 mechanization.data store result storage mechanization:temp list[{Slot:10b}].Count byte 1 run scoreboard players get #count.2 mechanization.data
 execute if score #count.2 mechanization.data matches ..0 run data remove storage mechanization:temp list[{Slot:10b}]
 
-execute if score #count.2 mechanization.data matches 1.. run data merge block -29999999 0 1602 {Text1:'[{"translate":"mech.mss.item_count","color":"gray","italic":false,"with":[{"score":{"name":"#count.2","objective":"mechanization.data"}}]}]'}
-execute if score #count.2 mechanization.data matches 1.. run data modify storage mechanization:temp list[{Slot:10b}].tag.display.Lore[0] set from block -29999999 0 1602 Text1
+execute if score #count.2 mechanization.data matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"translate":"lore.mechanization.mss_item_count","color":"gray","italic":false,"with":[{"score":{"name":"#count.2","objective":"mechanization.data"}}]}]'
+execute if score #count.2 mechanization.data matches 1.. run data modify storage mechanization:temp list[{Slot:10b}].tag.display.Lore[0] set from block -30000000 0 3202 front_text.messages[0]

@@ -1,6 +1,6 @@
 
 #copy drive items
-data modify storage mechanization:temp list set from entity @s Item.tag.drive.tag.mechanization.storage
+data modify storage mechanization:temp list set from entity @s item.tag.drive.tag.mechanization.storage
 execute if data storage mechanization:temp list[{Slot:0b}] run data modify block ~ ~ ~ Items append from storage mechanization:temp list[{Slot:0b}]
 execute if data storage mechanization:temp list[{Slot:1b}] run data modify block ~ ~ ~ Items append from storage mechanization:temp list[{Slot:1b}]
 execute if data storage mechanization:temp list[{Slot:2b}] run data modify block ~ ~ ~ Items append from storage mechanization:temp list[{Slot:2b}]

@@ -6,7 +6,7 @@ data modify storage mechanization:temp obj set from storage mechanization:temp l
 execute if score #slot mechanization.data matches -1 unless data block ~ ~ ~ Items[{Slot:0b}] run scoreboard players set #slot mechanization.data 3
 
 #move item
-execute if score #slot mechanization.data matches -1 run data modify block -29999999 0 1601 Items append from storage mechanization:temp list[0]
+execute if score #slot mechanization.data matches -1 run data modify block -30000000 0 3201 Items append from storage mechanization:temp list[0]
 execute if score #slot mechanization.data matches 0.. store result storage mechanization:temp list[0].Slot byte 1 run scoreboard players get #slot mechanization.data
 execute if score #slot mechanization.data matches 0.. run data modify block ~ ~ ~ Items append from storage mechanization:temp list[0]
 

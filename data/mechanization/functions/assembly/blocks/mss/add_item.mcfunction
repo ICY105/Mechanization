@@ -42,9 +42,9 @@ execute if score #count.4 mechanization.data matches 1 run data modify storage m
 execute if data storage mechanization:networks mss.item.tag.display run data modify storage mechanization:networks mss.item.tag.mss.display set value 2b
 execute if data storage mechanization:networks mss.item.tag.display.Lore run data modify storage mechanization:networks mss.item.tag.mss.display set value 3b
 
-data merge block -29999999 0 1602 {Text1:'[{"translate":"mech.mss.item_count","color":"gray","italic":false,"with":[{"score":{"name":"#count.3","objective":"mechanization.data"}}]}]'}
+data modify block -30000000 0 3202 front_text.messages[0] set value '[{"translate":"lore.mechanization.mss_item_count","color":"gray","italic":false,"with":[{"score":{"name":"#count.3","objective":"mechanization.data"}}]}]'
 execute unless data storage mechanization:networks mss.item.tag.display.Lore run data modify storage mechanization:networks mss.item.tag.display.Lore set value []
-data modify storage mechanization:networks mss.item.tag.display.Lore prepend from block -29999999 0 1602 Text1
+data modify storage mechanization:networks mss.item.tag.display.Lore prepend from block -30000000 0 3202 front_text.messages[0]
 
 #insert
 data modify storage mechanization:networks mss.drive append from storage mechanization:networks mss.item
