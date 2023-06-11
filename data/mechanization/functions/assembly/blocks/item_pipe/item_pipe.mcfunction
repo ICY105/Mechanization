@@ -1,2 +1,2 @@
 
-execute unless block ~ ~ ~ minecraft:moving_piston run function mechanization:machines/machines/item_pipe/break
+execute unless block ~ ~ ~ minecraft:moving_piston run function mechanization:assembly/blocks/item_pipe/break

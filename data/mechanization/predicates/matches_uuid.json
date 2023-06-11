@@ -10,7 +10,7 @@
       "type": "minecraft:score",
       "target": {
         "type": "minecraft:fixed",
-        "name": "$predicate"
+        "name": "#predicate"
       },
       "score": "mechanization.data"
     },
@@ -18,7 +18,7 @@
       "type": "minecraft:score",
       "target": {
         "type": "minecraft:fixed",
-        "name": "$predicate"
+        "name": "#predicate"
       },
       "score": "mechanization.data"
     }
