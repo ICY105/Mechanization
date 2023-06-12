@@ -29,4 +29,6 @@ execute align xyz positioned ~0.5 ~0.5 ~0.5 run particle scrape ~-0.45 ~ ~-0.45 
 scoreboard players add @s mechanization.data 1
 
 #test for world bottom
-execute if predicate chunk_scan:world_bottom run scoreboard players set @s mechanization.data -1
+scoreboard players set #result mechanization.data 1
+execute unless block ~ ~-1 ~ #mechanization:empty run scoreboard players set #result mechanization.data 0
+execute if score #result mechanization.data matches 1 run scoreboard players set @s mechanization.data -1

@@ -33,7 +33,7 @@ execute if score #success mechanization.data matches 2 if score #rotation mechan
 execute if score #rotation mechanization.data matches 1..4 unless score #temp.x mechanization.data matches 0 run title @p actionbar [{"translate":"text.mechanization.quarry.invalid_boundary","color":"green"}]
 execute if score #rotation mechanization.data matches 1..4 unless score #temp.y mechanization.data matches 0 run title @p actionbar [{"translate":"text.mechanization.quarry.invalid_boundary","color":"green"}]
 
-execute if score #rotation mechanization.data matches 1..4 if score #temp.x mechanization.data matches 0 if score #temp.y mechanization.data matches 0 run title @p actionbar [{"translate":"block.mechanization.quarry.formed_boundary","color":"green"}]
+execute if score #rotation mechanization.data matches 1..4 if score #temp.x mechanization.data matches 0 if score #temp.y mechanization.data matches 0 run title @p actionbar [{"translate":"text.mechanization.quarry.formed_boundary","color":"green"}]
 
 #set quarry scores
 scoreboard players set @s mechanization.data 0
