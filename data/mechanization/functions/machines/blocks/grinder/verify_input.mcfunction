@@ -52,6 +52,41 @@ execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:dark_oak_log"}] unless 
 execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:acacia_log"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:acacia_planks"}] run scoreboard players set #valid mechanization.data 0
 execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:crimson_stem"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:warped_planks"}] run scoreboard players set #valid mechanization.data 0
 execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:warped_stem"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:crimson_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:mangrove_log"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:mangrove_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:cherry_log"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:cherry_planks"}] run scoreboard players set #valid mechanization.data 0
+
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:oak_wood"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:oak_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:birch_wood"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:birch_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:spruce_wood"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:spruce_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:jungle_wood"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:jungle_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:dark_oak_wood"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:dark_oak_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:acacia_wood"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:acacia_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:crimson_hyphae"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:warped_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:warped_hyphae"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:crimson_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:mangrove_wood"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:mangrove_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:cherry_wood"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:cherry_planks"}] run scoreboard players set #valid mechanization.data 0
+
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_oak_log"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:oak_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_birch_log"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:birch_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_spruce_log"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:spruce_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_jungle_log"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:jungle_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_dark_oak_log"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:dark_oak_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_acacia_log"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:acacia_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_crimson_stem"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:warped_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_warped_stem"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:crimson_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_mangrove_log"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:mangrove_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_cherry_log"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:cherry_planks"}] run scoreboard players set #valid mechanization.data 0
+
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_oak_wood"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:oak_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_birch_wood"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:birch_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_spruce_wood"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:spruce_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_jungle_wood"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:jungle_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_dark_oak_wood"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:dark_oak_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_acacia_wood"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:acacia_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_crimson_hyphae"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:warped_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_warped_hyphae"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:crimson_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_mangrove_wood"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:mangrove_planks"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_cherry_wood"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:cherry_planks"}] run scoreboard players set #valid mechanization.data 0
 
 #Extra
 execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:cobblestone"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:sand"}] run scoreboard players set #valid mechanization.data 0

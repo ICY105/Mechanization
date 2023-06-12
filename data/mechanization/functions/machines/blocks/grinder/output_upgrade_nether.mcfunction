@@ -8,7 +8,7 @@ scoreboard players set #valid mechanization.data 1
 
 execute store result score #input_count mechanization.data run data get block ~ ~ ~ Items[{Slot:0b}].Count
 execute store result score #output_count mechanization.data run data get block ~ ~ ~ Items[{Slot:2b}].Count
-execute if score #output_count mechanization.data matches 1.. run function mechanization:machines/machines/grinder/verify_input
+execute if score #output_count mechanization.data matches 1.. run function mechanization:machines/blocks/grinder/verify_input
 
 ## Set Output
 
@@ -34,9 +34,9 @@ execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:nether_quartz_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:quartz 2
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:nether_gold_ore"}] run item replace block -30000000 0 3201 container.0 with minecraft:raw_gold 2
 
-execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b}].smithed.dict.ore.tin run loot replace block -30000000 0 3201 container.0 loot mechanization:base/resources_x2/tin_ingot
-execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b}].smithed.dict.ore.titanium run loot replace block -30000000 0 3201 container.0 loot mechanization:base/resources_x2/titanium_ingot
-execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b}].smithed.dict.ore.uranium run loot replace block -30000000 0 3201 container.0 loot mechanization:base/resources_x2/uranium_ingot
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b}].tag.smithed.dict.ore.tin run loot replace block -30000000 0 3201 container.0 loot mechanization:base/resources_x2/tin_ingot
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b}].tag.smithed.dict.ore.titanium run loot replace block -30000000 0 3201 container.0 loot mechanization:base/resources_x2/titanium_ingot
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b}].tag.smithed.dict.ore.uranium run loot replace block -30000000 0 3201 container.0 loot mechanization:base/resources_x2/uranium_ingot
 
 #Logs
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:oak_log"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
@@ -47,6 +47,41 @@ execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:acacia_log"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:crimson_stem"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:warped_stem"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:mangrove_log"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:cherry_log"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:oak_wood"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:birch_wood"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:spruce_wood"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:jungle_wood"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:dark_oak_wood"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:acacia_wood"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:crimson_hyphae"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:warped_hyphae"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:mangrove_wood"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:cherry_wood"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_oak_log"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_birch_log"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_spruce_log"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_jungle_log"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_dark_oak_log"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_acacia_log"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_crimson_stem"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_warped_stem"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_mangrove_log"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_cherry_log"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_oak_wood"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_birch_wood"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_spruce_wood"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_jungle_wood"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_dark_oak_wood"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_acacia_wood"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_crimson_hyphae"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_warped_hyphae"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_mangrove_wood"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_cherry_wood"}] run item replace block -30000000 0 3201 container.0 with minecraft:charcoal 2
 
 #Extra
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:cobblestone"}] run item replace block -30000000 0 3201 container.0 with minecraft:glass 1
