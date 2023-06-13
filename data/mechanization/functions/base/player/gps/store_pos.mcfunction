@@ -19,4 +19,5 @@ data modify storage mechanization:temp var set from block -30000000 0 3202 front
 item modify entity @s weapon.mainhand mechanization:set_gps_pos
 
 # print to chat
-title @s actionbar [{"translate":"text.mechanization.gps_set_pos","color":"dark_green","with":[{"score":{"name":"#x","objective":"mechanization.data"},"color":"dark_aqua"},{"score":{"name":"#y","objective":"mechanization.data"},"color":"dark_aqua"},{"score":{"name":"#z","objective":"mechanization.data"},"color":"dark_aqua"},{"nbt":"obj.dimension","storage":"mechanization:temp","color":"dark_aqua"}]}]
+data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.gps_set_pos","color":"dark_green","with":[{"score":{"name":"#x","objective":"mechanization.data"},"color":"dark_aqua"},{"score":{"name":"#y","objective":"mechanization.data"},"color":"dark_aqua"},{"score":{"name":"#z","objective":"mechanization.data"},"color":"dark_aqua"},{"nbt":"obj.dimension","storage":"mechanization:temp","color":"dark_aqua"}]}]'}
+function #smithed.actionbar:message

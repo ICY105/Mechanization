@@ -44,68 +44,100 @@ execute if data storage mechanization:temp obj.tag.oa run function mechanization
 execute if data storage mechanization:temp obj.tag.manic run function mechanization:compat/manic/play_music_disc
 
 execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_end_of_the_world"} run playsound mechanization:assembly.music.end_of_the_world record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_end_of_the_world"} store success score #custom_disc mechanization.data run title @a[distance=..32] actionbar [{"translate":"text.mechanization.auto_jukebox.switch","with":[{"translate":"item.mechanization.disc_end_of_the_world"}],"color":"light_purple"}]
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_end_of_the_world"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":[{"translate":"item.mechanization.disc_end_of_the_world"}],"color":"light_purple"}]'}
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_end_of_the_world"} as @a[distance=..32] at @s run function #smithed.actionbar:message
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_end_of_the_world"} run scoreboard players set #custom_disc mechanization.data 1
 
 execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_hyperspace"} run playsound mechanization:assembly.music.hyperspace record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_hyperspace"} store success score #custom_disc mechanization.data run title @a[distance=..32] actionbar [{"translate":"text.mechanization.auto_jukebox.switch","with":[{"translate":"item.mechanization.disc_hyperspace"}],"color":"light_purple"}]
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_hyperspace"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":[{"translate":"item.mechanization.disc_hyperspace"}],"color":"light_purple"}]'}
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_hyperspace"} as @a[distance=..32] at @s run function #smithed.actionbar:message
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_hyperspace"} run scoreboard players set #custom_disc mechanization.data 1
 
 execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_money_for_nothing"} run playsound mechanization:assembly.music.money_for_nothing record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_money_for_nothing"} store success score #custom_disc mechanization.data run title @a[distance=..32] actionbar [{"translate":"text.mechanization.auto_jukebox.switch","with":[{"translate":"item.mechanization.disc_money_for_nothing"}],"color":"light_purple"}]
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_money_for_nothing"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":[{"translate":"item.mechanization.disc_money_for_nothing"}],"color":"light_purple"}]'}
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_money_for_nothing"} as @a[distance=..32] at @s run function #smithed.actionbar:message
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_money_for_nothing"} run scoreboard players set #custom_disc mechanization.data 1
 
 execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_wanderer"} run playsound mechanization:assembly.music.wanderer record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_wanderer"} store success score #custom_disc mechanization.data run title @a[distance=..32] actionbar [{"translate":"text.mechanization.auto_jukebox.switch","with":[{"translate":"item.mechanization.disc_wanderer"}],"color":"light_purple"}]
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_wanderer"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":[{"translate":"item.mechanization.disc_wanderer"}],"color":"light_purple"}]'}
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_wanderer"} as @a[distance=..32] at @s run function #smithed.actionbar:message
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_wanderer"} run scoreboard players set #custom_disc mechanization.data 1
 
 execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_stranger_think"} run playsound mechanization:assembly.music.stranger_think record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_stranger_think"} store success score #custom_disc mechanization.data run title @a[distance=..32] actionbar [{"translate":"text.mechanization.auto_jukebox.switch","with":[{"translate":"item.mechanization.disc_stranger_think"}],"color":"light_purple"}]
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_stranger_think"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":[{"translate":"item.mechanization.disc_stranger_think"}],"color":"light_purple"}]'}
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_stranger_think"} as @a[distance=..32] at @s run function #smithed.actionbar:message
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_stranger_think"} run scoreboard players set #custom_disc mechanization.data 1
 
 execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_atomic_amnesia"} run playsound mechanization:assembly.music.atomic_amnesia record @a ~ ~ ~ 6
-execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_atomic_amnesia"} store success score #custom_disc mechanization.data run title @a[distance=..32] actionbar [{"translate":"text.mechanization.auto_jukebox.switch","with":[{"translate":"item.mechanization.disc_atomic_amnesia"}],"color":"light_purple"}]
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_atomic_amnesia"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":[{"translate":"item.mechanization.disc_atomic_amnesia"}],"color":"light_purple"}]'}
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_atomic_amnesia"} as @a[distance=..32] at @s run function #smithed.actionbar:message
+execute if data storage mechanization:temp obj.tag.mechanization{id:"music_disc_atomic_amnesia"} run scoreboard players set #custom_disc mechanization.data 1
+
+
+data modify storage smithed.actionbar:input message set value {priority:"notification",json:''}
+function #smithed.actionbar:message
 
 # vanilla discs
 execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_ward"} run playsound minecraft:music_disc.ward record @a ~ ~ ~ 6
-execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_ward"} run title @a[distance=..32] actionbar ["",{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Ward"],"color":"light_purple"}]
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_ward"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Ward"],"color":"light_purple"}]'}
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_ward"} as @a[distance=..32] at @s run function #smithed.actionbar:message
 
 execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_13"} run playsound minecraft:music_disc.13 record @a ~ ~ ~ 6
-execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_13"} run title @a[distance=..32] actionbar ["",{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - 13"],"color":"light_purple"}]
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_ward"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - 13"],"color":"light_purple"}]'}
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_ward"} as @a[distance=..32] at @s run function #smithed.actionbar:message
 
 execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_cat"} run playsound minecraft:music_disc.cat record @a ~ ~ ~ 6
-execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_cat"} run title @a[distance=..32] actionbar ["",{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Cat"],"color":"light_purple"}]
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_ward"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Cat"],"color":"light_purple"}]'}
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_ward"} as @a[distance=..32] at @s run function #smithed.actionbar:message
 
 execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_blocks"} run playsound minecraft:music_disc.blocks record @a ~ ~ ~ 6
-execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_blocks"} run title @a[distance=..32] actionbar ["",{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Blocks"],"color":"light_purple"}]
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_blocks"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Blocks"],"color":"light_purple"}]'}
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_blocks"} as @a[distance=..32] at @s run function #smithed.actionbar:message
 
 execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_chirp"} run playsound minecraft:music_disc.chirp record @a ~ ~ ~ 6
-execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_chirp"} run title @a[distance=..32] actionbar ["",{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Chirp"],"color":"light_purple"}]
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_chirp"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Chirp"],"color":"light_purple"}]'}
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_chirp"} as @a[distance=..32] at @s run function #smithed.actionbar:message
 
 execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_far"} run playsound minecraft:music_disc.far record @a ~ ~ ~ 6
-execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_far"} run title @a[distance=..32] actionbar ["",{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Far"],"color":"light_purple"}]
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_far"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Far"],"color":"light_purple"}]'}
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_far"} as @a[distance=..32] at @s run function #smithed.actionbar:message
 
 execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_mall"} run playsound minecraft:music_disc.mall record @a ~ ~ ~ 6
-execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_mall"} run title @a[distance=..32] actionbar ["",{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Mall"],"color":"light_purple"}]
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_mall"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Mall"],"color":"light_purple"}]'}
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_mall"} as @a[distance=..32] at @s run function #smithed.actionbar:message
 
 execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_mellohi"} run playsound minecraft:music_disc.mellohi record @a ~ ~ ~ 6
-execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_mellohi"} run title @a[distance=..32] actionbar ["",{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Mellohi"],"color":"light_purple"}]
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_mellohi"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Mellohi"],"color":"light_purple"}]'}
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_mellohi"} as @a[distance=..32] at @s run function #smithed.actionbar:message
 
 execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_stal"} run playsound minecraft:music_disc.stal record @a ~ ~ ~ 6
-execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_stal"} run title @a[distance=..32] actionbar ["",{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Stal"],"color":"light_purple"}]
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_stal"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Stal"],"color":"light_purple"}]'}
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_stal"} as @a[distance=..32] at @s run function #smithed.actionbar:message
 
 execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_strad"} run playsound minecraft:music_disc.strad record @a ~ ~ ~ 6
-execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_strad"} run title @a[distance=..32] actionbar ["",{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Strad"],"color":"light_purple"}]
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_strad"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Strad"],"color":"light_purple"}]'}
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_strad"} as @a[distance=..32] at @s run function #smithed.actionbar:message
 
 execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_11"} run playsound minecraft:music_disc.11 record @a ~ ~ ~ 6
-execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_11"} run title @a[distance=..32] actionbar ["",{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - 11"],"color":"light_purple"}]
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_11"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - 11"],"color":"light_purple"}]'}
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_11"} as @a[distance=..32] at @s run function #smithed.actionbar:message
 
 execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_wait"} run playsound minecraft:music_disc.wait record @a ~ ~ ~ 6
-execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_wait"} run title @a[distance=..32] actionbar ["",{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Wait"],"color":"light_purple"}]
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_wait"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":["C418 - Wait"],"color":"light_purple"}]'}
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_wait"} as @a[distance=..32] at @s run function #smithed.actionbar:message
 
 execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_pigstep"} run playsound minecraft:music_disc.pigstep record @a ~ ~ ~ 6
-execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_pigstep"} run title @a[distance=..32] actionbar [{"translate":"text.mechanization.auto_jukebox.switch","with":["Lena Raine - Pigstep"],"color":"light_purple"}]
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_pigstep"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":["Lena Raine - Pigstep"],"color":"light_purple"}]'}
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_pigstep"} as @a[distance=..32] at @s run function #smithed.actionbar:message
 
 execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_otherside"} run playsound minecraft:music_disc.otherside record @a ~ ~ ~ 6
-execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_otherside"} run title @a[distance=..32] actionbar [{"translate":"text.mechanization.auto_jukebox.switch","with":["Lena Raine - Otherside"],"color":"light_purple"}]
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_otherside"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":["Lena Raine - Otherside"],"color":"light_purple"}]'}
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_otherside"} as @a[distance=..32] at @s run function #smithed.actionbar:message
 
 execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_5"} run playsound minecraft:music_disc.5 record @a ~ ~ ~ 6
-execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_5"} run title @a[distance=..32] actionbar [{"translate":"text.mechanization.auto_jukebox.switch","with":["Samuel Aberg - 5"],"color":"light_purple"}]
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_5"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":["Samuel Aberg - 5"],"color":"light_purple"}]'}
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_5"} as @a[distance=..32] at @s run function #smithed.actionbar:message
 
 execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_relic"} run playsound minecraft:music_disc.relic record @a ~ ~ ~ 6
-execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_relic"} run title @a[distance=..32] actionbar [{"translate":"text.mechanization.auto_jukebox.switch","with":["Aaron Cherof - Relic"],"color":"light_purple"}]
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_relic"} run data modify storage smithed.actionbar:input message set value {priority:"notification",json:'[{"translate":"text.mechanization.auto_jukebox.switch","with":["Aaron Cherof - Relic"],"color":"light_purple"}]'}
+execute if score #custom_disc mechanization.data matches 0 if data storage mechanization:temp obj{id:"minecraft:music_disc_relic"} as @a[distance=..32] at @s run function #smithed.actionbar:message
