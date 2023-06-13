@@ -8,3 +8,5 @@ execute if score #count.2 mechanization.data matches ..0 run data remove storage
 
 execute if score #count.2 mechanization.data matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"translate":"lore.mechanization.mss_item_count","color":"gray","italic":false,"with":[{"score":{"name":"#count.2","objective":"mechanization.data"}}]}]'
 execute if score #count.2 mechanization.data matches 1.. run data modify storage mechanization:temp list[{Slot:3b}].tag.display.Lore[0] set from block -30000000 0 3202 front_text.messages[0]
+
+function mechanization:assembly/blocks/mss/clear_dropped_item_data
