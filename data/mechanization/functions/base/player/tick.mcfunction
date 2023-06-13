@@ -4,8 +4,10 @@ scoreboard players set @s mechanization.item_id 0
 execute store result score @s mechanization.item_id run data get block -30000000 0 3201 Items[0].tag.mechanization.id
 
 # check manual
+scoreboard players enable @s mechanization.manual
 loot give @s[tag=!mechanization.has_manual] loot mechanization:base/manual/start
 execute if data entity @s[tag=!mechanization.has_manual] Inventory[].tag.mechanization{id:"mechanical_manual"} run tag @s add mechanization.has_manual
+execute if score @s mechanization.manual matches ..-1 unless data block -30000000 0 3201 Items[0].tag.mechanization{id:"mechanical_manual"} run function mechanization:base/player/manual/switch_mode_lectern
 execute if score @s mechanization.item_id matches 17 if data block -30000000 0 3201 Items[0].tag.mechanization{id:"mechanical_manual"} run function mechanization:base/player/manual/check
 
 # process pipe wrench
