@@ -2,7 +2,7 @@
 data modify storage nbt_smelting:io item set from block ~ ~ ~ Items[{Slot:1b}]
 
 execute if data storage nbt_smelting:io item{id:"minecraft:lava_bucket"} run data merge block ~ ~ ~ {BurnTime:20000s}
-execute if data storage nbt_smelting:io item{id:"minecraft:lava_bucket"} run item replace block ~ ~ ~ container.1 with bucket
+execute if data storage nbt_smelting:io item{id:"minecraft:lava_bucket"} run item replace block ~ ~ ~ container.1 with bucket 2
 
 execute if data storage nbt_smelting:io item{id:"minecraft:coal_block"} run data merge block ~ ~ ~ {BurnTime:16000s}
 execute if data storage nbt_smelting:io item{id:"minecraft:dried_kelp_block"} run data merge block ~ ~ ~ {BurnTime:4000s}
