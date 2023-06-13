@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.muffler_upgrade.title",
+            "translate": "advancement.mechanization.muffler_upgrade.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.muffler_upgrade.desc",
+            "translate": "advancement.mechanization.muffler_upgrade.desc",
 			"color":"dark_aqua"
         },
         "icon": {

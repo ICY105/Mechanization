@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.electric_furnace.title",
+            "translate": "advancement.mechanization.electric_furnace.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.electric_furnace.desc",
+            "translate": "advancement.mechanization.electric_furnace.desc",
 			"color":"dark_aqua"
         },
         "icon": {

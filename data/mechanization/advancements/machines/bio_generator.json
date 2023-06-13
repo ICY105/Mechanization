@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.bio_generator.title",
+            "translate": "advancement.mechanization.bio_generator.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.bio_generator.desc",
+            "translate": "advancement.mechanization.bio_generator.desc",
 			"color":"dark_aqua"
         },
         "icon": {

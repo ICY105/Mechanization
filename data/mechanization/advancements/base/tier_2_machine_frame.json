@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.tier_2_machine_frame.title",
+            "translate": "advancement.mechanization.tier_2_machine_frame.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.tier_2_machine_frame.desc",
+            "translate": "advancement.mechanization.tier_2_machine_frame.desc",
 			"color":"dark_aqua"
         },
         "icon": {

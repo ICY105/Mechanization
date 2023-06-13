@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.modular_armor.title",
+            "translate": "advancement.mechanization.modular_armor.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.modular_armor.desc",
+            "translate": "advancement.mechanization.modular_armor.desc",
 			"color":"dark_aqua"
         },
         "icon": {

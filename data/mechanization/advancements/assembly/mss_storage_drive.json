@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.mss_storage_drive.title",
+            "translate": "advancement.mechanization.mss_storage_drive.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.mss_storage_drive.desc",
+            "translate": "advancement.mechanization.mss_storage_drive.desc",
 			"color":"dark_aqua"
         },
         "icon": {

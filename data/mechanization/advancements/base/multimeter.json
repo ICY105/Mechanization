@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.multimeter.title",
+            "translate": "advancement.mechanization.multimeter.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.multimeter.desc",
+            "translate": "advancement.mechanization.multimeter.desc",
 			"color":"dark_aqua"
         },
         "icon": {

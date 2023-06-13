@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.mob_grinder.title",
+            "translate": "advancement.mechanization.mob_grinder.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.mob_grinder.desc",
+            "translate": "advancement.mechanization.mob_grinder.desc",
 			"color":"dark_aqua"
         },
         "icon": {

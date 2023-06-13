@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.enchanting_station.title",
+            "translate": "advancement.mechanization.enchanting_station.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.enchanting_station.desc",
+            "translate": "advancement.mechanization.enchanting_station.desc",
 			"color":"dark_aqua"
         },
         "icon": {

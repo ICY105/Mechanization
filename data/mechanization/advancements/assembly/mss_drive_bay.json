@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.mss_drive_bay.title",
+            "translate": "advancement.mechanization.mss_drive_bay.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.mss_drive_bay.desc",
+            "translate": "advancement.mechanization.mss_drive_bay.desc",
 			"color":"dark_aqua"
         },
         "icon": {

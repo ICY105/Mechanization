@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.liquid_pipe.title",
+            "translate": "advancement.mechanization.liquid_pipe.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.liquid_pipe.desc",
+            "translate": "advancement.mechanization.liquid_pipe.desc",
 			"color":"dark_aqua"
         },
         "icon": {

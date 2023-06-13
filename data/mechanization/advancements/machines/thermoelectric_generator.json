@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.thermoelectric_generator.title",
+            "translate": "advancement.mechanization.thermoelectric_generator.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.thermoelectric_generator.desc",
+            "translate": "advancement.mechanization.thermoelectric_generator.desc",
 			"color":"dark_aqua"
         },
         "icon": {

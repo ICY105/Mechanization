@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.machine_upgrade.title",
+            "translate": "advancement.mechanization.machine_upgrade.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.machine_upgrade.desc",
+            "translate": "advancement.mechanization.machine_upgrade.desc",
 			"color":"dark_aqua"
         },
         "icon": {

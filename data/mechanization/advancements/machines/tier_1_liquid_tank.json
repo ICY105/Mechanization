@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.tier_1_liquid_tank.title",
+            "translate": "advancement.mechanization.tier_1_liquid_tank.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.tier_1_liquid_tank.desc",
+            "translate": "advancement.mechanization.tier_1_liquid_tank.desc",
 			"color":"dark_aqua"
         },
         "icon": {

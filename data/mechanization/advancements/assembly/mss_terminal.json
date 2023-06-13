@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.mss_terminal.title",
+            "translate": "advancement.mechanization.mss_terminal.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.mss_terminal.desc",
+            "translate": "advancement.mechanization.mss_terminal.desc",
 			"color":"dark_aqua"
         },
         "icon": {

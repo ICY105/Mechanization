@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.nether_upgrade.title",
+            "translate": "advancement.mechanization.nether_upgrade.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.nether_upgrade.desc",
+            "translate": "advancement.mechanization.nether_upgrade.desc",
 			"color":"dark_aqua"
         },
         "icon": {

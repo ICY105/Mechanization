@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.item_reformer.title",
+            "translate": "advancement.mechanization.item_reformer.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.item_reformer.desc",
+            "translate": "advancement.mechanization.item_reformer.desc",
 			"color":"dark_aqua"
         },
         "icon": {

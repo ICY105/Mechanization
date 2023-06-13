@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.tree_feller.title",
+            "translate": "advancement.mechanization.tree_feller.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.tree_feller.desc",
+            "translate": "advancement.mechanization.tree_feller.desc",
 			"color":"dark_aqua"
         },
         "icon": {

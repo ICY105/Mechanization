@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.spawner_mover.title",
+            "translate": "advancement.mechanization.spawner_mover.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.spawner_mover.desc",
+            "translate": "advancement.mechanization.spawner_mover.desc",
 			"color":"dark_aqua"
         },
         "icon": {

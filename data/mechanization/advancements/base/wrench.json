@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.wrench.title",
+            "translate": "advancement.mechanization.wrench.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.wrench.desc",
+            "translate": "advancement.mechanization.wrench.desc",
 			"color":"dark_aqua"
         },
         "icon": {

@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.block_breaker.title",
+            "translate": "advancement.mechanization.block_breaker.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.block_breaker.desc",
+            "translate": "advancement.mechanization.block_breaker.desc",
 			"color":"dark_aqua"
         },
         "icon": {

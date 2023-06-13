@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.teleporter.title",
+            "translate": "advancement.mechanization.teleporter.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.teleporter.desc",
+            "translate": "advancement.mechanization.teleporter.desc",
 			"color":"dark_aqua"
         },
         "icon": {

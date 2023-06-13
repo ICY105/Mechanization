@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.drill.title",
+            "translate": "advancement.mechanization.drill.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.drill.desc",
+            "translate": "advancement.mechanization.drill.desc",
 			"color":"dark_aqua"
         },
         "icon": {

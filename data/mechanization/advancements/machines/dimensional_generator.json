@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.dimensional_generator.title",
+            "translate": "advancement.mechanization.dimensional_generator.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.dimensional_generator.desc",
+            "translate": "advancement.mechanization.dimensional_generator.desc",
 			"color":"dark_aqua"
         },
         "icon": {

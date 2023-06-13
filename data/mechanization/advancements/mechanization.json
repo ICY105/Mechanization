@@ -1,18 +1,18 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.mechanization.title",
+            "translate": "advancement.mechanization.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.mechanization.desc",
+            "translate": "advancement.mechanization.desc",
 			"color":"dark_aqua"
         },
         "icon": {
             "item": "minecraft:blast_furnace",
             "nbt": "{CustomModelData:6421005}"
         },
-        "background": "mechanization:textures\/base\/manual\/index_icon\/blank.png",
+        "background": "mechanization:textures\/base\/font\/manual\/index_icon\/blank.png",
         "frame": "goal",
         "show_toast": true,
         "announce_to_chat": true

@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.energy_relay.title",
+            "translate": "advancement.mechanization.energy_relay.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.energy_relay.desc",
+            "translate": "advancement.mechanization.energy_relay.desc",
 			"color":"dark_aqua"
         },
         "icon": {

@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.tinker_table.title",
+            "translate": "advancement.mechanization.tinker_table.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.tinker_table.desc",
+            "translate": "advancement.mechanization.tinker_table.desc",
 			"color":"dark_aqua"
         },
         "icon": {

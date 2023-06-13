@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.one_manual.title",
+            "translate": "advancement.mechanization.one_manual.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.one_manual.desc",
+            "translate": "advancement.mechanization.one_manual.desc",
 			"color":"dark_aqua"
         },
         "icon": {

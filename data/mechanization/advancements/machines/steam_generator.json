@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.steam_generator.title",
+            "translate": "advancement.mechanization.steam_generator.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.steam_generator.desc",
+            "translate": "advancement.mechanization.steam_generator.desc",
 			"color":"dark_aqua"
         },
         "icon": {

@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.ender_upgrade.title",
+            "translate": "advancement.mechanization.ender_upgrade.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.ender_upgrade.desc",
+            "translate": "advancement.mechanization.ender_upgrade.desc",
 			"color":"dark_aqua"
         },
         "icon": {

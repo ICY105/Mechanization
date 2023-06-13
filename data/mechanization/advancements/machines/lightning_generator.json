@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.lightning_generator.title",
+            "translate": "advancement.mechanization.lightning_generator.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.lightning_generator.desc",
+            "translate": "advancement.mechanization.lightning_generator.desc",
 			"color":"dark_aqua"
         },
         "icon": {

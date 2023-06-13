@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.solar_panel.title",
+            "translate": "advancement.mechanization.solar_panel.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.solar_panel.desc",
+            "translate": "advancement.mechanization.solar_panel.desc",
 			"color":"dark_aqua"
         },
         "icon": {

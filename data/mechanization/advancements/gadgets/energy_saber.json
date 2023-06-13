@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.energy_saber.title",
+            "translate": "advancement.mechanization.energy_saber.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.energy_saber.desc",
+            "translate": "advancement.mechanization.energy_saber.desc",
 			"color":"dark_aqua"
         },
         "icon": {

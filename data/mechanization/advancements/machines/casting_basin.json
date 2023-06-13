@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.casting_basin.title",
+            "translate": "advancement.mechanization.casting_basin.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.casting_basin.desc",
+            "translate": "advancement.mechanization.casting_basin.desc",
 			"color":"dark_aqua"
         },
         "icon": {

@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.grinder.title",
+            "translate": "advancement.mechanization.grinder.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.grinder.desc",
+            "translate": "advancement.mechanization.grinder.desc",
 			"color":"dark_aqua"
         },
         "icon": {

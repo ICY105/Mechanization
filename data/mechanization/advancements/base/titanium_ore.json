@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.titanium_ore.title",
+            "translate": "advancement.mechanization.titanium_ore.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.titanium_ore.desc",
+            "translate": "advancement.mechanization.titanium_ore.desc",
 			"color":"dark_aqua"
         },
         "icon": {

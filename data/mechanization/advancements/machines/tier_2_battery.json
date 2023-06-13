@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "translate": "mech.advancements.tier_2_battery.title",
+            "translate": "advancement.mechanization.tier_2_battery.title",
 			"color":"green"
         },
         "description": {
-            "translate": "mech.advancements.tier_2_battery.desc",
+            "translate": "advancement.mechanization.tier_2_battery.desc",
 			"color":"dark_aqua"
         },
         "icon": {
