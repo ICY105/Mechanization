@@ -37,7 +37,7 @@ execute unless score #registry.min_vein_size chunk_scan.ores.data <= #registry.m
 execute unless score #registry.ignore_restrictions chunk_scan.ores.data matches 0..1 run scoreboard players set #registry.ore_id chunk_scan.ores.data -1
 
 #run register function
-execute if score #registry.result_id chunk_scan.ores.data matches 0 run function chunk_scan.ores:v1.1/registry/register_ore_2
+execute if score #registry.result_id chunk_scan.ores.data matches 0 run function chunk_scan.ores:v1.2/registry/register_ore_2
 
 #reset temp
 data modify storage chunk_scan.ores:registry input set value {}

@@ -11,5 +11,5 @@ execute store result score #gen.z chunk_scan.ores.data run data get entity @s Po
 tp @s ~ 0 ~
 
 #generate ores
-execute if score #registry.id chunk_scan.ores.data matches 2.. run function chunk_scan.ores:v1.1/generation/get_ore_list
-execute if score #registry.id chunk_scan.ores.data matches 2.. if data storage chunk_scan.ores:generation chunk.list[0] run function chunk_scan.ores:v1.1/generation/process_ore_list
+execute if score #registry.id chunk_scan.ores.data matches 2.. run function chunk_scan.ores:v1.2/generation/get_ore_list
+execute if score #registry.id chunk_scan.ores.data matches 2.. if data storage chunk_scan.ores:generation chunk.list[0] run function chunk_scan.ores:v1.2/generation/process_ore_list

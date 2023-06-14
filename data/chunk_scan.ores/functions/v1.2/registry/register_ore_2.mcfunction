@@ -34,7 +34,7 @@ execute if data storage chunk_scan.ores:registry temp{dimension:"minecraft:the_e
 execute if data storage chunk_scan.ores:registry temp{dimension:"minecraft:the_nether"} store success score #registry.temp chunk_scan.ores.data run data modify storage chunk_scan.ores:registry the_nether append from storage chunk_scan.ores:registry temp
 
 execute if score #registry.temp chunk_scan.ores.data matches 0 store result score #registry.loop chunk_scan.ores.data run data get storage chunk_scan.ores:registry custom
-execute if score #registry.temp chunk_scan.ores.data matches 0 if score #registry.loop chunk_scan.ores.data matches 1.. run function chunk_scan.ores:v1.1/registry/register_ore_3
+execute if score #registry.temp chunk_scan.ores.data matches 0 if score #registry.loop chunk_scan.ores.data matches 1.. run function chunk_scan.ores:v1.2/registry/register_ore_3
 execute if score #registry.temp chunk_scan.ores.data matches 0 if score #registry.loop chunk_scan.ores.data matches 0 run data modify storage chunk_scan.ores:registry custom prepend value {dimension:"", ores:[]}
 execute if score #registry.temp chunk_scan.ores.data matches 0 if score #registry.loop chunk_scan.ores.data matches 0 run data modify storage chunk_scan.ores:registry custom[0].dimension set from storage chunk_scan.ores:registry temp.dimension
 execute if score #registry.temp chunk_scan.ores.data matches 0 run data modify storage chunk_scan.ores:registry custom[0].ores append from storage chunk_scan.ores:registry temp

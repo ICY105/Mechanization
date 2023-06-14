@@ -13,10 +13,10 @@ execute store result score #gen.ignore_restrictions chunk_scan.ores.data run dat
 #generate veins
 scoreboard players operation #utils.min chunk_scan.ores.data = #gen.min_veins chunk_scan.ores.data
 scoreboard players operation #utils.max chunk_scan.ores.data = #gen.max_veins chunk_scan.ores.data
-function chunk_scan.ores:v1.1/utils/random
+function chunk_scan.ores:v1.2/utils/random
 scoreboard players operation #gen.veins chunk_scan.ores.data = #utils.out chunk_scan.ores.data
-execute if score #gen.veins chunk_scan.ores.data matches 1.. run function chunk_scan.ores:v1.1/generation/generate_veins
+execute if score #gen.veins chunk_scan.ores.data matches 1.. run function chunk_scan.ores:v1.2/generation/generate_veins
 
 ### remove entry, then repeat until temp is empty
 data remove storage chunk_scan.ores:generation chunk.list[0]
-execute if data storage chunk_scan.ores:generation chunk.list[0] run function chunk_scan.ores:v1.1/generation/process_ore_list
+execute if data storage chunk_scan.ores:generation chunk.list[0] run function chunk_scan.ores:v1.2/generation/process_ore_list

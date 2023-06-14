@@ -7,5 +7,5 @@ execute if data storage chunk_scan.ores:generation chunk{dimension:"minecraft:th
 
 #get custom dimension if needed
 execute if score #gen.success chunk_scan.ores.data matches 0 store result score #gen.loop chunk_scan.ores.data run data get storage chunk_scan.ores:registry custom
-execute if score #gen.success chunk_scan.ores.data matches 0 if score #gen.loop chunk_scan.ores.data matches 1.. run function chunk_scan.ores:v1.1/generation/get_ore_list_2
+execute if score #gen.success chunk_scan.ores.data matches 0 if score #gen.loop chunk_scan.ores.data matches 1.. run function chunk_scan.ores:v1.2/generation/get_ore_list_2
 execute if score #gen.success chunk_scan.ores.data matches 0 if score #gen.loop chunk_scan.ores.data matches 1.. run data modify storage chunk_scan.ores:generation chunk.list set from storage chunk_scan.ores:registry custom[0].list
