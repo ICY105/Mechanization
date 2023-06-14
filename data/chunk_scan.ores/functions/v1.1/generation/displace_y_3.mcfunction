@@ -17,3 +17,5 @@ execute if score #gen.displace_y chunk_scan.ores.data matches 12 positioned ~ ~1
 execute if score #gen.displace_y chunk_scan.ores.data matches 13 positioned ~ ~13 ~ run function chunk_scan.ores:v1.1/generation/spawn_ore
 execute if score #gen.displace_y chunk_scan.ores.data matches 14 positioned ~ ~14 ~ run function chunk_scan.ores:v1.1/generation/spawn_ore
 execute if score #gen.displace_y chunk_scan.ores.data matches 15 positioned ~ ~15 ~ run function chunk_scan.ores:v1.1/generation/spawn_ore
+
+scoreboard players set #gen.displace_y chunk_scan.ores.data -2000000000

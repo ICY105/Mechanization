@@ -18,3 +18,5 @@ execute if score #gen.displace_y chunk_scan.ores.data matches 1024..1279 positio
 execute if score #gen.displace_y chunk_scan.ores.data matches 1280..1535 positioned ~ 1280 ~ run function chunk_scan.ores:v1.1/generation/displace_y_2
 execute if score #gen.displace_y chunk_scan.ores.data matches 1536..1791 positioned ~ 1536 ~ run function chunk_scan.ores:v1.1/generation/displace_y_2
 execute if score #gen.displace_y chunk_scan.ores.data matches 1792..2047 positioned ~ 1792 ~ run function chunk_scan.ores:v1.1/generation/displace_y_2
+
+scoreboard players set #gen.displace_y chunk_scan.ores.data -2000000000
