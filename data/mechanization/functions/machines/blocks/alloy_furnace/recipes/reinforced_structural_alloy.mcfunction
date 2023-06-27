@@ -5,12 +5,12 @@ execute if score #success mechanization.data matches 0 if score #count.1 mechani
 execute if score #success mechanization.data matches 0 if score #count.2 mechanization.data matches 4.. if data storage mechanization:temp obj.slot3{id:"minecraft:prismarine_crystals"} store success score #success mechanization.data run scoreboard players remove #count.2 mechanization.data 4
 
 scoreboard players set #success mechanization.data 0
-execute if score #success mechanization.data matches 0 if score #storage.0 mechanization.data matches 288.. if data storage mechanization:temp obj.tank_1.tag{id:"molten_structural_alloy"} store success score #success mechanization.data run scoreboard players remove #storage.0 mechanization.data 288
-execute if score #success mechanization.data matches 0 if score #storage.1 mechanization.data matches 288.. if data storage mechanization:temp obj.tank_2.tag{id:"molten_structural_alloy"} store success score #success mechanization.data run scoreboard players remove #storage.1 mechanization.data 288
+execute if score #success mechanization.data matches 0 if score #storage.0 mechanization.data matches 288.. if data storage mechanization:temp obj.tank_1{id:"molten_structural_alloy"} store success score #success mechanization.data run scoreboard players remove #storage.0 mechanization.data 288
+execute if score #success mechanization.data matches 0 if score #storage.1 mechanization.data matches 288.. if data storage mechanization:temp obj.tank_2{id:"molten_structural_alloy"} store success score #success mechanization.data run scoreboard players remove #storage.1 mechanization.data 288
 
 scoreboard players set #success mechanization.data 0
-execute if score #success mechanization.data matches 0 if score #storage.0 mechanization.data matches 144.. if data storage mechanization:temp obj.tank_1.tag{id:"molten_titanium"} store success score #success mechanization.data run scoreboard players remove #storage.0 mechanization.data 144
-execute if score #success mechanization.data matches 0 if score #storage.1 mechanization.data matches 144.. if data storage mechanization:temp obj.tank_2.tag{id:"molten_titanium"} store success score #success mechanization.data run scoreboard players remove #storage.1 mechanization.data 144
+execute if score #success mechanization.data matches 0 if score #storage.0 mechanization.data matches 144.. if data storage mechanization:temp obj.tank_1{id:"molten_titanium"} store success score #success mechanization.data run scoreboard players remove #storage.0 mechanization.data 144
+execute if score #success mechanization.data matches 0 if score #storage.1 mechanization.data matches 144.. if data storage mechanization:temp obj.tank_2{id:"molten_titanium"} store success score #success mechanization.data run scoreboard players remove #storage.1 mechanization.data 144
 
 scoreboard players add #storage.2 mechanization.data 144
 execute if predicate mechanization:alloy_furnace_nether_upgrade run scoreboard players add #storage.2 mechanization.data 144
