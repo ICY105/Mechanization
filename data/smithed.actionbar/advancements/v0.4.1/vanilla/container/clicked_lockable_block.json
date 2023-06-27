@@ -1,0 +1,138 @@
+{
+  "criteria": {
+    "click_no_sneak": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:value_check",
+              "value": {
+                "type": "minecraft:score",
+                "target": "this",
+                "score": "smithed.actionbar.sneaking"
+              },
+              "range": {
+                "min": 1
+              }
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#smithed.actionbar.major"
+              },
+              "score": "load.status"
+            },
+            "range": 0
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#smithed.actionbar.minor"
+              },
+              "score": "load.status"
+            },
+            "range": 4
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#smithed.actionbar.patch"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          }
+        ],
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "mithed.actionbar:impl/lockable"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "click_empty": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#smithed.actionbar.major"
+              },
+              "score": "load.status"
+            },
+            "range": 0
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#smithed.actionbar.minor"
+              },
+              "score": "load.status"
+            },
+            "range": 4
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "#smithed.actionbar.patch"
+              },
+              "score": "load.status"
+            },
+            "range": 1
+          }
+        ],
+        "item": {
+          "items": [
+            "minecraft:air"
+          ]
+        },
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "mithed.actionbar:impl/lockable"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "click_no_sneak",
+      "click_empty"
+    ]
+  ],
+  "rewards": {
+    "function": "smithed.actionbar:v0.4.1/vanilla/container/clicked_lockable_block"
+  }
+}
