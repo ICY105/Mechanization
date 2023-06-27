@@ -1,0 +1,19 @@
+{
+	"required":false,
+	"values":[
+		"#minecraft:all_signs",
+		"#minecraft:beds",
+		"#minecraft:campfires",
+		"#mechanization:inv",
+		"minecraft:lectern",
+		"minecraft:suspicious_sand",
+		"minecraft:suspicious_gravel",
+		"minecraft:conduit",
+		"minecraft:beacon",
+		"minecraft:jukebox",
+		"minecraft:decorated_pot",
+		"minecraft:suspicious_gravel",
+		"minecraft:chiseled_bookshelf",
+		"minecraft:respawn_anchor"
+	]
+}
