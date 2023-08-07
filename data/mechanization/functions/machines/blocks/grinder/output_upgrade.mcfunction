@@ -104,7 +104,7 @@ execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{
 #Extra
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:cobblestone"}] run item replace block -30000000 0 3201 container.0 with minecraft:sand 1
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stone"}] run item replace block -30000000 0 3201 container.0 with minecraft:gravel 1
-execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:netherrack"}] run item replace block -30000000 0 3201 container.0 with minecraft:gravel 1
+execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:netherrack"}] run item replace block -30000000 0 3201 container.0 with minecraft:red_sand 1
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:gravel"}] run item replace block -30000000 0 3201 container.0 with minecraft:flint 1
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:blaze_rod"}] run item replace block -30000000 0 3201 container.0 with minecraft:blaze_powder 3
 execute if score #valid mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:bone"}] run item replace block -30000000 0 3201 container.0 with minecraft:bone_meal 4
