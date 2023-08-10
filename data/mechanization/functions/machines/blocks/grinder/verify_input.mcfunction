@@ -91,7 +91,7 @@ execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stripped_cherry_wood"}]
 #Extra
 execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:cobblestone"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:sand"}] run scoreboard players set #valid mechanization.data 0
 execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:stone"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:gravel"}] run scoreboard players set #valid mechanization.data 0
-execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:netherrack"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:gravel"}] run scoreboard players set #valid mechanization.data 0
+execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:netherrack"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:red_sand"}] run scoreboard players set #valid mechanization.data 0
 execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:gravel"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:flint"}] run scoreboard players set #valid mechanization.data 0
 execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:blaze_rod"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:blaze_powder"}] run scoreboard players set #valid mechanization.data 0
 execute if data block ~ ~ ~ Items[{Slot:0b,id:"minecraft:bone"}] unless data block ~ ~ ~ Items[{Slot:2b,id:"minecraft:bone_meal"}] run scoreboard players set #valid mechanization.data 0
