@@ -5,6 +5,7 @@ execute if entity @s[tag=mechanization.sonic] run function mechanization:gadgets
 
 scoreboard players set #success mechanization.data 0
 scoreboard players operation #damage mechanization.data = @s mechanization.weaponheat
+scoreboard players operation #predicate mechanization.data = @s mechanization.shield
 execute positioned ~ ~-1 ~ as @e[type=#mechanization:living,tag=!smithed.ignore,distance=..1,tag=!smithed.strict,nbt={DeathTime:0s}] store success score #success mechanization.data run function mechanization:gadgets/player/firearms/damage_entity
 execute if score #success mechanization.data matches 1 run kill @s
 
