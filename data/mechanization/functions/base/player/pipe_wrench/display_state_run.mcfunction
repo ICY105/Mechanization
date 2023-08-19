@@ -10,7 +10,7 @@ execute if score #state mechanization.data matches 2 run data merge entity @s {i
 execute if score #side mechanization.data matches 0 run tp @s ~ ~0.02 ~ 0 0
 execute if score #side mechanization.data matches 1 run tp @s ~ ~-0.02 ~ 0 0
 execute if score #side mechanization.data matches 1 run data merge entity @s {Rotation:[0.0f,180.0f]}
-execute if score #side mechanization.data matches 2 run tp @s ~ ~ ~-0.02 180 90
-execute if score #side mechanization.data matches 3 run tp @s ~ ~ ~0.02 0 90
-execute if score #side mechanization.data matches 4 run tp @s ~0.02 ~ ~ 270 90
-execute if score #side mechanization.data matches 5 run tp @s ~-0.02 ~ ~ 90 90
+execute if score #side mechanization.data matches 3 run tp @s ~ ~ ~-0.02 180 90
+execute if score #side mechanization.data matches 2 run tp @s ~ ~ ~0.02 0 90
+execute if score #side mechanization.data matches 5 run tp @s ~0.02 ~ ~ 270 90
+execute if score #side mechanization.data matches 4 run tp @s ~-0.02 ~ ~ 90 90

@@ -16,11 +16,11 @@ scoreboard players set #side mechanization.data -1
 execute if score #y mechanization.data matches 0..10 if score #x mechanization.data matches 10..90 if score #z mechanization.data matches 10..90 run scoreboard players set #side mechanization.data 1
 execute if score #y mechanization.data matches 90..100 if score #x mechanization.data matches 10..90 if score #z mechanization.data matches 10..90 run scoreboard players set #side mechanization.data 0
 
-execute if score #x mechanization.data matches 0..10 if score #z mechanization.data matches 10..90 if score #y mechanization.data matches 10..90 run scoreboard players set #side mechanization.data 5
-execute if score #x mechanization.data matches 90..100 if score #z mechanization.data matches 10..90 if score #y mechanization.data matches 10..90 run scoreboard players set #side mechanization.data 4
+execute if score #x mechanization.data matches 0..10 if score #z mechanization.data matches 10..90 if score #y mechanization.data matches 10..90 run scoreboard players set #side mechanization.data 4
+execute if score #x mechanization.data matches 90..100 if score #z mechanization.data matches 10..90 if score #y mechanization.data matches 10..90 run scoreboard players set #side mechanization.data 5
 
-execute if score #z mechanization.data matches 0..10 if score #x mechanization.data matches 10..90 if score #y mechanization.data matches 10..90 run scoreboard players set #side mechanization.data 2
-execute if score #z mechanization.data matches 90..100 if score #x mechanization.data matches 10..90 if score #y mechanization.data matches 10..90 run scoreboard players set #side mechanization.data 3
+execute if score #z mechanization.data matches 0..10 if score #x mechanization.data matches 10..90 if score #y mechanization.data matches 10..90 run scoreboard players set #side mechanization.data 3
+execute if score #z mechanization.data matches 90..100 if score #x mechanization.data matches 10..90 if score #y mechanization.data matches 10..90 run scoreboard players set #side mechanization.data 2
 
 # get fluid state
 scoreboard players set #state mechanization.data 2
