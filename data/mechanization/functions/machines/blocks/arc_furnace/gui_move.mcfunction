@@ -13,4 +13,4 @@ execute if score #slot mechanization.data matches 0.. run data modify block ~ ~ 
 
 # cycle
 data remove storage mechanization:temp list[0]
-execute if data storage mechanization:temp list[0] run function mechanization:machines/machines/arc_furnace/gui_move
+execute if data storage mechanization:temp list[0] run function mechanization:machines/blocks/arc_furnace/gui_move
