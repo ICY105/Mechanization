@@ -1,6 +1,4 @@
 
-schedule function mechanization:tick 1t
-
 function mechanization:base/main
 function mechanization:machines/main
 #function mechanization:nuclear/main

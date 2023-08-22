@@ -60,5 +60,4 @@ execute unless data storage mechanization:networks teleporter run data merge sto
 function mechanization:base/config/load_config
 
 # schedule message
-schedule function mechanization:tick 1t
 schedule function mechanization:load_message 2s

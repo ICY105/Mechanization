@@ -22,7 +22,6 @@ data modify storage mechanization:temp obj set from block ~ ~ ~ Items[{Slot:6b}]
 function mechanization:base/utils/get_fluid_from_item
 execute if data storage mechanization:temp obj.tag.fluid{id:"experience"} run function mechanization:base/utils/fluid_slot_io/slot_io_6
 execute if data storage mechanization:temp obj.tag.fluid{id:"empty"} run function mechanization:base/utils/fluid_slot_io/slot_io_6
-data modify storage mechanization:test obj set from storage mechanization:temp obj
 
 # tank
 scoreboard players set #tank mechanization.data 0
