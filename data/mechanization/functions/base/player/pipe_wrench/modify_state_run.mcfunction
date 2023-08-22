@@ -37,3 +37,5 @@ execute if score #side mechanization.data matches 5 if score #state mechanizatio
 execute if score #side mechanization.data matches 5 if score #state mechanization.data matches 1 run scoreboard players set @s fluid.io.west 0
 execute if score #side mechanization.data matches 5 if score #state mechanization.data matches 2 if score @s mechanization.fluid.in matches -64..64 run scoreboard players operation @s fluid.io.west = @s mechanization.fluid.in
 execute if score #side mechanization.data matches 5 if score #state mechanization.data matches 2 unless score @s mechanization.fluid.in matches -64..64 run scoreboard players operation @s fluid.io.west = @s mechanization.fluid.out
+
+playsound minecraft:block.metal.hit player @a[distance=..12]
