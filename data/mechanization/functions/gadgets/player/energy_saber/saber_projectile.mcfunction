@@ -10,7 +10,10 @@ execute if score @s mechanization.time matches 12 run data merge entity @s {star
 # damage
 scoreboard players operation #predicate mechanization.data = @s player_action.uuid.0
 scoreboard players operation #damage mechanization.data = @s mechanization.weaponheat
+scoreboard players set #success mechanization.data 0
 execute positioned ~-0.5 ~-0.5 ~-0.5 as @e[type=#mechanization:living,predicate=!mechanization:is_player,dx=0,dy=0,dz=0] run function mechanization:gadgets/player/energy_saber/damage_entity
+
+execute if score #success mechanization.data matches 1 run function mechanization:gadgets/player/energy_saber/saber_projectile_durability
 
 # move
 function mechanization:gadgets/player/energy_saber/saber_projectile_2

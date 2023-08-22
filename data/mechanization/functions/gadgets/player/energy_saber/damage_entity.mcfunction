@@ -1,4 +1,6 @@
 
+scoreboard players set #success mechanization.data 1
+
 execute if score #damage mechanization.data matches 1..9 run damage @s 0.5 minecraft:player_attack by @p[predicate=mechanization:is_player]
 execute if score #damage mechanization.data matches 10..14 run damage @s 1.0 minecraft:player_attack by @p[predicate=mechanization:is_player]
 execute if score #damage mechanization.data matches 15..19 run damage @s 1.5 minecraft:player_attack by @p[predicate=mechanization:is_player]
