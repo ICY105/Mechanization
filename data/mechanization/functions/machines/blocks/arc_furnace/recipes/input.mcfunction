@@ -25,4 +25,4 @@ execute if score @s[tag=mechanization.upgraded] mechanization.time matches 3.. r
 # calculate needed power
 scoreboard players operation #needed_energy mechanization.data = #machines.cf.arc_furnace.power mechanization.data
 scoreboard players operation #needed_energy mechanization.data *= @s mechanization.time
-execute if score @s energy.storage < #needed_energy mechanization.data run scoreboard players set @s mechanization.time 0
+execute if score @s energy.storage < #needed_energy mechanization.data if score #needed_energy mechanization.data matches ..4000 run scoreboard players set @s mechanization.time 0
