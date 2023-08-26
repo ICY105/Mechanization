@@ -1,7 +1,7 @@
 
 scoreboard players remove #loop mechanization.data 1
 execute if entity @s[tag=!mechanization.upgraded.nether] run loot spawn ~ ~1 ~ mine ~ ~ ~
-execute if entity @s[tag=mechanization.upgraded.nether] run summon item ~ ~1 ~ {id:"minecraft:charcoal", Count:1b}
+execute if entity @s[tag=mechanization.upgraded.nether] run summon item ~ ~1 ~ {Item:{id:"minecraft:charcoal", Count:1b}}
 setblock ~ ~ ~ minecraft:air
 
 scoreboard players remove #radius mechanization.data 1
