@@ -5,7 +5,6 @@
       "rolls": 1.0,
       "bonus_rolls": 0.0,
       "entries": [
-	  
         {
           "type": "minecraft:item",
           "functions": [
@@ -61,21 +60,21 @@
 		  ],
           "name": "minecraft:yellow_shulker_box"
         },
-		{
-		  "type": "minecraft:dynamic",
-		  "name": "minecraft:contents",
-		  "conditions": [
-			{
-			  "condition": "minecraft:match_tool",
-			  "predicate": {
-				"items": [
-				  "minecraft:air"
-				],
-				"nbt": "{drop_contents:1b}"
-			  }
-			}
-		  ]
-		}
+        {
+          "type": "minecraft:dynamic",
+          "name": "minecraft:contents",
+          "conditions": [
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+            "items": [
+              "minecraft:air"
+            ],
+            "nbt": "{drop_contents:1b}"
+            }
+          }
+          ]
+        }
       ]
     }
   ],
