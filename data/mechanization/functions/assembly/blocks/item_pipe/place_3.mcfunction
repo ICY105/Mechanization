@@ -17,5 +17,7 @@ scoreboard players operation #model.1 mechanization.data += @s mechanization.dat
 execute store result entity @s item.tag.CustomModelData int 1 run scoreboard players get #model.1 mechanization.data
 
 execute if score #id mechanization.data matches 0.. run scoreboard players operation #predicate mechanization.data = @s mechanization.item_id
-execute if score #id mechanization.data matches 0.. as @e[type=minecraft:item_display,tag=mechanization.item_pipe,predicate=mechanization:matches_uuid] run scoreboard players operation @s mechanization.item_id = #id mechanization.data
+execute if score #id mechanization.data matches 0.. as @e[type=minecraft:item_display,tag=mechanization.item_pipe,predicate=mechanization:matches_uuid,distance=0..] run scoreboard players operation @s mechanization.item_id = #id mechanization.data
+execute if score #id mechanization.data matches 0.. as @e[type=minecraft:item_frame,tag=mechanization.item_extractor,predicate=mechanization:matches_uuid,distance=0..] run scoreboard players operation @s mechanization.item_id = #id mechanization.data
+execute if score #id mechanization.data matches 0.. as @e[type=minecraft:item_frame,tag=mechanization.item_inserter,predicate=mechanization:matches_uuid,distance=0..] run scoreboard players operation @s mechanization.item_id = #id mechanization.data
 execute if score #id mechanization.data matches -1 run scoreboard players operation #id mechanization.data = @s mechanization.item_id

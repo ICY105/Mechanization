@@ -1,4 +1,6 @@
 
+scoreboard players set #insert mechanization.data 1
+
 execute unless data block ~ ~ ~ Items[{Slot:26b}] run scoreboard players set #slot mechanization.data 26
 execute unless data block ~ ~ ~ Items[{Slot:25b}] run scoreboard players set #slot mechanization.data 25
 execute unless data block ~ ~ ~ Items[{Slot:24b}] run scoreboard players set #slot mechanization.data 24
