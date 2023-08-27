@@ -49,7 +49,7 @@ scoreboard players set #cons.rng_a mechanization.data 1103515245
 # mark version
 scoreboard players set #mech.ver.major load.status 4
 scoreboard players set #mech.ver.minor load.status 1
-scoreboard players set #mech.ver.fix load.status 3
+scoreboard players set #mech.ver.fix load.status 4
 
 # configure storage
 data merge storage mechanization:temp {obj:{}, list:[], var:""}
