@@ -5,18 +5,18 @@
       "rolls": 1,
       "entries": [
         {
-		  "type": "minecraft:alternatives",
+          "type": "minecraft:alternatives",
           "children": [
-			{
-			  "type": "minecraft:loot_table",
+            {
+              "type": "minecraft:loot_table",
               "name": "mechanization:base/tin_ingot",
-			  "functions": [
-			    {
+              "functions": [
+                {
                   "function": "minecraft:apply_bonus",
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:ore_drops"
                 }
-			  ],
+              ],
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -24,17 +24,17 @@
                     "nbt": "{auto_smelt:1b}"
                   }
                 },
-				{
-				  "condition": "minecraft:block_state_property",
-				  "block": "minecraft:deepslate_brick_slab",
-				  "properties": {
-				    "type": "double",
-					"waterlogged": true
-				  }
-				}
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:deepslate_brick_slab",
+                  "properties": {
+                    "type": "double",
+                    "waterlogged": "true"
+                  }
+                }
               ]
-			},
-			{
+            },
+            {
               "type": "minecraft:loot_table",
               "name": "mechanization:base/tin_ore_deepslate",
               "conditions": [
@@ -51,60 +51,60 @@
                     ]
                   }
                 },
-				{
-				  "condition": "minecraft:block_state_property",
-				  "block": "minecraft:deepslate_brick_slab",
-				  "properties": {
-				    "type": "double",
-					"waterlogged": true
-				  }
-				}
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:deepslate_brick_slab",
+                  "properties": {
+                    "type": "double",
+                    "waterlogged": "true"
+                  }
+                }
               ]
             },
-			{
-			  "type": "minecraft:loot_table",
-			  "name": "mechanization:base/tin_raw",
-			  "functions": [
-			    {
+            {
+              "type": "minecraft:loot_table",
+              "name": "mechanization:base/tin_raw",
+              "functions": [
+                {
                   "function": "minecraft:apply_bonus",
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:ore_drops"
                 }
-			  ],
-			  "conditions": [
-			    {
-				  "condition": "minecraft:block_state_property",
-				  "block": "minecraft:deepslate_brick_slab",
-				  "properties": {
-				    "type": "double",
-					"waterlogged": true
-				  }
-				}
-			  ]
-			},
-		    {
-			  "type": "minecraft:item",
-			  "functions": [
-				{
-				  "function": "minecraft:set_count",
-				  "conditions": [
-					{
-					  "condition": "minecraft:block_state_property",
-					  "block": "minecraft:deepslate_brick_slab",
-					  "properties": {
-						"type": "double"
-					  }
-					}
-				  ],
-				  "count": 2
-				},
-				{
-				  "function": "minecraft:explosion_decay"
-				}
-			  ],
-			  "name": "minecraft:deepslate_brick_slab"
-			}
-		  ]
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:block_state_property",
+                  "block": "minecraft:deepslate_brick_slab",
+                  "properties": {
+                    "type": "double",
+                    "waterlogged": "true"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:block_state_property",
+                      "block": "minecraft:deepslate_brick_slab",
+                      "properties": {
+                        "type": "double"
+                      }
+                    }
+                  ],
+                  "count": 2
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                }
+              ],
+              "name": "minecraft:deepslate_brick_slab"
+            }
+          ]
         }
       ]
     }

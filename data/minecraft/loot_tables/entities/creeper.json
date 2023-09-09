@@ -32,7 +32,7 @@
       "entries": [
         {
           "type": "minecraft:tag",
-          "name": "minecraft:music_discs",
+          "name": "minecraft:creeper_drop_music_discs",
           "expand": true
         }
       ],
@@ -53,23 +53,23 @@
           "type": "minecraft:loot_table",
           "name": "minecraft:assembly/disc_end_of_the_world"
         },
-		{
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:assembly/disc_hyperspace"
         },
-		{
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:assembly/disc_money_for_nothing"
         },
-		{
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:assembly/disc_wanderer"
         },
-		{
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:assembly/disc_stranger_think"
         },
-		{
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:assembly/disc_atomic_amnesia"
         }
@@ -88,11 +88,11 @@
   "__smithed__": {
     "rules": [
       {
-        "type":"smithed:append",
-        "target":"pools[0].entries",
-        "source":{
-          "type":"smithed:reference",
-          "path":"pools[0].entries[2]"
+        "type": "smithed:append",
+        "target": "pools",
+        "source": {
+          "type": "smithed:reference",
+          "path": "pools[2]"
         }
       }
     ]
