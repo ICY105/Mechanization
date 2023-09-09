@@ -1,0 +1,34 @@
+{
+  "pattern": [
+    "  10     ",
+    "  230  # ",
+    "  10     "
+  ],
+  "key": {
+    "0": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/copper_rod"
+    },
+    "1": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/tin_ingot"
+    },
+    "2": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/titanium_ingot"
+    },
+    "3": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/iron_gear"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:gadgets/drill"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:gadgets/drill"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

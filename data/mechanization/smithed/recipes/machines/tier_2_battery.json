@@ -1,0 +1,38 @@
+{
+  "pattern": [
+    "  WCW    ",
+    "  BMB  R ",
+    "  WGW    "
+  ],
+  "key": {
+    "W": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:gray_wool"
+    },
+    "B": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:diamond"
+    },
+    "C": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/conductive_rod"
+    },
+    "G": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/conductive_gear"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier_2_machine_frame"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/tier_2_battery"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/tier_2_battery"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

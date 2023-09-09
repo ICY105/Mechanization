@@ -1,0 +1,42 @@
+{
+  "pattern": [
+    "  2",
+    "1 3",
+    "  2"
+  ],
+  "key": {
+    "1": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:iron_block"
+    },
+    "2": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_iron",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6421200,
+          "display": {
+            "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"1296\"}]}"]
+          }
+        }
+      }
+    },
+    "3": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_iron",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6422922,
+          "display": {
+            "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"1296\"}]}"]
+          }
+        }
+      }
+    }
+  },
+  "result": {
+    "type": "smithed:datapack_item_entry",
+    "id": "mechanization:base_resources/fluid_displays/molten_iron"
+  },
+  "category": "mechanization:arc_furnace"
+}

@@ -1,0 +1,34 @@
+{
+  "pattern": [
+    "  DCD    ",
+    "  OMO  # ",
+    "  OCO    "
+  ],
+  "key": {
+    "O": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:crying_obsidian"
+    },
+    "C": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/super_conductive_gear"
+    },
+    "D": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/crystal_composite"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier_3_machine_frame"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/enchanting_station"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/enchanting_station"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

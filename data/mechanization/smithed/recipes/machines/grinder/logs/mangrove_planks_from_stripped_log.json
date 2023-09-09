@@ -1,0 +1,23 @@
+{
+  "pattern": [
+    "1  ",
+    "  2",
+    "   "
+  ],
+  "key": {
+    "1": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:stripped_mangrove_log"
+    },
+    "2": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:mangrove_planks",
+      "count": 4
+    }
+  },
+  "result": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:mangrove_planks"
+  },
+  "category": "mechanization:grinder"
+}

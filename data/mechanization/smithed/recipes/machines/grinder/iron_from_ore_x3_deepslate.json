@@ -1,0 +1,27 @@
+{
+  "pattern": [
+    "13 ",
+    "  2",
+    "   "
+  ],
+  "key": {
+    "1": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:deepslate_iron_ore"
+    },
+    "2": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:raw_iron",
+      "count": 3
+    },
+    "3": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base/ender_upgrade"
+    }
+  },
+  "result": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:raw_iron"
+  },
+  "category": "mechanization:grinder"
+}

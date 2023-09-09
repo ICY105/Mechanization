@@ -1,0 +1,30 @@
+{
+  "pattern": [
+    "  GTG    ",
+    "  III  R ",
+    "  GTG    "
+  ],
+  "key": {
+    "G": {
+      "type" : "smithed:item_entry",
+      "id": "minecraft:tinted_glass"
+    },
+    "T": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/reinforced_structural_gear"
+    },
+    "I": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/titanium_steel_plate"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier_3_machine_frame"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:base/tier_3_machine_frame"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

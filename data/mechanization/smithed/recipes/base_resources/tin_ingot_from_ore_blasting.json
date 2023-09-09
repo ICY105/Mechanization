@@ -1,0 +1,16 @@
+{
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/tin_ore"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:base_resources/tin_ingot"
+  },
+  "category": "minecraft:blast_furnace"
+}

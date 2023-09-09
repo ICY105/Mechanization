@@ -1,0 +1,38 @@
+{
+  "pattern": [
+    "  BGB    ",
+    "  CMC  R ",
+    "  BFB    "
+  ],
+  "key": {
+    "B": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:magma_block"
+    },
+    "F": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:blast_furnace"
+    },
+    "G": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/gold_plate"
+    },
+    "C": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/copper_plate"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier_1_machine_frame"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/arc_furnace"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/arc_furnace"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

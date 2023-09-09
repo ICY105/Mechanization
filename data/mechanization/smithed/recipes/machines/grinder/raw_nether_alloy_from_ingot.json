@@ -1,0 +1,24 @@
+
+{
+  "pattern": [
+    "1  ",
+    "  2",
+    "   "
+  ],
+  "key": {
+    "1": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/nether_alloy_ingot",
+      "count": 2
+    },
+    "2": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/nether_alloy_raw"
+    }
+  },
+  "result": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/nether_alloy_raw"
+  },
+  "category": "mechanization:grinder"
+}

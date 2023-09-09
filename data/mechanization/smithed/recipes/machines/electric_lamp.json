@@ -1,0 +1,34 @@
+{
+  "pattern": [
+    "  ILI    ",
+    "  CMC  # ",
+    "  ILI    "
+  ],
+  "key": {
+    "L": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:redstone_lamp"
+    },
+    "I": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:glow_ink_sac"
+    },
+    "C": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/conductive_rod"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier_2_machine_frame"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/electric_lamp"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/electric_lamp"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

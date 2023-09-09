@@ -1,0 +1,24 @@
+{
+  "pattern": [
+    "  #      ",
+    "       R ",
+    "         "
+  ],
+  "key": {
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/plutonium_block"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/plutonium_ingot",
+      "count": 9
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:base_resources/plutonium_ingot",
+    "count": 9
+  },
+  "category": "mechanization:machine_crafting_table"
+}

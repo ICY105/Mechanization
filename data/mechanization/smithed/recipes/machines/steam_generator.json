@@ -1,0 +1,38 @@
+{
+  "pattern": [
+    "  TBT    ",
+    "  GMG  R ",
+    "  TFT    "
+  ],
+  "key": {
+    "T": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:terracotta"
+    },
+    "B": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:bucket"
+    },
+    "F": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:furnace"
+    },
+    "G": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/copper_gear"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier_1_machine_frame"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/steam_generator"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/steam_generator"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

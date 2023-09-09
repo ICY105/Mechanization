@@ -1,0 +1,15 @@
+{
+  "display": "Alloy Furnace",
+  "inventory": "chest",
+  "item_icon": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/alloy_furnace"
+  },
+  "background": {
+	  "icon": "mechanization:textures/machines/font/alloy_furnace.png",
+	  "width_offset": 6,
+	  "height_offset": 16,
+	  "width": 164,
+	  "height": 56
+  }
+}

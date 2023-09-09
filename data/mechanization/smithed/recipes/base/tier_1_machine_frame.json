@@ -1,0 +1,30 @@
+{
+  "pattern": [
+    "  GTG    ",
+    "  III  R ",
+    "  GTG    "
+  ],
+  "key": {
+    "G": {
+      "type" : "smithed:item_entry",
+      "id": "minecraft:glass"
+    },
+    "T": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/tin_gear"
+    },
+    "I": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/iron_plate"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier_1_machine_frame"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:base/tier_1_machine_frame"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

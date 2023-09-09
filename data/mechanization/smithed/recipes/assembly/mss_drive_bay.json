@@ -1,0 +1,38 @@
+{
+  "pattern": [
+    "  141    ",
+    "  303  # ",
+    "  121    "
+  ],
+  "key": {
+    "0": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier_2_machine_frame"
+    },
+    "1": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:iron_bars"
+    },
+    "2": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:barrel"
+    },
+    "3": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/conductive_gear"
+    },
+    "4": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/crystal_composite"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:assembly/mss_drive_bay"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:assembly/mss_drive_bay"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

@@ -1,0 +1,22 @@
+{
+  "pattern": [
+    "  ###    ",
+    "  ###  R ",
+    "  ###    "
+  ],
+  "key": {
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/titanium_steel_raw"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/titanium_steel_raw_block"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:base_resources/titanium_steel_raw_block"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

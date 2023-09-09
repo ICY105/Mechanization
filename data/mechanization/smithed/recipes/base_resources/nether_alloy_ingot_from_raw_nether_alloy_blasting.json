@@ -1,0 +1,16 @@
+{
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/nether_alloy_raw"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:base_resources/nether_alloy_ingot"
+  },
+  "category": "minecraft:blast_furnace"
+}

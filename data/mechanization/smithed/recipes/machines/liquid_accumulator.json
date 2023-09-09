@@ -1,0 +1,38 @@
+{
+  "pattern": [
+    "  CBC    ",
+    "  IMI  R ",
+    "  CDC    "
+  ],
+  "key": {
+    "B": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:bucket"
+    },
+    "D": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:dispenser"
+    },
+    "I": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/iron_gear"
+    },
+    "C": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/copper_plate"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier_1_machine_frame"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/liquid_accumulator"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/liquid_accumulator"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

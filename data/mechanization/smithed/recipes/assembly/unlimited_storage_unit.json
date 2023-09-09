@@ -1,0 +1,34 @@
+{
+  "pattern": [
+    "  121    ",
+    "  101  # ",
+    "  131    "
+  ],
+  "key": {
+    "0": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier_2_machine_frame"
+    },
+    "1": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:chest"
+    },
+    "2": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:enderchest"
+    },
+    "3": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:hopper"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:assembly/unlimited_storage_unit"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:assembly/unlimited_storage_unit"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

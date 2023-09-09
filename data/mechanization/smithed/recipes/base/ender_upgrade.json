@@ -1,0 +1,38 @@
+{
+  "pattern": [
+    "  DGD    ",
+    "  IEI  R ",
+    "  DTD    "
+  ],
+  "key": {
+    "I": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/titanium_steel_rod"
+    },
+    "T": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/reinforced_structural_plate"
+    },
+    "G": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/super_conductive_plate"
+    },
+    "D": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/crystal_composite"
+    },
+    "E": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/ender_alloy_plate"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/ender_upgrade"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:base/ender_upgrade"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

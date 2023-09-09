@@ -1,0 +1,16 @@
+{
+  "item" : {
+    "id" : "minecraft:leather_boots",
+    "Count": 1,
+    "tag": {
+      "CustomModelData": 6422921,
+      "HideFlags": 127,
+      "display": {
+        "color": 14304324,
+        "Name": "{\"color\":\"white\",\"italic\":false,\"translate\":\"fluid.mechanization.molten_nether_alloy\"}]}",
+        "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"1000\"}]}"]
+      },
+      "mechanization":{"id":"molten_nether_alloy"}
+    }
+  }
+}

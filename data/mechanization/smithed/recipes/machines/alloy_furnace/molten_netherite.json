@@ -1,0 +1,84 @@
+{
+  "pattern": [
+    "1 2  4  6",
+    "  3  58 7",
+    "  2  4  6"
+  ],
+  "key": {
+    "1": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:netherite_scrap",
+      "count": 4
+    },
+    "2": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_gold",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6421200,
+          "display": {
+            "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"576\"}]}"]
+          }
+        }
+      }
+    },
+    "3": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_gold",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6422920,
+          "display": {
+            "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"576\"}]}"]
+          }
+        }
+      }
+    },
+    "4": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/empty",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6421200
+        }
+      }
+    },
+    "5": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/empty"
+    },
+    "6": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_netherite",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6421200,
+          "display": {
+            "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"144\"}]}"]
+          }
+        }
+      }
+    },
+    "7": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_netherite",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6422918,
+          "display": {
+            "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"144\"}]}"]
+          }
+        }
+      }
+    },
+    "8": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base/machine_upgrade"
+    }
+  },
+  "result": {
+    "type": "smithed:datapack_item_entry",
+    "id": "mechanization:base_resources/fluid_displays/molten_netherite"
+  },
+  "category": "mechanization:alloy_furnace"
+}

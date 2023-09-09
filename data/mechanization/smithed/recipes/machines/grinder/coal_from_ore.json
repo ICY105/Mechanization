@@ -1,0 +1,22 @@
+{
+  "pattern": [
+    "1  ",
+    "  2",
+    "   "
+  ],
+  "key": {
+    "1": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:coal_ore"
+    },
+    "2": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:coal"
+    }
+  },
+  "result": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:coal"
+  },
+  "category": "mechanization:grinder"
+}

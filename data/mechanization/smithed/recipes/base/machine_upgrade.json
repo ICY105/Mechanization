@@ -1,0 +1,34 @@
+{
+  "pattern": [
+    "  ITI    ",
+    "  IDI  R ",
+    "  IGI    "
+  ],
+  "key": {
+    "I": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/steel_ingot"
+    },
+    "T": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/structural_gear"
+    },
+    "G": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/conductive_gear"
+    },
+    "D": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/crystal_composite"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/machine_upgrade"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:base/machine_upgrade"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

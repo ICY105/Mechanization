@@ -1,0 +1,23 @@
+{
+  "pattern": [
+    "1  ",
+    "  2",
+    "   "
+  ],
+  "key": {
+    "1": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:deepslate_lapis_ore"
+    },
+    "2": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:lapis_lazuli",
+      "count": 6
+    }
+  },
+  "result": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:lapis_lazuli"
+  },
+  "category": "mechanization:grinder"
+}

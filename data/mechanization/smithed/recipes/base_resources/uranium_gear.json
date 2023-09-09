@@ -1,0 +1,22 @@
+{
+  "pattern": [
+    "   #     ",
+    "  ###  R ",
+    "   #     "
+  ],
+  "key": {
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/uranium_ingot"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/uranium_gear"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:base_resources/uranium_gear"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

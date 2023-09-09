@@ -1,0 +1,26 @@
+{
+  "pattern": [
+    "   1     ",
+    "  111  # ",
+    "  000    "
+  ],
+  "key": {
+    "0": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:blue_ice"
+    },
+    "1": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/structural_rod"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:gadgets/passive_heat_sink"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:gadgets/passive_heat_sink"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

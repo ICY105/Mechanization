@@ -1,0 +1,15 @@
+{
+  "display": "Machine Crafting Table",
+  "inventory": "chest",
+  "item_icon": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:base/machine_crafting_table"
+  },
+  "background": {
+	  "icon": "mechanization:textures/base/font/machine_crafting_table.png",
+	  "width_offset": 6,
+	  "height_offset": 16,
+	  "width": 164,
+	  "height": 56
+  }
+}

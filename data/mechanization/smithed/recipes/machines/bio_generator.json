@@ -1,0 +1,38 @@
+{
+  "pattern": [
+    "  NHN    ",
+    "  CMC  # ",
+    "  NSN    "
+  ],
+  "key": {
+    "N": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:nether_bricks"
+    },
+    "H": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:hopper"
+    },
+    "S": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:smoker"
+    },
+    "C": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/conductive_plate"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier_2_machine_frame"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/bio_generator"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/bio_generator"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

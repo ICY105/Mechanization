@@ -1,0 +1,23 @@
+{
+  "pattern": [
+    "1  ",
+    "  2",
+    "   "
+  ],
+  "key": {
+    "1": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:acacia_wood"
+    },
+    "2": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:acacia_planks",
+      "count": 4
+    }
+  },
+  "result": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:acacia_planks"
+  },
+  "category": "mechanization:grinder"
+}

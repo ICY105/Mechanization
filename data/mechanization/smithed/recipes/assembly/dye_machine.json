@@ -1,0 +1,50 @@
+{
+  "pattern": [
+    "  234    ",
+    "  101  # ",
+    "  567    "
+  ],
+  "key": {
+    "0": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier_2_machine_frame"
+    },
+    "1": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/conductive_rod"
+    },
+    "2": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:red_dye"
+    },
+    "3": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:yellow_dye"
+    },
+    "4": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:blue_dye"
+    },
+    "5": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:white_dye"
+    },
+    "6": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:green_dye"
+    },
+    "7": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:black_dye"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:assembly/dye_machine"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:assembly/dye_machine"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

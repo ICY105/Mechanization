@@ -1,0 +1,23 @@
+{
+  "pattern": [
+    "1  ",
+    "  2",
+    "   "
+  ],
+  "key": {
+    "1": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:gold_ingot",
+      "count": 2
+    },
+    "2": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:raw_gold"
+    }
+  },
+  "result": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:raw_gold"
+  },
+  "category": "mechanization:grinder"
+}

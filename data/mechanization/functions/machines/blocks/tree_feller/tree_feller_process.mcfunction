@@ -22,4 +22,4 @@ execute if score #active mechanization.data matches 1 run scoreboard players rem
 execute if score #active mechanization.data matches 1 if entity @s[tag=!mechanization.muffled] run playsound mechanization:machines.tree_feller block @a[distance=..16] ~ ~ ~
 
 # replant
-execute if entity @s[tag=mechanization.upgraded,tag=!mechanization.active] if block ~ ~ ~ #mechanization:air as @e[type=item,sort=nearest,limit=1,distance=..12] run function mechanization:machines/blocks/tree_feller/replant
+execute if entity @s[tag=mechanization.upgraded,tag=!mechanization.active] if block ~ ~ ~ #mechanization:air as @e[type=item,sort=nearest,distance=..12] if block ~ ~ ~ #mechanization:air run function mechanization:machines/blocks/tree_feller/replant

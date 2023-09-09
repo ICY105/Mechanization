@@ -1,0 +1,91 @@
+{
+  "pattern": [
+    "1 2  4  6",
+    "  3  5  7",
+    "  2  4  6"
+  ],
+  "key": {
+    "1": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:lapis_lazuli",
+	    "count": 4
+    },
+    "2": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_tin",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6421200,
+          "display": {
+            "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"288\"}]}"]
+          }
+        }
+      }
+    },
+    "3": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_tin",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6422919,
+          "display": {
+            "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"288\"}]}"]
+          }
+        }
+      }
+    },
+    "4": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_quartz",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6421200,
+          "display": {
+            "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"288\"}]}"]
+          }
+        }
+      }
+    },
+    "5": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_quartz",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6422919,
+          "display": {
+            "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"288\"}]}"]
+          }
+        }
+      }
+    },
+    "6": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_structural_alloy",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6421200,
+          "display": {
+            "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"144\"}]}"]
+          }
+        }
+      }
+    },
+    "7": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_structural_alloy",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6422918,
+          "display": {
+            "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"144\"}]}"]
+          }
+        }
+      }
+    }
+  },
+  "result": {
+    "type": "smithed:datapack_item_entry",
+    "id": "mechanization:base_resources/fluid_displays/molten_structural_alloy"
+  },
+  "category": "mechanization:alloy_furnace"
+}

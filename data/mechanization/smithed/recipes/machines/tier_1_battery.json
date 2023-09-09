@@ -1,0 +1,38 @@
+{
+  "pattern": [
+    "  WCW    ",
+    "  BMB  R ",
+    "  WGW    "
+  ],
+  "key": {
+    "W": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:white_wool"
+    },
+    "B": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:redstone_block"
+    },
+    "C": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/copper_rod"
+    },
+    "G": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/copper_gear"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier_1_machine_frame"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/tier_1_battery"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/tier_1_battery"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

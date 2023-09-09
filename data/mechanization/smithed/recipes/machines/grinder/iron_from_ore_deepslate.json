@@ -1,0 +1,22 @@
+{
+  "pattern": [
+    "1  ",
+    "  2",
+    "   "
+  ],
+  "key": {
+    "1": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:deepslate_iron_ore"
+    },
+    "2": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:raw_iron"
+    }
+  },
+  "result": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:raw_iron"
+  },
+  "category": "mechanization:grinder"
+}
