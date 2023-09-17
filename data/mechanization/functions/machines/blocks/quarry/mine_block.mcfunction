@@ -1,3 +1,6 @@
+
+execute unless loaded ~ ~ ~ run return
+
 data remove block -30000000 0 3201 Items
 
 scoreboard players set #result mechanization.data 0
