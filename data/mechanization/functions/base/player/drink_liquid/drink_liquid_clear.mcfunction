@@ -1,3 +1,2 @@
 
-clear @a[tag=mechanization.clear_bottle] minecraft:glass_bottle 1
-tag @a[tag=mechanization.clear_bottle] remove mechanization.clear_bottle
+execute as @a[tag=mechanization.drink_fluid] at @s run function mechanization:base/player/drink_liquid/drink_liquid_clear_2
