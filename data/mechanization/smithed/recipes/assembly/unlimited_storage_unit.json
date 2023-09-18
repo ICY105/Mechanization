@@ -15,7 +15,7 @@
     },
     "2": {
       "type" : "smithed:item_entry",
-      "id" : "minecraft:enderchest"
+      "id" : "minecraft:ender_chest"
     },
     "3": {
       "type" : "smithed:item_entry",

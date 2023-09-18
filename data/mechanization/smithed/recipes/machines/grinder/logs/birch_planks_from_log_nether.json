@@ -6,8 +6,25 @@
   ],
   "key": {
     "1": {
-      "type": "smithed:item_entry",
-      "id": "minecraft:birch_log"
+      "type": "smithed:item_list",
+      "items": [
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:birch_log"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:stripped_birch_log"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:birch_wood"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:stripped_birch_wood"
+        }
+      ]
     },
     "2": {
       "type": "smithed:item_entry",

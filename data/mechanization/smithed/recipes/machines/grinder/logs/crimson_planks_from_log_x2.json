@@ -6,8 +6,25 @@
   ],
   "key": {
     "1": {
-      "type": "smithed:item_entry",
-      "id": "minecraft:crimson_stem"
+      "type": "smithed:item_list",
+      "items": [
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:crimson_stem"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:stripped_crimson_stem"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:crimson_hyphae"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:stripped_crimson_hyphae"
+        }
+      ]
     },
     "2": {
       "type": "smithed:item_entry",

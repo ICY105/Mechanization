@@ -6,8 +6,25 @@
   ],
   "key": {
     "1": {
-      "type": "smithed:item_entry",
-      "id": "minecraft:cherry_log"
+      "type": "smithed:item_list",
+      "items": [
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:cherry_log"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:stripped_cherry_log"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:cherry_wood"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:stripped_cherry_wood"
+        }
+      ]
     },
     "2": {
       "type": "smithed:item_entry",

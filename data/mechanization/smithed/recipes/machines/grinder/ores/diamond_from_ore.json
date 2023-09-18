@@ -1,0 +1,31 @@
+{
+  "pattern": [
+    "1  ",
+    "  2",
+    "   "
+  ],
+  "key": {
+    "1": {
+      "type": "smithed:item_list",
+      "items": [
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:diamond_ore"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:deepslate_diamond_ore"
+        }
+      ]
+    },
+    "2": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:diamond"
+    }
+  },
+  "result": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:diamond"
+  },
+  "category": "mechanization:grinder"
+}

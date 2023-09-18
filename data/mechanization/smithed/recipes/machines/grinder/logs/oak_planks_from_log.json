@@ -6,8 +6,25 @@
   ],
   "key": {
     "1": {
-      "type": "smithed:item_entry",
-      "id": "minecraft:oak_log"
+      "type": "smithed:item_list",
+      "items": [
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:oak_log"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:stripped_oak_log"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:oak_wood"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:stripped_oak_wood"
+        }
+      ]
     },
     "2": {
       "type": "smithed:item_entry",

@@ -6,8 +6,25 @@
   ],
   "key": {
     "1": {
-      "type": "smithed:item_entry",
-      "id": "minecraft:mangrove_log"
+      "type": "smithed:item_list",
+      "items": [
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:mangrove_log"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:stripped_mangrove_log"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:mangrove_wood"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:stripped_mangrove_wood"
+        }
+      ]
     },
     "2": {
       "type": "smithed:item_entry",

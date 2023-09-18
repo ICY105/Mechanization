@@ -6,8 +6,25 @@
   ],
   "key": {
     "1": {
-      "type": "smithed:item_entry",
-      "id": "minecraft:acacia_log"
+      "type": "smithed:item_list",
+      "items": [
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:acacia_log"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:stripped_acacia_log"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:acacia_wood"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:stripped_acacia_wood"
+        }
+      ]
     },
     "2": {
       "type": "smithed:item_entry",

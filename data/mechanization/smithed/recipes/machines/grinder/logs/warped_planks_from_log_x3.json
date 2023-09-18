@@ -6,8 +6,25 @@
   ],
   "key": {
     "1": {
-      "type": "smithed:item_entry",
-      "id": "minecraft:warped_stem"
+      "type": "smithed:item_list",
+      "items": [
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:warped_stem"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:stripped_warped_stem"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:warped_hyphae"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:stripped_warped_hyphae"
+        }
+      ]
     },
     "2": {
       "type": "smithed:item_entry",

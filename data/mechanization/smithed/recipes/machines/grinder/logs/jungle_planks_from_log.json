@@ -6,8 +6,25 @@
   ],
   "key": {
     "1": {
-      "type": "smithed:item_entry",
-      "id": "minecraft:jungle_log"
+      "type": "smithed:item_list",
+      "items": [
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:jungle_log"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:stripped_jungle_log"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:jungle_wood"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:stripped_jungle_wood"
+        }
+      ]
     },
     "2": {
       "type": "smithed:item_entry",
