@@ -3,6 +3,7 @@
 	"values":[
 		"mechanization:base/blocks/place_block",
 		"mechanization:machines/blocks/place_block",
+		"mechanization:nuclear/blocks/place_block",
 		"mechanization:gadgets/blocks/place_block",
 		"mechanization:assembly/blocks/place_block"
 	]

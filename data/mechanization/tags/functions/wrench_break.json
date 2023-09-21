@@ -3,7 +3,7 @@
 	"values":[
 		"mechanization:base/player/wrench/break",
 		"mechanization:machines/player/wrench/break",
-		"mechanization:nuclear/tools/wrench_break",
+		"mechanization:nuclear/player/wrench_break",
 		"mechanization:gadgets/player/wrench_break",
 		"mechanization:assembly/player/wrench_break"
 	]
