@@ -60,7 +60,7 @@
             "condition": "minecraft:location_check",
             "predicate": {
               "block": {
-                "tag": "mithed.actionbar:impl/lockable"
+                "tag": "smithed.actionbar:v0.4.1/lockable"
               }
             }
           }
@@ -118,7 +118,7 @@
             "condition": "minecraft:location_check",
             "predicate": {
               "block": {
-                "tag": "mithed.actionbar:impl/lockable"
+                "tag": "smithed.actionbar:v0.4.1/lockable"
               }
             }
           }

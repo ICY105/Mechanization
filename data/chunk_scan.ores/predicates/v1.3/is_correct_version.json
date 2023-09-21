@@ -25,7 +25,7 @@
   },
   {
     "condition": "minecraft:value_check",
-    "value": 2,
+    "value": 3,
     "range": {
       "min": {
         "type": "minecraft:score",
