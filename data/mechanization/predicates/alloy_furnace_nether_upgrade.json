@@ -7,7 +7,7 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "nbt": "{Tags:[\"mechanization.upgraded.ender\"]}"
+      "nbt": "{Tags:[\"mechanization.upgraded.nether\"]}"
     }
   }
 ]

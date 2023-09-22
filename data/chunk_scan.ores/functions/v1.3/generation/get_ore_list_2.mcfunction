@@ -8,4 +8,4 @@ execute if score #gen.failed chunk_scan.ores.data matches 1 run data modify stor
 execute if score #gen.failed chunk_scan.ores.data matches 1 run data remove storage chunk_scan.ores:registry custom[0]
 
 execute if score #gen.failed chunk_scan.ores.data matches 1 run scoreboard players remove #gen.loop chunk_scan.ores.data 1
-execute if score #gen.failed chunk_scan.ores.data matches 1 if score #gen.loop chunk_scan.ores.data matches 1.. run function chunk_scan.ores:v1.2/generation/get_ore_list_2
+execute if score #gen.failed chunk_scan.ores.data matches 1 if score #gen.loop chunk_scan.ores.data matches 1.. run function chunk_scan.ores:v1.3/generation/get_ore_list_2

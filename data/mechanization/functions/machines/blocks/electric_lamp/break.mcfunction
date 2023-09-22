@@ -1,4 +1,6 @@
 
+function mechanization:machines/blocks/electric_lamp/turn_off
+
 loot spawn ~ ~ ~ loot mechanization:machines/electric_lamp
 function mechanization:base/utils/break_block/break_copy_data
 function energy:v1/api/break_machine
