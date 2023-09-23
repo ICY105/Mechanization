@@ -5,16 +5,13 @@ execute store result storage mechanization:temp obj.color double 0.01 run scoreb
 scoreboard players operation #size mechanization.data = @s mechanization.fluid.in
 scoreboard players add #size mechanization.data 50
 execute store result storage mechanization:temp obj.size double 0.02 run scoreboard players get #size mechanization.data
-function mechanization:nuclear/blocks/reactor_core/neutron/draw_particle with storage mechanization:temp obj
-
-# check block every 1 block
-scoreboard players operation #step mechanization.data = @s mechanization.time
-scoreboard players operation #step mechanization.data %= #cons.10 mechanization.data
-
-execute if score #step mechanization.data matches 0 run function mechanization:nuclear/blocks/reactor_core/neutron/check_block
+function mechanization:nuclear/blocks/reactor_core/neutron/m.draw_particle with storage mechanization:temp obj
 
 # move
 tp @s ^ ^ ^0.1
+
+# check block
+execute at @s run function mechanization:nuclear/blocks/reactor_core/neutron/check_block
 
 # kill timer
 scoreboard players add @s mechanization.time 1
