@@ -1,5 +1,6 @@
 
 # load values
+execute store result score #gen.id chunk_scan.ores.data run data get storage chunk_scan.ores:generation chunk.list[0].id
 execute store result score #gen.biome_blacklist chunk_scan.ores.data run data get storage chunk_scan.ores:generation chunk.list[0].biome_blacklist
 execute store result score #gen.ignore_restrictions chunk_scan.ores.data run data get storage chunk_scan.ores:generation chunk.list[0].ignore_restrictions
 
