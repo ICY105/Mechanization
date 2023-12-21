@@ -497,7 +497,6 @@
       "minecraft:granite_slab",
       "minecraft:granite_stairs",
       "minecraft:granite_wall",
-      "minecraft:grass",
       "minecraft:grass_block",
       "minecraft:gravel",
       "minecraft:gray_banner",
@@ -1254,6 +1253,14 @@
       "minecraft:zombie_horse_spawn_egg",
       "minecraft:zombie_spawn_egg",
       "minecraft:zombie_villager_spawn_egg",
-      "minecraft:zombified_piglin_spawn_egg"
+      "minecraft:zombified_piglin_spawn_egg",
+      {
+			"id": "minecraft:grass",
+			"required": false
+		},
+      {
+			"id": "minecraft:short_grass",
+			"required": false
+		}
    ]
 }

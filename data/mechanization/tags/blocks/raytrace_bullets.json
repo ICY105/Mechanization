@@ -22,7 +22,6 @@
 		"minecraft:light",
 		
 		"#minecraft:flowers",
-		"minecraft:grass",
 		"minecraft:fern",
 		"minecraft:dead_bush",
 		"minecraft:brown_mushroom",
@@ -57,6 +56,14 @@
 		"minecraft:potatoes",
 		"minecraft:melon_stem",
 		"minecraft:pumpkin_stem",
-		"minecraft:cocoa"
+		"minecraft:cocoa",
+		{
+			"id": "minecraft:grass",
+			"required": false
+		},
+		{
+			"id": "minecraft:short_grass",
+			"required": false
+		}
 	]
 }

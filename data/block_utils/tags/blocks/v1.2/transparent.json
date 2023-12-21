@@ -28,7 +28,6 @@
 		"minecraft:melon_stem",
 		"minecraft:pumpkin_stem",
 		"minecraft:cocoa",
-		"minecraft:grass",
 		"minecraft:fern",
 		"minecraft:dead_bush",
 		"minecraft:brown_mushroom",
@@ -163,6 +162,14 @@
 		"minecraft:brown_stained_glass_pane",
 		"minecraft:green_stained_glass_pane",
 		"minecraft:red_stained_glass_pane",
-		"minecraft:black_stained_glass_pane"
+		"minecraft:black_stained_glass_pane",
+		{
+			"id": "minecraft:grass",
+			"required": false
+		},
+		{
+			"id": "minecraft:short_grass",
+			"required": false
+		}
 	]
 }
