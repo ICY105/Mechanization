@@ -1,6 +1,5 @@
 {
   "values": [
-    "#smithed.crafter:recipes/shaped",
     "#mechanization:calls/shaped_recipes"
   ]
 }
