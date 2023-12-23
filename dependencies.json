@@ -1,8 +1,7 @@
 {
   "namespaces": [
     "mechanization",
-    "minecraft",
-	"give"
+    "minecraft"
   ],
   "ignored_files": [
     "translations"
