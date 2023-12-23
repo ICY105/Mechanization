@@ -61,22 +61,5 @@
       "local": "SmithedChunk-Unofficial"
     }
   ],
-  "append_function_tags": [
-	  {
-      "tag": "smithed.crafter:event/break",
-      "value": "mechanization:base/blocks/machine_crafting_table/break"
-    },
-	  {
-      "tag": "smithed.crafter:event/recipes",
-      "value": "#mechanization:calls/shaped_recipes"
-    },
-	  {
-      "tag": "smithed.crafter:event/shapeless_recipes",
-      "value": "#mechanization:calls/shapeless_recipes"
-    },
-	  {
-      "tag": "smithed.custom_block:event/on_place",
-      "value": "#mechanization:calls/place_block"
-    }
-  ]
+  "append_function_tags": []
 }
