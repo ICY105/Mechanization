@@ -51,7 +51,6 @@
 		"minecraft:stone_pressure_plate",
 		"minecraft:light_weighted_pressure_plate",
 		"minecraft:heavy_weighted_pressure_plate",
-		"minecraft:grass",
 		"minecraft:fern",
 		"minecraft:dead_bush",
 		"minecraft:brown_mushroom",
@@ -124,6 +123,14 @@
 		"minecraft:pumpkin_stem",
 		"minecraft:cocoa",
 		"minecraft:moving_piston",
-		"minecraft:conduit"
+		"minecraft:conduit",
+		{
+			"id": "minecraft:grass",
+			"required": false
+		},
+		{
+			"id": "minecraft:short_grass",
+			"required": false
+		}
 	]
 }

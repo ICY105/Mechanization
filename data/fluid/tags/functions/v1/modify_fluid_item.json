@@ -1,6 +1,5 @@
 {
   "values": [
-    "fluid:v1.3/slot_io/revert_potion",
     "mechanization:base/utils/update_fluid_item"
   ]
 }

@@ -5,3 +5,5 @@ DatapackStats.jar
 *.py
 DatapackStats.v2.jar
 DatapackStats_v2.5.jar
+build-output/*
+build.bat

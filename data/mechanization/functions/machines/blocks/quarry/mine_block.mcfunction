@@ -1,5 +1,5 @@
 
-execute unless loaded ~ ~ ~ run return
+execute unless loaded ~ ~ ~ run return fail
 
 data remove block -30000000 0 3201 Items
 
