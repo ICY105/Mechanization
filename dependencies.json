@@ -4,6 +4,9 @@
     "minecraft",
 	"give"
   ],
+  "ignored_files": [
+    "translations"
+  ],
   "dependencies": [
     {
       "name": "Lantern Load",
