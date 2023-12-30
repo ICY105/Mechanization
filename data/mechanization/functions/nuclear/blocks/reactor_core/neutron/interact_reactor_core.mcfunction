@@ -1,44 +1,60 @@
 
-data modify storage mechanization:temp obj set value {index:0}
+data modify storage mechanization:temp io.get_data_entry set value {material: "U-238", reaction: "fast_scattering", temperature: 2}
+data modify storage mechanization:temp io.get_neutron_interaction set value {quantity:0}
 
-# F = E^0.15 * (101-S)^0.3 * a^0.86
-#execute if score #amount mechanization.data matches 100.. run scoreboard players set #amount mechanization.data 100
-#execute store result storage mechanization:temp obj.index int 1 run scoreboard players get #amount mechanization.data
-#function mechanization:base/math/m.get_e086 with storage mechanization:temp obj
-#scoreboard players operation #flux mechanization.data = #out mechanization.data
-scoreboard players operation #flux mechanization.data = #amount mechanization.data
+execute if score @s mechanization.data matches ..2019 store result storage mechanization:temp io.get_data_entry.temperature int 0.1 run scoreboard players get @s mechanization.data
+execute if score @s mechanization.data matches 2020.. run data modify storage mechanization:temp io.get_data_entry.temperature set value 219
 
-execute store result storage mechanization:temp obj.index int 1 run scoreboard players get @s mechanization.time
-function mechanization:base/math/m.get_e015 with storage mechanization:temp obj
-scoreboard players operation #flux mechanization.data *= #out mechanization.data
+execute if score @s mechanization.time matches 100.. run data modify storage mechanization:temp io.get_data_entry.material set value "U-235"
+execute if score @s mechanization.time matches 1..99 store result storage mechanization:temo io.set_reactor_material.enrichment int 1 run scoreboard players get @s mechanization.time
+execute if score @s mechanization.time matches 1..9 run function mechanization:nuclear/blocks/reactor_core/neutron/m.set_reactor_material with storage mechanization:temo io.set_reactor_material
+execute if score @s mechanization.time matches 10..99 run function mechanization:nuclear/blocks/reactor_core/neutron/m.set_reactor_material_2 with storage mechanization:temo io.set_reactor_material
 
-scoreboard players set #operator mechanization.data 101
-scoreboard players operation #operator mechanization.data -= #speed mechanization.data
-execute store result storage mechanization:temp obj.index int 1 run scoreboard players get #operator mechanization.data
-function mechanization:base/math/m.get_e015 with storage mechanization:temp obj
-scoreboard players operation #flux mechanization.data *= #out mechanization.data
+# process fast_fission
+data modify storage mechanization:temp io.get_data_entry.reaction set value "fast_fission"
+execute store result storage mechanization:temp io.get_neutron_interaction.quantity int 1 run scoreboard players get #quantity_fast mechanization.data
 
-#scoreboard players operation #flux mechanization.data *= #cons.2 mechanization.data
-#scoreboard players operation #flux mechanization.data /= #cons.3 mechanization.data
+execute store result score #quantity mechanization.data run function mechanization:nuclear/math/m.get_neutron_interaction with storage mechanization:temp io.get_neutron_interaction
+scoreboard players operation #quantity_fast mechanization.data -= #quantity mechanization.data
+execute if score #quantity mechanization.data matches 1.. run tellraw @p[tag=mechanization.debug] [{"text":"  Fast Fission (RC): "},{"score":{"name":"#quantity","objective":"mechanization.data"}},{"translate":", (%s:%s)","with":[{"score":{"name":"#quantity_fast","objective":"mechanization.data"}},{"score":{"name":"#quantity_thermal","objective":"mechanization.data"}}]}]
 
-scoreboard players operation #flux_remainder mechanization.data = #flux mechanization.data
-scoreboard players operation #flux_remainder mechanization.data %= #cons.10000 mechanization.data
-scoreboard players operation #flux mechanization.data /= #cons.10000 mechanization.data
+scoreboard players operation @s mechanization.data += #quantity mechanization.data
+scoreboard players operation #quantity mechanization.data *= #cons.3 mechanization.data
+scoreboard players operation @s mechanization.fluid.in += #quantity mechanization.data
 
-execute store result score #random mechanization.data run random value 1..10000
-execute if score #random mechanization.data <= #flux_remainder mechanization.data run scoreboard players add #flux mechanization.data 1
+# process thermal_fission
+data modify storage mechanization:temp io.get_data_entry.reaction set value "thermal_fission"
+execute store result storage mechanization:temp io.get_neutron_interaction.quantity int 1 run scoreboard players get #quantity_thermal mechanization.data
 
-# add flux
-scoreboard players operation @s mechanization.fluid.in += #flux mechanization.data
+execute store result score #quantity mechanization.data run function mechanization:nuclear/math/m.get_neutron_interaction with storage mechanization:temp io.get_neutron_interaction
+scoreboard players operation #quantity_thermal mechanization.data -= #quantity mechanization.data
+execute if score #quantity mechanization.data matches 1.. run tellraw @p[tag=mechanization.debug] [{"text":"  Thermal Fission (RC): "},{"score":{"name":"#quantity","objective":"mechanization.data"}},{"translate":", (%s:%s)","with":[{"score":{"name":"#quantity_fast","objective":"mechanization.data"}},{"score":{"name":"#quantity_thermal","objective":"mechanization.data"}}]}]
 
-execute if entity @s[tag=debug] run tellraw @p [ \
-    {"text":" A="},{"score":{"name":"#amount","objective":"mechanization.data"}}, \
-    {"text":" S="},{"score":{"name":"#speed","objective":"mechanization.data"}}, \
-    {"text":" E="},{"score":{"name":"@s","objective":"mechanization.time"}}, \
-    {"text":": F="},{"score":{"name":"#flux","objective":"mechanization.data"}}, \
-    {"text":" Fr="},{"score":{"name":"#flux_remainder","objective":"mechanization.data"}}, \
-    {"text":" r="},{"score":{"name":"#random","objective":"mechanization.data"}} \
-]
+scoreboard players operation @s mechanization.data += #quantity mechanization.data
+scoreboard players operation #quantity mechanization.data *= #cons.3 mechanization.data
+scoreboard players operation @s mechanization.fluid.in += #quantity mechanization.data
 
-# cleanup
-scoreboard players set #amount mechanization.data 0
+# process fast_scattering
+data modify storage mechanization:temp io.get_data_entry.reaction set value "fast_scattering"
+execute store result storage mechanization:temp io.get_neutron_interaction.quantity int 1 run scoreboard players get #quantity_fast mechanization.data
+
+execute store result score #quantity mechanization.data run function mechanization:nuclear/math/m.get_neutron_interaction with storage mechanization:temp io.get_neutron_interaction
+scoreboard players operation #quantity_fast mechanization.data -= #quantity mechanization.data
+scoreboard players operation #quantity_thermal mechanization.data += #quantity mechanization.data
+execute if score #quantity mechanization.data matches 1.. run tellraw @p[tag=mechanization.debug] [{"text":"  Scattering (RC): "},{"score":{"name":"#quantity","objective":"mechanization.data"}},{"translate":", (%s:%s)","with":[{"score":{"name":"#quantity_fast","objective":"mechanization.data"}},{"score":{"name":"#quantity_thermal","objective":"mechanization.data"}}]}]
+
+# process fast_capture
+data modify storage mechanization:temp io.get_data_entry.reaction set value "fast_capture"
+execute store result storage mechanization:temp io.get_neutron_interaction.quantity int 1 run scoreboard players get #quantity_fast mechanization.data
+
+execute store result score #quantity mechanization.data run function mechanization:nuclear/math/m.get_neutron_interaction with storage mechanization:temp io.get_neutron_interaction
+scoreboard players operation #quantity_fast mechanization.data -= #quantity mechanization.data
+execute if score #quantity mechanization.data matches 1.. run tellraw @p[tag=mechanization.debug] [{"text":"  Fast Capture (RC): "},{"score":{"name":"#quantity","objective":"mechanization.data"}},{"translate":", (%s:%s)","with":[{"score":{"name":"#quantity_fast","objective":"mechanization.data"}},{"score":{"name":"#quantity_thermal","objective":"mechanization.data"}}]}]
+
+# process thermal_capture
+data modify storage mechanization:temp io.get_data_entry.reaction set value "thermal_capture"
+execute store result storage mechanization:temp io.get_neutron_interaction.quantity int 1 run scoreboard players get #quantity_thermal mechanization.data
+
+execute store result score #quantity mechanization.data run function mechanization:nuclear/math/m.get_neutron_interaction with storage mechanization:temp io.get_neutron_interaction
+scoreboard players operation #quantity_thermal mechanization.data -= #quantity mechanization.data
+execute if score #quantity mechanization.data matches 1.. run tellraw @p[tag=mechanization.debug] [{"text":"  Thermal Capture (RC): "},{"score":{"name":"#quantity","objective":"mechanization.data"}},{"translate":", (%s:%s)","with":[{"score":{"name":"#quantity_fast","objective":"mechanization.data"}},{"score":{"name":"#quantity_thermal","objective":"mechanization.data"}}]}]

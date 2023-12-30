@@ -25,10 +25,9 @@ scoreboard players set #mech.ver.minor load.status 2
 scoreboard players set #mech.ver.fix load.status 3
 
 # configure storage
-data merge storage mechanization:temp {obj:{}, list:[], var:""}
+data merge storage mechanization:temp {obj:{}, list:[], var:"", io:{}}
 data merge storage mechanization:networks {mss_temp:{drive:[],item:{}}}
-
-data merge storage mechanization:registry {math:{}, recipes:{}}
+data merge storage mechanization:registry {recipes:{}}
 
 # load math
 function mechanization:base/math/init
