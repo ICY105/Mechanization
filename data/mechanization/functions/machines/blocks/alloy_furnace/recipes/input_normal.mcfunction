@@ -16,8 +16,6 @@ scoreboard players operation #storage.0 mechanization.data = @s fluid.storage.0
 scoreboard players operation #storage.1 mechanization.data = @s fluid.storage.1
 scoreboard players operation #storage.2 mechanization.data = @s fluid.storage.2
 
-data modify storage mechanization:temp test set from storage mechanization:temp obj
-
 # Steel Ingot
 scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 0 if score #count.0 mechanization.data matches 2.. if data storage mechanization:temp obj.slot1{id:"minecraft:flint"} run scoreboard players set #success mechanization.data 1

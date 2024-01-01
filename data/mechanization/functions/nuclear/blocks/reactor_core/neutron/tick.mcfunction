@@ -29,10 +29,10 @@ execute at @s run function mechanization:nuclear/blocks/reactor_core/neutron/che
 # kill if empty or timer expires
 scoreboard players operation #total mechanization.data = @s mechanization.fluid.in
 scoreboard players operation #total mechanization.data += @s mechanization.fluid.out
-execute if score #total mechanization.data matches ..0 run tellraw @p[tag=mechanization.debug] {"text":"Dead (Quantity)"}
-
 scoreboard players remove @s mechanization.time 1
-execute if score @s mechanization.time matches ..0 run tellraw @p[tag=mechanization.debug] [{"text":"Dead (Lifespan)"},{"translate":", (%s:%s)","with":[{"score":{"name":"@s","objective":"mechanization.fluid.in"}},{"score":{"name":"@s","objective":"mechanization.fluid.out"}}]}]
+
+execute if score #total mechanization.data matches ..0 if entity @s[tag=mechanization.debug] run function mechanization:nuclear/blocks/reactor_core/neutron/debug
+execute if score @s mechanization.time matches ..0 if entity @s[tag=mechanization.debug] run function mechanization:nuclear/blocks/reactor_core/neutron/debug
 
 execute if score #total mechanization.data matches ..0 run kill @s
 execute if score @s mechanization.time matches ..0 run kill @s

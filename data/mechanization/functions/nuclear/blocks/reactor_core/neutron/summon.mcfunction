@@ -17,7 +17,7 @@ scoreboard players operation @s mechanization.fluid.in = #flux mechanization.dat
 scoreboard players set @s mechanization.fluid.out 0
 
 # time alive
-scoreboard players set @s mechanization.time 100
+scoreboard players set @s mechanization.time 120
 
-tellraw @p[tag=mechanization.debug] [{"translate":"Summon -> (%s:%s)","with":[{"score":{"name":"@s","objective":"mechanization.fluid.in"}},{"score":{"name":"@s","objective":"mechanization.fluid.out"}}]}]
-
+data modify entity @s data merge value {summon: 0, capture: [0, 0], fission: [0, 0], reflection: [0, 0], scatter: 0}
+execute store result entity @s data.summon int 1 run scoreboard players get #flux mechanization.data

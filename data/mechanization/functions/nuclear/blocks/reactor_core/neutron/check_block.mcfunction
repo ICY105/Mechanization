@@ -1,4 +1,6 @@
 
+data modify storage mechanization:temp obj set from entity @s data
+
 # copy data
 scoreboard players operation #quantity_fast mechanization.data = @s mechanization.fluid.in
 scoreboard players operation #quantity_thermal mechanization.data = @s mechanization.fluid.out
@@ -14,3 +16,5 @@ execute if block ~ ~ ~ minecraft:barrier align xyz as @e[type=minecraft:item_dis
 # copy data
 scoreboard players operation @s mechanization.fluid.in = #quantity_fast mechanization.data
 scoreboard players operation @s mechanization.fluid.out = #quantity_thermal mechanization.data
+
+data modify entity @s data set from storage mechanization:temp obj
