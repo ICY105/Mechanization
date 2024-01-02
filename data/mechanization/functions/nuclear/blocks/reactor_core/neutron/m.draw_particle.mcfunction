@@ -3,4 +3,4 @@
 #$ blue: blue color percent
 #$ size: size of particle
 
-$particle minecraft:dust $(red) 0 $(blue) $(size)
+$particle minecraft:dust $(red) 0 $(blue) $(size) ~ ~1 ~
