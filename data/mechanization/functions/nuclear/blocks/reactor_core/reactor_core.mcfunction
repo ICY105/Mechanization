@@ -10,7 +10,7 @@ scoreboard players operation #heat mechanization.data /= #cons.180 mechanization
 scoreboard players operation #heat mechanization.data *= #cons.5 mechanization.data
 
 scoreboard players set #heat_total mechanization.data 5
-execute if score #heat mechanization.data matches 1.. align xyz positioned ~0.5 ~0.5 ~0.5 as @e[tag=mechanization.coolant_cell,distance=..1.1] run function mechanization:nuclear/block/coolant_cell/transfer_heat
+execute if score #heat mechanization.data matches 1.. align xyz positioned ~0.5 ~0.5 ~0.5 as @e[tag=mechanization.coolant_cell,distance=..1.1] run function mechanization:nuclear/blocks/coolant_cell/transfer_heat
 execute if score #heat mechanization.data matches 1.. positioned ~1 ~ ~ if block ~ ~ ~ #mechanization:water run function mechanization:nuclear/blocks/reactor_core/boil_water
 execute if score #heat mechanization.data matches 1.. positioned ~-1 ~ ~ if block ~ ~ ~ #mechanization:water run function mechanization:nuclear/blocks/reactor_core/boil_water
 execute if score #heat mechanization.data matches 1.. positioned ~ ~ ~1 if block ~ ~ ~ #mechanization:water run function mechanization:nuclear/blocks/reactor_core/boil_water
