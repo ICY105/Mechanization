@@ -8,3 +8,5 @@ kill @s[tag=mechanization.reactor_core]
 # Moderator Cell
 execute if entity @s[tag=mechanization.moderator_cell] run function mechanization:nuclear/blocks/moderator_cell/break
 
+# Steam Condenser
+execute if entity @s[tag=mechanization.steam_condenser] run function mechanization:nuclear/blocks/steam_condenser/break

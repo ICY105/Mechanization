@@ -25,3 +25,8 @@ data modify storage fluid:definitions fluid_data append value {id:"molten_titani
 data modify storage fluid:definitions fluid_data append value {id:"molten_titanium_steel",              temperature: 3500,  color: 9401989,  gas: 0b, name:'{"translate":"fluid.mechanization.molten_titanium_steel"}'}
 data modify storage fluid:definitions fluid_data append value {id:"molten_uranium",                     temperature: 1500,  color: 4521796,  gas: 0b, name:'{"translate":"fluid.mechanization.molten_uranium"}'}
 data modify storage fluid:definitions fluid_data append value {id:"steam",                              temperature: 100,   color: 14540253, gas: 1b, name:'{"translate":"fluid.mechanization.steam"}'}
+
+data modify storage fluid:definitions fluid_data append value {id:"heavy_water",                        temperature: 20,    color: 340136,   gas: 0b, name:'{"translate":"fluid.mechanization.superheated_heavy_water"}'}
+data modify storage fluid:definitions fluid_data append value {id:"superheated_water",                  temperature: 1000,  color: 6981592,  gas: 0b, name:'{"translate":"fluid.mechanization.superheated_water"}'}
+data modify storage fluid:definitions fluid_data append value {id:"superheated_heavy_water",            temperature: 1000,  color: 3297704,  gas: 0b, name:'{"translate":"fluid.mechanization.superheated_heavy_water"}'}
+data modify storage fluid:definitions fluid_data append value {id:"superheated_experience",             temperature: 1000,  color: 8388479,  gas: 0b, name:'{"translate":"fluid.mechanization.superheated_experience"}'}

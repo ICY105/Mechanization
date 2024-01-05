@@ -1,0 +1,7 @@
+{
+	"required":false,
+	"values":[
+		"#mechanization:air",
+		"#mechanization:water"
+	]
+}
