@@ -28,15 +28,15 @@ scoreboard players set #output_2 mechanization.data 0
 execute if score @s mechanization.fluid.out matches -3 run scoreboard players set #output_1 mechanization.data -1
 execute if score @s mechanization.fluid.out matches -3 run scoreboard players set #output_2 mechanization.data -2
 execute if score @s mechanization.fluid.out matches -5 run scoreboard players set #output_1 mechanization.data -1
-execute if score @s mechanization.fluid.out matches -5 run scoreboard players set #output_2 mechanization.data -3
+execute if score @s mechanization.fluid.out matches -5 run scoreboard players set #output_2 mechanization.data -4
 execute if score @s mechanization.fluid.out matches -6 run scoreboard players set #output_1 mechanization.data -2
-execute if score @s mechanization.fluid.out matches -6 run scoreboard players set #output_2 mechanization.data -3
+execute if score @s mechanization.fluid.out matches -6 run scoreboard players set #output_2 mechanization.data -4
 execute if score @s mechanization.fluid.out matches -9 run scoreboard players set #output_1 mechanization.data -1
-execute if score @s mechanization.fluid.out matches -9 run scoreboard players set #output_2 mechanization.data -4
+execute if score @s mechanization.fluid.out matches -9 run scoreboard players set #output_2 mechanization.data -8
 execute if score @s mechanization.fluid.out matches -10 run scoreboard players set #output_1 mechanization.data -2
-execute if score @s mechanization.fluid.out matches -10 run scoreboard players set #output_2 mechanization.data -4
-execute if score @s mechanization.fluid.out matches -12 run scoreboard players set #output_1 mechanization.data -3
-execute if score @s mechanization.fluid.out matches -12 run scoreboard players set #output_2 mechanization.data -4
+execute if score @s mechanization.fluid.out matches -10 run scoreboard players set #output_2 mechanization.data -8
+execute if score @s mechanization.fluid.out matches -12 run scoreboard players set #output_1 mechanization.data -4
+execute if score @s mechanization.fluid.out matches -12 run scoreboard players set #output_2 mechanization.data -8
 
 scoreboard players set #state mechanization.data 0
 execute if score #side mechanization.data matches 0 if score @s fluid.io.up matches 1.. run scoreboard players set #state mechanization.data 1

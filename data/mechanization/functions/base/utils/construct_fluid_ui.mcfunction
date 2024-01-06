@@ -28,6 +28,8 @@ scoreboard players operation #model mechanization.data = #storage mechanization.
 scoreboard players operation #model mechanization.data += #slice mechanization.data
 scoreboard players remove #model mechanization.data 1
 scoreboard players operation #model mechanization.data /= #slice mechanization.data
+execute if score #model mechanization.data matches 17.. run scoreboard players set #model mechanization.data 16
+
 scoreboard players add #model mechanization.data 6422900
 execute if score #temperature mechanization.data matches 1000.. run scoreboard players add #model mechanization.data 17
 execute store result block -30000000 0 3201 Items[{Slot:0b}].tag.CustomModelData int 1 run scoreboard players get #model mechanization.data

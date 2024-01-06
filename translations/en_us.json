@@ -366,6 +366,8 @@
     "block.mechanization.temperature_observer": "Temperature Observer",
 
     "block.mechanization.reactor_core": "Reactor Core",
+    "block.mechanization.heat_exchanger": "Heat Exchanger",
+    "block.mechanization.steam_condenser": "Steam Condenser",
     "block.mechanization.coolant_cell": "Active Coolant Cell",
     "block.mechanization.moderator_cell": "Moderator Cell",
     "block.mechanization.water_moderator_cell": "Water Moderator Cell",
