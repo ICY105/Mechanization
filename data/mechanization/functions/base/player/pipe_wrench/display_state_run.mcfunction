@@ -1,4 +1,5 @@
 
+tag @s add mechanization
 tag @s add mechanization.fluid_display
 schedule function mechanization:base/player/pipe_wrench/update_display_entity 1t append
 
@@ -6,6 +7,7 @@ schedule function mechanization:base/player/pipe_wrench/update_display_entity 1t
 execute if score #state mechanization.data matches 0 run data merge entity @s {item:{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421900}},brightness:{sky:15,block:15}}
 execute if score #state mechanization.data matches 1 run data merge entity @s {item:{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421901}},brightness:{sky:15,block:15}}
 execute if score #state mechanization.data matches 2 run data merge entity @s {item:{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421902}},brightness:{sky:15,block:15}}
+execute if score #state mechanization.data matches 3 run data merge entity @s {item:{id:"minecraft:blast_furnace",Count:1b,tag:{CustomModelData:6421903}},brightness:{sky:15,block:15}}
 
 execute if score #side mechanization.data matches 0 run tp @s ~ ~0.02 ~ 0 0
 execute if score #side mechanization.data matches 1 run tp @s ~ ~-0.02 ~ 0 0
