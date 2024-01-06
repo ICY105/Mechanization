@@ -27,7 +27,7 @@ scoreboard players set #slot_io.in fluid.data 1
 data modify storage mechanization:temp obj set from block ~ ~ ~ Items[{Slot:6b}]
 function mechanization:base/utils/get_fluid_from_item
 execute store result score #temperature mechanization.data run data get storage mechanization:temp obj.tag.fluid.temperature
-execute if score #temperature mechanization.data matches 100.. run function mechanization:base/utils/fluid_slot_io/slot_io_6
+execute if score #temperature mechanization.data matches 1000.. run function mechanization:base/utils/fluid_slot_io/slot_io_6
 execute if data storage mechanization:temp obj.tag.fluid{id:"empty"} run function mechanization:base/utils/fluid_slot_io/slot_io_6
 
 # tank 1

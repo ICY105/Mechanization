@@ -27,7 +27,7 @@ scoreboard players operation #steam mechanization.data += #steam mechanization.d
 execute if score @s fluid.storage.1 matches 2000.. run scoreboard players operation #storage mechanization.data = @s fluid.storage.1
 execute if score @s fluid.storage.1 matches 2000.. run scoreboard players remove #storage mechanization.data 2000
 execute if score @s fluid.storage.1 matches 2000.. if score #storage mechanization.data > #steam mechanization.data run scoreboard players operation #storage mechanization.data = #steam mechanization.data
-execute if score @s fluid.storage.1 matches 2000.. if score @s energy.storage matches ..2000 run scoreboard players operation @s energy.storage += #storage mechanization.data
+execute if score @s fluid.storage.1 matches 2000.. if score @s energy.storage matches ..3999 run scoreboard players operation @s energy.storage += #storage mechanization.data
 execute if score @s fluid.storage.1 matches 2000.. run scoreboard players operation @s fluid.storage.1 -= #storage mechanization.data
 
 execute if score @s fluid.storage.1 matches 1.. unless data entity @s item.tag.fluids[1].id run data modify entity @s item.tag.fluids[1] set from storage fluid:definitions fluid_data[{id:"steam"}]
