@@ -1,21 +1,23 @@
 
-#load scoreboard values
-execute if score $base.cf.backup mech_data matches 1 unless score @s mech_power matches -2147483648.. store result score @s mech_power run data get entity @s ArmorItems[3].tag.mech_power
-execute if score $base.cf.backup mech_data matches 1 unless score @s mech_gridid matches -2147483648.. store result score @s mech_gridid run data get entity @s ArmorItems[3].tag.mech_gridid
+# processing
+function mechanization:base/utils/redstone_active
+execute if score #active mechanization.data matches 0 run scoreboard players set @s mechanization.time 0
 
-#main
-tag @s remove mech_active
+execute if score @s mechanization.time matches 1 run function mechanization:nuclear/blocks/centrifuge/recipes/output
+execute if score #active mechanization.data matches 1 unless score @s mechanization.time matches 2.. if score @s energy.storage >= #nuclear.cf.centrifuge.power mechanization.data run function mechanization:nuclear/blocks/centrifuge/recipes/input
 
-execute if entity @s[scores={mech_power=320..},nbt={HandItems:[{tag:{OreDict:["cellUranium"]}},{}]}] run function mechanization:nuclear/machines/centrifuge/uranium
-execute if entity @s[scores={mech_power=320..},nbt={HandItems:[{tag:{OreDict:["cellPlutonium"]}},{}]}] run function mechanization:nuclear/machines/centrifuge/plutonium
-execute if entity @s[scores={mech_power=320..},nbt={HandItems:[{tag:{OreDict:["cellSpentFuel"]}},{}]}] run function mechanization:nuclear/machines/centrifuge/spent_fuel
+execute if score @s mechanization.time matches 1.. if score @s energy.storage < #nuclear.cf.centrifuge.power mechanization.data run scoreboard players set @s mechanization.time 0
+execute if score @s mechanization.time matches 1.. if score @s energy.storage >= #nuclear.cf.centrifuge.power mechanization.data run scoreboard players operation @s energy.storage -= #nuclear.cf.centrifuge.power mechanization.data
+execute if score @s mechanization.time matches 1.. run scoreboard players remove @s mechanization.time 1
 
-execute if entity @s[tag=mech_active] run scoreboard players remove @s mech_power 320
+# effects
+execute if score @s mechanization.time matches 0 store success entity @s item.tag.CustomModelData int 6423000 if entity @s
+execute if score @s mechanization.time matches 1.. store success entity @s item.tag.CustomModelData int 6423200 if entity @s
+execute if score @s[tag=!mechanization.muffled] mechanization.time matches 1.. run playsound mechanization:machines.electric_furnace block @a[distance=..16] ~ ~ ~ 0.3 1
+execute if score @s mechanization.time matches 1.. if entity @s[tag=!mechanization.muffled] if score #timer.100 mechanization.data matches 0..19 run playsound mechanization:nuclear.centrifuge block @a[distance=..16] ~ ~ ~
 
-#store scoreboard values
-execute store result entity @s ArmorItems[3].tag.mech_power int 1 run scoreboard players get @s mech_power
-execute store result entity @s ArmorItems[3].tag.mech_gridid int 1 run scoreboard players get @s mech_gridid
+# ui
+function mechanization:nuclear/blocks/centrifuge/gui
 
-#cleanup
-execute if score $base.cf.backup mech_data matches 1 unless block ~ ~ ~ minecraft:barrier positioned ~ ~0.4 ~ run kill @e[tag=mech_centrifuge_model,distance=..0.25]
-execute if score $base.cf.backup mech_data matches 1 unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_machine_t2
+# cleanup
+execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_block/break_machine_t2

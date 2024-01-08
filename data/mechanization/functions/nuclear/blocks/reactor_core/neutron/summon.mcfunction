@@ -17,7 +17,7 @@ scoreboard players operation @s mechanization.fluid.in = #flux mechanization.dat
 scoreboard players set @s mechanization.fluid.out 0
 
 # time alive
-scoreboard players set @s mechanization.time 120
+scoreboard players set @s mechanization.time 150
 
 data modify entity @s data merge value {summon: 0, capture: [0, 0], fission: [0, 0], reflection: [0, 0], scatter: 0}
 execute store result entity @s data.summon int 1 run scoreboard players get #flux mechanization.data
