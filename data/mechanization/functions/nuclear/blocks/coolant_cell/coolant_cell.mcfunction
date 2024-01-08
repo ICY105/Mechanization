@@ -11,9 +11,15 @@ execute if score @s fluid.storage.0 matches 1.. run data modify entity @s item.t
 scoreboard players set #transfer mechanization.data 0
 execute if score @s fluid.storage.0 matches 1.. run data modify storage mechanization:temp obj set from entity @s item.tag.fluids[0]
 execute if score @s fluid.storage.0 matches 1.. if score @s fluid.io.down matches -2 positioned ~ ~-1 ~ align xyz as @e[tag=mechanization.coolant_cell,dx=0,dy=0,dz=0,scores={fluid.io.up=1,fluid.storage.0=..999}] run function mechanization:nuclear/blocks/coolant_cell/m.transfer_vertically with storage mechanization:temp obj
-execute if score @s fluid.storage.0 matches 1.. if score @s fluid.io.up matches -2 positioned ~ ~-1 ~ align xyz as @e[tag=mechanization.coolant_cell,dx=0,dy=0,dz=0,scores={fluid.io.down=1,fluid.storage.0=..999}] run function mechanization:nuclear/blocks/coolant_cell/m.transfer_vertically with storage mechanization:temp obj
+execute if score @s fluid.storage.0 matches 1.. if score @s fluid.io.up matches -2 positioned ~ ~1 ~ align xyz as @e[tag=mechanization.coolant_cell,dx=0,dy=0,dz=0,scores={fluid.io.down=1,fluid.storage.0=..999}] run function mechanization:nuclear/blocks/coolant_cell/m.transfer_vertically with storage mechanization:temp obj
 scoreboard players operation @s fluid.storage.0 -= #transfer mechanization.data
+
+scoreboard players set #transfer mechanization.data 0
+execute if score @s fluid.storage.1 matches 1.. run data modify storage mechanization:temp obj set from entity @s item.tag.fluids[1]
+execute if score @s fluid.storage.1 matches 1.. if score @s fluid.io.down matches -2 positioned ~ ~-1 ~ align xyz as @e[tag=mechanization.coolant_cell,dx=0,dy=0,dz=0,scores={fluid.io.up=1,fluid.storage.1=..999}] run function mechanization:nuclear/blocks/coolant_cell/m.transfer_vertically_2 with storage mechanization:temp obj
+execute if score @s fluid.storage.1 matches 1.. if score @s fluid.io.up matches -2 positioned ~ ~1 ~ align xyz as @e[tag=mechanization.coolant_cell,dx=0,dy=0,dz=0,scores={fluid.io.down=1,fluid.storage.1=..999}] run function mechanization:nuclear/blocks/coolant_cell/m.transfer_vertically_2 with storage mechanization:temp obj
 execute if score #transfer mechanization.data matches 1.. if score @s fluid.storage.0 matches ..0 run data modify entity @s item.tag.fluids[0] set value {}
+scoreboard players operation @s fluid.storage.1 -= #transfer mechanization.data
 
 # break
 execute unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_block/break_machine
