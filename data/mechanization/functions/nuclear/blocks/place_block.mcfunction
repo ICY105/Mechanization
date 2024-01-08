@@ -9,6 +9,7 @@ execute if score #id mechanization.data matches 26 if data storage smithed.custo
 execute if score #id mechanization.data matches 26 if data storage smithed.custom_block:main blockApi{id:"mechanization:coolant_cell"} run function mechanization:nuclear/blocks/coolant_cell/place
 execute if score #id mechanization.data matches 28 if data storage smithed.custom_block:main blockApi{id:"mechanization:heat_exchanger"} run function mechanization:nuclear/blocks/heat_exchanger/place
 execute if score #id mechanization.data matches 29 if data storage smithed.custom_block:main blockApi{id:"mechanization:steam_condenser"} run function mechanization:nuclear/blocks/steam_condenser/place
+execute if score #id mechanization.data matches 29 if data storage smithed.custom_block:main blockApi{id:"mechanization:alchemy_chamber"} run function mechanization:nuclear/blocks/alchemy_chamber/place
 execute if score #id mechanization.data matches 28 if data storage smithed.custom_block:main blockApi{id:"mechanization:moderator_cell"} run function mechanization:nuclear/blocks/moderator_cell/place_empty
 execute if score #id mechanization.data matches 34 if data storage smithed.custom_block:main blockApi{id:"mechanization:water_moderator_cell"} run function mechanization:nuclear/blocks/moderator_cell/place_water
 execute if score #id mechanization.data matches 40 if data storage smithed.custom_block:main blockApi{id:"mechanization:heavy_water_moderator_cell"} run function mechanization:nuclear/blocks/moderator_cell/place_heavy_water

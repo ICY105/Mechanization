@@ -1,3 +1,3 @@
 
-execute if entity @s[tag=mech_rate_observer] run scoreboard players set $out_0 mech_data 1
-execute if entity @s[tag=mech_temp_observer] run scoreboard players set $out_0 mech_data 1
+execute if entity @s[tag=mechanization.alchemy_chamber] run function mechanization:nuclear/block/alchemy_chamber/custom_item_extraction
+execute if entity @s[tag=mechanization.centrifuge] run function mechanization:nuclear/block/centrifuge/custom_item_extraction

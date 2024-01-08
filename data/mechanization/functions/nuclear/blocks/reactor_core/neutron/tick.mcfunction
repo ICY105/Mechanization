@@ -31,8 +31,5 @@ scoreboard players operation #total mechanization.data = @s mechanization.fluid.
 scoreboard players operation #total mechanization.data += @s mechanization.fluid.out
 scoreboard players remove @s mechanization.time 1
 
-execute if score #total mechanization.data matches ..0 if entity @s[tag=mechanization.debug] run function mechanization:nuclear/blocks/reactor_core/neutron/debug
-execute if score @s mechanization.time matches ..0 if entity @s[tag=mechanization.debug] run function mechanization:nuclear/blocks/reactor_core/neutron/debug
-
 execute if score #total mechanization.data matches ..0 run kill @s
 execute if score @s mechanization.time matches ..0 run kill @s

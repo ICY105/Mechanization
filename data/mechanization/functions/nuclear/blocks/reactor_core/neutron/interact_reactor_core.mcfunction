@@ -17,10 +17,6 @@ execute store result storage mechanization:temp io.get_neutron_interaction.quant
 execute store result score #quantity mechanization.data run function mechanization:nuclear/math/m.get_neutron_interaction with storage mechanization:temp io.get_neutron_interaction
 scoreboard players operation #quantity_fast mechanization.data -= #quantity mechanization.data
 
-    execute store result score #temp mechanization.data run data get storage mechanization:temp obj.fission[0]
-    scoreboard players operation #temp mechanization.data += #quantity mechanization.data
-    execute store result storage mechanization:temp obj.fission[0] int 1 run scoreboard players get #temp mechanization.data
-
 scoreboard players operation @s mechanization.data += #quantity mechanization.data
 scoreboard players operation #quantity mechanization.data *= #cons.3 mechanization.data
 scoreboard players operation @s mechanization.fluid.in += #quantity mechanization.data
@@ -31,10 +27,6 @@ execute store result storage mechanization:temp io.get_neutron_interaction.quant
 
 execute store result score #quantity mechanization.data run function mechanization:nuclear/math/m.get_neutron_interaction with storage mechanization:temp io.get_neutron_interaction
 scoreboard players operation #quantity_thermal mechanization.data -= #quantity mechanization.data
-
-    execute store result score #temp mechanization.data run data get storage mechanization:temp obj.fission[1]
-    scoreboard players operation #temp mechanization.data += #quantity mechanization.data
-    execute store result storage mechanization:temp obj.fission[1] int 1 run scoreboard players get #temp mechanization.data
 
 scoreboard players operation @s mechanization.data += #quantity mechanization.data
 scoreboard players operation #quantity mechanization.data *= #cons.3 mechanization.data
@@ -48,10 +40,6 @@ execute store result score #quantity mechanization.data run function mechanizati
 scoreboard players operation #quantity_fast mechanization.data -= #quantity mechanization.data
 scoreboard players operation #quantity_thermal mechanization.data += #quantity mechanization.data
 
-    execute store result score #temp mechanization.data run data get storage mechanization:temp obj.scatter
-    scoreboard players operation #temp mechanization.data += #quantity mechanization.data
-    execute store result storage mechanization:temp obj.scatter int 1 run scoreboard players get #temp mechanization.data
-
 # process fast_capture
 data modify storage mechanization:temp io.get_data_entry.reaction set value "fast_capture"
 execute store result storage mechanization:temp io.get_neutron_interaction.quantity int 1 run scoreboard players get #quantity_fast mechanization.data
@@ -59,17 +47,9 @@ execute store result storage mechanization:temp io.get_neutron_interaction.quant
 execute store result score #quantity mechanization.data run function mechanization:nuclear/math/m.get_neutron_interaction with storage mechanization:temp io.get_neutron_interaction
 scoreboard players operation #quantity_fast mechanization.data -= #quantity mechanization.data
 
-    execute store result score #temp mechanization.data run data get storage mechanization:temp obj.capture[0]
-    scoreboard players operation #temp mechanization.data += #quantity mechanization.data
-    execute store result storage mechanization:temp obj.capture[0] int 1 run scoreboard players get #temp mechanization.data
-
 # process thermal_capture
 data modify storage mechanization:temp io.get_data_entry.reaction set value "thermal_capture"
 execute store result storage mechanization:temp io.get_neutron_interaction.quantity int 1 run scoreboard players get #quantity_thermal mechanization.data
 
 execute store result score #quantity mechanization.data run function mechanization:nuclear/math/m.get_neutron_interaction with storage mechanization:temp io.get_neutron_interaction
 scoreboard players operation #quantity_thermal mechanization.data -= #quantity mechanization.data
-
-    execute store result score #temp mechanization.data run data get storage mechanization:temp obj.capture[1]
-    scoreboard players operation #temp mechanization.data += #quantity mechanization.data
-    execute store result storage mechanization:temp obj.capture[1] int 1 run scoreboard players get #temp mechanization.data

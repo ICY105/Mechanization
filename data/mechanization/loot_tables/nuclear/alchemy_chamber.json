@@ -10,18 +10,17 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate": "block.mechanization.reactor_core", "color": "dark_red", "italic": false}
+              "name": {"translate":"block.mechanization.alchemy_chamber","color":"dark_purple","italic":false}
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {"translate":"lore.mechanization.consume","with":["30"],"color":"white","italic":false},
                 [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData: 6423002, HideFlags: 6, mechanization:{id:\"reactor_core\"}, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:reactor_core\"}}}}]} }"
+              "tag":"{CustomModelData: 6423003, HideFlags: 6, mechanization:{id:\"alchemy_chamber\"}, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:alchemy_chamber\"}}}}]} }"
             }
           ]
         }

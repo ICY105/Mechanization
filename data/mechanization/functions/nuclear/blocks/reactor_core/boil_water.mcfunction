@@ -15,6 +15,7 @@ execute if score #transfer mechanization.data matches 7.. if block ~ ~ ~ water[l
 execute if score #transfer mechanization.data matches 8.. if block ~ ~ ~ water[level=1] run scoreboard players set #transfer mechanization.data 7
 
 # transfer heat
+execute if score #transfer mechanization.data matches 1.. run playsound mechanization:nuclear.steam_boil block @a[distance=..16] ~ ~ ~ 1 1
 execute if score #transfer mechanization.data matches 1.. run setblock ~ ~ ~ minecraft:air replace
 scoreboard players operation #total_heat mechanization.data += #transfer mechanization.data
 execute if score #transfer mechanization.data matches 1.. align xyz positioned ~0.5 ~0.5 ~0.5 summon marker run function mechanization:nuclear/blocks/reactor_core/steam_cloud/summon

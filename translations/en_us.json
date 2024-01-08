@@ -360,16 +360,12 @@
     
     "block.mechanization.centrifuge": "Centrifuge",
     "block.mechanization.control_rod": "Control Rod",
-    "block.mechanization.fission_reactor": "Fission Reactor",
-    "block.mechanization.reaction_rate_observer": "Reaction Rate Observer",
-    "block.mechanization.steam_turbine": "Steam Turbine",
-    "block.mechanization.temperature_observer": "Temperature Observer",
-
     "block.mechanization.reactor_core": "Reactor Core",
+    "block.mechanization.moderator_cell": "Moderator Cell",
     "block.mechanization.heat_exchanger": "Heat Exchanger",
     "block.mechanization.steam_condenser": "Steam Condenser",
     "block.mechanization.coolant_cell": "Active Coolant Cell",
-    "block.mechanization.moderator_cell": "Moderator Cell",
+    "block.mechanization.alchemy_chamber": "Nuclear-Alchemy Chamber",
     "block.mechanization.water_moderator_cell": "Water Moderator Cell",
     "block.mechanization.heavy_water_moderator_cell": "Heavy Water Moderator Cell",
 
