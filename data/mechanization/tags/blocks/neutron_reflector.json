@@ -1,6 +1,14 @@
 {
 	"required":false,
 	"values":[
+		"minecraft:waxed_oxidized_copper_block",
+		"minecraft:waxed_weathered_copper_block",
+		"minecraft:waxed_exposed_copper_block",
+		"minecraft:waxed_copper_block",
+		"minecraft:oxidized_copper_block",
+		"minecraft:weathered_copper_block",
+		"minecraft:exposed_copper_block",
+		"minecraft:copper_block",
 		"minecraft:iron_block",
 		"minecraft:gold_block",
 		"minecraft:netherite_block",

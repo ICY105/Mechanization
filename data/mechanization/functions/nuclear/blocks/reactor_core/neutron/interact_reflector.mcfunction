@@ -1,9 +1,19 @@
 
 # calculate quanity reflected
 scoreboard players set #chance mechanization.data -1
+execute if block ~ ~ ~ minecraft:oxidized_copper_block run scoreboard players set #chance mechanization.data 45
+execute if block ~ ~ ~ minecraft:waxed_oxidized_copper_block run scoreboard players set #chance mechanization.data 45
+execute if block ~ ~ ~ minecraft:weathered_copper_block run scoreboard players set #chance mechanization.data 50
+execute if block ~ ~ ~ minecraft:waxed_weathered_copper_block run scoreboard players set #chance mechanization.data 50
+execute if block ~ ~ ~ minecraft:exposed_copper_block run scoreboard players set #chance mechanization.data 60
+execute if block ~ ~ ~ minecraft:waxed_exposed_copper_block run scoreboard players set #chance mechanization.data 60
+execute if block ~ ~ ~ minecraft:copper_blocks run scoreboard players set #chance mechanization.data 65
+execute if block ~ ~ ~ minecraft:waxed_copper_blocks run scoreboard players set #chance mechanization.data 65
+
 execute if block ~ ~ ~ minecraft:iron_block run scoreboard players set #chance mechanization.data 70
-execute if block ~ ~ ~ minecraft:gold_block run scoreboard players set #chance mechanization.data 80
-execute if block ~ ~ ~ minecraft:netherite_block run scoreboard players set #chance mechanization.data 90
+execute if block ~ ~ ~ minecraft:spawner align xyz if entity @e[tag=mechanization.resource_block] run function mechanization:nuclear/blocks/reactor_core/neutron/interact_reflector_custom
+execute if block ~ ~ ~ minecraft:gold_block run scoreboard players set #chance mechanization.data 75
+execute if block ~ ~ ~ minecraft:netherite_block run scoreboard players set #chance mechanization.data 100
 execute if score #chance mechanization.data matches -1 run return fail
 
     scoreboard players operation #total mechanization.data = #quantity_fast mechanization.data
