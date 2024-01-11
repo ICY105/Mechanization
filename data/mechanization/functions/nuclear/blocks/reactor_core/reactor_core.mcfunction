@@ -32,4 +32,4 @@ execute if score @s mechanization.fluid.in matches ..0 run scoreboard players se
 execute if score @s mechanization.time matches 1.. summon marker run function mechanization:nuclear/blocks/reactor_core/neutron/summon
 
 # cleanup
-execute unless block ~ ~ ~ minecraft:barrier run function mechanization:base/utils/break_machine_t2
+execute unless block ~ ~ ~ minecraft:barrier run function mechanization:nuclear/blocks/reactor_core/break_hard
