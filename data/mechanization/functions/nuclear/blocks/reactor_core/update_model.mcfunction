@@ -3,9 +3,9 @@ execute positioned ~ ~-1 ~ align xyz store success score #top mechanization.data
 execute positioned ~ ~1 ~ align xyz store success score #bottom mechanization.data if entity @e[tag=mechanization.reactor_core,dx=0,dy=0,dz=0]
 
 scoreboard players set #model mechanization.data 6423202
-execute if score #top mechanization.data matches 1 run scoreboard players set #model mechanization.data 6423005
-execute if score #bottom mechanization.data matches 1 run scoreboard players set #model mechanization.data 6423011
-execute if score #top mechanization.data matches 1 if score #bottom mechanization.data matches 1 run scoreboard players set #model mechanization.data 6423008
+execute if score #top mechanization.data matches 1 run scoreboard players set #model mechanization.data 6423205
+execute if score #bottom mechanization.data matches 1 run scoreboard players set #model mechanization.data 6423211
+execute if score #top mechanization.data matches 1 if score #bottom mechanization.data matches 1 run scoreboard players set #model mechanization.data 6423208
 
 execute if entity @s[tag=mechanization.reactor_core.uranium] run scoreboard players add #model mechanization.data 1
 execute if entity @s[tag=mechanization.reactor_core.plutonium] run scoreboard players add #model mechanization.data 2

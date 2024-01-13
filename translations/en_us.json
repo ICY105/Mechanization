@@ -273,6 +273,8 @@
 	"fluid.mechanization.superheated_water":"Superheated Water",
 	"fluid.mechanization.superheated_heavy_water":"Superheated Heavy Water",
 	"fluid.mechanization.superheated_experience":"Superheated Experience",
+	"fluid.mechanization.molten_depleted_uranium":"Molten Depleted Uranium",
+	"fluid.mechanization.molten_enriched_uranium":"Molten %s Enriched Uranium",
 	
 "__comment.machines":"Mechanization: Machines",
 	"item.mechanization.spawner_mover": "Spawner Mover",

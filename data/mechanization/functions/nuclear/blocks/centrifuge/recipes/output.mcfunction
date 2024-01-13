@@ -20,6 +20,22 @@ execute if score #success mechanization.data matches 1 if score @s fluid.storage
 execute if score #success mechanization.data matches 1 if score @s fluid.storage.2 matches 3951.. run scoreboard players set #success mechanization.data -1
 execute if score #success mechanization.data matches 1 run function mechanization:nuclear/blocks/centrifuge/recipes/heavy_water
 
+# Uranium Enrichment 2%
+scoreboard players set #success mechanization.data 0
+execute if score #success mechanization.data matches 0 if score @s fluid.storage.0 matches 144.. if data storage mechanization:temp obj.tank_1{id:"molten_uranium"} run scoreboard players set #success mechanization.data 1
+execute if score #success mechanization.data matches 1 if score @s fluid.storage.1 matches 1.. unless data storage mechanization:temp obj.tank_2{id:"molten_depleted_uranium"} run scoreboard players set #success mechanization.data -1
+execute if score #success mechanization.data matches 1 if score @s fluid.storage.2 matches 1.. unless data storage mechanization:temp obj.tank_3{id:"molten_uranium_e2"} run scoreboard players set #success mechanization.data -1
+execute if score #success mechanization.data matches 1 if score @s fluid.storage.1 matches 3927.. run scoreboard players set #success mechanization.data -1
+execute if score #success mechanization.data matches 1 if score @s fluid.storage.2 matches 3927.. run scoreboard players set #success mechanization.data -1
+execute if score #success mechanization.data matches 1 run function mechanization:nuclear/blocks/centrifuge/recipes/uranium_enrichment_2
+
+# Generalized Enrichment
+data modify storage mechanization:temp obj.fluid_type set value ""
+data modify storage mechanization:temp obj.fluid_type set string storage mechanization:temp obj.tank_1.id 0 16
+data modify storage mechanization:temp obj.fluid_enrichment set value ""
+data modify storage mechanization:temp obj.fluid_enrichment set string storage mechanization:temp obj.tank_1.id 16
+execute if score @s fluid.storage.0 matches 144.. if data storage mechanization:temp obj{fluid_type:"molten_uranium_e"} run function mechanization:nuclear/blocks/centrifuge/recipes/m.output_enrichment with storage mechanization:temp obj
+
 # cleanup
 execute store result block ~ ~ ~ Items[{Slot:0b}].Count byte 1 run scoreboard players get #count.0 mechanization.data
 execute store result block ~ ~ ~ Items[{Slot:9b}].Count byte 1 run scoreboard players get #count.1 mechanization.data
