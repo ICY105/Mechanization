@@ -17,5 +17,5 @@ scoreboard players operation #model mechanization.data *= #cons.16 mechanization
 scoreboard players operation #model mechanization.data /= @s mechanization.time
 
 execute if score @s mechanization.time matches -1 run scoreboard players set #model mechanization.data 0
-scoreboard players add #model mechanization.data 6422900
+scoreboard players add #model mechanization.data 6423900
 execute store result block ~ ~ ~ Items[{Slot:5b}].tag.CustomModelData int 1 run scoreboard players get #model mechanization.data
