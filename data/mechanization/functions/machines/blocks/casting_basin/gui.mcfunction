@@ -8,6 +8,8 @@ execute unless data block ~ ~ ~ Items[{Slot:7b}] run scoreboard players set @s m
 execute unless data block ~ ~ ~ Items[{Slot:8b}] run scoreboard players set @s mechanization.data 5
 execute unless data block ~ ~ ~ Items[{Slot:13b}] run scoreboard players set @s mechanization.data 6
 execute unless data block ~ ~ ~ Items[{Slot:14b}] run scoreboard players set @s mechanization.data 7
+execute unless data block ~ ~ ~ Items[{Slot:15b}] run scoreboard players set @s mechanization.data 8
+execute unless data block ~ ~ ~ Items[{Slot:26b}] run scoreboard players set @s mechanization.data -1
 clear @a[distance=..8] minecraft:carrot_on_a_stick{mechanization:{gui_item:1b}}
 
 # move/clear items
@@ -16,6 +18,7 @@ data remove storage mechanization:temp list[{tag:{mechanization:{gui_item:1b}}}]
 data remove storage mechanization:temp list[{Slot:0b}]
 data remove storage mechanization:temp list[{Slot:12b}]
 data remove storage mechanization:temp list[{Slot:18b}]
+execute if score @s mechanization.data matches 8 run data remove storage mechanization:temp list[{Slot:21b}]
 
 data remove block -30000000 0 3201 Items
 execute if data storage mechanization:temp list[0] run function mechanization:machines/blocks/casting_basin/gui_move
@@ -45,3 +48,4 @@ execute if score @s mechanization.data matches 4 run item replace block ~ ~ ~ co
 execute if score @s mechanization.data matches 5 run item replace block ~ ~ ~ container.3 from block ~ ~ ~ container.8
 execute if score @s mechanization.data matches 6 run item replace block ~ ~ ~ container.3 from block ~ ~ ~ container.13
 execute if score @s mechanization.data matches 7 run item replace block ~ ~ ~ container.3 from block ~ ~ ~ container.14
+execute if score @s mechanization.data matches 8 run item replace block ~ ~ ~ container.3 from block ~ ~ ~ container.15

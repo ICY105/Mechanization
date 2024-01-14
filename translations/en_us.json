@@ -285,6 +285,7 @@
 	"item.mechanization.rod_cast": "Rod Cast",
 	"item.mechanization.plate_cast": "Plate Cast",
 	"item.mechanization.gear_cast": "Gear Cast",
+	"item.mechanization.item_cast": "Fill/Mold Item",
 
     "block.mechanization.energy_relay": "Energy Relay",
 	"lore.mechanization.energy_relay": "Use wrench to toggle modes.",
@@ -334,6 +335,7 @@
     "block.mechanization.casting_basin": "Casting Basin",
 	"lore.mechanization.cast_cost": "Cost: %sL (%s Ingots)",
 	"lore.mechanization.cast_cost_gem": "Cost: %sL (%s Gems)",
+	"lore.mechanization.cast_cost_item": "Cost depends on recipe",
 	
     "block.mechanization.quarry": "Quarry",
 	"text.mechanization.quarry.no_boundary": "No Boundary",
