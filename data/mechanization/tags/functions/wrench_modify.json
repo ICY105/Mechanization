@@ -1,10 +1,10 @@
 {
-	"required":false,
-	"values":[
-		"mechanization:base/player/wrench/modify",
-		"mechanization:machines/player/wrench/modify",
-		"mechanization:nuclear/player/wrench_modify",
-		"mechanization:gadgets/player/wrench_modify",
-		"mechanization:assembly/player/wrench_modify"
-	]
+  "required": false,
+  "values": [
+    "mechanization:base/player/wrench/modify",
+    "mechanization:machines/player/wrench/modify",
+    "mechanization:nuclear/player/wrench_modify",
+    "mechanization:gadgets/player/wrench_modify",
+    "mechanization:assembly/player/wrench_modify"
+  ]
 }

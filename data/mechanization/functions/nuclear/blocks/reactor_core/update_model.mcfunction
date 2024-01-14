@@ -8,7 +8,7 @@ execute if score #bottom mechanization.data matches 1 run scoreboard players set
 execute if score #top mechanization.data matches 1 if score #bottom mechanization.data matches 1 run scoreboard players set #model mechanization.data 6423208
 
 execute if entity @s[tag=mechanization.reactor_core.uranium] run scoreboard players add #model mechanization.data 1
-execute if entity @s[tag=mechanization.reactor_core.plutonium] run scoreboard players add #model mechanization.data 2
+execute if entity @s[tag=mechanization.reactor_core.mox] run scoreboard players add #model mechanization.data 2
 execute if score #model mechanization.data matches 6423202 run scoreboard players set #model mechanization.data 6423002
 
 execute store result entity @s item.tag.CustomModelData int 1 run scoreboard players get #model mechanization.data

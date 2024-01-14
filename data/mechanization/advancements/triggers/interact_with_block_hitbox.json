@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "mechanization:base/player/right_click"
+    "function": "mechanization:base/player/right_click_hitbox"
   }
 }

@@ -1,7 +1,7 @@
 {
-	"required":false,
-	"values":[
-		"mechanization:machines/blocks/custom_hitbox_break",
-		"mechanization:nuclear/blocks/custom_hitbox_break"
-	]
+  "required": false,
+  "values": [
+    "mechanization:machines/blocks/custom_hitbox_break",
+    "mechanization:nuclear/blocks/custom_hitbox_break"
+  ]
 }

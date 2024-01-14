@@ -1,4 +1,7 @@
 
+data remove entity @s attack
+execute if score #interact mechanization.data matches ..14 run return fail
+
 scoreboard players set #loop mechanization.data -1
 execute if block ~ ~1 ~ minecraft:barrier run setblock ~ ~1 ~ minecraft:air
 kill @s

@@ -1,6 +1,7 @@
 
 # mechanization.data: heat
 # mechanization.fluid.in: neutron flux
+# mechanization.fluid.out: fuel split
 # mechanization.time: enrichment %
 
 # passive cooling
