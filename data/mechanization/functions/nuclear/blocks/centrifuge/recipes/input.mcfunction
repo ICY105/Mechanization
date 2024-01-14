@@ -30,10 +30,10 @@ execute if score #success mechanization.data matches 1 if score @s fluid.storage
 execute if score #success mechanization.data matches 1 run scoreboard players operation @s mechanization.time = #nuclear.cf.centrifuge.speed mechanization.data
 
 # Generalized Enrichment
-data modify storage mechanization:temp obj.fluid_type set value ""
-data modify storage mechanization:temp obj.fluid_type set string storage mechanization:temp obj.tank_1.id 0 16
-data modify storage mechanization:temp obj.fluid_enrichment set value ""
-data modify storage mechanization:temp obj.fluid_enrichment set string storage mechanization:temp obj.tank_1.id 16
+execute if score @s fluid.storage.0 matches 144.. run data modify storage mechanization:temp obj.fluid_type set value ""
+execute if score @s fluid.storage.0 matches 144.. run data modify storage mechanization:temp obj.fluid_type set string storage mechanization:temp obj.tank_1.id 0 16
+execute if score @s fluid.storage.0 matches 144.. run data modify storage mechanization:temp obj.fluid_enrichment set value ""
+execute if score @s fluid.storage.0 matches 144.. run data modify storage mechanization:temp obj.fluid_enrichment set string storage mechanization:temp obj.tank_1.id 16
 execute if score @s fluid.storage.0 matches 144.. if data storage mechanization:temp obj{fluid_type:"molten_uranium_e"} run function mechanization:nuclear/blocks/centrifuge/recipes/m.input_enrichment with storage mechanization:temp obj
 
 # calculate needed power

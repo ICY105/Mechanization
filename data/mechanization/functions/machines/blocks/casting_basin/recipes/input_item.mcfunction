@@ -8,4 +8,7 @@ execute if score @s fluid.storage.0 matches 1152.. if score #count_2 mechanizati
 execute if score @s fluid.storage.0 matches 1152.. if score #count_2 mechanization.data matches 0 if data storage mechanization:temp obj.fluid_item{id:"molten_uranium"} if data storage mechanization:temp obj.output_item.tag.mechanization{id:"fuel_rod"} run scoreboard players operation @s mechanization.time = #machines.cf.casting_basin.speed_block mechanization.data
 execute if score @s fluid.storage.0 matches 1152.. if score #count_2 mechanization.data matches 0 if data storage mechanization:temp obj.fluid_item{id:"molten_mox_fuel"} if data storage mechanization:temp obj.output_item.tag.mechanization{id:"fuel_rod"} run scoreboard players operation @s mechanization.time = #machines.cf.casting_basin.speed_block mechanization.data
 
-data modify storage mechanization:temp test set from storage mechanization:temp obj
+# Generalized Fuel
+execute if score @s fluid.storage.0 matches 1152.. run data modify storage mechanization:temp obj.fluid_type set value ""
+execute if score @s fluid.storage.0 matches 1152.. run data modify storage mechanization:temp obj.fluid_type set string storage mechanization:temp obj.fluid_item.id 0 16
+execute if score @s fluid.storage.0 matches 1152.. if score #count_2 mechanization.data matches 0 if data storage mechanization:temp obj{fluid_type:"molten_uranium_e"} if data storage mechanization:temp obj.output_item.tag.mechanization{id:"fuel_rod"} run scoreboard players operation @s mechanization.time = #machines.cf.casting_basin.speed_block mechanization.data
