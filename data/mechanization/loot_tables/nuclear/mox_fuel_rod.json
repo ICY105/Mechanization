@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"translate":"item.mechanization.mox_fuel_rod","color":"dark_aqua","italic":false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag":"{CustomModelData: 6423002, HideFlags: 6, mechanization:{id:\"mox_fuel_rod\"}, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:mox_fuel_rod\"}}}}]} }"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

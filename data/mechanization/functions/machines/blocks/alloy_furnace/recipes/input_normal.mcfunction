@@ -135,6 +135,14 @@ execute if score #success mechanization.data matches 1 if score #storage.0 mecha
 execute if score #success mechanization.data matches 1 if score #storage.1 mechanization.data matches 576.. if data storage mechanization:temp obj.tank_2{id:"molten_gold"} run scoreboard players set #success mechanization.data 2
 execute if score #success mechanization.data matches 2 run tag @s add mechanization.errored
 
+# Mox Fuel
+scoreboard players set #success mechanization.data 1
+execute if score #success mechanization.data matches 1 if score #storage.0 mechanization.data matches 1008.. if data storage mechanization:temp obj.tank_1{id:"molten_uranium"} run scoreboard players set #success mechanization.data 2
+execute if score #success mechanization.data matches 1 if score #storage.1 mechanization.data matches 1008.. if data storage mechanization:temp obj.tank_2{id:"molten_uranium"} run scoreboard players set #success mechanization.data 2
+execute if score #success mechanization.data matches 2 if score #storage.0 mechanization.data matches 144.. if data storage mechanization:temp obj.tank_1{id:"molten_plutonium"} run scoreboard players set #success mechanization.data 3
+execute if score #success mechanization.data matches 2 if score #storage.1 mechanization.data matches 144.. if data storage mechanization:temp obj.tank_2{id:"molten_plutonium"} run scoreboard players set #success mechanization.data 3
+execute if score #success mechanization.data matches 3 run tag @s add mechanization.errored
+
 # calculate needed power
 scoreboard players operation #count.0 mechanization.data = #machines.cf.alloy_furnace.power mechanization.data
 scoreboard players operation #count.0 mechanization.data *= @s mechanization.time

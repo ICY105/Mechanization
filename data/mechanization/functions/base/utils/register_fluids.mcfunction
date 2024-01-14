@@ -31,6 +31,7 @@ data modify storage fluid:definitions fluid_data append value {id:"superheated_w
 data modify storage fluid:definitions fluid_data append value {id:"superheated_heavy_water",            temperature: 900,   color: 3297704,  gas: 0b, name:'{"translate":"fluid.mechanization.superheated_heavy_water"}'}
 data modify storage fluid:definitions fluid_data append value {id:"superheated_experience",             temperature: 900,   color: 8388479,  gas: 0b, name:'{"translate":"fluid.mechanization.superheated_experience"}'}
 data modify storage fluid:definitions fluid_data append value {id:"molten_depleted_uranium",            temperature: 1500,  color: 2017310,  gas: 0b, name:'{"translate":"fluid.mechanization.molten_depleted_uranium"}'}
+data modify storage fluid:definitions fluid_data append value {id:"molten_mox_fuel",                    temperature: 2500,  color: 7514263,  gas: 0b, name:'{"translate":"fluid.mechanization.molten_mox_fuel"}'}
 
 data modify storage fluid:definitions fluid_data append value {id:"molten_uranium_e2",                  temperature: 1500,  color: 4521796,  gas: 0b, name:'{"translate":"fluid.mechanization.molten_enriched_uranium","with":[{"text":"2%"}]}'}
 data modify storage fluid:definitions fluid_data append value {id:"molten_uranium_e3",                  temperature: 1500,  color: 4521796,  gas: 0b, name:'{"translate":"fluid.mechanization.molten_enriched_uranium","with":[{"text":"3%"}]}'}

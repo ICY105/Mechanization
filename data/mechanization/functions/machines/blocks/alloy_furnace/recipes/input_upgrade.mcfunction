@@ -29,7 +29,6 @@ execute if score #success mechanization.data matches 3 if score #storage.2 mecha
 execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 3857.. run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 3 run scoreboard players operation @s mechanization.time = #machines.cf.alloy_furnace.speed mechanization.data
 execute if score #success mechanization.data matches 3 if score @s mechanization.time matches 3.. run scoreboard players operation @s mechanization.time /= #cons.2 mechanization.data
-execute if score #success mechanization.data matches 3 if score @s mechanization.time matches 3.. run scoreboard players operation @s[tag=mechanization.upgraded.ender] mechanization.time /= #cons.2 mechanization.data
 
 # Structural Ingot
 scoreboard players set #success mechanization.data 0
@@ -44,7 +43,6 @@ execute if score #success mechanization.data matches 3 if score #storage.2 mecha
 execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 3857.. run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 3 run scoreboard players operation @s mechanization.time = #machines.cf.alloy_furnace.speed mechanization.data
 execute if score #success mechanization.data matches 3 if score @s mechanization.time matches 3.. run scoreboard players operation @s mechanization.time /= #cons.2 mechanization.data
-execute if score #success mechanization.data matches 3 if score @s mechanization.time matches 3.. run scoreboard players operation @s[tag=mechanization.upgraded.ender] mechanization.time /= #cons.2 mechanization.data
 
 # Conductive Ingot
 scoreboard players set #success mechanization.data 0
@@ -59,7 +57,6 @@ execute if score #success mechanization.data matches 3 if score #storage.2 mecha
 execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 3857.. run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 3 run scoreboard players operation @s mechanization.time = #machines.cf.alloy_furnace.speed mechanization.data
 execute if score #success mechanization.data matches 3 if score @s mechanization.time matches 3.. run scoreboard players operation @s mechanization.time /= #cons.2 mechanization.data
-execute if score #success mechanization.data matches 3 if score @s mechanization.time matches 3.. run scoreboard players operation @s[tag=mechanization.upgraded.ender] mechanization.time /= #cons.2 mechanization.data
 
 # Crystal Composite
 scoreboard players set #success mechanization.data 0
@@ -74,7 +71,6 @@ execute if score #success mechanization.data matches 3 if score #storage.2 mecha
 execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 3929.. run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 3 run scoreboard players operation @s mechanization.time = #machines.cf.alloy_furnace.speed mechanization.data
 execute if score #success mechanization.data matches 3 if score @s mechanization.time matches 3.. run scoreboard players operation @s mechanization.time /= #cons.2 mechanization.data
-execute if score #success mechanization.data matches 3 if score @s mechanization.time matches 3.. run scoreboard players operation @s[tag=mechanization.upgraded.ender] mechanization.time /= #cons.2 mechanization.data
 
 # Titanium Steel Ingot
 scoreboard players set #success mechanization.data 0
@@ -88,7 +84,6 @@ execute if score #success mechanization.data matches 2 if score #storage.1 mecha
 execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 1.. unless data storage mechanization:temp obj.tank_3{id:"molten_titanium_steel"} run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 3857.. run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 3 run scoreboard players operation @s mechanization.time = #machines.cf.alloy_furnace.speed mechanization.data
-execute if score #success mechanization.data matches 3 if score @s mechanization.time matches 3.. run scoreboard players operation @s[tag=mechanization.upgraded.nether] mechanization.time /= #cons.2 mechanization.data
 
 # Reinforced Structural Ingot
 scoreboard players set #success mechanization.data 0
@@ -102,7 +97,6 @@ execute if score #success mechanization.data matches 2 if score #storage.1 mecha
 execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 1.. unless data storage mechanization:temp obj.tank_3{id:"molten_reinforced_structural_alloy"} run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 3857.. run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 3 run scoreboard players operation @s mechanization.time = #machines.cf.alloy_furnace.speed mechanization.data
-execute if score #success mechanization.data matches 3 if score @s mechanization.time matches 3.. run scoreboard players operation @s[tag=mechanization.upgraded.nether] mechanization.time /= #cons.2 mechanization.data
 
 # Super Conductive Ingot
 scoreboard players set #success mechanization.data 0
@@ -116,7 +110,6 @@ execute if score #success mechanization.data matches 2 if score #storage.1 mecha
 execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 1.. unless data storage mechanization:temp obj.tank_3{id:"molten_super_conductive_alloy"} run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 3857.. run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 3 run scoreboard players operation @s mechanization.time = #machines.cf.alloy_furnace.speed mechanization.data
-execute if score #success mechanization.data matches 3 if score @s mechanization.time matches 3.. run scoreboard players operation @s[tag=mechanization.upgraded.nether] mechanization.time /= #cons.2 mechanization.data
 
 # Nether Ingot
 scoreboard players set #success mechanization.data 0
@@ -130,7 +123,6 @@ execute if score #success mechanization.data matches 2 if score #storage.1 mecha
 execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 1.. unless data storage mechanization:temp obj.tank_3{id:"molten_nether_alloy"} run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 3425.. run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 3 run scoreboard players operation @s mechanization.time = #machines.cf.alloy_furnace.speed mechanization.data
-execute if score #success mechanization.data matches 3 if score @s mechanization.time matches 3.. run scoreboard players operation @s[tag=mechanization.upgraded.nether] mechanization.time /= #cons.2 mechanization.data
 
 # Ender Ingot
 scoreboard players set #success mechanization.data 0
@@ -145,7 +137,6 @@ execute if score #success mechanization.data matches 2 if score #storage.1 mecha
 execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 1.. unless data storage mechanization:temp obj.tank_3{id:"molten_ender_alloy"} run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 3425.. run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 3 run scoreboard players operation @s mechanization.time = #machines.cf.alloy_furnace.speed mechanization.data
-execute if score #success mechanization.data matches 3 if score @s mechanization.time matches 3.. run scoreboard players operation @s[tag=mechanization.upgraded.nether] mechanization.time /= #cons.2 mechanization.data
 
 # Netherite
 scoreboard players set #success mechanization.data 0
@@ -157,7 +148,16 @@ execute if score #success mechanization.data matches 1 if score #storage.1 mecha
 execute if score #success mechanization.data matches 2 if score #storage.2 mechanization.data matches 1.. unless data storage mechanization:temp obj.tank_3{id:"molten_netherite"} run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 2 if score #storage.2 mechanization.data matches 3857.. run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 2 run scoreboard players operation @s mechanization.time = #machines.cf.alloy_furnace.speed mechanization.data
-execute if score #success mechanization.data matches 2 if score @s mechanization.time matches 3.. run scoreboard players operation @s[tag=mechanization.upgraded.nether] mechanization.time /= #cons.2 mechanization.data
+
+# Mox Fuel
+scoreboard players set #success mechanization.data 1
+execute if score #success mechanization.data matches 1 if score #storage.0 mechanization.data matches 1008.. if data storage mechanization:temp obj.tank_1{id:"molten_uranium"} run scoreboard players set #success mechanization.data 2
+execute if score #success mechanization.data matches 1 if score #storage.1 mechanization.data matches 1008.. if data storage mechanization:temp obj.tank_2{id:"molten_uranium"} run scoreboard players set #success mechanization.data 2
+execute if score #success mechanization.data matches 2 if score #storage.0 mechanization.data matches 144.. if data storage mechanization:temp obj.tank_1{id:"molten_plutonium"} run scoreboard players set #success mechanization.data 3
+execute if score #success mechanization.data matches 2 if score #storage.1 mechanization.data matches 144.. if data storage mechanization:temp obj.tank_2{id:"molten_plutonium"} run scoreboard players set #success mechanization.data 3
+execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 1.. unless data storage mechanization:temp obj.tank_3{id:"molten_mox_fuel"} run scoreboard players set #success mechanization.data 0
+execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 2848.. run scoreboard players set #success mechanization.data 0
+execute if score #success mechanization.data matches 3 run scoreboard players operation @s mechanization.time = #machines.cf.alloy_furnace.speed mechanization.data
 
 # calculate needed power
 scoreboard players operation #count.0 mechanization.data = #machines.cf.alloy_furnace.power mechanization.data

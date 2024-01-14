@@ -144,6 +144,16 @@ execute if score #success mechanization.data matches 2 if score #storage.2 mecha
 execute if score #success mechanization.data matches 2 if score #storage.2 mechanization.data matches 3857.. run scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 2 run function mechanization:machines/blocks/alloy_furnace/recipes/netherite
 
+# Mox Fuel
+scoreboard players set #success mechanization.data 1
+execute if score #success mechanization.data matches 1 if score #storage.0 mechanization.data matches 1008.. if data storage mechanization:temp obj.tank_1{id:"molten_uranium"} run scoreboard players set #success mechanization.data 2
+execute if score #success mechanization.data matches 1 if score #storage.1 mechanization.data matches 1008.. if data storage mechanization:temp obj.tank_2{id:"molten_uranium"} run scoreboard players set #success mechanization.data 2
+execute if score #success mechanization.data matches 2 if score #storage.0 mechanization.data matches 144.. if data storage mechanization:temp obj.tank_1{id:"molten_plutonium"} run scoreboard players set #success mechanization.data 3
+execute if score #success mechanization.data matches 2 if score #storage.1 mechanization.data matches 144.. if data storage mechanization:temp obj.tank_2{id:"molten_plutonium"} run scoreboard players set #success mechanization.data 3
+execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 1.. unless data storage mechanization:temp obj.tank_3{id:"molten_mox_fuel"} run scoreboard players set #success mechanization.data 0
+execute if score #success mechanization.data matches 3 if score #storage.2 mechanization.data matches 2848.. run scoreboard players set #success mechanization.data 0
+execute if score #success mechanization.data matches 3 run function mechanization:machines/blocks/alloy_furnace/recipes/mox_fuel
+
 
 # cleanup
 execute store result block ~ ~ ~ Items[{Slot:0b}].Count byte 1 run scoreboard players get #count.0 mechanization.data

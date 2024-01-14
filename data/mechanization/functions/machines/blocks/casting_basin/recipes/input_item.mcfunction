@@ -4,3 +4,8 @@ execute if score @s fluid.storage.0 matches 128.. if score #count_2 mechanizatio
 
 execute if score @s fluid.storage.0 matches 1152.. if score #count_2 mechanization.data matches ..0 if data storage mechanization:temp obj.fluid_item{id:"molten_gold"} if data storage mechanization:temp obj.output_item{id:"minecraft:apple"} run scoreboard players operation @s mechanization.time = #machines.cf.casting_basin.speed_block mechanization.data
 execute if score @s fluid.storage.0 matches 1152.. if score #count_2 mechanization.data matches 1.. if data storage mechanization:temp obj.fluid_item{id:"molten_gold"} if data storage mechanization:temp obj.output_item{id:"minecraft:apple"} if data storage mechanization:temp obj.output_item_2{id:"minecraft:golden_apple"} run scoreboard players operation @s mechanization.time = #machines.cf.casting_basin.speed_block mechanization.data
+
+execute if score @s fluid.storage.0 matches 1152.. if score #count_2 mechanization.data matches 0 if data storage mechanization:temp obj.fluid_item{id:"molten_uranium"} if data storage mechanization:temp obj.output_item.tag.mechanization{id:"fuel_rod"} run scoreboard players operation @s mechanization.time = #machines.cf.casting_basin.speed_block mechanization.data
+execute if score @s fluid.storage.0 matches 1152.. if score #count_2 mechanization.data matches 0 if data storage mechanization:temp obj.fluid_item{id:"molten_mox_fuel"} if data storage mechanization:temp obj.output_item.tag.mechanization{id:"fuel_rod"} run scoreboard players operation @s mechanization.time = #machines.cf.casting_basin.speed_block mechanization.data
+
+data modify storage mechanization:temp test set from storage mechanization:temp obj
