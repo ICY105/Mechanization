@@ -275,6 +275,7 @@
 	"fluid.mechanization.superheated_experience":"Superheated Experience",
 	"fluid.mechanization.molten_depleted_uranium":"Molten Depleted Uranium",
 	"fluid.mechanization.molten_enriched_uranium":"Molten %s Enriched Uranium",
+	"fluid.mechanization.molten_mox_fuel":"Molten Mox Fuel",
 	
 "__comment.machines":"Mechanization: Machines",
 	"item.mechanization.spawner_mover": "Spawner Mover",
