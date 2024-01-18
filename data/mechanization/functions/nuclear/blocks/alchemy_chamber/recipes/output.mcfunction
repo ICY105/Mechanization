@@ -1,64 +1,32 @@
 
-# init data
-data modify storage mechanization:temp obj set value {input:{},output:{}}
-data modify storage mechanization:temp obj.input set from block ~ ~ ~ Items[{Slot:1b}]
-execute if data block ~ ~ ~ Items[{Slot:7b}] run data modify storage mechanization:temp obj.output set from block ~ ~ ~ Items[{Slot:7b}]
-scoreboard players set #success mechanization.data 0
+# copy item ids to storage and find possible recipes
+data modify storage mechanization:temp obj set value {}
+data modify storage mechanization:temp obj.0 set from block ~ ~ ~ Items[{Slot:1b}].id
+function mechanization:nuclear/blocks/alchemy_chamber/recipes/m.get_possible_recipes with storage mechanization:temp obj
 
-# complete recipes
-execute if score @s mechanization.data matches 30.. if data storage mechanization:temp obj.input{id:"minecraft:copper_ingot"} unless data storage mechanization:temp obj.output.id run item replace block ~ ~ ~ container.7 with minecraft:iron_ingot
-execute if score @s mechanization.data matches 30.. if data storage mechanization:temp obj.input{id:"minecraft:copper_ingot"} unless data storage mechanization:temp obj.output.id run scoreboard players set #success mechanization.data 1
-execute if score @s mechanization.data matches 30.. if data storage mechanization:temp obj.input{id:"minecraft:copper_ingot"} if data storage mechanization:temp obj.output{id:"minecraft:iron_ingot"} run scoreboard players set #success mechanization.data 1
+# copy full item data to storage and loop over possible recipes until a valid one is found. Return if no recipes are valid
+data modify storage mechanization:temp obj set value {}
+data modify storage mechanization:temp obj.0 set from block ~ ~ ~ Items[{Slot:1b}]
+execute if data storage mechanization:temp list[0] run function mechanization:nuclear/blocks/alchemy_chamber/recipes/m.find_recipe with storage mechanization:temp list[0].input
+execute unless data storage mechanization:temp list[0] run return fail
 
-execute if score @s mechanization.data matches 40.. if data storage mechanization:temp obj.input{id:"minecraft:iron_ingot"} unless data storage mechanization:temp obj.output.id run loot replace block ~ ~ ~ container.7 loot mechanization:base/tin_ingot
-execute if score @s mechanization.data matches 40.. if data storage mechanization:temp obj.input{id:"minecraft:iron_ingot"} unless data storage mechanization:temp obj.output.id run scoreboard players set #success mechanization.data 1
-execute if score @s mechanization.data matches 40.. if data storage mechanization:temp obj.input{id:"minecraft:iron_ingot"} if data storage mechanization:temp obj.output.tag.smithed.dict.ingot.tin run scoreboard players set #success mechanization.data 1
+# check additional recipe requirements
+execute if entity @s[tag=!mechanization.upgraded] if data storage mechanization:temp list[0].input{upgraded: 1b} run return fail
 
-execute if score @s mechanization.data matches 50.. if data storage mechanization:temp obj.input.tag.smithed.dict.ingot.tin unless data storage mechanization:temp obj.output.id run item replace block ~ ~ ~ container.7 with minecraft:gold_ingot
-execute if score @s mechanization.data matches 50.. if data storage mechanization:temp obj.input.tag.smithed.dict.ingot.tin unless data storage mechanization:temp obj.output.id run scoreboard players set #success mechanization.data 1
-execute if score @s mechanization.data matches 50.. if data storage mechanization:temp obj.input.tag.smithed.dict.ingot.tin if data storage mechanization:temp obj.output{id:"minecraft:gold_ingot"} run scoreboard players set #success mechanization.data 1
+# determine if outputs match
+execute store result score #count mechanization.data run data get block ~ ~ ~ Items[{Slot: 7b}].Count
+data remove block -30000000 0 1602 Items
+execute if data storage mechanization:temp list[0].output.0{type: "item"} run function mechanization:nuclear/blocks/alchemy_chamber/recipes/m.output_item with storage mechanization:temp list[0].output.0
+execute if data storage mechanization:temp list[0].output.0{type: "loot_table"} run function mechanization:nuclear/blocks/alchemy_chamber/recipes/m.output_loot with storage mechanization:temp list[0].output.0
 
-execute if score @s mechanization.data matches 60.. if data storage mechanization:temp obj.input{id:"minecraft:gold_ingot"} unless data storage mechanization:temp obj.output.id run loot replace block ~ ~ ~ container.7 loot mechanization:base/uranium_ingot
-execute if score @s mechanization.data matches 60.. if data storage mechanization:temp obj.input{id:"minecraft:gold_ingot"} unless data storage mechanization:temp obj.output.id run scoreboard players set #success mechanization.data 1
-execute if score @s mechanization.data matches 60.. if data storage mechanization:temp obj.input{id:"minecraft:gold_ingot"} if data storage mechanization:temp obj.output.tag.smithed.dict.ingot.uranium run scoreboard players set #success mechanization.data 1
+data modify storage mechanization:temp obj set value {0:{}}
+data modify storage mechanization:temp obj.0.id set from block ~ ~ ~ Items[{Slot:7b}].id
+data modify storage mechanization:temp obj.0.tag set from block ~ ~ ~ Items[{Slot:7b}].tag
+execute store result score #success mechanization.data run function mechanization:nuclear/blocks/alchemy_chamber/recipes/m.check_output with storage mechanization:temp obj
+execute unless score #success mechanization.data matches 1 run return fail
 
-execute if score @s mechanization.data matches 70.. if data storage mechanization:temp obj.input{id:"minecraft:amethyst"} unless data storage mechanization:temp obj.output.id run item replace block ~ ~ ~ container.7 with minecraft:emerald
-execute if score @s mechanization.data matches 70.. if data storage mechanization:temp obj.input{id:"minecraft:amethyst"} unless data storage mechanization:temp obj.output.id run scoreboard players set #success mechanization.data 1
-execute if score @s mechanization.data matches 70.. if data storage mechanization:temp obj.input{id:"minecraft:amethyst"} if data storage mechanization:temp obj.output{id:"minecraft:emerald"} run scoreboard players set #success mechanization.data 1
-
-execute if score @s mechanization.data matches 100.. if data storage mechanization:temp obj.input{id:"minecraft:blackstone"} unless data storage mechanization:temp obj.output.id run item replace block ~ ~ ~ container.7 with minecraft:gilded_blackstone
-execute if score @s mechanization.data matches 100.. if data storage mechanization:temp obj.input{id:"minecraft:blackstone"} unless data storage mechanization:temp obj.output.id run scoreboard players set #success mechanization.data 1
-execute if score @s mechanization.data matches 100.. if data storage mechanization:temp obj.input{id:"minecraft:blackstone"} if data storage mechanization:temp obj.output{id:"minecraft:gilded_blackstone"} run scoreboard players set #success mechanization.data 1
-
-execute if score @s mechanization.data matches 20.. if data storage mechanization:temp obj.input{id:"minecraft:sand"} unless data storage mechanization:temp obj.output.id run item replace block ~ ~ ~ container.7 with minecraft:suspicious_sand
-execute if score @s mechanization.data matches 20.. if data storage mechanization:temp obj.input{id:"minecraft:sand"} unless data storage mechanization:temp obj.output.id run scoreboard players set #success mechanization.data 1
-execute if score @s mechanization.data matches 20.. if data storage mechanization:temp obj.input{id:"minecraft:sand"} if data storage mechanization:temp obj.output{id:"minecraft:suspicious_sand"} run scoreboard players set #success mechanization.data 1
-
-execute if score @s mechanization.data matches 20.. if data storage mechanization:temp obj.input{id:"minecraft:gravel"} unless data storage mechanization:temp obj.output.id run item replace block ~ ~ ~ container.7 with minecraft:suspicious_gravel
-execute if score @s mechanization.data matches 20.. if data storage mechanization:temp obj.input{id:"minecraft:gravel"} unless data storage mechanization:temp obj.output.id run scoreboard players set #success mechanization.data 1
-execute if score @s mechanization.data matches 20.. if data storage mechanization:temp obj.input{id:"minecraft:gravel"} if data storage mechanization:temp obj.output{id:"minecraft:suspicious_gravel"} run scoreboard players set #success mechanization.data 1
-
-execute if score @s mechanization.data matches 40.. if data storage mechanization:temp obj.input{id:"minecraft:ink_sac"} unless data storage mechanization:temp obj.output.id run item replace block ~ ~ ~ container.7 with minecraft:glow_ink_sac
-execute if score @s mechanization.data matches 40.. if data storage mechanization:temp obj.input{id:"minecraft:ink_sac"} unless data storage mechanization:temp obj.output.id run scoreboard players set #success mechanization.data 1
-execute if score @s mechanization.data matches 40.. if data storage mechanization:temp obj.input{id:"minecraft:ink_sac"} if data storage mechanization:temp obj.output{id:"minecraft:glow_ink_sac"} run scoreboard players set #success mechanization.data 1
-
-execute if score @s mechanization.data matches 100.. if data storage mechanization:temp obj.input{id:"minecraft:egg"} unless data storage mechanization:temp obj.output.id run item replace block ~ ~ ~ container.7 with minecraft:turtle_egg
-execute if score @s mechanization.data matches 100.. if data storage mechanization:temp obj.input{id:"minecraft:egg"} unless data storage mechanization:temp obj.output.id run scoreboard players set #success mechanization.data 1
-execute if score @s mechanization.data matches 100.. if data storage mechanization:temp obj.input{id:"minecraft:egg"} if data storage mechanization:temp obj.output{id:"minecraft:turtle_egg"} run scoreboard players set #success mechanization.data 1
-
-execute if score @s mechanization.data matches 50.. if data storage mechanization:temp obj.input{id:"minecraft:leather_horse_armor"} unless data storage mechanization:temp obj.output.id run item replace block ~ ~ ~ container.7 with minecraft:iron_horse_armor
-execute if score @s mechanization.data matches 50.. if data storage mechanization:temp obj.input{id:"minecraft:leather_horse_armor"} unless data storage mechanization:temp obj.output.id run scoreboard players set #success mechanization.data 1
-
-execute if score @s mechanization.data matches 50.. if data storage mechanization:temp obj.input{id:"minecraft:iron_horse_armor"} unless data storage mechanization:temp obj.output.id run item replace block ~ ~ ~ container.7 with minecraft:golden_horse_armor
-execute if score @s mechanization.data matches 50.. if data storage mechanization:temp obj.input{id:"minecraft:iron_horse_armor"} unless data storage mechanization:temp obj.output.id run scoreboard players set #success mechanization.data 1
-
-execute if score @s mechanization.data matches 50.. if data storage mechanization:temp obj.input{id:"minecraft:golden_horse_armor"} unless data storage mechanization:temp obj.output.id run item replace block ~ ~ ~ container.7 with minecraft:diamond_horse_armor
-execute if score @s mechanization.data matches 50.. if data storage mechanization:temp obj.input{id:"minecraft:golden_horse_armor"} unless data storage mechanization:temp obj.output.id run scoreboard players set #success mechanization.data 1
-
-execute if entity @s[tag=mechanization.upgraded] run function mechanization:nuclear/blocks/alchemy_chamber/recipes/output_upgraded
-
-# cleanup
-execute if score #success mechanization.data matches 1 run scoreboard players set @s mechanization.data 0
-execute if score #success mechanization.data matches 1 run item modify block ~ ~ ~ container.1 mechanization:decrement_count
-execute if score #success mechanization.data matches 1 if data storage mechanization:temp obj.output.id run item modify block ~ ~ ~ container.7 mechanization:increment_count
-execute if score #success mechanization.data matches 1 if data storage mechanization:temp obj.input{Count:1b} run scoreboard players set @s mechanization.time -1
+# set output item based on type
+execute if score #count mechanization.data matches 0 run item replace block ~ ~ ~ container.7 from block -30000000 0 1602 container.0
+execute if score #count mechanization.data matches 1.. run item modify block ~ ~ ~ container.7 mechanization:increment_count
+item modify block ~ ~ ~ container.1 mechanization:decrement_count
+scoreboard players set @s mechanization.data 0
