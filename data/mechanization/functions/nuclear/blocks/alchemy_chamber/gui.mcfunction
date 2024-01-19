@@ -15,6 +15,7 @@ function mechanization:nuclear/blocks/alchemy_chamber/gui_clear
 scoreboard players operation #model mechanization.data = @s mechanization.data
 scoreboard players operation #model mechanization.data *= #cons.16 mechanization.data
 scoreboard players operation #model mechanization.data /= @s mechanization.time
+execute if score #model mechanization.data matches 17.. run scoreboard players set #model mechanization.data 16
 
 execute if score @s mechanization.time matches -1 run scoreboard players set #model mechanization.data 0
 scoreboard players add #model mechanization.data 6423900

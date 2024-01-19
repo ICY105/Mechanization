@@ -6,5 +6,5 @@ execute if score #count mechanization.data matches 0 run return 1
 execute store result score #max_count mechanization.data run data get storage mechanization:temp list[0].output.0.stacksize
 execute if score #count mechanization.data >= #max_count mechanization.data run return 0
 
-$execute if data block -30000000 0 1602 Items[$(0)] run return 1
+$execute if data block -30000000 0 1602 Items[$(1)] run return 1
 return 0
