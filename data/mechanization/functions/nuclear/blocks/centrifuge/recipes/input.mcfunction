@@ -11,6 +11,22 @@ execute store result score #count.0 mechanization.data run data get storage mech
 execute store result score #count.1 mechanization.data run data get storage mechanization:temp obj.slot2.Count
 execute store result score #count.2 mechanization.data run data get storage mechanization:temp obj.slot3.Count
 
+# Spent Fuel
+scoreboard players set #success mechanization.data 0
+execute if score #success mechanization.data matches 0 if data storage mechanization:temp obj.slot1.tag.mechanization{id:"spent_fuel_rod"} run scoreboard players set #success mechanization.data 1
+execute if score #success mechanization.data matches 0 if data storage mechanization:temp obj.slot2.tag.mechanization{id:"spent_fuel_rod"} run scoreboard players set #success mechanization.data 2
+execute if score #success mechanization.data matches 0 if data storage mechanization:temp obj.slot3.tag.mechanization{id:"spent_fuel_rod"} run scoreboard players set #success mechanization.data 3
+execute if score #success mechanization.data matches 1 store result score #enrichment mechanization.data run data get storage mechanization:temp obj.slot1.tag.mechanization.enrichment
+execute if score #success mechanization.data matches 2 store result score #enrichment mechanization.data run data get storage mechanization:temp obj.slot2.tag.mechanization.enrichment
+execute if score #success mechanization.data matches 3 store result score #enrichment mechanization.data run data get storage mechanization:temp obj.slot3.tag.mechanization.enrichment
+execute if score #success mechanization.data matches 1.. run scoreboard players operation #enrichment mechanization.data *= #cons.36 mechanization.data
+execute if score #success mechanization.data matches 1.. run scoreboard players set #max_out mechanization.data 4000
+execute if score #success mechanization.data matches 1.. run scoreboard players operation #max_out mechanization.data -= #enrichment mechanization.data
+execute if score #success mechanization.data matches 1.. if score @s fluid.storage.1 matches 1.. unless data storage mechanization:temp obj.tank_2{id:"molten_plutonium"} run scoreboard players set #success mechanization.data -1
+execute if score #success mechanization.data matches 1.. if score @s fluid.storage.1 > #max_out mechanization.data run scoreboard players set #success mechanization.data -1
+execute if score #success mechanization.data matches 1.. run scoreboard players operation @s mechanization.time = #nuclear.cf.centrifuge.speed mechanization.data
+execute if score #success mechanization.data matches 1.. run scoreboard players operation @s mechanization.time *= #cons.5 mechanization.data
+
 # Heavy Water
 scoreboard players set #success mechanization.data 0
 execute if score #success mechanization.data matches 0 if score @s fluid.storage.0 matches 1000.. if data storage mechanization:temp obj.tank_1{id:"water"} run scoreboard players set #success mechanization.data 1

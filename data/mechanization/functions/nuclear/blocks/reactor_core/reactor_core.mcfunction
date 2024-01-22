@@ -4,7 +4,6 @@
 # mechanization.fluid.out: fuel split
 # mechanization.time: enrichment %
 
-
 # cleanup
 execute unless block ~ ~ ~ minecraft:barrier run function mechanization:nuclear/blocks/reactor_core/break_hard
 execute unless block ~ ~ ~ minecraft:barrier run return fail
