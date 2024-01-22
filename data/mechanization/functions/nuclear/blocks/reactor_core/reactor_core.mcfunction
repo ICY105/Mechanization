@@ -25,7 +25,10 @@ scoreboard players operation @s mechanization.data -= #heat_total mechanization.
 execute unless score @s mechanization.data matches 20.. run scoreboard players set @s mechanization.data 20
 
 # heat display
-execute if score @s mechanization.data matches 2000.. run particle minecraft:flame ~ ~1 ~ 0.2 0.2 0.2 0.1 10
+execute if score @s mechanization.data matches 600..1099 run particle minecraft:white_smoke ~ ~-0.3 ~ 0.4 0 0.4 0 15
+execute if score @s mechanization.data matches 1100..1400 run particle minecraft:smoke ~ ~-0.3 ~ 0.4 0 0.4 0 15
+execute if score @s mechanization.data matches 1500..1700 run particle minecraft:large_smoke ~ ~-0.3 ~ 0.4 0 0.4 0 15
+execute if score @s mechanization.data matches 1800.. run particle minecraft:flame ~ ~ ~ 0.4 0.1 0.4 0 15
 
 # generate neutrons
 execute unless entity @s[tag=mechanization.reactor_core.uranium] unless entity @s[tag=mechanization.reactor_core.mox] unless score @s mechanization.fluid.in matches 1.. run return fail
@@ -47,3 +50,7 @@ execute store result entity @s item.tag.fuel_rod.tag.mechanization.fuel int 1 ru
 scoreboard players operation #max_fuel mechanization.data = @s mechanization.time
 scoreboard players operation #max_fuel mechanization.data *= #cons.100000 mechanization.data
 execute if score #fuel mechanization.data >= #max_fuel mechanization.data run function mechanization:nuclear/blocks/reactor_core/deplete_fuel
+
+# melt down
+execute if score @s mechanization.data matches 2001.. run setblock ~ ~ ~ minecraft:lava
+execute if score @s mechanization.data matches 2001.. run function mechanization:nuclear/blocks/reactor_core/break_hard
