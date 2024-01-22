@@ -30,6 +30,7 @@ scoreboard players set #cons.150 mechanization.data 150
 scoreboard players set #cons.180 mechanization.data 180
 scoreboard players set #cons.250 mechanization.data 250
 scoreboard players set #cons.10000 mechanization.data 10000
+scoreboard players set #cons.100000 mechanization.data 100000
 scoreboard players set #cons.1000000 mechanization.data 1000000
 scoreboard players set #cons.max_int mechanization.data 2147483647
 scoreboard players set #cons.min_int mechanization.data -2147483648

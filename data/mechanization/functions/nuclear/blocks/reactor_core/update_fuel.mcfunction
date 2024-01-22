@@ -2,8 +2,12 @@
 data modify entity @s item.tag.fuel_rod set from storage mechanization:temp obj
 data modify entity @s item.tag.fuel_rod.Slot set value 0b
 
+tag @s remove mechanization.reactor_core.mox
+tag @s remove mechanization.reactor_core.uranium
+tag @s remove mechanization.reactor_core.waste
 execute if data entity @s item.tag.fuel_rod.tag.mechanization{id:"mox_fuel_rod"} run tag @s add mechanization.reactor_core.mox
 execute if data entity @s item.tag.fuel_rod.tag.mechanization{id:"uranium_fuel_rod"} run tag @s add mechanization.reactor_core.uranium
+execute if data entity @s item.tag.fuel_rod.tag.mechanization{id:"spent_fuel_rod"} run tag @s add mechanization.reactor_core.waste
 
 function mechanization:nuclear/blocks/reactor_core/update_model
 scoreboard players operation @s mechanization.time = #enrichment mechanization.data

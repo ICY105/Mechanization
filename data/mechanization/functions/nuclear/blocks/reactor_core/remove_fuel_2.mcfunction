@@ -1,6 +1,7 @@
 
 tag @s remove mechanization.reactor_core.mox
 tag @s remove mechanization.reactor_core.uranium
+tag @s remove mechanization.reactor_core.waste
 
 scoreboard players set @s mechanization.time 0
 scoreboard players set @s mechanization.fluid.out 0

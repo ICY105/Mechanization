@@ -7,6 +7,7 @@ item replace entity @p[tag=mechanization.interacted,distance=..12] weapon.mainha
 
 tag @s remove mechanization.reactor_core.mox
 tag @s remove mechanization.reactor_core.uranium
+tag @s remove mechanization.reactor_core.waste
 
 data modify entity @s item.tag.fuel_rod set value {}
 

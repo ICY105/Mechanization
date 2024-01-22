@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"item.mechanization.mox_fuel_rod","color":"dark_aqua","italic":false}
+              "name": {"translate":"item.mechanization.spent_fuel_rod","color":"dark_aqua","italic":false, "with":["1"]}
             },
             {
               "function": "minecraft:set_lore",
@@ -20,7 +20,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6423002, HideFlags: 6, mechanization:{id:\"mox_fuel_rod\"}}"
+              "tag":"{CustomModelData: 6423003, HideFlags: 6, mechanization:{id:\"spent_fuel_rod\", enrichment: 1, fuel: 100}}"
             }
           ]
         }

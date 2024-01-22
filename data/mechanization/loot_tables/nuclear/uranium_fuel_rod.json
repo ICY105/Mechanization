@@ -20,7 +20,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6423001, HideFlags: 6, mechanization:{id:\"uranium_fuel_rod\", enrichment: 1}, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:uranium_fuel_rod\"}}}}]} }"
+              "tag":"{CustomModelData: 6423001, HideFlags: 6, mechanization:{id:\"uranium_fuel_rod\", enrichment: 1}}"
             }
           ]
         }
