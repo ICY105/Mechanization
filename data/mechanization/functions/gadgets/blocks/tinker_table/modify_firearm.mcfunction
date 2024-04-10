@@ -102,29 +102,29 @@ data modify storage mechanization:temp obj.tag.display.Lore append value '{"tran
 
 scoreboard players operation #damage mechanization.data /= #cons.10 mechanization.data
 execute if score #damage mechanization.data matches 0 run scoreboard players set #damage mechanization.data 1
-data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#damage","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.damage"}]'
+data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#damage","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.damage"}]'
 data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
-data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#fire_rate","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.fire_rate"}]'
+data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#fire_rate","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.fire_rate"}]'
 data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
-data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#velocity","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.velocity"}]'
+data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#velocity","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.velocity"}]'
 data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
-data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#range","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.epac_range"}]'
+data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#range","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.epac_range"}]'
 data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
-execute if score #count mechanization.data matches 2.. run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#count","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.shot_count"}]'
+execute if score #count mechanization.data matches 2.. run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#count","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.shot_count"}]'
 execute if score #count mechanization.data matches 2.. run data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
-data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#heat","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.heat"}]'
+data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#heat","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.heat"}]'
 data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
-data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#cooling","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.cooling"}]'
+data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#cooling","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.cooling"}]'
 data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
-data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":"false"},{"score":{"name":"#energy","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.energy"}]'
+data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#energy","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.energy"}]'
 data modify storage mechanization:temp obj.tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
 
-execute if score #bouncy mechanization.data matches 1 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"translate":"lore.mechanization.bouncy","color":"dark_green","italic":"false"}]'
+execute if score #bouncy mechanization.data matches 1 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"translate":"lore.mechanization.bouncy","color":"dark_green","italic":false}]'
 
