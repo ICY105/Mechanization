@@ -22,7 +22,7 @@ scoreboard objectives add mechanization.use_hoe minecraft.used:minecraft.netheri
 # mark version
 scoreboard players set #mech.ver.major load.status 4
 scoreboard players set #mech.ver.minor load.status 2
-scoreboard players set #mech.ver.fix load.status 3
+scoreboard players set #mech.ver.fix load.status 4
 
 # configure storage
 data merge storage mechanization:temp {obj:{}, list:[], var:"", io:{}}
