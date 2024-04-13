@@ -6,13 +6,13 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-		  "name": "mechanization:base/tin_ingot",
-		  "functions":[
-			{
-				"function":"set_count",
-				"count":2
-			}
-		  ]
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 2
+            }
+          ],
+          "value": "mechanization:base/tin_ingot"
         }
       ]
     }

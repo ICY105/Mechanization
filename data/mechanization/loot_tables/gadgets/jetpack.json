@@ -6,22 +6,57 @@
       "entries": [
         {
           "type": "minecraft:item",
-		      "name": "minecraft:elytra",
+          "name": "minecraft:elytra",
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"item.mechanization.jetpack","color":"dark_aqua","italic":false}
+              "name": {
+                "translate": "item.mechanization.jetpack",
+                "color": "dark_aqua",
+                "italic": false
+              }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {"translate":"lore.mechanization.upgrade_modular_chestplate","color":"gray","italic":false},
-              [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+                {
+                  "translate": "lore.mechanization.upgrade_modular_chestplate",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6424111, Unbreakable:1b, HideFlags:70, mechanization:{id:\"jetpack\", upgrade:{type:3b,effect:\"jetpack\"}} }"
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"jetpack\",upgrade:{type:3b,effect:\"jetpack\"}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6424111,
+                "!minecraft:damage": {},
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                },
+                "minecraft:dyed_color": {
+                  "rgb": 0,
+                  "show_in_tooltip": false
+                }
+              }
             }
           ]
         }

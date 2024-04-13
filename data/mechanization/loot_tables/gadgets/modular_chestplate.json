@@ -6,74 +6,137 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:leather_chestplate",
+          "name": "minecraft:leather_chestplate",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.mechanization.modular_chestplate","color":"dark_aqua","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-			     {"text":""},
-				 {"translate":"item.modifiers.chest","color":"gray","italic":false},
-				[{"text":"+0 ","color":"blue","italic":false},{"translate":"attribute.name.generic.armor"}],
-				[{"text":"+0 ","color":"blue","italic":false},{"translate":"attribute.name.generic.armor_toughness"}],
-				[{"text":"+0 ","color":"blue","italic":false},{"translate":"lore.mechanization.shield_capacity"}],
-				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
-			  ]
-			},
-			{
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6424107, HideFlags:70, mechanization:{id:\"modular_chestplate\", upgrades:{type:3b, count:5b, shield:0, items:[]}}, display:{color:15170646}}"
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.mechanization.modular_chestplate",
+                "color": "dark_aqua",
+                "italic": false
+              }
             },
-			{
-			  "function":"set_attributes",
-			  "modifiers": [
-				{
-				  "name":"generic.armor",
-				  "attribute":"generic.armor",
-				  "operation":"addition",
-				  "amount":0,
-				  "slot":"chest"
-				},
-				{
-				  "name":"generic.armor_toughness",
-				  "attribute":"generic.armor_toughness",
-				  "operation":"addition",
-				  "amount":0,
-				  "slot":"chest"
-				},
-				{
-				  "name":"generic.max_health",
-				  "attribute":"generic.max_health",
-				  "operation":"addition",
-				  "amount":0,
-				  "slot":"chest"
-				},
-				{
-				  "name":"generic.movement_speed",
-				  "attribute":"generic.movement_speed",
-				  "operation":"addition",
-				  "amount":0,
-				  "slot":"chest"
-				},
-				{
-				  "name":"generic.knockback_resistance",
-				  "attribute":"generic.knockback_resistance",
-				  "operation":"addition",
-				  "amount":0,
-				  "slot":"chest"
-				},
-				{
-				  "name":"generic.attack_damage",
-				  "attribute":"generic.attack_damage",
-				  "operation":"multiply_total",
-				  "amount":0,
-				  "slot":"chest"
-				}
-			  ]
-			}
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": ""
+                },
+                {
+                  "translate": "item.modifiers.chest",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "+0 ",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "translate": "attribute.name.generic.armor"
+                  }
+                ],
+                [
+                  {
+                    "text": "+0 ",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "translate": "attribute.name.generic.armor_toughness"
+                  }
+                ],
+                [
+                  {
+                    "text": "+0 ",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.shield_capacity"
+                  }
+                ],
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"modular_chestplate\",upgrades:{type:3b,count:5b,shield:0,items:[]}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6424107,
+                "minecraft:dyed_color": {
+                  "rgb": 15170646,
+                  "show_in_tooltip": false
+                },
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "name": "generic.armor",
+                  "attribute": "generic.armor",
+                  "operation": "add_value",
+                  "amount": 0,
+                  "slot": "chest"
+                },
+                {
+                  "name": "generic.armor_toughness",
+                  "attribute": "generic.armor_toughness",
+                  "operation": "add_value",
+                  "amount": 0,
+                  "slot": "chest"
+                },
+                {
+                  "name": "generic.max_health",
+                  "attribute": "generic.max_health",
+                  "operation": "add_value",
+                  "amount": 0,
+                  "slot": "chest"
+                },
+                {
+                  "name": "generic.movement_speed",
+                  "attribute": "generic.movement_speed",
+                  "operation": "add_value",
+                  "amount": 0,
+                  "slot": "chest"
+                },
+                {
+                  "name": "generic.knockback_resistance",
+                  "attribute": "generic.knockback_resistance",
+                  "operation": "add_value",
+                  "amount": 0,
+                  "slot": "chest"
+                },
+                {
+                  "name": "generic.attack_damage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "add_multiplied_total",
+                  "amount": 0,
+                  "slot": "chest"
+                }
+              ]
+            }
           ]
         }
       ]

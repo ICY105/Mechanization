@@ -6,23 +6,67 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.mechanization.nether_upgrade","color":"dark_purple","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-			    {"translate":"lore.mechanization.upgrade.1","color":"white","italic":false,"with":[{"translate":"lore.mechanization.sneak"},{"text":"\uee08","font":"mechanization:gui"}]},
-				{"translate":"lore.mechanization.upgrade.2","color":"white","italic":false},
-				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
-			  ]
-			},
-			{
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421103, HideFlags: 6, Unbreakable:1b, mechanization:{ id:\"nether_upgrade\" } }"
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.mechanization.nether_upgrade",
+                "color": "dark_purple",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "lore.mechanization.upgrade.1",
+                  "color": "white",
+                  "italic": false,
+                  "with": [
+                    {
+                      "translate": "lore.mechanization.sneak"
+                    },
+                    {
+                      "text": "\uee08",
+                      "font": "mechanization:gui"
+                    }
+                  ]
+                },
+                {
+                  "translate": "lore.mechanization.upgrade.2",
+                  "color": "white",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"nether_upgrade\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6421103,
+                "!minecraft:damage": {},
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                }
+              }
             }
           ]
         }

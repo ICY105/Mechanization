@@ -6,22 +6,67 @@
       "entries": [
         {
           "type": "minecraft:item",
-		      "name": "minecraft:blast_furnace",
+          "name": "minecraft:blast_furnace",
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"block.mechanization.thermoelectric_generator","color":"dark_aqua","italic":false}
+              "name": {
+                "translate": "block.mechanization.thermoelectric_generator",
+                "color": "dark_aqua",
+                "italic": false
+              }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {"translate":"lore.mechanization.generate","with":["1-41"],"color":"white","italic":false},
-                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+                {
+                  "translate": "lore.mechanization.generate",
+                  "with": [
+                    "1-41"
+                  ],
+                  "color": "white",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6422030, HideFlags: 6, mechanization:{id:\"thermoelectric_generator\"}, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:thermoelectric_generator\"}}}}]} }"
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"thermoelectric_generator\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6422030,
+                "minecraft:container": [
+                  {
+                    "slot": 0,
+                    "item": {
+                      "id": "minecraft:stone",
+                      "count": 1,
+                      "components": {
+                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:thermoelectric_generator\"}}}"
+                      }
+                    }
+                  }
+                ],
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                }
+              }
             }
           ]
         }

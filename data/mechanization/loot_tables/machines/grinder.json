@@ -6,22 +6,67 @@
       "entries": [
         {
           "type": "minecraft:item",
-		      "name": "minecraft:blast_furnace",
+          "name": "minecraft:blast_furnace",
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"block.mechanization.grinder","color":"dark_aqua","italic":false}
+              "name": {
+                "translate": "block.mechanization.grinder",
+                "color": "dark_aqua",
+                "italic": false
+              }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {"translate":"lore.mechanization.consume","with":["40"],"color":"white","italic":false},
-                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+                {
+                  "translate": "lore.mechanization.consume",
+                  "with": [
+                    "40"
+                  ],
+                  "color": "white",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6422009, HideFlags: 6, mechanization:{id:\"grinder\"}, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:grinder\"}}}}]} }"
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"grinder\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6422009,
+                "minecraft:container": [
+                  {
+                    "slot": 0,
+                    "item": {
+                      "id": "minecraft:stone",
+                      "count": 1,
+                      "components": {
+                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:grinder\"}}}"
+                      }
+                    }
+                  }
+                ],
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                }
+              }
             }
           ]
         }

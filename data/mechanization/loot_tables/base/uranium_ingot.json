@@ -6,21 +6,44 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:structure_block",
+          "name": "minecraft:structure_block",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.mechanization.uranium_ingot","color":"green","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
-			  ]
-			},
-			{
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421431, HideFlags: 32, mechanization:{ id:\"uranium_ingot\" }, smithed:{dict:{ingot:{uranium:1b}}}  }"
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.mechanization.uranium_ingot",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"uranium_ingot\"},smithed:{dict:{ingot:{uranium:1b}}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6421431,
+                "minecraft:hide_additional_tooltip": {}
+              }
             }
           ]
         }

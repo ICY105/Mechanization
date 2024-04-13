@@ -6,24 +6,79 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:structure_block",
+          "name": "minecraft:structure_block",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.mechanization.iron_gear","color":"white","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-				[{"translate":"lore.mechanization.upgrade_drill","color":"gray","italic":false}],
-			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"1000"},{"text":"1000"}]}],
-				[{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" +1 "},{"translate":"lore.mechanization.mining_area"}],
-				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
-			  ]
-			},
-			{
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421451, HideFlags: 32, mechanization:{ id:\"iron_gear\", upgrade:{type:2b, effect:\"none\", max_durability:1000, stats:{mining_area:1}} }, smithed:{dict:{gear:{iron:1b}}} }"
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.mechanization.iron_gear",
+                "color": "white",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "translate": "lore.mechanization.upgrade_drill",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "translate": "item.durability",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                      {
+                        "text": "1000"
+                      },
+                      {
+                        "text": "1000"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "translate": "lore.mechanization.upgrade_effects",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " +1 "
+                  },
+                  {
+                    "translate": "lore.mechanization.mining_area"
+                  }
+                ],
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"iron_gear\",upgrade:{type:2b,effect:\"none\",max_durability:1000,stats:{mining_area:1}}},smithed:{dict:{gear:{iron:1b}}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6421451,
+                "minecraft:hide_additional_tooltip": {}
+              }
             }
           ]
         }

@@ -6,21 +6,56 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:blast_furnace",
+          "name": "minecraft:blast_furnace",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"block.mechanization.uranium","color":"green","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
-			  ]
-			},
-			{
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421434, HideFlags: 32, mechanization:{ id:\"uranium_block\" }, smithed:{dict:{block:{uranium:1b}}}, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:uranium_block\"}}}}]}  }"
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "block.mechanization.uranium",
+                "color": "green",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"uranium_block\"},smithed:{dict:{block:{uranium:1b}}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6421434,
+                "minecraft:container": [
+                  {
+                    "slot": 0,
+                    "item": {
+                      "id": "minecraft:stone",
+                      "count": 1,
+                      "components": {
+                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:uranium_block\"}}}"
+                      }
+                    }
+                  }
+                ],
+                "minecraft:hide_additional_tooltip": {}
+              }
             }
           ]
         }

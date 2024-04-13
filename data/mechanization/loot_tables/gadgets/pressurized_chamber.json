@@ -6,24 +6,70 @@
       "entries": [
         {
           "type": "minecraft:item",
-		      "name": "minecraft:structure_block",
+          "name": "minecraft:structure_block",
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"item.mechanization.pressurized_chamber","color":"dark_aqua","italic":false}
+              "name": {
+                "translate": "item.mechanization.pressurized_chamber",
+                "color": "dark_aqua",
+                "italic": false
+              }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                [{"translate":"lore.mechanization.upgrade_plasma_weapon","color":"gray","italic":false}],
-                [{"text":" 15 ","color":"green","italic":false},{"translate":"lore.mechanization.damage"}],
-                [{"text":" 10 ","color":"green","italic":false},{"translate":"lore.mechanization.fire_rate"}],
-                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+                [
+                  {
+                    "translate": "lore.mechanization.upgrade_plasma_weapon",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": " 15 ",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.damage"
+                  }
+                ],
+                [
+                  {
+                    "text": " 10 ",
+                    "color": "green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.fire_rate"
+                  }
+                ],
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6424205, mechanization:{id:\"pressurized_chamber\", upgrade:{type:4b}}}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"pressurized_chamber\",upgrade:{type:4b}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6424205
+              }
             }
           ]
         }

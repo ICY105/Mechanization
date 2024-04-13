@@ -6,13 +6,13 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-		  "name": "mechanization:base/steel_raw",
-		  "functions":[
-			{
-				"function":"set_count",
-				"count":9
-			}
-		  ]
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 9
+            }
+          ],
+          "value": "mechanization:base/steel_raw"
         }
       ]
     }

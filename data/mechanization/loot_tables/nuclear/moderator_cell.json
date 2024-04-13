@@ -10,17 +10,55 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"block.mechanization.moderator_cell","color":"dark_red","italic":false}
+              "name": {
+                "translate": "block.mechanization.moderator_cell",
+                "color": "dark_red",
+                "italic": false
+              }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6423006, HideFlags: 6, mechanization:{id:\"moderator_cell\"}, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:moderator_cell\"}}}}]} }"
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"moderator_cell\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6423006,
+                "minecraft:container": [
+                  {
+                    "slot": 0,
+                    "item": {
+                      "id": "minecraft:stone",
+                      "count": 1,
+                      "components": {
+                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:moderator_cell\"}}}"
+                      }
+                    }
+                  }
+                ],
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                }
+              }
             }
           ]
         }

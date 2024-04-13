@@ -6,28 +6,116 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:structure_block",
+          "name": "minecraft:structure_block",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.mechanization.amethyst_rod","color":"light_purple","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-				[{"translate":"lore.mechanization.upgrade_energy_saber","color":"gray","italic":false}],
-			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"3000"},{"text":"3000"}]}],
-				[{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"lore.mechanization.upgrade_weakness"}],
-				[{"translate":"lore.mechanization.upgrade_stats","color":"gray","italic":false}],
-				[{"text":"  2.5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
-				[{"text":"  0.3 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_speed"}],
-				[{"text":"  1 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.energy_saber_range"}],
-				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
-			  ]
-			},
-			{
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421542, HideFlags: 32, mechanization:{ id:\"amethyst_rod\", upgrade:{type:1b, effect:\"weakness\", max_durability:3000, stats:{attack_damage:2.5, attack_speed:0.3, energy_saber_range:1}} }, smithed:{ dict:{rod:{amethyst:1b}} }}"
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.mechanization.amethyst_rod",
+                "color": "light_purple",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "translate": "lore.mechanization.upgrade_energy_saber",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "translate": "item.durability",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                      {
+                        "text": "3000"
+                      },
+                      {
+                        "text": "3000"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "translate": "lore.mechanization.upgrade_effects",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "translate": "lore.mechanization.upgrade_weakness"
+                  }
+                ],
+                [
+                  {
+                    "translate": "lore.mechanization.upgrade_stats",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "  2.5 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "attribute.name.generic.attack_damage"
+                  }
+                ],
+                [
+                  {
+                    "text": "  0.3 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "attribute.name.generic.attack_speed"
+                  }
+                ],
+                [
+                  {
+                    "text": "  1 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.energy_saber_range"
+                  }
+                ],
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"amethyst_rod\",upgrade:{type:1b,effect:\"weakness\",max_durability:3000,stats:{attack_damage:2.5d,attack_speed:0.3d,energy_saber_range:1}}},smithed:{dict:{rod:{amethyst:1b}}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6421542,
+                "minecraft:hide_additional_tooltip": {}
+              }
             }
           ]
         }

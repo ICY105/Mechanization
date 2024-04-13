@@ -10,18 +10,50 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"item.mechanization.fuel_rod","color":"dark_aqua","italic":false}
+              "name": {
+                "translate": "item.mechanization.fuel_rod",
+                "color": "dark_aqua",
+                "italic": false
+              }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                [{"translate":"lore.mechanization.fuel_rod","color":"gray","italic":false}],
-                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+                [
+                  {
+                    "translate": "lore.mechanization.fuel_rod",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6423000, HideFlags: 6, mechanization:{id:\"fuel_rod\"}}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"fuel_rod\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6423000,
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                }
+              }
             }
           ]
         }

@@ -6,28 +6,122 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:structure_block",
+          "name": "minecraft:structure_block",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.mechanization.crystal_composite_rod","color":"dark_red","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-				[{"translate":"lore.mechanization.upgrade_energy_saber","color":"gray","italic":false}],
-			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"6000"},{"text":"6000"}]}],
-				[{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"enchantment.minecraft.looting"},{"text":" "},{"translate":"enchantment.level.3"}],
-				[{"translate":"lore.mechanization.upgrade_stats","color":"gray","italic":false}],
-				[{"text":"  3 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
-				[{"text":"  0.4 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_speed"}],
-				[{"text":"  2 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.energy_saber_range"}],
-				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
-			  ]
-			},
-			{
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421414, HideFlags: 32, mechanization:{ id:\"crystal_composite_rod\", upgrade:{type:1b, effect:\"looting_3\", max_durability:6000, stats:{attack_damage:3, attack_speed:0.4, energy_saber_range:2}} }, smithed:{dict:{rod:{amethyst:1b}}} }"
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.mechanization.crystal_composite_rod",
+                "color": "dark_red",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "translate": "lore.mechanization.upgrade_energy_saber",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "translate": "item.durability",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                      {
+                        "text": "6000"
+                      },
+                      {
+                        "text": "6000"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "translate": "lore.mechanization.upgrade_effects",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "translate": "enchantment.minecraft.looting"
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "translate": "enchantment.level.3"
+                  }
+                ],
+                [
+                  {
+                    "translate": "lore.mechanization.upgrade_stats",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "  3 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "attribute.name.generic.attack_damage"
+                  }
+                ],
+                [
+                  {
+                    "text": "  0.4 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "attribute.name.generic.attack_speed"
+                  }
+                ],
+                [
+                  {
+                    "text": "  2 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.energy_saber_range"
+                  }
+                ],
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"crystal_composite_rod\",upgrade:{type:1b,effect:\"looting_3\",max_durability:6000,stats:{attack_damage:3,attack_speed:0.4d,energy_saber_range:2}}},smithed:{dict:{rod:{amethyst:1b}}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6421414,
+                "minecraft:hide_additional_tooltip": {}
+              }
             }
           ]
         }

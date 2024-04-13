@@ -6,23 +6,75 @@
       "entries": [
         {
           "type": "minecraft:item",
-		      "name": "minecraft:blast_furnace",
+          "name": "minecraft:blast_furnace",
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"block.mechanization.battery.tier_2","color":"dark_red","italic":false}
+              "name": {
+                "translate": "block.mechanization.battery.tier_2",
+                "color": "dark_red",
+                "italic": false
+              }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {"translate":"lore.mechanization.storage","color":"white","italic":false,"with":[200000]},
-                {"translate":"lore.mechanization.transfer","color":"white","italic":false,"with":[2048]},
-                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+                {
+                  "translate": "lore.mechanization.storage",
+                  "color": "white",
+                  "italic": false,
+                  "with": [
+                    200000
+                  ]
+                },
+                {
+                  "translate": "lore.mechanization.transfer",
+                  "color": "white",
+                  "italic": false,
+                  "with": [
+                    2048
+                  ]
+                },
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421001, HideFlags: 6, mechanization:{id:\"tier_2_battery\"}, BlockEntityTag:{Items:[{id:\"minecraft:stone\", Count:1b, Slot:0b, tag:{smithed:{block:{id:\"mechanization:tier_2_battery\"}}}}]} }"
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"tier_2_battery\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6421001,
+                "minecraft:container": [
+                  {
+                    "slot": 0,
+                    "item": {
+                      "id": "minecraft:stone",
+                      "count": 1,
+                      "components": {
+                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:tier_2_battery\"}}}"
+                      }
+                    }
+                  }
+                ],
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                }
+              }
             }
           ]
         }

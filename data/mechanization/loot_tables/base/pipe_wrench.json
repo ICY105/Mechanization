@@ -6,22 +6,62 @@
       "entries": [
         {
           "type": "minecraft:item",
-		      "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
-			        "function": "minecraft:set_name",
-			        "name": {"translate":"item.mechanization.pipe_wrench","color":"gray","italic":false}
-			      },
-			      {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.mechanization.pipe_wrench",
+                "color": "gray",
+                "italic": false
+              }
+            },
+            {
               "function": "minecraft:set_lore",
               "lore": [
-                {"translate":"lore.mechanization.pipe_wrench","color":"white","italic":false,"with":[{"translate":"lore.mechanization.sneak"},{"text":"\uee08","font":"mechanization:gui"}]},
-                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+                {
+                  "translate": "lore.mechanization.pipe_wrench",
+                  "color": "white",
+                  "italic": false,
+                  "with": [
+                    {
+                      "translate": "lore.mechanization.sneak"
+                    },
+                    {
+                      "text": "\uee08",
+                      "font": "mechanization:gui"
+                    }
+                  ]
+                },
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421111, HideFlags: 6, Unbreakable:1b, mechanization:{ id:\"pipe_wrench\" } }"
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"pipe_wrench\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6421111,
+                "!minecraft:damage": {},
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                }
+              }
             }
           ]
         }

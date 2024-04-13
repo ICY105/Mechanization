@@ -6,13 +6,13 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "mechanization:machines/fluid_pipe",
-          "functions":[
+          "functions": [
             {
-              "function":"set_count",
-              "count":2
+              "function": "set_count",
+              "count": 2
             }
-          ]
+          ],
+          "value": "mechanization:machines/fluid_pipe"
         }
       ]
     }

@@ -6,35 +6,70 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:leather_boots",
+          "name": "minecraft:leather_boots",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.mechanization.phase_boots","color":"dark_aqua","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-			    {"translate":"lore.mechanization.upgrade_modular_boots","color":"gray","italic":false},
-				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
-			  ]
-			},
-			{
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6424115, Unbreakable:1b, HideFlags:70, mechanization:{id:\"phase_boots\", upgrade:{type:3b,effect:\"wall_walk\"}}, display:{color:13421772}}"
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.mechanization.phase_boots",
+                "color": "dark_aqua",
+                "italic": false
+              }
             },
-			{
-			  "function":"set_attributes",
-			  "modifiers": [
-				{
-				  "name":"generic.armor",
-				  "attribute":"generic.armor",
-				  "operation":"addition",
-				  "amount":0,
-				  "slot":"head"
-				}
-			  ]
-			}
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "lore.mechanization.upgrade_modular_boots",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"phase_boots\",upgrade:{type:3b,effect:\"wall_walk\"}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6424115,
+                "!minecraft:damage": {},
+                "minecraft:dyed_color": {
+                  "rgb": 13421772,
+                  "show_in_tooltip": false
+                },
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "name": "generic.armor",
+                  "attribute": "generic.armor",
+                  "operation": "add_value",
+                  "amount": 0,
+                  "slot": "head"
+                }
+              ]
+            }
           ]
         }
       ]

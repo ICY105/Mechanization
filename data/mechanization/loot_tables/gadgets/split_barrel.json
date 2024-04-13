@@ -6,25 +6,80 @@
       "entries": [
         {
           "type": "minecraft:item",
-		      "name": "minecraft:structure_block",
+          "name": "minecraft:structure_block",
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"item.mechanization.split_barrel","color":"dark_red","italic":false}
+              "name": {
+                "translate": "item.mechanization.split_barrel",
+                "color": "dark_red",
+                "italic": false
+              }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                [{"translate":"lore.mechanization.upgrade_plasma_weapon","color":"gray","italic":false}],
-                [{"text":" 1 -> 9 ","color":"blue","italic":false},{"translate":"lore.mechanization.shot_count"}],
-                [{"text":" 6 -> 4 ","color":"red","italic":false},{"translate":"lore.mechanization.velocity"}],
-                [{"text":" 128 -> 32 ","color":"red","italic":false},{"translate":"lore.mechanization.epac_range"}],
-                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+                [
+                  {
+                    "translate": "lore.mechanization.upgrade_plasma_weapon",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": " 1 -> 9 ",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.shot_count"
+                  }
+                ],
+                [
+                  {
+                    "text": " 6 -> 4 ",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.velocity"
+                  }
+                ],
+                [
+                  {
+                    "text": " 128 -> 32 ",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.epac_range"
+                  }
+                ],
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6424201, mechanization:{id:\"split_barrel\", upgrade:{type:4b}}}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"split_barrel\",upgrade:{type:4b}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6424201
+              }
             }
           ]
         }

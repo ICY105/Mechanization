@@ -6,24 +6,79 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:structure_block",
+          "name": "minecraft:structure_block",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.mechanization.diamond_gear","color":"dark_aqua","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-				[{"translate":"lore.mechanization.upgrade_drill","color":"gray","italic":false}],
-			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"3000"},{"text":"3000"}]}],
-				[{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"lore.mechanization.upgrade_reinforced"}],
-				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
-			  ]
-			},
-			{
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421511, HideFlags: 32, mechanization:{ id:\"diamond_gear\", upgrade:{type:2b, effect:\"fortune_3\", max_durability:3000, stats:{}} }, smithed:{dict:{gear:{diamond:1b}}} }"
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.mechanization.diamond_gear",
+                "color": "dark_aqua",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "translate": "lore.mechanization.upgrade_drill",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "translate": "item.durability",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                      {
+                        "text": "3000"
+                      },
+                      {
+                        "text": "3000"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "translate": "lore.mechanization.upgrade_effects",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "translate": "lore.mechanization.upgrade_reinforced"
+                  }
+                ],
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"diamond_gear\",upgrade:{type:2b,effect:\"fortune_3\",max_durability:3000,stats:{}}},smithed:{dict:{gear:{diamond:1b}}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6421511,
+                "minecraft:hide_additional_tooltip": {}
+              }
             }
           ]
         }

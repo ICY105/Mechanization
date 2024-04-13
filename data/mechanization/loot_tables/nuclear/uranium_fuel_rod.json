@@ -10,17 +10,46 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"item.mechanization.uranium_fuel_rod","color":"dark_aqua","italic":false, "with":["1"]}
+              "name": {
+                "translate": "item.mechanization.uranium_fuel_rod",
+                "color": "dark_aqua",
+                "italic": false,
+                "with": [
+                  "1"
+                ]
+              }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6423001, HideFlags: 6, mechanization:{id:\"uranium_fuel_rod\", enrichment: 1}}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"uranium_fuel_rod\",enrichment:1}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6423001,
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                }
+              }
             }
           ]
         }

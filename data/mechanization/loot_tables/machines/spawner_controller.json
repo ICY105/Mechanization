@@ -6,22 +6,55 @@
       "entries": [
         {
           "type": "minecraft:item",
-		      "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"block.mechanization.spawner_controller","color":"dark_purple","italic":false}
+              "name": {
+                "translate": "block.mechanization.spawner_controller",
+                "color": "dark_purple",
+                "italic": false
+              }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {"translate":"lore.mechanization.consume","with":["64"],"color":"white","italic":false},
-                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+                {
+                  "translate": "lore.mechanization.consume",
+                  "with": [
+                    "64"
+                  ],
+                  "color": "white",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6422019, HideFlags: 6, mechanization:{id:\"spawner_controller\"}}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"spawner_controller\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6422019,
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                }
+              }
             }
           ]
         }

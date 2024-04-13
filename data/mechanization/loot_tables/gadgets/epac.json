@@ -6,30 +6,126 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:carrot_on_a_stick",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.mechanization.plasma_weapon","color":"dark_red","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-				 {"text":""},
-				 {"translate":"item.modifiers.mainhand","color":"gray","italic":false},
-			    [{"text":" 5 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.damage"}],
-			    [{"text":" 4 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.fire_rate"}],
-			    [{"text":" 6 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.velocity"}],
-			    [{"text":" 128 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.epac_range"}],
-			    [{"text":" 40 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.heat"}],
-			    [{"text":" 6 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.cooling"}],
-			    [{"text":" 20 ","color":"dark_green","italic":false},{"translate":"lore.mechanization.energy"}],
-				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
-			  ]
-			},
-			{
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6424102, HideFlags: 6, Unbreakable:1b, mechanization:{id:\"epac\", upgrades:{type:4b, count:4b, items:[]}, epac:{energy:80, fire_rate:4, heat:36, recoil_x:6, recoil_y:6, damage:60, cooling:6, velocity:6, range:256, count:1, bouncy:1}} }"
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.mechanization.plasma_weapon",
+                "color": "dark_red",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": ""
+                },
+                {
+                  "translate": "item.modifiers.mainhand",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": " 5 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.damage"
+                  }
+                ],
+                [
+                  {
+                    "text": " 4 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.fire_rate"
+                  }
+                ],
+                [
+                  {
+                    "text": " 6 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.velocity"
+                  }
+                ],
+                [
+                  {
+                    "text": " 128 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.epac_range"
+                  }
+                ],
+                [
+                  {
+                    "text": " 40 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.heat"
+                  }
+                ],
+                [
+                  {
+                    "text": " 6 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.cooling"
+                  }
+                ],
+                [
+                  {
+                    "text": " 20 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.energy"
+                  }
+                ],
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"epac\",upgrades:{type:4b,count:4b,items:[]},epac:{energy:80,fire_rate:4,heat:36,recoil_x:6,recoil_y:6,damage:60,cooling:6,velocity:6,range:256,count:1,bouncy:1}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6424102,
+                "!minecraft:damage": {},
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                }
+              }
             }
           ]
         }

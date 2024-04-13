@@ -6,21 +6,63 @@
       "entries": [
         {
           "type": "minecraft:item",
-		      "name": "minecraft:item_frame",
+          "name": "minecraft:item_frame",
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"translate":"block.mechanization.item_inserter","color":"dark_red","italic":false}
+              "name": {
+                "translate": "block.mechanization.item_inserter",
+                "color": "dark_red",
+                "italic": false
+              }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                [{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6425009, mechanization:{id:\"item_inserter\"}, EntityTag:{Tags:[\"mechanization\", \"mechanization.item_inserter\", \"mechanization.redstone_control\", \"smithed.block\"], CustomName:'{\"translate\":\"block.mechanization.item_inserter\"}', Invulnerable:1b, Invisible:1b, Silent:1b, Item:{id:\"minecraft:blast_furnace\", Count:1b, tag:{CustomModelData:6425009}}}}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"item_inserter\"}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6425009,
+                "minecraft:entity_data": {
+                  "Tags": [
+                    "mechanization",
+                    "mechanization.item_inserter",
+                    "mechanization.redstone_control",
+                    "smithed.block"
+                  ],
+                  "CustomName": "{\"translate\":\"block.mechanization.item_inserter\"}",
+                  "Invulnerable": 1,
+                  "Invisible": 1,
+                  "Silent": 1,
+                  "Item": {
+                    "id": "minecraft:blast_furnace",
+                    "Count": 1,
+                    "tag": {
+                      "CustomModelData": 6425009
+                    }
+                  },
+                  "id": "UNKNOWN_ENTITY"
+                }
+              }
             }
           ]
         }

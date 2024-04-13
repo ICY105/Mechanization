@@ -6,35 +6,70 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:leather_helmet",
+          "name": "minecraft:leather_helmet",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.mechanization.rebreather","color":"dark_aqua","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-			    {"translate":"lore.mechanization.upgrade_modular_helmet","color":"gray","italic":false},
-				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
-			  ]
-			},
-			{
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6424112, Unbreakable:1b, HideFlags:70, mechanization:{ id:\"rebreather\", upgrade:{type:3b,effect:\"rebreather\"},display:{color:39168}} }"
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.mechanization.rebreather",
+                "color": "dark_aqua",
+                "italic": false
+              }
             },
-			{
-			  "function":"set_attributes",
-			  "modifiers": [
-				{
-				  "name":"generic.armor",
-				  "attribute":"generic.armor",
-				  "operation":"addition",
-				  "amount":0,
-				  "slot":"head"
-				}
-			  ]
-			}
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "lore.mechanization.upgrade_modular_helmet",
+                  "color": "gray",
+                  "italic": false
+                },
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"rebreather\",upgrade:{type:3b,effect:\"rebreather\"},display:{color:39168}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6424112,
+                "!minecraft:damage": {},
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                },
+                "minecraft:dyed_color": {
+                  "rgb": 0,
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "name": "generic.armor",
+                  "attribute": "generic.armor",
+                  "operation": "add_value",
+                  "amount": 0,
+                  "slot": "head"
+                }
+              ]
+            }
           ]
         }
       ]

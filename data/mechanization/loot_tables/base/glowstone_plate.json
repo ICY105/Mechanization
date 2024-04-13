@@ -6,27 +6,106 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "name": "minecraft:structure_block",
+          "name": "minecraft:structure_block",
           "functions": [
             {
-			  "function": "minecraft:set_name",
-			  "name": {"translate":"item.mechanization.glowstone_plate","color":"yellow","italic":false}
-			},
-			{
-			  "function": "minecraft:set_lore",
-			  "lore": [
-				[{"translate":"lore.mechanization.upgrade_modular_armor","color":"gray","italic":false}],
-			    [{"translate":"item.durability","color":"gray","italic":false,"with":[{"text":"1500"},{"text":"1500"}]}],
-				[{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"lore.mechanization.upgrade_illuminating"}],
-				[{"translate":"lore.mechanization.upgrade_stats","color":"gray","italic":false}],
-				[{"text":"  0.5 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor"}],
-				[{"text":"  0.25 ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.armor_toughness"}],
-				[{"text":"\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]
-			  ]
-			},
-			{
-              "function": "minecraft:set_nbt",
-              "tag":"{CustomModelData: 6421550, HideFlags: 32, mechanization:{ id:\"glowstone_plate\", upgrade:{type:3b, effect:\"illuminating\", max_durability:1500, stats:{armor:0.5, armor_toughness:0.25}} }, smithed:{dict:{plate:{glowstone:1b}}} }"
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.mechanization.glowstone_plate",
+                "color": "yellow",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                [
+                  {
+                    "translate": "lore.mechanization.upgrade_modular_armor",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "translate": "item.durability",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                      {
+                        "text": "1500"
+                      },
+                      {
+                        "text": "1500"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "translate": "lore.mechanization.upgrade_effects",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "translate": "lore.mechanization.upgrade_illuminating"
+                  }
+                ],
+                [
+                  {
+                    "translate": "lore.mechanization.upgrade_stats",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "  0.5 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "attribute.name.generic.armor"
+                  }
+                ],
+                [
+                  {
+                    "text": "  0.25 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "attribute.name.generic.armor_toughness"
+                  }
+                ],
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"glowstone_plate\",upgrade:{type:3b,effect:\"illuminating\",max_durability:1500,stats:{armor:0.5d,armor_toughness:0.25d}}},smithed:{dict:{plate:{glowstone:1b}}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6421550,
+                "minecraft:hide_additional_tooltip": {}
+              }
             }
           ]
         }
