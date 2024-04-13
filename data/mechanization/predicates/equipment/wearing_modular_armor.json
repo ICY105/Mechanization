@@ -10,12 +10,14 @@
             "items": [
               "minecraft:leather_helmet"
             ],
-            "nbt": "{mechanization:{id:\"modular_helmet\"}}"
+            "components": {
+              "minecraft:custom_data": "{mechanization:{id:\"modular_helmet\"}}"
+            }
           }
         }
       }
     },
-	{
+    {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
@@ -23,14 +25,16 @@
           "chest": {
             "items": [
               "minecraft:leather_chestplate",
-			        "minecraft:elytra"
+              "minecraft:elytra"
             ],
-            "nbt": "{mechanization:{id:\"modular_chestplate\"}}"
+            "components": {
+              "minecraft:custom_data": "{mechanization:{id:\"modular_chestplate\"}}"
+            }
           }
         }
       }
     },
-	{
+    {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
@@ -39,12 +43,14 @@
             "items": [
               "minecraft:leather_leggings"
             ],
-            "nbt": "{mechanization:{id:\"modular_leggings\"}}"
+            "components": {
+              "minecraft:custom_data": "{mechanization:{id:\"modular_leggings\"}}"
+            }
           }
         }
       }
     },
-	{
+    {
       "condition": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
@@ -53,7 +59,9 @@
             "items": [
               "minecraft:leather_boots"
             ],
-            "nbt": "{mechanization:{id:\"modular_boots\"}}"
+            "components": {
+              "minecraft:custom_data": "{mechanization:{id:\"modular_boots\"}}"
+            }
           }
         }
       }

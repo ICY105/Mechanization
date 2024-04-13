@@ -2,13 +2,15 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-	"equipment": {
-	  "chest": {
-		"items": [
-		  "minecraft:elytra"
-		],
-		"nbt": "{mechanization:{id:\"jetpack\"}}"
-	  }
-	}
+    "equipment": {
+      "chest": {
+        "items": [
+          "minecraft:elytra"
+        ],
+        "components": {
+          "minecraft:custom_data": "{mechanization:{id:\"jetpack\"}}"
+        }
+      }
+    }
   }
 }

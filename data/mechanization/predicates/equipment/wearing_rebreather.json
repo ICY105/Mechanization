@@ -2,13 +2,15 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-	"equipment": {
-	  "head": {
-		"items": [
-		  "minecraft:leather_helmet"
-		],
-		"nbt": "{mechanization:{id:\"rebreather\"}}"
-	  }
-	}
+    "equipment": {
+      "head": {
+        "items": [
+          "minecraft:leather_helmet"
+        ],
+        "components": {
+          "minecraft:custom_data": "{mechanization:{id:\"rebreather\"}}"
+        }
+      }
+    }
   }
 }

@@ -2,13 +2,15 @@
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-	"equipment": {
-	  "feet": {
-		"items": [
-		  "minecraft:leather_boots"
-		],
-		"nbt": "{mechanization:{id:\"hover_boots\"}}"
-	  }
-	}
+    "equipment": {
+      "feet": {
+        "items": [
+          "minecraft:leather_boots"
+        ],
+        "components": {
+          "minecraft:custom_data": "{mechanization:{id:\"hover_boots\"}}"
+        }
+      }
+    }
   }
 }
