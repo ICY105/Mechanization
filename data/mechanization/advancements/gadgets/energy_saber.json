@@ -1,30 +1,35 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.mechanization.energy_saber.title",
-			"color":"green"
-        },
-        "description": {
-            "translate": "advancement.mechanization.energy_saber.desc",
-			"color":"dark_aqua"
-        },
-        "icon": {
-            "item": "minecraft:carrot_on_a_stick",
-            "nbt": "{CustomModelData:6424100}"
-        },
-        "frame": "task"
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.energy_saber.title",
+      "color":"green"
     },
-    "criteria": {
-        "have_battery_1": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [{
-					    "id": "minecraft:carrot_on_a_stick",
-                        "nbt": "{mechanization:{id:\"energy_saber\"}}"
-                    }
-                ]
+    "description": {
+      "translate": "advancement.mechanization.energy_saber.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:carrot_on_a_stick",
+      "components": {
+        "minecraft:custom_model_data": 6424100
+      }
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:carrot_on_a_stick",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"energy_saber"}}
             }
-        }
-    },
-    "parent": "mechanization:gadgets/drill"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mechanization:gadgets/drill"
 }

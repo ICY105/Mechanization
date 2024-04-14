@@ -1,20 +1,20 @@
 {
   "display": {
     "title": {
-      "translate": "advancement.mechanization.plasma_weapon.title",
+      "translate": "advancement.mechanization.pipe_wrench.title",
       "color":"green"
     },
     "description": {
-      "translate": "advancement.mechanization.plasma_weapon.desc",
+      "translate": "advancement.mechanization.pipe_wrench.desc",
       "color":"dark_aqua"
     },
     "icon": {
       "id": "minecraft:carrot_on_a_stick",
       "components": {
-        "minecraft:custom_model_data": 6424102
+        "minecraft:custom_model_data": 6421111
       }
     },
-    "frame": "challenge"
+    "frame": "task"
   },
   "criteria": {
     "requirement": {
@@ -24,12 +24,12 @@
           {
             "items": "minecraft:carrot_on_a_stick",
             "predicates": {
-              "minecraft:custom_data": {"mechanization":{"id":"epac"}}
+              "minecraft:custom_data": {"mechanization":{"id":"pipe_wrench"}}
             }
           }
         ]
       }
     }
   },
-  "parent": "mechanization:machines/tier_3_battery"
+  "parent": "mechanization:base/multimeter"
 }

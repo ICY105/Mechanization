@@ -1,30 +1,35 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.mechanization.quarry.title",
-			"color":"green"
-        },
-        "description": {
-            "translate": "advancement.mechanization.quarry.desc",
-			"color":"dark_aqua"
-        },
-        "icon": {
-            "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6422013}"
-        },
-        "frame": "task"
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.quarry.title",
+      "color":"green"
     },
-    "criteria": {
-        "have_battery_1": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [{
-					    "id": "minecraft:blast_furnace",
-                        "nbt": "{mechanization:{id:\"quarry\"}}"
-                    }
-                ]
+    "description": {
+      "translate": "advancement.mechanization.quarry.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:blast_furnace",
+      "components": {
+        "minecraft:custom_model_data": 6422013
+      }
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:blast_furnace",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"quarry"}}
             }
-        }
-    },
-    "parent": "mechanization:machines/tier_2_battery"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mechanization:machines/tier_2_battery"
 }

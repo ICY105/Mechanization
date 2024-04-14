@@ -1,30 +1,35 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.mechanization.thermoelectric_generator.title",
-			"color":"green"
-        },
-        "description": {
-            "translate": "advancement.mechanization.thermoelectric_generator.desc",
-			"color":"dark_aqua"
-        },
-        "icon": {
-            "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6422030}"
-        },
-        "frame": "task"
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.thermoelectric_generator.title",
+      "color":"green"
     },
-    "criteria": {
-        "have_battery_1": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [{
-					    "id": "minecraft:blast_furnace",
-                        "nbt": "{mechanization:{id:\"thermoelectric_generator\"}}"
-                    }
-                ]
+    "description": {
+      "translate": "advancement.mechanization.thermoelectric_generator.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:blast_furnace",
+      "components": {
+        "minecraft:custom_model_data": 6422030
+      }
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:blast_furnace",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"thermoelectric_generator"}}
             }
-        }
-    },
-    "parent": "mechanization:machines/growth_accelerator"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mechanization:machines/growth_accelerator"
 }

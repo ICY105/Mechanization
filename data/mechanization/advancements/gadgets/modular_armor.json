@@ -1,43 +1,54 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.mechanization.modular_armor.title",
-			"color":"green"
-        },
-        "description": {
-            "translate": "advancement.mechanization.modular_armor.desc",
-			"color":"dark_aqua"
-        },
-        "icon": {
-            "item": "minecraft:leather_chestplate",
-            "nbt": "{CustomModelData:6424107}"
-        },
-        "frame": "task"
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.modular_armor.title",
+      "color":"green"
     },
-    "criteria": {
-        "have_battery_1": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-					{
-					    "id": "minecraft:leather_helmet",
-                        "nbt": "{mechanization:{id:\"modular_helmet\"}}"
-                    },
-					{
-					    "id": "minecraft:leather_chestplate",
-                        "nbt": "{mechanization:{id:\"modular_chestplate\"}}"
-                    },
-					{
-					    "id": "minecraft:leather_leggings",
-                        "nbt": "{mechanization:{id:\"modular_leggings\"}}"
-                    },
-					{
-					    "id": "minecraft:leather_boots",
-                        "nbt": "{mechanization:{id:\"modular_boots\"}}"
-                    }
-                ]
+    "description": {
+      "translate": "advancement.mechanization.modular_armor.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:leather_chestplate",
+      "components": {
+        "minecraft:custom_model_data": 6424107
+      }
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:leather_helmet",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"modular_helmet"}}
             }
-        }
-    },
-    "parent": "mechanization:gadgets/energy_saber"
+          },
+          {
+            "items": "minecraft:leather_chestplate",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"modular_chestplate"}}
+            }
+          },
+          {
+            "items": "minecraft:leather_helmet",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"modular_leggings"}}
+            }
+          },
+          {
+            "items": "minecraft:leather_boots",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"modular_boots"}}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mechanization:gadgets/energy_saber"
 }
+  

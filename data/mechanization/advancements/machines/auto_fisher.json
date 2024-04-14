@@ -1,30 +1,35 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.mechanization.auto_fisher.title",
-			"color":"green"
-        },
-        "description": {
-            "translate": "advancement.mechanization.auto_fisher.desc",
-			"color":"dark_aqua"
-        },
-        "icon": {
-            "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6422006}"
-        },
-        "frame": "task"
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.auto_fisher.title",
+      "color":"green"
     },
-    "criteria": {
-        "have_battery_1": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [{
-					    "id": "minecraft:blast_furnace",
-                        "nbt": "{mechanization:{id:\"auto_fisher\"}}"
-                    }
-                ]
+    "description": {
+      "translate": "advancement.mechanization.auto_fisher.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:blast_furnace",
+      "components": {
+        "minecraft:custom_model_data": 6422006
+      }
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:blast_furnace",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"alloy_furnace"}}
             }
-        }
-    },
-    "parent": "mechanization:machines/auto_farm"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mechanization:machines/auto_farm"
 }

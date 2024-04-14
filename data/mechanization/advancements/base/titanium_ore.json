@@ -1,30 +1,35 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.mechanization.titanium_ore.title",
-			"color":"green"
-        },
-        "description": {
-            "translate": "advancement.mechanization.titanium_ore.desc",
-			"color":"dark_aqua"
-        },
-        "icon": {
-            "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6421320}"
-        },
-        "frame": "task"
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.titanium_ore.title",
+      "color":"green"
     },
-    "criteria": {
-        "have_tin_ore": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [{
-					    "id": "minecraft:blast_furnace",
-                        "nbt": "{smithed:{dict:{raw:{titanium:1b}}}}"
-                    }
-                ]
+    "description": {
+      "translate": "advancement.mechanization.titanium_ore.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:blast_furnace",
+      "components": {
+        "minecraft:custom_model_data": 6421320
+      }
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:blast_furnace",
+            "predicates": {
+              "minecraft:custom_data": {"smithed":{"dict":{"raw":{"titanium":1}}}}
             }
-        }
-    },
-    "parent": "mechanization:mechanization"
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mechanization:mechanization"
 }

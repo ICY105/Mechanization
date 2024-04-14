@@ -1,30 +1,36 @@
 {
     "display": {
-        "title": {
-            "translate": "advancement.mechanization.grinder.title",
-			"color":"green"
-        },
-        "description": {
-            "translate": "advancement.mechanization.grinder.desc",
-			"color":"dark_aqua"
-        },
-        "icon": {
-            "item": "minecraft:blast_furnace",
-            "nbt": "{CustomModelData:6422009}"
-        },
-        "frame": "task"
+      "title": {
+        "translate": "advancement.mechanization.grinder.title",
+        "color":"green"
+      },
+      "description": {
+        "translate": "advancement.mechanization.grinder.desc",
+        "color":"dark_aqua"
+      },
+      "icon": {
+        "id": "minecraft:blast_furnace",
+        "components": {
+          "minecraft:custom_model_data": 6422009
+        }
+      },
+      "frame": "task"
     },
     "criteria": {
-        "have_battery_1": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [{
-					    "id": "minecraft:blast_furnace",
-                        "nbt": "{mechanization:{id:\"grinder\"}}"
-                    }
-                ]
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "minecraft:blast_furnace",
+              "predicates": {
+                "minecraft:custom_data": {"mechanization":{"id":"grinder"}}
+              }
             }
+          ]
         }
+      }
     },
     "parent": "mechanization:machines/electric_furnace"
-}
+  }
+  

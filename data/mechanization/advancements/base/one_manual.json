@@ -1,24 +1,26 @@
 {
-    "display": {
-        "title": {
-            "translate": "advancement.mechanization.one_manual.title",
-			"color":"green"
-        },
-        "description": {
-            "translate": "advancement.mechanization.one_manual.desc",
-			"color":"dark_aqua"
-        },
-        "icon": {
-            "item": "minecraft:written_book",
-            "nbt": "{CustomModelData:64211105}"
-        },
-        "frame": "task",
-		"hidden": true
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.one_manual.title",
+      "color":"green"
     },
-    "criteria": {
-        "have_wrench": {
-            "trigger": "minecraft:impossible"
-        }
+    "description": {
+      "translate": "advancement.mechanization.one_manual.desc",
+      "color":"dark_aqua"
     },
-    "parent": "mechanization:mechanization"
+    "icon": {
+      "id": "minecraft:written_book",
+      "components": {
+        "minecraft:custom_model_data": 6425011
+      }
+    },
+    "frame": "goal",
+    "hidden": true
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "mechanization:mechanization"
 }
