@@ -1,3 +1,4 @@
+
 {
   "type": "minecraft:entity",
   "pools": [
@@ -9,87 +10,25 @@
           "name": "minecraft:structure_block",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.structural_plate",
-                "color": "blue",
-                "italic": false
-              }
-            },
-            {
               "function": "minecraft:set_lore",
+              "mode": "replace_all",
               "lore": [
-                [
-                  {
-                    "translate": "lore.mechanization.upgrade_modular_armor",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ],
-                [
-                  {
-                    "translate": "item.durability",
-                    "color": "gray",
-                    "italic": false,
-                    "with": [
-                      {
-                        "text": "1500"
-                      },
-                      {
-                        "text": "1500"
-                      }
-                    ]
-                  }
-                ],
-                [
-                  {
-                    "translate": "lore.mechanization.upgrade_stats",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ],
-                [
-                  {
-                    "text": "  0.75 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "attribute.name.generic.armor"
-                  }
-                ],
-                [
-                  {
-                    "text": "  0.5 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "attribute.name.generic.armor_toughness"
-                  }
-                ],
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"translate":"lore.mechanization.upgrade_modular_armor", "color": "gray", "italic": false}],
+                [{"translate":"item.durability", "color": "gray", "italic": false, "with": [{"text": "1500"}, {"text": "1500"}]}],
+                [{"translate":"lore.mechanization.upgrade_stats", "color":"gray", "italic":false}],
+                [{"text":"  0.75 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.armor"}],
+                [{"text":"  0.5 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.armor_toughness"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"structural_plate\",upgrade:{type:3b,effect:\"none\",max_durability:1500,stats:{armor:0.75d,armor_toughness:0.5d}}},smithed:{dict:{plate:{structural_alloy:1b}}}}"
+              "tag": "{mechanization:{id:\"structural_plate\", upgrade:{type: 3b, max_durability: 1500, effect:\"none\", stats:{armor: 0.75,armor_toughness: 0.5}}}, smithed:{dict:{plate:{structural: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.structural_plate\", \"color\": \"blue\", \"italic\": false}]",
                 "minecraft:custom_model_data": 6421344,
                 "minecraft:hide_additional_tooltip": {}
               }

@@ -1,3 +1,4 @@
+
 {
   "type": "minecraft:entity",
   "pools": [
@@ -9,74 +10,25 @@
           "name": "minecraft:structure_block",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.uranium_gear",
-                "color": "green",
-                "italic": false
-              }
-            },
-            {
               "function": "minecraft:set_lore",
+              "mode": "replace_all",
               "lore": [
-                [
-                  {
-                    "translate": "lore.mechanization.upgrade_drill",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ],
-                [
-                  {
-                    "translate": "item.durability",
-                    "color": "gray",
-                    "italic": false,
-                    "with": [
-                      {
-                        "text": "1000"
-                      },
-                      {
-                        "text": "1000"
-                      }
-                    ]
-                  }
-                ],
-                [
-                  {
-                    "translate": "lore.mechanization.upgrade_effects",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": " "
-                  },
-                  {
-                    "translate": "lore.mechanization.upgrade_auto_smelt"
-                  }
-                ],
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"translate":"lore.mechanization.upgrade_drill", "color": "gray", "italic": false}],
+                [{"translate":"item.durability", "color": "gray", "italic": false, "with": [{"text": "1000"}, {"text": "1000"}]}],
+                [{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"lore.mechanization.upgrade_auto_smelt"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"uranium_gear\",upgrade:{type:2b,effect:\"auto_smelt\",max_durability:1000,stats:{}}},smithed:{dict:{gear:{uranium:1b}}}}"
+              "tag": "{mechanization:{id:\"uranium_gear\", upgrade:{type: 2b, max_durability: 1000, effect:\"auto_smelt\", stats:{}}}, smithed:{dict:{gear:{uranium: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6421435
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.uranium_gear\", \"color\": \"green\", \"italic\": false}]",
+                "minecraft:custom_model_data": 6421436,
+                "minecraft:hide_additional_tooltip": {}
               }
             }
           ]

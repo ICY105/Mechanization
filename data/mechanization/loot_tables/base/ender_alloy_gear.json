@@ -1,3 +1,4 @@
+
 {
   "type": "minecraft:entity",
   "pools": [
@@ -9,79 +10,23 @@
           "name": "minecraft:structure_block",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.ender_alloy_gear",
-                "color": "dark_purple",
-                "italic": false
-              }
-            },
-            {
               "function": "minecraft:set_lore",
+              "mode": "replace_all",
               "lore": [
-                [
-                  {
-                    "translate": "lore.mechanization.upgrade_drill",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ],
-                [
-                  {
-                    "translate": "item.durability",
-                    "color": "gray",
-                    "italic": false,
-                    "with": [
-                      {
-                        "text": "9000"
-                      },
-                      {
-                        "text": "9000"
-                      }
-                    ]
-                  }
-                ],
-                [
-                  {
-                    "translate": "lore.mechanization.upgrade_effects",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": " "
-                  },
-                  {
-                    "translate": "enchantment.minecraft.fortune"
-                  },
-                  {
-                    "text": " "
-                  },
-                  {
-                    "translate": "enchantment.level.4"
-                  }
-                ],
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"translate":"lore.mechanization.upgrade_drill", "color": "gray", "italic": false}],
+                [{"translate":"item.durability", "color": "gray", "italic": false, "with": [{"text": "9000"}, {"text": "9000"}]}],
+                [{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"enchantment.minecraft.fortune"},{"text":" "},{"translate":"enchantment.level.4"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"ender_alloy_gear\",upgrade:{type:2b,effect:\"fortune_4\",max_durability:9000,stats:{}}},smithed:{dict:{gear:{ender_alloy:1b}}}}"
+              "tag": "{mechanization:{id:\"ender_alloy_gear\", upgrade:{type: 2b, max_durability: 9000, effect:\"fortune_4\", stats:{}}}, smithed:{dict:{gear:{ender_alloy: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.ender_alloy_gear\", \"color\": \"dark_purple\", \"italic\": false}]",
                 "minecraft:custom_model_data": 6421395,
                 "minecraft:hide_additional_tooltip": {}
               }

@@ -1,3 +1,4 @@
+
 {
   "type": "minecraft:entity",
   "pools": [
@@ -9,38 +10,20 @@
           "name": "minecraft:structure_block",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.titanium_ingot",
-                "color": "light_purple",
-                "italic": false
-              }
-            },
-            {
               "function": "minecraft:set_lore",
+              "mode": "replace_all",
               "lore": [
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"titanium_ingot\"},smithed:{dict:{ingot:{titanium:1b}}}}"
+              "tag": "{mechanization:{id:\"titanium_ingot\"}, smithed:{dict:{ingot:{titanium: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.titanium_ingot\", \"color\": \"light_purple\", \"italic\": false}]",
                 "minecraft:custom_model_data": 6421321,
                 "minecraft:hide_additional_tooltip": {}
               }

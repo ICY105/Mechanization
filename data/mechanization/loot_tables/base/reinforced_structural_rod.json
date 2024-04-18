@@ -1,3 +1,4 @@
+
 {
   "type": "minecraft:entity",
   "pools": [
@@ -9,116 +10,26 @@
           "name": "minecraft:structure_block",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.reinforced_structural_rod",
-                "color": "dark_aqua",
-                "italic": false
-              }
-            },
-            {
               "function": "minecraft:set_lore",
+              "mode": "replace_all",
               "lore": [
-                [
-                  {
-                    "translate": "lore.mechanization.upgrade_energy_saber",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ],
-                [
-                  {
-                    "translate": "item.durability",
-                    "color": "gray",
-                    "italic": false,
-                    "with": [
-                      {
-                        "text": "9000"
-                      },
-                      {
-                        "text": "9000"
-                      }
-                    ]
-                  }
-                ],
-                [
-                  {
-                    "translate": "lore.mechanization.upgrade_effects",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": " "
-                  },
-                  {
-                    "translate": "enchantment.minecraft.unbreaking"
-                  },
-                  {
-                    "text": " "
-                  },
-                  {
-                    "translate": "enchantment.level.3"
-                  }
-                ],
-                [
-                  {
-                    "translate": "lore.mechanization.upgrade_stats",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ],
-                [
-                  {
-                    "text": "  3 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "attribute.name.generic.attack_damage"
-                  }
-                ],
-                [
-                  {
-                    "text": "  0.4 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "attribute.name.generic.attack_speed"
-                  }
-                ],
-                [
-                  {
-                    "text": "  2 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.energy_saber_range"
-                  }
-                ],
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"translate":"lore.mechanization.upgrade_energy_saber", "color": "gray", "italic": false}],
+                [{"translate":"item.durability", "color": "gray", "italic": false, "with": [{"text": "9000"}, {"text": "9000"}]}],
+                [{"translate":"lore.mechanization.upgrade_stats", "color":"gray", "italic":false}],
+                [{"text":"  3 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.attack_damage"}],
+                [{"text":"  0.4 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.attack_speed"}],
+                [{"text":"  2 ", "color":"dark_green", "italic":false}, {"translate":"lore.mechanization.energy_saber_range"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"reinforced_structural_rod\",upgrade:{type:1b,effect:\"none\",max_durability:9000,stats:{attack_damage:3,attack_speed:0.4d,energy_saber_range:2,unbreaking:2}}},smithed:{dict:{rod:{reinforced_structural_alloy:1b}}}}"
+              "tag": "{mechanization:{id:\"reinforced_structural_rod\", upgrade:{type: 1b, max_durability: 9000, effect:\"none\", stats:{attack_damage: 3,attack_speed: 0.4,energy_saber_range: 2}}}, smithed:{dict:{rod:{reinforced_structural: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.reinforced_structural_rod\", \"color\": \"dark_aqua\", \"italic\": false}]",
                 "minecraft:custom_model_data": 6421376,
                 "minecraft:hide_additional_tooltip": {}
               }

@@ -1,3 +1,4 @@
+
 {
   "type": "minecraft:entity",
   "pools": [
@@ -9,98 +10,27 @@
           "name": "minecraft:structure_block",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.crystal_composite_plate",
-                "color": "dark_red",
-                "italic": false
-              }
-            },
-            {
               "function": "minecraft:set_lore",
+              "mode": "replace_all",
               "lore": [
-                [
-                  {
-                    "translate": "lore.mechanization.upgrade_modular_armor",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ],
-                [
-                  {
-                    "translate": "item.durability",
-                    "color": "gray",
-                    "italic": false,
-                    "with": [
-                      {
-                        "text": "3000"
-                      },
-                      {
-                        "text": "3000"
-                      }
-                    ]
-                  }
-                ],
-                [
-                  {
-                    "translate": "lore.mechanization.upgrade_stats",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ],
-                [
-                  {
-                    "text": "  0.75 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "attribute.name.generic.armor"
-                  }
-                ],
-                [
-                  {
-                    "text": "  0.5 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "attribute.name.generic.armor_toughness"
-                  }
-                ],
-                [
-                  {
-                    "text": "  0.04 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "attribute.name.generic.movement_speed"
-                  }
-                ],
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"translate":"lore.mechanization.upgrade_modular_armor", "color": "gray", "italic": false}],
+                [{"translate":"item.durability", "color": "gray", "italic": false, "with": [{"text": "3000"}, {"text": "3000"}]}],
+                [{"translate":"lore.mechanization.upgrade_stats", "color":"gray", "italic":false}],
+                [{"text":"  0.75 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.armor"}],
+                [{"text":"  0.5 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.armor_toughness"}],
+                [{"text":"  0.04 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.movement_speed"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"crystal_composite_plate\",upgrade:{type:3b,effect:\"none\",max_durability:3000,stats:{armor:0.75d,armor_toughness:0.5d,speed:0.04d}}},smithed:{dict:{plate:{crystal_composite:1b}}}}"
+              "tag": "{mechanization:{id:\"crystal_composite_plate\", upgrade:{type: 3b, max_durability: 3000, effect:\"none\", stats:{armor: 0.75,armor_toughness: 0.5,speed: 0.04}}}, smithed:{dict:{plate:{crystal_composite: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6421412,
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.crystal_composite_plate\", \"color\": \"dark_red\", \"italic\": false}]",
+                "minecraft:custom_model_data": 6421414,
                 "minecraft:hide_additional_tooltip": {}
               }
             }

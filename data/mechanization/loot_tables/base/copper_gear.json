@@ -1,3 +1,4 @@
+
 {
   "type": "minecraft:entity",
   "pools": [
@@ -9,73 +10,23 @@
           "name": "minecraft:structure_block",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.copper_gear",
-                "color": "white",
-                "italic": false
-              }
-            },
-            {
               "function": "minecraft:set_lore",
+              "mode": "replace_all",
               "lore": [
-                [
-                  {
-                    "translate": "lore.mechanization.upgrade_drill",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ],
-                [
-                  {
-                    "translate": "item.durability",
-                    "color": "gray",
-                    "italic": false,
-                    "with": [
-                      {
-                        "text": "1000"
-                      },
-                      {
-                        "text": "1000"
-                      }
-                    ]
-                  }
-                ],
-                [
-                  {
-                    "translate": "lore.mechanization.upgrade_effects",
-                    "color": "gray",
-                    "italic": false
-                  },
-                  {
-                    "text": " +8 "
-                  },
-                  {
-                    "translate": "lore.mechanization.mining_speed"
-                  }
-                ],
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"translate":"lore.mechanization.upgrade_drill", "color": "gray", "italic": false}],
+                [{"translate":"item.durability", "color": "gray", "italic": false, "with": [{"text": "1000"}, {"text": "1000"}]}],
+                [{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" +8 "},{"translate":"lore.mechanization.mining_speed"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"copper_gear\",upgrade:{type:2b,effect:\"none\",max_durability:1000,stats:{mining_speed:8}}},smithed:{dict:{gear:{copper:1b}}}}"
+              "tag": "{mechanization:{id:\"copper_gear\", upgrade:{type: 2b, max_durability: 1000, effect:\"none\", stats:{mining_speed: 8}}}, smithed:{dict:{gear:{copper: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.copper_gear\", \"color\": \"white\", \"italic\": false}]",
                 "minecraft:custom_model_data": 6421471,
                 "minecraft:hide_additional_tooltip": {}
               }

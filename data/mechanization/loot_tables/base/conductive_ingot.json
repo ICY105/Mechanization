@@ -1,3 +1,4 @@
+
 {
   "type": "minecraft:entity",
   "pools": [
@@ -9,39 +10,21 @@
           "name": "minecraft:structure_block",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.conductive_ingot",
-                "color": "gold",
-                "italic": false
-              }
-            },
-            {
               "function": "minecraft:set_lore",
+              "mode": "replace_all",
               "lore": [
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"conductive_ingot\"},smithed:{dict:{ingot:{conductive_alloy:1b}}}}"
+              "tag": "{mechanization:{id:\"conductive_ingot\"}, smithed:{dict:{ingot:{conductive: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6421350,
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.conductive_ingot\", \"color\": \"gold\", \"italic\": false}]",
+                "minecraft:custom_model_data": 6421450,
                 "minecraft:hide_additional_tooltip": {}
               }
             }

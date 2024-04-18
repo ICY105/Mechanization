@@ -1,3 +1,4 @@
+
 {
   "type": "minecraft:entity",
   "pools": [
@@ -9,39 +10,22 @@
           "name": "minecraft:blast_furnace",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "block.mechanization.titanium_ore",
-                "color": "light_purple",
-                "italic": false
-              }
-            },
-            {
               "function": "minecraft:set_lore",
+              "mode": "replace_all",
               "lore": [
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{nbt_smelting:1b,mechanization:{id:\"deepslate_titanium_ore\"},smithed:{dict:{ore:{titanium:1b}}}}"
+              "tag": "{mechanization:{id:\"deepslate_titanium_ore\"}, smithed:{dict:{block:{titanium: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
+                "minecraft:item_name": "[{\"translate\": \"block.mechanization.titanium_ore\", \"color\": \"light_purple\", \"italic\": false}]",
                 "minecraft:custom_model_data": 6421329,
+                "minecraft:hide_additional_tooltip": {},
                 "minecraft:container": [
                   {
                     "slot": 0,
@@ -49,12 +33,11 @@
                       "id": "minecraft:stone",
                       "count": 1,
                       "components": {
-                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:deepslate_titanium_ore\"}}}"
+                        "minecraft:custom_data": {"smithed":{"block":{"id":"mechanization:deepslate_titanium_ore"}}}
                       }
                     }
                   }
-                ],
-                "minecraft:hide_additional_tooltip": {}
+                ]
               }
             }
           ]
