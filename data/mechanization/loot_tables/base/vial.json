@@ -17,6 +17,7 @@
             },
             {
               "function": "minecraft:set_lore",
+              "mode": "replace_all",
               "lore": [
                 [
                   {
