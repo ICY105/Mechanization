@@ -1,0 +1,35 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.tier_3_machine_frame.title",
+      "color":"green"
+    },
+    "description": {
+      "translate": "advancement.mechanization.tier_3_machine_frame.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:blast_furnace",
+      "components": {
+        "minecraft:custom_model_data": 6421009
+      }
+    },
+    "frame": "goal"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:blast_furnace",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"tier_3_machine_frame"}}
+            }
+          }
+        ]
+      }
+    }
+  },
+	"parent": "mechanization:base/machine_upgrade"
+}

@@ -1,0 +1,120 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_block",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "mech.rod.aqueous",
+                "color": "blue",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                [
+                  {
+                    "translate": "mech.lore.upgrade_energy_saber",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "translate": "item.durability",
+                    "color": "gray",
+                    "italic": false,
+                    "with": [
+                      {
+                        "text": "3000"
+                      },
+                      {
+                        "text": "3000"
+                      }
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "translate": "mech.lore.upgrade_effects",
+                    "color": "gray",
+                    "italic": false
+                  },
+                  {
+                    "text": " "
+                  },
+                  {
+                    "translate": "mech.lore.upgrade_throwing_speed"
+                  }
+                ],
+                [
+                  {
+                    "translate": "mech.lore.upgrade_stats",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": "  2.5 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "attribute.name.generic.attack_damage"
+                  }
+                ],
+                [
+                  {
+                    "text": "  0.3 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "attribute.name.generic.attack_speed"
+                  }
+                ],
+                [
+                  {
+                    "text": "  1 ",
+                    "color": "dark_green",
+                    "italic": false
+                  },
+                  {
+                    "translate": "mech.lore.energy_saber_range"
+                  }
+                ],
+                [
+                  {
+                    "translate": "mech.lore.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"aqueous_rod\",upgrade:{type:1b,effect:\"throwing_speed\",max_durability:3000,stats:{attack_damage:2.5d,attack_speed:0.3d,energy_saber_range:1}}},smithed:{dict:{rod:{aqueous_alloy:1b}}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6421602,
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

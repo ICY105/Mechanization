@@ -1,0 +1,43 @@
+
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                [{"translate":"lore.mechanization.upgrade_modular_armor", "color": "gray", "italic": false}],
+                [{"translate":"item.durability", "color": "gray", "italic": false, "with": [{"text": "1500"}, {"text": "1500"}]}],
+                [{"translate":"lore.mechanization.upgrade_stats", "color":"gray", "italic":false}],
+                [{"text":"  0.5 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.armor"}],
+                [{"text":"  0.25 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.armor_toughness"}],
+[{"text":"  5% ","color":"dark_green","italic":false},{"translate":"attribute.name.generic.attack_damage"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"emerald_plate\", upgrade:{type: 3b, max_durability: 1500, effect:\"attack_bonus\", stats:{armor: 0.5,armor_toughness: 0.25}}}, smithed:{dict:{plate:{emerald: 1b}}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.emerald_plate\", \"color\": \"green\", \"italic\": false}]",
+                "minecraft:custom_model_data": 6421500,
+                "minecraft:hide_additional_tooltip": {},
+                "!food":{}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

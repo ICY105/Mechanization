@@ -4,7 +4,9 @@
     "minecraft"
   ],
   "ignored_files": [
-    "translations"
+    "translations",
+    "build-output",
+    "build.bat"
   ],
   "dependencies": [
     {

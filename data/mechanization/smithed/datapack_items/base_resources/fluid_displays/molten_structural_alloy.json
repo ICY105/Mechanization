@@ -7,7 +7,7 @@
       "HideFlags": 127,
       "display": {
         "color": 6125224,
-        "Name": "{\"color\":\"white\",\"italic\":false,\"translate\":\"fluid.mechanization.molten_structural_alloy\"}]}",
+        "Name": "{\"color\":\"white\",\"italic\":false,\"translate\":\"fluid.mechanization.molten_structural_alloy\"}",
         "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"1000\"}]}"]
       },
       "mechanization":{"id":"molten_structural_alloy"}

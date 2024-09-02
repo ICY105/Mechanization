@@ -1,0 +1,40 @@
+
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                [{"translate":"lore.mechanization.upgrade_drill", "color": "gray", "italic": false}],
+                [{"translate":"item.durability", "color": "gray", "italic": false, "with": [{"text": "250"}, {"text": "250"}]}],
+                [{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" +16 "},{"translate":"lore.mechanization.mining_speed"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"gold_gear\", upgrade:{type: 2b, max_durability: 250, effect:\"none\", stats:{mining_speed: 16}}}, smithed:{dict:{gear:{gold: 1b}}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.gold_gear\", \"color\": \"white\", \"italic\": false}]",
+                "minecraft:custom_model_data": 6421561,
+                "minecraft:hide_additional_tooltip": {},
+                "!food":{}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

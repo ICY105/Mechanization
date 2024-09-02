@@ -1,0 +1,40 @@
+
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                [{"translate":"lore.mechanization.upgrade_drill", "color": "gray", "italic": false}],
+                [{"translate":"item.durability", "color": "gray", "italic": false, "with": [{"text": "6000"}, {"text": "6000"}]}],
+                [{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"enchantment.minecraft.fortune"},{"text":" "},{"translate":"enchantment.level.3"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"crystal_composite_gear\", upgrade:{type: 2b, max_durability: 6000, effect:\"fortune_3\", stats:{}}}, smithed:{dict:{gear:{crystal_composite: 1b}}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.crystal_composite_gear\", \"color\": \"dark_red\", \"italic\": false}]",
+                "minecraft:custom_model_data": 6421415,
+                "minecraft:hide_additional_tooltip": {},
+                "!food":{}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

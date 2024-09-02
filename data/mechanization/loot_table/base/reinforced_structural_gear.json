@@ -1,0 +1,40 @@
+
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                [{"translate":"lore.mechanization.upgrade_drill", "color": "gray", "italic": false}],
+                [{"translate":"item.durability", "color": "gray", "italic": false, "with": [{"text": "9000"}, {"text": "9000"}]}],
+                [{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"enchantment.minecraft.unbreaking"},{"text":" "},{"translate":"enchantment.level.3"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"reinforced_structural_gear\", upgrade:{type: 2b, max_durability: 9000, effect:\"none\", stats:{unbreaking: 3}}}, smithed:{dict:{gear:{reinforced_structural: 1b}}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.reinforced_structural_gear\", \"color\": \"dark_aqua\", \"italic\": false}]",
+                "minecraft:custom_model_data": 6421375,
+                "minecraft:hide_additional_tooltip": {},
+                "!food":{}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

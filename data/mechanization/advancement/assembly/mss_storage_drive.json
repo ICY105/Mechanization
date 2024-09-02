@@ -1,0 +1,35 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.mss_storage_drive.title",
+      "color":"green"
+    },
+    "description": {
+      "translate": "advancement.mechanization.mss_storage_drive.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:carrot_on_a_stick",
+      "components": {
+        "minecraft:custom_model_data": 6425106
+      }
+    },
+    "frame": "goal"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:carrot_on_a_stick",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"mss_storage_drive"}}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mechanization:assembly/mss_drive_bay"
+}

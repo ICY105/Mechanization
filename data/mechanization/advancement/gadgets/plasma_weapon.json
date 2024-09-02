@@ -1,0 +1,35 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.plasma_weapon.title",
+      "color":"green"
+    },
+    "description": {
+      "translate": "advancement.mechanization.plasma_weapon.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:carrot_on_a_stick",
+      "components": {
+        "minecraft:custom_model_data": 6424102
+      }
+    },
+    "frame": "challenge"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:carrot_on_a_stick",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"epac"}}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mechanization:machines/tier_3_battery"
+}

@@ -1,0 +1,101 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:leather_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.mechanization.modular_boots",
+                "color": "dark_aqua",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                [{"text": ""}],
+                [{"translate": "item.modifiers.feet","color": "gray","italic": false}],
+                [{"text": "+0 ","color": "blue","italic": false},{"translate": "attribute.name.generic.armor"}],
+                [{"text": "+0 ","color": "blue","italic": false},{"translate": "attribute.name.generic.armor_toughness"}],
+                [{"text": "+0 ","color": "blue","italic": false},{"translate": "lore.mechanization.shield_capacity"}],
+                [{"text": "\uee11","font": "mechanization:gui","color": "white","italic": false},{"translate": "lore.mechanization.added_by","color": "blue","italic": false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"modular_boots\",upgrades:{type:3b,count:5b,shield:0,items:[]}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6424109,
+                "minecraft:dyed_color": {
+                  "rgb": 15170646,
+                  "show_in_tooltip": false
+                },
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "id": "mechanization:modular_boots_armor",
+                  "attribute": "generic.armor",
+                  "operation": "add_value",
+                  "amount": 0,
+                  "slot": "feet"
+                },
+                {
+                  "id": "mechanization:modular_boots_armor_toughness",
+                  "attribute": "generic.armor_toughness",
+                  "operation": "add_value",
+                  "amount": 0,
+                  "slot": "feet"
+                },
+                {
+                  "id": "mechanization:modular_boots_max_health",
+                  "attribute": "generic.max_health",
+                  "operation": "add_value",
+                  "amount": 0,
+                  "slot": "feet"
+                },
+                {
+                  "id": "mechanization:modular_boots_movement_speed",
+                  "attribute": "generic.movement_speed",
+                  "operation": "add_value",
+                  "amount": 0,
+                  "slot": "feet"
+                },
+                {
+                  "id": "mechanization:modular_boots_knockback_resistance",
+                  "attribute": "generic.knockback_resistance",
+                  "operation": "add_value",
+                  "amount": 0,
+                  "slot": "feet"
+                },
+                {
+                  "id": "mechanization:modular_boots_attack_damage",
+                  "attribute": "generic.attack_damage",
+                  "operation": "add_multiplied_total",
+                  "amount": 0,
+                  "slot": "feet"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

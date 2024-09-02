@@ -1,0 +1,36 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.gear.title",
+      "color":"green"
+    },
+    "description": {
+      "translate": "advancement.mechanization.gear.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:structure_block",
+      "components": {
+        "minecraft:custom_model_data": 6421471
+      }
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:blast_furnace",
+            "predicates": {
+              "minecraft:custom_data": {"smithed":{"dict":{"gear":{}}}}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mechanization:base/plate"
+}
+  

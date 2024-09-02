@@ -1,0 +1,35 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.multimeter.title",
+      "color":"green"
+    },
+    "description": {
+      "translate": "advancement.mechanization.multimeter.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:carrot_on_a_stick",
+      "components": {
+        "minecraft:custom_model_data": 6421101
+      }
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:carrot_on_a_stick",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"multimeter"}}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mechanization:base/wrench"
+}

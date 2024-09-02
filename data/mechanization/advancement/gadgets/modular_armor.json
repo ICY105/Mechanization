@@ -1,0 +1,54 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.modular_armor.title",
+      "color":"green"
+    },
+    "description": {
+      "translate": "advancement.mechanization.modular_armor.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:leather_chestplate",
+      "components": {
+        "minecraft:custom_model_data": 6424107
+      }
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:leather_helmet",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"modular_helmet"}}
+            }
+          },
+          {
+            "items": "minecraft:leather_chestplate",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"modular_chestplate"}}
+            }
+          },
+          {
+            "items": "minecraft:leather_helmet",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"modular_leggings"}}
+            }
+          },
+          {
+            "items": "minecraft:leather_boots",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"modular_boots"}}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mechanization:gadgets/energy_saber"
+}
+  

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.growth_accelerator.title",
+      "color":"green"
+    },
+    "description": {
+      "translate": "advancement.mechanization.growth_accelerator.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:blast_furnace",
+      "components": {
+        "minecraft:custom_model_data": 6422004
+      }
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:blast_furnace",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"growth_accelerator"}}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mechanization:machines/steam_generator"
+}

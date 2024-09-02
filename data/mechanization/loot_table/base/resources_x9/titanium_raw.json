@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 9
+            }
+          ],
+          "value": "mechanization:base/titanium_raw"
+        }
+      ]
+    }
+  ]
+}

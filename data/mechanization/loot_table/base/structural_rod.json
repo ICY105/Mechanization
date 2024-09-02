@@ -1,0 +1,44 @@
+
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                [{"translate":"lore.mechanization.upgrade_energy_saber", "color": "gray", "italic": false}],
+                [{"translate":"item.durability", "color": "gray", "italic": false, "with": [{"text": "3000"}, {"text": "3000"}]}],
+                [{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"enchantment.minecraft.unbreaking"},{"text":" "},{"translate":"enchantment.level.2"}],
+                [{"translate":"lore.mechanization.upgrade_stats", "color":"gray", "italic":false}],
+                [{"text":"  2.5 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.attack_damage"}],
+                [{"text":"  0.3 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.attack_speed"}],
+                [{"text":"  1 ", "color":"dark_green", "italic":false}, {"translate":"lore.mechanization.energy_saber_range"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"structural_rod\", upgrade:{type: 1b, max_durability: 3000, effect:\"none\", stats:{attack_damage: 2.5,attack_speed: 0.3,energy_saber_range: 1,unbreaking: 2}}}, smithed:{dict:{rod:{structural: 1b}}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.structural_rod\", \"color\": \"blue\", \"italic\": false}]",
+                "minecraft:custom_model_data": 6421346,
+                "minecraft:hide_additional_tooltip": {},
+                "!food":{}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

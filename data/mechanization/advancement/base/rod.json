@@ -1,0 +1,36 @@
+{
+    "display": {
+      "title": {
+        "translate": "advancement.mechanization.rod.title",
+        "color":"green"
+      },
+      "description": {
+        "translate": "advancement.mechanization.rod.desc",
+        "color":"dark_aqua"
+      },
+      "icon": {
+        "id": "minecraft:structure_block",
+        "components": {
+          "minecraft:custom_model_data": 6421472
+        }
+      },
+      "frame": "task"
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "minecraft:blast_furnace",
+              "predicates": {
+                "minecraft:custom_data": "{smithed:{dict:{rod:{}}}}"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "parent": "mechanization:mechanization"
+  }
+  

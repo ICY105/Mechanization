@@ -1,0 +1,35 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.tier_1_battery.title",
+      "color":"green"
+    },
+    "description": {
+      "translate": "advancement.mechanization.tier_1_battery.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:blast_furnace",
+      "components": {
+        "minecraft:custom_model_data": 6421000
+      }
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:blast_furnace",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"tier_1_battery"}}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mechanization:base/tier_1_machine_frame"
+}

@@ -1,0 +1,35 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.tree_feller.title",
+      "color":"green"
+    },
+    "description": {
+      "translate": "advancement.mechanization.tree_feller.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:blast_furnace",
+      "components": {
+        "minecraft:custom_model_data": 6422002
+      }
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:blast_furnace",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"tree_feller"}}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mechanization:machines/block_breaker"
+}

@@ -1,0 +1,68 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "mech.item.filled_vial",
+                "italic": false,
+                "with": [
+                  {
+                    "translate": "mech.liquid.molten_arid_alloy"
+                  }
+                ]
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                {
+                  "translate": "mech.lore.liquid_amount",
+                  "color": "gray",
+                  "italic": false,
+                  "with": [
+                    {
+                      "text": "1000"
+                    }
+                  ]
+                },
+                {
+                  "translate": "mech.lore.added_by",
+                  "color": "blue",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"vial\",liquid:{id:\"molten_arid_alloy\",molten:1b,amount:1000,temperature:2000,color:16355646,name:'{\"translate\":\"mech.liquid.molten_arid_alloy\"}'}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6421108,
+                "minecraft:potion_contents": {
+                  "custom_effects": [],
+                  "custom_color": 16355646
+                },
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [],
+                  "show_in_tooltip": false
+                },
+                "minecraft:hide_additional_tooltip": {}
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

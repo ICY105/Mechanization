@@ -1,0 +1,11 @@
+{
+  "required": false,
+  "values": [
+    "mechanization:base/blocks/custom_item_extraction",
+    "mechanization:machines/blocks/custom_item_extraction",
+    "mechanization:nuclear/blocks/custom_item_extraction",
+    "mechanization:gadgets/blocks/custom_item_extraction",
+    "mechanization:assembly/blocks/custom_item_extraction",
+    "mechanization:compat/calls/custom_item_extraction"
+  ]
+}

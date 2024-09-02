@@ -1,0 +1,80 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:structure_block",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.mechanization.energized_heat_sink",
+                "color": "dark_red",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "mode": "replace_all",
+              "lore": [
+                [
+                  {
+                    "translate": "lore.mechanization.upgrade_plasma_weapon",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "text": " 6 -> 10 ",
+                    "color": "blue",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.cooling"
+                  }
+                ],
+                [
+                  {
+                    "text": " 25% ",
+                    "color": "red",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.energy"
+                  }
+                ],
+                [
+                  {
+                    "text": "\uee11",
+                    "font": "mechanization:gui",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "lore.mechanization.added_by",
+                    "color": "blue",
+                    "italic": false
+                  }
+                ]
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{mechanization:{id:\"energized_heat_sink\",upgrade:{type:4b}}}"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_model_data": 6424210
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

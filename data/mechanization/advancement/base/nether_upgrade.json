@@ -1,0 +1,36 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.nether_upgrade.title",
+      "color":"green"
+    },
+    "description": {
+      "translate": "advancement.mechanization.nether_upgrade.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:carrot_on_a_stick",
+      "components": {
+        "minecraft:custom_model_data": 6421103
+      }
+    },
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:carrot_on_a_stick",
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"id":"nether_upgrade"}}
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mechanization:base/tier_3_machine_frame"
+}
+  

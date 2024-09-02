@@ -1,0 +1,36 @@
+{
+    "display": {
+      "title": {
+        "translate": "advancement.mechanization.block_breaker.title",
+        "color":"green"
+      },
+      "description": {
+        "translate": "advancement.mechanization.block_breaker.desc",
+        "color":"dark_aqua"
+      },
+      "icon": {
+        "id": "minecraft:blast_furnace",
+        "components": {
+          "minecraft:custom_model_data": 6422008
+        }
+      },
+      "frame": "task"
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed",
+        "conditions": {
+          "items": [
+            {
+              "items": "minecraft:blast_furnace",
+              "predicates": {
+                "minecraft:custom_data": {"mechanization":{"id":"block_breaker"}}
+              }
+            }
+          ]
+        }
+      }
+    },
+    "parent": "mechanization:machines/tier_1_battery"
+  }
+  
