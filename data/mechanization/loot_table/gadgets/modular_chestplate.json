@@ -95,42 +95,42 @@
               "function": "set_attributes",
               "modifiers": [
                 {
-                  "name": "generic.armor",
+                  "id": "mechanization:modular_chestplate_armor",
                   "attribute": "generic.armor",
                   "operation": "add_value",
                   "amount": 0,
                   "slot": "chest"
                 },
                 {
-                  "name": "generic.armor_toughness",
+                  "id": "mechanization:modular_chestplate_armor_toughness",
                   "attribute": "generic.armor_toughness",
                   "operation": "add_value",
                   "amount": 0,
                   "slot": "chest"
                 },
                 {
-                  "name": "generic.max_health",
+                  "id": "mechanization:modular_chestplate_max_health",
                   "attribute": "generic.max_health",
                   "operation": "add_value",
                   "amount": 0,
                   "slot": "chest"
                 },
                 {
-                  "name": "generic.movement_speed",
+                  "id": "mechanization:modular_chestplate_movement_speed",
                   "attribute": "generic.movement_speed",
                   "operation": "add_value",
                   "amount": 0,
                   "slot": "chest"
                 },
                 {
-                  "name": "generic.knockback_resistance",
+                  "id": "mechanization:modular_chestplate_knockback_resistance",
                   "attribute": "generic.knockback_resistance",
                   "operation": "add_value",
                   "amount": 0,
                   "slot": "chest"
                 },
                 {
-                  "name": "generic.attack_damage",
+                  "id": "mechanization:modular_chestplate_attack_damage",
                   "attribute": "generic.attack_damage",
                   "operation": "add_multiplied_total",
                   "amount": 0,

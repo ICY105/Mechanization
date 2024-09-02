@@ -63,7 +63,7 @@
               "function": "set_attributes",
               "modifiers": [
                 {
-                  "name": "generic.armor",
+                  "id": "mechanization:rebreather_armor",
                   "attribute": "generic.armor",
                   "operation": "add_value",
                   "amount": 0,

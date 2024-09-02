@@ -63,11 +63,11 @@
               "function": "set_attributes",
               "modifiers": [
                 {
-                  "name": "generic.armor",
+                  "id": "mechanization:phase_boots_armor",
                   "attribute": "generic.armor",
                   "operation": "add_value",
                   "amount": 0,
-                  "slot": "head"
+                  "slot": "feet"
                 }
               ]
             }

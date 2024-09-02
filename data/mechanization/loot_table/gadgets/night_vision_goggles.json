@@ -63,7 +63,7 @@
               "function": "set_attributes",
               "modifiers": [
                 {
-                  "name": "generic.armor",
+                  "id": "mechanization:nigh_vision_goggles_armor",
                   "attribute": "generic.armor",
                   "operation": "add_value",
                   "amount": 0,

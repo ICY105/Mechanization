@@ -18,13 +18,13 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"reinforced_structural_raw\"}, smithed:{dict:{raw:{reinforced_structural: 1b}}}}"
+              "tag": "{mechanization:{id:\"crystal_composite_raw\"}, smithed:{dict:{raw:{crystal_composite: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.reinforced_structural_raw\", \"color\": \"dark_aqua\", \"italic\": false}]",
-                "minecraft:custom_model_data": 6421372,
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.crystal_composite_raw\", \"color\": \"dark_red\", \"italic\": false}]",
+                "minecraft:custom_model_data": 6421412,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}
               }

@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:structure_block",
+          "name": "minecraft:poisonous_potato",
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -31,7 +31,8 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.reinforced_structural_rod\", \"color\": \"dark_aqua\", \"italic\": false}]",
                 "minecraft:custom_model_data": 6421376,
-                "minecraft:hide_additional_tooltip": {}
+                "minecraft:hide_additional_tooltip": {},
+                "!food":{}
               }
             }
           ]
