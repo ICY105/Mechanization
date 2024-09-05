@@ -35,5 +35,3 @@ scoreboard players set #cons.1000000 mechanization.data 1000000
 scoreboard players set #cons.max_int mechanization.data 2147483647
 scoreboard players set #cons.min_int mechanization.data -2147483648
 scoreboard players set #cons.rng_a mechanization.data 1103515245
-
-function mechanization:nuclear/math/nuclear_data

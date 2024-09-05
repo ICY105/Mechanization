@@ -20,17 +20,18 @@ scoreboard objectives add mechanization.use_shovel minecraft.used:minecraft.neth
 scoreboard objectives add mechanization.use_hoe minecraft.used:minecraft.netherite_hoe
 
 # mark version
-scoreboard players set #mech.ver.major load.status 4
-scoreboard players set #mech.ver.minor load.status 2
-scoreboard players set #mech.ver.fix load.status 4
+scoreboard players set #mech.ver.major load.status 5
+scoreboard players set #mech.ver.minor load.status 0
+scoreboard players set #mech.ver.fix load.status 0
 
 # configure storage
-data merge storage mechanization:temp {obj:{}, list:[], var:"", io:{}}
+data merge storage mechanization:temp {obj:{}, list:[], var:"", io:{}, mss_temp:{drive:[],item:{}}}
 data merge storage mechanization:networks {mss_temp:{drive:[],item:{}}}
 data modify storage mechanization:registry recipes set value {}
 
 # load math
 function mechanization:base/math/init
+function mechanization:nuclear/math/nuclear_data
 
 # load config
 function mechanization:base/config/load_config

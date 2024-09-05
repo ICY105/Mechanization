@@ -20,7 +20,7 @@ execute store result score #color mechanization.data run data get storage mechan
 execute store result score #temperature mechanization.data run data get storage mechanization:temp obj.temperature
 
 # get model
-item replace block -30000000 0 3201 container.0 with minecraft:leather_boots{CustomModelData:0,HideFlags:127,display:{Name:'{"translate":"fluid.mechanization.empty","color":"white","italic":false}',Lore:[],color:0}, mechanization:{gui_item:1b}}
+item replace block -30000000 0 3201 container.0 with minecraft:leather_boots[minecraft:custom_model_data=0,minecraft:hide_additional_tooltip={},minecraft:lore=[],minecraft:dyed_color={rgb:0,show_in_tooltip:false},minecraft:item_name='{"translate":"fluid.mechanization.empty"}',minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:attribute_modifiers={show_in_tooltip:false,modifiers:[]}]
 scoreboard players operation #slice mechanization.data = #max_storage mechanization.data
 scoreboard players operation #slice mechanization.data /= #cons.16 mechanization.data
 
@@ -32,11 +32,11 @@ execute if score #model mechanization.data matches 17.. run scoreboard players s
 
 scoreboard players add #model mechanization.data 6422900
 execute if score #temperature mechanization.data matches 1000.. run scoreboard players add #model mechanization.data 17
-execute store result block -30000000 0 3201 Items[{Slot:0b}].tag.CustomModelData int 1 run scoreboard players get #model mechanization.data
+execute store result block -30000000 0 3201 Items[{Slot:0b}].components."minecraft:custom_model_data" int 1 run scoreboard players get #model mechanization.data
 
 # set name & color
 execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value '{"nbt":"var","storage":"mechanization:temp","interpret":true,"color":"white","italic":false}'
-execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3201 Items[{Slot:0b}].tag.display.Name set from block -30000000 0 3202 front_text.messages[0]
+execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3201 Items[{Slot:0b}].components."minecraft:item_name" set from block -30000000 0 3202 front_text.messages[0]
 execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value '{"translate":"lore.mechanization.fluid_amount","italic":false,"color":"gray","with":[{"score":{"name":"#storage","objective":"mechanization.data"}}]}'
-execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3201 Items[{Slot:0b}].tag.display.Lore append from block -30000000 0 3202 front_text.messages[0]
+execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3201 Items[{Slot:0b}].components."minecraft:lore" append from block -30000000 0 3202 front_text.messages[0]
 execute if score #storage mechanization.data matches 1.. store result block -30000000 0 3201 Items[{Slot:0b}].tag.display.color int 1 run scoreboard players get #color mechanization.data

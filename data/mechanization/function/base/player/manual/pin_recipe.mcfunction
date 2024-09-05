@@ -114,10 +114,15 @@ execute if score @s mechanization.manual matches 113 run data modify storage mec
 execute if score @s mechanization.manual matches 114 run data modify storage mechanization:temp list set value ['[{"text":"\\uefd5","color":"white","font":"mechanization:manual","italic":false},{"translate":"offset.-2","color":"black","font":"space:default","italic":false,"with":[ {"text":"\\uefd6","color":"white","font":"mechanization:manual"}]}]','{"text":""}','{"text":""}','{"text":""}','{"text":""}','{"text":""}','{"text":""}']
 
 
-#set data
-data remove block -30000000 0 3201 Items
-data modify block -30000000 0 3201 Items append from entity @s SelectedItem
-data modify block -30000000 0 3201 Items[0].Slot set value 0b
-data modify block -30000000 0 3201 Items[0].tag.display.Lore set from storage mechanization:temp list
-data modify block -30000000 0 3201 Items[0].tag.display.Lore append value '[{"text":"\\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]'
-item replace entity @s weapon.mainhand from block -30000000 0 3201 container.0
+# set data
+scoreboard players set #slot mechanization.data 1
+execute if items entity @s weapon.mainhand minecraft:written_book[custom_data~{mechanization:{id:"mechanical_manual"}}] run scoreboard players set #slot mechanization.data 0
+
+execute if score #slot mechanization.data matches 0 run item replace block -30000000 0 3201 container.0 from entity @s weapon.mainhand
+execute if score #slot mechanization.data matches 1 run item replace block -30000000 0 3201 container.0 from entity @s weapon.offhand
+
+data modify block -30000000 0 3201 Items[0].components."minecraft:lore".display.Lore set from storage mechanization:temp list
+data modify block -30000000 0 3201 Items[0].components."minecraft:lore".display.Lore append value '[{"text":"\\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]'
+
+execute if score #slot mechanization.data matches 0 run item replace entity @s weapon.mainhand from block -30000000 0 3201 container.0
+execute if score #slot mechanization.data matches 1 run item replace entity @s weapon.offhand from block -30000000 0 3201 container.0

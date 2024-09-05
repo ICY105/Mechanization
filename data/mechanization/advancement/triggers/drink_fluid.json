@@ -1,15 +1,15 @@
 {
 	"criteria": {
-        "drink_liquid": {
+    "drink_liquid": {
 			"trigger": "minecraft:consume_item",
 			"conditions": {
-                "item": {
-                    "item": "minecraft:potion",
+      "item": {
+          "item": "minecraft:potion",
 					"nbt": "{fluid:{}}"
-                }
-            }
+        }
+      }
 		}
-    },
+  },
 	"rewards":{ 
 		"function":"mechanization:base/player/drink_liquid/drink_liquid"
 	}
