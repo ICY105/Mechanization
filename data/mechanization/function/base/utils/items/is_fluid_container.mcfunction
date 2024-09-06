@@ -11,5 +11,5 @@ execute if data storage mechanization:temp obj{id:"minecraft:mushroom_stew"} run
 execute if data storage mechanization:temp obj{id:"minecraft:rabbit_stew"} run scoreboard players set #out mechanization.data 1
 execute if data storage mechanization:temp obj{id:"minecraft:beetroot_soup"} run scoreboard players set #out mechanization.data 1
 execute if data storage mechanization:temp obj{id:"minecraft:honey_bottle"} run scoreboard players set #out mechanization.data 1
-execute if data storage mechanization:temp obj{id:"minecraft:potion"}.tag{Potion:"minecraft:water"} run scoreboard players set #out mechanization.data 1
-execute if data storage mechanization:temp obj.tag.fluid run scoreboard players set #out mechanization.data 1
+execute if data storage mechanization:temp obj{id:"minecraft:potion"}.components."minecraft:potion_contents"{potion:"minecraft:water"} run scoreboard players set #out mechanization.data 1
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".fluid run scoreboard players set #out mechanization.data 1

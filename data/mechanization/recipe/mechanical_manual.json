@@ -1,9 +1,0 @@
-{
-	"key":{
-		"0":{"item":"minecraft:book"},
-		"1":{"item":"minecraft:redstone"}
-	},
-	"pattern":[" 1 ","101"," 1 "],
-	"type":"crafting_shaped",
-	"result":{"item":"minecraft:knowledge_book"}
-}

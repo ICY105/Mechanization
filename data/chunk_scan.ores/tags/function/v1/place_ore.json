@@ -1,5 +1,5 @@
 {
   "values": [
-    "mechanization:base/utils/ores/ore_gen"
+    "mechanization:base/registry/ores/ore_gen"
   ]
 }

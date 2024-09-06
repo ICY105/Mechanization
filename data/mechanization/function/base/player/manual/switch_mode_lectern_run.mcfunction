@@ -16,25 +16,25 @@ execute if score @s mechanization.manual matches -6 run data remove block -30000
 execute if score @s mechanization.manual matches -6 run function mechanization:base/utils/m.run_command {command:"loot replace block -30000000 0 3201 container.0 loot tcc:items/compendium"}
 execute if score @s mechanization.manual matches -6 run loot replace block -30000000 0 3201 container.1 loot mechanization:base/manual/start
 execute if score @s mechanization.manual matches -6 if data block -30000000 0 3201 Items[{Slot:0b}] run advancement grant @s only mechanization:base/one_manual
-execute if score @s mechanization.manual matches -6 if data block -30000000 0 3201 Items[{Slot:0b}] run data remove block -30000000 0 3201 Items[{Slot:0b}].tag.pages[2]
-execute if score @s mechanization.manual matches -6 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block -30000000 0 3201 Items[{Slot:0b}].tag.pages prepend from block -30000000 0 3201 Items[{Slot:1b}].tag.pages[2]
-execute if score @s mechanization.manual matches -6 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block -30000000 0 3201 Items[{Slot:1b}].tag.pages set from block -30000000 0 3201 Items[{Slot:0b}].tag.pages
+execute if score @s mechanization.manual matches -6 if data block -30000000 0 3201 Items[{Slot:0b}] run data remove block -30000000 0 3201 Items[{Slot:0b}].components."minecraft:written_book_content".pages[2]
+execute if score @s mechanization.manual matches -6 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block -30000000 0 3201 Items[{Slot:0b}].components."minecraft:written_book_content".pages prepend from block -30000000 0 3201 Items[{Slot:1b}].components."minecraft:written_book_content".pages[2]
+execute if score @s mechanization.manual matches -6 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block -30000000 0 3201 Items[{Slot:1b}].components."minecraft:written_book_content".pages set from block -30000000 0 3201 Items[{Slot:0b}].components."minecraft:written_book_content".pages
 execute if score @s mechanization.manual matches -6 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block ~ ~ ~ Book set from block -30000000 0 3201 Items[1]
 
 execute if score @s mechanization.manual matches -7 run data remove block -30000000 0 3201 Items
 execute if score @s mechanization.manual matches -7 run function mechanization:base/utils/m.run_command {command:"loot replace block -30000000 0 3201 container.0 loot simplenergy:i/simplenergy_manual"}
 execute if score @s mechanization.manual matches -7 run loot replace block -30000000 0 3201 container.1 loot mechanization:base/manual/start
 execute if score @s mechanization.manual matches -7 if data block -30000000 0 3201 Items[{Slot:0b}] run advancement grant @s only mechanization:base/one_manual
-execute if score @s mechanization.manual matches -7 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block -30000000 0 3201 Items[{Slot:0b}].tag.pages[0] set from block -30000000 0 3201 Items[{Slot:1b}].tag.pages[2]
-execute if score @s mechanization.manual matches -7 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block -30000000 0 3201 Items[{Slot:1b}].tag.pages set from block -30000000 0 3201 Items[{Slot:0b}].tag.pages
+execute if score @s mechanization.manual matches -7 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block -30000000 0 3201 Items[{Slot:0b}].components."minecraft:written_book_content".pages[0] set from block -30000000 0 3201 Items[{Slot:1b}].components."minecraft:written_book_content".pages[2]
+execute if score @s mechanization.manual matches -7 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block -30000000 0 3201 Items[{Slot:1b}].components."minecraft:written_book_content".pages set from block -30000000 0 3201 Items[{Slot:0b}].components."minecraft:written_book_content".pages
 execute if score @s mechanization.manual matches -7 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block ~ ~ ~ Book set from block -30000000 0 3201 Items[1]
 
 execute if score @s mechanization.manual matches -8 run data remove block -30000000 0 3201 Items
 execute if score @s mechanization.manual matches -8 run function mechanization:base/utils/m.run_command {command:"loot replace block -30000000 0 3201 container.0 loot stardust:i/stardust_manual"}
 execute if score @s mechanization.manual matches -8 run loot replace block -30000000 0 3201 container.1 loot mechanization:base/manual/start
 execute if score @s mechanization.manual matches -8 if data block -30000000 0 3201 Items[{Slot:0b}] run advancement grant @s only mechanization:base/one_manual
-execute if score @s mechanization.manual matches -8 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block -30000000 0 3201 Items[{Slot:0b}].tag.pages[0] set from block -30000000 0 3201 Items[{Slot:1b}].tag.pages[2]
-execute if score @s mechanization.manual matches -8 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block -30000000 0 3201 Items[{Slot:1b}].tag.pages set from block -30000000 0 3201 Items[{Slot:0b}].tag.pages
+execute if score @s mechanization.manual matches -8 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block -30000000 0 3201 Items[{Slot:0b}].components."minecraft:written_book_content".pages[0] set from block -30000000 0 3201 Items[{Slot:1b}].components."minecraft:written_book_content".pages[2]
+execute if score @s mechanization.manual matches -8 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block -30000000 0 3201 Items[{Slot:1b}].components."minecraft:written_book_content".pages set from block -30000000 0 3201 Items[{Slot:0b}].components."minecraft:written_book_content".pages
 execute if score @s mechanization.manual matches -8 if data block -30000000 0 3201 Items[{Slot:0b}] run data modify block ~ ~ ~ Book set from block -30000000 0 3201 Items[1]
 
 execute if score @s mechanization.manual matches -1.. run item replace block -30000000 0 3201 container.0 with minecraft:air
