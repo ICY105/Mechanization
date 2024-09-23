@@ -9,6 +9,9 @@
 		"minecraft:honey_bottle",
 		"minecraft:mushroom_stew",
 		"minecraft:beetroot_soup",
-		"minecraft:rabbit_stew"
+		"minecraft:rabbit_stew",
+		"minecraft:bucket",
+		"minecraft:glass_bottle",
+		"minecraft:bowl"
 	]
 }

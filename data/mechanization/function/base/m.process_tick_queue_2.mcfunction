@@ -1,2 +1,2 @@
 
-$function mechanization:base/utils/m.run_function_as_uuid with storage mechanization:registry tick_queue[$(var)]
+$function mechanization:base/m.process_tick_queue_3 with storage mechanization:registry tick_queue[$(var)]
