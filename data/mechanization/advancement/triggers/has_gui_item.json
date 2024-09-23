@@ -12,6 +12,6 @@
     }
   },
   "rewards":{ 
-    "function":"mechanization:base/player/has_gui_item"
+    "function":"mechanization:base/player/gui/has_gui_item"
   }
 }

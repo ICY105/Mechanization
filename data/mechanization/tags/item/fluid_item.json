@@ -1,0 +1,14 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:water_bucket",
+		"minecraft:lava_bucket",
+		"minecraft:powder_snow_bucket",
+		"minecraft:milk_bucket",
+		"minecraft:potion",
+		"minecraft:honey_bottle",
+		"minecraft:mushroom_stew",
+		"minecraft:beetroot_soup",
+		"minecraft:rabbit_stew"
+	]
+}

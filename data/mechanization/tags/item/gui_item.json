@@ -2,7 +2,7 @@
 	"required":false,
 	"values":[
 		"minecraft:leather_boots",
-		"minecraft:structure_block",
+		"minecraft:poisonous_potato",
 		"minecraft:barrier"
 	]
 }

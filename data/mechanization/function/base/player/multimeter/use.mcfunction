@@ -1,5 +1,6 @@
 
-scoreboard players set #loop mechanization.data 120
+execute store result score #loop mechanization.data run attribute @s minecraft:player.block_interaction_range get 20
+scoreboard players add #loop mechanization.data 10
 
 scoreboard players set #debug mechanization.data 0
 execute if entity @s[tag=mechanization.debug] run scoreboard players set #debug mechanization.data 1

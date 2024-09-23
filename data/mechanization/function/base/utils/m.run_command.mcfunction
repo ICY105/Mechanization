@@ -1,2 +1,3 @@
 
 $$(command)
+return 1

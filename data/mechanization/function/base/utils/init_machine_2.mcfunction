@@ -58,7 +58,13 @@ execute if score #muffled mechanization.data matches 1 run tag @s add mechanizat
 
 # init item displays
 data modify entity @s[type=minecraft:item_display] transformation.scale set value [1.01f, 1.01f, 1.01f]
-execute if entity @s[type=minecraft:item_display] run function mechanization:base/utils/light_level/set_display_brightness
+data modify entity @s[type=minecraft:item_display] brightness set value {sky:15, block:15}
+
+# cache string UUID for later use
+function gu:generate
+execute if entity @s[type=minecraft:armor_stand] run data modify entity @s ArmorItems[3].components."minecraft:custom_data".string_uuid set from storage gu:main out
+execute if entity @s[type=minecraft:item_display] run data modify entity @s item.components."minecraft:custom_data".string_uuid set from storage gu:main out
+execute if entity @s[type=minecraft:marker] run data modify entity @s data.string_uuid set from storage gu:main out
 
 # clear new tags
 tag @s remove mechanization.new

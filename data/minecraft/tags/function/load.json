@@ -1,5 +1,6 @@
 {
   "values": [
-    "#load:_private/load"
+    "#load:_private/load",
+    "gu:zzz/load"
   ]
 }

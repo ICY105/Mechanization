@@ -26,8 +26,8 @@ scoreboard players set #mech.ver.fix load.status 0
 
 # configure storage
 data merge storage mechanization:temp {obj:{}, list:[], var:"", io:{}, mss_temp:{drive:[],item:{}}}
-data merge storage mechanization:networks {mss_temp:{drive:[],item:{}}}
 data modify storage mechanization:registry recipes set value {}
+execute unless data storage mechanization:registry tick_queue run data modify storage mechanization:registry tick_queue set value []
 
 # load math
 function mechanization:base/math/init
@@ -37,7 +37,8 @@ function mechanization:nuclear/math/nuclear_data
 function mechanization:base/config/load_config
 
 # run registry
-function #mechanization:registry
+function #mechanization:registry_init
+function #mechanization:registry_populate
 
 # schedule message
 schedule function mechanization:load_message 2s

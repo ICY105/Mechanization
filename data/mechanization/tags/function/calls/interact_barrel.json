@@ -1,0 +1,6 @@
+{
+	"required":false,
+	"values":[
+		"mechanization:base/player/gui/interact_barrel"
+	]
+}
