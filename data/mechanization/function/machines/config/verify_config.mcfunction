@@ -34,6 +34,13 @@ execute unless score #machines.cf.super_conductive_cable.transfer_rate mechaniza
 # [2,2147483647] Time required to create an alloy in seconds. May be modified by upgrades.
 execute unless score #machines.cf.alloy_furnace.speed mechanization.data matches 2..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.alloy_furnace.speed]","color":"green"}]
 
+# [0,2147483647] Power used by the Alloy Furnace. May be modified by upgrades.
+execute unless score #machines.cf.alloy_furnace.power mechanization.data matches 0..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.alloy_furnace.power]","color":"green"}]
+
+scoreboard players operation #machines.alloy_furnace.op_energy mechanization.data = #machines.cf.alloy_furnace.speed mechanization.data
+scoreboard players operation #machines.alloy_furnace.op_energy mechanization.data *= #machines.cf.alloy_furnace.power mechanization.data
+execute if score #machines.alloy_furnace.op_energy mechanization.data matches -1 run scoreboard players set #machines.alloy_furnace.op_energy mechanization.data 2147483647
+
 ## Arc Furnace
 # [2,2147483647] Time required to melts resources in seconds. May be modified by upgrades.
 execute unless score #machines.cf.arc_furnace.speed_ingot mechanization.data matches 2..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.arc_furnace.speed_ingot]","color":"green"}]
