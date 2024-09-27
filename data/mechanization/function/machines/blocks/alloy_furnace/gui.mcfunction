@@ -98,5 +98,8 @@ item replace block ~ ~ ~ container.26 from block -30000000 0 3201 container.0
 item modify block ~ ~ ~ container.8 mechanization:change_tank_ui_item
 item modify block ~ ~ ~ container.26 mechanization:change_tank_ui_item
 
+# freeze hoppers
+execute if block ~ ~-1 ~ minecraft:hopper run data modify block ~ ~-1 ~ TransferCooldown set value 4
+
 # exit gui
 execute if block ~ ~ ~ minecraft:barrel[open=false] run function mechanization:base/utils/close_gui
