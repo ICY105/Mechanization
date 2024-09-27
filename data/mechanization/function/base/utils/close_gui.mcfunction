@@ -1,4 +1,6 @@
 
+execute align xyz positioned ~ ~-1.5 ~ as @e[type=minecraft:hopper_minecart,dx=0,dy=0,dz=0] run data modify entity @s Enabled set value 1b
+
 function mechanization:base/player/gui/remove_entity_from_queue
 
 execute if items block ~ ~ ~ container.0 #mechanization:gui_item[custom_data~{mechanization:{gui_item:1b}}] run item replace block ~ ~ ~ container.0 with minecraft:air
