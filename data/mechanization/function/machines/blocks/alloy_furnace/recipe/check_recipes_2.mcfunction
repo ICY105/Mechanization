@@ -17,6 +17,7 @@ execute if score #input.0 mechanization.data matches 0 if data storage mechaniza
 execute if score #input.0 mechanization.data matches 0 if data storage mechanization:temp obj.temp{type:"fluid"} store result score #input.0 mechanization.data run function mechanization:machines/blocks/alloy_furnace/recipe/m.check_fluid_ingrediant with storage mechanization:temp obj.temp
 execute if score #input.0 mechanization.data matches 0 run return fail
 
+data modify storage mechanization:test obj set from storage mechanization:temp list[-1].input[1]
 execute unless data storage mechanization:temp list[-1].input[1] run return 1
 scoreboard players set #input.1 mechanization.data 0
 execute if score #input.1 mechanization.data matches 0 run data modify storage mechanization:temp obj.temp set from storage mechanization:temp list[-1].input[1]

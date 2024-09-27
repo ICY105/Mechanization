@@ -8,8 +8,10 @@ execute if block ~ ~ ~-1 minecraft:hopper[facing=south] run function mechanizati
 
 # processing
 function mechanization:base/utils/redstone_active
+tag @s[tag=mechanization.errored] remove mechanization.errored
 execute if score #active mechanization.data matches 0 run scoreboard players set @s mechanization.time 0
-execute if score #active mechanization.data matches 1 unless score @s mechanization.time matches 2.. if score @s energy.storage >= #machines.alloy_furnace.op_energy mechanization.data run function mechanization:machines/blocks/alloy_furnace/recipe/process
+execute if score #active mechanization.data matches 1 if score @s mechanization.time matches 1 run function mechanization:machines/blocks/alloy_furnace/recipe/process
+execute if score #active mechanization.data matches 1 unless score @s mechanization.time matches 1.. if score @s energy.storage >= #machines.alloy_furnace.op_energy mechanization.data run function mechanization:machines/blocks/alloy_furnace/recipe/process
 
 execute if score @s mechanization.time matches 1.. if score @s energy.storage < #machines.cf.alloy_furnace.power mechanization.data run scoreboard players set @s mechanization.time 0
 execute if score @s mechanization.time matches 1.. run scoreboard players operation @s energy.storage -= #machines.cf.alloy_furnace.power mechanization.data
@@ -23,5 +25,4 @@ execute if score @s mechanization.time matches 1.. run item modify entity @s con
 execute if score @s[tag=!mechanization.muffled] mechanization.time matches 1.. run playsound mechanization:machines.electric_furnace block @a[distance=..16] ~ ~ ~ 0.3 1
 
 # cleanup
-tag @s remove mechanization.errored
 execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_block/break_machine_t1

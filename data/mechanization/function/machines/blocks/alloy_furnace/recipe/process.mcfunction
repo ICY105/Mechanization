@@ -14,8 +14,8 @@ execute if score @s fluid.storage.1 matches 1.. run data modify storage mechaniz
 execute if score @s fluid.storage.2 matches 1.. run data modify storage mechanization:temp obj.tank_3 set from storage mechanization:temp obj.temp.components."minecraft:custom_data".fluids[2]
 
 # get recipes from partial match
-execute if score @s fluid.storage.0 matches 1.. run function mechanization:machines/blocks/alloy_furnace/recipe/m.get_recipes with storage mechanization:temp obj.tank_1
-execute unless score @s fluid.storage.0 matches 1.. run function mechanization:machines/blocks/alloy_furnace/recipe/m.get_recipes with storage mechanization:temp obj.tank_2
+execute if score @s fluid.storage.1 matches 1.. run function mechanization:machines/blocks/alloy_furnace/recipe/m.get_recipes with storage mechanization:temp obj.tank_2
+execute unless score @s fluid.storage.1 matches 1.. run function mechanization:machines/blocks/alloy_furnace/recipe/m.get_recipes with storage mechanization:temp obj.tank_1
 data modify storage mechanization:test list set from storage mechanization:temp list
 execute unless data storage mechanization:temp list[0] run return fail
 
@@ -36,7 +36,7 @@ execute store result score #success mechanization.data run function mechanizatio
 execute unless score #success mechanization.data matches 1 run return fail
 
 execute store result score #upgrade mechanization.data run data get storage mechanization:temp list[-1].machine_upgrade
-execute if score #success mechanization.data matches 1 unless score @s mechanization.time matches 1.. if score #upgrade mechanization.data matches 1 run tag @s add mechanization.errored
+execute if score #success mechanization.data matches 1 unless score @s mechanization.time matches 1.. if score #upgrade mechanization.data matches 1 run tag @s[tag=!mechanization.upgraded] add mechanization.errored
 execute if entity @s[tag=mechanization.errored] run return fail
 execute if score #success mechanization.data matches 1 unless score @s mechanization.time matches 1.. run scoreboard players operation @s mechanization.time = #machines.cf.alloy_furnace.speed mechanization.data
 execute if score #success mechanization.data matches 1 if score @s mechanization.time = #machines.cf.alloy_furnace.speed mechanization.data run return 1
@@ -95,5 +95,4 @@ execute if score #bonus mechanization.data matches 2 if entity @s[tag=mechanizat
 scoreboard players operation @s fluid.storage.2 += #amount mechanization.data
 
 scoreboard players operation @s energy.storage -= #machines.cf.alloy_furnace.power mechanization.data
-
-say done
+scoreboard players set @s mechanization.time 0
