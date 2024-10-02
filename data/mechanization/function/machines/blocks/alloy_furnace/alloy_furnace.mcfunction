@@ -10,8 +10,11 @@ execute if block ~ ~ ~-1 minecraft:hopper[facing=south] run function mechanizati
 function mechanization:base/utils/redstone_active
 tag @s[tag=mechanization.errored] remove mechanization.errored
 execute if score #active mechanization.data matches 0 run scoreboard players set @s mechanization.time 0
-execute if score #active mechanization.data matches 1 if score @s mechanization.time matches 1 run function mechanization:machines/blocks/alloy_furnace/recipe/process
-execute if score #active mechanization.data matches 1 unless score @s mechanization.time matches 1.. if score @s energy.storage >= #machines.alloy_furnace.op_energy mechanization.data run function mechanization:machines/blocks/alloy_furnace/recipe/process
+
+execute if score @s[tag=!mechanization.upgraded] mechanization.time matches 1 run function mechanization:machines/blocks/alloy_furnace/recipes/output_normal
+execute if score @s[tag=mechanization.upgraded] mechanization.time matches 1 run function mechanization:machines/blocks/alloy_furnace/recipes/output_upgrade
+execute if score #active mechanization.data matches 1 unless score @s[tag=!mechanization.upgraded] mechanization.time matches 2.. if score @s energy.storage >= #machines.cf.alloy_furnace.power mechanization.data run function mechanization:machines/blocks/alloy_furnace/recipes/input_normal
+execute if score #active mechanization.data matches 1 unless score @s[tag=mechanization.upgraded] mechanization.time matches 2.. if score @s energy.storage >= #machines.cf.alloy_furnace.power mechanization.data run function mechanization:machines/blocks/alloy_furnace/recipes/input_upgrade
 
 execute if score @s mechanization.time matches 1.. if score @s energy.storage < #machines.cf.alloy_furnace.power mechanization.data run scoreboard players set @s mechanization.time 0
 execute if score @s mechanization.time matches 1.. run scoreboard players operation @s energy.storage -= #machines.cf.alloy_furnace.power mechanization.data
