@@ -11,7 +11,7 @@ execute if items block ~ ~ ~ container.22 #mechanization:gui_item[custom_data~{m
 execute if items block ~ ~ ~ container.25 #mechanization:gui_item[custom_data~{mechanization:{gui_item:1b}}] run item replace block ~ ~ ~ container.25 with minecraft:air
 
 # drop invalid items
-data remove block -30000000 0 3201 Items
+setblock -30000000 0 3201 minecraft:yellow_shulker_box replace
 execute unless items block ~ ~ ~ container.2 #mechanization:gui_item[custom_data~{mechanization:{gui_item:1b}}] run item replace block -30000000 0 3201 container.2 from block ~ ~ ~ container.2
 execute unless items block ~ ~ ~ container.3 #mechanization:gui_item[custom_data~{mechanization:{gui_item:1b}}] run item replace block -30000000 0 3201 container.3 from block ~ ~ ~ container.3
 execute unless items block ~ ~ ~ container.5 #mechanization:gui_item[custom_data~{mechanization:{gui_item:1b}}] run item replace block -30000000 0 3201 container.5 from block ~ ~ ~ container.5
@@ -50,7 +50,6 @@ item replace block ~ ~ ~ container.2 with minecraft:poisonous_potato[minecraft:c
 item replace block ~ ~ ~ container.3 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 item replace block ~ ~ ~ container.5 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 item replace block ~ ~ ~ container.6 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
-item replace block ~ ~ ~ container.2 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 item replace block ~ ~ ~ container.8 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 
 item replace block ~ ~ ~ container.10 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
@@ -68,7 +67,6 @@ item replace block ~ ~ ~ container.23 with minecraft:poisonous_potato[minecraft:
 item replace block ~ ~ ~ container.24 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 item replace block ~ ~ ~ container.26 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 
-function mechanization:base/utils/generate_energy_bar_ui
 execute if entity @s[tag=mechanization.errored] run item replace block ~ ~ ~ container.15 with minecraft:barrier[minecraft:item_name='{"translate":"lore.mechanization.alloy_furnace_error","italic":false,"color":"red"}',minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:max_stack_size=1]
 
 # tank 1
@@ -97,6 +95,9 @@ item replace block ~ ~ ~ container.8 from block -30000000 0 3201 container.0
 item replace block ~ ~ ~ container.26 from block -30000000 0 3201 container.0
 item modify block ~ ~ ~ container.8 mechanization:change_tank_ui_item
 item modify block ~ ~ ~ container.26 mechanization:change_tank_ui_item
+
+# energy bar
+function mechanization:base/utils/generate_energy_bar_ui
 
 # freeze hoppers
 execute if block ~ ~-1 ~ minecraft:hopper run data modify block ~ ~-1 ~ TransferCooldown set value 4

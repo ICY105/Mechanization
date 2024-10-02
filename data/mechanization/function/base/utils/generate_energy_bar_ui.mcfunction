@@ -6,6 +6,8 @@ scoreboard players operation #model mechanization.data = @s energy.storage
 execute if score @s energy.storage matches 1.. run scoreboard players operation #model mechanization.data += #max_storage mechanization.data
 scoreboard players operation #model mechanization.data /= #max_storage mechanization.data
 
+execute if score #model mechanization.data matches 33.. run scoreboard players set #model mechanization.data 32
+
 execute if block ~ ~ ~ #mechanization:inv_3 run function mechanization:base/utils/generate_energy_bar/inv_3
 execute if block ~ ~ ~ #mechanization:inv_9 run function mechanization:base/utils/generate_energy_bar/inv_9
 execute if block ~ ~ ~ #mechanization:inv_27 run function mechanization:base/utils/generate_energy_bar/inv_27

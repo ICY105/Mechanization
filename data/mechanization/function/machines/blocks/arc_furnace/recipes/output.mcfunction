@@ -1,8 +1,8 @@
 
 # copy data
 data modify storage mechanization:temp obj set value {input_item:{},fluid_item:{}}
-data modify storage mechanization:temp obj.input_item set from block ~ ~ ~ Items[{Slot:3b}]
-data modify storage mechanization:temp obj.fluid_item set from entity @s item.tag.fluids[0]
+data modify storage mechanization:temp obj.input_item set from block ~ ~ ~ Items[{Slot:12b}]
+data modify storage mechanization:temp obj.fluid_item set from entity @s item.components."minecraft:custom_data".fluids[0]
 
 # check recipes
 execute if entity @s[tag=!mechanization.upgraded.nether] unless data storage mechanization:temp obj.input_item.tag.smithed.dict run function mechanization:machines/blocks/arc_furnace/recipes/output_vanilla
@@ -20,4 +20,4 @@ execute if entity @s[tag=mechanization.upgraded.nether] run scoreboard players s
 function #mechanization:machines/arc_furnace_output
 
 # cleanup
-item modify block ~ ~ ~ container.3 mechanization:decrement_count
+item modify block ~ ~ ~ container.12 mechanization:decrement_count
