@@ -27,14 +27,8 @@ execute if block ~ ~ ~ minecraft:sweet_berry_bush[age=2] run loot spawn ~ ~ ~ mi
 execute if block ~ ~ ~ minecraft:sweet_berry_bush[age=2] run loot spawn ~ ~ ~ mine ~ ~ ~
 execute if block ~ ~ ~ minecraft:sweet_berry_bush[age=2] run setblock ~ ~ ~ minecraft:sweet_berry_bush[age=1] replace
 
-execute if block ~ ~ ~ minecraft:pumpkin run loot spawn ~ ~ ~ mine ~ ~ ~
-execute if block ~ ~ ~ minecraft:pumpkin run loot spawn ~ ~ ~ mine ~ ~ ~
-execute if block ~ ~ ~ minecraft:pumpkin run setblock ~ ~ ~ minecraft:air replace
-
-execute if block ~ ~ ~ minecraft:melon run loot spawn ~ ~ ~ mine ~ ~ ~
-execute if block ~ ~ ~ minecraft:melon run loot spawn ~ ~ ~ mine ~ ~ ~
-execute if block ~ ~ ~ minecraft:melon run setblock ~ ~ ~ minecraft:air replace
-
+execute if block ~ ~ ~ minecraft:pumpkin run setblock ~ ~ ~ minecraft:air destroy
+execute if block ~ ~ ~ minecraft:melon run setblock ~ ~ ~ minecraft:air destroy
 execute if block ~ ~1 ~ minecraft:sugar_cane run setblock ~ ~1 ~ minecraft:air destroy
 execute if block ~ ~1 ~ minecraft:cactus run setblock ~ ~1 ~ minecraft:air destroy
 execute if block ~ ~1 ~ minecraft:kelp run setblock ~ ~1 ~ minecraft:air destroy
