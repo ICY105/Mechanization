@@ -154,9 +154,9 @@ execute if score #success mechanization.data matches 2 run function mechanizatio
 
 
 # cleanup
-execute store result block ~ ~ ~ Items[{Slot:0b}].Count byte 1 run scoreboard players get #count.0 mechanization.data
-execute store result block ~ ~ ~ Items[{Slot:9b}].Count byte 1 run scoreboard players get #count.1 mechanization.data
-execute store result block ~ ~ ~ Items[{Slot:18b}].Count byte 1 run scoreboard players get #count.2 mechanization.data
+item modify block ~ ~ ~ container.0 {"function":"minecraft:set_count","count":{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#count.0"},"score":"mechanization.data"}}
+item modify block ~ ~ ~ container.9 {"function":"minecraft:set_count","count":{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#count.1"},"score":"mechanization.data"}}
+item modify block ~ ~ ~ container.18 {"function":"minecraft:set_count","count":{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#count.2"},"score":"mechanization.data"}}
 scoreboard players operation @s fluid.storage.0 = #storage.0 mechanization.data
 scoreboard players operation @s fluid.storage.1 = #storage.1 mechanization.data
 scoreboard players operation @s fluid.storage.2 = #storage.2 mechanization.data
