@@ -14,4 +14,4 @@ execute if score @s energy.storage matches 1.. run scoreboard players add #stora
 execute if score #storage mechanization.data matches 9.. run scoreboard players set #storage mechanization.data 8
 scoreboard players operation #storage mechanization.data += #model mechanization.data
 
-execute store result entity @s item.tag.CustomModelData int 1 run scoreboard players get #storage mechanization.data
+item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#storage"},"score":"mechanization.data"}}
