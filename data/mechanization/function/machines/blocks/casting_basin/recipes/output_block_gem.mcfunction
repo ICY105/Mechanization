@@ -20,7 +20,7 @@ execute if score @s fluid.storage.0 matches 648.. if score #count mechanization.
 execute if score @s fluid.storage.0 matches 648.. if data storage mechanization:temp obj.fluid_item{id:"molten_lapis_lazuli"} run scoreboard players remove @s fluid.storage.0 648
 
 execute if score @s fluid.storage.0 matches 648.. if score #count mechanization.data matches ..0 if data storage mechanization:temp obj.fluid_item{id:"molten_crystal_composite"} run loot replace block ~ ~ ~ container.12 loot mechanization:base/crystal_composite_block
-execute if score @s fluid.storage.0 matches 648.. if score #count mechanization.data matches 1.. if data storage mechanization:temp obj.fluid_item{id:"molten_crystal_composite"} if data storage mechanization:temp obj.output_item.tag.smithed.dict.block.crystal_composite run item modify block ~ ~ ~ container.12 mechanization:increment_count
+execute if score @s fluid.storage.0 matches 648.. if score #count mechanization.data matches 1.. if data storage mechanization:temp obj.fluid_item{id:"molten_crystal_composite"} if data storage mechanization:temp obj.output_item.components."minecraft:custom_data".smithed.dict.block.crystal_composite run item modify block ~ ~ ~ container.12 mechanization:increment_count
 execute if score @s fluid.storage.0 matches 648.. if data storage mechanization:temp obj.fluid_item{id:"molten_crystal_composite"} run scoreboard players remove @s fluid.storage.0 648
 
 execute if data storage mechanization:temp obj.fluid_item{id:"molten_glowstone"} run scoreboard players remove @s fluid.storage.0 288

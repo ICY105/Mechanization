@@ -1,11 +1,13 @@
 
 # copy data
-data modify storage mechanization:temp obj set value {output_item:{},fluid_item:{}}
-data modify storage mechanization:temp obj.fluid_item set from entity @s item.tag.fluids[0]
+data modify storage mechanization:temp obj set value {output_item:{},output_item_2:{},fluid_item:{}}
+data modify storage mechanization:temp obj.fluid_item set from entity @s item.components."minecraft:custom_data".fluids[0]
+
 data modify storage mechanization:temp obj.output_item set from block ~ ~ ~ Items[{Slot:12b}]
-execute store result score #count mechanization.data run data get storage mechanization:temp obj.output_item.Count
 execute if score @s mechanization.data matches 8 run data modify storage mechanization:temp obj.output_item_2 set from block ~ ~ ~ Items[{Slot:21b}]
-execute if score @s mechanization.data matches 8 store result score #count_2 mechanization.data run data get storage mechanization:temp obj.output_item_2.Count
+
+execute store result score #count mechanization.data run data get storage mechanization:temp obj.output_item.count
+execute if score @s mechanization.data matches 8 store result score #count_2 mechanization.data run data get storage mechanization:temp obj.output_item_2.count
 
 # check recipes
 execute if score #count mechanization.data matches ..63 if score @s mechanization.data matches 1 if score @s fluid.storage.0 matches 144.. run function mechanization:machines/blocks/casting_basin/recipes/input_ingot
@@ -39,6 +41,6 @@ execute if score @s[tag=mechanization.upgraded.nether] mechanization.time matche
 execute if score @s[tag=mechanization.upgraded.nether] mechanization.time matches 6.. run scoreboard players operation @s mechanization.time /= #cons.2 mechanization.data
 
 # calculate needed power
-scoreboard players operation #energy mechanization.data = $machines.cf.casting_basin.power mechanization.data
+scoreboard players operation #energy mechanization.data = #machines.cf.casting_basin.power mechanization.data
 scoreboard players operation #energy mechanization.data *= @s mechanization.time
 execute if score @s energy.storage < #energy mechanization.data run scoreboard players set @s mechanization.time 0

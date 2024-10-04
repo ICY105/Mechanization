@@ -16,13 +16,13 @@ execute if score #success mechanization.data matches 1 run item modify block ~ ~
 execute if score #success mechanization.data matches 1 run scoreboard players remove @s fluid.storage.0 1152
 
 scoreboard players set #success mechanization.data 0
-execute if score @s fluid.storage.0 matches 1152.. if score #count_2 mechanization.data matches 0 if data storage mechanization:temp obj.fluid_item{id:"molten_uranium"} if data storage mechanization:temp obj.output_item.tag.mechanization{id:"fuel_rod"} run scoreboard players set #success mechanization.data 1
+execute if score @s fluid.storage.0 matches 1152.. if score #count_2 mechanization.data matches 0 if data storage mechanization:temp obj.fluid_item{id:"molten_uranium"} if data storage mechanization:temp obj.output_item.components."minecraft:custom_data".mechanization{id:"fuel_rod"} run scoreboard players set #success mechanization.data 1
 execute if score #success mechanization.data matches 1 run loot replace block ~ ~ ~ container.21 loot mechanization:nuclear/uranium_fuel_rod
 execute if score #success mechanization.data matches 1 run item modify block ~ ~ ~ container.12 mechanization:decrement_count
 execute if score #success mechanization.data matches 1 run scoreboard players remove @s fluid.storage.0 1152
 
 scoreboard players set #success mechanization.data 0
-execute if score @s fluid.storage.0 matches 1152.. if score #count_2 mechanization.data matches 0 if data storage mechanization:temp obj.fluid_item{id:"molten_mox_fuel"} if data storage mechanization:temp obj.output_item.tag.mechanization{id:"fuel_rod"} run scoreboard players set #success mechanization.data 1
+execute if score @s fluid.storage.0 matches 1152.. if score #count_2 mechanization.data matches 0 if data storage mechanization:temp obj.fluid_item{id:"molten_mox_fuel"} if data storage mechanization:temp obj.output_item.components."minecraft:custom_data".mechanization{id:"fuel_rod"} run scoreboard players set #success mechanization.data 1
 execute if score #success mechanization.data matches 1 run loot replace block ~ ~ ~ container.21 loot mechanization:nuclear/mox_fuel_rod
 execute if score #success mechanization.data matches 1 run item modify block ~ ~ ~ container.12 mechanization:decrement_count
 execute if score #success mechanization.data matches 1 run scoreboard players remove @s fluid.storage.0 1152
@@ -32,4 +32,4 @@ execute if score @s fluid.storage.0 matches 1152.. run data modify storage mecha
 execute if score @s fluid.storage.0 matches 1152.. run data modify storage mechanization:temp obj.fluid_type set string storage mechanization:temp obj.fluid_item.id 0 16
 execute if score @s fluid.storage.0 matches 1152.. run data modify storage mechanization:temp obj.fluid_enrichment set value ""
 execute if score @s fluid.storage.0 matches 1152.. run data modify storage mechanization:temp obj.fluid_enrichment set string storage mechanization:temp obj.fluid_item.id 16
-execute if score @s fluid.storage.0 matches 1152.. if score #count_2 mechanization.data matches 0 if data storage mechanization:temp obj{fluid_type:"molten_uranium_e"} if data storage mechanization:temp obj.output_item.tag.mechanization{id:"fuel_rod"} run function mechanization:machines/blocks/casting_basin/recipes/m.output_item_fuel with storage mechanization:temp obj
+execute if score @s fluid.storage.0 matches 1152.. if score #count_2 mechanization.data matches 0 if data storage mechanization:temp obj{fluid_type:"molten_uranium_e"} if data storage mechanization:temp obj.output_item.components."minecraft:custom_data".mechanization{id:"fuel_rod"} run function mechanization:machines/blocks/casting_basin/recipes/m.output_item_fuel with storage mechanization:temp obj

@@ -1,7 +1,0 @@
-{
-	"required":false,
-	"values":[
-		"mechanization:machines/registry/alloy_furnace",
-		"mechanization:nuclear/registry"
-	]
-}

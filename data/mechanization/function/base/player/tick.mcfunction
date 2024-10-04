@@ -18,4 +18,4 @@ execute if score #timer.2 mechanization.data matches 1 if score @s mechanization
 execute if score @s mechanization.data matches 1.. run scoreboard players remove @s mechanization.data 1
 
 # clear UI items on cursor
-execute if items entity @s player.cursor #mechanization:gui_item[custom_data~{mechanization:{gui_item:1b}}] run clear @s #mechanization:gui_item[custom_data~{mechanization:{gui_item:1b}}]
+execute if items entity @s player.cursor #mechanization:gui_item[custom_data~{mechanization:{gui_item:1b}}] run function mechanization:base/player/gui/has_gui_item

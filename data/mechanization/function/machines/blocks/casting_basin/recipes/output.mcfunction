@@ -1,11 +1,13 @@
 
 # copy data
-data modify storage mechanization:temp obj set value {output_item:{},fluid_item:{}}
-data modify storage mechanization:temp obj.fluid_item set from entity @s item.tag.fluids[0]
+data modify storage mechanization:temp obj set value {output_item:{},output_item_2:{},fluid_item:{}}
+data modify storage mechanization:temp obj.fluid_item set from entity @s item.components."minecraft:custom_data".fluids[0]
+
 data modify storage mechanization:temp obj.output_item set from block ~ ~ ~ Items[{Slot:12b}]
-execute store result score #count mechanization.data run data get storage mechanization:temp obj.output_item.Count
 execute if score @s mechanization.data matches 8 run data modify storage mechanization:temp obj.output_item_2 set from block ~ ~ ~ Items[{Slot:21b}]
-execute if score @s mechanization.data matches 8 store result score #count_2 mechanization.data run data get storage mechanization:temp obj.output_item_2.Count
+
+execute store result score #count mechanization.data run data get storage mechanization:temp obj.output_item.count
+execute if score @s mechanization.data matches 8 store result score #count_2 mechanization.data run data get storage mechanization:temp obj.output_item_2.count
 
 # check recipes
 execute if score #count mechanization.data matches ..63 if score @s mechanization.data matches 1 if score @s fluid.storage.0 matches 144.. run function mechanization:machines/blocks/casting_basin/recipes/output_ingot
@@ -37,4 +39,4 @@ function #mechanization:machines/casting_basin_output
 playsound minecraft:block.fire.extinguish player @a[distance=..16]
 
 # cleanup
-execute if score @s fluid.storage.0 matches 0 run data modify entity @s Item.tag.tank set value {}
+execute if score @s fluid.storage.0 matches 0 run data modify entity @s Item.components."minecraft:custom_data".tank set value {}

@@ -36,9 +36,5 @@ function mechanization:nuclear/math/nuclear_data
 # load config
 function mechanization:base/config/load_config
 
-# run registry
-function #mechanization:registry_init
-function #mechanization:registry_populate
-
 # schedule message
 schedule function mechanization:load_message 2s
