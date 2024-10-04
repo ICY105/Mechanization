@@ -20,4 +20,4 @@ execute if score #loop mechanization.data matches 1.. run function mechanization
 execute if score #timer.100 mechanization.data matches 1 as @e[type=minecraft:item_display,tag=mechanization.resource_block] at @s run function mechanization:base/blocks/resource_blocks/slow_tick
 
 # Item Processing
-execute as @e[type=minecraft:item,tag=!mechanization.processed] at @s run function mechanization:base/utils/process_item
+execute as @e[type=minecraft:item,tag=!mechanization.processed] at @s run function mechanization:base/utils/items/process_item

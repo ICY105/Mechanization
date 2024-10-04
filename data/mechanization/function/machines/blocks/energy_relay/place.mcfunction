@@ -1,6 +1,6 @@
 
 # Summon Entity & Init
-summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.energy_relay", "mechanization.has_block_hitbox", "energy.receive", "smithed.block"], CustomName:'{"translate":"block.mechanization.energy_relay"}', item:{id:"minecraft:carrot_on_a_stick", tag:{CustomModelData:6421004}, Count:1b}}
+summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.energy_relay", "mechanization.has_block_hitbox", "energy.receive", "smithed.block"], CustomName:'{"translate":"block.mechanization.energy_relay"}', item:{id:"minecraft:carrot_on_a_stick", components:{"minecraft:custom_model_data":6421004}, Count:1b}}
 summon minecraft:interaction ~ ~-0.51 ~ {width:1.02f,height:1.02f,response:1b,Tags:["mechanization","mechanization.block_hitbox","mechanization.block_hitbox.tier_2","mechanization.block_hitbox.energy_relay"]}
 setblock ~ ~ ~ minecraft:barrier replace
 
