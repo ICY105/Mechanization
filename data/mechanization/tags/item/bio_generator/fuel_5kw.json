@@ -1,0 +1,13 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:nether_wart",
+		"minecraft:apple",
+		"minecraft:cookie",
+		"minecraft:bread",
+		"minecraft:shroomlight",
+		"minecraft:brown_mushroom",
+		"minecraft:red_mushroom",
+		"minecraft:rabbit"
+	]
+}

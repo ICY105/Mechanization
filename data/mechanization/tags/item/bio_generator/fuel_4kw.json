@@ -1,0 +1,15 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:wheat",
+		"minecraft:beetroot",
+		"minecraft:chorus_fruit",
+		"minecraft:carved_pumpkin",
+		"minecraft:baked_potato",
+		"minecraft:mushroom_stem",
+		"minecraft:brown_mushroom_block",
+		"minecraft:red_mushroom_block",
+		"minecraft:porkchop",
+		"minecraft:beef"
+	]
+}

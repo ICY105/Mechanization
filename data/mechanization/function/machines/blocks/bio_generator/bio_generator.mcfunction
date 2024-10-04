@@ -2,11 +2,14 @@
 # main
 function mechanization:base/utils/redstone_active
 
-execute store success entity @s item.tag.CustomModelData int 6422007 if entity @s
-execute if score #active mechanization.data matches 1 unless score @s energy.storage > @s energy.max_storage if entity @s[tag=!mechanization.upgraded] run function mechanization:machines/blocks/bio_generator/fuel_normal
-execute if score #active mechanization.data matches 1 unless score @s energy.storage > @s energy.max_storage if entity @s[tag=mechanization.upgraded,tag=!mechanization.upgraded.nether,tag=!mechanization.upgraded.ender] run function mechanization:machines/blocks/bio_generator/fuel_upgraded
-execute if score #active mechanization.data matches 1 unless score @s energy.storage > @s energy.max_storage if entity @s[tag=mechanization.upgrade_ender] run function mechanization:machines/blocks/bio_generator/fuel_upgrade_ender
-execute if score #active mechanization.data matches 1 unless score @s energy.storage > @s energy.max_storage if entity @s[tag=mechanization.upgrade_nether] run function mechanization:machines/blocks/bio_generator/fuel_upgrade_nether
+execute if score #active mechanization.data matches 1 unless score @s mechanization.time matches 1.. unless score @s energy.storage > @s energy.max_storage if items block ~ ~ ~ container.* #mechanization:bio_generator/fuel run function mechanization:machines/blocks/bio_generator/fuel
+
+execute if score @s mechanization.time matches 0 run item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422007}
+execute if score @s mechanization.time matches 1.. run item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422906}
+execute if score @s mechanization.time matches 1.. run particle minecraft:smoke ~ ~1.2 ~ 0.1 0 0.1 0 15
+
+execute if score @s mechanization.time matches 1.. run scoreboard players operation @s energy.storage += @s mechanization.data
+execute if score @s mechanization.time matches 1.. run scoreboard players remove @s mechanization.time 1
 
 # cleanup
 execute unless block ~ ~ ~ minecraft:dropper run function mechanization:base/utils/break_block/break_machine_t2

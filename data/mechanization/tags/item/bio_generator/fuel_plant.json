@@ -1,0 +1,23 @@
+{
+	"required":false,
+	"values":[
+		"#minecraft:leaves",
+		"minecraft:crimson_roots",
+		"minecraft:warped_roots",
+		"minecraft:nether_sprouts",
+		"minecraft:weeping_vines",
+		"minecraft:twisting_vines",
+		"minecraft:vine",
+		"minecraft:seagrass",
+		"minecraft:sea_pickle",
+		"minecraft:fern",
+		"minecraft:moss_block",
+		"minecraft:short_grass",
+		"minecraft:moss_carpet",
+		"minecraft:glow_lichen",
+		"minecraft:hanging_roots",
+		"minecraft:small_dripleaf",
+		"minecraft:big_dripleaf",
+		"minecraft:lily_pad"
+	]
+}

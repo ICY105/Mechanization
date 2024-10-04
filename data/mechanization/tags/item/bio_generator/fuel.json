@@ -1,0 +1,13 @@
+{
+	"required":false,
+	"values":[
+		"#mechanization:bio_generator/fuel_1kw",
+		"#mechanization:bio_generator/fuel_2kw",
+		"#mechanization:bio_generator/fuel_3kw",
+		"#mechanization:bio_generator/fuel_4kw",
+		"#mechanization:bio_generator/fuel_5kw",
+		"#mechanization:bio_generator/fuel_6kw",
+		"#mechanization:bio_generator/fuel_7kw",
+		"#mechanization:bio_generator/fuel_8kw"
+	]
+}

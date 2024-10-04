@@ -1,0 +1,14 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:torchflower_seeds",
+		"minecraft:pitcher_pod",
+		"minecraft:wither_rose",
+		"minecraft:melon",
+		"minecraft:pumpkin",
+		"minecraft:dried_kelp_block",
+		"minecraft:hay_block",
+		"minecraft:golden_carrot",
+		"minecraft:glistering_melon_slice"
+	]
+}

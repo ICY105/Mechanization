@@ -1,0 +1,29 @@
+{
+	"required":false,
+	"values":[
+		"#minecraft:leaves",
+		"minecraft:wheat_seeds",
+		"minecraft:pumpkin_seeds",
+		"minecraft:melon_seeds",
+		"minecraft:beetroot_seeds",
+		"minecraft:azalea",
+		"minecraft:flowering_azalea",
+		"minecraft:mangrove_popagule",
+		"minecraft:crimson_roots",
+		"minecraft:warped_roots",
+		"minecraft:nether_sprouts",
+		"minecraft:weeping_vines",
+		"minecraft:twisting_vines",
+		"minecraft:fern",
+		"minecraft:seagrass",
+		"minecraft:short_grass",
+		"minecraft:moss_carpet",
+		"minecraft:glow_lichen",
+		"minecraft:hanging_roots",
+		"minecraft:small_dripleaf",
+		"minecraft:big_dripleaf",
+		"minecraft:vine",
+		"minecraft:egg",
+		"minecraft:tropical_fish"
+	]
+}

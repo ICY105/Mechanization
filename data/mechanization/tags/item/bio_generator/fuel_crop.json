@@ -1,0 +1,23 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:sweet_berries",
+		"minecraft:apple",
+		"minecraft:melon_slice",
+		"minecraft:chorus_fruit",
+		"minecraft:potato",
+		"minecraft:carrot",
+		"minecraft:beetroot",
+		"minecraft:nether_wart",
+		"minecraft:glow_berries",
+		"minecraft:cactus",
+		"minecraft:sugar_cane",
+		"minecraft:kelp",
+		"minecraft:melon",
+		"minecraft:pumpkin",
+		"minecraft:bamboo",
+		"minecraft:poisonous_potato",
+		"minecraft:cocoa_beans",
+		"minecraft:wheat"
+	]
+}

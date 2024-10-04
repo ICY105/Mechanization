@@ -1,0 +1,11 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:chorus_flower",
+		"minecraft:spore_blossom",
+		"minecraft:cake",
+		"minecraft:golden_apple",
+		"minecraft:enchanted_golden_apple",
+		"minecraft:turtle_egg"
+	]
+}

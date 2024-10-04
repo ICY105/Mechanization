@@ -1,0 +1,9 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:torchflower",
+		"minecraft:pitcher_plant",
+		"minecraft:pumpkin_pie",
+		"minecraft:lily_pad"
+	]
+}

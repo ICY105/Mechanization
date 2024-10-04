@@ -1,0 +1,14 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:carved_pumpkin",
+		"minecraft:bread",
+		"minecraft:cookie",
+		"minecraft:cake",
+		"minecraft:pumpkin_pie",
+		"minecraft:baked_potato",
+		"minecraft:dried_kelp",
+		"minecraft:dried_kelp_block",
+		"minecraft:hay_block"
+	]
+}

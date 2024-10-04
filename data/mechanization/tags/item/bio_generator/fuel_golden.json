@@ -1,0 +1,9 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:glistering_melon_slice",
+		"minecraft:golden_carrot",
+		"minecraft:golden_apple",
+		"minecraft:enchanted_golden_apple"
+	]
+}

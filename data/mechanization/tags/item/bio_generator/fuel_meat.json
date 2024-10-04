@@ -1,0 +1,16 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:beef",
+		"minecraft:porkchop",
+		"minecraft:mutton",
+		"minecraft:chicken",
+		"minecraft:rabbit",
+		"minecraft:cod",
+		"minecraft:salmon",
+		"minecraft:tropical_fish",
+		"minecraft:pufferfish",
+		"minecraft:egg",
+		"minecraft:turtle_egg"
+	]
+}
