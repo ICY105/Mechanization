@@ -1,9 +1,11 @@
 
-execute if score @s mechanization.time matches 1 if data entity @s Item{id:"minecraft:waxed_weathered_copper"} run data modify entity @s Item.id set value "waxed_oxidized_copper"
-execute if score @s mechanization.time matches 1 if data entity @s Item{id:"minecraft:waxed_exposed_copper"} run data modify entity @s Item.id set value "waxed_weathered_copper"
-execute if score @s mechanization.time matches 1 if data entity @s Item{id:"minecraft:waxed_copper_block"} run data modify entity @s Item.id set value "waxed_exposed_copper"
+execute if score @s mechanization.time matches 1 if items entity @s contents minecraft:waxed_weathered_copper run item modify entity @s contents {"function":"minecraft:set_item","item":"minecraft:waxed_oxidized_copper"}
+execute if score @s mechanization.time matches 1 if items entity @s contents minecraft:waxed_exposed_copper run item modify entity @s contents {"function":"minecraft:set_item","item":"minecraft:waxed_weathered_copper"}
+execute if score @s mechanization.time matches 1 if items entity @s contents minecraft:waxed_copper_block run item modify entity @s contents {"function":"minecraft:set_item","item":"minecraft:waxed_exposed_copper"}
 
-scoreboard players set @s mechanization.time 3600
-scoreboard players set #rng.in mechanization.data 3600
-function mechanization:base/utils/random
-scoreboard players operation @s mechanization.data += #rng.out mechanization.data
+scoreboard players set @s mechanization.time 4000
+
+execute store result score #random mechanization.data run random value 1..2000
+scoreboard players operation @s mechanization.time += #random mechanization.data
+execute store result score #random mechanization.data run random value 1..2000
+scoreboard players operation @s mechanization.time += #random mechanization.data
