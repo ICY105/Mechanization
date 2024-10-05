@@ -9,6 +9,7 @@ execute if block ~ ~1 ~ #mechanization:dirt if block ~ ~2 ~ minecraft:spruce_sap
 execute if block ~ ~1 ~ #mechanization:dirt if block ~ ~2 ~ minecraft:acacia_sapling run scoreboard players set #tree mechanization.data 5
 execute if block ~ ~1 ~ #mechanization:dirt if block ~ ~2 ~ minecraft:dark_oak_sapling run scoreboard players set #tree mechanization.data 6
 execute if block ~ ~1 ~ #mechanization:dirt if block ~ ~2 ~ minecraft:mangrove_propagule run scoreboard players set #tree mechanization.data 7
+execute if block ~ ~1 ~ #mechanization:dirt if block ~ ~2 ~ minecraft:cherry_sapling run scoreboard players set #tree mechanization.data 10
 
 execute if block ~ ~1 ~ minecraft:crimson_nylium if block ~ ~2 ~ minecraft:crimson_fungus run scoreboard players set #tree mechanization.data 8
 execute if block ~ ~1 ~ minecraft:warped_nylium if block ~ ~2 ~ minecraft:warped_fungus run scoreboard players set #tree mechanization.data 9
@@ -23,6 +24,7 @@ execute if score #tree mechanization.data matches 4 positioned ~ ~2 ~ run place 
 execute if score #tree mechanization.data matches 5 positioned ~ ~2 ~ run place feature minecraft:acacia
 execute if score #tree mechanization.data matches 6 positioned ~ ~2 ~ run place feature minecraft:dark_oak
 execute if score #tree mechanization.data matches 7 positioned ~ ~2 ~ run place feature minecraft:mangrove
+execute if score #tree mechanization.data matches 7 positioned ~ ~2 ~ run place feature minecraft:cherry
 
 execute if score #tree mechanization.data matches 8 positioned ~ ~2 ~ run place feature minecraft:crimson_fungus
 execute if score #tree mechanization.data matches 9 positioned ~ ~2 ~ run place feature minecraft:warped_fungus
@@ -34,6 +36,7 @@ execute if score #tree mechanization.data matches 3 unless block ~ ~2 ~ minecraf
 execute if score #tree mechanization.data matches 4 unless block ~ ~2 ~ minecraft:spruce_log run setblock ~ ~2 ~ minecraft:spruce_sapling
 execute if score #tree mechanization.data matches 5 unless block ~ ~2 ~ minecraft:acacia_log run setblock ~ ~2 ~ minecraft:acacia_sapling
 execute if score #tree mechanization.data matches 6 unless block ~ ~2 ~ minecraft:dark_oak_log run setblock ~ ~2 ~ minecraft:dark_oak_sapling
+execute if score #tree mechanization.data matches 10 unless block ~ ~2 ~ minecraft:dark_oak_log run setblock ~ ~2 ~ minecraft:cherry_sapling
 
 execute if score #tree mechanization.data matches 8 unless block ~ ~2 ~ minecraft:crimson_stem run setblock ~ ~2 ~ minecraft:crimson_fungus
 execute if score #tree mechanization.data matches 9 unless block ~ ~2 ~ minecraft:warped_stem run setblock ~ ~2 ~ minecraft:warped_fungus

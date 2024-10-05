@@ -1,3 +1,4 @@
+
 execute unless block ~ ~2 ~ minecraft:melon_stem[age=7] run scoreboard players set #success mechanization.data 1
 
 execute if block ~ ~2 ~ minecraft:melon_stem[age=6] run setblock ~ ~2 ~ minecraft:melon_stem[age=7]
