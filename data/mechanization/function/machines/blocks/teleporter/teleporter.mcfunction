@@ -1,6 +1,4 @@
 
-### Main
-
 # get nearby player
 scoreboard players set #success mechanization.data 0
 execute if score @s energy.storage matches 2000.. positioned ~ ~1 ~ align xyz store success score #success mechanization.data if entity @p[dx=0,dy=0,dz=0]

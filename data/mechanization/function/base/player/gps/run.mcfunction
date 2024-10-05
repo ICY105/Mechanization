@@ -1,4 +1,5 @@
 
+execute if entity @s[tag=!player_action.sneaking] run data modify storage mechanization:temp obj set from entity @s SelectedItem.components."minecraft:custom_data".mechanization.pos
 execute if entity @s[tag=!player_action.sneaking] align xyz as @e[type=#mechanization:valid_block_entities,dx=0,dy=0,dz=0] at @s run function #mechanization:gps_transfer_cords
 execute if entity @s[tag=player_action.sneaking] run function mechanization:base/player/gps/store_pos
 
