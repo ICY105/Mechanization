@@ -43,6 +43,6 @@ execute if score #id mechanization.data matches 27 if data storage smithed.custo
 execute if score #id mechanization.data matches 27 if data storage smithed.custom_block:main blockApi{id:"mechanization:casting_basin"} run function mechanization:machines/blocks/casting_basin/place
 execute if score #id mechanization.data matches 27 if data storage smithed.custom_block:main blockApi{id:"mechanization:alloy_furnace"} run function mechanization:machines/blocks/alloy_furnace/place
 execute if score #id mechanization.data matches 30 if data storage smithed.custom_block:main blockApi{id:"mechanization:electric_furnace"} run function mechanization:machines/blocks/electric_furnace/place
-execute if score #id mechanization.data matches 32 if data storage smithed.custom_block:main blockApi{id:"mechanization:liquid_accumulator"} run function mechanization:machines/blocks/liquid_accumulator/place
+execute if score #id mechanization.data matches 31 if data storage smithed.custom_block:main blockApi{id:"mechanization:fluid_accumulator"} run function mechanization:machines/blocks/fluid_accumulator/place
 execute if score #id mechanization.data matches 32 if data storage smithed.custom_block:main blockApi{id:"mechanization:enchanting_station"} run function mechanization:machines/blocks/enchanting_station/place
 execute if score #id mechanization.data matches 32 if data storage smithed.custom_block:main blockApi{id:"mechanization:growth_accelerator"} run function mechanization:machines/blocks/growth_accelerator/place

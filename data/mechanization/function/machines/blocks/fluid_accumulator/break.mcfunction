@@ -1,5 +1,5 @@
 
-loot spawn ~ ~ ~ loot mechanization:machines/liquid_accumulator
+loot spawn ~ ~ ~ loot mechanization:machines/fluid_accumulator
 function mechanization:base/utils/break_block/break_copy_data
 function mechanization:base/utils/break_block/break_drop_inv
 
