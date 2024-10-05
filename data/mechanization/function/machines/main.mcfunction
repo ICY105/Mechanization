@@ -13,7 +13,10 @@ execute if score #timer.20 mechanization.data matches 9 as @e[type=minecraft:ite
 execute if score #timer.20 mechanization.data matches 10 as @e[type=minecraft:item_display,tag=mechanization.fluid_tank] at @s run function mechanization:machines/blocks/fluid_tank/fluid_tank
 execute if score #timer.20 mechanization.data matches 11 as @e[type=minecraft:item_display,tag=mechanization.fluid_accumulator] at @s run function mechanization:machines/blocks/fluid_accumulator/fluid_accumulator
 execute if score #timer.20 mechanization.data matches 12 as @e[type=minecraft:item_display,tag=mechanization.thermoelectric_generator] at @s run function mechanization:machines/blocks/thermoelectric_generator/thermoelectric_generator
-execute if score #timer.20 mechanization.data matches 13 as @e[type=minecraft:armor_stand,tag=mechanization.solar_panel] at @s run function mechanization:machines/blocks/solar_panel/solar_panel
+execute if score #timer.20 mechanization.data matches 13 store result score #time mechanization.data run time query daytime
+execute if score #timer.20 mechanization.data matches 13 if score #time mechanization.data matches 12000.. run scoreboard players remove #time mechanization.data 12000
+execute if score #timer.20 mechanization.data matches 13 run scoreboard players remove #time mechanization.data 6000
+execute if score #timer.20 mechanization.data matches 13 as @e[type=minecraft:item_display,tag=mechanization.solar_panel] at @s run function mechanization:machines/blocks/solar_panel/solar_panel
 execute if score #timer.20 mechanization.data matches 14 as @e[type=minecraft:item_display,tag=mechanization.block_breaker] at @s run function mechanization:machines/blocks/block_breaker/block_breaker
 execute if score #timer.20 mechanization.data matches 15 as @e[type=minecraft:item_display,tag=mechanization.teleporter] at @s run function mechanization:machines/blocks/teleporter/teleporter
 execute if score #timer.20 mechanization.data matches 16 as @e[type=minecraft:item_display,tag=mechanization.reformer] at @s run function mechanization:machines/blocks/reformer/reformer
