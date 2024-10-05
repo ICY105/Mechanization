@@ -46,26 +46,17 @@ scoreboard players set #slot_io.in fluid.data 2
 execute if items block ~ ~ ~ container.7 * run function mechanization:base/utils/fluid_slot_io/slot_io_7
 
 # fill in items
-item replace block ~ ~ ~ container.2 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 item replace block ~ ~ ~ container.3 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
-item replace block ~ ~ ~ container.5 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 item replace block ~ ~ ~ container.6 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
-item replace block ~ ~ ~ container.8 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 
 item replace block ~ ~ ~ container.10 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
-item replace block ~ ~ ~ container.11 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 item replace block ~ ~ ~ container.12 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 item replace block ~ ~ ~ container.13 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
-item replace block ~ ~ ~ container.14 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 item replace block ~ ~ ~ container.15 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 item replace block ~ ~ ~ container.16 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
-item replace block ~ ~ ~ container.17 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 
-item replace block ~ ~ ~ container.20 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 item replace block ~ ~ ~ container.21 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
-item replace block ~ ~ ~ container.23 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 item replace block ~ ~ ~ container.24 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
-item replace block ~ ~ ~ container.26 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
 
 execute if entity @s[tag=mechanization.errored] run item replace block ~ ~ ~ container.15 with minecraft:barrier[minecraft:item_name='{"translate":"lore.mechanization.alloy_furnace_error","italic":false,"color":"red"}',minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:max_stack_size=1]
 
@@ -81,8 +72,8 @@ item modify block ~ ~ ~ container.20 mechanization:change_tank_ui_item
 # tank 2
 scoreboard players set #tank mechanization.data 1
 function mechanization:base/utils/construct_fluid_ui
-item replace block ~ ~ ~ container.14 from block -30000000 0 3201 container.0
 item replace block ~ ~ ~ container.5 from block -30000000 0 3201 container.0
+item replace block ~ ~ ~ container.14 from block -30000000 0 3201 container.0
 item replace block ~ ~ ~ container.23 from block -30000000 0 3201 container.0
 item modify block ~ ~ ~ container.5 mechanization:change_tank_ui_item
 item modify block ~ ~ ~ container.23 mechanization:change_tank_ui_item
@@ -90,8 +81,8 @@ item modify block ~ ~ ~ container.23 mechanization:change_tank_ui_item
 # tank 3
 scoreboard players set #tank mechanization.data 2
 function mechanization:base/utils/construct_fluid_ui
-item replace block ~ ~ ~ container.17 from block -30000000 0 3201 container.0
 item replace block ~ ~ ~ container.8 from block -30000000 0 3201 container.0
+item replace block ~ ~ ~ container.17 from block -30000000 0 3201 container.0
 item replace block ~ ~ ~ container.26 from block -30000000 0 3201 container.0
 item modify block ~ ~ ~ container.8 mechanization:change_tank_ui_item
 item modify block ~ ~ ~ container.26 mechanization:change_tank_ui_item

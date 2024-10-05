@@ -10,7 +10,7 @@ execute if score #timer.20 mechanization.data matches 6 as @e[type=minecraft:ite
 execute if score #timer.20 mechanization.data matches 7 as @e[type=minecraft:item_display,tag=mechanization.alloy_furnace] at @s run function mechanization:machines/blocks/alloy_furnace/alloy_furnace
 execute if score #timer.20 mechanization.data matches 8 as @e[type=minecraft:item_display,tag=mechanization.arc_furnace] at @s run function mechanization:machines/blocks/arc_furnace/arc_furnace
 execute if score #timer.20 mechanization.data matches 9 as @e[type=minecraft:item_display,tag=mechanization.casting_basin] at @s run function mechanization:machines/blocks/casting_basin/casting_basin
-execute if score #timer.20 mechanization.data matches 10 as @e[type=minecraft:item_display,tag=mechanization.fluid_tank] at @s run function mechanization:machines/blocks/fluid_tank/liquid_tank
+execute if score #timer.20 mechanization.data matches 10 as @e[type=minecraft:item_display,tag=mechanization.fluid_tank] at @s run function mechanization:machines/blocks/fluid_tank/fluid_tank
 execute if score #timer.20 mechanization.data matches 11 as @e[type=minecraft:item_display,tag=mechanization.liquid_accumulator] at @s run function mechanization:machines/blocks/liquid_accumulator/liquid_accumulator
 execute if score #timer.20 mechanization.data matches 12 as @e[type=minecraft:item_display,tag=mechanization.thermoelectric_generator] at @s run function mechanization:machines/blocks/thermoelectric_generator/thermoelectric_generator
 execute if score #timer.20 mechanization.data matches 13 as @e[type=minecraft:armor_stand,tag=mechanization.solar_panel] at @s run function mechanization:machines/blocks/solar_panel/solar_panel
