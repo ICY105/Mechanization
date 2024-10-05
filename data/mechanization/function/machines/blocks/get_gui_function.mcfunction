@@ -7,3 +7,4 @@ execute if entity @s[tag=mechanization.fluid_tank.t2] run data modify storage me
 execute if entity @s[tag=mechanization.fluid_tank.t3] run data modify storage mechanization:temp var set value "mechanization:machines/blocks/fluid_tank/double_gui"
 execute if entity @s[tag=mechanization.fluid_accumulator] run data modify storage mechanization:temp var set value "mechanization:machines/blocks/fluid_accumulator/gui"
 execute if entity @s[tag=mechanization.reformer] run data modify storage mechanization:temp var set value "mechanization:machines/blocks/reformer/gui"
+execute if entity @s[tag=mechanization.steam_generator] run data modify storage mechanization:temp var set value "mechanization:machines/blocks/steam_generator/gui"

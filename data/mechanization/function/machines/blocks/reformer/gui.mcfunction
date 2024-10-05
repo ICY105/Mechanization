@@ -37,7 +37,7 @@ execute if items block ~ ~ ~ container.4 * run function mechanization:machines/b
 
 # handle fluid slot IO
 scoreboard players set #slot_io.in fluid.data 0
-execute if items block ~ ~ ~ container.4 * run function mechanization:base/utils/fluid_slot_io/slot_io_4
+execute if items block ~ ~ ~ container.4 * run function mechanization:machines/blocks/reformer/gui_insert_fluid
 
 # fill in items
 item replace block ~ ~ ~ container.0 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]

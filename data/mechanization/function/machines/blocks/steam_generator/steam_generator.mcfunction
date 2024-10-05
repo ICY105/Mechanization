@@ -1,11 +1,8 @@
 
 
-## Main
+# Main
 execute if score @s mechanization.data matches 1.. run scoreboard players remove @s mechanization.data 1
-
-# ui
-execute unless score @s mechanization.data matches 1.. unless score @s fluid.storage.1 matches 3900.. if score @s fluid.storage.0 matches 1.. if data block ~ ~ ~ Items[{Slot:10b}] run function mechanization:machines/blocks/steam_generator/add_fuel
-function mechanization:machines/blocks/steam_generator/gui
+execute unless score @s mechanization.data matches 1.. unless score @s fluid.storage.1 matches 3900.. if score @s fluid.storage.0 matches 1.. if items block ~ ~ ~ container.10 * run function mechanization:machines/blocks/steam_generator/add_fuel
 
 # generate heat
 scoreboard players set #steam mechanization.data 12
@@ -17,6 +14,7 @@ scoreboard players operation #steam mechanization.data *= #machines.cf.steam_gen
 scoreboard players operation #steam mechanization.data /= #cons.100 mechanization.data
 
 # convert water + heat into steam
+execute if score @s mechanization.data matches 1.. if score @s fluid.storage.0 matches 1.. if score @s fluid.storage.1 matches 0 run data modify entity @s item.components."minecraft:custom_data".fluids[1] set from storage fluid:definitions fluid_data[{id:"steam"}]
 execute if score @s mechanization.data matches 1.. if score @s fluid.storage.0 matches 1.. run scoreboard players operation @s fluid.storage.1 += #steam mechanization.data
 execute if score @s mechanization.data matches 1.. if score @s fluid.storage.0 matches 1.. run scoreboard players operation @s fluid.storage.0 -= #steam mechanization.data
 execute if score @s mechanization.data matches 1.. if score @s fluid.storage.0 matches ..-1 run scoreboard players set @s fluid.storage.0 0
@@ -30,16 +28,14 @@ execute if score @s fluid.storage.1 matches 2000.. if score #storage mechanizati
 execute if score @s fluid.storage.1 matches 2000.. if score @s energy.storage matches ..3999 run scoreboard players operation @s energy.storage += #storage mechanization.data
 execute if score @s fluid.storage.1 matches 2000.. run scoreboard players operation @s fluid.storage.1 -= #storage mechanization.data
 
-execute if score @s fluid.storage.1 matches 1.. unless data entity @s item.tag.fluids[1].id run data modify entity @s item.tag.fluids[1] set from storage fluid:definitions fluid_data[{id:"steam"}]
-
 # leak steam if no fuel
 execute if score @s mechanization.data matches 0 if score @s fluid.storage.1 matches 10.. run scoreboard players remove @s fluid.storage.1 10
 
 # model
-execute if score @s mechanization.data matches 0 store success entity @s item.tag.CustomModelData int 6422001 if entity @s
-execute if score @s mechanization.data matches 1.. store success entity @s item.tag.CustomModelData int 6422902 if entity @s
+execute if score @s mechanization.data matches 0 run item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422001}
+execute if score @s mechanization.data matches 1.. run item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422902}
 
 execute if score @s[tag=!mechanization.muffled] mechanization.data matches 1.. if score #timer.100 mechanization.data matches 0..19 run playsound mechanization:machines.steam_generator block @a[distance=..16] ~ ~ ~
 
-## cleanup
+# cleanup
 execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_block/break_machine_t1
