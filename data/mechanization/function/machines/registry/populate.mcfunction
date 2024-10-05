@@ -1,0 +1,2 @@
+
+function mechanization:machines/registry/populate_enchantments

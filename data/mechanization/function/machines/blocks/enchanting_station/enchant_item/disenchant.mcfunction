@@ -1,6 +1,6 @@
 
-#get data
-data modify storage mechanization:temp var set from block ~ ~ ~ Items[{Slot:12b}].tag.Enchantments[0].id
+# get data
+data modify storage mechanization:temp var set from block ~ ~ ~ Items[{Slot:10b}].components
 function mechanization:machines/blocks/enchanting_station/check_enchant
 
 execute if score #valid mechanization.data matches 1 store result score $temp_1 mechanization.data run data get block ~ ~ ~ Items[{Slot:12b}].tag.Enchantments[0].lvl

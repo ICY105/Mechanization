@@ -29,6 +29,10 @@ data merge storage mechanization:temp {obj:{}, list:[], var:"", io:{}, mss_temp:
 data modify storage mechanization:registry recipes set value {}
 execute unless data storage mechanization:registry tick_queue run data modify storage mechanization:registry tick_queue set value []
 
+function #mechanization:registry_init
+function #mechanization:registry_populate
+function #mechanization:registry_override
+
 # load math
 function mechanization:base/math/init
 function mechanization:nuclear/math/nuclear_data

@@ -9,3 +9,4 @@ execute if entity @s[tag=mechanization.fluid_accumulator] run data modify storag
 execute if entity @s[tag=mechanization.reformer] run data modify storage mechanization:temp var set value "mechanization:machines/blocks/reformer/gui"
 execute if entity @s[tag=mechanization.steam_generator] run data modify storage mechanization:temp var set value "mechanization:machines/blocks/steam_generator/gui"
 execute if entity @s[tag=mechanization.thermoelectric_generator] run data modify storage mechanization:temp var set value "mechanization:machines/blocks/thermoelectric_generator/gui"
+execute if entity @s[tag=mechanization.enchanting_station] run data modify storage mechanization:temp var set value "mechanization:machines/blocks/enchanting_station/gui"
