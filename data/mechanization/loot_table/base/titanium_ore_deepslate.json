@@ -18,7 +18,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"deepslate_titanium_ore\"}, smithed:{dict:{block:{titanium: 1b}}}}"
+              "tag": "{mechanization:{id:\"deepslate_titanium_ore\"}, smithed:{dict:{ore:{titanium: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",

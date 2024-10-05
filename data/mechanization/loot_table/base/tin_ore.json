@@ -18,7 +18,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"tin_ore\"}, smithed:{dict:{block:{tin: 1b}}}}"
+              "tag": "{mechanization:{id:\"tin_ore\"}, smithed:{dict:{ore:{tin: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",
