@@ -1,4 +1,10 @@
 
+# hopper input
+execute if block ~ ~1 ~ minecraft:hopper[facing=down] run function mechanization:machines/blocks/steam_generator/m.hopper_input {location:"~ ~1 ~"}
+execute if block ~1 ~ ~ minecraft:hopper[facing=west] run function mechanization:machines/blocks/steam_generator/m.hopper_input {location:"~1 ~ ~"}
+execute if block ~-1 ~ ~ minecraft:hopper[facing=east] run function mechanization:machines/blocks/steam_generator/m.hopper_input {location:"~-1 ~ ~"}
+execute if block ~ ~ ~1 minecraft:hopper[facing=north] run function mechanization:machines/blocks/steam_generator/m.hopper_input {location:"~ ~ ~1"}
+execute if block ~ ~ ~-1 minecraft:hopper[facing=south] run function mechanization:machines/blocks/steam_generator/m.hopper_input {location:"~ ~ ~-1"}
 
 # Main
 execute if score @s mechanization.data matches 1.. run scoreboard players remove @s mechanization.data 1
