@@ -19,7 +19,7 @@
                 [{"text":"  0.25 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.armor"}],
                 [{"text":"  0 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.armor_toughness"}],
                 [{"text":"  0.25 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.knockback_resistance"}],
-                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {

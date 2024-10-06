@@ -19,7 +19,7 @@
                 [{"text":"  4 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.attack_damage"}],
                 [{"text":"  0.6 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.attack_speed"}],
                 [{"text":"  2 ", "color":"dark_green", "italic":false}, {"translate":"lore.mechanization.energy_saber_range"}],
-                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {
