@@ -15,5 +15,6 @@ scoreboard players set #fluid.max_storage.0 mechanization.data 4000
 scoreboard players set #fluid.max_storage.1 mechanization.data 0
 scoreboard players set #fluid.max_storage.2 mechanization.data 0
 scoreboard players set #fluid.max_storage.3 mechanization.data 0
-scoreboard players set @e[type=minecraft:item_display,tag=mechanization.new,distance=..2,sort=nearest,limit=1] fluid.io.down -1
+scoreboard players set @n[type=minecraft:item_display,tag=mechanization.new,distance=..2] fluid.io.up -1
+scoreboard players set @n[type=minecraft:item_display,tag=mechanization.new,distance=..2] fluid.io.down -1
 function mechanization:base/utils/init_machine

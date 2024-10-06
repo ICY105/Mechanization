@@ -7,6 +7,8 @@ execute if block ~ ~ ~1 minecraft:hopper[facing=north] run function mechanizatio
 execute if block ~ ~ ~-1 minecraft:hopper[facing=south] run function mechanization:machines/blocks/reformer/m.hopper_input {location:"~ ~ ~-1"}
 
 # repair
+item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422010}
+
 function mechanization:base/utils/redstone_active
 execute if score #active mechanization.data matches 1 if score @s energy.storage matches 128.. if score @s fluid.storage.0 matches 1.. if items block ~ ~ ~ container.12 * run function mechanization:machines/blocks/reformer/repair
 
