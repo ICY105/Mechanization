@@ -5,9 +5,9 @@ execute if block ~ ~ ~ minecraft:blast_furnace[facing=east] run summon minecraft
 execute if block ~ ~ ~ minecraft:blast_furnace[facing=south] run summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.electric_furnace", "mechanization.redstone_control", "mechanization.upgradable", "mechanization.mufflable", "mechanization.rotatable", "energy.receive", "smithed.block"], Rotation:[0.0f,0.0f], CustomName:'{"translate":"block.mechanization.electric_furnace"}', item:{id:"minecraft:blast_furnace", components:{"minecraft:custom_model_data":6422003}, Count:1b}}
 execute if block ~ ~ ~ minecraft:blast_furnace[facing=west] run summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.electric_furnace", "mechanization.redstone_control", "mechanization.upgradable", "mechanization.mufflable", "mechanization.rotatable", "energy.receive", "smithed.block"], Rotation:[90.0f,0.0f], CustomName:'{"translate":"block.mechanization.electric_furnace"}', item:{id:"minecraft:blast_furnace", components:{"minecraft:custom_model_data":6422003}, Count:1b}}
 
-execute if block ~ ~ ~ minecraft:blast_furnace[facing=north] run setblock ~ ~ ~ minecraft:furnace[facing=north]{CustomName:'[{"translate":"block.mechanization.electric_furnace","color":"dark_aqua","italic":false}]'}
-execute if block ~ ~ ~ minecraft:blast_furnace[facing=east] run setblock ~ ~ ~ minecraft:furnace[facing=east]{  CustomName:'[{"translate":"block.mechanization.electric_furnace","color":"dark_aqua","italic":false}]'}
-execute if block ~ ~ ~ minecraft:blast_furnace[facing=south] run setblock ~ ~ ~ minecraft:furnace[facing=south]{CustomName:'[{"translate":"block.mechanization.electric_furnace","color":"dark_aqua","italic":false}]'}
-execute if block ~ ~ ~ minecraft:blast_furnace[facing=west] run setblock ~ ~ ~ minecraft:furnace[facing=west]{  CustomName:'[{"translate":"block.mechanization.electric_furnace","color":"dark_aqua","italic":false}]'}
+execute if block ~ ~ ~ minecraft:blast_furnace[facing=north] run setblock ~ ~ ~ minecraft:furnace[facing=north]{CustomName:'[{"translate":"block.mechanization.electric_furnace"}]'}
+execute if block ~ ~ ~ minecraft:blast_furnace[facing=east] run setblock ~ ~ ~ minecraft:furnace[facing=east]{  CustomName:'[{"translate":"block.mechanization.electric_furnace"}]'}
+execute if block ~ ~ ~ minecraft:blast_furnace[facing=south] run setblock ~ ~ ~ minecraft:furnace[facing=south]{CustomName:'[{"translate":"block.mechanization.electric_furnace"}]'}
+execute if block ~ ~ ~ minecraft:blast_furnace[facing=west] run setblock ~ ~ ~ minecraft:furnace[facing=west]{  CustomName:'[{"translate":"block.mechanization.electric_furnace"}]'}
 
 function mechanization:base/utils/init_machine

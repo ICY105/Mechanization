@@ -2,7 +2,7 @@
 # Summon Entity & Init
 summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.reformer", "mechanization.redstone_control", "mechanization.upgradable", "mechanization.mufflable", "fluid.tank", "energy.receive", "smithed.block"], CustomName:'{"translate":"block.mechanization.item_reformer"}', item:{id:"minecraft:blast_furnace", components:{"minecraft:custom_model_data":6422010}, Count:1b}}
 
-setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:'[{"translate":"offset.-8","font":"space:default","with":[{"text":"\\uee13","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-171","font":"space:default","with":[{"translate":"block.mechanization.item_reformer","color":"dark_aqua","italic":false,"font":"minecraft:default"}]}]'}
+setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:'[{"translate":"offset.-8","font":"space:default","with":[{"text":"\\uee13","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-171","font":"space:default","with":[{"translate":"block.mechanization.item_reformer","font":"minecraft:default"}]}]'}
 
 # init data
 scoreboard players set #fluid.io mechanization.data 0

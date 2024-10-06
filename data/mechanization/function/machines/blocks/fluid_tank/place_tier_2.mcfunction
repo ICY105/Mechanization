@@ -2,7 +2,7 @@
 # Summon Entity & Init
 summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.fluid_tank", "mechanization.fluid_tank.t2", "fluid.tank", "smithed.block"], CustomName:'{"translate":"block.mechanization.tier_2_fluid_tank"}', item:{id:"minecraft:leather_boots", components:{"minecraft:custom_model_data":6422831}, Count:1b}}
 
-setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:'[{"translate":"offset.-8","font":"space:default","with":[{"text":"\\uee0b","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-171","font":"space:default","with":[{"translate":"block.mechanization.tier_2_fluid_tank","color":"dark_red","italic":false,"font":"minecraft:default"}]}]'}
+setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:'[{"translate":"offset.-8","font":"space:default","with":[{"text":"\\uee0b","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-171","font":"space:default","with":[{"translate":"block.mechanization.tier_2_fluid_tank","font":"minecraft:default"}]}]'}
 
 # init data
 scoreboard players set #fluid.io mechanization.data 1
