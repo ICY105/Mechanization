@@ -1,11 +1,11 @@
 
-### energy display
+# energy display
 scoreboard players operation #max_storage mechanization.data = @s energy.max_storage
 scoreboard players operation #storage mechanization.data = @s energy.storage
 
-scoreboard players set #model mechanization.data 6421900
-execute if entity @s[tag=mechanization.battery.t2] run scoreboard players set #model mechanization.data 6421909
-execute if entity @s[tag=mechanization.battery.t3] run scoreboard players set #model mechanization.data 6421918
+scoreboard players set #model mechanization.data 6421922
+execute if entity @s[tag=mechanization.battery.t2] run scoreboard players set #model mechanization.data 6421931
+execute if entity @s[tag=mechanization.battery.t3] run scoreboard players set #model mechanization.data 6421940
 
 scoreboard players operation #max_storage mechanization.data /= #cons.7 mechanization.data
 scoreboard players operation #storage mechanization.data /= #max_storage mechanization.data

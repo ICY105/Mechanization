@@ -9,6 +9,7 @@ execute if score #success mechanization.data matches 0 run scoreboard players se
 execute if score #success mechanization.data matches 0 run scoreboard players set @s mechanization.data 0
 
 # run proper mode
+item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422017}
 execute if score #success mechanization.data matches 1.. run function mechanization:machines/blocks/teleporter/teleport
 
 # cleanup
