@@ -12,8 +12,8 @@
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                [{"translate": "lore.mechanization.multimeter.1","color": "white","italic": false,"with": [{"text": "\uee08","font": "mechanization:gui"}]}],
-                [{"translate": "lore.mechanization.multimeter.2","color": "white","italic": false,"with": [{"text": "\uee08","font": "mechanization:gui"}]}],
+                [{"translate": "lore.mechanization.multimeter.1","color": "gray","italic": false,"with": [{"text": "\uee08","font": "mechanization:gui", "color": "white"}]}],
+                [{"translate": "lore.mechanization.multimeter.2","color": "gray","italic": false,"with": [{"text": "\uee08","font": "mechanization:gui", "color": "white"}]}],
                 [{"text": ""}],
                 [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]

@@ -29,7 +29,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.copper_plate\", \"color\": \"white\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.copper_plate\"}]",
                 "minecraft:custom_model_data": 6421470,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

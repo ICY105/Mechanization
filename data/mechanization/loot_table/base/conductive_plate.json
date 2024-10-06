@@ -29,7 +29,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.conductive_plate\", \"color\": \"gold\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.conductive_plate\"}]",
                 "minecraft:custom_model_data": 6421354,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

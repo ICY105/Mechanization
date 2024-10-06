@@ -23,7 +23,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_model_data": 6421009,
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.tier_3_machine_frame\"}]",
+                "minecraft:item_name": "[{\"translate\": \"block.mechanization.tier_3_machine_frame\", \"color\": \"light_purple\"}]",
                 "minecraft:container": [
                   {
                     "slot": 0,

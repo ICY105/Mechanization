@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.tin_nugget\", \"color\": \"white\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.tin_nugget\"}]",
                 "minecraft:custom_model_data": 6421312,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

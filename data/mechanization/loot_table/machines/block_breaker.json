@@ -9,38 +9,11 @@
           "name": "minecraft:blast_furnace",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "block.mechanization.block_breaker",
-                "color": "dark_aqua",
-                "italic": false
-              }
-            },
-            {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                {
-                  "translate": "lore.mechanization.consume",
-                  "with": [
-                    "24"
-                  ],
-                  "color": "white",
-                  "italic": false
-                },
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"translate": "lore.mechanization.consume","with": ["24"],"color": "gray","italic": false}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {
@@ -51,6 +24,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_model_data": 6422008,
+                "minecraft:item_name": "[{\"translate\": \"block.mechanization.block_breaker\"}]",
                 "minecraft:container": [
                   {
                     "slot": 0,
@@ -62,11 +36,7 @@
                       }
                     }
                   }
-                ],
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [],
-                  "show_in_tooltip": false
-                }
+                ]
               }
             }
           ]

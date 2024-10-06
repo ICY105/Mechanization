@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.super_conductive_ingot\", \"color\": \"dark_green\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.super_conductive_ingot\"}]",
                 "minecraft:custom_model_data": 6421380,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

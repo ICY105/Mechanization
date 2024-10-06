@@ -30,7 +30,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.ender_alloy_rod\", \"color\": \"dark_purple\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.ender_alloy_rod\"}]",
                 "minecraft:custom_model_data": 6421396,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

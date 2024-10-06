@@ -30,7 +30,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.glowstone_rod\", \"color\": \"yellow\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.glowstone_rod\"}]",
                 "minecraft:custom_model_data": 6421552,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

@@ -26,7 +26,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.redstone_gear\", \"color\": \"red\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.redstone_gear\"}]",
                 "minecraft:custom_model_data": 6421521,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.steel_nugget\", \"color\": \"dark_gray\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.steel_nugget\"}]",
                 "minecraft:custom_model_data": 6421331,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

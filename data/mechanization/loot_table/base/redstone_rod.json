@@ -30,7 +30,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.redstone_rod\", \"color\": \"red\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.redstone_rod\"}]",
                 "minecraft:custom_model_data": 6421522,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

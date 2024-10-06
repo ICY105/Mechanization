@@ -30,7 +30,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.obsidian_rod\", \"color\": \"red\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.obsidian_rod\"}]",
                 "minecraft:custom_model_data": 6421582,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

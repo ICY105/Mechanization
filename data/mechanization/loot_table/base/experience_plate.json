@@ -29,7 +29,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.experience_plate\", \"color\": \"green\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.experience_plate\"}]",
                 "minecraft:custom_model_data": 6421570,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

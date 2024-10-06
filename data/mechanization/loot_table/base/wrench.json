@@ -12,8 +12,9 @@
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                 {"translate": "lore.mechanization.wrench.1", "color": "gray", "italic": false, "with": [{"text": "\uee08", "font": "mechanization:gui", "color": "white"}]},
-                 {"translate": "lore.mechanization.wrench.2", "color": "gray", "italic": false, "with": [{"translate": "lore.mechanization.sneak"},{"text": "\uee08","font": "mechanization:gui", "color": "white"}]},
+                [{"translate": "lore.mechanization.wrench.1", "color": "gray", "italic": false, "with": [{"text": "\uee08", "font": "mechanization:gui", "color": "white"}]}],
+                [{"translate": "lore.mechanization.wrench.2", "color": "gray", "italic": false, "with": [{"translate": "lore.mechanization.sneak"},{"text": "\uee08","font": "mechanization:gui", "color": "white"}]}],
+                [{"text": ""}],
                 [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },

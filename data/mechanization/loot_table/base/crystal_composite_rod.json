@@ -30,7 +30,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.crystal_composite_rod\", \"color\": \"dark_red\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.crystal_composite_rod\"}]",
                 "minecraft:custom_model_data": 6421414,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

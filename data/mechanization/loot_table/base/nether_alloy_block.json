@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.nether_alloy\", \"color\": \"dark_red\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"block.mechanization.nether_alloy\"}]",
                 "minecraft:custom_model_data": 6421403,
                 "minecraft:hide_additional_tooltip": {},
                 "minecraft:container": [

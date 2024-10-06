@@ -25,7 +25,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_model_data": 6421102,
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.machine_upgrade\"}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.machine_upgrade\", \"color\": \"yellow\"}]",
                 "!minecraft:damage": {}
               }
             }

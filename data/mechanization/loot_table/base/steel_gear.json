@@ -26,7 +26,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.steel_gear\", \"color\": \"dark_gray\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.steel_gear\"}]",
                 "minecraft:custom_model_data": 6421335,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

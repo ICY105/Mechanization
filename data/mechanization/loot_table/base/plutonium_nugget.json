@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.plutonium_nugget\", \"color\": \"blue\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.plutonium_nugget\"}]",
                 "minecraft:custom_model_data": 6421441,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

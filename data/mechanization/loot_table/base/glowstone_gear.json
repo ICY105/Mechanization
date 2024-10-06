@@ -26,7 +26,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.glowstone_gear\", \"color\": \"yellow\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.glowstone_gear\"}]",
                 "minecraft:custom_model_data": 6421551,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

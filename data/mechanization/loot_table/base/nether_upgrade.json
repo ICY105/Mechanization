@@ -14,6 +14,7 @@
               "lore": [
                 [{"translate": "lore.mechanization.upgrade.1","color": "gray","italic": false,"with": [{"translate": "lore.mechanization.sneak"},{"text": "\uee08","font": "mechanization:gui", "color": "white"}]}],
                 [{"translate": "lore.mechanization.upgrade.2","color": "gray","italic": false}],
+                [{"text": ""}],
                 [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
@@ -25,7 +26,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_model_data": 6421103,
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.nether_upgrade\"}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.nether_upgrade\", \"color\": \"light_purple\"}]",
                 "!minecraft:damage": {}
               }
             }

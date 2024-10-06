@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.structural\", \"color\": \"blue\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"block.mechanization.structural\"}]",
                 "minecraft:custom_model_data": 6421343,
                 "minecraft:hide_additional_tooltip": {},
                 "minecraft:container": [

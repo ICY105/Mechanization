@@ -29,7 +29,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.redstone_plate\", \"color\": \"red\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.redstone_plate\"}]",
                 "minecraft:custom_model_data": 6421520,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

@@ -26,7 +26,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.tin_gear\", \"color\": \"white\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.tin_gear\"}]",
                 "minecraft:custom_model_data": 6421316,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

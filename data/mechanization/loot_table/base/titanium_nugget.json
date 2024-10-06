@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.titanium_nugget\", \"color\": \"light_purple\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.titanium_nugget\"}]",
                 "minecraft:custom_model_data": 6421322,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

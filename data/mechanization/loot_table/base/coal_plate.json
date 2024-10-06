@@ -29,7 +29,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.coal_plate\", \"color\": \"dark_gray\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.coal_plate\"}]",
                 "minecraft:custom_model_data": 6421490,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

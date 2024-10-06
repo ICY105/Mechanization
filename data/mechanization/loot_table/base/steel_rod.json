@@ -29,7 +29,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.steel_rod\", \"color\": \"dark_gray\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.steel_rod\"}]",
                 "minecraft:custom_model_data": 6421336,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

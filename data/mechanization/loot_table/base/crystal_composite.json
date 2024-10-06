@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.crystal_composite_ingot\", \"color\": \"dark_red\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.crystal_composite_ingot\"}]",
                 "minecraft:custom_model_data": 6421410,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

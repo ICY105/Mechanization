@@ -28,7 +28,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.ender_alloy_plate\", \"color\": \"dark_purple\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.ender_alloy_plate\"}]",
                 "minecraft:custom_model_data": 6421394,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

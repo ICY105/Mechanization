@@ -26,7 +26,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.netherite_gear\", \"color\": \"dark_red\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.netherite_gear\"}]",
                 "minecraft:custom_model_data": 6421481,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

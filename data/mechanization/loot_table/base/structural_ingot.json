@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.structural_ingot\", \"color\": \"blue\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.structural_ingot\"}]",
                 "minecraft:custom_model_data": 6421340,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

@@ -30,7 +30,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.amethyst_rod\", \"color\": \"light_purple\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.amethyst_rod\"}]",
                 "minecraft:custom_model_data": 6421542,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

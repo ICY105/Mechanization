@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.uranium_ingot\", \"color\": \"green\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.uranium_ingot\"}]",
                 "minecraft:custom_model_data": 6421431,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}

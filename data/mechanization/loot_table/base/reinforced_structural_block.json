@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.reinforced_structural\", \"color\": \"dark_aqua\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"block.mechanization.reinforced_structural\"}]",
                 "minecraft:custom_model_data": 6421373,
                 "minecraft:hide_additional_tooltip": {},
                 "minecraft:container": [
