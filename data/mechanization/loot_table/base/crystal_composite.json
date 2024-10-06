@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:structure_block",
+          "name": "minecraft:poisonous_potato",
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -18,14 +18,15 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"crystal_composite\"}, smithed:{dict:{gem:{crystal_composite: 1b}}}}"
+              "tag": "{mechanization:{id:\"crystal_composite_ingot\"}, smithed:{dict:{ingot:{crystal_composite: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.crystal_composite\", \"color\": \"dark_red\", \"italic\": false}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.crystal_composite_ingot\", \"color\": \"dark_red\", \"italic\": false}]",
                 "minecraft:custom_model_data": 6421410,
-                "minecraft:hide_additional_tooltip": {}
+                "minecraft:hide_additional_tooltip": {},
+                "!food":{}
               }
             }
           ]

@@ -27,7 +27,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.conductive_gear\", \"color\": \"gold\", \"italic\": false}]",
-                "minecraft:custom_model_data": 6421455,
+                "minecraft:custom_model_data": 6421355,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}
               }

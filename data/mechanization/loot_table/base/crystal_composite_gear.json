@@ -27,7 +27,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.crystal_composite_gear\", \"color\": \"dark_red\", \"italic\": false}]",
-                "minecraft:custom_model_data": 6421415,
+                "minecraft:custom_model_data": 6421413,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}
               }

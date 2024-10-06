@@ -24,7 +24,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.conductive\", \"color\": \"gold\", \"italic\": false}]",
-                "minecraft:custom_model_data": 6421453,
+                "minecraft:custom_model_data": 6421353,
                 "minecraft:hide_additional_tooltip": {},
                 "minecraft:container": [
                   {

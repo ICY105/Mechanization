@@ -30,7 +30,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.gold_rod\", \"color\": \"white\", \"italic\": false}]",
-                "minecraft:custom_model_data": 6421562,
+                "minecraft:custom_model_data": 6421462,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}
               }

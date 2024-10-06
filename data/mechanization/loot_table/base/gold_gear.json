@@ -27,7 +27,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.gold_gear\", \"color\": \"white\", \"italic\": false}]",
-                "minecraft:custom_model_data": 6421561,
+                "minecraft:custom_model_data": 6421461,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}
               }

@@ -30,7 +30,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.gold_plate\", \"color\": \"white\", \"italic\": false}]",
-                "minecraft:custom_model_data": 6421560,
+                "minecraft:custom_model_data": 6421460,
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}
               }
