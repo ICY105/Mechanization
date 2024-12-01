@@ -19,7 +19,7 @@
                 [{"translate":"lore.mechanization.upgrade_stats", "color":"gray", "italic":false}],
                 [{"text":"  0.5 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.armor"}],
                 [{"text":"  0.25 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.armor_toughness"}],
-                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
@@ -29,8 +29,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.experience_plate\"}]",
-                "minecraft:custom_model_data": 6421570,
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.experience_plate\", \"color\": \"green\", \"italic\": false}]",
+                "minecraft:item_model": "mechanization:base/item/resources/experience_plate",
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}
               }

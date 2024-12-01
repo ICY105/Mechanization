@@ -20,7 +20,7 @@
                 [{"text":"  2 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.attack_damage"}],
                 [{"text":"  0.2 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.attack_speed"}],
                 [{"text":"  0 ", "color":"dark_green", "italic":false}, {"translate":"lore.mechanization.energy_saber_range"}],
-                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
@@ -30,8 +30,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.coal_rod\"}]",
-                "minecraft:custom_model_data": 6421492,
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.coal_rod\", \"color\": \"dark_gray\", \"italic\": false}]",
+                "minecraft:item_model": "mechanization:base/item/resources/coal_rod",
                 "minecraft:hide_additional_tooltip": {},
                 "!food":{}
               }

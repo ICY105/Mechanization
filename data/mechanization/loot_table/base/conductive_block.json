@@ -13,7 +13,7 @@
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
@@ -23,8 +23,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.conductive\"}]",
-                "minecraft:custom_model_data": 6421353,
+                "minecraft:item_name": "[{\"translate\": \"block.mechanization.conductive\", \"color\": \"gold\", \"italic\": false}]",
+                "minecraft:item_model": "mechanization:base/item/resources/conductive_block",
                 "minecraft:hide_additional_tooltip": {},
                 "minecraft:container": [
                   {
