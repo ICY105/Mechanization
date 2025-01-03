@@ -5,10 +5,10 @@ schedule function mechanization:base/player/pipe_wrench/update_display_entity 1t
 
 # modify display state entity
 data merge entity @s {brightness:{sky:15,block:15}}
-execute if score #state mechanization.data matches 0 run item replace entity @s contents with minecraft:blast_furnace[minecraft:custom_model_data=6421900]
-execute if score #state mechanization.data matches 1 run item replace entity @s contents with minecraft:blast_furnace[minecraft:custom_model_data=6421901]
-execute if score #state mechanization.data matches 2 run item replace entity @s contents with minecraft:blast_furnace[minecraft:custom_model_data=6421902]
-execute if score #state mechanization.data matches 3 run item replace entity @s contents with minecraft:blast_furnace[minecraft:custom_model_data=6421903]
+execute if score #state mechanization.data matches 0 run item replace entity @s contents with minecraft:blast_furnace[minecraft:item_model="mechanization:base/gui/fluid_off"]
+execute if score #state mechanization.data matches 1 run item replace entity @s contents with minecraft:blast_furnace[minecraft:item_model="mechanization:base/gui/fluid_input"]
+execute if score #state mechanization.data matches 2 run item replace entity @s contents with minecraft:blast_furnace[minecraft:item_model="mechanization:base/gui/fluid_output"]
+execute if score #state mechanization.data matches 3 run item replace entity @s contents with minecraft:blast_furnace[minecraft:item_model="mechanization:base/gui/fluid_output_2"]
 
 execute if score #side mechanization.data matches 0 run tp @s ~ ~0.02 ~ 0 0
 execute if score #side mechanization.data matches 1 run tp @s ~ ~-0.02 ~ 0 0
