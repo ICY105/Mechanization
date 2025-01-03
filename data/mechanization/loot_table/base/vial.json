@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:potion",
+          "name": "minecraft:poisonous_potato",
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -22,13 +22,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6421108,
+                "minecraft:item_model": "mechanization:base/item/vial",
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.vial\"}]",
-                "minecraft:potion_contents": {
-                  "custom_effects": [],
-                  "custom_color": 16777215
-                },
-                "minecraft:hide_additional_tooltip": {}
+                "minecraft:custom_model_data":{"colors":[16777215]},
+                "minecraft:max_stack_size": 16,
+                "!food":{}
               }
             }
           ]

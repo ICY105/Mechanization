@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:poisonous_potato",
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -24,9 +24,10 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6421111,
+                "minecraft:item_model": "mechanization:base/item/pipe_wrench",
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.pipe_wrench\"}]",
-                "!minecraft:damage": {}
+                "minecraft:max_stack_size": 1,
+                "!minecraft:food": {}
               }
             }
           ]

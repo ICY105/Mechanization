@@ -1,0 +1,38 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "mechanization:base/vial"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_name",
+          "name": {"translate": "item.mechanization.filled_vial","italic": false,"with": [{"translate": "fluid.mechanization.molten_ender_alloy"}]}
+        },
+        {
+          "function": "minecraft:set_lore",
+          "mode": "replace_all",
+          "lore": [
+            [{"translate": "lore.mechanization.fluid_amount","color": "gray","italic": false,"with": [{"text": "1000"}]}],
+            [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
+          ]
+        },
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": "{mechanization:{id:\"vial\"},fluid:{id:\"molten_ender_alloy\",temperature:3500,color:9382799,gas:0b,name:'{\"translate\":\"fluid.mechanization.molten_ender_alloy\"}',storage:1000,max_storage:1000,fixed_storage:0b}}"
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:custom_model_data":{"colors":[9382799]},
+            "minecraft:max_stack_size": 1
+          }
+        }
+      ]
+    }
+  ]
+}

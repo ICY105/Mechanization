@@ -24,8 +24,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6421005,
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.machine_crafting_table\"}]",
+                "minecraft:item_model": "mechanization:base/block/machine_crafting_table",
                 "minecraft:container": [
                   {
                     "slot": 0,

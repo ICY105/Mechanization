@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:poisonous_potato",
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -24,9 +24,9 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6421109,
+                "minecraft:item_model": "mechanization:base/item/muffler_upgrade",
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.muffler_upgrade\"}]",
-                "!minecraft:damage": {}
+                "!minecraft:food": {}
               }
             }
           ]

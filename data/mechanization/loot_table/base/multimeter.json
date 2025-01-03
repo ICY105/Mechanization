@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:poisonous_potato",
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -25,9 +25,10 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6421101,
+                "minecraft:item_model": "mechanization:base/item/multimeter",
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.multimeter\"}]",
-                "!minecraft:damage": {}
+                "minecraft:max_stack_size": 1,
+                "!minecraft:food": {}
               }
             }
           ]

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:poisonous_potato",
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -25,9 +25,9 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6421103,
+                "minecraft:item_model": "mechanization:base/item/nether_upgrade",
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.nether_upgrade\", \"color\": \"light_purple\"}]",
-                "!minecraft:damage": {}
+                "!minecraft:food": {}
               }
             }
           ]
