@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6422019,
+                "minecraft:item_model": "mechanization:machines/block/spawner_controller",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.spawner_controller\", \"color\": \"light_purple\"}]",
                 "minecraft:container": [
                   {

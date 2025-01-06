@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6422004,
+                "minecraft:item_model": "mechanization:machines/block/growth_accelerator",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.growth_accelerator\"}]",
                 "minecraft:container": [
                   {

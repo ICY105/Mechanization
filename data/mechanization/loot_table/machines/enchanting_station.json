@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6422016,
+                "minecraft:item_model": "mechanization:machines/block/enchanting_station",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.enchanting_station\", \"color\": \"light_purple\"}]",
                 "minecraft:container": [
                   {

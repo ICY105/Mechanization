@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6422031,
+                "minecraft:item_model": "mechanization:machines/block/lightning_generator",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.lightning_generator\", \"color\": \"light_purple\"}]",
                 "minecraft:container": [
                   {

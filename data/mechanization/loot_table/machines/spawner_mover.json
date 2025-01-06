@@ -22,7 +22,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6422200,
+                "minecraft:item_model": "mechanization:machines/item/spawner_mover",
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.spawner_mover\", \"color\": \"light_purple\"}]"
               }
             }

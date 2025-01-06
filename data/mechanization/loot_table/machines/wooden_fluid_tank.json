@@ -12,18 +12,19 @@
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
+                [{"translate": "lore.mechanization.fluid_amount","with": ["64000"],"color": "gray","italic": false}],
                 [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"tier_2_machine_frame\"}}"
+              "tag": "{mechanization:{id:\"tier_1_fluid_tank\"}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_model": "mechanization:base/block/tier_2_machine_frame",
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.tier_2_machine_frame\", \"color\": \"yellow\"}]",
+                "minecraft:item_model": "mechanization:machines/block/tier1_fluid_tank",
+                "minecraft:item_name": "[{\"translate\": \"block.mechanization.tier_1_fluid_tank\"}]",
                 "minecraft:container": [
                   {
                     "slot": 0,
@@ -31,12 +32,11 @@
                       "id": "minecraft:stone",
                       "count": 1,
                       "components": {
-                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:tier_2_machine_frame\"}}}"
+                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:tier_1_fluid_tank\"}}}"
                       }
                     }
                   }
-                ],
-                "minecraft:hide_additional_tooltip": {}
+                ]
               }
             }
           ]

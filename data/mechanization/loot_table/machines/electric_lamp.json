@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6422032,
+                "minecraft:item_model": "mechanization:machines/block/electric_lamp",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.electric_lamp\", \"color\": \"yellow\"}]",
                 "minecraft:container": [
                   {

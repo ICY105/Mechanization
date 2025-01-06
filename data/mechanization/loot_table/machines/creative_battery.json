@@ -22,7 +22,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6421002,
+                "minecraft:item_model": "mechanization:machines/block/tier3_battery",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.battery.creative\", \"color\": \"light_purple\"}]",
                 "minecraft:container": [
                   {

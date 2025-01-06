@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6421013,
+                "minecraft:item_model": "mechanization:machines/block/copper_cable",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.copper_cable\"}]",
                 "minecraft:container": [
                   {

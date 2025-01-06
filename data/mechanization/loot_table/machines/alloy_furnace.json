@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6422000,
+                "minecraft:item_model": "mechanization:machines/block/alloy_furnace",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.alloy_furnace\"}]",
                 "minecraft:container": [
                   {

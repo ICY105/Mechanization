@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6422014,
+                "minecraft:item_model": "mechanization:machines/block/solar_panel",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.solar_panel\", \"color\": \"yellow\"}]",
                 "minecraft:container": [
                   {

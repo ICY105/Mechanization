@@ -12,19 +12,18 @@
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                [{"translate": "lore.mechanization.storage","with": ["200000"],"color": "gray","italic": false}],
                 [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"tier_2_battery\"}}"
+              "tag": "{mechanization:{id:\"tier_3_machine_frame\"}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6421001,
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.battery.tier_2\", \"color\": \"yellow\"}]",
+                "minecraft:item_model": "mechanization:base/block/tier3_machine_frame",
+                "minecraft:item_name": "[{\"translate\": \"block.mechanization.tier_3_machine_frame\", \"color\": \"light_purple\"}]",
                 "minecraft:container": [
                   {
                     "slot": 0,
@@ -32,11 +31,12 @@
                       "id": "minecraft:stone",
                       "count": 1,
                       "components": {
-                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:tier_2_battery\"}}}"
+                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:tier_3_machine_frame\"}}}"
                       }
                     }
                   }
-                ]
+                ],
+                "minecraft:hide_additional_tooltip": {}
               }
             }
           ]

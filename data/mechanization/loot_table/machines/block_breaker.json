@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6422008,
+                "minecraft:item_model": "mechanization:machines/block/block_breaker",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.block_breaker\"}]",
                 "minecraft:container": [
                   {

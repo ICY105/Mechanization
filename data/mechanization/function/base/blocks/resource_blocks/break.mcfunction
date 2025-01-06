@@ -1,7 +1,7 @@
 
-execute if entity @s[tag=mechanization.machine_frame.t1] run loot spawn ~ ~ ~ loot mechanization:base/tier_1_machine_frame
-execute if entity @s[tag=mechanization.machine_frame.t2] run loot spawn ~ ~ ~ loot mechanization:base/tier_2_machine_frame
-execute if entity @s[tag=mechanization.machine_frame.t3] run loot spawn ~ ~ ~ loot mechanization:base/tier_3_machine_frame
+execute if entity @s[tag=mechanization.machine_frame.t1] run loot spawn ~ ~ ~ loot mechanization:base/tier1_machine_frame
+execute if entity @s[tag=mechanization.machine_frame.t2] run loot spawn ~ ~ ~ loot mechanization:base/tier2_machine_frame
+execute if entity @s[tag=mechanization.machine_frame.t3] run loot spawn ~ ~ ~ loot mechanization:base/tier3_machine_frame
 execute if entity @s[tag=mechanization.crystal_block] run loot spawn ~ ~ ~ loot mechanization:base/crystal_composite_block
 execute if entity @s[tag=mechanization.tin_block] run loot spawn ~ ~ ~ loot mechanization:base/tin_block
 execute if entity @s[tag=mechanization.raw_tin_block] run loot spawn ~ ~ ~ loot mechanization:base/tin_raw_block

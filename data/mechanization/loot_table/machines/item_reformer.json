@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6422010,
+                "minecraft:item_model": "mechanization:machines/block/item_reformer",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.item_reformer\", \"color\": \"yellow\"}]",
                 "minecraft:container": [
                   {

@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6421014,
+                "minecraft:item_model": "mechanization:machines/block/conductive_cable",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.conductive_cable\", \"color\": \"yellow\"}]",
                 "minecraft:container": [
                   {

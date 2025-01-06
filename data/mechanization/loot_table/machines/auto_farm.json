@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6422005,
+                "minecraft:item_model": "mechanization:machines/block/auto_farm",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.auto_farm\", \"color\": \"yellow\"}]",
                 "minecraft:container": [
                   {

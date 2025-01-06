@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6422009,
+                "minecraft:item_model": "mechanization:machines/block/grinder",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.grinder\"}]",
                 "minecraft:container": [
                   {

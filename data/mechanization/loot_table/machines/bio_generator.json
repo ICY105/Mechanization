@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6422007,
+                "minecraft:item_model": "mechanization:machines/block/bio_generator",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.bio_generator\", \"color\": \"yellow\"}]",
                 "minecraft:container": [
                   {

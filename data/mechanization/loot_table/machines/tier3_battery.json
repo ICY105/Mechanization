@@ -12,19 +12,19 @@
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                [{"translate": "lore.mechanization.fluid_amount","with": ["256000"],"color": "gray","italic": false}],
+                [{"translate": "lore.mechanization.storage","with": ["500000"],"color": "gray","italic": false}],
                 [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"tier_2_fluid_tank\"}}"
+              "tag": "{mechanization:{id:\"tier_3_battery\"}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6422024,
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.tier_2_fluid_tank\", \"color\": \"yellow\"}]",
+                "minecraft:item_model": "mechanization:machines/block/tier3_battery",
+                "minecraft:item_name": "[{\"translate\": \"block.mechanization.battery.tier_3\", \"color\": \"light_purple\"}]",
                 "minecraft:container": [
                   {
                     "slot": 0,
@@ -32,7 +32,7 @@
                       "id": "minecraft:stone",
                       "count": 1,
                       "components": {
-                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:tier_2_fluid_tank\"}}}"
+                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:tier_3_battery\"}}}"
                       }
                     }
                   }

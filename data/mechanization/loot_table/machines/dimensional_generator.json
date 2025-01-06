@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6422015,
+                "minecraft:item_model": "mechanization:machines/block/dimensional_generator",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.dimensional_generator\", \"color\": \"light_purple\"}]",
                 "minecraft:container": [
                   {
