@@ -38,8 +38,8 @@ execute if score @s fluid.storage.1 matches 2000.. run scoreboard players operat
 execute if score @s mechanization.data matches 0 if score @s fluid.storage.1 matches 10.. run scoreboard players remove @s fluid.storage.1 10
 
 # model
-execute if score @s mechanization.data matches 0 run item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422001}
-execute if score @s mechanization.data matches 1.. run item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422902}
+execute if score @s mechanization.data matches 0 run item modify entity @s contents {"function": "minecraft:set_components","components": {"minecraft:custom_model_data": {"floats":[0]}}}
+execute if score @s mechanization.data matches 1.. run item modify entity @s contents {"function": "minecraft:set_components","components": {"minecraft:custom_model_data": {"floats":[1]}}}
 
 execute if score @s[tag=!mechanization.muffled] mechanization.data matches 1.. if score #timer.100 mechanization.data matches 0..19 run playsound mechanization:machines.steam_generator block @a[distance=..16] ~ ~ ~
 

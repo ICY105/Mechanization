@@ -1,8 +1,8 @@
 
 # spawn item
-execute if entity @s[tag=mechanization.fluid_tank.t1] run loot spawn ~ ~ ~ loot mechanization:machines/wooden_liquid_tank
-execute if entity @s[tag=mechanization.fluid_tank.t2] run loot spawn ~ ~ ~ loot mechanization:machines/hardened_liquid_tank
-execute if entity @s[tag=mechanization.fluid_tank.t3] run loot spawn ~ ~ ~ loot mechanization:machines/pressurized_liquid_tank
+execute if entity @s[tag=mechanization.fluid_tank.t1] run loot spawn ~ ~ ~ loot mechanization:machines/wooden_fluid_tank
+execute if entity @s[tag=mechanization.fluid_tank.t2] run loot spawn ~ ~ ~ loot mechanization:machines/hardened_fluid_tank
+execute if entity @s[tag=mechanization.fluid_tank.t3] run loot spawn ~ ~ ~ loot mechanization:machines/pressurized_fluid_tank
 
 # copy fluid to item
 data modify storage mechanization:temp list set value [0,0,0,0]

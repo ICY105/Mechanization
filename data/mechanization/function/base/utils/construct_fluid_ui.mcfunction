@@ -34,12 +34,8 @@ execute if score #model mechanization.data matches 17.. run scoreboard players s
 execute if score #temperature mechanization.data matches 1000.. run scoreboard players add #model mechanization.data 17
 
 # set name & color
-data modify storage mechanization:temp obj set value {cmd:0, color:0}
-execute store result storage mechanization:temp obj.cmd int 1 run scoreboard players get #model mechanization.data
-execute store result storage mechanization:temp obj.color int 1 run scoreboard players get #color mechanization.data
-
 execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value '{"nbt":"var","storage":"mechanization:temp","interpret":true,"color":"white","italic":false}'
 execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3201 Items[{Slot:0b}].components."minecraft:item_name" set from block -30000000 0 3202 front_text.messages[0]
 execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value '{"translate":"lore.mechanization.fluid_amount","italic":false,"color":"gray","with":[{"score":{"name":"#storage","objective":"mechanization.data"}}]}'
 execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3201 Items[{Slot:0b}].components."minecraft:lore" append from block -30000000 0 3202 front_text.messages[0]
-execute if score #storage mechanization.data matches 1.. run function mechanization:base/utils/m.construct_fluid_ui_2 with storage mechanization:temp obj
+execute if score #storage mechanization.data matches 1.. run item modify block -30000000 0 3201 container.0 {"function":"minecraft:set_custom_model_data","floats":{"values":[{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#model"},"score":"mechanization.data","scale":1}],"mode":"replace_all"},"colors":{"values":[{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#color"},"score":"mechanization.data","scale":1}],"mode":"replace_all"}}

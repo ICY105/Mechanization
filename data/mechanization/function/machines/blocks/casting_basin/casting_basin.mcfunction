@@ -14,8 +14,8 @@ execute if score @s mechanization.time matches 1 if score @s fluid.storage.0 mat
 execute if score #active mechanization.data matches 1 unless score @s mechanization.time matches 2.. if score @s fluid.storage.0 matches 1.. if score @s mechanization.data matches 1.. if score @s energy.storage > #machines.cf.casting_basin.power mechanization.data run function mechanization:machines/blocks/casting_basin/recipes/input
 
 # ui
-execute if score @s mechanization.time matches 0 run item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422028}
-execute if score @s mechanization.time matches 1.. run item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422950}
+execute if score @s mechanization.time matches 0 run item modify entity @s contents {"function": "minecraft:set_components","components": {"minecraft:custom_model_data": {"floats":[0]}}}
+execute if score @s mechanization.time matches 1.. run item modify entity @s contents {"function": "minecraft:set_components","components": {"minecraft:custom_model_data": {"floats":[1]}}}
 
 # update
 execute if score @s mechanization.time matches 1.. if score @s energy.storage < #machines.cf.casting_basin.power mechanization.data run scoreboard players set @s mechanization.time 0

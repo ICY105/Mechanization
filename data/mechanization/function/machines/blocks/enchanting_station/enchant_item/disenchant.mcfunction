@@ -10,7 +10,7 @@ scoreboard players operation #total_cost mechanization.data = $temp_1 mechanizat
 scoreboard players operation #total_cost mechanization.data *= $out_1 mechanization.data
 scoreboard players operation #total_cost mechanization.data *= #cons.25 mechanization.data
 
-execute if score @s fluid.storage.0 >= #total_cost mechanization.data run item replace block ~ ~ ~ container.14 with minecraft:enchanted_book{StoredEnchantments:[]}
+execute if score @s fluid.storage.0 >= #total_cost mechanization.data run item replace block ~ ~ ~ container.14 with minecraft:enchanted_book
 execute if score @s fluid.storage.0 >= #total_cost mechanization.data run data modify block ~ ~ ~ Items[{Slot:14b}].tag.StoredEnchantments append from block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[0]
 execute if score @s fluid.storage.0 >= #total_cost mechanization.data run data remove block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[0]
 execute if score @s fluid.storage.0 >= #total_cost mechanization.data unless data block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments[0] run data remove block ~ ~ ~ Items[{Slot:10b}].tag.Enchantments

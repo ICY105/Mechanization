@@ -22,8 +22,8 @@ execute if score @s mechanization.time matches 1.. if score @s energy.storage >=
 execute if score @s mechanization.time matches 1.. run scoreboard players remove @s mechanization.time 1
 
 # effects
-execute if score @s mechanization.time matches 0 run item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422027}
-execute if score @s mechanization.time matches 1.. run item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422949}
+execute if score @s mechanization.time matches 0 run item modify entity @s contents {"function": "minecraft:set_components","components": {"minecraft:custom_model_data": {"floats":[0]}}}
+execute if score @s mechanization.time matches 1.. run item modify entity @s contents {"function": "minecraft:set_components","components": {"minecraft:custom_model_data": {"floats":[1]}}}
 execute if score @s[tag=!mechanization.muffled] mechanization.time matches 1.. if score #timer.100 mechanization.data matches 0..19 run playsound mechanization:machines.arc_furnace block @a[distance=..16] ~ ~ ~
 
 # cleanup

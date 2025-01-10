@@ -1,6 +1,6 @@
 
 # Summon Entity & Init
-summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.fluid_accumulator", "mechanization.redstone_control", "mechanization.mufflable", "fluid.tank", "smithed.block"], CustomName:'{"translate":"block.mechanization.fluid_accumulator"}', item:{id:"minecraft:blast_furnace", components:{"minecraft:custom_model_data":6422029}, Count:1b}}
+summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.fluid_accumulator", "mechanization.redstone_control", "mechanization.mufflable", "fluid.tank", "smithed.block"], CustomName:'{"translate":"block.mechanization.fluid_accumulator"}', item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:machines/block/fluid_accumulator"}, Count:1b}}
 
 setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:'[{"translate":"offset.-8","font":"space:default","with":[{"text":"\\uee0b","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-171","font":"space:default","with":[{"translate":"block.mechanization.fluid_accumulator","font":"minecraft:default"}]}]'}
 

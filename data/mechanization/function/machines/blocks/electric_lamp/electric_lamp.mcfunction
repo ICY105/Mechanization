@@ -6,8 +6,8 @@ execute if score @s energy.storage < #machines.cf.lamp.power mechanization.data 
 execute if score #active mechanization.data matches 0 run function mechanization:machines/blocks/electric_lamp/turn_off
 execute if score #active mechanization.data matches 1 run function mechanization:machines/blocks/electric_lamp/turn_on
 
-execute if score #active mechanization.data matches 0 run item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422032}
-execute if score #active mechanization.data matches 1 run item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422952}
+execute if score #active mechanization.data matches 0 run item modify entity @s contents {"function": "minecraft:set_components","components": {"minecraft:custom_model_data": {"floats":[0]}}}
+execute if score #active mechanization.data matches 1 run item modify entity @s contents {"function": "minecraft:set_components","components": {"minecraft:custom_model_data": {"floats":[1]}}}
 
 execute if score #active mechanization.data matches 1 run scoreboard players operation @s energy.storage -= #machines.cf.lamp.power mechanization.data
 

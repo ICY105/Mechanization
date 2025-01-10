@@ -17,13 +17,13 @@ execute if score #success mechanization.data matches 1 run scoreboard players re
 
 scoreboard players set #success mechanization.data 0
 execute if score @s fluid.storage.0 matches 1152.. if score #count_2 mechanization.data matches 0 if data storage mechanization:temp obj.fluid_item{id:"molten_uranium"} if data storage mechanization:temp obj.output_item.components."minecraft:custom_data".mechanization{id:"fuel_rod"} run scoreboard players set #success mechanization.data 1
-execute if score #success mechanization.data matches 1 run loot replace block ~ ~ ~ container.21 loot mechanization:nuclear/uranium_fuel_rod
+execute if score #success mechanization.data matches 1 run function mechanization:base/utils/m.run_command {command:"loot replace block ~ ~ ~ container.21 loot mechanization:nuclear/uranium_fuel_rod"}
 execute if score #success mechanization.data matches 1 run item modify block ~ ~ ~ container.12 mechanization:decrement_count
 execute if score #success mechanization.data matches 1 run scoreboard players remove @s fluid.storage.0 1152
 
 scoreboard players set #success mechanization.data 0
 execute if score @s fluid.storage.0 matches 1152.. if score #count_2 mechanization.data matches 0 if data storage mechanization:temp obj.fluid_item{id:"molten_mox_fuel"} if data storage mechanization:temp obj.output_item.components."minecraft:custom_data".mechanization{id:"fuel_rod"} run scoreboard players set #success mechanization.data 1
-execute if score #success mechanization.data matches 1 run loot replace block ~ ~ ~ container.21 loot mechanization:nuclear/mox_fuel_rod
+execute if score #success mechanization.data matches 1 run function mechanization:base/utils/m.run_command {command:"loot replace block ~ ~ ~ container.21 loot mechanization:nuclear/mox_fuel_rod"}
 execute if score #success mechanization.data matches 1 run item modify block ~ ~ ~ container.12 mechanization:decrement_count
 execute if score #success mechanization.data matches 1 run scoreboard players remove @s fluid.storage.0 1152
 

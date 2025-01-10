@@ -21,12 +21,12 @@ execute if score #active mechanization.data matches 1 if entity @s[tag=!mechaniz
 execute if score #active mechanization.data matches 1 if entity @s[tag=mechanization.upgraded.nether] run scoreboard players remove @s energy.storage 200
 
 # display
-item replace block ~ ~ ~ container.1 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,minecraft:custom_model_data=6421200,!minecraft:food]
+item replace block ~ ~ ~ container.1 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,!minecraft:food,minecraft:item_model="mechanization:base/gui/invisible"]
 function mechanization:base/utils/generate_energy_bar_ui
 execute if score #active mechanization.data matches 1 if block ~ ~ ~ minecraft:furnace[lit=false] run function mechanization:base/utils/set_furnace_lit
 
-execute if score #active mechanization.data matches 0 run item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422003}
-execute if score #active mechanization.data matches 1 run item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422905}
+execute if score #active mechanization.data matches 0 run item modify entity @s contents {"function": "minecraft:set_components","components": {"minecraft:custom_model_data": {"floats":[0]}}}
+execute if score #active mechanization.data matches 1 run item modify entity @s contents {"function": "minecraft:set_components","components": {"minecraft:custom_model_data": {"floats":[1]}}}
 execute if score #active mechanization.data matches 1 if entity @s[tag=!mechanization.muffled] if score #timer.100 mechanization.data matches 0..19 run playsound mechanization:machines.electric_furnace block @a[distance=..16] ~ ~ ~
 
 ## cleanup

@@ -4,7 +4,7 @@
 $scoreboard players set #enrichment mechanization.data $(fluid_enrichment)
 execute unless score #enrichment mechanization.data matches 2..100 run return fail
 
-loot replace block ~ ~ ~ container.21 loot mechanization:nuclear/uranium_fuel_rod
+function mechanization:base/utils/m.run_command {command:"loot replace block ~ ~ ~ container.21 loot mechanization:nuclear/uranium_fuel_rod"}
 item modify block ~ ~ ~ container.12 mechanization:decrement_count
 scoreboard players remove @s fluid.storage.0 1152
 

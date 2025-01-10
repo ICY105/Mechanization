@@ -1,7 +1,7 @@
 
-execute if entity @s[tag=mechanization.battery.t1] run loot spawn ~ ~ ~ loot mechanization:machines/tier_1_battery
-execute if entity @s[tag=mechanization.battery.t2] run loot spawn ~ ~ ~ loot mechanization:machines/tier_2_battery
-execute if entity @s[tag=mechanization.battery.t3] run loot spawn ~ ~ ~ loot mechanization:machines/tier_3_battery
+execute if entity @s[tag=mechanization.battery.t1] run loot spawn ~ ~ ~ loot mechanization:machines/tier1_battery
+execute if entity @s[tag=mechanization.battery.t2] run loot spawn ~ ~ ~ loot mechanization:machines/tier2_battery
+execute if entity @s[tag=mechanization.battery.t3] run loot spawn ~ ~ ~ loot mechanization:machines/tier3_battery
 function mechanization:base/utils/break_block/break_copy_data
 
 function energy:v1/api/break_machine
