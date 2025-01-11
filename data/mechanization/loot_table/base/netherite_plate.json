@@ -31,7 +31,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.netherite_plate\", \"color\": \"dark_red\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/netherite_plate",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

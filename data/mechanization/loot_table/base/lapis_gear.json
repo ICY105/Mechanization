@@ -29,7 +29,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.lapis_gear\", \"color\": \"blue\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/lapis_gear",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

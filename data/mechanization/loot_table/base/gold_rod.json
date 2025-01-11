@@ -32,7 +32,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.gold_rod\", \"color\": \"white\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/gold_rod",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

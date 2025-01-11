@@ -31,7 +31,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.iron_plate\", \"color\": \"white\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/iron_plate",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

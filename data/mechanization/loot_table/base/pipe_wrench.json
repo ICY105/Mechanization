@@ -19,7 +19,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"pipe_wrench\"}}"
+              "tag": "{mechanization:{id:\"pipe_wrench\"},player_action:{click_detection:1b}}"
             },
             {
               "function": "minecraft:set_components",

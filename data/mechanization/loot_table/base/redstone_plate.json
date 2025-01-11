@@ -32,7 +32,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.redstone_plate\", \"color\": \"red\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/redstone_plate",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

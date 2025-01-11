@@ -31,7 +31,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.structural_plate\", \"color\": \"blue\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/structural_plate",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

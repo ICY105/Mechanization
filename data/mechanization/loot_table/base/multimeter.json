@@ -28,7 +28,8 @@
                 "minecraft:item_model": "mechanization:base/item/multimeter",
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.multimeter\"}]",
                 "minecraft:max_stack_size": 1,
-                "!minecraft:food": {}
+                "!minecraft:food": {},
+                "!minecraft:consumable": {}
               }
             }
           ]

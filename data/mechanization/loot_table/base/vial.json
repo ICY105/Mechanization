@@ -26,7 +26,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.vial\"}]",
                 "minecraft:custom_model_data":{"colors":[16777215]},
                 "minecraft:max_stack_size": 16,
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

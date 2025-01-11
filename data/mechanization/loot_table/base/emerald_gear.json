@@ -29,7 +29,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.emerald_gear\", \"color\": \"green\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/emerald_gear",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

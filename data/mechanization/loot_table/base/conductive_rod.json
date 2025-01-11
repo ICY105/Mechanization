@@ -32,7 +32,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.conductive_rod\", \"color\": \"gold\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/conductive_rod",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

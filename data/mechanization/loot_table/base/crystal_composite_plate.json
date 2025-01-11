@@ -32,7 +32,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.crystal_composite_plate\", \"color\": \"dark_red\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/crystal_composite_plate",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

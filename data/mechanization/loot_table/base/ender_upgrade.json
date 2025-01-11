@@ -27,7 +27,8 @@
               "components": {
                 "minecraft:item_model": "mechanization:base/item/ender_upgrade",
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.ender_upgrade\", \"color\": \"light_purple\"}]",
-                "!minecraft:food": {}
+                "!minecraft:food": {},
+                "!minecraft:consumable": {}
               }
             }
           ]

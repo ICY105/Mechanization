@@ -32,7 +32,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.emerald_plate\", \"color\": \"green\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/emerald_plate",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

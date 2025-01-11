@@ -29,7 +29,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.netherite_gear\", \"color\": \"dark_red\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/netherite_gear",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

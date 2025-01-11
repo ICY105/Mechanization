@@ -29,7 +29,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.obsidian_gear\", \"color\": \"red\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/obsidian_gear",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

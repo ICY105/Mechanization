@@ -29,7 +29,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.crystal_composite_gear\", \"color\": \"dark_red\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/crystal_composite_gear",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

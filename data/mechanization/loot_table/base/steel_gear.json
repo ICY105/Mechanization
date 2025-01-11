@@ -29,7 +29,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.steel_gear\", \"color\": \"dark_gray\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/steel_gear",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

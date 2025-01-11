@@ -32,7 +32,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.conductive_plate\", \"color\": \"gold\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/conductive_plate",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

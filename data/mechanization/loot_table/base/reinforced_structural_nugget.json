@@ -26,7 +26,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.reinforced_structural_nugget\", \"color\": \"dark_aqua\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/reinforced_structural_nugget",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

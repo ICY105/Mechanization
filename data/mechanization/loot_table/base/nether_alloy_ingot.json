@@ -26,7 +26,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.nether_alloy_ingot\", \"color\": \"dark_red\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/nether_alloy_ingot",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

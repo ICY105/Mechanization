@@ -33,7 +33,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.coal_rod\", \"color\": \"dark_gray\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/coal_rod",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

@@ -26,7 +26,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.tin_nugget\", \"color\": \"white\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/tin_nugget",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

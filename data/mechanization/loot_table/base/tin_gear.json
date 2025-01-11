@@ -29,7 +29,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.tin_gear\", \"color\": \"white\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/tin_gear",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

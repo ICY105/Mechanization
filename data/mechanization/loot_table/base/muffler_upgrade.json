@@ -26,7 +26,8 @@
               "components": {
                 "minecraft:item_model": "mechanization:base/item/muffler_upgrade",
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.muffler_upgrade\"}]",
-                "!minecraft:food": {}
+                "!minecraft:food": {},
+                "!minecraft:consumable": {}
               }
             }
           ]

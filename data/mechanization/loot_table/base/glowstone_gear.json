@@ -29,7 +29,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.glowstone_gear\", \"color\": \"yellow\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/glowstone_gear",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

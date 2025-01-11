@@ -33,7 +33,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.ender_alloy_rod\", \"color\": \"dark_purple\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/ender_alloy_rod",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

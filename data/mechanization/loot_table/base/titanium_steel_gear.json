@@ -29,7 +29,8 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.titanium_steel_gear\", \"color\": \"light_purple\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/titanium_steel_gear",
                 "minecraft:hide_additional_tooltip": {},
-                "!food":{}
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]
