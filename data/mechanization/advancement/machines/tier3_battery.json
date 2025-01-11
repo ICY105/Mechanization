@@ -1,20 +1,20 @@
 {
   "display": {
     "title": {
-      "translate": "advancement.mechanization.tier_1_machine_frame.title",
+      "translate": "advancement.mechanization.tier_3_battery.title",
       "color":"green"
     },
     "description": {
-      "translate": "advancement.mechanization.tier_1_machine_frame.desc",
+      "translate": "advancement.mechanization.tier_3_battery.desc",
       "color":"dark_aqua"
     },
     "icon": {
       "id": "minecraft:blast_furnace",
       "components": {
-        "minecraft:custom_model_data": 6421007
+        "minecraft:item_model": "mechanization:machines/block/tier3_battery"
       }
     },
-    "frame": "goal"
+    "frame": "task"
   },
   "criteria": {
     "requirement": {
@@ -24,12 +24,13 @@
           {
             "items": "minecraft:blast_furnace",
             "predicates": {
-              "minecraft:custom_data": {"mechanization":{"id":"tier_1_machine_frame"}}
+              "minecraft:custom_data": {"mechanization":{"id":"tier_3_battery"}}
             }
           }
         ]
       }
     }
   },
-  "parent": "mechanization:base/tin_ore"
+  "parent": "mechanization:base/tier_3_machine_frame"
 }
+  

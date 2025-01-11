@@ -9,9 +9,9 @@
       "color":"dark_aqua"
     },
     "icon": {
-      "id": "minecraft:carrot_on_a_stick",
+      "id": "minecraft:poisonous_potato",
       "components": {
-        "minecraft:custom_model_data": 6421104
+        "minecraft:item_model": "mechanization:base/item/ender_upgrade"
       }
     },
     "frame": "task"

@@ -11,7 +11,7 @@
     "icon": {
       "id": "minecraft:carrot_on_a_stick",
       "components": {
-        "minecraft:custom_model_data": 6425106
+        "minecraft:item_model": "mechanization:assembly/item/mss_storage_drive"
       }
     },
     "frame": "goal"

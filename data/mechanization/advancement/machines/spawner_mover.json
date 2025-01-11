@@ -11,7 +11,7 @@
     "icon": {
       "id": "minecraft:carrot_on_a_stick",
       "components": {
-        "minecraft:custom_model_data": 6422201
+        "minecraft:item_model": "mechanization:machines/item/spawner_mover"
       }
     },
     "frame": "task"

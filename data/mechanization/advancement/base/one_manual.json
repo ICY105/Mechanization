@@ -11,7 +11,7 @@
     "icon": {
       "id": "minecraft:written_book",
       "components": {
-        "minecraft:custom_model_data": 6425011
+        "minecraft:item_model": "mechanization:base/item/mechanical_manual"
       }
     },
     "frame": "goal",

@@ -11,7 +11,7 @@
     "icon": {
       "id": "minecraft:carrot_on_a_stick",
       "components": {
-        "minecraft:custom_model_data": 6421103
+        "minecraft:item_model": "mechanization:base/item/nether_upgrade"
       }
     },
     "frame": "task"

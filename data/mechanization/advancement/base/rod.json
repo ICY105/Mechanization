@@ -1,36 +1,36 @@
 {
-    "display": {
-      "title": {
-        "translate": "advancement.mechanization.rod.title",
-        "color":"green"
-      },
-      "description": {
-        "translate": "advancement.mechanization.rod.desc",
-        "color":"dark_aqua"
-      },
-      "icon": {
-        "id": "minecraft:structure_block",
-        "components": {
-          "minecraft:custom_model_data": 6421472
-        }
-      },
-      "frame": "task"
+  "display": {
+    "title": {
+      "translate": "advancement.mechanization.rod.title",
+      "color":"green"
     },
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:inventory_changed",
-        "conditions": {
-          "items": [
-            {
-              "items": "minecraft:blast_furnace",
-              "predicates": {
-                "minecraft:custom_data": "{smithed:{dict:{rod:{}}}}"
-              }
-            }
-          ]
-        }
+    "description": {
+      "translate": "advancement.mechanization.rod.desc",
+      "color":"dark_aqua"
+    },
+    "icon": {
+      "id": "minecraft:poisonous_potato",
+      "components": {
+      "minecraft:item_model": "mechanization:base/item/copper_rod"
       }
     },
-    "parent": "mechanization:mechanization"
-  }
+    "frame": "task"
+  },
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:poisonous_potato",
+            "predicates": {
+              "minecraft:custom_data": "{smithed:{dict:{rod:{}}}}"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "mechanization:mechanization"
+}
   

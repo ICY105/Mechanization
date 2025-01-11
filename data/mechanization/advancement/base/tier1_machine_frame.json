@@ -1,17 +1,17 @@
 {
   "display": {
     "title": {
-      "translate": "advancement.mechanization.tier_3_machine_frame.title",
+      "translate": "advancement.mechanization.tier_1_machine_frame.title",
       "color":"green"
     },
     "description": {
-      "translate": "advancement.mechanization.tier_3_machine_frame.desc",
+      "translate": "advancement.mechanization.tier_1_machine_frame.desc",
       "color":"dark_aqua"
     },
     "icon": {
       "id": "minecraft:blast_furnace",
       "components": {
-        "minecraft:custom_model_data": 6421009
+        "minecraft:item_model": "mechanization:base/block/tier1_machine_frame"
       }
     },
     "frame": "goal"
@@ -24,12 +24,12 @@
           {
             "items": "minecraft:blast_furnace",
             "predicates": {
-              "minecraft:custom_data": {"mechanization":{"id":"tier_3_machine_frame"}}
+              "minecraft:custom_data": {"mechanization":{"id":"tier_1_machine_frame"}}
             }
           }
         ]
       }
     }
   },
-	"parent": "mechanization:base/machine_upgrade"
+  "parent": "mechanization:base/tin_ore"
 }

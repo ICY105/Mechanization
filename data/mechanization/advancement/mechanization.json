@@ -11,7 +11,7 @@
     "icon": {
       "id": "minecraft:blast_furnace",
       "components": {
-        "minecraft:custom_model_data": 6421005
+        "minecraft:item_model": "mechanization:base/block/machine_crafting_table"
       }
     },
     "background": "mechanization:textures\/base\/font\/manual\/index_icon\/blank.png",

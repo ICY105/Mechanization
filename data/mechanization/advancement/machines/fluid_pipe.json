@@ -1,17 +1,17 @@
 {
   "display": {
     "title": {
-      "translate": "advancement.mechanization.tier_1_battery.title",
+      "translate": "advancement.mechanization.liquid_pipe.title",
       "color":"green"
     },
     "description": {
-      "translate": "advancement.mechanization.tier_1_battery.desc",
+      "translate": "advancement.mechanization.liquid_pipe.desc",
       "color":"dark_aqua"
     },
     "icon": {
       "id": "minecraft:blast_furnace",
       "components": {
-        "minecraft:custom_model_data": 6421000
+        "minecraft:item_model": "mechanization:machines/block/fluid_pipe"
       }
     },
     "frame": "task"
@@ -24,12 +24,12 @@
           {
             "items": "minecraft:blast_furnace",
             "predicates": {
-              "minecraft:custom_data": {"mechanization":{"id":"tier_1_battery"}}
+              "minecraft:custom_data": {"mechanization":{"id":"fluid_pipe"}}
             }
           }
         ]
       }
     }
   },
-  "parent": "mechanization:base/tier_1_machine_frame"
+  "parent": "mechanization:machines/tier_1_battery"
 }

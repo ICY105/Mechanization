@@ -11,7 +11,7 @@
     "icon": {
       "id": "minecraft:blast_furnace",
       "components": {
-        "minecraft:custom_model_data": 6422015
+        "minecraft:item_model": "mechanization:machines/block/dimensional_generator"
       }
     },
     "frame": "task"

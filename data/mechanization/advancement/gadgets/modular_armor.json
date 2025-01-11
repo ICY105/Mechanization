@@ -11,7 +11,7 @@
     "icon": {
       "id": "minecraft:leather_chestplate",
       "components": {
-        "minecraft:custom_model_data": 6424107
+        "minecraft:item_model": "mechanization:gadgets/item/modular_armor"
       }
     },
     "frame": "task"

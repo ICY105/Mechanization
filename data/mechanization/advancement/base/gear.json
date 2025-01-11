@@ -11,7 +11,7 @@
     "icon": {
       "id": "minecraft:structure_block",
       "components": {
-        "minecraft:custom_model_data": 6421471
+        "minecraft:item_model": "mechanization:base/item/copper_gear"
       }
     },
     "frame": "task"
@@ -22,7 +22,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:blast_furnace",
+            "items": "minecraft:poisonous_potato",
             "predicates": {
               "minecraft:custom_data": {"smithed":{"dict":{"gear":{}}}}
             }

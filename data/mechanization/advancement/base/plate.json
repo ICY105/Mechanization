@@ -9,9 +9,9 @@
       "color":"dark_aqua"
     },
     "icon": {
-      "id": "minecraft:structure_block",
+      "id": "minecraft:poisonous_potato",
       "components": {
-        "minecraft:custom_model_data": 6421470
+        "minecraft:item_model": "mechanization:base/item/copper_plate"
       }
     },
     "frame": "task"
@@ -22,7 +22,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:blast_furnace",
+            "items": "minecraft:poisonous_potato",
             "predicates": {
               "minecraft:custom_data": {"smithed":{"dict":{"plate":{}}}}
             }
