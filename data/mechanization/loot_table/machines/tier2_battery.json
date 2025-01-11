@@ -18,13 +18,13 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"tier_2_battery\"}}"
+              "tag": "{mechanization:{id:\"tier2_battery\"}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:machines/block/tier2_battery",
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.battery.tier_2\", \"color\": \"yellow\"}]",
+                "minecraft:item_name": "[{\"translate\": \"block.mechanization.battery.tier2\", \"color\": \"yellow\"}]",
                 "minecraft:container": [
                   {
                     "slot": 0,
@@ -32,7 +32,7 @@
                       "id": "minecraft:stone",
                       "count": 1,
                       "components": {
-                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:tier_2_battery\"}}}"
+                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:tier2_battery\"}}}"
                       }
                     }
                   }

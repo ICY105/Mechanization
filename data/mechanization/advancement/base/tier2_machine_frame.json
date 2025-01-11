@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "translate": "advancement.mechanization.tier_2_machine_frame.title",
+      "translate": "advancement.mechanization.tier2_machine_frame.title",
       "color":"green"
     },
     "description": {
-      "translate": "advancement.mechanization.tier_2_machine_frame.desc",
+      "translate": "advancement.mechanization.tier2_machine_frame.desc",
       "color":"dark_aqua"
     },
     "icon": {
@@ -24,7 +24,7 @@
           {
             "items": "minecraft:blast_furnace",
             "predicates": {
-              "minecraft:custom_data": {"mechanization":{"id":"tier_2_machine_frame"}}
+              "minecraft:custom_data": {"mechanization":{"id":"tier2_machine_frame"}}
             }
           }
         ]

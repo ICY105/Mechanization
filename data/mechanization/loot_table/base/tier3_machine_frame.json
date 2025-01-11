@@ -17,13 +17,13 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"tier_3_machine_frame\"}}"
+              "tag": "{mechanization:{id:\"tier3_machine_frame\"}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:base/block/tier3_machine_frame",
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.tier_3_machine_frame\", \"color\": \"light_purple\"}]",
+                "minecraft:item_name": "[{\"translate\": \"block.mechanization.tier3_machine_frame\", \"color\": \"light_purple\"}]",
                 "minecraft:container": [
                   {
                     "slot": 0,
@@ -31,7 +31,7 @@
                       "id": "minecraft:stone",
                       "count": 1,
                       "components": {
-                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:tier_3_machine_frame\"}}}"
+                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:tier3_machine_frame\"}}}"
                       }
                     }
                   }

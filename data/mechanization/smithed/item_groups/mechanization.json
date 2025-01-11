@@ -55,20 +55,20 @@
     },
 	{
       "type": "smithed:datapack_item_entry",
-      "id": "mechanization:base/tier_1_machine_frame"
+      "id": "mechanization:base/tier1_machine_frame"
     },
 	{
       "type": "smithed:datapack_item_entry",
-      "id": "mechanization:base/tier_2_machine_frame"
+      "id": "mechanization:base/tier2_machine_frame"
     },
 	{
       "type": "smithed:datapack_item_entry",
-      "id": "mechanization:base/tier_3_machine_frame"
+      "id": "mechanization:base/tier3_machine_frame"
     },
     
-    {"type": "smithed:datapack_item_entry", "id": "mechanization:machines/tier_1_battery"},
-    {"type": "smithed:datapack_item_entry", "id": "mechanization:machines/tier_2_battery"},
-    {"type": "smithed:datapack_item_entry", "id": "mechanization:machines/tier_3_battery"},
+    {"type": "smithed:datapack_item_entry", "id": "mechanization:machines/tier1_battery"},
+    {"type": "smithed:datapack_item_entry", "id": "mechanization:machines/tier2_battery"},
+    {"type": "smithed:datapack_item_entry", "id": "mechanization:machines/tier3_battery"},
     {"type": "smithed:datapack_item_entry", "id": "mechanization:machines/creative_battery"},
     {"type": "smithed:datapack_item_entry", "id": "mechanization:machines/copper_cable"},
     {"type": "smithed:datapack_item_entry", "id": "mechanization:machines/conductive_cable"},

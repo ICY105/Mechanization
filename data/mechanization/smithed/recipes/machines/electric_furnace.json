@@ -23,7 +23,7 @@
     },
     "M": {
       "type" : "smithed:datapack_item_entry",
-      "id" : "mechanization:base/tier_1_machine_frame"
+      "id" : "mechanization:base/tier1_machine_frame"
     },
     "R": {
       "type" : "smithed:datapack_item_entry",

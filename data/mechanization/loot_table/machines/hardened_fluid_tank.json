@@ -18,13 +18,13 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"tier_2_fluid_tank\"}}"
+              "tag": "{mechanization:{id:\"tier2_fluid_tank\"}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:machines/block/tier2_fluid_tank",
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.tier_2_fluid_tank\", \"color\": \"yellow\"}]",
+                "minecraft:item_name": "[{\"translate\": \"block.mechanization.tier2_fluid_tank\", \"color\": \"yellow\"}]",
                 "minecraft:container": [
                   {
                     "slot": 0,
@@ -32,7 +32,7 @@
                       "id": "minecraft:stone",
                       "count": 1,
                       "components": {
-                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:tier_2_fluid_tank\"}}}"
+                        "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:tier2_fluid_tank\"}}}"
                       }
                     }
                   }

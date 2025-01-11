@@ -31,5 +31,5 @@
       }
     }
   },
-  "parent": "mechanization:machines/tier_2_battery"
+  "parent": "mechanization:machines/tier2_battery"
 }

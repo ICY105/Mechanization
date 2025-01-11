@@ -3,9 +3,9 @@
 execute store result score #id mechanization.data run data get storage smithed.custom_block:main blockApi.id
 
 # Batteries
-execute if score #id mechanization.data matches 28 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier_1_battery"} run function mechanization:machines/blocks/battery/place_tier_1_battery
-execute if score #id mechanization.data matches 28 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier_2_battery"} run function mechanization:machines/blocks/battery/place_tier_2_battery
-execute if score #id mechanization.data matches 28 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier_3_battery"} run function mechanization:machines/blocks/battery/place_tier_3_battery
+execute if score #id mechanization.data matches 28 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier1_battery"} run function mechanization:machines/blocks/battery/place_tier1_battery
+execute if score #id mechanization.data matches 28 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier2_battery"} run function mechanization:machines/blocks/battery/place_tier2_battery
+execute if score #id mechanization.data matches 28 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier3_battery"} run function mechanization:machines/blocks/battery/place_tier3_battery
 execute if score #id mechanization.data matches 30 if data storage smithed.custom_block:main blockApi{id:"mechanization:creative_battery"} run function mechanization:machines/blocks/battery/place_creative_battery
 
 # Cables
@@ -14,9 +14,9 @@ execute if score #id mechanization.data matches 30 if data storage smithed.custo
 execute if score #id mechanization.data matches 36 if data storage smithed.custom_block:main blockApi{id:"mechanization:super_conductive_cable"} run function mechanization:machines/blocks/cable/place_super_conductive_cable
 
 # Liquid Tanks
-execute if score #id mechanization.data matches 31 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier_1_fluid_tank"} run function mechanization:machines/blocks/fluid_tank/place_tier_1
-execute if score #id mechanization.data matches 31 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier_2_fluid_tank"} run function mechanization:machines/blocks/fluid_tank/place_tier_2
-execute if score #id mechanization.data matches 31 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier_3_fluid_tank"} run function mechanization:machines/blocks/fluid_tank/place_tier_3
+execute if score #id mechanization.data matches 31 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier1_fluid_tank"} run function mechanization:machines/blocks/fluid_tank/place_tier1
+execute if score #id mechanization.data matches 31 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier2_fluid_tank"} run function mechanization:machines/blocks/fluid_tank/place_tier2
+execute if score #id mechanization.data matches 31 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier3_fluid_tank"} run function mechanization:machines/blocks/fluid_tank/place_tier3
 
 # Generators
 execute if score #id mechanization.data matches 25 if data storage smithed.custom_block:main blockApi{id:"mechanization:solar_panel"} run function mechanization:machines/blocks/solar_panel/place

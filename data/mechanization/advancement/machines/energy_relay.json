@@ -31,5 +31,5 @@
       }
     }
   },
-  "parent": "mechanization:base/tier_2_machine_frame"
+  "parent": "mechanization:base/tier2_machine_frame"
 }

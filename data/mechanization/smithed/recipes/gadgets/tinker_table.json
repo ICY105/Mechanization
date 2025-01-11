@@ -7,7 +7,7 @@
   "key": {
     "0": {
       "type" : "smithed:datapack_item_entry",
-      "id" : "mechanization:base/tier_1_machine_frame"
+      "id" : "mechanization:base/tier1_machine_frame"
     },
     "1": {
       "type" : "smithed:datapack_item_entry",

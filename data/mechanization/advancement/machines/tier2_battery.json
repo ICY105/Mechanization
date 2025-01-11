@@ -1,11 +1,11 @@
 {
   "display": {
     "title": {
-      "translate": "advancement.mechanization.tier_2_battery.title",
+      "translate": "advancement.mechanization.tier2_battery.title",
       "color":"green"
     },
     "description": {
-      "translate": "advancement.mechanization.tier_2_battery.desc",
+      "translate": "advancement.mechanization.tier2_battery.desc",
       "color":"dark_aqua"
     },
     "icon": {
@@ -24,13 +24,13 @@
           {
             "items": "minecraft:blast_furnace",
             "predicates": {
-              "minecraft:custom_data": {"mechanization":{"id":"tier_2_battery"}}
+              "minecraft:custom_data": {"mechanization":{"id":"tier2_battery"}}
             }
           }
         ]
       }
     }
   },
-  "parent": "mechanization:base/tier_2_machine_frame"
+  "parent": "mechanization:base/tier2_machine_frame"
 }
   

@@ -23,16 +23,16 @@
     },
     "M": {
       "type" : "smithed:datapack_item_entry",
-      "id" : "mechanization:base/tier_3_machine_frame"
+      "id" : "mechanization:base/tier3_machine_frame"
     },
     "R": {
       "type" : "smithed:datapack_item_entry",
-      "id" : "mechanization:machines/tier_3_battery"
+      "id" : "mechanization:machines/tier3_battery"
     }
   },
   "result": {
     "type" : "smithed:datapack_item_entry",
-    "id" : "mechanization:machines/tier_3_battery"
+    "id" : "mechanization:machines/tier3_battery"
   },
   "category": "mechanization:machine_crafting_table"
 }

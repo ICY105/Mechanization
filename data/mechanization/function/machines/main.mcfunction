@@ -1,9 +1,9 @@
 
 
 # 20 tick clock
-execute if score #timer.20 mechanization.data matches 0 as @e[type=minecraft:item_display,tag=mechanization.battery.t1] at @s run function mechanization:machines/blocks/battery/tier_1_battery
-execute if score #timer.20 mechanization.data matches 1 as @e[type=minecraft:item_display,tag=mechanization.battery.t2] at @s run function mechanization:machines/blocks/battery/tier_2_battery
-execute if score #timer.20 mechanization.data matches 2 as @e[type=minecraft:item_display,tag=mechanization.battery.t3] at @s run function mechanization:machines/blocks/battery/tier_3_battery
+execute if score #timer.20 mechanization.data matches 0 as @e[type=minecraft:item_display,tag=mechanization.battery.t1] at @s run function mechanization:machines/blocks/battery/tier1_battery
+execute if score #timer.20 mechanization.data matches 1 as @e[type=minecraft:item_display,tag=mechanization.battery.t2] at @s run function mechanization:machines/blocks/battery/tier2_battery
+execute if score #timer.20 mechanization.data matches 2 as @e[type=minecraft:item_display,tag=mechanization.battery.t3] at @s run function mechanization:machines/blocks/battery/tier3_battery
 execute if score #timer.20 mechanization.data matches 4 as @e[type=minecraft:item_display,tag=mechanization.energy_relay] at @s run function mechanization:machines/blocks/energy_relay/energy_relay
 execute if score #timer.20 mechanization.data matches 5 as @e[type=minecraft:item_display,tag=mechanization.fluid_pipe] at @s run function mechanization:machines/blocks/fluid_pipe/fluid_pipe
 execute if score #timer.20 mechanization.data matches 6 as @e[type=minecraft:item_display,tag=mechanization.steam_generator] at @s run function mechanization:machines/blocks/steam_generator/steam_generator

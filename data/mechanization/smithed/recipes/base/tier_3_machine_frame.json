@@ -19,12 +19,12 @@
     },
     "R": {
       "type" : "smithed:datapack_item_entry",
-      "id" : "mechanization:base/tier_3_machine_frame"
+      "id" : "mechanization:base/tier3_machine_frame"
     }
   },
   "result": {
     "type" : "smithed:datapack_item_entry",
-    "id" : "mechanization:base/tier_3_machine_frame"
+    "id" : "mechanization:base/tier3_machine_frame"
   },
   "category": "mechanization:machine_crafting_table"
 }
