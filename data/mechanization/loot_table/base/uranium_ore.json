@@ -24,7 +24,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.uranium_ore\", \"color\": \"green\", \"italic\": false}]",
-                "minecraft:item_model": "mechanization:base/item/resources/uranium_ore",
+                "minecraft:item_model": "mechanization:base/block/resources/uranium_ore",
                 "minecraft:hide_additional_tooltip": {},
                 "minecraft:container": [
                   {

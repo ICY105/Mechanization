@@ -24,7 +24,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.steel_raw\", \"color\": \"dark_gray\", \"italic\": false}]",
-                "minecraft:item_model": "mechanization:base/item/resources/steel_raw_block",
+                "minecraft:item_model": "mechanization:base/block/resources/steel_raw_block",
                 "minecraft:hide_additional_tooltip": {},
                 "minecraft:container": [
                   {

@@ -28,7 +28,7 @@
                 "minecraft:item_model": "mechanization:base/item/ender_upgrade",
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.ender_upgrade\", \"color\": \"light_purple\"}]",
                 "!minecraft:food": {},
-                "!minecraft:consumable": {}
+                "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "block"}
               }
             }
           ]

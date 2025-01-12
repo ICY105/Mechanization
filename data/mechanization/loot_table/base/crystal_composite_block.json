@@ -24,7 +24,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.crystal_composite\", \"color\": \"dark_red\", \"italic\": false}]",
-                "minecraft:item_model": "mechanization:base/item/resources/crystal_composite_block",
+                "minecraft:item_model": "mechanization:base/block/resources/crystal_composite_block",
                 "minecraft:hide_additional_tooltip": {},
                 "minecraft:container": [
                   {

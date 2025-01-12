@@ -27,7 +27,7 @@
                 "minecraft:item_model": "mechanization:base/item/machine_upgrade",
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.machine_upgrade\", \"color\": \"yellow\"}]",
                 "!minecraft:food":{},
-                "!minecraft:consumable": {}
+                "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "block"}
               }
             }
           ]

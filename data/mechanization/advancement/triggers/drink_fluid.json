@@ -11,6 +11,6 @@
 		}
   },
 	"rewards":{ 
-		"function":"mechanization:base/player/drink_liquid/drink_liquid"
+		"function":"mechanization:base/player/drink_fluid/drink_fluid"
 	}
 }

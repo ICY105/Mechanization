@@ -28,7 +28,7 @@
                 "minecraft:item_model": "mechanization:base/item/nether_upgrade",
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.nether_upgrade\", \"color\": \"light_purple\"}]",
                 "!minecraft:food": {},
-                "!minecraft:consumable": {}
+                "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "block"}
               }
             }
           ]

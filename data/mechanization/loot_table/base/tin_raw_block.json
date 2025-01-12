@@ -24,7 +24,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.tin_raw\", \"color\": \"white\", \"italic\": false}]",
-                "minecraft:item_model": "mechanization:base/item/resources/tin_raw_block",
+                "minecraft:item_model": "mechanization:base/block/resources/tin_raw_block",
                 "minecraft:hide_additional_tooltip": {},
                 "minecraft:container": [
                   {
