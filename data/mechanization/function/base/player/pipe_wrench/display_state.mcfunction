@@ -1,5 +1,5 @@
 
-execute store result score #loop mechanization.data run attribute @s minecraft:block_interaction_range get 20
+execute store result score #loop mechanization.data run attribute @s minecraft:block_interaction_range get 2000
 scoreboard players add #loop mechanization.data 10
 
 scoreboard players set #mode mechanization.data 1

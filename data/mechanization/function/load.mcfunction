@@ -6,6 +6,7 @@ scoreboard objectives add mechanization.item_id dummy
 scoreboard objectives add mechanization.redstone dummy
 scoreboard objectives add mechanization.fluid.in dummy
 scoreboard objectives add mechanization.fluid.out dummy
+scoreboard objectives add mechanization.used_item dummy
 
 scoreboard objectives add mechanization.manual trigger
 

@@ -20,7 +20,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"wrench\"},player_action:{click_detection:1b}}"
+              "tag": "{mechanization:{id:\"wrench\"}}"
             },
             {
               "function": "minecraft:set_components",
@@ -29,7 +29,19 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.wrench\"}]",
                 "minecraft:max_stack_size": 1,
                 "!minecraft:food":{},
-                "!minecraft:consumable": {}
+                "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "block"},
+                "minecraft:attribute_modifiers": {
+                  "modifiers": [
+                    {
+                      "type": "minecraft:block_interaction_range",
+                      "id": "mechanization:tool",
+                      "amount": -0.99,
+                      "operation": "add_multiplied_total",
+                      "slot": "hand"
+                    }
+                  ],
+                  "show_in_tooltip": false
+                }
               }
             }
           ]
