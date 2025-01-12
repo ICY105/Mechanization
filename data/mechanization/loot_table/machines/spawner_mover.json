@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:poisonous_potato",
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -23,7 +23,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:machines/item/spawner_mover",
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.spawner_mover\", \"color\": \"light_purple\"}]"
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.spawner_mover\", \"color\": \"light_purple\"}]",
+                "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "block"}
               }
             }
           ]

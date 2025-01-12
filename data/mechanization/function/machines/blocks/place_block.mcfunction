@@ -3,9 +3,9 @@
 execute store result score #id mechanization.data run data get storage smithed.custom_block:main blockApi.id
 
 # Batteries
-execute if score #id mechanization.data matches 28 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier1_battery"} run function mechanization:machines/blocks/battery/place_tier1_battery
-execute if score #id mechanization.data matches 28 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier2_battery"} run function mechanization:machines/blocks/battery/place_tier2_battery
-execute if score #id mechanization.data matches 28 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier3_battery"} run function mechanization:machines/blocks/battery/place_tier3_battery
+execute if score #id mechanization.data matches 27 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier1_battery"} run function mechanization:machines/blocks/battery/place_tier1_battery
+execute if score #id mechanization.data matches 27 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier2_battery"} run function mechanization:machines/blocks/battery/place_tier2_battery
+execute if score #id mechanization.data matches 27 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier3_battery"} run function mechanization:machines/blocks/battery/place_tier3_battery
 execute if score #id mechanization.data matches 30 if data storage smithed.custom_block:main blockApi{id:"mechanization:creative_battery"} run function mechanization:machines/blocks/battery/place_creative_battery
 
 # Cables

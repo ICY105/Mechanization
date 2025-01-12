@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:blast_furnace",
+          "name": "minecraft:poisonous_potato",
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -25,6 +25,7 @@
               "components": {
                 "minecraft:item_model": "mechanization:machines/block/spawner_controller",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.spawner_controller\", \"color\": \"light_purple\"}]",
+                "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "block"},
                 "minecraft:container": [
                   {
                     "slot": 0,
