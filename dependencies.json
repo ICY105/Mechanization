@@ -47,15 +47,15 @@
     },
     {
       "name": "Smithed Crafting",
-      "local": "external-libraries/SmithedCrafter_modified.zip"
+      "local": "external-libraries/SmithedCrafter.zip"
     },
     {
       "name": "Smithed Custom Block",
-      "local": "external-libraries/SmithedCustomBlock_modified.zip"
+      "local": "external-libraries/SmithedCustomBlock.zip"
     },
     {
       "name": "Smithed Actionbar",
-      "local": "external-libraries/SmithedActionbar_modified.zip"
+      "local": "external-libraries/SmithedActionbar.zip"
     },
 	  {
       "name": "Smithed Chunk",
