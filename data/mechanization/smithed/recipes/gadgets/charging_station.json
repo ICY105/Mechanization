@@ -1,0 +1,38 @@
+{
+  "pattern": [
+    "  131    ",
+    "  202  # ",
+    "  141    "
+  ],
+  "key": {
+    "0": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier2_machine_frame"
+    },
+    "1": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/steel_ingot"
+    },
+    "2": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:glass"
+    },
+    "3": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/crystal_composite"
+    },
+    "4": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/conductive_gear"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:gadgets/charging_station"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:gadgets/charging_station"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

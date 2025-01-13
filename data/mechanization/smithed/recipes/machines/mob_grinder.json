@@ -1,0 +1,38 @@
+{
+  "pattern": [
+    "   S     ",
+    "  WMW  # ",
+    "  CBC    "
+  ],
+  "key": {
+    "B": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:bucket"
+    },
+    "W": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:diamond_sword"
+    },
+    "S": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:wither_skeleton_skull"
+    },
+    "C": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/conductive_plate"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier2_machine_frame"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/mob_grinder"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/mob_grinder"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

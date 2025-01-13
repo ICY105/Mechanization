@@ -1,0 +1,38 @@
+{
+  "pattern": [
+    "  WCW    ",
+    "  BMB  R ",
+    "  WGW    "
+  ],
+  "key": {
+    "W": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:purple_wool"
+    },
+    "B": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/nether_alloy_plate"
+    },
+    "C": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/super_conductive_rod"
+    },
+    "G": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/super_conductive_gear"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier3_machine_frame"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/tier3_battery"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/tier3_battery"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

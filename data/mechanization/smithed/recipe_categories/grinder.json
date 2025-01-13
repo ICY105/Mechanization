@@ -1,0 +1,15 @@
+{
+  "display": "Grinder",
+  "inventory": "dropper",
+  "item_icon": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/grinder"
+  },
+  "background": {
+	  "icon": "mechanization:textures/machines/font/fake_furnace.png",
+	  "width_offset": 6,
+	  "height_offset": 16,
+	  "width": 164,
+	  "height": 56
+  }
+}

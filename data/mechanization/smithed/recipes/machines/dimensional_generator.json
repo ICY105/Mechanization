@@ -1,0 +1,42 @@
+{
+  "pattern": [
+    "  NIN    ",
+    "  CMC  # ",
+    "  PEP    "
+  ],
+  "key": {
+    "N": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:nether_bricks"
+    },
+    "P": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:purpur_block"
+    },
+    "C": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/super_conductive_plate"
+    },
+    "I": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/nether_alloy_ingot"
+    },
+    "E": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/ender_alloy_ingot"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier3_machine_frame"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/dimensional_generator"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/dimensional_generator"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

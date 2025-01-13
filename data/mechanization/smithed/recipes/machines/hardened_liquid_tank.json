@@ -1,0 +1,34 @@
+{
+  "pattern": [
+    "  WGW    ",
+    "  PMP  R ",
+    "  WGW    "
+  ],
+  "key": {
+    "W": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:nether_bricks"
+    },
+    "G": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:red_stained_glass"
+    },
+    "P": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/steel_plate"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier2_machine_frame"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/hardened_liquid_tank"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/hardened_liquid_tank"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

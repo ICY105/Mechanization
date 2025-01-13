@@ -1,0 +1,22 @@
+{
+  "pattern": [
+    "  ###    ",
+    "  ###  R ",
+    "  ###    "
+  ],
+  "key": {
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/tin_nugget"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/tin_ingot"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:base_resources/tin_ingot"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

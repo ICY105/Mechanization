@@ -1,0 +1,38 @@
+{
+  "pattern": [
+    "  BSB    ",
+    "  CMC  R ",
+    "  BAB    "
+  ],
+  "key": {
+    "B": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:smooth_stone"
+    },
+    "S": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:redstone"
+    },
+    "A": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:cauldron"
+    },
+    "C": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/copper_rod"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier1_machine_frame"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/casting_basin"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/casting_basin"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

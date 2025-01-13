@@ -1,0 +1,74 @@
+{
+  "pattern": [
+    " 7 401234",
+    " 8 956   ",
+    " 7 *     "
+  ],
+  "key": {
+    "0": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:machines/casting_basin_gui/ingot"
+    },
+    "1": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:machines/casting_basin_gui/block"
+    },
+    "2": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:machines/casting_basin_gui/nugget"
+    },
+    "3": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:machines/casting_basin_gui/gem"
+    },
+    "4": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:machines/casting_basin_gui/rod_ender"
+    },
+    "5": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:machines/casting_basin_gui/plate_ender"
+    },
+    "6": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:machines/casting_basin_gui/gear_ender"
+    },
+    "7": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_uranium",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6421200,
+          "display": {
+            "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"144\"}]}"]
+          }
+        }
+      }
+    },
+    "8": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_uranium",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6422918,
+          "display": {
+            "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"144\"}]}"]
+          }
+        }
+      }
+    },
+    "*": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base/ender_upgrade"
+    },
+    "9": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/uranium_rod"
+    }
+  },
+  "result": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/uranium_rod"
+  },
+  "category": "mechanization:casting_basin"
+}

@@ -1,0 +1,32 @@
+{
+  "pattern": [
+    "1  ",
+    "  2",
+    "   "
+  ],
+  "key": {
+    "1": {
+      "type": "smithed:item_list",
+      "items": [
+        {
+          "type": "smithed:datapack_item_entry",
+          "id": "mechanization:base_resources/tin_ore"
+        },
+        {
+          "type": "smithed:datapack_item_entry",
+          "id": "mechanization:base_resources/tin_ore_deepslate"
+        }
+      ]
+    },
+    "2": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/tin_raw",
+      "count": 2
+    }
+  },
+  "result": {
+    "type": "smithed:datapack_item_entry",
+    "id": "mechanization:base_resources/tin_raw"
+  },
+  "category": "mechanization:grinder"
+}

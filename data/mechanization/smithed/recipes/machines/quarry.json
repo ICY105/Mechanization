@@ -1,0 +1,46 @@
+{
+  "pattern": [
+    "  DWD    ",
+    "  PMA  # ",
+    "  CSC    "
+  ],
+  "key": {
+    "W": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:diamond_sword"
+    },
+    "P": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:diamond_axe"
+    },
+    "A": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:diamond_pickaxe"
+    },
+    "S": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:diamond_shovel"
+    },
+    "C": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/conductive_gear"
+    },
+    "D": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/crystal_composite"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier2_machine_frame"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/quarry"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/quarry"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

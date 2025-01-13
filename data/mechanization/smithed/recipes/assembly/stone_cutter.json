@@ -1,0 +1,38 @@
+{
+  "pattern": [
+    "  121    ",
+    "  303  # ",
+    "  141    "
+  ],
+  "key": {
+    "0": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier2_machine_frame"
+    },
+    "1": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:chiseled_stone_bricks"
+    },
+    "2": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:stonecutter"
+    },
+    "3": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/conductive_plate"
+    },
+    "4": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:iron_pickaxe"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:assembly/stone_cutter"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:assembly/stone_cutter"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

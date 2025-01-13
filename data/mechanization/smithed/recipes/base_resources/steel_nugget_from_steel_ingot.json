@@ -1,0 +1,24 @@
+{
+  "pattern": [
+    "  #      ",
+    "       R ",
+    "         "
+  ],
+  "key": {
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/steel_ingot"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/steel_nugget",
+      "count": 9
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:base_resources/steel_nugget",
+    "count": 9
+  },
+  "category": "mechanization:machine_crafting_table"
+}

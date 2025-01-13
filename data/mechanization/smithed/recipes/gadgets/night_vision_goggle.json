@@ -1,0 +1,38 @@
+{
+  "pattern": [
+    "   0     ",
+    "  141  # ",
+    "  232    "
+  ],
+  "key": {
+    "0": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/structural_gear"
+    },
+    "1": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/conductive_rod"
+    },
+    "2": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/steel_plate"
+    },
+    "3": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:lime_stained_glass"
+    },
+    "4": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:iron_helmet"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:gadgets/night_vision_goggles"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:gadgets/night_vision_goggles"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

@@ -1,0 +1,38 @@
+{
+  "pattern": [
+    "  DCD    ",
+    "  HMH  # ",
+    "  PCP    "
+  ],
+  "key": {
+    "H": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:diamond_hoe"
+    },
+    "P": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:piston"
+    },
+    "C": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/conductive_plate"
+    },
+    "D": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/crystal_composite"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier2_machine_frame"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/auto_farm"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/auto_farm"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

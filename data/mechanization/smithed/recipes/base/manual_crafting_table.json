@@ -1,0 +1,22 @@
+{
+  "pattern": [
+    " R ",
+    "RBR",
+    " R "
+  ],
+  "key": {
+    "R": {
+      "type" : "smithed:item_entry",
+      "id": "minecraft:redstone"
+    },
+    "B": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:book"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:base/manual"
+  },
+  "category": "minecraft:crafting_table"
+}

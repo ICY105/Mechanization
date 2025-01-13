@@ -1,0 +1,30 @@
+{
+  "pattern": [
+    "   12    ",
+    "  101  # ",
+    "  21     "
+  ],
+  "key": {
+    "0": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/crystal_composite"
+    },
+    "1": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/super_conductive_ingot"
+    },
+    "2": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/super_conductive_rod"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:gadgets/long_barrel"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:gadgets/long_barrel"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

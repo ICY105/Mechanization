@@ -1,0 +1,31 @@
+{
+  "pattern": [
+    "1  ",
+    "  2",
+    "   "
+  ],
+  "key": {
+    "1": {
+      "type": "smithed:item_list",
+      "items": [
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:copper_ore"
+        },
+        {
+          "type": "smithed:item_entry",
+          "id": "minecraft:deepslate_copper_ore"
+        }
+      ]
+    },
+    "2": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:raw_copper"
+    }
+  },
+  "result": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:raw_copper"
+  },
+  "category": "mechanization:grinder"
+}

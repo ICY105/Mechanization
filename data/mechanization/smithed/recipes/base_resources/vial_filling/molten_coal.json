@@ -1,0 +1,36 @@
+
+{
+  "pattern": [
+    "13 ",
+    " 4 ",
+    "23 "
+  ],
+  "key": {
+    "1": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base/vial"
+    },
+    "2": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_vials/vial_of_molten_coal"
+    },
+    "3": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_coal",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6421200
+        }
+      }
+    },
+    "4": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_coal"
+    }
+  },
+  "result": {
+    "type": "smithed:datapack_item_entry",
+    "id": "mechanization:base_resources/fluid_vials/vial_of_molten_coal"
+  },
+  "category": "mechanization:fluid_tank"
+}

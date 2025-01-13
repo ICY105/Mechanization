@@ -1,0 +1,46 @@
+{
+  "pattern": [
+    "* 2",
+    "1 3",
+    "  2"
+  ],
+  "key": {
+    "1": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:raw_gold"
+    },
+    "2": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_gold",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6421200,
+          "display": {
+            "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"192\"}]}"]
+          }
+        }
+      }
+    },
+    "3": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/fluid_displays/molten_gold",
+      "item_override": {
+        "tag": {
+          "CustomModelData": 6422918,
+          "display": {
+            "Lore": ["{\"color\":\"gray\",\"italic\":false,\"translate\":\"lore.mechanization.fluid_amount\",\"with\":[{\"text\":\"192\"}]}"]
+          }
+        }
+      }
+    },
+    "*": {
+      "type": "smithed:datapack_item_entry",
+      "id": "mechanization:base/nether_upgrade"
+    }
+  },
+  "result": {
+    "type": "smithed:datapack_item_entry",
+    "id": "mechanization:base_resources/fluid_displays/molten_gold"
+  },
+  "category": "mechanization:arc_furnace"
+}

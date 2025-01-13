@@ -1,0 +1,22 @@
+{
+  "pattern": [
+    "   #     ",
+    "   #   R ",
+    "   #     "
+  ],
+  "key": {
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/ender_alloy_ingot"
+    },
+    "R": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/ender_alloy_rod"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:base_resources/ender_alloy_rod"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

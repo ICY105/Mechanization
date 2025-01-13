@@ -1,0 +1,42 @@
+{
+  "pattern": [
+    "  CWC    ",
+    "  PMA  # ",
+    "  CSC    "
+  ],
+  "key": {
+    "C": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:copper_ingot"
+    },
+    "W": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:golden_sword"
+    },
+    "P": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:golden_pickaxe"
+    },
+    "A": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:golden_axe"
+    },
+    "S": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:golden_shovel"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier1_machine_frame"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/block_breaker"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/block_breaker"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

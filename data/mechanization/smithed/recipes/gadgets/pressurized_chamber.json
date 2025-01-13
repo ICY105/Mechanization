@@ -1,0 +1,34 @@
+{
+  "pattern": [
+    "  010    ",
+    "  323  # ",
+    "  010    "
+  ],
+  "key": {
+    "0": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:green_stained_glass"
+    },
+    "1": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/super_conductive_ingot"
+    },
+    "2": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/nether_alloy_ingot"
+    },
+    "3": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/reinforced_structural_rod"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:gadgets/pressurized_chamber"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:gadgets/pressurized_chamber"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

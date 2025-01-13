@@ -1,0 +1,14 @@
+{
+  "item" : {
+    "id" : "minecraft:leather_boots",
+    "Count": 1,
+    "tag": {
+      "CustomModelData": 6422900,
+      "HideFlags": 127,
+      "display": {
+        "Name": "{\"color\":\"white\",\"italic\":false,\"translate\":\"fluid.mechanization.empty\"}]}"
+      },
+      "mechanization":{"id":"fluid.empty"}
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "pattern": [
+    "#"
+  ],
+  "key": {
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id": "mechanization:base_resources/steel_raw"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:base_resources/steel_ingot"
+  },
+  "category": "minecraft:furnace"
+}

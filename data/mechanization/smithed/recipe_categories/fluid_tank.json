@@ -1,0 +1,15 @@
+{
+  "display": "Fluid Tank",
+  "inventory": "dropper",
+  "item_icon": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/wooden_liquid_tank"
+  },
+  "background": {
+	  "icon": "mechanization:textures/machines/font/liquid_tank_block.png",
+	  "width_offset": 6,
+	  "height_offset": 16,
+	  "width": 164,
+	  "height": 56
+  }
+}

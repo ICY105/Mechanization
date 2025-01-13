@@ -1,0 +1,26 @@
+{
+  "pattern": [
+    "   II    ",
+    "  RI   P ",
+    "  IR     "
+  ],
+  "key": {
+    "I": {
+      "type" : "smithed:item_entry",
+      "id": "minecraft:iron_ingot"
+    },
+    "R": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:red_dye"
+    },
+    "P": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/pipe_wrench"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:base/pipe_wrench"
+  },
+  "category": "mechanization:machine_crafting_table"
+}

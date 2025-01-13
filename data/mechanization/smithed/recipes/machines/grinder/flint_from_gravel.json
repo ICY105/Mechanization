@@ -1,0 +1,22 @@
+{
+  "pattern": [
+    "1  ",
+    "  2",
+    "   "
+  ],
+  "key": {
+    "1": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:gravel"
+    },
+    "2": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:flint"
+    }
+  },
+  "result": {
+      "type": "smithed:item_entry",
+      "id": "minecraft:flint"
+  },
+  "category": "mechanization:grinder"
+}

@@ -1,0 +1,34 @@
+{
+  "pattern": [
+    "  GGG    ",
+    "  CMC  # ",
+    "  CDC    "
+  ],
+  "key": {
+    "G": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:blue_stained_glass"
+    },
+    "D": {
+      "type" : "smithed:item_entry",
+      "id" : "minecraft:daylight_detector"
+    },
+    "C": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base_resources/conductive_rod"
+    },
+    "M": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:base/tier2_machine_frame"
+    },
+    "#": {
+      "type" : "smithed:datapack_item_entry",
+      "id" : "mechanization:machines/solar_panel"
+    }
+  },
+  "result": {
+    "type" : "smithed:datapack_item_entry",
+    "id" : "mechanization:machines/solar_panel"
+  },
+  "category": "mechanization:machine_crafting_table"
+}
