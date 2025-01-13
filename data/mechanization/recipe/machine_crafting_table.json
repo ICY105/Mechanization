@@ -1,0 +1,47 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "CCC",
+    "CTC",
+    "CIC"
+  ],
+  "key": {
+    "C": [
+      "minecraft:copper_ingot"
+    ],
+    "T": [
+      "minecraft:crafting_table"
+    ],
+    "I": [
+      "minecraft:iron_block"
+    ]
+  },
+  "result": {
+    "id": "minecraft:blast_furnace",
+    "components": {
+      "minecraft:item_name": "[{\"translate\": \"block.mechanization.machine_crafting_table\"}]",
+      "minecraft:item_model": "mechanization:base/block/machine_crafting_table",
+      "minecraft:custom_data": "{mechanization:{id:\"machine_crafting_table\"}}",
+      "minecraft:lore": [
+        "[{\"translate\": \"lore.mechanization.machine_crafting_table\",\"color\": \"gray\",\"italic\": false}]",
+        "[{\"text\": \"\"}]",
+        "[{\"text\": \"\\uee11\", \"font\": \"mechanization:gui\", \"color\": \"white\", \"italic\": false}, {\"text\":\" \"}, {\"translate\": \"lore.mechanization.added_by\", \"color\": \"#c83219\", \"italic\": false}]"
+      ],
+      "minecraft:container": [
+        {
+          "slot": 0,
+          "item": {
+            "id": "minecraft:stone",
+            "count": 1,
+            "components": {
+              "minecraft:custom_data": "{smithed:{block:{id:\"mechanization:machine_crafting_table\"}}}"
+            }
+          }
+        }
+      ]
+    },
+    "count": 1
+  },
+  "show_notification": true
+}
