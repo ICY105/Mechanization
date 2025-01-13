@@ -1,4 +1,6 @@
 
+data modify storage mechanization:test list set from storage smithed.crafter:input recipe
+
 # Machine Wrench
 execute if score @s smithed.data matches 0 store result score @s smithed.data if data storage smithed.crafter:input recipe{0:[{id:"minecraft:iron_ingot", Slot:0b},{id:"minecraft:air", Slot:1b},{id:"minecraft:iron_ingot", Slot:2b}],1:[{id:"minecraft:air", Slot:0b},{id:"minecraft:diamond", Slot:1b},{id:"minecraft:air", Slot:2b}],2:[{id:"minecraft:air", Slot:0b},{id:"minecraft:iron_ingot", Slot:1b},{id:"minecraft:air", Slot:2b}]} run loot replace block ~ ~ ~ container.16 loot mechanization:base/wrench
 

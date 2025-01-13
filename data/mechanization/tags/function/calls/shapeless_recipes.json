@@ -1,8 +1,6 @@
 {
 	"required":false,
 	"values":[
-		"mechanization:base/recipes/shapeless",
-		"mechanization:gadgets/recipes/shapeless",
-		"mechanization:compat/calls/shapeless_crafting"
+		"mechanization:base/recipes/shapeless"
 	]
 }
