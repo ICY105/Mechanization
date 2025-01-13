@@ -1,33 +1,30 @@
 
-# get data
-data modify storage mechanization:temp obj set from block ~ ~ ~ Items[{Slot:10b}]
-function mechanization:machines/blocks/enchanting_station/check_item
+data modify storage mechanization:test obj set from storage mechanization:temp obj
 
-data modify storage mechanization:temp var set from storage mechanization:temp list[0].id
-function mechanization:machines/blocks/enchanting_station/check_enchant
+# exit early conditions
+scoreboard players set #result mechanization.data 1
+execute unless items block ~ ~ ~ container.10 minecraft:book unless items block ~ ~ ~ container.10 minecraft:enchanted_book store success score #result mechanization.data run function mechanization:machines/blocks/enchanting_station/enchant_item/m.check_target_item with storage mechanization:temp obj.enchantment
+execute if score #result mechanization.data matches 0 run return fail
 
-execute if entity @s[tag=!mechanization.upgraded] run function mechanization:machines/blocks/enchanting_station/check_conflicting
-execute if entity @s[tag=mechanization.upgraded] run function mechanization:machines/blocks/enchanting_station/check_conflicting_upgrade
+execute store result score #loop2 mechanization.data run data get storage mechanization:temp obj.enchantment.exclusive
+execute if entity @s[tag=!mechanization.upgraded] if score #loop2 mechanization.data matches 1.. store success score #result mechanization.data run function mechanization:machines/blocks/enchanting_station/enchant_item/check_conflicting
+execute if score #result mechanization.data matches 0 run return fail
 
+# get cost
+execute store result score #cost mechanization.data run data get storage mechanization:temp obj.enchantment.cost
 
-execute if score #valid mechanization.data matches 1 store result score #level mechanization.data run data get storage mechanization:temp list[0].lvl
-execute if score #valid mechanization.data matches 1 run function mechanization:machines/blocks/enchanting_station/get_enchant_level
+scoreboard players operation #total_cost mechanization.data = #source_level mechanization.data
+scoreboard players operation #total_cost mechanization.data *= #cost mechanization.data
+scoreboard players operation #total_cost mechanization.data *= #cons.25 mechanization.data
 
-execute if score #valid mechanization.data matches 1 run scoreboard players operation #total_cost mechanization.data = #level mechanization.data
-execute if score #valid mechanization.data matches 1 run scoreboard players operation #total_cost mechanization.data *= #cost mechanization.data
-execute if score #valid mechanization.data matches 1 run scoreboard players operation #total_cost mechanization.data *= #cons.25 mechanization.data
+execute if score @s fluid.storage.0 < #total_cost mechanization.data run return fail
+scoreboard players operation @s fluid.storage.0 -= #total_cost mechanization.data
 
-execute if score #valid mechanization.data matches 1 if score @s fluid.storage.0 >= #total_cost mechanization.data if score #level mechanization.data = #current_level mechanization.data run scoreboard players operation #corrected_level mechanization.data = #level mechanization.data
-execute if score #valid mechanization.data matches 1 if score @s fluid.storage.0 >= #total_cost mechanization.data if score #level mechanization.data = #current_level mechanization.data run scoreboard players add #corrected_level mechanization.data 1
-execute if score #valid mechanization.data matches 1 if score @s fluid.storage.0 >= #total_cost mechanization.data if score #level mechanization.data = #current_level mechanization.data if score #corrected_level mechanization.data <= #max_lvl mechanization.data run function mechanization:machines/blocks/enchanting_station/set_enchant_level
-execute if score #valid mechanization.data matches 1 if score @s fluid.storage.0 >= #total_cost mechanization.data if score #level mechanization.data = #current_level mechanization.data if score #corrected_level mechanization.data <= #max_lvl mechanization.data run scoreboard players set #success mechanization.data 1
-execute if score #valid mechanization.data matches 1 if score @s fluid.storage.0 >= #total_cost mechanization.data if score #level mechanization.data = #current_level mechanization.data if score #corrected_level mechanization.data <= #max_lvl mechanization.data run scoreboard players operation @s fluid.storage.0 -= #total_cost mechanization.data
+# add enchantments
+scoreboard players operation #new_level mechanization.data = #source_level mechanization.data
+execute if score #new_level mechanization.data = #target_level mechanization.data run scoreboard players add #new_level mechanization.data 1
 
-execute if score #valid mechanization.data matches 1 if score @s fluid.storage.0 >= #total_cost mechanization.data if score #level mechanization.data > #current_level mechanization.data if score #level mechanization.data <= #max_lvl mechanization.data run scoreboard players operation #corrected_level mechanization.data = #level mechanization.data
-execute if score #valid mechanization.data matches 1 if score @s fluid.storage.0 >= #total_cost mechanization.data if score #level mechanization.data > #current_level mechanization.data if score #level mechanization.data <= #max_lvl mechanization.data run function mechanization:machines/blocks/enchanting_station/set_enchant_level
-execute if score #valid mechanization.data matches 1 if score @s fluid.storage.0 >= #total_cost mechanization.data if score #level mechanization.data > #current_level mechanization.data if score #level mechanization.data <= #max_lvl mechanization.data run scoreboard players set #success mechanization.data 1
-execute if score #valid mechanization.data matches 1 if score @s fluid.storage.0 >= #total_cost mechanization.data if score #level mechanization.data > #current_level mechanization.data if score #level mechanization.data <= #max_lvl mechanization.data run scoreboard players operation @s fluid.storage.0 -= #total_cost mechanization.data
+function mechanization:machines/blocks/enchanting_station/enchant_item/m.set_enchantment_level with storage mechanization:temp obj.enchantment
+function mechanization:machines/blocks/enchanting_station/enchant_item/m.remove_enchantment with storage mechanization:temp obj.enchantment
 
-# loop
-data remove storage mechanization:temp list[0]
-execute if data storage mechanization:temp list[0] run function mechanization:machines/blocks/enchanting_station/add_enchant_2
+scoreboard players set #success mechanization.data 1
