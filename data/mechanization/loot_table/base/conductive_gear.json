@@ -21,7 +21,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"conductive_gear\", upgrade:{type: 2b, max_durability: 3000, effect:\"none\", stats:{mining_speed: 11}}}, smithed:{dict:{gear:{conductive: 1b}}}}"
+              "tag": "{mechanization:{id:\"conductive_gear\", upgrade:{type: 2b, max_durability: 3000, effect:\"none\", stats:{mining_speed: 11}}}, smithed:{dict:{gear:{conductive_alloy: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",

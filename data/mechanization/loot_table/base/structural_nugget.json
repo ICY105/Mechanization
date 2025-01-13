@@ -18,7 +18,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"structural_nugget\"}, smithed:{dict:{nugget:{structural: 1b}}}}"
+              "tag": "{mechanization:{id:\"structural_nugget\"}, smithed:{dict:{nugget:{structural_alloy: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",

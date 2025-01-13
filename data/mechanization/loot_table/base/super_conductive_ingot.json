@@ -18,7 +18,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"super_conductive_ingot\"}, smithed:{dict:{ingot:{super_conductive: 1b}}}}"
+              "tag": "{mechanization:{id:\"super_conductive_ingot\"}, smithed:{dict:{ingot:{super_conductive_alloy: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",

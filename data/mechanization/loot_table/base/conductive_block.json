@@ -18,7 +18,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"conductive_block\"}, smithed:{dict:{block:{conductive: 1b}}}}"
+              "tag": "{mechanization:{id:\"conductive_block\"}, smithed:{dict:{block:{conductive_alloy: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",

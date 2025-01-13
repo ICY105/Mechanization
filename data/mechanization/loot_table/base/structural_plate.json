@@ -23,7 +23,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"structural_plate\", upgrade:{type: 3b, max_durability: 1500, effect:\"none\", stats:{armor: 0.75,armor_toughness: 0.5}}}, smithed:{dict:{plate:{structural: 1b}}}}"
+              "tag": "{mechanization:{id:\"structural_plate\", upgrade:{type: 3b, max_durability: 1500, effect:\"none\", stats:{armor: 0.75,armor_toughness: 0.5}}}, smithed:{dict:{plate:{structural_alloy: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",

@@ -21,7 +21,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"reinforced_structural_gear\", upgrade:{type: 2b, max_durability: 9000, effect:\"none\", stats:{unbreaking: 3}}}, smithed:{dict:{gear:{reinforced_structural: 1b}}}}"
+              "tag": "{mechanization:{id:\"reinforced_structural_gear\", upgrade:{type: 2b, max_durability: 9000, effect:\"none\", stats:{unbreaking: 3}}}, smithed:{dict:{gear:{reinforced_structural_alloy: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",

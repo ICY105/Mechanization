@@ -24,7 +24,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"reinforced_structural_rod\", upgrade:{type: 1b, max_durability: 9000, effect:\"none\", stats:{attack_damage: 3,attack_speed: 0.4,energy_saber_range: 2}}}, smithed:{dict:{rod:{reinforced_structural: 1b}}}}"
+              "tag": "{mechanization:{id:\"reinforced_structural_rod\", upgrade:{type: 1b, max_durability: 9000, effect:\"none\", stats:{attack_damage: 3,attack_speed: 0.4,energy_saber_range: 2}}}, smithed:{dict:{rod:{reinforced_structural_alloy: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",

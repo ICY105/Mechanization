@@ -24,7 +24,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"super_conductive_rod\", upgrade:{type: 1b, max_durability: 9000, effect:\"none\", stats:{attack_damage: 3,attack_speed: 0.6,energy_saber_range: 2}}}, smithed:{dict:{rod:{super_conductive: 1b}}}}"
+              "tag": "{mechanization:{id:\"super_conductive_rod\", upgrade:{type: 1b, max_durability: 9000, effect:\"none\", stats:{attack_damage: 3,attack_speed: 0.6,energy_saber_range: 2}}}, smithed:{dict:{rod:{super_conductive_alloy: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",

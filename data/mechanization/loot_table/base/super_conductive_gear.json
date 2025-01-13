@@ -21,7 +21,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"super_conductive_gear\", upgrade:{type: 2b, max_durability: 9000, effect:\"none\", stats:{mining_speed: 21}}}, smithed:{dict:{gear:{super_conductive: 1b}}}}"
+              "tag": "{mechanization:{id:\"super_conductive_gear\", upgrade:{type: 2b, max_durability: 9000, effect:\"none\", stats:{mining_speed: 21}}}, smithed:{dict:{gear:{super_conductive_alloy: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",

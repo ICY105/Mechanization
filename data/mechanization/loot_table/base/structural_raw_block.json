@@ -18,7 +18,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"raw_structural_block\"}, smithed:{dict:{raw_block:{structural: 1b}}}}"
+              "tag": "{mechanization:{id:\"raw_structural_block\"}, smithed:{dict:{raw_block:{structural_alloy: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",

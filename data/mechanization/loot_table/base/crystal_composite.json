@@ -18,7 +18,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"crystal_composite_ingot\"}, smithed:{dict:{ingot:{crystal_composite: 1b}}}}"
+              "tag": "{mechanization:{id:\"crystal_composite_ingot\"}, smithed:{dict:{gem:{crystal_composite: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",

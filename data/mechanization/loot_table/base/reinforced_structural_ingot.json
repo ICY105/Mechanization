@@ -18,7 +18,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"reinforced_structural_ingot\"}, smithed:{dict:{ingot:{reinforced_structural: 1b}}}}"
+              "tag": "{mechanization:{id:\"reinforced_structural_ingot\"}, smithed:{dict:{ingot:{reinforced_structural_alloy: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",

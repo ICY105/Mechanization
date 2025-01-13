@@ -24,7 +24,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"conductive_plate\", upgrade:{type: 3b, max_durability: 500, effect:\"none\", stats:{armor: 0.75,armor_toughness: 0.25,shield: 1}}}, smithed:{dict:{plate:{conductive: 1b}}}}"
+              "tag": "{mechanization:{id:\"conductive_plate\", upgrade:{type: 3b, max_durability: 500, effect:\"none\", stats:{armor: 0.75,armor_toughness: 0.25,shield: 1}}}, smithed:{dict:{plate:{conductive_alloy: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",
