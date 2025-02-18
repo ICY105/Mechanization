@@ -1,6 +1,10 @@
 
 item replace block -30000000 0 3201 container.0 with minecraft:air
 
+execute if score @s mechanization.manual matches -5..-3 run tellraw @s {"text":"That module has not been updated yet.","color":"yellow"}
+execute if score @s mechanization.manual matches -5..-3 run return fail
+
+
 execute if score @s mechanization.manual matches -1 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/base
 execute if score @s mechanization.manual matches -2 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/machines
 execute if score @s mechanization.manual matches -3 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/nuclear

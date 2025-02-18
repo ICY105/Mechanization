@@ -6,60 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:structure_block",
+          "name": "minecraft:poisonous_potato",
           "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.supercharged_chamber",
-                "color": "dark_aqua",
-                "italic": false
-              }
-            },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                [
-                  {
-                    "translate": "lore.mechanization.upgrade_plasma_weapon",
-                    "color": "gray",
-                    "italic": false
-                  }
-                ],
-                [
-                  {
-                    "text": " 60 ",
-                    "color": "green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.damage"
-                  }
-                ],
-                [
-                  {
-                    "text": " 40 ",
-                    "color": "green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.fire_rate"
-                  }
-                ],
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"translate": "lore.mechanization.upgrade_plasma_weapon","color": "gray","italic": false}],
+                [{"text": " 60 ","color": "green","italic": false},{"translate": "lore.mechanization.damage"}],
+                [{"text": " 0.5 ","color": "green","italic": false},{"translate": "lore.mechanization.fire_rate"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
@@ -69,7 +25,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6424207
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.supercharged_chamber\", \"color\": \"light_purple\", \"italic\": false}]",
+                "minecraft:item_model": "mechanization:gadgets/item/supercharged_chamber",
+                "minecraft:hide_additional_tooltip": {},
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

@@ -6,56 +6,27 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:poisonous_potato",
           "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.portable_battery",
-                "color": "dark_aqua",
-                "italic": false
-              }
-            },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                {
-                  "translate": "lore.mechanization.portable_battery",
-                  "color": "gray",
-                  "italic": false,
-                  "with": [
-                    {
-                      "text": "0"
-                    },
-                    {
-                      "text": "64000"
-                    }
-                  ]
-                },
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"translate": "lore.mechanization.portable_battery","color": "gray","italic": false,"with": [{"text": "0"},{"text": "64000"}]}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"portable_battery\",upgrade:{type:3b},battery:{models:8,base_model:6424900}},energy:{storage:0,max_storage:64000}}"
+              "tag": "{mechanization:{id:\"portable_battery\",upgrade:{type:3b},battery:{models:8}},energy:{storage:0,max_storage:64000}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6424110
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.portable_battery\"}]",
+                "minecraft:item_model": "mechanization:gadgets/item/portable_battery",
+                "!minecraft:consumable": {},
+                "minecraft:max_stack_size": 1
               }
             }
           ]

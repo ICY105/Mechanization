@@ -121,8 +121,8 @@ execute if items entity @s weapon.mainhand minecraft:written_book[custom_data~{m
 execute if score #slot mechanization.data matches 0 run item replace block -30000000 0 3201 container.0 from entity @s weapon.mainhand
 execute if score #slot mechanization.data matches 1 run item replace block -30000000 0 3201 container.0 from entity @s weapon.offhand
 
-data modify block -30000000 0 3201 Items[0].components."minecraft:lore".display.Lore set from storage mechanization:temp list
-data modify block -30000000 0 3201 Items[0].components."minecraft:lore".display.Lore append value '[{"text":"\\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]'
+data modify block -30000000 0 3201 Items[0].components."minecraft:lore" set from storage mechanization:temp list
+data modify block -30000000 0 3201 Items[0].components."minecraft:lore" append value '[{"text":"\\uee11","font":"mechanization:gui","color":"white","italic":false},{"translate":"lore.mechanization.added_by","color":"blue","italic":false}]'
 
 execute if score #slot mechanization.data matches 0 run item replace entity @s weapon.mainhand from block -30000000 0 3201 container.0
 execute if score #slot mechanization.data matches 1 run item replace entity @s weapon.offhand from block -30000000 0 3201 container.0

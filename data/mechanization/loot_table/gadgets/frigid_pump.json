@@ -6,58 +6,16 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:structure_block",
+          "name": "minecraft:poisonous_potato",
           "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.frigid_pump",
-                "color": "dark_aqua",
-                "italic": false
-              }
-            },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                {
-                  "translate": "lore.mechanization.upgrade_plasma_weapon",
-                  "color": "gray",
-                  "italic": false
-                },
-                [
-                  {
-                    "text": "-20% ",
-                    "color": "red",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.damage"
-                  }
-                ],
-                [
-                  {
-                    "text": "-40% ",
-                    "color": "blue",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.heat"
-                  }
-                ],
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"translate": "lore.mechanization.upgrade_plasma_weapon","color": "gray","italic": false}],
+                [{"text": "-20% ","color": "red","italic": false},{"translate": "lore.mechanization.damage"}],
+                [{"text": "-40% ","color": "blue","italic": false},{"translate": "lore.mechanization.heat"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
@@ -67,7 +25,11 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6424209
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.frigid_pump\", \"color\": \"light_purple\", \"italic\": false}]",
+                "minecraft:item_model": "mechanization:gadgets/item/frigid_pump",
+                "minecraft:hide_additional_tooltip": {},
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

@@ -20,97 +20,16 @@
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                {
-                  "text": ""
-                },
-                {
-                  "translate": "item.modifiers.mainhand",
-                  "color": "gray",
-                  "italic": false
-                },
-                [
-                  {
-                    "text": " 5 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.damage"
-                  }
-                ],
-                [
-                  {
-                    "text": " 4 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.fire_rate"
-                  }
-                ],
-                [
-                  {
-                    "text": " 6 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.velocity"
-                  }
-                ],
-                [
-                  {
-                    "text": " 128 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.epac_range"
-                  }
-                ],
-                [
-                  {
-                    "text": " 40 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.heat"
-                  }
-                ],
-                [
-                  {
-                    "text": " 6 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.cooling"
-                  }
-                ],
-                [
-                  {
-                    "text": " 20 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.energy"
-                  }
-                ],
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"text": ""}],
+                [{"translate": "item.modifiers.mainhand","color": "gray","italic": false}],
+                [{"text": " 5 ","color": "dark_green","italic": false},{"translate": "lore.mechanization.damage"}],
+                [{"text": " 4 ","color": "dark_green","italic": false},{"translate": "lore.mechanization.fire_rate"}],
+                [{"text": " 6 ","color": "dark_green","italic": false},{"translate": "lore.mechanization.velocity"}],
+                [{"text": " 128 ","color": "dark_green","italic": false},{"translate": "lore.mechanization.epac_range"}],
+                [{"text": " 40 ","color": "dark_green","italic": false},{"translate": "lore.mechanization.heat"}],
+                [{"text": " 6 ","color": "dark_green","italic": false},{"translate": "lore.mechanization.cooling"}],
+                [{"text": " 20 ","color": "dark_green","italic": false},{"translate": "lore.mechanization.energy"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
@@ -120,7 +39,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6424102,
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.plasma_weapon\"}]",
+                "minecraft:item_model": "mechanization:gadgets/item/plasma_weapon",
                 "!minecraft:damage": {},
                 "minecraft:attribute_modifiers": {
                   "modifiers": [],

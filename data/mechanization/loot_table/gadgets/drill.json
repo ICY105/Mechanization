@@ -6,81 +6,19 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:poisonous_potato",
           "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.drill",
-                "color": "dark_aqua",
-                "italic": false
-              }
-            },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                {
-                  "text": ""
-                },
-                {
-                  "translate": "item.modifiers.mainhand",
-                  "color": "gray",
-                  "italic": false
-                },
-                [
-                  {
-                    "text": "  9 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.mining_speed"
-                  }
-                ],
-                [
-                  {
-                    "text": "  1 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.mining_area"
-                  }
-                ],
-                [
-                  {
-                    "text": "  3 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "attribute.name.generic.attack_damage"
-                  }
-                ],
-                [
-                  {
-                    "text": "  1 ",
-                    "color": "dark_green",
-                    "italic": false
-                  },
-                  {
-                    "translate": "attribute.name.generic.attack_speed"
-                  }
-                ],
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                {"text": ""},
+                {"translate": "item.modifiers.mainhand","color": "gray","italic": false},
+                [{"text": "  4 ","color": "dark_green","italic": false},{"translate": "lore.mechanization.mining_speed"}],
+                [{"text": "  1 ","color": "dark_green","italic": false},{"translate": "lore.mechanization.mining_area"}],
+                [{"text": "  3 ","color": "dark_green","italic": false},{"translate": "attribute.name.attack_damage"}],
+                [{"text": "  1 ","color": "dark_green","italic": false},{"translate": "attribute.name.attack_speed"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
             {
@@ -90,31 +28,42 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6424101,
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.drill\"}]",
+                "minecraft:item_model": "mechanization:gadgets/item/drill",
+                "!minecraft:consumable": {},
+                "minecraft:max_stack_size": 1,
+                "minecraft:max_damage": 1,
+                "minecraft:damage": 0,
+                "minecraft:unbreakable": {"show_in_tooltip": false},
+                "minecraft:tool": {
+                  "default_mining_speed":4,
+                  "rules":[
+                    {"blocks":"#mineable/pickaxe","correct_for_drops":true},
+                    {"blocks":"#mineable/axe","correct_for_drops":true},
+                    {"blocks":"#mineable/shovel","correct_for_drops":true},
+                    {"blocks":"#mineable/hoe","correct_for_drops":true}
+                  ]
+                },
                 "minecraft:attribute_modifiers": {
-                  "modifiers": [],
+                  "modifiers": [
+                    {
+                      "type": "minecraft:attack_damage",
+                      "id": "mechanization:drill_attack_damage",
+                      "amount": 2,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    },
+                    {
+                      "type": "minecraft:attack_speed",
+                      "id": "mechanization:drill_attack_speed",
+                      "amount": -3,
+                      "operation": "add_value",
+                      "slot": "mainhand"
+                    }
+                  ],
                   "show_in_tooltip": false
                 }
               }
-            },
-            {
-              "function": "set_attributes",
-              "modifiers": [
-                {
-                  "id": "mechanization:drill_attack_damage",
-                  "attribute": "generic.attack_damage",
-                  "operation": "add_value",
-                  "amount": 2,
-                  "slot": "mainhand"
-                },
-                {
-                  "id": "mechanization:drill_attack_speed",
-                  "attribute": "generic.attack_speed",
-                  "operation": "add_value",
-                  "amount": -3,
-                  "slot": "mainhand"
-                }
-              ]
             }
           ]
         }

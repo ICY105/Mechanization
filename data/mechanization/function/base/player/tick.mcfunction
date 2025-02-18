@@ -6,8 +6,9 @@ execute store result score @s mechanization.item_id run data get block -30000000
 
 # check manual
 scoreboard players enable @s mechanization.manual
-#execute if score #timer.20 mechanization.data matches 1 if entity @s[tag=!mechanization.has_manual] run loot give @s loot mechanization:base/manual/start
-#execute if score #timer.20 mechanization.data matches 1 if entity @s[tag=!mechanization.has_manual] if items entity @s inventory.* minecraft:written_book[custom_data~{mechanization:{id:"mechanical_manual"}}] run tag @s add mechanization.has_manual
+execute if score #timer.20 mechanization.data matches 1 if entity @s[tag=!mechanization.has_manual] run loot give @s loot mechanization:base/manual/start
+execute if score #timer.20 mechanization.data matches 1 if entity @s[tag=!mechanization.has_manual] if items entity @s hotbar.* minecraft:written_book[custom_data~{mechanization:{id:"mechanical_manual"}}] run tag @s add mechanization.has_manual
+execute if score #timer.20 mechanization.data matches 1 if entity @s[tag=!mechanization.has_manual] if items entity @s inventory.* minecraft:written_book[custom_data~{mechanization:{id:"mechanical_manual"}}] run tag @s add mechanization.has_manual
 execute if score @s mechanization.manual matches ..-1 unless items entity @s weapon.* minecraft:written_book[custom_data~{mechanization:{id:"mechanical_manual"}}] run function mechanization:base/player/manual/switch_mode_lectern
 execute if score @s mechanization.item_id matches 17 if items entity @s weapon.* minecraft:written_book[custom_data~{mechanization:{id:"mechanical_manual"}}] run function mechanization:base/player/manual/check
 

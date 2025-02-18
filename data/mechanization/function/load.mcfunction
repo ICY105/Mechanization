@@ -15,11 +15,6 @@ scoreboard objectives add mechanization.shield dummy
 scoreboard objectives add mechanization.firerate dummy
 scoreboard objectives add mechanization.weaponheat dummy
 
-scoreboard objectives add mechanization.use_pick minecraft.used:minecraft.netherite_pickaxe
-scoreboard objectives add mechanization.use_axe minecraft.used:minecraft.netherite_axe
-scoreboard objectives add mechanization.use_shovel minecraft.used:minecraft.netherite_shovel
-scoreboard objectives add mechanization.use_hoe minecraft.used:minecraft.netherite_hoe
-
 # mark version
 scoreboard players set #mech.ver.major load.status 5
 scoreboard players set #mech.ver.minor load.status 0

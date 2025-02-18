@@ -1,64 +1,31 @@
 {
-  "type": "minecraft:entity",
   "pools": [
     {
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
-          "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.portable_battery",
-                "color": "dark_aqua",
-                "italic": false
-              }
-            },
-            {
-              "function": "minecraft:set_lore",
-              "mode": "replace_all",
-              "lore": [
-                {
-                  "translate": "lore.mechanization.portable_battery",
-                  "color": "gray",
-                  "italic": false,
-                  "with": [
-                    {
-                      "text": "64000"
-                    },
-                    {
-                      "text": "64000"
-                    }
-                  ]
-                },
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
-              ]
-            },
-            {
-              "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"portable_battery\",upgrade:{type:3b},battery:{models:8,base_model:6424900}},energy:{storage:64000,max_storage:64000}}"
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_model_data": 6424908
-              }
-            }
+          "type": "minecraft:loot_table",
+          "value": "mechanization:gadgets/portable_battery"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_lore",
+          "mode": "replace_all",
+          "lore": [
+            [{"translate": "lore.mechanization.portable_battery","color": "gray","italic": false,"with": [{"text": "64000"},{"text": "64000"}]}],
+            [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
           ]
+        },
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": "{mechanization:{id:\"portable_battery\",upgrade:{type:3b},battery:{models:8}},energy:{storage:64000,max_storage:64000}}"
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:custom_model_data":{"floats":[8]}
+          }
         }
       ]
     }
