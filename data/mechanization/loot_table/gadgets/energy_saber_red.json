@@ -29,6 +29,7 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.energy_saber\"}]",
                 "minecraft:item_model": "mechanization:gadgets/item/energy_saber/energy_saber_red",
+                "minecraft:enchantment_glint_override": false,
                 "!minecraft:consumable": {},
                 "minecraft:max_stack_size": 1,
                 "minecraft:max_damage": 1,

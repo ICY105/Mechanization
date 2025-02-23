@@ -41,6 +41,7 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.plasma_weapon\"}]",
                 "minecraft:item_model": "mechanization:gadgets/item/plasma_weapon",
+                "minecraft:enchantment_glint_override": false,
                 "!minecraft:damage": {},
                 "minecraft:attribute_modifiers": {
                   "modifiers": [],

@@ -1,4 +1,20 @@
 
+# battery modifier
+execute store result score #storage mechanization.data run data get storage mechanization:temp obj.components."minecraft:custom_data".energy.storage
+execute store result score #battery mechanization.data run data get storage mechanization:temp list [{components:{"minecraft:custom_data":{mechanization:{id:"portable_battery"}}}}]
+scoreboard players set #max_storage mechanization.data 32000
+scoreboard players operation #max_storage mechanization.data *= #battery mechanization.data
+
+data modify storage mechanization:temp obj.components."minecraft:custom_data".energy set value {max_storage:0,storage:0}
+execute if score #max_storage mechanization.data matches 1.. run data modify storage mechanization:temp obj.components."minecraft:custom_data".mechanization.battery set value {models:0,base_model:0}
+execute if score #max_storage mechanization.data matches 1.. store result storage mechanization:temp obj.components."minecraft:custom_data".energy.max_storage int 1 run scoreboard players get #max_storage mechanization.data
+execute if score #storage mechanization.data > #max_storage mechanization.data run scoreboard players operation #storage mechanization.data = #max_storage mechanization.data
+execute store result storage mechanization:temp obj.components."minecraft:custom_data".energy.storage int 1 run scoreboard players get #storage mechanization.data
+
+# add battery lore
+data modify block -30000000 0 3202 front_text.messages[0] set value '[{"translate":"lore.mechanization.portable_battery","color":"gray","italic":false,"with":[{"score":{"name":"#storage","objective":"mechanization.data"}},{"score":{"name":"#max_storage","objective":"mechanization.data"}}]}]'
+execute if score #max_storage mechanization.data matches 1.. run data modify storage mechanization:temp obj.components."minecraft:lore" prepend from block -30000000 0 3202 front_text.messages[0]
+
 scoreboard players set #armor mechanization.data 0
 scoreboard players set #toughness mechanization.data 0
 scoreboard players set #shield mechanization.data 0

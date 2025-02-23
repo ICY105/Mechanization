@@ -23,20 +23,21 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"drill\",upgrades:{type:2b,count:5b,mining_speed:9,mining_area:1,items:[]}}}"
+              "tag": "{mechanization:{id:\"drill\",upgrades:{type:2b,count:5b,mining_speed:20,mining_area:1,items:[]}}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.drill\"}]",
                 "minecraft:item_model": "mechanization:gadgets/item/drill",
+                "minecraft:enchantment_glint_override": false,
                 "!minecraft:consumable": {},
                 "minecraft:max_stack_size": 1,
                 "minecraft:max_damage": 1,
                 "minecraft:damage": 0,
                 "minecraft:unbreakable": {"show_in_tooltip": false},
                 "minecraft:tool": {
-                  "default_mining_speed":4,
+                  "default_mining_speed":2,
                   "rules":[
                     {"blocks":"#mineable/pickaxe","correct_for_drops":true},
                     {"blocks":"#mineable/axe","correct_for_drops":true},

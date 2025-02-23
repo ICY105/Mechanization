@@ -9,4 +9,5 @@ loot spawn ~ ~ ~ loot mechanization:gadgets/tinker_table
 function mechanization:base/utils/break_block/break_drop_inv
 
 setblock ~ ~ ~ minecraft:air replace
+execute on passengers run kill @s
 kill @s

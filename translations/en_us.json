@@ -1,6 +1,22 @@
 {
   "text.mechanization.resourcepack":"",
   "text.mechanization.version":"Version %s.%s.%s",
+
+"__comment.libraries":"Library Translations",
+  "enchantment.loottable_autosmelt.autosmelt": "Autosmelt",
+  "enchantment.loottable_autosmelt.trash": "Void Trash",
+  
+  "fluid.fluidcrafting.water": "Water",
+  "fluid.fluidcrafting.beetroot_soup": "Beetroot Soup",
+  "fluid.fluidcrafting.honey": "Honey",
+  "fluid.fluidcrafting.lava": "Lava",
+  "fluid.fluidcrafting.milk": "Milk",
+  "fluid.fluidcrafting.mushroom_stew": "Mushroom Stew",
+  "fluid.fluidcrafting.powder_snow": "Powder Snow",
+  "fluid.fluidcrafting.rabbit_stew": "Rabbit Stew",
+  "fluid.fluidcrafting.liquid_experience": "Liquid Experience",
+
+  "item.fluidcrafting.generic_bottle": "Bottle of %s",
    
 "__comment.base":"Mechanization: Base",
   "item.mechanization.mechanical_manual": "Mechanical Manual",

@@ -1,6 +1,7 @@
 {
   "required": false,
   "values": [
-    "mechanization:machines/blocks/get_gui_function"
+    "mechanization:machines/blocks/get_gui_function",
+    "mechanization:gadgets/blocks/get_gui_function"
   ]
 }
