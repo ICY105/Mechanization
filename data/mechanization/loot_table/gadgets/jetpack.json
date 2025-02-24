@@ -6,38 +6,17 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:elytra",
+          "name": "minecraft:poisonous_potato",
           "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.jetpack",
-                "color": "dark_aqua",
-                "italic": false
-              }
-            },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                {
-                  "translate": "lore.mechanization.upgrade_modular_chestplate",
-                  "color": "gray",
-                  "italic": false
-                },
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"translate": "lore.mechanization.upgrade_modular_chestplate","color": "gray","italic": false}],
+                [{"text": ""}],
+                [{"text": ""},{"translate": "item.modifiers.chest","color": "gray","italic": false}],
+                [{"text": "+3 ","color": "blue","italic": false},{"translate": "attribute.name.armor"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {
@@ -47,17 +26,27 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6424111,
-                "!minecraft:damage": {},
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.jetpack\", \"color\": \"light_purple\", \"italic\": false}]",
+                "minecraft:item_model": "mechanization:gadgets/item/jetpack",
+                "equippable":{"slot": "chest", "asset_id": "mechanization:modular_armor_default"},
                 "minecraft:attribute_modifiers": {
                   "modifiers": [],
                   "show_in_tooltip": false
-                },
-                "minecraft:dyed_color": {
-                  "rgb": 0,
-                  "show_in_tooltip": false
                 }
               }
+            },
+            {
+              "function": "set_attributes",
+              "replace": false,
+              "modifiers": [
+                {
+                  "id": "mechanization:jetpack_armor",
+                  "attribute": "minecraft:armor",
+                  "operation": "add_value",
+                  "amount": 3,
+                  "slot": "chest"
+                }
+              ]
             }
           ]
         }

@@ -15,7 +15,7 @@
                 [{"translate": "lore.mechanization.upgrade_plasma_weapon","color": "gray","italic": false}],
                 [{"text": " 6 -> 10 ","color": "blue","italic": false},{"translate": "lore.mechanization.velocity"}],
                 [{"text": " 128 -> 256 ","color": "blue","italic": false},{"translate": "lore.mechanization.epac_range"}],
-                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {

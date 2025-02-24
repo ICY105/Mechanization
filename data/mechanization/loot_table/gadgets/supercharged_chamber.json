@@ -15,7 +15,7 @@
                 [{"translate": "lore.mechanization.upgrade_plasma_weapon","color": "gray","italic": false}],
                 [{"text": " 60 ","color": "green","italic": false},{"translate": "lore.mechanization.damage"}],
                 [{"text": " 0.5 ","color": "green","italic": false},{"translate": "lore.mechanization.fire_rate"}],
-                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {

@@ -6,16 +6,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:poisonous_potato",
           "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.plasma_weapon",
-                "color": "dark_red",
-                "italic": false
-              }
-            },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
@@ -29,7 +21,7 @@
                 [{"text": " 40 ","color": "dark_green","italic": false},{"translate": "lore.mechanization.heat"}],
                 [{"text": " 6 ","color": "dark_green","italic": false},{"translate": "lore.mechanization.cooling"}],
                 [{"text": " 20 ","color": "dark_green","italic": false},{"translate": "lore.mechanization.energy"}],
-                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {
@@ -39,14 +31,12 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.plasma_weapon\"}]",
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.plasma_weapon\", \"color\": \"light_purple\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:gadgets/item/plasma_weapon",
                 "minecraft:enchantment_glint_override": false,
-                "!minecraft:damage": {},
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [],
-                  "show_in_tooltip": false
-                }
+                "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "bow"},
+                "minecraft:hide_additional_tooltip": {},
+                "!food":{}
               }
             }
           ]

@@ -6,71 +6,18 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:leather_helmet",
+          "name": "minecraft:poisonous_potato",
           "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.modular_helmet",
-                "color": "dark_aqua",
-                "italic": false
-              }
-            },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                {
-                  "text": ""
-                },
-                {
-                  "translate": "item.modifiers.head",
-                  "color": "gray",
-                  "italic": false
-                },
-                [
-                  {
-                    "text": "+0 ",
-                    "color": "blue",
-                    "italic": false
-                  },
-                  {
-                    "translate": "attribute.name.generic.armor"
-                  }
-                ],
-                [
-                  {
-                    "text": "+0 ",
-                    "color": "blue",
-                    "italic": false
-                  },
-                  {
-                    "translate": "attribute.name.generic.armor_toughness"
-                  }
-                ],
-                [
-                  {
-                    "text": "+0 ",
-                    "color": "blue",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.shield_capacity"
-                  }
-                ],
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"text": ""}],
+                [{"text": ""},{"translate": "item.modifiers.head","color": "gray","italic": false}],
+                [{"text": "+0 ","color": "blue","italic": false},{"translate": "attribute.name.armor"}],
+                [{"text": "+0 ","color": "blue","italic": false},{"translate": "attribute.name.armor_toughness"}],
+                [{"text": "+0 ","color": "blue","italic": false},{"translate": "lore.mechanization.shield_capacity"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {
@@ -80,11 +27,13 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6424106,
-                "minecraft:dyed_color": {
-                  "rgb": 15170646,
-                  "show_in_tooltip": false
-                },
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.modular_helmet\"}]",
+                "minecraft:item_model": "mechanization:gadgets/item/modular_helmet",
+                "equippable":{"slot": "head", "damage_on_hurt": true, "asset_id": "mechanization:modular_armor_default"},
+                "minecraft:max_stack_size": 1,
+                "minecraft:max_damage": 1,
+                "minecraft:damage": 0,
+                "minecraft:unbreakable": {"show_in_tooltip": false},
                 "minecraft:attribute_modifiers": {
                   "modifiers": [],
                   "show_in_tooltip": false
@@ -93,45 +42,46 @@
             },
             {
               "function": "set_attributes",
+              "replace": false,
               "modifiers": [
                 {
                   "id": "mechanization:modular_helmet_armor",
-                  "attribute": "generic.armor",
+                  "attribute": "minecraft:armor",
                   "operation": "add_value",
                   "amount": 0,
                   "slot": "head"
                 },
                 {
                   "id": "mechanization:modular_helmet_armor_toughness",
-                  "attribute": "generic.armor_toughness",
+                  "attribute": "minecraft:armor_toughness",
                   "operation": "add_value",
                   "amount": 0,
                   "slot": "head"
                 },
                 {
                   "id": "mechanization:modular_helmet_max_health",
-                  "attribute": "generic.max_health",
+                  "attribute": "minecraft:max_health",
                   "operation": "add_value",
                   "amount": 0,
                   "slot": "head"
                 },
                 {
                   "id": "mechanization:modular_helmet_movement_speed",
-                  "attribute": "generic.movement_speed",
+                  "attribute": "minecraft:movement_speed",
                   "operation": "add_value",
                   "amount": 0,
                   "slot": "head"
                 },
                 {
                   "id": "mechanization:modular_helmet_knockback_resistance",
-                  "attribute": "generic.knockback_resistance",
+                  "attribute": "minecraft:knockback_resistance",
                   "operation": "add_value",
                   "amount": 0,
                   "slot": "head"
                 },
                 {
                   "id": "mechanization:modular_helmet_attack_damage",
-                  "attribute": "generic.attack_damage",
+                  "attribute": "minecraft:attack_damage",
                   "operation": "add_multiplied_total",
                   "amount": 0,
                   "slot": "head"

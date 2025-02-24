@@ -6,38 +6,17 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:leather_helmet",
+          "name": "minecraft:poisonous_potato",
           "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.night_vision_goggles",
-                "color": "dark_aqua",
-                "italic": false
-              }
-            },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                {
-                  "translate": "lore.mechanization.upgrade_modular_helmet",
-                  "color": "gray",
-                  "italic": false
-                },
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"translate": "lore.mechanization.upgrade_modular_helmet","color": "gray","italic": false}],
+                [{"text": ""}],
+                [{"text": ""},{"translate": "item.modifiers.head","color": "gray","italic": false}],
+                [{"text": "+1 ","color": "blue","italic": false},{"translate": "attribute.name.armor"}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {
@@ -47,12 +26,9 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6424113,
-                "!minecraft:damage": {},
-                "minecraft:dyed_color": {
-                  "rgb": 13421772,
-                  "show_in_tooltip": false
-                },
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.night_vision_goggles\", \"color\": \"yellow\", \"italic\": false}]",
+                "minecraft:item_model": "mechanization:gadgets/item/night_vision_goggles",
+                "equippable":{"slot": "head", "asset_id": "mechanization:modular_armor_upgrades_1"},
                 "minecraft:attribute_modifiers": {
                   "modifiers": [],
                   "show_in_tooltip": false
@@ -61,12 +37,13 @@
             },
             {
               "function": "set_attributes",
+              "replace": false,
               "modifiers": [
                 {
                   "id": "mechanization:nigh_vision_goggles_armor",
-                  "attribute": "generic.armor",
+                  "attribute": "minecraft:armor",
                   "operation": "add_value",
-                  "amount": 0,
+                  "amount": 1,
                   "slot": "head"
                 }
               ]

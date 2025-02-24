@@ -17,7 +17,7 @@
                 [{"text": "  4 ","color": "dark_green","italic": false},{"translate": "attribute.name.attack_damage"}],
                 [{"text": "  1 ","color": "dark_green","italic": false},{"translate": "attribute.name.attack_speed"}],
                 [{"text": "  0 ","color": "dark_green","italic": false},{"translate": "lore.mechanization.energy_saber_range"}],
-                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {
@@ -30,10 +30,11 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.energy_saber\"}]",
                 "minecraft:item_model": "mechanization:gadgets/item/energy_saber/energy_saber_red",
                 "minecraft:enchantment_glint_override": false,
-                "!minecraft:consumable": {},
+                "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "block"},
                 "minecraft:max_stack_size": 1,
                 "minecraft:max_damage": 1,
                 "minecraft:damage": 0,
+                "minecraft:unbreakable": {"show_in_tooltip": false},
                 "minecraft:attribute_modifiers": {
                   "modifiers": [
                     {
