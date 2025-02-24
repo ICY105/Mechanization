@@ -26,6 +26,8 @@ execute if score #unbreaking mechanization.data matches 1.. run data modify stor
 execute if score #unbreaking mechanization.data matches 1.. store result storage mechanization:temp obj.components."minecraft:enchantments"."minecraft:unbreaking" int 1 run scoreboard players get #unbreaking mechanization.data
 
 # special effects
+execute if data storage mechanization:temp list[0] run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"text":""}'
+
 scoreboard players set #value mechanization.data 0
 execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"looting_1"} run scoreboard players set #value mechanization.data 1
 execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"looting_2"} run scoreboard players set #value mechanization.data 2
@@ -37,13 +39,13 @@ execute if score #value mechanization.data matches 1.. store result storage mech
 
 execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"fire_aspect"} run data modify storage mechanization:temp obj.components."minecraft:enchantments"."minecraft:fire_aspect" set value 2
 
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"poison"} run data modify storage mechanization:temp obj.components."minecraft:lore" append value '{"translate":"lore.mechanization.upgrade_poison","color":"gray","italic":false}'
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"wither"} run data modify storage mechanization:temp obj.components."minecraft:lore" append value '{"translate":"lore.mechanization.upgrade_wither","color":"gray","italic":false}'
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"weakness"} run data modify storage mechanization:temp obj.components."minecraft:lore" append value '{"translate":"lore.mechanization.upgrade_weakness","color":"gray","italic":false}'
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"slowness"} run data modify storage mechanization:temp obj.components."minecraft:lore" append value '{"translate":"lore.mechanization.upgrade_slowness","color":"gray","italic":false}'
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"vampiric"} run data modify storage mechanization:temp obj.components."minecraft:lore" append value '{"translate":"lore.mechanization.upgrade_vampiric","color":"gray","italic":false}'
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"illuminating"} run data modify storage mechanization:temp obj.components."minecraft:lore" append value '{"translate":"lore.mechanization.upgrade_illuminating","color":"gray","italic":false}'
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"throwing_speed"} run data modify storage mechanization:temp obj.components."minecraft:lore" append value '{"translate":"lore.mechanization.upgrade_throwing_speed","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"poison"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"translate":"lore.mechanization.upgrade_poison","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"wither"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"translate":"lore.mechanization.upgrade_wither","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"weakness"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"translate":"lore.mechanization.upgrade_weakness","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"slowness"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"translate":"lore.mechanization.upgrade_slowness","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"vampiric"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"translate":"lore.mechanization.upgrade_vampiric","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"illuminating"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"translate":"lore.mechanization.upgrade_illuminating","color":"gray","italic":false}'
+execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"throwing_speed"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"translate":"lore.mechanization.upgrade_throwing_speed","color":"gray","italic":false}'
 
 # add stats lore
 data modify storage mechanization:temp obj.components."minecraft:lore" append value '{"text":""}'

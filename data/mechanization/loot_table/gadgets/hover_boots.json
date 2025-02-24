@@ -29,6 +29,7 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.hover_boots\", \"color\": \"yellow\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:gadgets/item/hover_boots",
                 "equippable":{"slot": "feet", "asset_id": "mechanization:modular_armor_upgrades_1"},
+                "minecraft:max_stack_size": 1,
                 "minecraft:attribute_modifiers": {
                   "modifiers": [],
                   "show_in_tooltip": false

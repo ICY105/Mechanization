@@ -33,6 +33,7 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.plasma_weapon\", \"color\": \"light_purple\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:gadgets/item/plasma_weapon",
+                "minecraft:max_stack_size": 1,
                 "minecraft:enchantment_glint_override": false,
                 "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "bow"},
                 "minecraft:hide_additional_tooltip": {},

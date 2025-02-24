@@ -29,6 +29,7 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.jetpack\", \"color\": \"light_purple\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:gadgets/item/jetpack",
                 "equippable":{"slot": "chest", "asset_id": "mechanization:modular_armor_default"},
+                "minecraft:max_stack_size": 1,
                 "minecraft:attribute_modifiers": {
                   "modifiers": [],
                   "show_in_tooltip": false

@@ -29,6 +29,7 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.phase_boots\", \"color\": \"light_purple\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:gadgets/item/phase_boots",
                 "equippable":{"slot": "feet", "asset_id": "mechanization:modular_armor_upgrades_2"},
+                "minecraft:max_stack_size": 1,
                 "minecraft:attribute_modifiers": {
                   "modifiers": [],
                   "show_in_tooltip": false
