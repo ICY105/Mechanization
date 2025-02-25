@@ -1,6 +1,7 @@
 {
 	"required":false,
 	"values":[
-		"mechanization:base/player/tick"
+		"mechanization:base/player/tick",
+		"mechanization:gadgets/player/tick"
 	]
 }

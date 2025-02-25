@@ -26,6 +26,8 @@ execute if score #lowest_durability mechanization.data matches ..999999 store re
 scoreboard players operation #lowest_max_durability mechanization.data -= #lowest_durability mechanization.data
 execute if score #lowest_durability mechanization.data matches ..999999 store result storage mechanization:temp obj.components."minecraft:damage" int 1 run scoreboard players get #lowest_max_durability mechanization.data
 
+execute store result storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.current_durability int 1 run scoreboard players get #lowest_max_durability mechanization.data
+
 # apply modifier
 execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades{type:1b} run function mechanization:gadgets/blocks/tinker_table/item_modifiers/modify_energy_saber
 execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades{type:2b} run function mechanization:gadgets/blocks/tinker_table/item_modifiers/modify_drill

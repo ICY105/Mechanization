@@ -11,7 +11,7 @@ execute if score @s mechanization.weaponheat matches 1.. run function mechanizat
 execute if items entity @s armor.* minecraft:poisonous_potato[minecraft:custom_data~{mechanization:{upgrades:{}}}] run function mechanization:gadgets/player/modular_armor/tick
 
 execute if score #timer.20 mechanization.data matches 0 if items entity @s armor.head minecraft:poisonous_potato[minecraft:custom_data~{mechanization:{id:"rebreather"}}] run function mechanization:gadgets/player/modular_armor/rebreather
-execute if score #timer.20 mechanization.data matches 0 if items entity @s armor.head minecraft:poisonous_potato[minecraft:custom_data~{mechanization:{id:"night_vision_goggles"}}] if predicate mechanization:equipment/wearing_night_vision run function mechanization:gadgets/player/modular_armor/night_vision
+execute if score #timer.20 mechanization.data matches 0 if items entity @s armor.head minecraft:poisonous_potato[minecraft:custom_data~{mechanization:{id:"night_vision_goggles"}}] run function mechanization:gadgets/player/modular_armor/night_vision
 
 execute if items entity @s armor.chest minecraft:poisonous_potato[minecraft:custom_data~{mechanization:{id:"rebreather"}}] unless predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"flags":{"is_flying":true}}} run function mechanization:gadgets/player/modular_armor/flight
 
@@ -19,10 +19,6 @@ execute if score #timer.10 mechanization.data matches 0 if items entity @s armor
 execute if items entity @s armor.feet minecraft:poisonous_potato[minecraft:custom_data~{mechanization:{id:"phase_boots"}}] run function mechanization:gadgets/player/modular_armor/wall_walk
 
 # reset scores
-scoreboard players set @s mechanization.use_pick 0
-scoreboard players set @s mechanization.use_axe 0
-scoreboard players set @s mechanization.use_shovel 0
-scoreboard players set @s mechanization.use_hoe 0
-
+scoreboard players set @s mechanization.use_drill 0
 scoreboard players add @s mechanization.firerate 0
 scoreboard players add @s mechanization.weaponheat 0

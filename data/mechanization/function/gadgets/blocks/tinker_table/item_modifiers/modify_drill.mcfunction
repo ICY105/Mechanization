@@ -21,7 +21,7 @@ scoreboard players add #attack_damage mechanization.data 10
 
 execute store result storage mechanization:temp obj.components."minecraft:tool".default_mining_speed double 0.1 run scoreboard players get #mining_speed mechanization.data
 
-execute if score #mining_area mechanization.data matches 9.. run scoreboard players set #mining_area mechanization.data 8
+execute if score #mining_area mechanization.data matches 9.. run scoreboard players set #mining_area mechanization.data 9
 execute store result storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.mining_area int 1 run scoreboard players get #mining_area mechanization.data
 
 execute if score #unbreaking mechanization.data matches 11.. run scoreboard players set #unbreaking mechanization.data 10

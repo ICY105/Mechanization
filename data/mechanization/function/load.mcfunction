@@ -9,6 +9,7 @@ scoreboard objectives add mechanization.fluid.out dummy
 scoreboard objectives add mechanization.used_item dummy
 
 scoreboard objectives add mechanization.manual trigger
+scoreboard objectives add mechanization.use_drill minecraft.used:minecraft.poisonous_potato
 
 scoreboard objectives add mechanization.itemslot dummy
 scoreboard objectives add mechanization.shield dummy
