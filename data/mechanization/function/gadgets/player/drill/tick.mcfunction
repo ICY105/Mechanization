@@ -11,7 +11,7 @@ execute if score #timer.20 mechanization.data matches 1 if data block -30000000 
 
 # add damage
 execute store result score #damage mechanization.data run data get block -30000000 0 3201 Items[0].components."minecraft:damage"
-execute store result score #current_damage mechanization.data run data get block -30000000 0 3201 Items[0].components."minecraft:custom_data".mechanization.upgrades.current_durability 
+execute store result score #current_damage mechanization.data run data get block -30000000 0 3201 Items[0].components."minecraft:custom_data".mechanization.upgrades.current_durability
 scoreboard players operation #damage mechanization.data -= #current_damage mechanization.data
 execute if score #damage mechanization.data matches 1.. run function mechanization:gadgets/player/damage_upgrades
 execute if score #damage mechanization.data matches 1.. run item replace entity @s weapon.mainhand from block -30000000 0 3201 container.0

@@ -13,4 +13,4 @@ execute unless score @s mechanization.shield matches 0.. run scoreboard players 
 
 # apply resistance
 execute if score @s mechanization.shield matches 1.. run effect give @s minecraft:resistance 2 3 true
-execute if score @s mechanization.shield matches 1.. run particle minecraft:dust 0 0.5 1 1 ~ ~ ~ 0.2 0 0.2 0 10
+execute if score @s mechanization.shield matches 1.. run particle minecraft:dust{color:[0.0,0.5,1.0],scale:1} ~ ~ ~ 0.2 0 0.2 0 10
