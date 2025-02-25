@@ -1,5 +1,6 @@
 
-execute store result score #cooling mechanization.data run data get entity @s SelectedItem.tag.mechanization.epac.cooling
+item replace block -30000000 0 3201 container.0 from entity @s weapon.mainhand
+execute store result score #cooling mechanization.data run data get block -30000000 0 3201 Items[0].components."minecraft:custom_data".mechanization.epac.cooling
 execute if score #cooling mechanization.data matches ..0 run scoreboard players set #cooling mechanization.data 6
 execute if score @s mechanization.firerate matches ..-60 if score @s mechanization.weaponheat matches 1.. run scoreboard players operation @s mechanization.weaponheat -= #cooling mechanization.data
 

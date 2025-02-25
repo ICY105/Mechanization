@@ -1,6 +1,6 @@
 
 execute at @s run tp @s ^ ^ ^0.5 ~ ~0.1
-particle minecraft:dust 1.0 0.0 1.0 1 ~ ~ ~ 0 0 0 0 2 force
+particle minecraft:dust{color:[1.0,0.0,1.0],scale:1} ~ ~ ~ 0 0 0 0 2 force
 
 scoreboard players remove #loop mechanization.data 1
 scoreboard players remove @s mechanization.data 1
