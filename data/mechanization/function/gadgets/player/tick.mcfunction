@@ -1,25 +1,22 @@
 
 # drill
-execute if score @s mechanization.item_id matches 5 if data block -30000000 0 3201 Items[0].tag.mechanization{id:"drill"} run function mechanization:gadgets/player/drill/tick
+execute if items entity @s weapon.mainhand minecraft:poisonous_potato[custom_data~{mechanization:{id:"drill"}}] run function mechanization:gadgets/player/drill/tick
 
 # firearm
-execute if score @s mechanization.item_id matches 4 if data block -30000000 0 3201 Items[0].tag.mechanization{id:"epac"} if entity @s[scores={mechanization.time=1..,mechanization.weaponheat=..1000,mechanization.firerate=..0}] run function mechanization:gadgets/player/firearms/fire_weapon
-execute if score @s mechanization.item_id matches 4 if data block -30000000 0 3201 Items[0].tag.mechanization{id:"epac"} if score @s mechanization.time matches 1.. if score @s mechanization.weaponheat matches ..1000 run function mechanization:gadgets/player/firearms/recoil
-
 execute if score @s mechanization.time matches 1.. run scoreboard players remove @s mechanization.time 1
 execute if score @s mechanization.firerate matches -59.. run scoreboard players remove @s mechanization.firerate 1
 execute if score @s mechanization.weaponheat matches 1.. run function mechanization:gadgets/player/firearms/display_heat
 
 # armor
-execute if predicate mechanization:equipment/wearing_modular_armor run function mechanization:gadgets/player/modular_armor/tick
+execute if items entity @s armor.* minecraft:poisonous_potato[minecraft:custom_data~{mechanization:{upgrades:{}}}] run function mechanization:gadgets/player/modular_armor/tick
 
-execute if score #timer.20 mechanization.data matches 0 if predicate mechanization:equipment/wearing_rebreather run function mechanization:gadgets/player/modular_armor/rebreather
-execute if score #timer.20 mechanization.data matches 0 if predicate mechanization:equipment/wearing_night_vision run function mechanization:gadgets/player/modular_armor/night_vision
+execute if score #timer.20 mechanization.data matches 0 if items entity @s armor.head minecraft:poisonous_potato[minecraft:custom_data~{mechanization:{id:"rebreather"}}] run function mechanization:gadgets/player/modular_armor/rebreather
+execute if score #timer.20 mechanization.data matches 0 if items entity @s armor.head minecraft:poisonous_potato[minecraft:custom_data~{mechanization:{id:"night_vision_goggles"}}] if predicate mechanization:equipment/wearing_night_vision run function mechanization:gadgets/player/modular_armor/night_vision
 
-execute if predicate mechanization:equipment/wearing_jetpack unless entity @s[nbt={FallFlying:1b}] run function mechanization:gadgets/player/modular_armor/flight
+execute if items entity @s armor.chest minecraft:poisonous_potato[minecraft:custom_data~{mechanization:{id:"rebreather"}}] unless predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"flags":{"is_flying":true}}} run function mechanization:gadgets/player/modular_armor/flight
 
-execute if score #timer.10 mechanization.data matches 0 if predicate mechanization:equipment/wearing_hover_boots run function mechanization:gadgets/player/modular_armor/slowfall
-execute if predicate mechanization:equipment/wearing_phase_boots run function mechanization:gadgets/player/modular_armor/wall_walk
+execute if score #timer.10 mechanization.data matches 0 if items entity @s armor.feet minecraft:poisonous_potato[minecraft:custom_data~{mechanization:{id:"hover_boots"}}] run function mechanization:gadgets/player/modular_armor/slowfall
+execute if items entity @s armor.feet minecraft:poisonous_potato[minecraft:custom_data~{mechanization:{id:"phase_boots"}}] run function mechanization:gadgets/player/modular_armor/wall_walk
 
 # reset scores
 scoreboard players set @s mechanization.use_pick 0

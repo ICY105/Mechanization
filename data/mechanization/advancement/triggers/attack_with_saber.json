@@ -3,10 +3,14 @@
     "example": {
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
-		    "player": {
+        "player": {
           "equipment": {
             "mainhand": {
-              "nbt": "{mechanization:{upgrades:{type:1b}}}"
+              "predicates": {
+                "minecraft:custom_data": {
+                  "mechanization": {"id": "energy_saber"}
+                }
+              }
             }
           }
         }

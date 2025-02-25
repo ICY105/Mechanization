@@ -11,77 +11,77 @@ scoreboard players set #bouncy mechanization.data 1
 scoreboard players set #model mechanization.data 0
 
 # chambers
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"accelerated_chamber"} run scoreboard players set #damage mechanization.data 15
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"accelerated_chamber"} run scoreboard players set #fire_rate mechanization.data 1
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"accelerated_chamber"} run scoreboard players set #heat mechanization.data 9
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"accelerated_chamber"} run scoreboard players set #energy mechanization.data 18
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"accelerated_chamber"} run scoreboard players add #model mechanization.data 1
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"accelerated_chamber"} run scoreboard players set #damage mechanization.data 15
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"accelerated_chamber"} run scoreboard players set #fire_rate mechanization.data 1
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"accelerated_chamber"} run scoreboard players set #heat mechanization.data 9
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"accelerated_chamber"} run scoreboard players set #energy mechanization.data 18
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"accelerated_chamber"} run scoreboard players add #model mechanization.data 1
 
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"rapid_chamber"} run scoreboard players set #damage mechanization.data 30
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"rapid_chamber"} run scoreboard players set #fire_rate mechanization.data 2
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"rapid_chamber"} run scoreboard players set #heat mechanization.data 18
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"rapid_chamber"} run scoreboard players set #energy mechanization.data 36
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"rapid_chamber"} run scoreboard players add #model mechanization.data 2
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"rapid_chamber"} run scoreboard players set #damage mechanization.data 30
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"rapid_chamber"} run scoreboard players set #fire_rate mechanization.data 2
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"rapid_chamber"} run scoreboard players set #heat mechanization.data 18
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"rapid_chamber"} run scoreboard players set #energy mechanization.data 36
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"rapid_chamber"} run scoreboard players add #model mechanization.data 2
 
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"pressurized_chamber"} run scoreboard players set #damage mechanization.data 150
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"pressurized_chamber"} run scoreboard players set #fire_rate mechanization.data 10
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"pressurized_chamber"} run scoreboard players set #heat mechanization.data 90
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"pressurized_chamber"} run scoreboard players set #energy mechanization.data 180
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"pressurized_chamber"} run scoreboard players add #model mechanization.data 3
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"pressurized_chamber"} run scoreboard players set #damage mechanization.data 150
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"pressurized_chamber"} run scoreboard players set #fire_rate mechanization.data 10
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"pressurized_chamber"} run scoreboard players set #heat mechanization.data 90
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"pressurized_chamber"} run scoreboard players set #energy mechanization.data 180
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"pressurized_chamber"} run scoreboard players add #model mechanization.data 3
 
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"blazing_chamber"} run scoreboard players set #damage mechanization.data 300
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"blazing_chamber"} run scoreboard players set #fire_rate mechanization.data 20
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"blazing_chamber"} run scoreboard players set #heat mechanization.data 180
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"blazing_chamber"} run scoreboard players set #energy mechanization.data 360
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"blazing_chamber"} run scoreboard players add #model mechanization.data 4
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"blazing_chamber"} run scoreboard players set #damage mechanization.data 300
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"blazing_chamber"} run scoreboard players set #fire_rate mechanization.data 20
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"blazing_chamber"} run scoreboard players set #heat mechanization.data 180
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"blazing_chamber"} run scoreboard players set #energy mechanization.data 360
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"blazing_chamber"} run scoreboard players add #model mechanization.data 4
 
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"supercharged_chamber"} run scoreboard players set #damage mechanization.data 600
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"supercharged_chamber"} run scoreboard players set #fire_rate mechanization.data 40
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"supercharged_chamber"} run scoreboard players set #heat mechanization.data 360
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"supercharged_chamber"} run scoreboard players set #energy mechanization.data 720
-execute if data storage mechanization:temp list[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"supercharged_chamber"} run scoreboard players add #model mechanization.data 5
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"supercharged_chamber"} run scoreboard players set #damage mechanization.data 600
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"supercharged_chamber"} run scoreboard players set #fire_rate mechanization.data 40
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"supercharged_chamber"} run scoreboard players set #heat mechanization.data 360
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"supercharged_chamber"} run scoreboard players set #energy mechanization.data 720
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:14b}].components."minecraft:custom_data".mechanization{id:"supercharged_chamber"} run scoreboard players add #model mechanization.data 5
 
 # pump
-execute if data storage mechanization:temp list[{Slot:13b}].components."minecraft:custom_data".mechanization{id:"overclocked_pump"} run scoreboard players operation #damage mechanization.data *= #cons.120 mechanization.data
-execute if data storage mechanization:temp list[{Slot:13b}].components."minecraft:custom_data".mechanization{id:"overclocked_pump"} run scoreboard players operation #damage mechanization.data /= #cons.100 mechanization.data
-execute if data storage mechanization:temp list[{Slot:13b}].components."minecraft:custom_data".mechanization{id:"overclocked_pump"} run scoreboard players operation #heat mechanization.data *= #cons.140 mechanization.data
-execute if data storage mechanization:temp list[{Slot:13b}].components."minecraft:custom_data".mechanization{id:"overclocked_pump"} run scoreboard players operation #heat mechanization.data /= #cons.100 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:13b}].components."minecraft:custom_data".mechanization{id:"overclocked_pump"} run scoreboard players operation #damage mechanization.data *= #cons.120 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:13b}].components."minecraft:custom_data".mechanization{id:"overclocked_pump"} run scoreboard players operation #damage mechanization.data /= #cons.100 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:13b}].components."minecraft:custom_data".mechanization{id:"overclocked_pump"} run scoreboard players operation #heat mechanization.data *= #cons.140 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:13b}].components."minecraft:custom_data".mechanization{id:"overclocked_pump"} run scoreboard players operation #heat mechanization.data /= #cons.100 mechanization.data
 
-execute if data storage mechanization:temp list[{Slot:13b}].components."minecraft:custom_data".mechanization{id:"frigid_pump"} run scoreboard players operation #damage mechanization.data *= #cons.80 mechanization.data
-execute if data storage mechanization:temp list[{Slot:13b}].components."minecraft:custom_data".mechanization{id:"frigid_pump"} run scoreboard players operation #damage mechanization.data /= #cons.100 mechanization.data
-execute if data storage mechanization:temp list[{Slot:13b}].components."minecraft:custom_data".mechanization{id:"frigid_pump"} run scoreboard players operation #heat mechanization.data *= #cons.60 mechanization.data
-execute if data storage mechanization:temp list[{Slot:13b}].components."minecraft:custom_data".mechanization{id:"frigid_pump"} run scoreboard players operation #heat mechanization.data /= #cons.100 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:13b}].components."minecraft:custom_data".mechanization{id:"frigid_pump"} run scoreboard players operation #damage mechanization.data *= #cons.80 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:13b}].components."minecraft:custom_data".mechanization{id:"frigid_pump"} run scoreboard players operation #damage mechanization.data /= #cons.100 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:13b}].components."minecraft:custom_data".mechanization{id:"frigid_pump"} run scoreboard players operation #heat mechanization.data *= #cons.60 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:13b}].components."minecraft:custom_data".mechanization{id:"frigid_pump"} run scoreboard players operation #heat mechanization.data /= #cons.100 mechanization.data
 
 # heat sink
-execute if data storage mechanization:temp list[{Slot:12b}].components."minecraft:custom_data".mechanization{id:"passive_heat_sink"} run scoreboard players set #cooling mechanization.data 4
-execute if data storage mechanization:temp list[{Slot:12b}].components."minecraft:custom_data".mechanization{id:"passive_heat_sink"} run scoreboard players operation #energy mechanization.data *= #cons.85 mechanization.data
-execute if data storage mechanization:temp list[{Slot:12b}].components."minecraft:custom_data".mechanization{id:"passive_heat_sink"} run scoreboard players operation #energy mechanization.data /= #cons.100 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:12b}].components."minecraft:custom_data".mechanization{id:"passive_heat_sink"} run scoreboard players set #cooling mechanization.data 4
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:12b}].components."minecraft:custom_data".mechanization{id:"passive_heat_sink"} run scoreboard players operation #energy mechanization.data *= #cons.85 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:12b}].components."minecraft:custom_data".mechanization{id:"passive_heat_sink"} run scoreboard players operation #energy mechanization.data /= #cons.100 mechanization.data
 
-execute if data storage mechanization:temp list[{Slot:12b}].components."minecraft:custom_data".mechanization{id:"energized_heat_sink"} run scoreboard players set #cooling mechanization.data 10
-execute if data storage mechanization:temp list[{Slot:12b}].components."minecraft:custom_data".mechanization{id:"energized_heat_sink"} run scoreboard players operation #energy mechanization.data *= #cons.125 mechanization.data
-execute if data storage mechanization:temp list[{Slot:12b}].components."minecraft:custom_data".mechanization{id:"energized_heat_sink"} run scoreboard players operation #energy mechanization.data /= #cons.100 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:12b}].components."minecraft:custom_data".mechanization{id:"energized_heat_sink"} run scoreboard players set #cooling mechanization.data 10
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:12b}].components."minecraft:custom_data".mechanization{id:"energized_heat_sink"} run scoreboard players operation #energy mechanization.data *= #cons.125 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:12b}].components."minecraft:custom_data".mechanization{id:"energized_heat_sink"} run scoreboard players operation #energy mechanization.data /= #cons.100 mechanization.data
 
 # barrels
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"split_barrel"} run scoreboard players add #model mechanization.data 6
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"split_barrel"} run scoreboard players set #count mechanization.data 9
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"split_barrel"} run scoreboard players set #range mechanization.data 32
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"split_barrel"} run scoreboard players set #bouncy mechanization.data 0
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"split_barrel"} run scoreboard players set #velocity mechanization.data 4
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"split_barrel"} run scoreboard players operation #damage mechanization.data /= #cons.3 mechanization.data
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"split_barrel"} run scoreboard players operation #fire_rate mechanization.data *= #cons.3 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"split_barrel"} run scoreboard players add #model mechanization.data 6
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"split_barrel"} run scoreboard players set #count mechanization.data 9
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"split_barrel"} run scoreboard players set #range mechanization.data 32
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"split_barrel"} run scoreboard players set #bouncy mechanization.data 0
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"split_barrel"} run scoreboard players set #velocity mechanization.data 4
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"split_barrel"} run scoreboard players operation #damage mechanization.data /= #cons.3 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"split_barrel"} run scoreboard players operation #fire_rate mechanization.data *= #cons.3 mechanization.data
 
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"long_barrel"} run scoreboard players add #model mechanization.data 12
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"long_barrel"} run scoreboard players set #range mechanization.data 256
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"long_barrel"} run scoreboard players set #bouncy mechanization.data 0
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"long_barrel"} run scoreboard players set #velocity mechanization.data 10
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"long_barrel"} run scoreboard players add #model mechanization.data 12
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"long_barrel"} run scoreboard players set #range mechanization.data 256
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"long_barrel"} run scoreboard players set #bouncy mechanization.data 0
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"long_barrel"} run scoreboard players set #velocity mechanization.data 10
 
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"sonic_barrel"} run scoreboard players add #model mechanization.data 18
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"sonic_barrel"} run scoreboard players set #range mechanization.data 16
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"sonic_barrel"} run scoreboard players set #bouncy mechanization.data 1
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"sonic_barrel"} run scoreboard players set #velocity mechanization.data 32
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"sonic_barrel"} run scoreboard players operation #heat mechanization.data *= #cons.3 mechanization.data
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"sonic_barrel"} run scoreboard players operation #damage mechanization.data *= #cons.150 mechanization.data
-execute if data storage mechanization:temp list[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"sonic_barrel"} run scoreboard players operation #damage mechanization.data /= #cons.100 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"sonic_barrel"} run scoreboard players add #model mechanization.data 18
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"sonic_barrel"} run scoreboard players set #range mechanization.data 16
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"sonic_barrel"} run scoreboard players set #bouncy mechanization.data 1
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"sonic_barrel"} run scoreboard players set #velocity mechanization.data 32
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"sonic_barrel"} run scoreboard players operation #heat mechanization.data *= #cons.3 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"sonic_barrel"} run scoreboard players operation #damage mechanization.data *= #cons.150 mechanization.data
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[{Slot:15b}].components."minecraft:custom_data".mechanization{id:"sonic_barrel"} run scoreboard players operation #damage mechanization.data /= #cons.100 mechanization.data
 
 # store data
 execute store result storage mechanization:temp obj.components."minecraft:custom_data".mechanization.epac.damage int 1 run scoreboard players get #damage mechanization.data

@@ -29,24 +29,24 @@ execute if score #unbreaking mechanization.data matches 1.. run data modify stor
 execute if score #unbreaking mechanization.data matches 1.. store result storage mechanization:temp obj.components."minecraft:enchantments"."minecraft:unbreaking" int 1 run scoreboard players get #unbreaking mechanization.data
 
 # special effects
-execute if data storage mechanization:temp list[0] run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"text":""}'
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[0] run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"text":""}'
 
 scoreboard players set #value mechanization.data 0
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"silk_touch"} run scoreboard players set #value mechanization.data -1
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"fortune_1"} run scoreboard players set #value mechanization.data 1
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"fortune_2"} run scoreboard players set #value mechanization.data 2
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"fortune_3"} run scoreboard players set #value mechanization.data 3
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"fortune_4"} run scoreboard players set #value mechanization.data 4
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"fortune_5"} run scoreboard players set #value mechanization.data 5
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"silk_touch"} run scoreboard players set #value mechanization.data -1
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"fortune_1"} run scoreboard players set #value mechanization.data 1
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"fortune_2"} run scoreboard players set #value mechanization.data 2
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"fortune_3"} run scoreboard players set #value mechanization.data 3
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"fortune_4"} run scoreboard players set #value mechanization.data 4
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"fortune_5"} run scoreboard players set #value mechanization.data 5
 execute if score #value mechanization.data matches -1 run data modify storage mechanization:temp obj.components."minecraft:custom_data"."minecraft:enchantments"."minecraft:silk_touch" set value 1
 execute if score #value mechanization.data matches 1.. run data modify storage mechanization:temp obj.components."minecraft:enchantments"."minecraft:fortune" set value 1
 execute if score #value mechanization.data matches 1.. store result storage mechanization:temp obj.components."minecraft:enchantments"."minecraft:fortune" int 1 run scoreboard players get #value mechanization.data
 
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"auto_smelt"} run data modify storage mechanization:temp obj.components."minecraft:enchantments"."loottable_autosmelt:autosmelt" set value 1
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"trash"} run data modify storage mechanization:temp obj.components."minecraft:enchantments"."loottable_autosmelt:trash" set value 1
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"magnetic"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"translate":"lore.mechanization.upgrade_magnetic","color":"gray","italic":false}'
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"aquatic"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"translate":"lore.mechanization.upgrade_aquatic","color":"gray","italic":false}'
-execute if data storage mechanization:temp list[].components."minecraft:custom_data".mechanization.upgrade{effect:"illuminating"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"translate":"lore.mechanization.upgrade_illuminating","color":"gray","italic":false}'
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"auto_smelt"} run data modify storage mechanization:temp obj.components."minecraft:enchantments"."loottable_autosmelt:autosmelt" set value 1
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"trash"} run data modify storage mechanization:temp obj.components."minecraft:enchantments"."loottable_autosmelt:trash" set value 1
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"magnetic"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"translate":"lore.mechanization.upgrade_magnetic","color":"gray","italic":false}'
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"aquatic"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"translate":"lore.mechanization.upgrade_aquatic","color":"gray","italic":false}'
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"illuminating"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"translate":"lore.mechanization.upgrade_illuminating","color":"gray","italic":false}'
 
 # add stats lore
 data modify storage mechanization:temp obj.components."minecraft:lore" append value '{"text":""}'

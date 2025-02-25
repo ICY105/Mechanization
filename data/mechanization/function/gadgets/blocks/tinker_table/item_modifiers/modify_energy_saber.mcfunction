@@ -1,8 +1,8 @@
 
 data remove storage mechanization:temp obj.components."minecraft:enchantments"
 
-scoreboard players set #attack_damage mechanization.data 10
-scoreboard players set #attack_speed mechanization.data -40
+scoreboard players set #attack_damage mechanization.data 40
+scoreboard players set #attack_speed mechanization.data -30
 scoreboard players set #throw_range mechanization.data 0
 scoreboard players set #unbreaking mechanization.data 0
 

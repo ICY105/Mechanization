@@ -31,6 +31,7 @@ execute if score #active_slots mechanization.data matches 6.. run function mecha
 execute if items block -30000000 0 3201 container.* * run loot give @p mine -30000000 0 3201 minecraft:debug_stick[minecraft:custom_data={drop_contents:1b}]
 
 # add modifiers
+execute if score #active_slots mechanization.data matches 1.. run data modify storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items set from storage mechanization:temp list
 execute if score #active_slots mechanization.data matches 1.. run function mechanization:gadgets/blocks/tinker_table/add_modifiers
 data modify block ~ ~ ~ Items[{Slot:10b}] set from storage mechanization:temp obj 
 
