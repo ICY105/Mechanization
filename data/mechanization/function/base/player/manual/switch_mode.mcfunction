@@ -1,16 +1,17 @@
 
 item replace block -30000000 0 3201 container.0 with minecraft:air
 
-execute if score @s mechanization.manual matches -5..-3 run tellraw @s {"text":"That module has not been updated yet.","color":"yellow"}
-execute if score @s mechanization.manual matches -5..-3 run return fail
-
+execute if score @s mechanization.manual matches -3 run tellraw @s {"text":"That module has not been updated yet.","color":"yellow"}
+execute if score @s mechanization.manual matches -3 run return fail
+execute if score @s mechanization.manual matches -5 run tellraw @s {"text":"That module has not been updated yet.","color":"yellow"}
+execute if score @s mechanization.manual matches -5 run return fail
 
 execute if score @s mechanization.manual matches -1 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/base
 execute if score @s mechanization.manual matches -2 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/machines
 execute if score @s mechanization.manual matches -3 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/nuclear
 execute if score @s mechanization.manual matches -4 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/gadgets
 execute if score @s mechanization.manual matches -5 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/assembly
-execute if score @s mechanization.manual matches -9 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/compat
+#execute if score @s mechanization.manual matches -9 run loot replace entity @s weapon.mainhand loot mechanization:base/manual/compat
 
 execute if score @s mechanization.manual matches -6 run data remove block -30000000 0 3201 Items
 execute if score @s mechanization.manual matches -6 run function mechanization:base/utils/m.run_command {command:"loot replace block -30000000 0 3201 container.0 loot tcc:items/compendium"}
