@@ -1,0 +1,142 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:stone_slab",
+                "properties": {
+                  "type": "double",
+                  "waterlogged": "true"
+                }
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "minecraft:stone_slab",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "type": "double"
+                  }
+                }
+              ],
+              "count": 2.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
+          "name": "minecraft:stone_slab"
+        },
+        {
+          "type": "minecraft:alternatives",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "minecraft:stone_slab",
+              "properties": {
+                "type": "double",
+                "waterlogged": "true"
+              }
+            }
+          ],
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "value": "mechanization:base/tin_ingot",
+              "functions": [
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops"
+                }
+              ],
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "predicates": {
+                      "minecraft:enchantments": [
+                        {
+                          "enchantments": "loottable_autosmelt:autosmelt",
+                          "levels": {
+                            "min": 1
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "value": "mechanization:base/tin_ore",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "predicates": {
+                      "minecraft:enchantments": [
+                        {
+                          "enchantments": "minecraft:silk_touch",
+                          "levels": {
+                            "min": 1
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:loot_table",
+              "value": "mechanization:base/tin_raw",
+              "functions": [
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:ore_drops"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "minecraft:blocks/stone_slab",
+  "__smithed__": {
+	  "rules": [
+		  {
+			  "type":"weld:append",
+			  "target":"pools[0].entries[0].conditions",
+			  "source": {
+				  "type":"weld:reference",
+				  "path":"pools[0].entries[0].conditions[0]"
+			  }
+		  },
+		  {
+			  "type":"weld:append",
+			  "target":"pools[0].entries",
+			  "source": {
+				  "type":"weld:reference",
+				  "path":"pools[0].entries[1]"
+			  }
+		  }
+	  ]
+  }
+}
