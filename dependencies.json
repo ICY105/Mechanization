@@ -10,10 +10,6 @@
   ],
   "dependencies": [
     {
-      "name": "Lantern Load",
-      "url": "https://github.com/LanternMC/load"
-    },
-    {
       "name": "ChunkScan",
       "local": "ChunkScan"
     },

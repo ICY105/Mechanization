@@ -1,8 +1,8 @@
 
 # get item id length
-item replace block -30000000 0 3201 container.0 from entity @s weapon.mainhand
 scoreboard players set @s mechanization.item_id 0
-execute store result score @s mechanization.item_id run data get block -30000000 0 3201 Items[0].components."minecraft:custom_data".mechanization.id
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{mechanization:{}}] run item replace block -30000000 0 3201 container.0 from entity @s weapon.mainhand
+execute if items entity @s weapon.mainhand *[minecraft:custom_data~{mechanization:{}}] store result score @s mechanization.item_id run data get block -30000000 0 3201 Items[0].components."minecraft:custom_data".mechanization.id
 
 # check manual
 scoreboard players enable @s mechanization.manual

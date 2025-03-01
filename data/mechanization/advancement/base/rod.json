@@ -11,7 +11,7 @@
     "icon": {
       "id": "minecraft:poisonous_potato",
       "components": {
-      "minecraft:item_model": "mechanization:base/item/copper_rod"
+        "minecraft:item_model": "mechanization:base/item/resources/copper_rod"
       }
     },
     "frame": "task"

@@ -9,9 +9,9 @@
       "color":"dark_aqua"
     },
     "icon": {
-      "id": "minecraft:structure_block",
+      "id": "minecraft:poisonous_potato",
       "components": {
-        "minecraft:item_model": "mechanization:base/item/copper_gear"
+        "minecraft:item_model": "mechanization:base/item/resources/copper_gear"
       }
     },
     "frame": "task"

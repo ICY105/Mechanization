@@ -22,7 +22,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:carrot_on_a_stick",
+            "items": "minecraft:poisonous_potato",
             "predicates": {
               "minecraft:custom_data": {"mechanization":{"id":"ender_upgrade"}}
             }

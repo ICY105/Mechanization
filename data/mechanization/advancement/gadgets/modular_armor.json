@@ -9,9 +9,9 @@
       "color":"dark_aqua"
     },
     "icon": {
-      "id": "minecraft:leather_chestplate",
+      "id": "minecraft:poisonous_potato",
       "components": {
-        "minecraft:item_model": "mechanization:gadgets/item/modular_armor"
+        "minecraft:item_model": "mechanization:gadgets/item/modular_chestplate"
       }
     },
     "frame": "task"
@@ -22,25 +22,25 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:leather_helmet",
+            "items": "minecraft:poisonous_potato",
             "predicates": {
               "minecraft:custom_data": {"mechanization":{"id":"modular_helmet"}}
             }
           },
           {
-            "items": "minecraft:leather_chestplate",
+            "items": "minecraft:poisonous_potato",
             "predicates": {
               "minecraft:custom_data": {"mechanization":{"id":"modular_chestplate"}}
             }
           },
           {
-            "items": "minecraft:leather_helmet",
+            "items": "minecraft:poisonous_potato",
             "predicates": {
               "minecraft:custom_data": {"mechanization":{"id":"modular_leggings"}}
             }
           },
           {
-            "items": "minecraft:leather_boots",
+            "items": "minecraft:poisonous_potato",
             "predicates": {
               "minecraft:custom_data": {"mechanization":{"id":"modular_boots"}}
             }

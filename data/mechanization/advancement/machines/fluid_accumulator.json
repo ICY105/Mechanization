@@ -24,13 +24,13 @@
             {
               "items": "minecraft:blast_furnace",
               "predicates": {
-                "minecraft:custom_data": {"mechanization":{"id":"liquid_accumulator"}}
+                "minecraft:custom_data": {"mechanization":{"id":"fluid_accumulator"}}
               }
             }
           ]
         }
       }
     },
-    "parent": "mechanization:machines/liquid_pipe"
+    "parent": "mechanization:machines/fluid_pipe"
   }
   

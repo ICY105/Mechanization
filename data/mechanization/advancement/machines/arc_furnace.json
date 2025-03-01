@@ -31,5 +31,5 @@
       }
     }
   },
-  "parent": "mechanization:machines/liquid_accumulator"
+  "parent": "mechanization:machines/fluid_accumulator"
 }

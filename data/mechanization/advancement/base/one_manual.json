@@ -11,7 +11,7 @@
     "icon": {
       "id": "minecraft:written_book",
       "components": {
-        "minecraft:item_model": "mechanization:base/item/mechanical_manual"
+        "minecraft:item_model": "mechanization:base/item/manual"
       }
     },
     "frame": "goal",
