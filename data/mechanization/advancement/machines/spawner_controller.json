@@ -9,7 +9,7 @@
       "color":"dark_aqua"
     },
     "icon": {
-      "id": "minecraft:carrot_on_a_stick",
+      "id": "minecraft:poisonous_potato",
       "components": {
         "minecraft:item_model": "mechanization:machines/block/spawner_controller"
       }
@@ -22,7 +22,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:carrot_on_a_stick",
+            "items": "minecraft:poisonous_potato",
             "predicates": {
               "minecraft:custom_data": {"mechanization":{"id":"spawner_controller"}}
             }

@@ -22,7 +22,7 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:blast_furnace",
+            "items": "minecraft:poisonous_potato",
             "predicates": {
               "minecraft:custom_data": "{smithed:{dict:{raw:{tin:1b}}}}"
             }
