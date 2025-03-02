@@ -7,7 +7,7 @@ scoreboard players operation #mining_speed mechanization.data += #value mechaniz
 $execute store result score #value mechanization.data run data get storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[$(index)].components."minecraft:custom_data".mechanization.upgrade.stats.mining_area
 scoreboard players operation #mining_area mechanization.data += #value mechanization.data
 
-$execute store result score #value mechanization.data run data get storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[$(index)].components."minecraft:custom_data".mechanization.upgrade.stats.attack_damage
+$execute store result score #value mechanization.data run data get storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[$(index)].components."minecraft:custom_data".mechanization.upgrade.stats.attack_damage 10
 scoreboard players operation #attack_damage mechanization.data += #value mechanization.data
 
 $execute store result score #value mechanization.data run data get storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[$(index)].components."minecraft:custom_data".mechanization.upgrade.stats.unbreaking

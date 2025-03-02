@@ -1,16 +1,20 @@
 {
-	"criteria": {
+  "criteria": {
     "drink_fluid": {
-			"trigger": "minecraft:consume_item",
-			"conditions": {
-      "item": {
-          "item": "minecraft:potion",
-					"nbt": "{fluid:{}}"
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "minecraft:custom_data": {
+              "fluid": {},
+              "mechanization": {}
+            }
+          }
         }
       }
-		}
+    }
   },
-	"rewards":{ 
-		"function":"mechanization:base/player/drink_fluid/drink_fluid"
-	}
+  "rewards": {
+    "function": "mechanization:base/player/drink_fluid/drink_fluid"
+  }
 }
