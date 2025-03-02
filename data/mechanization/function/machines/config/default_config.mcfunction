@@ -94,13 +94,13 @@ scoreboard players set #machines.cf.grinder.speed_other mechanization.data 4
 # [0,2147483647] Power used by the Grinder
 scoreboard players set #machines.cf.growth.power mechanization.data 8
 
-## Liquid Pipe
-# [0,2147483647] How much liquid a pipe can move per second, in liters.
-# Higher values may increase performance by moving liquid in larger batches, and therefor less often.
-scoreboard players set #machines.cf.liquid_pipe.rate mechanization.data 1000
+## Fluid Pipe
+# [0,2147483647] How much fluid a pipe can move per second, in liters.
+# Higher values may increase performance by moving fluid in larger batches, and therefor less often.
+scoreboard players set #machines.cf.fluid_pipe.rate mechanization.data 1000
 
-## Liquid Tanks
-# [0,2147483647] How much liquid can be stored, in liters (tier 1, 2, 3)
+## Fluid Tanks
+# [0,2147483647] How much fluid can be stored, in liters (tier 1, 2, 3)
 scoreboard players set #machines.cf.t1_tank.capacity mechanization.data 64000
 scoreboard players set #machines.cf.t2_tank.capacity mechanization.data 256000
 scoreboard players set #machines.cf.t3_tank.capacity mechanization.data 1024000
@@ -109,7 +109,7 @@ scoreboard players set #machines.cf.t3_tank.capacity mechanization.data 1024000
 # [0,2147483647] How much power the Mob Grinder uses
 scoreboard players set #machines.cf.mob_grinder.power mechanization.data 48
 
-# [0,2147483647] How much liquid XP the Mob Grinder generates per kill (when upgraded)
+# [0,2147483647] How much fluid XP the Mob Grinder generates per kill (when upgraded)
 scoreboard players set #machines.cf.mob_grinder.xp mechanization.data 2
 
 ## Quarry

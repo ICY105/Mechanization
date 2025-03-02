@@ -104,13 +104,13 @@ execute unless score #machines.cf.grinder.speed_other mechanization.data matches
 execute unless score #machines.cf.growth.power mechanization.data matches 0..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.growth.power]","color":"green"}]
 scoreboard players operation #machines.cf.growth.power mechanization.data *= #cons.5 mechanization.data
 
-## Liquid Pipe
-# [0,2147483647] How much liquid a pipe can move per second, in liters.
-# Higher values may increase performance by moving liquid in larger batches, and therefor less often.
-execute unless score #machines.cf.liquid_pipe.rate mechanization.data matches 0..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.liquid_pipe.rate]","color":"green"}]
+## fluid Pipe
+# [0,2147483647] How much fluid a pipe can move per second, in liters.
+# Higher values may increase performance by moving fluid in larger batches, and therefor less often.
+execute unless score #machines.cf.fluid_pipe.rate mechanization.data matches 0..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.fluid_pipe.rate]","color":"green"}]
 
-## Liquid Tanks
-# [0,2147483647] How much liquid can be stored, in liters (tier 1, 2, 3)
+## fluid Tanks
+# [0,2147483647] How much fluid can be stored, in liters (tier 1, 2, 3)
 execute unless score #machines.cf.t1_tank.capacity mechanization.data matches 0..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t1_tank.capacity]","color":"green"}]
 execute unless score #machines.cf.t2_tank.capacity mechanization.data matches 0..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t2_tank.capacity]","color":"green"}]
 execute unless score #machines.cf.t3_tank.capacity mechanization.data matches 0..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.t3_tank.capacity]","color":"green"}]
@@ -120,7 +120,7 @@ execute unless score #machines.cf.t3_tank.capacity mechanization.data matches 0.
 execute unless score #machines.cf.mob_grinder.power mechanization.data matches 0..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.mob_grinder.power]","color":"green"}]
 scoreboard players operation #machines.cf.mob_grinder.power mechanization.data *= #cons.5 mechanization.data
 
-# [0,2147483647] How much liquid XP the Mob Grinder generates per kill (when upgraded)
+# [0,2147483647] How much fluid XP the Mob Grinder generates per kill (when upgraded)
 execute unless score #machines.cf.mob_grinder.xp mechanization.data matches 0..2147483647 store success score #failed mechanization.data run tellraw @a [{"text":"Invalid Config Option "},{"text":"[#machines.cf.mob_grinder.xp]","color":"green"}]
 
 ## Quarry

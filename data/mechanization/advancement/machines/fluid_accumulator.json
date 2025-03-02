@@ -1,11 +1,11 @@
 {
     "display": {
       "title": {
-        "translate": "advancement.mechanization.liquid_accumulator.title",
+        "translate": "advancement.mechanization.fluid_accumulator.title",
         "color":"green"
       },
       "description": {
-        "translate": "advancement.mechanization.liquid_accumulator.desc",
+        "translate": "advancement.mechanization.fluid_accumulator.desc",
         "color":"dark_aqua"
       },
       "icon": {

@@ -1,7 +1,7 @@
 
 scoreboard players set #fluid mechanization.data 0
 
-# liquids
+# Fluids
 execute if score #fluid mechanization.data matches 0 if block ~ ~1 ~ minecraft:water[level=0] run scoreboard players set #fluid mechanization.data 4
 execute if score #fluid mechanization.data matches 4 run data modify entity @s item.components."minecraft:custom_data".fluids[0] set from storage fluid:definitions fluid_data[{id:"water"}]
 execute if score #fluid mechanization.data matches 4 run setblock ~ ~1 ~ minecraft:air

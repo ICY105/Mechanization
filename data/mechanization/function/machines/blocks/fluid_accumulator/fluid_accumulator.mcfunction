@@ -9,8 +9,8 @@ execute if block ~ ~ ~-1 minecraft:hopper[facing=south] run data modify block ~ 
 # process recipes
 function mechanization:base/utils/redstone_active
 
-execute if score #active mechanization.data matches 1 if score @s fluid.storage.0 matches 1.. run function mechanization:machines/blocks/fluid_accumulator/collect_liquid_checked
-execute if score #active mechanization.data matches 1 unless score @s fluid.storage.0 matches 1.. run function mechanization:machines/blocks/fluid_accumulator/collect_liquid_unchecked
+execute if score #active mechanization.data matches 1 if score @s fluid.storage.0 matches 1.. run function mechanization:machines/blocks/fluid_accumulator/collect_fluid_checked
+execute if score #active mechanization.data matches 1 unless score @s fluid.storage.0 matches 1.. run function mechanization:machines/blocks/fluid_accumulator/collect_fluid_unchecked
 
 # cleanup
 execute unless block ~ ~ ~ minecraft:barrel run function mechanization:base/utils/break_block/break_machine_t1

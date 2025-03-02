@@ -13,7 +13,7 @@ execute if score #id mechanization.data matches 26 if data storage smithed.custo
 execute if score #id mechanization.data matches 30 if data storage smithed.custom_block:main blockApi{id:"mechanization:conductive_cable"} run function mechanization:machines/blocks/cable/place_conductive_cable
 execute if score #id mechanization.data matches 36 if data storage smithed.custom_block:main blockApi{id:"mechanization:super_conductive_cable"} run function mechanization:machines/blocks/cable/place_super_conductive_cable
 
-# Liquid Tanks
+# Fluid Tanks
 execute if score #id mechanization.data matches 31 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier1_fluid_tank"} run function mechanization:machines/blocks/fluid_tank/place_tier1
 execute if score #id mechanization.data matches 31 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier2_fluid_tank"} run function mechanization:machines/blocks/fluid_tank/place_tier2
 execute if score #id mechanization.data matches 31 if data storage smithed.custom_block:main blockApi{id:"mechanization:tier3_fluid_tank"} run function mechanization:machines/blocks/fluid_tank/place_tier3

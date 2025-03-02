@@ -11,7 +11,7 @@
       "functions": [
         {
           "function": "minecraft:set_name",
-          "name": {"translate": "item.mechanization.filled_vial","italic": false,"with": [{"translate": "fluid.fluidcrafting.liquid_experience","fallback": "Liquid Experience"}]}
+          "name": {"translate": "item.mechanization.filled_vial","italic": false,"with": [{"translate": "fluid.fluidcrafting.fluid_experience","fallback": "Fluid Experience"}]}
         },
         {
           "function": "minecraft:set_lore",
@@ -23,7 +23,7 @@
         },
         {
           "function": "minecraft:set_custom_data",
-          "tag": "{mechanization:{id:\"vial\"},fluid:{id:\"experience\",temperature:-25,color:65280,gas:0b,name:'{\"translate\":\"fluid.fluidcrafting.experience\",\"fallback\":\"Liquid Experience\"}',storage:1000,max_storage:1000,fixed_storage:0b}}"
+          "tag": "{mechanization:{id:\"vial\"},fluid:{id:\"experience\",temperature:-25,color:65280,gas:0b,name:'{\"translate\":\"fluid.fluidcrafting.experience\",\"fallback\":\"Fluid Experience\"}',storage:1000,max_storage:1000,fixed_storage:0b}}"
         },
         {
           "function": "minecraft:set_components",
