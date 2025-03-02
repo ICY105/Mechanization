@@ -18,7 +18,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"nether_alloy_raw\"}, smithed:{dict:{raw:{nether_alloy: 1b}}}}"
+              "tag": "{mechanization:{id:\"nether_alloy_raw\"}, smithed:{dict:{raw:{nether_alloy: 1b}}}, nbt_smelting:1b}"
             },
             {
               "function": "minecraft:set_components",

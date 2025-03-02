@@ -18,7 +18,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"plutonium_raw\"}, smithed:{dict:{raw:{plutonium: 1b}}}}"
+              "tag": "{mechanization:{id:\"plutonium_raw\"}, smithed:{dict:{raw:{plutonium: 1b}}}, nbt_smelting:1b}"
             },
             {
               "function": "minecraft:set_components",
