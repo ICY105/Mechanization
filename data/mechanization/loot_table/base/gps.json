@@ -27,7 +27,6 @@
               "components": {
                 "minecraft:item_model": "mechanization:base/item/gps",
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.gps\"}]",
-                "minecraft:max_stack_size": 1,
                 "!minecraft:food":{},
                 "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "block"},
                 "minecraft:attribute_modifiers": {

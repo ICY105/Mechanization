@@ -24,6 +24,7 @@
               "components": {
                 "minecraft:item_model": "mechanization:machines/item/spawner_mover",
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.spawner_mover\", \"color\": \"light_purple\"}]",
+                "!minecraft:food":{},
                 "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "block"}
               }
             }
