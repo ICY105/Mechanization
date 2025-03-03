@@ -10,7 +10,7 @@ execute if score @s mechanization.weaponheat matches 1.. run function mechanizat
 # armor
 execute if entity @s[tag=mechanization.in_flight] run function mechanization:gadgets/player/modular_armor/reset_flight 
 
-execute if items entity @s armor.* minecraft:poisonous_potato[minecraft:custom_data~{mechanization:{upgrades:{}}}] run function mechanization:gadgets/player/modular_armor/tick
+execute if items entity @s armor.* *[minecraft:custom_data~{mechanization:{upgrades:{}}}] run function mechanization:gadgets/player/modular_armor/tick
 
 execute if score #timer.20 mechanization.data matches 0 if items entity @s armor.head minecraft:poisonous_potato[minecraft:custom_data~{mechanization:{id:"rebreather"}}] run function mechanization:gadgets/player/modular_armor/rebreather
 execute if score #timer.20 mechanization.data matches 0 if items entity @s armor.head minecraft:poisonous_potato[minecraft:custom_data~{mechanization:{id:"night_vision_goggles"}}] run function mechanization:gadgets/player/modular_armor/night_vision

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:poisonous_potato",
+          "name": "minecraft:leather_boots",
           "functions": [
             {
               "function": "minecraft:set_lore",
@@ -33,6 +33,7 @@
                 "minecraft:max_stack_size": 1,
                 "minecraft:max_damage": 1,
                 "minecraft:damage": 0,
+                "minecraft:enchantable": {"value": 15},
                 "minecraft:unbreakable": {"show_in_tooltip": false},
                 "minecraft:attribute_modifiers": {
                   "modifiers": [],
