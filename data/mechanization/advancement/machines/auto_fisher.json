@@ -24,7 +24,7 @@
           {
             "items": "minecraft:blast_furnace",
             "predicates": {
-              "minecraft:custom_data": {"mechanization":{"id":"alloy_furnace"}}
+              "minecraft:custom_data": {"mechanization":{"id":"auto_fisher"}}
             }
           }
         ]
