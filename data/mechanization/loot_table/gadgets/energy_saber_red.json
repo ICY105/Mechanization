@@ -34,6 +34,7 @@
                 "minecraft:max_stack_size": 1,
                 "minecraft:max_damage": 1,
                 "minecraft:damage": 0,
+                "!minecraft:food": {},
                 "minecraft:unbreakable": {"show_in_tooltip": false},
                 "minecraft:attribute_modifiers": {
                   "modifiers": [
