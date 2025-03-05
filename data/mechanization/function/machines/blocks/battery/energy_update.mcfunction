@@ -3,7 +3,7 @@
 scoreboard players operation #max_storage mechanization.data = @s energy.max_storage
 scoreboard players operation #model mechanization.data = @s energy.storage
 
-scoreboard players operation #max_storage mechanization.data /= #cons.7 mechanization.data
+scoreboard players operation #max_storage mechanization.data /= #cons.8 mechanization.data
 scoreboard players operation #model mechanization.data /= #max_storage mechanization.data
 
 execute if score @s energy.storage matches 1.. run scoreboard players add #storage mechanization.data 1
