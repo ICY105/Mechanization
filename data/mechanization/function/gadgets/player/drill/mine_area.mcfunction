@@ -1,24 +1,13 @@
 
-execute if score #mining_area mechanization.data matches 2.. positioned ^ ^-0.75 ^ if block ~ ~ ~ #mechanization:drill/mining_area unless block ~ ~ ~ #mechanization:drill/mining_area_negate run loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
-execute if score #mining_area mechanization.data matches 2.. positioned ^ ^-0.75 ^ if block ~ ~ ~ #mechanization:drill/mining_area unless block ~ ~ ~ #mechanization:drill/mining_area_negate run setblock ~ ~ ~ minecraft:air replace
+scoreboard players set #direction mechanization.data 0
+execute if entity @s[y_rotation=-45..45] run scoreboard players set #direction mechanization.data 1
 
-execute if score #mining_area mechanization.data matches 3.. positioned ^ ^0.75 ^ if block ~ ~ ~ #mechanization:drill/mining_area unless block ~ ~ ~ #mechanization:drill/mining_area_negate run loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
-execute if score #mining_area mechanization.data matches 3.. positioned ^ ^0.75 ^ if block ~ ~ ~ #mechanization:drill/mining_area unless block ~ ~ ~ #mechanization:drill/mining_area_negate run setblock ~ ~ ~ minecraft:air replace
+execute if entity @s[y_rotation=-135..-45] run scoreboard players set #direction mechanization.data 2
+execute if entity @s[y_rotation=45..135] run scoreboard players set #direction mechanization.data 3
 
-execute if score #mining_area mechanization.data matches 4.. positioned ^0.75 ^ ^ if block ~ ~ ~ #mechanization:drill/mining_area unless block ~ ~ ~ #mechanization:drill/mining_area_negate run loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
-execute if score #mining_area mechanization.data matches 4.. positioned ^0.75 ^ ^ if block ~ ~ ~ #mechanization:drill/mining_area unless block ~ ~ ~ #mechanization:drill/mining_area_negate run setblock ~ ~ ~ minecraft:air replace
+execute if entity @s[x_rotation=-90..-45] run scoreboard players set #direction mechanization.data 4
+execute if entity @s[x_rotation=45..90] run scoreboard players set #direction mechanization.data 5
 
-execute if score #mining_area mechanization.data matches 5.. positioned ^-0.75 ^ ^ if block ~ ~ ~ #mechanization:drill/mining_area unless block ~ ~ ~ #mechanization:drill/mining_area_negate run loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
-execute if score #mining_area mechanization.data matches 5.. positioned ^-0.75 ^ ^ if block ~ ~ ~ #mechanization:drill/mining_area unless block ~ ~ ~ #mechanization:drill/mining_area_negate run setblock ~ ~ ~ minecraft:air replace
-
-execute if score #mining_area mechanization.data matches 6.. positioned ^0.75 ^-0.75 ^ if block ~ ~ ~ #mechanization:drill/mining_area unless block ~ ~ ~ #mechanization:drill/mining_area_negate run loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
-execute if score #mining_area mechanization.data matches 6.. positioned ^0.75 ^-0.75 ^ if block ~ ~ ~ #mechanization:drill/mining_area unless block ~ ~ ~ #mechanization:drill/mining_area_negate run setblock ~ ~ ~ minecraft:air replace
-
-execute if score #mining_area mechanization.data matches 7.. positioned ^-0.75 ^-0.75 ^ if block ~ ~ ~ #mechanization:drill/mining_area unless block ~ ~ ~ #mechanization:drill/mining_area_negate run loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
-execute if score #mining_area mechanization.data matches 7.. positioned ^-0.75 ^-0.75 ^ if block ~ ~ ~ #mechanization:drill/mining_area unless block ~ ~ ~ #mechanization:drill/mining_area_negate run setblock ~ ~ ~ minecraft:air replace
-
-execute if score #mining_area mechanization.data matches 8.. positioned ^0.75 ^0.75 ^ if block ~ ~ ~ #mechanization:drill/mining_area unless block ~ ~ ~ #mechanization:drill/mining_area_negate run loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
-execute if score #mining_area mechanization.data matches 8.. positioned ^0.75 ^0.75 ^ if block ~ ~ ~ #mechanization:drill/mining_area unless block ~ ~ ~ #mechanization:drill/mining_area_negate run setblock ~ ~ ~ minecraft:air replace
-
-execute if score #mining_area mechanization.data matches 9.. positioned ^-0.75 ^0.75 ^ if block ~ ~ ~ #mechanization:drill/mining_area unless block ~ ~ ~ #mechanization:drill/mining_area_negate run loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
-execute if score #mining_area mechanization.data matches 9.. positioned ^-0.75 ^0.75 ^ if block ~ ~ ~ #mechanization:drill/mining_area unless block ~ ~ ~ #mechanization:drill/mining_area_negate run setblock ~ ~ ~ minecraft:air replace
+execute if score #direction mechanization.data matches 0..1 rotated 0 0 run function mechanization:gadgets/player/drill/mine_area_2
+execute if score #direction mechanization.data matches 2..3 rotated 90 0 run function mechanization:gadgets/player/drill/mine_area_2
+execute if score #direction mechanization.data matches 4..5 rotated 0 90 run function mechanization:gadgets/player/drill/mine_area_2
