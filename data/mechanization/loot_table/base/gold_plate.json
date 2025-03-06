@@ -16,9 +16,9 @@
                 [{"translate":"lore.mechanization.upgrade_modular_armor", "color": "gray", "italic": false}],
                 [{"translate":"item.durability", "color": "gray", "italic": false, "with": [{"text": "125"}, {"text": "125"}]}],
                 [{"translate":"lore.mechanization.upgrade_stats", "color":"gray", "italic":false}],
-                [{"text":"  0.25 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.armor"}],
-                [{"text":"  0 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.armor_toughness"}],
-                [{"text":"  0.1 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.movement_speed"}],
+                [{"text":"  0.25 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.armor"}],
+                [{"text":"  0 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.armor_toughness"}],
+                [{"text":"  0.1 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.movement_speed"}],
                 [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },

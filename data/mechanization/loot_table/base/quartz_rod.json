@@ -17,8 +17,8 @@
                 [{"translate":"item.durability", "color": "gray", "italic": false, "with": [{"text": "3000"}, {"text": "3000"}]}],
                 [{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" "},{"translate":"lore.mechanization.upgrade_weakness"}],
                 [{"translate":"lore.mechanization.upgrade_stats", "color":"gray", "italic":false}],
-                [{"text":"  2.5 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.attack_damage"}],
-                [{"text":"  0.3 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.attack_speed"}],
+                [{"text":"  2.5 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.attack_damage"}],
+                [{"text":"  0.3 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.attack_speed"}],
                 [{"text":"  1 ", "color":"dark_green", "italic":false}, {"translate":"lore.mechanization.energy_saber_range"}],
                 [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]

@@ -17,8 +17,8 @@
                 [{"translate":"item.durability", "color": "gray", "italic": false, "with": [{"text": "4500"}, {"text": "4500"}]}],
                 [{"translate":"lore.mechanization.upgrade_effects","color":"gray","italic":false},{"text":" +4 "},{"translate":"lore.mechanization.shield"}],
                 [{"translate":"lore.mechanization.upgrade_stats", "color":"gray", "italic":false}],
-                [{"text":"  1 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.armor"}],
-                [{"text":"  0.5 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.generic.armor_toughness"}],
+                [{"text":"  1 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.armor"}],
+                [{"text":"  0.5 ", "color":"dark_green", "italic":false}, {"translate":"attribute.name.armor_toughness"}],
                 [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "blue", "italic": false}]
               ]
             },
