@@ -51,6 +51,8 @@ execute store result storage mechanization:temp obj.components."minecraft:attrib
 execute store result storage mechanization:temp obj.components."minecraft:attribute_modifiers".modifiers[{type:"minecraft:knockback_resistance", operation: "add_value"}].amount double 0.1 run scoreboard players get #knockback mechanization.data
 
 # special effects
+data remove storage mechanization:temp obj.components."minecraft:enchantments".levels."minecraft:mending"
+
 execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[0] run data modify storage mechanization:temp obj.components."minecraft:lore" insert 1 value '{"text":""}'
 
 execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"illuminating"} run data modify storage mechanization:temp obj.components."minecraft:lore" insert 1 value '{"translate":"lore.mechanization.upgrade_illuminating","color":"gray","italic":false}'
