@@ -1,6 +1,4 @@
 
-data modify storage mechanization:test obj set from storage mechanization:temp obj
-
 # exit early conditions
 scoreboard players set #result mechanization.data 1
 execute unless items block ~ ~ ~ container.10 minecraft:book unless items block ~ ~ ~ container.10 minecraft:enchanted_book store success score #result mechanization.data run function mechanization:machines/blocks/enchanting_station/enchant_item/m.check_target_item with storage mechanization:temp obj.enchantment

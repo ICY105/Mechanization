@@ -1,8 +1,6 @@
 
 scoreboard players set #recipe mechanization.data -1
 
-data modify storage mechanization:test list set from storage smithed.crafter:input recipe
-
 execute if score @s smithed.data matches 0 if score count smithed.data matches 2 store result score @s smithed.data if data storage smithed.crafter:input recipe[{count: 1, components:{"minecraft:custom_data":{ mechanization:{id:"energy_saber"} }}}] run scoreboard players set #recipe mechanization.data 0
 
 execute if score #recipe mechanization.data matches 0 store result score @s smithed.data if data storage smithed.crafter:input recipe[{count: 1, id:"minecraft:white_dye"}] run scoreboard players set #recipe mechanization.data 1
@@ -24,7 +22,6 @@ execute if score #recipe mechanization.data matches 0 store result score @s smit
 
 execute if score #recipe mechanization.data matches 1.. run data modify storage mechanization:temp obj set from block ~ ~ ~ Items[{components:{"minecraft:custom_data":{ mechanization:{id:"energy_saber"} }}}]
 execute if score #recipe mechanization.data matches 1.. run data modify storage mechanization:temp obj.Slot set value 16b
-execute if score #recipe mechanization.data matches 1.. run data modify storage mechanization:test obj set from storage mechanization:temp obj
 execute if score #recipe mechanization.data matches 1.. run data modify block ~ ~ ~ Items append from storage mechanization:temp obj
 execute if score #recipe mechanization.data matches 1.. run data modify block ~ ~ ~ Items[{Slot:16b}].components."minecraft:custom_model_data" set value {floats:[0]}
 execute if score #recipe mechanization.data matches 1.. store result block ~ ~ ~ Items[{Slot:16b}].components."minecraft:custom_model_data".floats[0] float 1 run scoreboard players get #recipe mechanization.data

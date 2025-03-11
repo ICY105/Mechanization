@@ -30,6 +30,3 @@ execute if score #success mechanization.data matches 0 run return fail
 
 # exit loop
 scoreboard players set #loop mechanization.data -1
-
-data modify storage mechanization:test obj set from storage mechanization:temp obj
-data modify storage mechanization:test list set from storage mechanization:registry tick_queue
