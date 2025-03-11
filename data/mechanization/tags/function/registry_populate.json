@@ -1,6 +1,7 @@
 {
   "required": false,
   "values": [
-    "mechanization:machines/registry/populate"
+    "mechanization:machines/registry/populate",
+    "mechanization:compat/calls/registry_populate"
   ]
 }
