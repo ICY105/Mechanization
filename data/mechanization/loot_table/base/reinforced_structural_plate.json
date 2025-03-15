@@ -23,7 +23,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"reinforced_structural_plate\", upgrade:{type: 3b, max_durability: 4500, effect:\"none\", stats:{armor: 1,armor_toughness_alloy: 1}}}, smithed:{dict:{plate:{reinforced_structural: 1b}}}}"
+              "tag": "{mechanization:{id:\"reinforced_structural_plate\", upgrade:{type: 3b, max_durability: 4500, effect:\"none\", stats:{armor: 1, armor_toughness: 1}}}, smithed:{dict:{plate:{reinforced_structural_alloy: 1b}}}}"
             },
             {
               "function": "minecraft:set_components",
