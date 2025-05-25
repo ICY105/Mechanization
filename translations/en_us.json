@@ -468,7 +468,7 @@
   "lore.mechanization.mss_item_count": "Stored Items: %s",
   "block.mechanization.item_pipe": "Pneumatic Tube",
   "block.mechanization.item_extractor": "Pneumatic Entry-Point",
-  "block.mechanization.item_inserter": "Pneumatic Exit-Point",
+  "block.mechanization.item_injector": "Pneumatic Exit-Point",
     
   "item.mechanization.mss_storage_drive": "MSS Storage Drive",
   "item.mechanization.item_filter": "Item Filter",

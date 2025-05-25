@@ -9,48 +9,29 @@
           "name": "minecraft:item_frame",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "block.mechanization.item_inserter",
-                "color": "dark_red",
-                "italic": false
-              }
-            },
-            {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"item_inserter\"}}"
+              "tag": "{mechanization:{id:\"item_injector\"}}"
             },
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6425009,
+                "minecraft:item_model": "mechanization:assembly/block/item_injector",
+                "minecraft:item_name": "[{\"translate\": \"block.mechanization.item_injector\", \"color\": \"yellow\"}]",
                 "minecraft:entity_data": {
                   "Tags": [
                     "mechanization",
-                    "mechanization.item_inserter",
+                    "mechanization.item_injector",
                     "mechanization.redstone_control",
                     "smithed.block"
                   ],
-                  "CustomName": "{\"translate\":\"block.mechanization.item_inserter\"}",
+                  "CustomName": "{\"translate\":\"block.mechanization.item_injectorv\"}",
                   "Invulnerable": 1,
                   "Invisible": 1,
                   "Silent": 1,

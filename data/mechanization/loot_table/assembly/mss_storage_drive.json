@@ -6,33 +6,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:poisonous_potato",
           "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.mss_storage_drive",
-                "color": "dark_purple",
-                "italic": false
-              }
-            },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {
@@ -42,12 +22,12 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6425106,
-                "!minecraft:damage": {},
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [],
-                  "show_in_tooltip": false
-                }
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.mss_storage_drive\", \"color\": \"light_purple\"}]",
+                "minecraft:item_model": "mechanization:assembly/item/mss_storage_drive",
+                "minecraft:max_stack_size": 1,
+                "minecraft:hide_additional_tooltip": {},
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

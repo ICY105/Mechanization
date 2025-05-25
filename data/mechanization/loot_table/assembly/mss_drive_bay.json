@@ -6,33 +6,14 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:blast_furnace",
+          "name": "minecraft:hopper",
           "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "block.mechanization.mss_drive_bay",
-                "color": "dark_red",
-                "italic": false
-              }
-            },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"translate": "lore.mechanization.consume","with": ["16"],"color": "gray","italic": false}],
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {
@@ -42,7 +23,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6425011,
+                "minecraft:item_model": "mechanization:assembly/block/mss_drive_bay",
+                "minecraft:item_name": "[{\"translate\": \"block.mechanization.mss_drive_bay\", \"color\": \"yellow\"}]",
                 "minecraft:container": [
                   {
                     "slot": 0,
@@ -54,11 +36,7 @@
                       }
                     }
                   }
-                ],
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [],
-                  "show_in_tooltip": false
-                }
+                ]
               }
             }
           ]
