@@ -1,7 +1,7 @@
 
 execute unless loaded ~ ~ ~ run return fail
 
-data remove block -30000000 0 3201 Items
+setblock -30000000 0 3201 minecraft:yellow_shulker_box replace
 
 scoreboard players set #result mechanization.data 0
 execute if entity @s[tag=!mechanization.upgraded.ender,tag=!mechanization.upgraded.nether] run loot insert -30000000 0 3201 mine ~ ~ ~ minecraft:diamond_pickaxe
