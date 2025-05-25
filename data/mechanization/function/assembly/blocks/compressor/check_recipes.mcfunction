@@ -6,13 +6,13 @@ execute store result score #count mechanization.data run data get storage mechan
 
 setblock -30000000 0 3201 minecraft:yellow_shulker_box replace
 
-### 2x2
+# 2x2 recipes
 execute if score #count mechanization.data matches 4.. if score #success mechanization.data matches 0 run function mechanization:assembly/blocks/compressor/check_recipes_4
 execute if score #success mechanization.data matches 1 run scoreboard players remove #count mechanization.data 4
 execute if score #success mechanization.data matches 1 run scoreboard players remove @s energy.storage 16
 execute if score #success mechanization.data matches 1 run scoreboard players set #success mechanization.data 2
 
-### 3x3
+# 3x3 recipes
 execute if score #count mechanization.data matches 9.. if score #success mechanization.data matches 0 run function mechanization:assembly/blocks/compressor/check_recipes_9
 execute if score #success mechanization.data matches 1 run scoreboard players remove #count mechanization.data 9
 execute if score #success mechanization.data matches 1 run scoreboard players remove @s energy.storage 16
