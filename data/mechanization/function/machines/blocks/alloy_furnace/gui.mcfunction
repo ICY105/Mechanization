@@ -91,7 +91,7 @@ item modify block ~ ~ ~ container.26 mechanization:change_tank_ui_item
 function mechanization:base/utils/generate_energy_bar_ui
 
 # freeze hoppers
-execute if block ~ ~-1 ~ minecraft:hopper run data modify block ~ ~-1 ~ TransferCooldown set value 4
+execute if block ~ ~-1 ~ minecraft:hopper run data modify block ~ ~-1 ~ TransferCooldown set value 10
 execute align xyz positioned ~ ~-1.5 ~ as @e[type=minecraft:hopper_minecart,dx=0,dy=0,dz=0] run data modify entity @s Enabled set value 0b
 
 # exit gui
