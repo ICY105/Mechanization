@@ -1,0 +1,20 @@
+
+say 1.1
+
+scoreboard players add #search mechanization.data 1
+execute if score #complete mechanization.data matches 1.. run return 0
+
+data modify storage mechanization:temp obj.block_contents set from block ~ ~ ~ Items
+$execute unless data storage mechanization:temp obj.block_contents[].components{"minecraft:custom_data":{mechanization:{id:"mss_storage_drive"}}}."minecraft:bundle_contents"[{id: "$(id)", components: $(components)}] run return 0
+
+say 1.1.1
+
+$execute if data storage mechanization:temp obj.block_contents[{Slot: 0b}].components{"minecraft:custom_data":{mechanization:{id:"mss_storage_drive"}}}."minecraft:bundle_contents"[{id: "$(id)", components: $(components)}] run function mechanization:assembly/blocks/mss/item_management/m.insert_item_2 {slot: 0}
+$execute if data storage mechanization:temp obj.block_contents[{Slot: 1b}].components{"minecraft:custom_data":{mechanization:{id:"mss_storage_drive"}}}."minecraft:bundle_contents"[{id: "$(id)", components: $(components)}] run function mechanization:assembly/blocks/mss/item_management/m.insert_item_2 {slot: 1}
+$execute if data storage mechanization:temp obj.block_contents[{Slot: 2b}].components{"minecraft:custom_data":{mechanization:{id:"mss_storage_drive"}}}."minecraft:bundle_contents"[{id: "$(id)", components: $(components)}] run function mechanization:assembly/blocks/mss/item_management/m.insert_item_2 {slot: 2}
+$execute if data storage mechanization:temp obj.block_contents[{Slot: 3b}].components{"minecraft:custom_data":{mechanization:{id:"mss_storage_drive"}}}."minecraft:bundle_contents"[{id: "$(id)", components: $(components)}] run function mechanization:assembly/blocks/mss/item_management/m.insert_item_2 {slot: 3}
+$execute if data storage mechanization:temp obj.block_contents[{Slot: 4b}].components{"minecraft:custom_data":{mechanization:{id:"mss_storage_drive"}}}."minecraft:bundle_contents"[{id: "$(id)", components: $(components)}] run function mechanization:assembly/blocks/mss/item_management/m.insert_item_2 {slot: 4}
+$execute if data storage mechanization:temp obj.block_contents[{Slot: 5b}].components{"minecraft:custom_data":{mechanization:{id:"mss_storage_drive"}}}."minecraft:bundle_contents"[{id: "$(id)", components: $(components)}] run function mechanization:assembly/blocks/mss/item_management/m.insert_item_2 {slot: 5}
+$execute if data storage mechanization:temp obj.block_contents[{Slot: 6b}].components{"minecraft:custom_data":{mechanization:{id:"mss_storage_drive"}}}."minecraft:bundle_contents"[{id: "$(id)", components: $(components)}] run function mechanization:assembly/blocks/mss/item_management/m.insert_item_2 {slot: 6}
+$execute if data storage mechanization:temp obj.block_contents[{Slot: 7b}].components{"minecraft:custom_data":{mechanization:{id:"mss_storage_drive"}}}."minecraft:bundle_contents"[{id: "$(id)", components: $(components)}] run function mechanization:assembly/blocks/mss/item_management/m.insert_item_2 {slot: 7}
+$execute if data storage mechanization:temp obj.block_contents[{Slot: 8b}].components{"minecraft:custom_data":{mechanization:{id:"mss_storage_drive"}}}."minecraft:bundle_contents"[{id: "$(id)", components: $(components)}] run function mechanization:assembly/blocks/mss/item_management/m.insert_item_2 {slot: 8}

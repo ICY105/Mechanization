@@ -1,0 +1,14 @@
+
+scoreboard players add #search mechanization.data 1
+execute unless score #drive_bay mechanization.data = #search mechanization.data run return 0
+scoreboard players remove #search mechanization.data 1
+
+execute if score #drive_item mechanization.data matches 1 if items block ~ ~ ~ container.0 *[minecraft:custom_data~{mechanization:{id:"mss_storage_drive"}}] run data modify storage mechanization:temp obj.drive_contents set from block ~ ~ ~ Items[{Slot: 0b}].components."minecraft:bundle_contents"
+execute if score #drive_item mechanization.data matches 2 if items block ~ ~ ~ container.1 *[minecraft:custom_data~{mechanization:{id:"mss_storage_drive"}}] run data modify storage mechanization:temp obj.drive_contents set from block ~ ~ ~ Items[{Slot: 1b}].components."minecraft:bundle_contents"
+execute if score #drive_item mechanization.data matches 3 if items block ~ ~ ~ container.2 *[minecraft:custom_data~{mechanization:{id:"mss_storage_drive"}}] run data modify storage mechanization:temp obj.drive_contents set from block ~ ~ ~ Items[{Slot: 2b}].components."minecraft:bundle_contents"
+execute if score #drive_item mechanization.data matches 4 if items block ~ ~ ~ container.3 *[minecraft:custom_data~{mechanization:{id:"mss_storage_drive"}}] run data modify storage mechanization:temp obj.drive_contents set from block ~ ~ ~ Items[{Slot: 3b}].components."minecraft:bundle_contents"
+execute if score #drive_item mechanization.data matches 5 if items block ~ ~ ~ container.4 *[minecraft:custom_data~{mechanization:{id:"mss_storage_drive"}}] run data modify storage mechanization:temp obj.drive_contents set from block ~ ~ ~ Items[{Slot: 4b}].components."minecraft:bundle_contents"
+execute if score #drive_item mechanization.data matches 6 if items block ~ ~ ~ container.5 *[minecraft:custom_data~{mechanization:{id:"mss_storage_drive"}}] run data modify storage mechanization:temp obj.drive_contents set from block ~ ~ ~ Items[{Slot: 5b}].components."minecraft:bundle_contents"
+execute if score #drive_item mechanization.data matches 7 if items block ~ ~ ~ container.6 *[minecraft:custom_data~{mechanization:{id:"mss_storage_drive"}}] run data modify storage mechanization:temp obj.drive_contents set from block ~ ~ ~ Items[{Slot: 6b}].components."minecraft:bundle_contents"
+execute if score #drive_item mechanization.data matches 8 if items block ~ ~ ~ container.7 *[minecraft:custom_data~{mechanization:{id:"mss_storage_drive"}}] run data modify storage mechanization:temp obj.drive_contents set from block ~ ~ ~ Items[{Slot: 7b}].components."minecraft:bundle_contents"
+execute if score #drive_item mechanization.data matches 9 if items block ~ ~ ~ container.8 *[minecraft:custom_data~{mechanization:{id:"mss_storage_drive"}}] run data modify storage mechanization:temp obj.drive_contents set from block ~ ~ ~ Items[{Slot: 8b}].components."minecraft:bundle_contents"

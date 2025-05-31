@@ -1,6 +1,4 @@
 
-execute if entity @s[tag=mechanization.active] run function mechanization:assembly/blocks/mss/get_drive/terminal_insert 
-
 loot spawn ~ ~ ~ loot mechanization:assembly/mss_terminal
 function mechanization:base/utils/break_block/break_copy_data
 
