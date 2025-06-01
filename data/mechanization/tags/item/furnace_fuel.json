@@ -1,0 +1,16 @@
+{
+	"required":false,
+	"values":[
+		"#nbt_smelting:fuel_50",
+		"#nbt_smelting:fuel_67",
+		"#nbt_smelting:fuel_100",
+		"#nbt_smelting:fuel_150",
+		"#nbt_smelting:fuel_200",
+		"#nbt_smelting:fuel_300",
+		"#nbt_smelting:fuel_1200",
+		"#nbt_smelting:fuel_1600",
+		"#nbt_smelting:fuel_2400",
+		"#nbt_smelting:fuel_4000",
+		"#nbt_smelting:fuel_16000"
+	]
+}

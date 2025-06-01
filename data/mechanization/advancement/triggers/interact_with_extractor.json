@@ -5,8 +5,8 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "type": "minecraft:item_frame",
-          "nbt": "{Tags:[\"mechanization.item_extractor\"]}"
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"mechanization.item_extractor.hit_box\"]}"
         }
       }
     }

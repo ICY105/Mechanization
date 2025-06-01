@@ -37,6 +37,13 @@
                       "amount": -0.99,
                       "operation": "add_multiplied_total",
                       "slot": "hand"
+                    },
+                    {
+                      "type": "minecraft:entity_interaction_range",
+                      "id": "mechanization:tool",
+                      "amount": -0.99,
+                      "operation": "add_multiplied_total",
+                      "slot": "hand"
                     }
                   ],
                   "show_in_tooltip": false

@@ -18,6 +18,4 @@ $execute if score #count.2 mechanization.data matches 1.. run data modify storag
 
 $execute if score #count.2 mechanization.data matches ..0 run data modify storage mechanization:temp obj.drive_contents[$(index)] set value {id: "minecraft:barrier", count: 1}
 
-data modify storage mechanization:test obj set from storage mechanization:temp obj
-
 function mechanization:assembly/blocks/mss/clear_item_data/dropped_item_data

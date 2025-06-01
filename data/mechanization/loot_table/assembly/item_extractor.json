@@ -35,14 +35,15 @@
                   "Invulnerable": 1,
                   "Invisible": 1,
                   "Silent": 1,
+                  "Fixed": 1,
                   "Item": {
                     "id": "minecraft:blast_furnace",
-                    "Count": 1,
-                    "tag": {
-                      "CustomModelData": 6425008
+                    "count": 1,
+                    "components": {
+                      "minecraft:item_model": "mechanization:assembly/block/item_extractor"
                     }
                   },
-                  "id": "UNKNOWN_ENTITY"
+                  "id": "minecraft:item_frame"
                 }
               }
             }

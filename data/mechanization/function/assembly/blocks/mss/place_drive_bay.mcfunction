@@ -7,6 +7,4 @@ execute if block ~ ~ ~ minecraft:blast_furnace[facing=west] run summon minecraft
 
 setblock ~ ~ ~ minecraft:dropper[facing=up]{CustomName:'{"translate":"block.mechanization.mss_drive_bay","italic":false}'}
 
-scoreboard players add #mss.drive_bay.id mechanization.data 1
-scoreboard players operation @n[type=minecraft:item_display,tag=mechanization.new,distance=..2] mechanization.data = #mss.drive_bay.id mechanization.data
 function mechanization:base/utils/init_machine

@@ -3,12 +3,19 @@
 # exit early
 execute unless data storage mechanization:temp obj.item.id run return fail
 execute if data storage mechanization:temp obj.item{id:"minecraft:barrier"} run return fail
+execute if data storage mechanization:temp obj.item.components."minecraft:custom_data".mechanization{gui_item: 1b} run return fail
 
 # clean data
 data modify storage mechanization:temp obj.item.Slot set value 0b
-scoreboard players set #complete mechanization.data 0
+execute if data storage mechanization:temp obj.item.components."minecraft:custom_data".mss run data remove storage mechanization:temp obj.item.components."minecraft:lore"[0]
+execute if data storage mechanization:temp obj.item.components."minecraft:custom_data".mss unless data storage mechanization:temp obj.item.components."minecraft:lore"[0] run data remove storage mechanization:temp obj.item.components."minecraft:lore"
+execute if data storage mechanization:temp obj.item.components."minecraft:custom_data".mss run data remove storage mechanization:temp obj.item.components."minecraft:custom_data".mss
+execute store result score #entries mechanization.data run data get storage mechanization:temp obj.item.components."minecraft:custom_data"
+execute if score #entries mechanization.data matches 0 run data remove storage mechanization:temp obj.item.components."minecraft:custom_data"
 
 # try to insert into all drives
+scoreboard players set #complete mechanization.data 0
+
 execute if score #complete mechanization.data matches 0 unless data storage mechanization:temp obj.item.components as @e[type=minecraft:item_display,tag=mechanization.drive_bay,distance=..16,sort=nearest] at @s run function mechanization:assembly/blocks/mss/item_management/m.insert_item with storage mechanization:temp obj.item
 execute if score #complete mechanization.data matches 0 if data storage mechanization:temp obj.item.components as @e[type=minecraft:item_display,tag=mechanization.drive_bay,distance=..16,sort=nearest] at @s run function mechanization:assembly/blocks/mss/item_management/m.insert_item_components with storage mechanization:temp obj.item
 

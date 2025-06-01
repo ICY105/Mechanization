@@ -5,13 +5,13 @@
       "trigger": "minecraft:player_interacted_with_entity",
       "conditions": {
         "entity": {
-          "type": "minecraft:item_frame",
-          "nbt": "{Tags:[\"mechanization.item_inserter\"]}"
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"mechanization.item_injector.hit_box\"]}"
         }
       }
     }
   },
   "rewards": {
-    "function": "mechanization:assembly/player/item_filter/interact_with_inserter"
+    "function": "mechanization:assembly/player/item_filter/interact_with_injector"
   }
 }
