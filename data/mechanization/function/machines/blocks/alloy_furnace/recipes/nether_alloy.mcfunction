@@ -13,5 +13,5 @@ execute if score #success mechanization.data matches 0 if score #storage.0 mecha
 execute if score #success mechanization.data matches 0 if score #storage.1 mechanization.data matches 576.. if data storage mechanization:temp obj.tank_2{id:"molten_titanium"} store success score #success mechanization.data run scoreboard players remove #storage.1 mechanization.data 576
 
 scoreboard players add #storage.2 mechanization.data 576
-execute if entity @s[tag=mechanization.nether_upgrade] if predicate {"condition":"minecraft:random_chance","chance":0.1} run scoreboard players add #storage.2 mechanization.data 576
+execute if entity @s[tag=mechanization.upgraded.nether] if predicate {"condition":"minecraft:random_chance","chance":0.1} run scoreboard players add #storage.2 mechanization.data 576
 execute unless data storage mechanization:temp obj.tank_3.tag{id:"molten_nether_alloy"} run data modify entity @s item.components."minecraft:custom_data".fluids[2] set from storage fluid:definitions fluid_data[{id:"molten_nether_alloy"}]
