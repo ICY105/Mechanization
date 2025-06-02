@@ -9,7 +9,6 @@ function mechanization:machines/blocks/enchanting_station/enchant_item/m.get_sou
 
 execute if entity @s[tag=!mechanization.upgraded.nether] store result score #max_level mechanization.data run data get storage mechanization:temp obj.enchantment.max_level
 execute if entity @s[tag=mechanization.upgraded.nether] store result score #max_level mechanization.data run data get storage mechanization:temp obj.enchantment.boost_level
-execute if score #source_level mechanization.data > #max_level mechanization.data run scoreboard players operation #source_level mechanization.data = #max_level mechanization.data
 execute if score #source_level mechanization.data matches 1.. if score #target_level mechanization.data <= #source_level mechanization.data if score #target_level mechanization.data < #max_level mechanization.data run function mechanization:machines/blocks/enchanting_station/enchant_item/add_enchant_2
 
 # loop
