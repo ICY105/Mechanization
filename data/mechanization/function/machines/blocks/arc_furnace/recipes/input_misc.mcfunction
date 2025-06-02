@@ -1,0 +1,3 @@
+
+execute if score @s fluid.storage.0 matches 1..3928 if data storage mechanization:temp obj.input_item.components."minecraft:custom_data".smithed.dict.gem.crystal_composite if data storage mechanization:temp obj.fluid_item{id:"molten_crystal_composite"} run scoreboard players operation @s mechanization.time = #machines.cf.arc_furnace.speed_ingot mechanization.data
+execute if score @s fluid.storage.0 matches 0 if data storage mechanization:temp obj.input_item.components."minecraft:custom_data".smithed.dict.gem.crystal_composite run scoreboard players operation @s mechanization.time = #machines.cf.arc_furnace.speed_ingot mechanization.data
