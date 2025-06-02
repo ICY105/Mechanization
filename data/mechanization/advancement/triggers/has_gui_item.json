@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "nbt": "{mechanization:{gui_item:1b}}"
+            "predicates": {
+              "minecraft:custom_data": {"mechanization":{"gui_item": 1}}
+            }
           }
         ]
       }
