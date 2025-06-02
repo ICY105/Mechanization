@@ -26,7 +26,7 @@ data modify storage mechanization:temp test set from storage mechanization:temp 
 execute if entity @s[tag=!mechanization.upgraded] if data storage mechanization:temp list[0].input{upgraded: 1b} run return fail
 
 # determine if outputs match
-data remove block -30000000 0 1602 Items
+data remove block -30000000 0 3201 Items
 execute if data storage mechanization:temp list[0].output.0{type: "item"} run function mechanization:nuclear/blocks/alchemy_chamber/recipes/m.output_item with storage mechanization:temp list[0].output.0
 execute if data storage mechanization:temp list[0].output.0{type: "loot_table"} run function mechanization:nuclear/blocks/alchemy_chamber/recipes/m.output_loot with storage mechanization:temp list[0].output.0
 
@@ -34,7 +34,7 @@ execute store result score #success mechanization.data run function mechanizatio
 execute unless score #success mechanization.data matches 1 run return fail
 
 # set output item based on type
-execute if score #count mechanization.data matches 0 run item replace block ~ ~ ~ container.7 from block -30000000 0 1602 container.0
+execute if score #count mechanization.data matches 0 run item replace block ~ ~ ~ container.7 from block -30000000 0 3201 container.0
 execute if score #count mechanization.data matches 1.. run item modify block ~ ~ ~ container.7 mechanization:increment_count
 item modify block ~ ~ ~ container.1 mechanization:decrement_count
 scoreboard players set @s mechanization.data 0

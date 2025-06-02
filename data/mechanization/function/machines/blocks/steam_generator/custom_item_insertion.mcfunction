@@ -2,18 +2,9 @@
 scoreboard players set #allowed mechanization.data 1
 scoreboard players set #slot mechanization.data -1
 
-function mechanization:base/utils/is_fluid_container
-execute if score #out mechanization.data matches 1 unless data block ~ ~ ~ Items[{Slot:6b}] run scoreboard players set #slot mechanization.data 6
-execute if score #out mechanization.data matches 1 unless data block ~ ~ ~ Items[{Slot:3b}] run scoreboard players set #slot mechanization.data 3
+execute store result score #fluid mechanization.data run function mechanization:base/utils/is_fluid_container
 
-execute if score #out mechanization.data matches 0 unless data block ~ ~ ~ Items[{Slot:10b}] if data storage mechanization:temp obj{id:"minecraft:stick"} run scoreboard players set #slot mechanization.data 10
-execute if score #out mechanization.data matches 0 unless data block ~ ~ ~ Items[{Slot:10b}] if data storage mechanization:temp obj{id:"minecraft:oak_planks"} run scoreboard players set #slot mechanization.data 10
-execute if score #out mechanization.data matches 0 unless data block ~ ~ ~ Items[{Slot:10b}] if data storage mechanization:temp obj{id:"minecraft:birch_planks"} run scoreboard players set #slot mechanization.data 10
-execute if score #out mechanization.data matches 0 unless data block ~ ~ ~ Items[{Slot:10b}] if data storage mechanization:temp obj{id:"minecraft:spruce_planks"} run scoreboard players set #slot mechanization.data 10
-execute if score #out mechanization.data matches 0 unless data block ~ ~ ~ Items[{Slot:10b}] if data storage mechanization:temp obj{id:"minecraft:jungle_planks"} run scoreboard players set #slot mechanization.data 10
-execute if score #out mechanization.data matches 0 unless data block ~ ~ ~ Items[{Slot:10b}] if data storage mechanization:temp obj{id:"minecraft:acacia_planks"} run scoreboard players set #slot mechanization.data 10
-execute if score #out mechanization.data matches 0 unless data block ~ ~ ~ Items[{Slot:10b}] if data storage mechanization:temp obj{id:"minecraft:dark_oak_planks"} run scoreboard players set #slot mechanization.data 10
-execute if score #out mechanization.data matches 0 unless data block ~ ~ ~ Items[{Slot:10b}] if data storage mechanization:temp obj{id:"minecraft:coal"} run scoreboard players set #slot mechanization.data 10
-execute if score #out mechanization.data matches 0 unless data block ~ ~ ~ Items[{Slot:10b}] if data storage mechanization:temp obj{id:"minecraft:charcoal"} run scoreboard players set #slot mechanization.data 10
-execute if score #out mechanization.data matches 0 unless data block ~ ~ ~ Items[{Slot:10b}] if data storage mechanization:temp obj{id:"minecraft:coal_block"} run scoreboard players set #slot mechanization.data 10
-execute if score #out mechanization.data matches 0 unless data block ~ ~ ~ Items[{Slot:10b}] if data storage mechanization:temp obj{id:"minecraft:blaze_rod"} run scoreboard players set #slot mechanization.data 10
+execute if score #fluid mechanization.data matches 0 unless items block ~ ~ ~ container.10 * if items block -30000000 0 3201 #mechanization:furnace_fuel run return 10
+
+execute if score #fluid mechanization.data matches 1 unless items block ~ ~ ~ container.3 * run return 3
+execute if score #fluid mechanization.data matches 1 unless items block ~ ~ ~ container.6 * run return 6

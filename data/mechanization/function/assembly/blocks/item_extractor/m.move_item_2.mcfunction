@@ -7,7 +7,7 @@ data modify block -30000000 0 3201 Items[1].Slot set value 0b
 
 # check filter
 scoreboard players set #result mechanization.data 1
-execute if entity @s[tag=mechanization.filtered] store result score #result mechanization.data run loot insert -30000000 1 3201 mine -30000000 0 3201 minecraft:debug_stick[minecraft:custom_data={drop_contents:1b}]
+execute if entity @s[tag=mechanization.filtered] store result score #result mechanization.data run loot insert -30000000 1 1601 mine -30000000 0 3201 minecraft:debug_stick[minecraft:custom_data={drop_contents:1b}]
 execute if score #result mechanization.data matches 1.. run function mechanization:assembly/blocks/item_extractor/m.move_item_3 with storage mechanization:temp
 execute if score #result mechanization.data matches 1.. if score #success mechanization.data matches 1.. run return 1
 

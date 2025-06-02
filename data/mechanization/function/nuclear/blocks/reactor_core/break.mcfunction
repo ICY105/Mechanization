@@ -1,7 +1,7 @@
 
-execute if score @s mechanization.time matches 1.. run data remove block -30000000 0 1602 Items
-execute if score @s mechanization.time matches 1.. run data modify block -30000000 0 1602 Items append from entity @s item.tag.fuel_rod
-execute if score @s mechanization.time matches 1.. run loot spawn ~ ~ ~ mine -30000000 0 1602 minecraft:air{drop_contents: 1b}
+execute if score @s mechanization.time matches 1.. run data remove block -30000000 0 3201 Items
+execute if score @s mechanization.time matches 1.. run data modify block -30000000 0 3201 Items append from entity @s item.tag.fuel_rod
+execute if score @s mechanization.time matches 1.. run loot spawn ~ ~ ~ mine -30000000 0 3201 minecraft:air{drop_contents: 1b}
 
 loot spawn ~ ~ ~ loot mechanization:nuclear/reactor_core
 

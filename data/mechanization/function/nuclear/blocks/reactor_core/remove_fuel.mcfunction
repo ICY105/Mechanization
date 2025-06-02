@@ -1,9 +1,9 @@
 
 execute unless data entity @s item.tag.fuel_rod.id run return fail
 
-data remove block -30000000 0 1602 Items
-data modify block -30000000 0 1602 Items append from entity @s item.tag.fuel_rod
-item replace entity @p[tag=mechanization.interacted,distance=..12] weapon.mainhand from block -30000000 0 1602 container.0
+data remove block -30000000 0 3201 Items
+data modify block -30000000 0 3201 Items append from entity @s item.tag.fuel_rod
+item replace entity @p[tag=mechanization.interacted,distance=..12] weapon.mainhand from block -30000000 0 3201 container.0
 
 tag @s remove mechanization.reactor_core.mox
 tag @s remove mechanization.reactor_core.uranium

@@ -1,6 +1,6 @@
 
-loot replace block -30000000 0 1602 container.0 loot mechanization:nuclear/spent_fuel_rod
-data modify storage mechanization:temp obj set from block -30000000 0 1602 Items[0]
+loot replace block -30000000 0 3201 container.0 loot mechanization:nuclear/spent_fuel_rod
+data modify storage mechanization:temp obj set from block -30000000 0 3201 Items[0]
 execute store result storage mechanization:temp obj.tag.mechanization.fuel int 1 run scoreboard players get #fuel mechanization.data
 execute store result storage mechanization:temp obj.tag.mechanization.enrichment int 1 run scoreboard players get @s mechanization.time
 
