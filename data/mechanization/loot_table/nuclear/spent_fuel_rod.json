@@ -6,36 +6,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:carrot_on_a_stick",
+          "name": "minecraft:poisonous_potato",
           "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "item.mechanization.spent_fuel_rod",
-                "color": "dark_aqua",
-                "italic": false,
-                "with": [
-                  "1"
-                ]
-              }
-            },
             {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {
@@ -45,11 +22,12 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6423003,
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [],
-                  "show_in_tooltip": false
-                }
+                "minecraft:item_name": "[{\"translate\": \"item.mechanization.spent_fuel_rod\"}]",
+                "minecraft:item_model": "mechanization:nuclear/item/spent_fuel_rod",
+                "minecraft:max_stack_size": 1,
+                "minecraft:hide_additional_tooltip": {},
+                "!food":{},
+                "!minecraft:consumable": {}
               }
             }
           ]

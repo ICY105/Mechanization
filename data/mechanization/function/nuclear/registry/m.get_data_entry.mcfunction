@@ -3,5 +3,5 @@
 #$ reaction: interaction type; <fast/thermal>_<scattering/fission,capture>
 #$ temperature: material temperature/10
 
-$execute store result storage mechanization:temp io.return.value int 1 run data get storage mechanization_data:cross_sections $(material).$(reaction)[$(temperature)] 10000
+$execute store result storage mechanization:temp io.return.value int 1 run data get storage mechanization:registry math.$(material).$(reaction)[$(temperature)] 10000
 return run function mechanization:base/math/m.return with storage mechanization:temp io.return

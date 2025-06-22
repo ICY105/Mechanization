@@ -1,6 +1,7 @@
 {
   "required": false,
   "values": [
-    "mechanization:machines/registry/init"
+    "mechanization:machines/registry/init",
+    "mechanization:nuclear/registry/init"
   ]
 }

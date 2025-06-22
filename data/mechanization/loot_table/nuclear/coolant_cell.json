@@ -9,30 +9,10 @@
           "name": "minecraft:blast_furnace",
           "functions": [
             {
-              "function": "minecraft:set_name",
-              "name": {
-                "translate": "block.mechanization.coolant_cell",
-                "color": "dark_aqua",
-                "italic": false
-              }
-            },
-            {
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
-                [
-                  {
-                    "text": "\uee11",
-                    "font": "mechanization:gui",
-                    "color": "white",
-                    "italic": false
-                  },
-                  {
-                    "translate": "lore.mechanization.added_by",
-                    "color": "blue",
-                    "italic": false
-                  }
-                ]
+                [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
               ]
             },
             {
@@ -42,7 +22,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:custom_model_data": 6423009,
+                "minecraft:item_model": "mechanization:nuclear/block/coolant_cell",
+                "minecraft:item_name": "[{\"translate\": \"block.mechanization.coolant_cell\"}]",
                 "minecraft:container": [
                   {
                     "slot": 0,
@@ -54,11 +35,7 @@
                       }
                     }
                   }
-                ],
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [],
-                  "show_in_tooltip": false
-                }
+                ]
               }
             }
           ]
