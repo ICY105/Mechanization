@@ -22,3 +22,6 @@ execute if entity @s[tag=mechanization.reactor_core] run function mechanization:
 
 # Steam Condenser
 execute if entity @s[tag=mechanization.steam_condenser] run function mechanization:nuclear/blocks/steam_condenser/break
+
+# Alchemy Chamber
+execute if entity @s[tag=mechanization.alchemy_chamber] run function mechanization:nuclear/blocks/alchemy_chamber/break

@@ -18,8 +18,8 @@ execute if score #success mechanization.data matches 1 if score @s fluid.storage
 execute if score #success mechanization.data matches 1 if score @s fluid.storage.2 > #output_2 mechanization.data run scoreboard players set #success mechanization.data -1
 
 # complete recipe
-execute if score #success mechanization.data matches 1 unless score @s fluid.storage.1 matches 1.. run data modify entity @s item.tag.fluids[1] set from storage fluid:definitions fluid_data[{id:"molten_depleted_uranium"}]
-$execute if score #success mechanization.data matches 1 unless score @s fluid.storage.2 matches 1.. run data modify entity @s item.tag.fluids[2] set from storage fluid:definitions fluid_data[{id:"molten_uranium_e$(next_enrichment)"}]
+execute if score #success mechanization.data matches 1 unless score @s fluid.storage.1 matches 1.. run data modify entity @s item.components."minecraft:custom_data".fluids[1] set from storage fluid:definitions fluid_data[{id:"molten_depleted_uranium"}]
+$execute if score #success mechanization.data matches 1 unless score @s fluid.storage.2 matches 1.. run data modify entity @s item.components."minecraft:custom_data".fluids[2] set from storage fluid:definitions fluid_data[{id:"molten_uranium_e$(next_enrichment)"}]
 
 execute if score #success mechanization.data matches 1 run scoreboard players remove @s fluid.storage.0 144
 execute if score #success mechanization.data matches 1 run scoreboard players operation @s fluid.storage.1 += #inverse mechanization.data

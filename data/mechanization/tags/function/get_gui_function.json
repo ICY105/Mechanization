@@ -3,6 +3,7 @@
   "values": [
     "mechanization:machines/blocks/get_gui_function",
     "mechanization:gadgets/blocks/get_gui_function",
+    "mechanization:nuclear/blocks/get_gui_function",
     "mechanization:assembly/blocks/get_gui_function"
   ]
 }
