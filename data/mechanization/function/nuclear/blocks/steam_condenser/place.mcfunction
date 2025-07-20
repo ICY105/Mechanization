@@ -1,6 +1,6 @@
 
 # Summon Entity & Init
-summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.steam_condenser", "mechanization.has_block_hitbox", "fluid.tank", "smithed.block"], CustomName:'{"translate":"block.mechanization.steam_condenser"}', item:{id:"minecraft:blast_furnace", tag:{CustomModelData:6423010}, Count:1b}}
+summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.steam_condenser", "mechanization.has_block_hitbox", "fluid.tank", "smithed.block"], CustomName:'{"translate":"block.mechanization.steam_condenser"}', item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:nuclear/block/steam_condenser"}, Count:1b}}
 summon minecraft:interaction ~ ~-0.51 ~ {width:1.02f,height:1.02f,response:1b,Tags:["mechanization", "mechanization.block_hitbox", "mechanization.block_hitbox.steam_condenser"]}
 setblock ~ ~ ~ minecraft:barrier
 
