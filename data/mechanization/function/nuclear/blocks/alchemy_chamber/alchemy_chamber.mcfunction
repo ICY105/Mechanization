@@ -1,12 +1,19 @@
 
-# recipes
-function mechanization:base/utils/redstone_active
+# hopper input
+execute if block ~ ~1 ~ minecraft:hopper[facing=down] run function mechanization:nuclear/blocks/alchemy_chamber/hopper/m.hopper_input {location:"~ ~1 ~"}
+execute if block ~1 ~ ~ minecraft:hopper[facing=west] run function mechanization:nuclear/blocks/alchemy_chamber/hopper/m.hopper_input {location:"~1 ~ ~"}
+execute if block ~-1 ~ ~ minecraft:hopper[facing=east] run function mechanization:nuclear/blocks/alchemy_chamber/hopper/m.hopper_input {location:"~-1 ~ ~"}
+execute if block ~ ~ ~1 minecraft:hopper[facing=north] run function mechanization:nuclear/blocks/alchemy_chamber/hopper/m.hopper_input {location:"~ ~ ~1"}
+execute if block ~ ~ ~-1 minecraft:hopper[facing=south] run function mechanization:nuclear/blocks/alchemy_chamber/hopper/m.hopper_input {location:"~ ~ ~-1"}
+execute if block ~ ~-1 ~ minecraft:hopper run function mechanization:nuclear/blocks/alchemy_chamber/hopper/hopper_output
 
-scoreboard players set @s mechanization.time -1
-execute if score #active mechanization.data matches 1 if data block ~ ~ ~ Items[{Slot:1b}] unless data block ~ ~ ~ Items[{Slot:7b,Count:64b}] run function mechanization:nuclear/blocks/alchemy_chamber/recipes/input
-execute if score #active mechanization.data matches 1 if score @s mechanization.time matches 1.. if score @s mechanization.data >= @s mechanization.time run function mechanization:nuclear/blocks/alchemy_chamber/recipes/output
+# main
+scoreboard players set #flux mechanization.data 1000000
+execute if items block ~ ~ ~ container.1 * unless function mechanization:nuclear/blocks/alchemy_chamber/is_full run function mechanization:nuclear/blocks/alchemy_chamber/recipes/input
+execute if score #flux mechanization.data matches 1000000 run scoreboard players set @s mechanization.data 0
+execute if score @s mechanization.data >= #flux mechanization.data run function mechanization:nuclear/blocks/alchemy_chamber/recipes/output
 
-#ui
+# gui
 function mechanization:nuclear/blocks/alchemy_chamber/gui
 
 ## cleanup

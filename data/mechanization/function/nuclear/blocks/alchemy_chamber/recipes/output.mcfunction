@@ -1,40 +1,54 @@
 
-# copy item data to storage
-data modify storage mechanization:temp obj set value {id_grid:{}, item_grid:{}}
-
-data modify storage mechanization:temp obj.item_grid.0 set from block ~ ~ ~ Items[{Slot:1b}]
-execute unless data storage mechanization:temp obj.item_grid.0.tag.smithed.dict run data modify storage mechanization:temp obj.id_grid.0 set from storage mechanization:temp obj.item_grid.0.id
-execute if data storage mechanization:temp obj.item_grid.0.tag.smithed.dict run data modify storage mechanization:temp obj.id_grid.0 set value "smithed:dict"
-execute if data storage mechanization:temp obj.item_grid.0.tag.smithed.dict run data modify storage mechanization:temp obj.item_grid.0.id set value "smithed:dict"
-
-data modify storage mechanization:temp obj.item_grid.1 set value {} 
-data modify storage mechanization:temp obj.item_grid.1 set from block ~ ~ ~ Items[{Slot:7b}]
-execute store result score #count mechanization.data run data get storage mechanization:temp obj.item_grid.1.Count
-data remove storage mechanization:temp obj.item_grid.1.Count
-data remove storage mechanization:temp obj.item_grid.1.Slot
-
-# find possible recipes
-function mechanization:nuclear/blocks/alchemy_chamber/recipes/m.get_possible_recipes with storage mechanization:temp obj.id_grid
-
-# loop over possible recipes until a valid one is found. Return if no recipes are valid
-execute if data storage mechanization:temp list[0] run function mechanization:nuclear/blocks/alchemy_chamber/recipes/m.find_recipe with storage mechanization:temp list[0].input
-execute unless data storage mechanization:temp list[0] run return fail
-
-data modify storage mechanization:temp test set from storage mechanization:temp list
-
-# check additional recipe requirements
-execute if entity @s[tag=!mechanization.upgraded] if data storage mechanization:temp list[0].input{upgraded: 1b} run return fail
-
-# determine if outputs match
-data remove block -30000000 0 3201 Items
-execute if data storage mechanization:temp list[0].output.0{type: "item"} run function mechanization:nuclear/blocks/alchemy_chamber/recipes/m.output_item with storage mechanization:temp list[0].output.0
-execute if data storage mechanization:temp list[0].output.0{type: "loot_table"} run function mechanization:nuclear/blocks/alchemy_chamber/recipes/m.output_loot with storage mechanization:temp list[0].output.0
-
-execute store result score #success mechanization.data run function mechanization:nuclear/blocks/alchemy_chamber/recipes/m.check_output with storage mechanization:temp obj.item_grid
-execute unless score #success mechanization.data matches 1 run return fail
-
-# set output item based on type
-execute if score #count mechanization.data matches 0 run item replace block ~ ~ ~ container.7 from block -30000000 0 3201 container.0
-execute if score #count mechanization.data matches 1.. run item modify block ~ ~ ~ container.7 mechanization:increment_count
-item modify block ~ ~ ~ container.1 mechanization:decrement_count
 scoreboard players set @s mechanization.data 0
+item modify block ~ ~ ~ container.1 mechanization:decrement_count
+item modify block ~ ~ ~ container.7 mechanization:increment_count
+
+# no upgrade recipes
+execute if items block ~ ~ ~ container.1 minecraft:copper_ingot unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:iron_ingot
+
+execute if items block ~ ~ ~ container.1 minecraft:iron_ingot unless items block ~ ~ ~ container.7 * run loot replace block ~ ~ ~ container.7 loot mechanization:base/tin_ingot
+
+execute if items block ~ ~ ~ container.1 *[minecraft:custom_data~{smithed:{dict:{ingot:{tin: 1b}}}}] unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:gold_ingot
+
+execute if items block ~ ~ ~ container.1 minecraft:gold_ingot unless items block ~ ~ ~ container.7 * run loot replace block ~ ~ ~ container.7 loot mechanization:base/uranium_ingot
+
+execute if items block ~ ~ ~ container.1 minecraft:amethyst_shard unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:emerald
+
+execute if items block ~ ~ ~ container.1 minecraft:blackstone unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:gilded_blackstone
+
+execute if items block ~ ~ ~ container.1 minecraft:sand unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:suspicious_sand
+
+execute if items block ~ ~ ~ container.1 minecraft:gravel unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:suspicious_gravel
+
+execute if items block ~ ~ ~ container.1 minecraft:ink_sac unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:glow_ink_sac
+
+execute if items block ~ ~ ~ container.1 minecraft:egg unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:turtle_egg
+
+execute if items block ~ ~ ~ container.1 minecraft:leather_horse_armor unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:iron_horse_armor
+
+execute if items block ~ ~ ~ container.1 minecraft:iron_horse_armor unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:golden_horse_armor
+
+execute if items block ~ ~ ~ container.1 minecraft:golden_horse_armor unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:diamond_horse_armor
+
+# upgrade recipes
+execute if entity @s[tag=!mechanization.upgraded] run return 0
+
+execute if items block ~ ~ ~ container.1 *[minecraft:custom_data~{smithed:{dict:{ingot:{uranium: 1b}}}}] unless items block ~ ~ ~ container.7 * run loot replace block ~ ~ ~ container.7 loot mechanization:base/plutonium_ingot
+
+execute if items block ~ ~ ~ container.1 *[minecraft:custom_data~{smithed:{dict:{ingot:{plutonium: 1b}}}}] unless items block ~ ~ ~ container.7 * run loot replace block ~ ~ ~ container.7 loot mechanization:base/titanium_ingot
+
+execute if items block ~ ~ ~ container.1 minecraft:emerald unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:diamond
+
+execute if items block ~ ~ ~ container.1 minecraft:turtle_egg unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:sniffer_egg
+
+execute if items block ~ ~ ~ container.1 minecraft:creeper_head unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:dragon_head
+
+execute if items block ~ ~ ~ container.1 minecraft:piglin_head unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:piglin_head
+
+execute if items block ~ ~ ~ container.1 minecraft:nether_star unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:echo_shard
+
+execute if items block ~ ~ ~ container.1 minecraft:echo_shard unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:heart_of_the_sea
+
+execute if items block ~ ~ ~ container.1 minecraft:golden_apple unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:enchanted_golden_apple
+
+execute if items block ~ ~ ~ container.1 minecraft:sniffer_egg unless items block ~ ~ ~ container.7 * run item replace block ~ ~ ~ container.7 with minecraft:dragon_egg

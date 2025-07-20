@@ -1,6 +1,6 @@
 
 $data modify block $(location) TransferCooldown set value 30
-$execute unless data block $(location) Items[0] run return fail
+$execute unless items block $(location) container.* * run return fail
 
 setblock -30000000 0 3216 minecraft:yellow_shulker_box replace
 
