@@ -1,0 +1,33 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "mechanization:nuclear/reactor_cell"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_lore",
+          "mode": "replace_all",
+          "lore": [
+            [{"translate": "lore.mechanization.fluid_amount","color": "gray","italic": false,"with": [{"text": "1000"}]}],
+            [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
+          ]
+        },
+        {
+          "function": "minecraft:set_custom_data",
+          "tag": "{mechanization:{id:\"vial\",stored_fluids:[{id:\"water\",temperature:25,color:3432410,gas:0b,name:'{\"translate\":\"fluid.fluidcrafting.water\",\"fallback\":\"Water\"}'}],stored_fluids_amount:[I;1000,0,0,0]}}"
+        },
+        {
+          "function": "minecraft:set_components",
+          "components": {
+            "minecraft:custom_model_data":{"floats":[16],"colors":[3432410]}
+          }
+        }
+      ]
+    }
+  ]
+}
