@@ -17,7 +17,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{mechanization:{id:\"mox_fuel_rod\"}}"
+              "tag": "{mechanization:{id:\"plutonium_fuel_rod\"}}"
             },
             {
               "function": "minecraft:set_components",

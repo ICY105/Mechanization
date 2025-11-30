@@ -1,28 +1,21 @@
 
-execute if data entity @s item.tag.fuel_rod.id run return fail
+scoreboard players set #interact mechanization.data 1
 
-data modify entity @s item.tag.fuel_rod set from storage mechanization:temp obj
-data modify entity @s item.tag.fuel_rod.Slot set value 0b
+execute if data entity @s item.components."minecraft:bundle_contents"[0] run return fail
+
+item replace block -30000000 0 3201 container.0 from entity @p[tag=mechanization.interacted,distance=..12] weapon.mainhand
+data modify entity @s item.components."minecraft:bundle_contents" set value []
+data modify entity @s item.components."minecraft:bundle_contents" append from block -30000000 0 3201 Items[0]
 item replace entity @p[tag=mechanization.interacted,distance=..12] weapon.mainhand with minecraft:air
 
-tag @s remove mechanization.reactor_core.mox
-tag @s remove mechanization.reactor_core.uranium
-tag @s remove mechanization.reactor_core.waste
-execute if data entity @s item.tag.fuel_rod.tag.mechanization{id:"mox_fuel_rod"} run tag @s add mechanization.reactor_core.mox
-execute if data entity @s item.tag.fuel_rod.tag.mechanization{id:"uranium_fuel_rod"} run tag @s add mechanization.reactor_core.uranium
-execute if data entity @s item.tag.fuel_rod.tag.mechanization{id:"spent_fuel_rod"} run tag @s add mechanization.reactor_core.waste
+execute if items block -30000000 0 3201 container.0 *[minecraft:custom_data~{mechanization:{id:"uranium_fuel_rod"}}] run tag @s add mechanization.reactor_core.uranium
+execute if items block -30000000 0 3201 container.0 *[minecraft:custom_data~{mechanization:{id:"mox_fuel_rod"}}] run tag @s add mechanization.reactor_core.mox
+execute if items block -30000000 0 3201 container.0 *[minecraft:custom_data~{mechanization:{id:"spent_fuel_rod"}}] run tag @s add mechanization.reactor_core.waste
 
-scoreboard players set #enrichment mechanization.data 0
-execute if entity @s[tag=mechanization.reactor_core.uranium] store result score #enrichment mechanization.data run data get entity @s item.tag.fuel_rod.tag.mechanization.enrichment
-execute if entity @s[tag=mechanization.reactor_core.mox] run scoreboard players set #enrichment mechanization.data 5
+scoreboard players set @s mechanization.time 0
+execute if entity @s[tag=mechanization.reactor_core.uranium] store result score @s mechanization.time run data get block -30000000 0 3201 Items[0].components."minecraft:custom_data".mechanization.enrichment
+execute if entity @s[tag=mechanization.reactor_core.mox] run scoreboard players set @s mechanization.time 5
 
-scoreboard players set #count mechanization.data 1
-execute align xyz rotated 0 90 positioned ^ ^ ^1 as @e[tag=mechanization.reactor_core,dx=0,dy=0,dz=0,limit=1] run function mechanization:nuclear/blocks/reactor_core/count_connections
-execute align xyz rotated 0 -90 positioned ^ ^ ^1 as @e[tag=mechanization.reactor_core,dx=0,dy=0,dz=0,limit=1] run function mechanization:nuclear/blocks/reactor_core/count_connections
+execute store result score @s mechanization.fluid.out run data get block -30000000 0 3201 Items[0].components."minecraft:custom_data".mechanization.fuel_spent
 
-# chain update reactors
 function mechanization:nuclear/blocks/reactor_core/update_model
-scoreboard players operation @s mechanization.time = #enrichment mechanization.data
-scoreboard players operation @s mechanization.fluid.out = #count mechanization.data
-execute align xyz rotated 0 90 positioned ^ ^ ^1 as @e[tag=mechanization.reactor_core,dx=0,dy=0,dz=0,limit=1] run function mechanization:nuclear/blocks/reactor_core/update_fuel
-execute align xyz rotated 0 -90 positioned ^ ^ ^1 as @e[tag=mechanization.reactor_core,dx=0,dy=0,dz=0,limit=1] run function mechanization:nuclear/blocks/reactor_core/update_fuel
