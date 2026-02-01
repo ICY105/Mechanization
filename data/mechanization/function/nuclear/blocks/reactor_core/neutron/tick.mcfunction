@@ -1,5 +1,5 @@
 
-# draw particle
+# loop control
 scoreboard players set #loop mechanization.data 10000
 execute if score #loop mechanization.data > @s mechanization.time run scoreboard players operation #loop mechanization.data = @s mechanization.data
 

@@ -1,55 +1,41 @@
 
-tp @s ~ ~ ~ ~ ~
+# See what distance the ray needs to travel to hit another tile with a different x coordinate
+execute if score #dx mechanization.data matches 0.. run scoreboard players set #next.x mechanization.data 1000000000
+execute if score #dx mechanization.data matches ..-1 run scoreboard players set #next.x mechanization.data 0
+scoreboard players operation #temp mechanization.data = #pos.x mechanization.data
+scoreboard players operation #temp mechanization.data *= #cons.1000 mechanization.data
+scoreboard players operation #next.x mechanization.data -= #temp mechanization.data
+scoreboard players operation #next.x mechanization.data /= #dx mechanization.data
 
-execute if entity @s[tag=mechanization.debug] run tellraw @p [{"text":"scan = "},{"score":{"name":"#pos.x","objective":"mechanization.data"}},{"text":", "},{"score":{"name":"#pos.y","objective":"mechanization.data"}},{"text":" <> "},{"nbt":"Pos","entity":"@s"},{"text":" <> "},{"nbt":"obj","storage":"mechanization:temp"}]
+# See what distance the ray needs to travel to hit another tile with a different z coordinate
+execute if score #dz mechanization.data matches 0.. run scoreboard players set #next.z mechanization.data 1000000000
+execute if score #dz mechanization.data matches ..-1 run scoreboard players set #next.z mechanization.data 0
+scoreboard players operation #temp mechanization.data = #pos.z mechanization.data
+scoreboard players operation #temp mechanization.data *= #cons.1000 mechanization.data
+scoreboard players operation #next.z mechanization.data -= #temp mechanization.data
+scoreboard players operation #next.z mechanization.data /= #dz mechanization.data
 
-# load offset data
-data modify storage mechanization:temp obj.data set value {}
+execute if entity @s[tag=mechanization.debug] run tellraw @p [{"text":"scan = "},{"score":{"name":"#next.x","objective":"mechanization.data"}},{"text":", "},{"score":{"name":"#next.z","objective":"mechanization.data"}}]
 
-execute if score #pos.x mechanization.data matches 500 if score #pos.y mechanization.data matches 500 run function mechanization:nuclear/blocks/reactor_core/neutron/m.get_xy_data with storage mechanization:temp obj
+# Determine which distance is the shortest
+execute if score #next.x mechanization.data <= #next.z mechanization.data run function mechanization:nuclear/blocks/reactor_core/neutron/scan_2x
+execute if score #next.x mechanization.data > #next.z mechanization.data run function mechanization:nuclear/blocks/reactor_core/neutron/scan_2z
 
-execute if score #rot_flip mechanization.data matches 0 if score #pos.y mechanization.data matches 0 run function mechanization:nuclear/blocks/reactor_core/neutron/m.get_x_data with storage mechanization:temp obj
-execute if score #rot_flip mechanization.data matches 0 if score #pos.x mechanization.data matches 0 unless score #pos.y mechanization.data matches 0 run function mechanization:nuclear/blocks/reactor_core/neutron/m.get_y_data with storage mechanization:temp obj
-execute if score #rot_flip mechanization.data matches 1 if score #pos.y mechanization.data matches 0 run function mechanization:nuclear/blocks/reactor_core/neutron/m.get_y_data with storage mechanization:temp obj
-execute if score #rot_flip mechanization.data matches 1 if score #pos.x mechanization.data matches 0 unless score #pos.y mechanization.data matches 0 run function mechanization:nuclear/blocks/reactor_core/neutron/m.get_x_data with storage mechanization:temp obj
-
-execute unless data storage mechanization:temp obj.data.d run return 0
-
-# calc distance offset
-data modify storage mechanization:temp obj.offset set value {x:0.0, y:0.0, rot: 0}
-
-execute if score #rot_flip mechanization.data matches 0 store result score #temp mechanization.data run data get storage mechanization:temp obj.data.x 1000
-execute if score #rot_flip mechanization.data matches 1 store result score #temp mechanization.data run data get storage mechanization:temp obj.data.y 1000
-#execute if score #rotation mechanization.data matches 0..45 run scoreboard players operation #temp mechanization.data *= #cons.-1 mechanization.data
-execute store result storage mechanization:temp obj.offset.x double 0.001 run scoreboard players get #temp mechanization.data
-
-scoreboard players operation #pos.x mechanization.data += #temp mechanization.data
-execute if score #pos.x mechanization.data matches 1000.. run scoreboard players remove #pos.x mechanization.data 1000
-execute if score #pos.x mechanization.data matches ..-1 run scoreboard players add #pos.x mechanization.data 1000
-execute store result storage mechanization:temp obj.x int 1 run scoreboard players get #pos.x mechanization.data
-
-
-execute if score #rot_flip mechanization.data matches 0 store result score #temp mechanization.data run data get storage mechanization:temp obj.data.y 1000
-execute if score #rot_flip mechanization.data matches 1 store result score #temp mechanization.data run data get storage mechanization:temp obj.data.x 1000
-#execute if score #rotation mechanization.data matches 46..89 run scoreboard players operation #temp mechanization.data *= #cons.-1 mechanization.data
-execute store result storage mechanization:temp obj.offset.y double 0.001 run scoreboard players get #temp mechanization.data
-
-scoreboard players operation #pos.y mechanization.data += #temp mechanization.data
-execute if score #pos.y mechanization.data matches 1000.. run scoreboard players remove #pos.y mechanization.data 1000
-execute if score #pos.y mechanization.data matches ..-1 run scoreboard players add #pos.y mechanization.data 1000
-execute store result storage mechanization:temp obj.y int 1 run scoreboard players get #pos.y mechanization.data
-
-execute if score #pos.y mechanization.data < #pos.x mechanization.data run scoreboard players set #pos.y mechanization.data 0
-execute if score #pos.x mechanization.data < #pos.y mechanization.data run scoreboard players set #pos.x mechanization.data 0
+# Return the added distance
+#return run scoreboard players operation #to_next_block mechanization.data *= #cons.1000 mechanization.data
 
 # run neutron actions
-execute at @s run function mechanization:nuclear/blocks/reactor_core/neutron/interactions/check_block
+# function mechanization:nuclear/blocks/reactor_core/neutron/interactions/check_block
 
-# loop
-execute store result score #distance mechanization.data run data get storage mechanization:temp obj.data.d 10000
-scoreboard players operation #loop mechanization.data -= #distance mechanization.data
+execute if entity @s[tag=mechanization.debug] run tellraw @p [{"text":"next = "},{"score":{"name":"#to_next_block","objective":"mechanization.data"}}]
 
+execute align xyz run particle flame ~0.5 ~1 ~0.5
 function mechanization:nuclear/blocks/reactor_core/neutron/draw_particle
 
-execute store result storage mechanization:temp obj.offset.rot int 1 run scoreboard players get #rotation mechanization.data
-execute if score #loop mechanization.data matches 1.. run function mechanization:nuclear/blocks/reactor_core/neutron/m.scan_3 with storage mechanization:temp obj.offset
+# loop
+scoreboard players operation #loop mechanization.data -= #to_next_block mechanization.data
+
+execute if score #loop mechanization.data matches 1.. if score #next.x mechanization.data <= #next.z mechanization.data if score #next.x mechanization.data matches 0.. positioned ~1 ~ ~ run return run function mechanization:nuclear/blocks/reactor_core/neutron/scan_2
+execute if score #loop mechanization.data matches 1.. if score #next.x mechanization.data <= #next.z mechanization.data if score #next.x mechanization.data matches ..-1 positioned ~-1 ~ ~ run return run function mechanization:nuclear/blocks/reactor_core/neutron/scan_2
+execute if score #loop mechanization.data matches 1.. if score #next.x mechanization.data >= #next.z mechanization.data if score #next.z mechanization.data matches 0.. positioned ~ ~ ~1 run return run function mechanization:nuclear/blocks/reactor_core/neutron/scan_2
+execute if score #loop mechanization.data matches 1.. if score #next.x mechanization.data >= #next.z mechanization.data if score #next.z mechanization.data matches 0.. positioned ~ ~ ~-1 run return run function mechanization:nuclear/blocks/reactor_core/neutron/scan_2

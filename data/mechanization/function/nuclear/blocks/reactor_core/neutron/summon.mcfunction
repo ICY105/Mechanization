@@ -28,8 +28,14 @@ execute store result entity @s Rotation[0] float 1 run scoreboard players get #r
 execute at @s run tp @s ~ ~ ~ ~ ~
 
 # store data
-data modify entity @s data set value {rot: 0, rot_normal: 0, d: 0, x: 500, y: 500}
+data modify entity @s data set value {rot: 0, x: 5000000, z: 5000000}
 execute store result entity @s data.rot int 1 run scoreboard players get #rot mechanization.data
+execute store result score #temp mechanization.data run data get entity @s Pos[0]
+execute if score #temp mechanization.data matches ..-1 run data modify entity @s data.x set value -5000000
+execute store result score #temp mechanization.data run data get entity @s Pos[2]
+execute if score #temp mechanization.data matches ..-1 run data modify entity @s data.z set value -5000000
+
+execute if score #debug test matches 1 run tellraw @p [{"text":"summon = "},{"nbt":"data","entity":"@s"}]
 
 # energy
 scoreboard players operation @s mechanization.fluid.in = #flux mechanization.data
