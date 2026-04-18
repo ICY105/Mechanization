@@ -22,10 +22,12 @@ execute if score #timer.20 mechanization.data matches 15 as @e[type=minecraft:it
 execute if score #timer.20 mechanization.data matches 16 as @e[type=minecraft:item_display,tag=mechanization.reformer] at @s run function mechanization:machines/blocks/reformer/reformer
 execute if score #timer.20 mechanization.data matches 17 as @e[type=minecraft:item_display,tag=mechanization.enchanting_station] at @s run function mechanization:machines/blocks/enchanting_station/enchanting_station
 execute if score #timer.20 mechanization.data matches 18 as @e[type=minecraft:item_display,tag=mechanization.dimensional_generator] at @s run function mechanization:machines/blocks/dimensional_generator/dimensional_generator
-execute if score #timer.20 mechanization.data matches 19 as @e[type=minecraft:item_display,tag=mechanization.bio_generator] at @s run function mechanization:machines/blocks/bio_generator/bio_generator
+execute if score #timer.20 mechanization.data matches 18 as @e[type=minecraft:item_display,tag=mechanization.machine_observer] at @s run function mechanization:machines/blocks/machine_observer/machine_observer
+
 execute if score #timer.20 mechanization.data matches 0 as @e[type=minecraft:item_display,tag=mechanization.quarry] at @s run function mechanization:machines/blocks/quarry/quarry
 execute if score #timer.20 mechanization.data matches 1 as @e[type=minecraft:item_display,tag=mechanization.electric_furnace] at @s run function mechanization:machines/blocks/electric_furnace/electric_furnace
 execute if score #timer.20 mechanization.data matches 2 as @e[type=minecraft:item_display,tag=mechanization.grinder] at @s run function mechanization:machines/blocks/grinder/grinder
+execute if score #timer.20 mechanization.data matches 3 as @e[type=minecraft:item_display,tag=mechanization.bio_generator] at @s run function mechanization:machines/blocks/bio_generator/bio_generator
 
 # 100 tick clock
 execute if score #timer.100 mechanization.data matches 0 as @e[type=minecraft:item_display,tag=mechanization.cable] at @s unless block ~ ~ ~ minecraft:moving_piston run function mechanization:machines/blocks/cable/break

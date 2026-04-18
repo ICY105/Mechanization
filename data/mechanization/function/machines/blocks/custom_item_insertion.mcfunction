@@ -8,3 +8,4 @@ execute if entity @s[tag=mechanization.arc_furnace] store result score #slot mec
 execute if entity @s[tag=mechanization.casting_basin] store result score #slot mechanization.data run function mechanization:machines/blocks/casting_basin/custom_item_insertion
 execute if entity @s[tag=mechanization.fluid_accumulator] store result score #slot mechanization.data run function mechanization:machines/blocks/fluid_accumulator/custom_item_insertion
 execute if entity @s[tag=mechanization.thermoelectric_generator] store result score #slot mechanization.data run function mechanization:machines/blocks/thermoelectric_generator/custom_item_insertion
+execute if entity @s[tag=mechanization.machine_observer] run scoreboard players set #allowed mechanization.data 0
