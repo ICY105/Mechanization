@@ -10,6 +10,8 @@ tag @s add mechanization.ui.select
 data modify storage mechanization:temp list set value []
 execute positioned ^ ^ ^1 run function mechanization:machines/blocks/machine_observer/observe
 
+data modify storage mechanization:test list set from storage mechanization:temp list
+
 # fill in items
 data remove block ~ ~ ~ Items
 

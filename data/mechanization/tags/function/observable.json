@@ -1,6 +1,7 @@
 {
   "required": false,
   "values": [
-    "mechanization:machines/blocks/observable"
+    "mechanization:machines/blocks/observable",
+    "mechanization:base/blocks/common_observable"
   ]
 }

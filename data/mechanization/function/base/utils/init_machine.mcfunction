@@ -15,3 +15,12 @@ execute store result score #fluid.storage.3 mechanization.data run data get enti
 
 # sub-function
 execute as @n[tag=mechanization.new,distance=..2] at @s run function mechanization:base/utils/init_machine_2
+
+# reset scores
+scoreboard players set #fluid.io mechanization.data 0
+scoreboard players set #fluid.in mechanization.data 0
+scoreboard players set #fluid.out mechanization.data 0
+scoreboard players set #fluid.max_storage.0 mechanization.data 0
+scoreboard players set #fluid.max_storage.1 mechanization.data 0
+scoreboard players set #fluid.max_storage.2 mechanization.data 0
+scoreboard players set #fluid.max_storage.3 mechanization.data 0
