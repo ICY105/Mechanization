@@ -21,7 +21,7 @@ execute store result score #temperature mechanization.data run data get storage 
 
 # get model
 ## TODO: update item model reference for fluid UIs
-item replace block -30000000 0 3201 container.0 with minecraft:poisonous_potato[minecraft:item_model="mechanization:base/gui/fluid_bar",minecraft:custom_model_data={colors:[0]},minecraft:hide_additional_tooltip={},minecraft:lore=[],minecraft:item_name='{"translate":"fluid.mechanization.empty"}',minecraft:custom_data={mechanization:{gui_item:1b}}]
+item replace block -30000000 0 3201 container.0 with minecraft:poisonous_potato[minecraft:item_model="mechanization:base/gui/fluid_bar",minecraft:custom_model_data={colors:[0]},minecraft:tooltip_display={hide_tooltip:1b},minecraft:lore=[],minecraft:item_name='{"translate":"fluid.mechanization.empty"}',minecraft:custom_data={mechanization:{gui_item:1b}}]
 scoreboard players operation #slice mechanization.data = #max_storage mechanization.data
 scoreboard players operation #slice mechanization.data /= #cons.16 mechanization.data
 

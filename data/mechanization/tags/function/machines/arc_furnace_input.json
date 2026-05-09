@@ -1,6 +1,4 @@
 {
 	"required":false,
-	"values":[
-		"mechanization:compat/calls/arc_furnace_input"
-	]
+	"values":[]
 }

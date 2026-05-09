@@ -1,6 +1,4 @@
 {
 	"required":false,
-	"values":[
-		"mechanization:compat/calls/grinder_output"
-	]
+	"values":[]
 }
