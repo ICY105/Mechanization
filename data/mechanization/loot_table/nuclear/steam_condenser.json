@@ -23,7 +23,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:nuclear/block/steam_condenser",
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.steam_condenser\"}]",
+                "minecraft:item_name": [{"translate": "block.mechanization.steam_condenser"}],
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:container"]},
                 "minecraft:container": [
                   {
                     "slot": 0,

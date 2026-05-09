@@ -24,7 +24,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:machines/block/tier2_fluid_tank",
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.tier2_fluid_tank\", \"color\": \"yellow\"}]",
+                "minecraft:item_name": [{"translate": "block.mechanization.tier2_fluid_tank", "color": "yellow"}],
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:container"]},
                 "minecraft:container": [
                   {
                     "slot": 0,

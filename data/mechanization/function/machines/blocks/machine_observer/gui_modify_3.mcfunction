@@ -1,7 +1,7 @@
 
 # min
-item replace block ~ ~ ~ container.0 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,!minecraft:food,minecraft:item_model="mechanization:base/gui/number",minecraft:custom_model_data={floats:[0]}]
-execute if score #min mechanization.data matches 0 if score #count mechanization.data matches ..3 run item replace block ~ ~ ~ container.0 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,!minecraft:food,minecraft:item_model="mechanization:base/gui/fill_slot"]
+item replace block ~ ~ ~ container.0 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:tooltip_display={hide_tooltip:1b},minecraft:max_stack_size=1,!minecraft:food,minecraft:item_model="mechanization:base/gui/number",minecraft:custom_model_data={floats:[0]}]
+execute if score #min mechanization.data matches 0 if score #count mechanization.data matches ..3 run item replace block ~ ~ ~ container.0 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:tooltip_display={hide_tooltip:1b},minecraft:max_stack_size=1,!minecraft:food,minecraft:item_model="mechanization:base/gui/fill_slot"]
 
 scoreboard players operation #display mechanization.data = #min mechanization.data
 scoreboard players operation #display mechanization.data %= #cons.100 mechanization.data
@@ -15,8 +15,8 @@ execute if score #count mechanization.data matches 3 run item replace block ~ ~ 
 execute if score #count mechanization.data matches 4 run item replace block ~ ~ ~ container.13 from block ~ ~ ~ container.0
 
 # max
-item replace block ~ ~ ~ container.0 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,!minecraft:food,minecraft:item_model="mechanization:base/gui/number",minecraft:custom_model_data={floats:[0]}]
-execute if score #max mechanization.data matches 0 if score #count mechanization.data matches ..3 run item replace block ~ ~ ~ container.0 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,!minecraft:food,minecraft:item_model="mechanization:base/gui/fill_slot"]
+item replace block ~ ~ ~ container.0 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:tooltip_display={hide_tooltip:1b},minecraft:max_stack_size=1,!minecraft:food,minecraft:item_model="mechanization:base/gui/number",minecraft:custom_model_data={floats:[0]}]
+execute if score #max mechanization.data matches 0 if score #count mechanization.data matches ..3 run item replace block ~ ~ ~ container.0 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:tooltip_display={hide_tooltip:1b},minecraft:max_stack_size=1,!minecraft:food,minecraft:item_model="mechanization:base/gui/fill_slot"]
 
 scoreboard players operation #display mechanization.data = #max mechanization.data
 scoreboard players operation #display mechanization.data %= #cons.100 mechanization.data

@@ -7,7 +7,7 @@ execute if score #active mechanization.data matches 1 if score @s[tag=mechanizat
 execute if score #active mechanization.data matches 1 if score @s[tag=mechanization.upgraded.nether] energy.storage < @s energy.max_storage if score @s mechanization.data matches ..0 if items block ~ ~ ~ container.0 * run function mechanization:machines/blocks/dimensional_generator/fuel_nether
 
 # display
-item replace block ~ ~ ~ container.1 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,!minecraft:food,minecraft:item_model="mechanization:base/gui/invisible"]
+item replace block ~ ~ ~ container.1 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:tooltip_display={hide_tooltip:1b},minecraft:max_stack_size=1,!minecraft:food,minecraft:item_model="mechanization:base/gui/invisible"]
 function mechanization:base/utils/generate_energy_bar_ui
 
 execute if score @s mechanization.data matches 0 run item modify entity @s contents {"function": "minecraft:set_components","components": {"minecraft:custom_model_data": {"floats":[0]}}}

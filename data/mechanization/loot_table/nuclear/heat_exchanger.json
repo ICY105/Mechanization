@@ -23,7 +23,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:nuclear/block/heat_exchanger",
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.heat_exchanger\"}]",
+                "minecraft:item_name": [{"translate": "block.mechanization.heat_exchanger"}],
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:container"]},
                 "minecraft:container": [
                   {
                     "slot": 0,

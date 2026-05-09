@@ -23,7 +23,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:assembly/block/fast_hopper",
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.fast_hopper\", \"color\": \"yellow\"}]",
+                "minecraft:item_name": [{"translate": "block.mechanization.fast_hopper", "color": "yellow"}],
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:container"]},
                 "minecraft:container": [
                   {
                     "slot": 0,

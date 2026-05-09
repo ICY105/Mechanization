@@ -23,7 +23,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:nuclear/block/reactor_core",
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.reactor_core\", \"color\": \"yellow\"}]",
+                "minecraft:item_name": [{"translate": "block.mechanization.reactor_core", "color": "yellow"}],
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:container"]},
                 "minecraft:container": [
                   {
                     "slot": 0,

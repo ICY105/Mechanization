@@ -24,7 +24,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:machines/block/alloy_furnace",
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.alloy_furnace\"}]",
+                "minecraft:item_name": [{"translate": "block.mechanization.alloy_furnace"}],
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:container"]},
                 "minecraft:container": [
                   {
                     "slot": 0,

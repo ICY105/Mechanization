@@ -22,7 +22,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.spent_fuel_rod\"}]",
+                "minecraft:item_name": [{"translate": "item.mechanization.spent_fuel_rod"}],
                 "minecraft:item_model": "mechanization:nuclear/item/spent_fuel_rod",
                 "minecraft:max_stack_size": 1,
                 "!food":{},

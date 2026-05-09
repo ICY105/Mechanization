@@ -23,7 +23,7 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:base/item/manual",
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.mechanical_manual\"}]",
+                "minecraft:item_name": [{"translate": "item.mechanization.mechanical_manual"}],
                 "minecraft:custom_name": "[{\"translate\": \"item.mechanization.mechanical_manual\",\"italic\": false}]",
                 "minecraft:written_book_content": {
                   "title": {

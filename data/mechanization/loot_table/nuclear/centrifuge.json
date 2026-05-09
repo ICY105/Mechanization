@@ -24,7 +24,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:nuclear/block/centrifuge",
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.centrifuge\", \"color\": \"yellow\"}]",
+                "minecraft:item_name": [{"translate": "block.mechanization.centrifuge", "color": "yellow"}],
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:container"]},
                 "minecraft:container": [
                   {
                     "slot": 0,

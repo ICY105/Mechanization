@@ -24,7 +24,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:machines/block/dimensional_generator",
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.dimensional_generator\", \"color\": \"light_purple\"}]",
+                "minecraft:item_name": [{"translate": "block.mechanization.dimensional_generator", "color": "light_purple"}],
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:container"]},
                 "minecraft:container": [
                   {
                     "slot": 0,

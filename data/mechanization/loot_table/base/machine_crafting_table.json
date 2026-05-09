@@ -24,8 +24,9 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.machine_crafting_table\"}]",
+                "minecraft:item_name": [{"translate": "block.mechanization.machine_crafting_table"}],
                 "minecraft:item_model": "mechanization:base/block/machine_crafting_table",
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:container"]},
                 "minecraft:container": [
                   {
                     "slot": 0,

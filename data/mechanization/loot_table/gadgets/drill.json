@@ -28,7 +28,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.drill\"}]",
+                "minecraft:item_name": [{"translate": "item.mechanization.drill"}],
                 "minecraft:item_model": "mechanization:gadgets/item/drill",
                 "minecraft:enchantment_glint_override": false,
                 "!minecraft:consumable": {},
@@ -46,25 +46,23 @@
                     {"blocks":"#mineable/hoe","correct_for_drops":true}
                   ]
                 },
-                "minecraft:attribute_modifiers": {
-                  "modifiers": [
-                    {
-                      "type": "minecraft:attack_damage",
-                      "id": "mechanization:drill_attack_damage",
-                      "amount": 2,
-                      "operation": "add_value",
-                      "slot": "mainhand"
-                    },
-                    {
-                      "type": "minecraft:attack_speed",
-                      "id": "mechanization:drill_attack_speed",
-                      "amount": -3,
-                      "operation": "add_value",
-                      "slot": "mainhand"
-                    }
-                  ],
-                  "show_in_tooltip": false
-                }
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:attribute_modifiers"]},
+                "minecraft:attribute_modifiers": [
+                  {
+                    "type": "minecraft:attack_damage",
+                    "id": "mechanization:drill_attack_damage",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  },
+                  {
+                    "type": "minecraft:attack_speed",
+                    "id": "mechanization:drill_attack_speed",
+                    "amount": -3,
+                    "operation": "add_value",
+                    "slot": "mainhand"
+                  }
+                ]
               }
             }
           ]

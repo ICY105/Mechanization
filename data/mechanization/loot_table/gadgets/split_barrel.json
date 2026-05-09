@@ -26,7 +26,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.split_barrel\", \"color\": \"light_purple\", \"italic\": false}]",
+                "minecraft:item_name": [{"translate": "item.mechanization.split_barrel", "color": "light_purple", "italic": false}],
                 "minecraft:item_model": "mechanization:gadgets/item/split_barrel",
                 "!food":{},
                 "!minecraft:consumable": {}

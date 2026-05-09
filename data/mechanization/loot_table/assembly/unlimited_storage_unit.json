@@ -23,7 +23,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:assembly/block/storage_unit",
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.unlimited_storage_unit\", \"color\": \"yellow\"}]",
+                "minecraft:item_name": [{"translate": "block.mechanization.unlimited_storage_unit", "color": "yellow"}],
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:container"]},
                 "minecraft:container": [
                   {
                     "slot": 0,

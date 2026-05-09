@@ -24,7 +24,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:gadgets/block/charging_station",
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.charging_station\", \"color\": \"yellow\", \"italic\": false}]",
+                "minecraft:item_name": [{"translate": "block.mechanization.charging_station", "color": "yellow", "italic": false}],
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:container"]},
                 "minecraft:container": [
                   {
                     "slot": 0,

@@ -23,7 +23,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.portable_battery\"}]",
+                "minecraft:item_name": [{"translate": "item.mechanization.portable_battery"}],
                 "minecraft:item_model": "mechanization:gadgets/item/portable_battery",
                 "!minecraft:consumable": {},
                 "minecraft:max_stack_size": 1

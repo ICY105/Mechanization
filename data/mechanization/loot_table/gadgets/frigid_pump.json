@@ -25,7 +25,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.frigid_pump\", \"color\": \"light_purple\", \"italic\": false}]",
+                "minecraft:item_name": [{"translate": "item.mechanization.frigid_pump", "color": "light_purple", "italic": false}],
                 "minecraft:item_model": "mechanization:gadgets/item/frigid_pump",
                 "!food":{},
                 "!minecraft:consumable": {}

@@ -25,7 +25,7 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.supercharged_chamber\", \"color\": \"light_purple\", \"italic\": false}]",
+                "minecraft:item_name": [{"translate": "item.mechanization.supercharged_chamber", "color": "light_purple", "italic": false}],
                 "minecraft:item_model": "mechanization:gadgets/item/supercharged_chamber",
                 "!food":{},
                 "!minecraft:consumable": {}

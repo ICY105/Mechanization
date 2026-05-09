@@ -23,7 +23,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:nuclear/block/control_rod",
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.control_rod\", \"color\": \"yellow\"}]",
+                "minecraft:item_name": [{"translate": "block.mechanization.control_rod", "color": "yellow"}],
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:container"]},
                 "minecraft:custom_model_data": {"floats":[1]},
                 "minecraft:container": [
                   {

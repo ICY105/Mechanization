@@ -24,7 +24,8 @@
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:item_model": "mechanization:machines/block/grinder",
-                "minecraft:item_name": "[{\"translate\": \"block.mechanization.grinder\"}]",
+                "minecraft:item_name": [{"translate": "block.mechanization.grinder"}],
+                "minecraft:tooltip_display": {"hidden_components":["minecraft:container"]},
                 "minecraft:container": [
                   {
                     "slot": 0,
