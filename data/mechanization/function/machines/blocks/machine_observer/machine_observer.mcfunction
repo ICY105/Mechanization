@@ -46,7 +46,7 @@ scoreboard players operation #quantity mechanization.data /= #max mechanization.
 
 execute if score #zero mechanization.data matches 0 run scoreboard players add #quantity mechanization.data 1
 
-setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:'[{"translate":"block.mechanization.machine_observer","font":"minecraft:default"}]'} replace
+data remove block ~ ~ ~ Items
 execute if score #quantity mechanization.data matches 1.. run item replace block ~ ~ ~ container.0 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,!minecraft:food,minecraft:item_model="mechanization:base/gui/invisible"]
 execute if score #quantity mechanization.data matches 2.. run item replace block ~ ~ ~ container.1 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,!minecraft:food,minecraft:item_model="mechanization:machines/gui/count_arrow",minecraft:custom_model_data={floats:[0]}]
 execute if score #quantity mechanization.data matches 2.. run item replace block ~ ~ ~ container.2 with minecraft:poisonous_potato[minecraft:custom_data={mechanization:{gui_item:1b}},minecraft:hide_tooltip={},minecraft:max_stack_size=1,!minecraft:food,minecraft:item_model="mechanization:machines/gui/count_arrow",minecraft:custom_model_data={floats:[1]}]
