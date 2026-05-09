@@ -1,9 +1,10 @@
 
 scoreboard players set #allowed mechanization.data -1
 data modify storage mechanization:temp list set value []
-setblock -30000000 0 3201 minecraft:yellow_shulker_box replace
+data remove block -30000000 0 3201 Items
 
 execute if entity @s[tag=mechanization.filtered] run setblock -30000000 1 3201 minecraft:yellow_shulker_box replace
+execute if entity @s[tag=mechanization.filtered] run data remove block -30000000 1 3201 Items
 execute if entity @s[tag=mechanization.filtered] run data modify block -30000000 1 3201 Items set from entity @s Item.components."minecraft:custom_data".filter.components."minecraft:custom_data".mechanization.items
 
 execute align xyz as @e[type=#mechanization:valid_block_entities,dx=0,dy=0,dz=0] run function #mechanization:custom_item_extraction

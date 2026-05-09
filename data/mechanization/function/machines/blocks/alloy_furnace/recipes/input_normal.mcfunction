@@ -1,6 +1,6 @@
 
 # init
-setblock -30000000 0 3201 minecraft:yellow_shulker_box replace
+data remove block -30000000 0 3201 Items
 data modify storage mechanization:temp obj set value {slot1:{},slot2:{},slot3:{},tank_1:{},tank_2:{},tank_3:{}}
 
 item replace block -30000000 0 3201 container.0 from block ~ ~ ~ container.0

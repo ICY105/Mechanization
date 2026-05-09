@@ -29,7 +29,7 @@ execute if score #unbreaking mechanization.data matches 1.. run data modify stor
 execute if score #unbreaking mechanization.data matches 1.. store result storage mechanization:temp obj.components."minecraft:enchantments"."minecraft:unbreaking" int 1 run scoreboard players get #unbreaking mechanization.data
 
 # special effects
-execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[0] run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"text":""}'
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[0] run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value {"text":""}
 
 scoreboard players set #value mechanization.data 0
 execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"silk_touch"} run scoreboard players set #value mechanization.data -1
@@ -44,27 +44,27 @@ execute if score #value mechanization.data matches 1.. store result storage mech
 
 execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"auto_smelt"} run data modify storage mechanization:temp obj.components."minecraft:enchantments"."loottable_autosmelt:autosmelt" set value 1
 execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"trash"} run data modify storage mechanization:temp obj.components."minecraft:enchantments"."loottable_autosmelt:trash" set value 1
-execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"magnetic"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"translate":"lore.mechanization.upgrade_magnetic","color":"gray","italic":false}'
-execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"aquatic"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"translate":"lore.mechanization.upgrade_aquatic","color":"gray","italic":false}'
-execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"illuminating"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value '{"translate":"lore.mechanization.upgrade_illuminating","color":"gray","italic":false}'
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"magnetic"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value {"translate":"lore.mechanization.upgrade_magnetic","color":"gray","italic":false}
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"aquatic"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value {"translate":"lore.mechanization.upgrade_aquatic","color":"gray","italic":false}
+execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[].components."minecraft:custom_data".mechanization.upgrade{effect:"illuminating"} run data modify storage mechanization:temp obj.components."minecraft:lore" prepend value {"translate":"lore.mechanization.upgrade_illuminating","color":"gray","italic":false}
 
 # add stats lore
-data modify storage mechanization:temp obj.components."minecraft:lore" append value '{"text":""}'
-data modify storage mechanization:temp obj.components."minecraft:lore" append value '{"translate":"item.modifiers.mainhand","color":"gray","italic":false}'
+data modify storage mechanization:temp obj.components."minecraft:lore" append value {"text":""}
+data modify storage mechanization:temp obj.components."minecraft:lore" append value {"translate":"item.modifiers.mainhand","color":"gray","italic":false}
 
 scoreboard players operation #value mechanization.data = #mining_speed mechanization.data
 scoreboard players operation #mining_speed mechanization.data /= #cons.10 mechanization.data
 scoreboard players operation #value mechanization.data %= #cons.10 mechanization.data
-execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#mining_speed","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.mining_speed"}]'
-execute unless score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#mining_speed","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.mining_speed"}]'
+execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value [{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#mining_speed","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.mining_speed"}]
+execute unless score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value [{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#mining_speed","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.mining_speed"}]
 data modify storage mechanization:temp obj.components."minecraft:lore" append from block -30000000 0 3202 front_text.messages[0]
 
-data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#mining_area","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.mining_area"}]'
+data modify block -30000000 0 3202 front_text.messages[0] set value [{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#mining_area","objective":"mechanization.data"}}," ",{"translate":"lore.mechanization.mining_area"}]
 data modify storage mechanization:temp obj.components."minecraft:lore" append from block -30000000 0 3202 front_text.messages[0]
 
 scoreboard players operation #value mechanization.data = #attack_damage mechanization.data
 scoreboard players operation #attack_damage mechanization.data /= #cons.10 mechanization.data
 scoreboard players operation #value mechanization.data %= #cons.10 mechanization.data
-execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#attack_damage","objective":"mechanization.data"}}," ",{"translate":"attribute.name.attack_damage"}]'
-execute unless score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#attack_damage","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.attack_damage"}]'
+execute if score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value [{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#attack_damage","objective":"mechanization.data"}}," ",{"translate":"attribute.name.attack_damage"}]
+execute unless score #value mechanization.data matches 0 run data modify block -30000000 0 3202 front_text.messages[0] set value [{"text":" ","color":"dark_green","italic":false},{"score":{"name":"#attack_damage","objective":"mechanization.data"}},".",{"score":{"name":"#value","objective":"mechanization.data"}}," ",{"translate":"attribute.name.attack_damage"}]
 data modify storage mechanization:temp obj.components."minecraft:lore" append from block -30000000 0 3202 front_text.messages[0]

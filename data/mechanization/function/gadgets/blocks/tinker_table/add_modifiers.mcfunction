@@ -38,5 +38,5 @@ execute if data storage mechanization:temp obj.components."minecraft:custom_data
 execute if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades{type:4b} run function mechanization:gadgets/blocks/tinker_table/item_modifiers/modify_firearm
 
 # mech lore
-data modify block -30000000 0 3202 front_text.messages[0] set value '[{"text": "\\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]'
+data modify block -30000000 0 3202 front_text.messages[0] set value [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text": " "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
 data modify storage mechanization:temp obj.components."minecraft:lore" append from block -30000000 0 3202 front_text.messages[0]

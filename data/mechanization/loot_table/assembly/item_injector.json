@@ -31,7 +31,7 @@
                     "mechanization.redstone_control",
                     "smithed.block"
                   ],
-                  "CustomName": "{\"translate\":\"block.mechanization.item_injectorv\"}",
+                  "CustomName": {"translate":"block.mechanization.item_injectorv"},
                   "Invulnerable": 1,
                   "Invisible": 1,
                   "Silent": 1,

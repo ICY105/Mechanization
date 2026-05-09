@@ -21,7 +21,7 @@ execute store result score #temperature mechanization.data run data get storage 
 
 # get model
 ## TODO: update item model reference for fluid UIs
-item replace block -30000000 0 3201 container.0 with minecraft:poisonous_potato[minecraft:item_model="mechanization:base/gui/fluid_bar",minecraft:custom_model_data={colors:[0]},minecraft:tooltip_display={hide_tooltip:1b},minecraft:lore=[],minecraft:item_name='{"translate":"fluid.mechanization.empty"}',minecraft:custom_data={mechanization:{gui_item:1b}}]
+item replace block -30000000 0 3201 container.0 with minecraft:poisonous_potato[minecraft:item_model="mechanization:base/gui/fluid_bar",minecraft:custom_model_data={colors:[0]},minecraft:lore=[],minecraft:item_name={"translate":"fluid.mechanization.empty"},minecraft:custom_data={mechanization:{gui_item:1b}}]
 scoreboard players operation #slice mechanization.data = #max_storage mechanization.data
 scoreboard players operation #slice mechanization.data /= #cons.16 mechanization.data
 
@@ -34,8 +34,8 @@ execute if score #model mechanization.data matches 17.. run scoreboard players s
 execute if score #temperature mechanization.data matches 1000.. run scoreboard players add #model mechanization.data 17
 
 # set name & color
-execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value '{"nbt":"var","storage":"mechanization:temp","interpret":true,"color":"white","italic":false}'
+execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value {"nbt":"var","storage":"mechanization:temp","interpret":true,"color":"white","italic":false}
 execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3201 Items[{Slot:0b}].components."minecraft:item_name" set from block -30000000 0 3202 front_text.messages[0]
-execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value '{"translate":"lore.mechanization.fluid_amount","italic":false,"color":"gray","with":[{"score":{"name":"#storage","objective":"mechanization.data"}}]}'
+execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value {"translate":"lore.mechanization.fluid_amount","italic":false,"color":"gray","with":[{"score":{"name":"#storage","objective":"mechanization.data"}}]}
 execute if score #storage mechanization.data matches 1.. run data modify block -30000000 0 3201 Items[{Slot:0b}].components."minecraft:lore" append from block -30000000 0 3202 front_text.messages[0]
 execute if score #storage mechanization.data matches 1.. run item modify block -30000000 0 3201 container.0 {"function":"minecraft:set_custom_model_data","floats":{"values":[{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#model"},"score":"mechanization.data","scale":1}],"mode":"replace_all"},"colors":{"values":[{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#color"},"score":"mechanization.data","scale":1}],"mode":"replace_all"}}

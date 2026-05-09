@@ -5,5 +5,4 @@ execute as @e[type=minecraft:item_frame,tag=mechanization.item_injector,predicat
 
 execute if score #success mechanization.data matches 0 run return 0
 
-$data modify storage mechanization:temp list[$(var)].id set value "minecraft:air"
-$data modify block ~ ~ ~ Items append from storage mechanization:temp list[$(var)]
+$function mechanization:assembly/blocks/item_extractor/m.move_item_4 with storage mechanization:temp list[$(var)]

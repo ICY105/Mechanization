@@ -9,11 +9,12 @@ data remove storage mechanization:temp obj.converted_drive[].components."minecra
 data modify storage mechanization:temp obj.converted_drive[] merge value {count: 1, components:{"minecraft:max_stack_size":2, "!minecraft:max_damage":{}}}
 
 # setup target inv
-setblock -30000000 0 3201 minecraft:yellow_shulker_box replace
+data remove block -30000000 0 3201 Items
 data modify block -30000000 0 3201 Items append from storage mechanization:temp obj.converted_drive[]
 
 # setup source inv
 setblock -30000000 1 3201 minecraft:yellow_shulker_box replace
+data remove block -30000000 1 3201 Items
 data modify block -30000000 1 3201 Items append from storage mechanization:temp obj.item
 execute unless data storage mechanization:temp obj.item.components."minecraft:custom_data" run data modify block -30000000 1 3201 Items[0].components."minecraft:custom_data" set value {}
 item modify block -30000000 1 3201 container.0 [{function:"minecraft:set_count",count:1},{function:"minecraft:set_components",components:{"minecraft:max_stack_size":2,"!minecraft:max_damage":{}}}]

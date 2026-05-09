@@ -1,5 +1,5 @@
 
-setblock -30000000 0 3201 minecraft:yellow_shulker_box replace
+data remove block -30000000 0 3201 Items
 
 execute if items block ~ ~ ~ container.0 * unless items block ~ ~ ~ container.0 *[minecraft:custom_data~{mss:{}}] run function mechanization:assembly/blocks/mss/slot_management/m.clean_slot {slot: 0}
 execute if items block ~ ~ ~ container.0 * unless items block ~ ~ ~ container.1 *[minecraft:custom_data~{mss:{}}] run function mechanization:assembly/blocks/mss/slot_management/m.clean_slot {slot: 1}

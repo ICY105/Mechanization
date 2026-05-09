@@ -1,5 +1,5 @@
 
-setblock -30000000 0 3201 minecraft:yellow_shulker_box replace
+data remove block -30000000 0 3201 Items
 
 execute if items entity @s hotbar.0 *[minecraft:custom_data~{mss:{}}] run item replace block -30000000 0 3201 container.0 from entity @s hotbar.0
 execute if items entity @s hotbar.0 *[minecraft:custom_data~{mss:{}}] run function mechanization:assembly/blocks/mss/clear_item_data/player_data_2

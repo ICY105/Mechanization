@@ -18,7 +18,7 @@ execute store result score #active_slots mechanization.data run data get storage
 execute store result score #type mechanization.data run data get storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.type
 
 # item managment
-setblock -30000000 0 3201 minecraft:yellow_shulker_box replace
+data remove block -30000000 0 3201 Items
 function mechanization:gadgets/blocks/tinker_table/fill_gui
 
 execute if score #active_slots mechanization.data matches 1.. run function mechanization:gadgets/blocks/tinker_table/gui_process_item {index: 12}

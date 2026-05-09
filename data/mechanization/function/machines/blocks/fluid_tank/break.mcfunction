@@ -18,12 +18,12 @@ data modify storage mechanization:temp var set value "test"
 
 execute if score @s fluid.storage.1 matches 1.. run data modify storage mechanization:temp var set from entity @s item.components."minecraft:custom_data".fluids[1].name
 execute if score @s fluid.storage.1 matches 1.. run scoreboard players operation #storage mechanization.data = @s fluid.storage.1
-execute if score @s fluid.storage.1 matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value '{"translate":"lore.mechanization.stored_fluid","color":"gray","italic":false,"with":[{"score":{"name":"#storage","objective":"mechanization.data"}},{"nbt":"var","storage":"mechanization:temp","interpret":true}]}'
+execute if score @s fluid.storage.1 matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value {"translate":"lore.mechanization.stored_fluid","color":"gray","italic":false,"with":[{"score":{"name":"#storage","objective":"mechanization.data"}},{"nbt":"var","storage":"mechanization:temp","interpret":true}]}
 execute if score @s fluid.storage.1 matches 1.. run data modify entity @n[type=item,distance=..1] Item.components."minecraft:lore" insert 1 from block -30000000 0 3202 front_text.messages[0]
 
 execute if score @s fluid.storage.0 matches 1.. run data modify storage mechanization:temp var set from entity @s item.components."minecraft:custom_data".fluids[0].name
 execute if score @s fluid.storage.0 matches 1.. run scoreboard players operation #storage mechanization.data = @s fluid.storage.0
-execute if score @s fluid.storage.0 matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value '{"translate":"lore.mechanization.stored_fluid","color":"gray","italic":false,"with":[{"score":{"name":"#storage","objective":"mechanization.data"}},{"nbt":"var","storage":"mechanization:temp","interpret":true}]}'
+execute if score @s fluid.storage.0 matches 1.. run data modify block -30000000 0 3202 front_text.messages[0] set value {"translate":"lore.mechanization.stored_fluid","color":"gray","italic":false,"with":[{"score":{"name":"#storage","objective":"mechanization.data"}},{"nbt":"var","storage":"mechanization:temp","interpret":true}]}
 execute if score @s fluid.storage.0 matches 1.. run data modify entity @n[type=item,distance=..1] Item.components."minecraft:lore" insert 1 from block -30000000 0 3202 front_text.messages[0]
 
 # run break functions

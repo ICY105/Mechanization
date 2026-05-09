@@ -27,6 +27,6 @@ execute if score #complete mechanization.data matches 0 as @e[type=minecraft:ite
 execute if score #complete mechanization.data matches 0 as @e[type=minecraft:item_display,tag=mechanization.drive_bay,distance=..16,sort=nearest] at @s run function mechanization:assembly/blocks/mss/item_management/add_item
 
 # if all else fails, eject item
-execute if score #complete mechanization.data matches 0 run setblock -30000000 0 3201 minecraft:yellow_shulker_box replace
+execute if score #complete mechanization.data matches 0 run data remove block -30000000 0 3201 Items
 execute if score #complete mechanization.data matches 0 run data modify block -30000000 0 3201 Items append from storage mechanization:temp obj.item
 execute if score #complete mechanization.data matches 0 run loot spawn ^ ^1 ^0.5 mine -30000000 0 3201 minecraft:debug_stick[minecraft:custom_data={drop_contents:1b}]

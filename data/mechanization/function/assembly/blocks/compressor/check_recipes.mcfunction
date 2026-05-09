@@ -4,7 +4,7 @@ scoreboard players set #success mechanization.data 0
 data modify storage mechanization:temp obj set from storage mechanization:temp list[0]
 execute store result score #count mechanization.data run data get storage mechanization:temp list[0].count
 
-setblock -30000000 0 3201 minecraft:yellow_shulker_box replace
+data remove block -30000000 0 3201 Items
 
 # 2x2 recipes
 execute if score #count mechanization.data matches 4.. if score #success mechanization.data matches 0 run function mechanization:assembly/blocks/compressor/check_recipes_4

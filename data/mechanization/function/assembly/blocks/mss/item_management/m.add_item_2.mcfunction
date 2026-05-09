@@ -11,7 +11,7 @@ data modify storage mechanization:temp obj.item.components."minecraft:custom_dat
 
 execute store result score #count mechanization.data run data get storage mechanization:temp obj.item.count
 execute store result storage mechanization:temp obj.item.components."minecraft:custom_data".mss.count int 1 run scoreboard players get #count mechanization.data
-data modify block -30000000 0 3202 front_text.messages[0] set value '[{"translate":"lore.mechanization.mss_item_count","color":"gray","italic":false,"with":[{"score":{"name":"#count","objective":"mechanization.data"}}]}]'
+data modify block -30000000 0 3202 front_text.messages[0] set value [{"translate":"lore.mechanization.mss_item_count","color":"gray","italic":false,"with":[{"score":{"name":"#count","objective":"mechanization.data"}}]}]
 data modify storage mechanization:temp obj.item.components."minecraft:lore" prepend from block -30000000 0 3202 front_text.messages[0]
 
 # insert into drive
