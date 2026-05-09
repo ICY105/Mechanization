@@ -26,7 +26,6 @@
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.fuel_rod\"}]",
                 "minecraft:item_model": "mechanization:nuclear/item/fuel_rod",
                 "minecraft:max_stack_size": 1,
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

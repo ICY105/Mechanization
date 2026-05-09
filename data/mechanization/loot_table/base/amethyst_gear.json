@@ -26,9 +26,8 @@
             {
               "function": "minecraft:set_components",
               "components": {
-                "minecraft:item_name": "[{\"translate\": \"item.mechanization.amethyst_gear\", \"color\": \"light_purple\", \"italic\": false}]",
+                "minecraft:item_name": [{"translate": "item.mechanization.amethyst_gear", "color": "light_purple", "italic": false}],
                 "minecraft:item_model": "mechanization:base/item/resources/amethyst_gear",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

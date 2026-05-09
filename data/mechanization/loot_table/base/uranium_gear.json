@@ -28,7 +28,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.uranium_gear\", \"color\": \"green\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/uranium_gear",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

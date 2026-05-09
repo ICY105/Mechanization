@@ -31,7 +31,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.titanium_plate\", \"color\": \"light_purple\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/titanium_plate",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

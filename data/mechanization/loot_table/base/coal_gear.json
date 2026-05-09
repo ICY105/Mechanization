@@ -28,7 +28,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.coal_gear\", \"color\": \"dark_gray\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/coal_gear",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

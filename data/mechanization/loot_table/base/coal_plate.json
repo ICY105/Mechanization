@@ -31,7 +31,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.coal_plate\", \"color\": \"dark_gray\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/coal_plate",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

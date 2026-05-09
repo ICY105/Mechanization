@@ -27,7 +27,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.overclocked_pump\", \"color\": \"light_purple\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:gadgets/item/overclocked_pump",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

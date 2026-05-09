@@ -28,7 +28,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.plutonium_gear\", \"color\": \"blue\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/plutonium_gear",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

@@ -28,7 +28,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.diamond_gear\", \"color\": \"dark_aqua\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/diamond_gear",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

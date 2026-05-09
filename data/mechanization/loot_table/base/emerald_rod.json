@@ -32,7 +32,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.emerald_rod\", \"color\": \"green\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/emerald_rod",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

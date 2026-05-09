@@ -27,7 +27,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.long_barrel\", \"color\": \"light_purple\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:gadgets/item/long_barrel",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

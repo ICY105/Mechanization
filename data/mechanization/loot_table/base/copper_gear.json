@@ -28,7 +28,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.copper_gear\", \"color\": \"white\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/copper_gear",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

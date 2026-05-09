@@ -31,7 +31,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.quartz_gear\", \"color\": \"white\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/quartz_gear",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

@@ -28,7 +28,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.conductive_gear\", \"color\": \"gold\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/conductive_gear",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

@@ -27,7 +27,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.pressurized_chamber\", \"color\": \"light_purple\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:gadgets/item/pressurized_chamber",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

@@ -25,7 +25,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.crystal_composite\", \"color\": \"dark_red\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/crystal_composite",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

@@ -31,7 +31,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.reinforced_structural_rod\", \"color\": \"dark_aqua\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/reinforced_structural_rod",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

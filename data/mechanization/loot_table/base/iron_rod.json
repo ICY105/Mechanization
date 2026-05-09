@@ -31,7 +31,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.iron_rod\", \"color\": \"white\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/iron_rod",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

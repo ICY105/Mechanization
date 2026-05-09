@@ -28,7 +28,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.super_conductive_gear\", \"color\": \"dark_green\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/super_conductive_gear",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

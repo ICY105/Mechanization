@@ -32,7 +32,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.plutonium_rod\", \"color\": \"blue\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:base/item/resources/plutonium_rod",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

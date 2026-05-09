@@ -25,7 +25,6 @@
                 "minecraft:item_model": "mechanization:nuclear/item/plutonium_fuel_rod",
                 "minecraft:item_name": "[{\"translate\": \"block.mechanization.plutonium_fuel_rod\"}]",
                 "minecraft:max_stack_size": 1,
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }

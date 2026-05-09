@@ -27,7 +27,6 @@
               "components": {
                 "minecraft:item_name": "[{\"translate\": \"item.mechanization.energized_heat_sink\", \"color\": \"light_purple\", \"italic\": false}]",
                 "minecraft:item_model": "mechanization:gadgets/item/energized_heat_sink",
-                "minecraft:hide_additional_tooltip": {},
                 "!food":{},
                 "!minecraft:consumable": {}
               }
