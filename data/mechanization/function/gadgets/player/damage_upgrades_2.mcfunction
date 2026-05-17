@@ -10,7 +10,14 @@ execute if score #reinforced mechanization.data matches 0 run scoreboard players
 $execute if score #reinforced mechanization.data matches 1 if data storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[$(index)].components."minecraft:custom_data".mechanization.upgrade{effect:"reinforced"} run scoreboard players operation #durability mechanization.data -= #reinforced_damage mechanization.data
 
 $execute store result storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[$(index)].components."minecraft:custom_data".mechanization.upgrade.durability int 1 run scoreboard players get #durability mechanization.data
-data modify block -30000000 0 3202 front_text.messages[0] set value '{"translate":"item.durability","color":"gray","italic":false,"with":[{"score":{"name":"#durability","objective":"mechanization.data"}},{"score":{"name":"#max_durability","objective":"mechanization.data"}}]}'
+data modify block -30000000 0 3202 front_text.messages[0] set value {"translate":"item.durability","color":"gray","italic":false,"with":[{"score":{"name":"#durability","objective":"mechanization.data"}},{"score":{"name":"#max_durability","objective":"mechanization.data"}}]}
 $data modify storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[$(index)].components."minecraft:lore"[1] set from block -30000000 0 3202 front_text.messages[0]
+
+$data modify storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[$(index)].components merge value {"minecraft:damage":0, "minecraft:max_damage":1}
+$execute store result storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[$(index)].components."minecraft:max_damage" int 1 run scoreboard players get #max_durability mechanization.data
+scoreboard players operation #damage mechanization.data = #max_durability mechanization.data
+scoreboard players operation #damage mechanization.data -= #durability mechanization.data
+$execute store result storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[$(index)].components."minecraft:damage" int 1 run scoreboard players get #damage mechanization.data
+
 execute if score #durability mechanization.data matches ..0 run scoreboard players set #broken mechanization.data 1
 $execute if score #durability mechanization.data matches ..0 run data remove storage mechanization:temp obj.components."minecraft:custom_data".mechanization.upgrades.items[$(index)]

@@ -2,6 +2,7 @@
 	"required":false,
 	"values":[
 		"#minecraft:shulker_boxes",
+		"#minecraft:copper_chests",
 		"minecraft:chest",
 		"minecraft:trapped_chest",
 		"minecraft:barrel"

@@ -1,0 +1,3 @@
+
+execute if score @s fluid.storage.0 matches 1..288 if data storage mechanization:temp obj.input_item.components."minecraft:custom_data".smithed.dict.plate.tin if data storage mechanization:temp obj.fluid_item{id:"molten_tin"} run scoreboard players operation @s mechanization.time = #machines.cf.arc_furnace.speed_block mechanization.data
+execute if score @s fluid.storage.0 matches 0 if data storage mechanization:temp obj.input_item.components."minecraft:custom_data".smithed.dict.plate.tin run scoreboard players operation @s mechanization.time = #machines.cf.arc_furnace.speed_block mechanization.data
