@@ -1,6 +1,6 @@
 
 # Summon Entity & Init
-summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.heat_exchanger", "fluid.tank", "smithed.block"], CustomName:{"translate":"block.mechanization.heat_exchanger"}, item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:nuclear/block/heat_exchanger"}, Count:1b}}
+summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.heat_exchanger", "fluid.tank", "smithed.block"], CustomName:{"translate":"block.mechanization.heat_exchanger"}, item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:nuclear/block/heat_exchanger"}, count: 1}}
 setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:[{"translate":"offset.-8","font":"space:default","with":[{"text":"\uee12","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-171","font":"space:default","with":[{"translate":"block.mechanization.heat_exchanger","italic":false,"font":"minecraft:default"}]}]}
 
 # init data

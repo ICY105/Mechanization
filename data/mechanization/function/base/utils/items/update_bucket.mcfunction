@@ -1,7 +1,7 @@
 
 execute store result score #storage mechanization.data run data get storage fluid:io output.output_slot.components."minecraft:custom_data".fluid.storage
 
-execute if score #storage mechanization.data matches 0 run data modify storage fluid:io output.output_slot set value {id:"minecraft:bucket", Count:1b}
+execute if score #storage mechanization.data matches 0 run data modify storage fluid:io output.output_slot set value {id:"minecraft:bucket", count: 1}
 
 execute if score #storage mechanization.data matches 1.. run data modify storage fluid:io output.output_slot merge value {id:"minecraft:potion",tag:{CustomModelData:6421106, HideFlags: 38, mechanization:{id:"bucket"}}}
 execute if score #storage mechanization.data matches 1.. run data modify storage fluid:io output.output_slot.components."minecraft:potion_contents".custom_color set from storage fluid:io output.output_slot.components."minecraft:custom_data".fluid.color
