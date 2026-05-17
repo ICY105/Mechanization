@@ -1,0 +1,214 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "translate": "item.mechanization.mechanical_manual"
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "width": 256,
+      "contents": {
+        "translate": "text.mechanization.manual.header",
+        "font": "mechanization:manual",
+        "shadow_color": 0,
+        "color": "white",
+        "with": [
+          {
+            "translate": "block.mechanization.alloy_furnace",
+            "color": "black"
+          }
+        ],
+        "extra": [
+          {
+            "text":" \n"
+          },
+          {
+            "translate": "text.mechanization.manual.crafting_recipe",
+            "font": "mechanization:manual",
+            "shadow_color": 0,
+            "color": "white",
+            "with": [
+              {
+                "translate": "block.mechanization.machine_crafting_table",
+                "color": "dark_gray"
+              },
+              {"text": "\uee02", "hover_event": {"action": "show_item", "id": "minecraft:stick", "count": 1}},
+              {"text": "\uee02", "hover_event": {"action": "show_item", "id": "minecraft:stick", "count": 1}},
+              {"text": "\uee02", "hover_event": {"action": "show_item", "id": "minecraft:stick", "count": 1}},
+              {"text": "\uee02", "hover_event": {"action": "show_item", "id": "minecraft:stick", "count": 1}},
+              {"text": "\uee02", "hover_event": {"action": "show_item", "id": "minecraft:stick", "count": 1}},
+              {"text": "\uee02", "hover_event": {"action": "show_item", "id": "minecraft:stick", "count": 1}},
+              {"text": "\uee02", "hover_event": {"action": "show_item", "id": "minecraft:stick", "count": 1}},
+              {"text": "\uee02", "hover_event": {"action": "show_item", "id": "minecraft:stick", "count": 1}},
+              {"text": "\uee02", "hover_event": {"action": "show_item", "id": "minecraft:stick", "count": 1}},
+              {"text": "\uee02", "hover_event": {"action": "show_item", "id": "minecraft:stick", "count": 1}}
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "width": 240,
+      "contents": {
+        "translate": "text.mechanization.manual.alloy_furnace.desc",
+        "font": "mechanization:manual",
+        "color": "black",
+        "shadow_color": 0,
+        "extra": [
+          {
+            "text":"--------------------------------------"
+          },
+          {
+            "atlas": "minecraft:blocks",
+            "sprite": "mechanization:base/item/machine_upgrade",
+            "color": "white",
+            "hover_event": {
+              "action": "show_item",
+              "id": "minecraft:poisonous_potato",
+              "components": {
+                "minecraft:item_model": "mechanization:base/item/machine_upgrade",
+                "minecraft:item_name": [{"translate": "item.mechanization.machine_upgrade", "color": "yellow"}],
+                "minecraft:lore":[
+                  [{"translate": "lore.mechanization.upgrade.1","color": "gray","italic": false,"with": [{"translate": "lore.mechanization.sneak"},{"text": "\uee08","font": "mechanization:gui", "color": "white"}]}],
+                  [{"text": ""}],
+                  [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
+                ],
+                "!minecraft:food":{},
+                "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "block"}
+              }
+            }
+          },
+          {
+            "translate": "text.mechanization.manual.alloy_furnace.machine_upgrade_desc"
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "atlas": "minecraft:blocks",
+            "sprite": "mechanization:base/item/ender_upgrade",
+            "color": "white",
+            "hover_event": {
+              "action": "show_item",
+              "id": "minecraft:poisonous_potato",
+              "components": {
+                "minecraft:item_model": "mechanization:base/item/ender_upgrade",
+                "minecraft:item_name": [{"translate": "item.mechanization.ender_upgrade", "color": "light_purple"}],
+                "minecraft:lore":[
+                  [{"translate": "lore.mechanization.upgrade.1","color": "gray","italic": false,"with": [{"translate": "lore.mechanization.sneak"},{"text": "\uee08","font": "mechanization:gui", "color": "white"}]}],
+                  [{"text": ""}],
+                  [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
+                ],
+                "!minecraft:food":{},
+                "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "block"}
+              }
+            }
+          },
+          {
+            "translate": "text.mechanization.manual.alloy_furnace.ender_upgrade_desc"
+          },
+          {
+            "text": "\n"
+          },
+          {
+            "atlas": "minecraft:blocks",
+            "sprite": "mechanization:base/item/nether_upgrade",
+            "color": "white",
+            "hover_event": {
+              "action": "show_item",
+              "id": "minecraft:poisonous_potato",
+              "components": {
+                "minecraft:item_model": "mechanization:base/item/nether_upgrade",
+                "minecraft:item_name": [{"translate": "item.mechanization.nether_upgrade", "color": "light_purple"}],
+                "minecraft:lore":[
+                  [{"translate": "lore.mechanization.upgrade.1","color": "gray","italic": false,"with": [{"translate": "lore.mechanization.sneak"},{"text": "\uee08","font": "mechanization:gui", "color": "white"}]}],
+                  [{"text": ""}],
+                  [{"text": "\uee11", "font": "mechanization:gui", "color": "white", "italic": false}, {"text":" "}, {"translate": "lore.mechanization.added_by", "color": "#c83219", "italic": false}]
+                ],
+                "!minecraft:food":{},
+                "minecraft:consumable": {"consume_seconds": 2147483647, "animation": "block"}
+              }
+            }
+          },
+          {
+            "translate": "text.mechanization.manual.alloy_furnace.nether_upgrade_desc"
+          }
+        ]
+      }
+    }
+  ],
+  "columns": 10,
+  "actions": [
+    {
+      "label": {
+        "translate": "text.mechanization.manual.page_left.button",
+        "font": "mechanization:manual"
+      },
+      "tooltip": {
+        "translate": "text.mechanization.manual.page_left.hover",
+        "font": "mechanization:manual"
+      },
+      "width": 24,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "mechanization:manual/menu"
+      }
+    },
+    {
+      "label": {
+        "translate": "text.mechanization.manual.menu.button",
+        "font": "mechanization:manual"
+      },
+      "tooltip": {
+        "translate": "text.mechanization.manual.menu.hover",
+        "font": "mechanization:manual"
+      },
+      "width": 24,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "mechanization:manual/menu"
+      }
+    },
+    {
+      "label": {
+        "translate": "text.mechanization.manual.get_schematic.button",
+        "font": "mechanization:manual"
+      },
+      "tooltip": {
+        "translate": "text.mechanization.manual.get_schematic.hover",
+        "font": "mechanization:manual"
+      },
+      "width": 24,
+      "action": {
+        "type": "minecraft:run_command",
+        "command": "trigger mechanization.manual set -1"
+      }
+    },
+    {
+      "label": {
+        "translate": "text.mechanization.manual.page_right.button",
+        "font": "mechanization:manual"
+      },
+      "tooltip": {
+        "translate": "text.mechanization.manual.page_right.hover",
+        "font": "mechanization:manual"
+      },
+      "width": 24,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "mechanization:manual/menu"
+      }
+    }
+  ],
+  "exit_action": {
+    "label": {
+      "translate": "mco.selectServer.close",
+      "fallback": "Close"
+    },
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "trigger mechanization.manual set 1"
+    }
+  }
+}
