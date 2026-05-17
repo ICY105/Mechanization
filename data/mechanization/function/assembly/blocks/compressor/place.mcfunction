@@ -1,9 +1,12 @@
 
 # Summon Entity & Init
-execute if block ~ ~ ~ minecraft:blast_furnace[facing=north] run summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.compressor", "mechanization.redstone_control", "mechanization.rotatable", "energy.receive", "smithed.block"], Rotation:[180.0f, 0.0f], CustomName:{"translate":"block.mechanization.compressor"}, item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:assembly/block/compressor"}, count: 1}}
-execute if block ~ ~ ~ minecraft:blast_furnace[facing=east] run summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.compressor", "mechanization.redstone_control", "mechanization.rotatable", "energy.receive", "smithed.block"], Rotation:[270.0f, 0.0f], CustomName:{"translate":"block.mechanization.compressor"}, item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:assembly/block/compressor"}, count: 1}}
-execute if block ~ ~ ~ minecraft:blast_furnace[facing=south] run summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.compressor", "mechanization.redstone_control", "mechanization.rotatable", "energy.receive", "smithed.block"], Rotation:[0.0f, 0.0f], CustomName:{"translate":"block.mechanization.compressor"}, item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:assembly/block/compressor"}, count: 1}}
-execute if block ~ ~ ~ minecraft:blast_furnace[facing=west] run summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.compressor", "mechanization.redstone_control", "mechanization.rotatable", "energy.receive", "smithed.block"], Rotation:[90.0f, 0.0f], CustomName:{"translate":"block.mechanization.compressor"}, item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:assembly/block/compressor"}, count: 1}}
+summon minecraft:item_display ~ ~ ~ {CustomName:{"translate":"block.mechanization.compressor"}, item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:assembly/block/compressor"}, count: 1}, \
+    Tags:["mechanization", "mechanization.new", "mechanization.compressor", "mechanization.redstone_control", "mechanization.rotatable", "energy.receive", "smithed.block"]}
+
+execute if block ~ ~ ~ minecraft:blast_furnace[facing=west] as @n[tag=mechanization.new,distance=..1] at @s run tp @s ~ ~ ~ ~90 ~
+execute if block ~ ~ ~ minecraft:blast_furnace[facing=north] as @n[tag=mechanization.new,distance=..1] at @s run tp @s ~ ~ ~ ~180 ~
+execute if block ~ ~ ~ minecraft:blast_furnace[facing=east] as @n[tag=mechanization.new,distance=..1] at @s run tp @s ~ ~ ~ ~270 ~
+
 setblock ~ ~ ~ minecraft:dropper[facing=south]{CustomName:{"translate":"block.mechanization.compressor","italic":false}}
 
 function mechanization:base/utils/init_machine

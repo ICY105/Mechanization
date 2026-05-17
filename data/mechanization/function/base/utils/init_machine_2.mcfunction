@@ -66,5 +66,12 @@ execute if entity @s[type=minecraft:armor_stand] run data modify entity @s Armor
 execute if entity @s[type=minecraft:item_display] run data modify entity @s item.components."minecraft:custom_data".string_uuid set from storage gu:main out
 execute if entity @s[type=minecraft:marker] run data modify entity @s data.string_uuid set from storage gu:main out
 
-# clear new tags
+# setup custom name
+data modify block ~ ~ ~ CustomName.extra set value [{"text": "", "font": "mechanization:gui", "color": "white"}, {"text": "", "font": "mechanization:gui", "color": "white"}, {"text": "", "font": "mechanization:gui", "color": "white"}]
+execute if entity @s[tag=mechanization.upgraded] run data modify block ~ ~ ~ CustomName.extra[0].text set value " \ue100"
+execute if entity @s[tag=mechanization.upgraded.ender] run data modify block ~ ~ ~ CustomName.extra[0].text set value " \ue101"
+execute if entity @s[tag=mechanization.upgraded.nether] run data modify block ~ ~ ~ CustomName.extra[0].text set value " \ue102"
+execute if entity @s[tag=mechanization.muffled] run data modify block ~ ~ ~ CustomName.extra[1].text set value " \ue103"
+
+# clear new tag
 tag @s remove mechanization.new

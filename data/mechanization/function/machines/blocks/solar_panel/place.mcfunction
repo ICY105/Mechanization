@@ -1,6 +1,7 @@
 
 # Summon Entity & Init
-summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.solar_panel", "mechanization.upgradable", "mechanization.observable", "energy.send", "smithed.block"], Rotation:[90.0f, 0.0f], CustomName:{"translate":"block.mechanization.solar_panel"}, item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:machines/block/solar_panel", "minecraft:custom_model_data":{floats:[2]}}, count: 1}}
+summon minecraft:item_display ~ ~ ~ {Rotation:[90.0f, 0.0f], CustomName:{"translate":"block.mechanization.solar_panel"}, item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:machines/block/solar_panel", "minecraft:custom_model_data":{floats:[2]}}, count: 1}, \
+    Tags:["mechanization", "mechanization.new", "mechanization.solar_panel", "mechanization.upgradable", "mechanization.observable", "energy.send", "smithed.block"]}
 summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.solar_panel.model", "smithed.block"], CustomName:{"translate":"block.mechanization.solar_panel"}, item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:machines/block/solar_panel", "minecraft:custom_model_data":{floats:[1]}}, count: 1}}
 
 function mechanization:base/utils/init_machine

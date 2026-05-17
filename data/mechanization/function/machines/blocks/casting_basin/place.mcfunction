@@ -1,7 +1,9 @@
 
 # Summon Entity & Init
-summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.casting_basin", "mechanization.redstone_control", "mechanization.upgradable", "mechanization.observable", "mechanization.mufflable", "fluid.tank", "energy.receive", "smithed.block"], CustomName:{"translate":"block.mechanization.casting_basin"}, item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:machines/block/casting_basin"}, count: 1}}
-setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:[{"translate":"offset.-8","font":"space:default","with":[{"text":"\uee0d","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-120","font":"space:default","with":[{"translate":"block.mechanization.casting_basin","font":"minecraft:default"}]}]}
+summon minecraft:item_display ~ ~ ~ {CustomName:{"translate":"block.mechanization.casting_basin"}, item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:machines/block/casting_basin"}, count: 1}, \
+    Tags:["mechanization", "mechanization.new", "mechanization.casting_basin", "mechanization.redstone_control", "mechanization.upgradable", "mechanization.observable", "mechanization.mufflable", "fluid.tank", "energy.receive", "smithed.block"]}
+
+setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:{"translate": "text.mechanization.barrel_gui", "font": "mechanization:gui", "with":[{"text": "\uee0d", "color": "white"}, {"translate": "block.mechanization.casting_basin"}]}}
 
 # init data
 scoreboard players set #fluid.io mechanization.data 0

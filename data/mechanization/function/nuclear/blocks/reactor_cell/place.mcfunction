@@ -1,6 +1,8 @@
 
 # Summon Entity & Init
-summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.reactor_cell", "mechanization.has_block_hitbox", "fluid.tank", "smithed.block"], CustomName:{"translate":"block.mechanization.reactor_cell"}, item:{id:"minecraft:poisonous_potato", components:{"minecraft:item_model":"mechanization:nuclear/block/reactor_cell"}, count: 1}}
+summon minecraft:item_display ~ ~ ~ {CustomName:{"translate":"block.mechanization.reactor_cell"}, item:{id:"minecraft:poisonous_potato", components:{"minecraft:item_model":"mechanization:nuclear/block/reactor_cell"}, count: 1}, \
+    Tags:["mechanization", "mechanization.new", "mechanization.reactor_cell", "mechanization.has_block_hitbox", "fluid.tank", "smithed.block"]}
+
 summon minecraft:interaction ~ ~-0.51 ~ {width:1.02f,height:1.02f,response:1b,Tags:["mechanization", "mechanization.block_hitbox", "mechanization.block_hitbox.reactor_cell"]}
 setblock ~ ~ ~ minecraft:barrier
 

@@ -1,7 +1,9 @@
 
 # Summon Entity & Init
-summon minecraft:item_display ~ ~ ~ {Tags:["mechanization", "mechanization.new", "mechanization.centrifuge", "mechanization.redstone_control", "energy.receive", "fluid.tank", "smithed.block"], CustomName:{"translate":"block.mechanization.centrifuge"}, item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:nuclear/block/centrifuge"}, count: 1}}
-setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:[{"translate":"offset.-8","font":"space:default","with":[{"text":"\uee14","font":"mechanization:gui","color":"white"}]},{"translate":"offset.-171","font":"space:default","with":[{"translate":"block.mechanization.centrifuge","italic":false,"font":"minecraft:default"}]}]}
+summon minecraft:item_display ~ ~ ~ {CustomName:{"translate":"block.mechanization.centrifuge"}, item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:nuclear/block/centrifuge"}, count: 1}, \
+    Tags:["mechanization", "mechanization.new", "mechanization.centrifuge", "mechanization.redstone_control", "energy.receive", "fluid.tank", "smithed.block"]}
+
+setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:{"translate": "text.mechanization.barrel_gui", "font": "mechanization:gui", "with":[{"text": "\uee14", "color": "white"}, {"translate": "block.mechanization.centrifuge"}]}}
 
 # init data
 scoreboard players set #fluid.io mechanization.data 0
