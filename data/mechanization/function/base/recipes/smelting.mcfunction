@@ -20,4 +20,5 @@ execute if data storage nbt_smelting:io item.components."minecraft:custom_data".
 execute if data storage nbt_smelting:io item.components."minecraft:custom_data".smithed.dict.raw{plutonium:1b} store success score #success mechanization.data run loot replace block -30000000 0 3201 container.0 loot mechanization:base/plutonium_ingot
 
 # copy item
+execute if score #success mechanization.data matches 1 if data block -30000000 0 3201 Items[0] run function mechanization:base/recipes/smelting_xp_iron
 execute if score #success mechanization.data matches 1 if data block -30000000 0 3201 Items[0] run item replace block ~ ~ ~ container.2 from block -30000000 0 3201 container.0
