@@ -1,9 +1,0 @@
-{
-	"required":false,
-	"values":[
-		"#mechanization:air",
-		"#mechanization:piston_nopush",
-		"#mechanization:glazed_terracotta",
-		"minecraft:light"
-	]
-}

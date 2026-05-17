@@ -6,7 +6,7 @@ execute store result score #models mechanization.data run data get storage energ
 execute store result score #base_model mechanization.data run data get storage energy:temp list[0].components."minecraft:custom_data".mechanization.battery.base_model
 
 # lore
-data modify block -30000000 0 3202 front_text.messages[0] set value '[{"translate":"lore.mechanization.portable_battery","color":"gray","italic":false,"with":[{"score":{"name":"#storage","objective":"mechanization.data"},"color":"gray"},{"score":{"name":"#max_storage","objective":"mechanization.data"},"color":"gray"}]}]'
+data modify block -30000000 0 3202 front_text.messages[0] set value [{"translate":"lore.mechanization.portable_battery","color":"gray","italic":false,"with":[{"score":{"name":"#storage","objective":"mechanization.data"},"color":"gray"},{"score":{"name":"#max_storage","objective":"mechanization.data"},"color":"gray"}]}]
 execute if score #max_storage mechanization.data matches 1.. unless data storage energy:temp list[0].components."minecraft:lore" run data modify storage energy:temp list[0].components."minecraft:lore" set value ['{"text":""}']
 execute if score #max_storage mechanization.data matches 1.. run data remove storage energy:temp list[0].components."minecraft:lore"[0] 
 execute if score #max_storage mechanization.data matches 1.. run data modify storage energy:temp list[0].components."minecraft:lore" prepend from block -30000000 0 3202 front_text.messages[0]

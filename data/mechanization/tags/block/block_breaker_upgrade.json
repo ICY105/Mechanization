@@ -3,6 +3,9 @@
 	"values":[
 		"#minecraft:beds",
 		"#minecraft:shulker_boxes",
+		"#minecraft:wooden_shelves",
+		"#minecraft:copper_chests",
+		"#minecraft:all_signs",
 		"#mechanization:unbreakable",
 		"minecraft:spawner",
 		"minecraft:chest",
@@ -25,6 +28,12 @@
 		"minecraft:soul_campfire",
 		"minecraft:sculk_catalyst",
 		"minecraft:sculk_shrieker",
-		"minecraft:sculk_sensor"
+		"minecraft:sculk_sensor",
+		"minecraft:crafter",
+		"minecraft:chiseled_bookshelf",
+		"minecraft:enchanting_table",
+		"minecraft:reinforced_deepslate",
+		"minecraft:vault",
+		"minecraft:trial_spawner"
 	]
 }

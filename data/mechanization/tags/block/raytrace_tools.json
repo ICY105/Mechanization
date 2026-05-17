@@ -3,6 +3,7 @@
 	"values":[
 		"#mechanization:air",
 		"#mechanization:fluids",
+		"#minecraft:wool_carpets",
 		"minecraft:snow",
 		"minecraft:light"
 	]
