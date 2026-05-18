@@ -73,5 +73,9 @@ execute if entity @s[tag=mechanization.upgraded.ender] run data modify block ~ ~
 execute if entity @s[tag=mechanization.upgraded.nether] run data modify block ~ ~ ~ CustomName.extra[0].text set value " \ue102"
 execute if entity @s[tag=mechanization.muffled] run data modify block ~ ~ ~ CustomName.extra[1].text set value " \ue103"
 
+# trigger visual energy & fluid updates
+execute if entity @s[tag=energy.send] run function #energy:v1/energy_update
+execute if entity @s[tag=!energy.send,tag=energy.receive] run function #energy:v1/energy_update
+
 # clear new tag
 tag @s remove mechanization.new

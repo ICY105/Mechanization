@@ -14,6 +14,10 @@ scoreboard players operation @s[tag=mechanization.upgraded.nether] energy.max_st
 scoreboard players operation @s[tag=mechanization.battery.creative] energy.storage = @s energy.max_storage
 scoreboard players operation @s[tag=mechanization.battery.creative] energy.storage /= #cons.2 mechanization.data
 
+# update display
+execute if entity @s[tag=mechanization.update.energy] run function mechanization:machines/blocks/battery/energy_update
+execute if entity @s[tag=mechanization.update.energy] run tag @s remove mechanization.update.energy
+
 # Ambient Sounds
 execute if entity @s[tag=!mechanization.muffled] if predicate mechanization:chance_0.5 if predicate mechanization:chance_0.5 run playsound mechanization:base.battery_ambient block @a[distance=..16] ~ ~ ~ 0.05
 
