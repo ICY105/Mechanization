@@ -5,6 +5,7 @@
 		"#mechanization:fluids",
 		"#minecraft:wool_carpets",
 		"minecraft:snow",
-		"minecraft:light"
+		"minecraft:light",
+		"minecraft:moving_piston"
 	]
 }
