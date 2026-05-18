@@ -35,7 +35,8 @@ execute if score @s fluid.storage.1 matches 2000.. run scoreboard players operat
 execute if score @s fluid.storage.1 matches 2000.. if score @s energy.storage matches ..3999 run scoreboard players operation @s energy.storage += #storage mechanization.data
 
 # leak steam if no fuel
-execute if score @s mechanization.data matches 0 if score @s fluid.storage.1 matches 20.. run scoreboard players remove @s fluid.storage.1 20
+execute if score @s mechanization.data matches 0 if score @s fluid.storage.1 matches 20.. run function mechanization:base/utils/redstone_active
+execute if score @s mechanization.data matches 0 if score @s fluid.storage.1 matches 20.. if score #active mechanization.data matches 1.. run scoreboard players remove @s fluid.storage.1 20
 
 # model
 execute if score @s mechanization.data matches 0 run item modify entity @s contents {"function": "minecraft:set_components","components": {"minecraft:custom_model_data": {"floats":[0]}}}
