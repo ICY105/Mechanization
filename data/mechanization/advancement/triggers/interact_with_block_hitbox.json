@@ -8,8 +8,12 @@
             "entity": "this",
             "condition": "minecraft:entity_properties",
             "predicate": {
-              "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"mechanization.block_hitbox\"]}"
+              "minecraft:entity_type": "minecraft:interaction",
+              "minecraft:entity_tags": {
+                "all_of": [
+                  "mechanization.block_hitbox"
+                ]
+              }
             }
           }
         ]

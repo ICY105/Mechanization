@@ -12,9 +12,9 @@ tag @s add mechanization.in_flight
 
 attribute @s minecraft:fall_damage_multiplier modifier add mechanization:flight -1.0 add_multiplied_total
 scoreboard players set #direction mechanization.data 0
-execute if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"type_specific":{"type":"minecraft:player","input":{"jump":true}}}} run scoreboard players add #direction mechanization.data 1
-execute if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"type_specific":{"type":"minecraft:player","input":{"sneak":true}}}} run scoreboard players remove #direction mechanization.data 1
-execute if predicate {"condition":"minecraft:entity_properties","entity":"this","predicate":{"type_specific":{"type":"minecraft:player","input":{"sprint":true}}}} run scoreboard players operation #direction mechanization.data += #direction mechanization.data
+execute if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:type_specific/player":{input:{jump:0b}}}} run scoreboard players add #direction mechanization.data 1
+execute if predicate player_action:v1/sneaking run scoreboard players remove #direction mechanization.data 1
+execute if predicate player_action:v1/sprinting run scoreboard players operation #direction mechanization.data += #direction mechanization.data
 
 execute if score #direction mechanization.data matches 0 unless block ~ ~-2 ~ #mechanization:air run scoreboard players set #direction mechanization.data -3
 
