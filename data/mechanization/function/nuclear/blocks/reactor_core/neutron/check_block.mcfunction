@@ -9,8 +9,8 @@ scoreboard players operation #quantity_thermal mechanization.data = @s mechaniza
 execute if block ~ ~ ~ #mechanization:neutron_reflector run function mechanization:nuclear/blocks/reactor_core/neutron/interact_reflector
 execute if block ~ ~ ~ minecraft:coal_block run function mechanization:nuclear/blocks/reactor_core/neutron/interact_coal_block
 execute if block ~ ~ ~ #mechanization:water run function mechanization:nuclear/blocks/reactor_core/neutron/interact_water
-execute if block ~ ~ ~ minecraft:barrier align xyz as @e[type=minecraft:item_display,tag=mechanization,tag=smithed.block,dx=0,dy=0,dz=0,limit=1] run function mechanization:nuclear/blocks/reactor_core/neutron/check_block_barrier
-execute if block ~ ~ ~ minecraft:dropper{Items:[{Slot:1b}]} align xyz as @e[type=minecraft:item_display,tag=mechanization.alchemy_chamber,dx=0,dy=0,dz=0,limit=1] run function mechanization:nuclear/blocks/alchemy_chamber/interact
+execute if block ~ ~ ~ minecraft:barrier align xyz as @n[type=minecraft:item_display,tag=mechanization,tag=smithed.block,dx=0,dy=0,dz=0] run function mechanization:nuclear/blocks/reactor_core/neutron/check_block_barrier
+execute if block ~ ~ ~ minecraft:dropper{Items:[{Slot:1b}]} align xyz as @n[type=minecraft:item_display,tag=mechanization.alchemy_chamber,dx=0,dy=0,dz=0] run function mechanization:nuclear/blocks/alchemy_chamber/interact
 
 # copy data
 scoreboard players operation @s mechanization.fluid.in = #quantity_fast mechanization.data

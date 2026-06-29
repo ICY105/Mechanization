@@ -25,6 +25,7 @@ execute at @s run function mechanization:nuclear/blocks/reactor_core/neutron/m.d
 
 # check block
 execute at @s run function mechanization:nuclear/blocks/reactor_core/neutron/check_block
+execute at @s positioned ~ ~1 ~ if block ~ ~ ~ minecraft:barrier run function mechanization:nuclear/blocks/reactor_core/neutron/check_block_control_rod
 
 # kill if empty or timer expires
 scoreboard players operation #total mechanization.data = @s mechanization.fluid.in
