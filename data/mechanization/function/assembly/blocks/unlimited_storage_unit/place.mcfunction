@@ -1,7 +1,7 @@
 
 # Summon Entity & Init
 summon minecraft:item_display ~ ~ ~ {CustomName:{"translate":"block.mechanization.unlimited_storage_unit"}, item:{id:"minecraft:blast_furnace",  components:{"minecraft:item_model":"mechanization:assembly/block/storage_unit"}, count: 1}, \
-    Tags:["mechanization", "mechanization.new", "mechanization.ticking", "mechanization.unlimited_storage_unit", "smithed.block"]}
+    Tags:["mechanization", "mechanization.new", "mechanization.ticking", "mechanization.unlimited_storage_unit", "mechanization.observable", "smithed.block"]}
 
 setblock ~ ~ ~ minecraft:furnace{CustomName:{"translate":"block.mechanization.unlimited_storage_unit","italic":false}}
 

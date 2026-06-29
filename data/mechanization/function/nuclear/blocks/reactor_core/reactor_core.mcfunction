@@ -2,6 +2,7 @@
 # mechanization.data: heat
 # mechanization.time: enrichment %
 # mechanization.fluid.in: neutron flux
+# mechanization.fluid.out: neutron rotation
 
 # cleanup
 execute unless block ~ ~ ~ minecraft:barrier run function mechanization:nuclear/blocks/reactor_core/break_hard
@@ -39,6 +40,9 @@ scoreboard players add #flux mechanization.data 1
 scoreboard players operation @s mechanization.fluid.in -= #flux mechanization.data
 execute if score @s mechanization.fluid.in matches ..0 run scoreboard players set @s mechanization.fluid.in 0
 
+scoreboard players operation #rotation mechanization.data = @s mechanization.fluid.out
+scoreboard players add @s mechanization.fluid.out 1
+execute if score @s mechanization.fluid.out matches 12.. run scoreboard players set @s mechanization.fluid.out 0
 execute summon marker run function mechanization:nuclear/blocks/reactor_core/neutron/summon
 
 # fuel consumption
@@ -49,3 +53,5 @@ execute store result entity @s item.components."minecraft:bundle_contents"[0].co
 scoreboard players operation #max_fuel mechanization.data = @s mechanization.time
 scoreboard players operation #max_fuel mechanization.data *= #cons.100000 mechanization.data
 execute if score #fuel mechanization.data >= #max_fuel mechanization.data run function mechanization:nuclear/blocks/reactor_core/deplete_fuel
+
+

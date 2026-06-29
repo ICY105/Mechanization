@@ -8,7 +8,7 @@ execute store result storage mechanization:temp io.get_neutron_interaction.quant
 execute store result score #quantity mechanization.data run function mechanization:nuclear/math/m.get_neutron_interaction with storage mechanization:temp io.get_neutron_interaction
 scoreboard players operation #quantity_fast mechanization.data -= #quantity mechanization.data
 scoreboard players operation #quantity_thermal mechanization.data += #quantity mechanization.data
-execute if score #quantity mechanization.data matches 1.. run tellraw @p[tag=mechanization.debug] [{"text":"  Scatter (CB): "},{"score":{"name":"#quantity","objective":"mechanization.data"}},{"translate":", (%s:%s)","with":[{"score":{"name":"#quantity_fast","objective":"mechanization.data"}},{"score":{"name":"#quantity_thermal","objective":"mechanization.data"}}]}]
+execute if entity @s[tag=mechanization.debug] run tellraw @p [{"text":"  Scatter (CB): "},{"score":{"name":"#quantity","objective":"mechanization.data"}},{"translate":", (%s:%s)","with":[{"score":{"name":"#quantity_fast","objective":"mechanization.data"}},{"score":{"name":"#quantity_thermal","objective":"mechanization.data"}}]}]
 
 # process fast_capture
 data modify storage mechanization:temp io.get_data_entry.reaction set value "fast_capture"

@@ -1,7 +1,7 @@
 
 # Summon Entity & Init
 summon minecraft:item_display ~ ~ ~ {CustomName:{"translate":"block.mechanization.centrifuge"}, item:{id:"minecraft:blast_furnace", components:{"minecraft:item_model":"mechanization:nuclear/block/centrifuge"}, count: 1}, \
-    Tags:["mechanization", "mechanization.new", "mechanization.centrifuge", "mechanization.redstone_control", "energy.receive", "fluid.tank", "smithed.block"]}
+    Tags:["mechanization", "mechanization.new", "mechanization.centrifuge", "mechanization.redstone_control", "energy.receive", "fluid.tank", "mechanization.observable", "smithed.block"]}
 
 setblock ~ ~ ~ minecraft:barrel[facing=up]{CustomName:{"translate": "text.mechanization.barrel_gui", "font": "mechanization:gui", "with":[{"text": "\uee14", "color": "white"}, {"translate": "block.mechanization.centrifuge"}]}}
 

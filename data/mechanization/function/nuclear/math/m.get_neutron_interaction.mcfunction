@@ -6,6 +6,7 @@ $scoreboard players set #neutron mechanization.data $(quantity)
 execute if score #neutron mechanization.data matches 0 run return 0
 
 execute store result score #chance mechanization.data run function mechanization:nuclear/math/m.get_data_entry with storage mechanization:temp io.get_data_entry
+execute if entity @s[tag=mechanization.debug] run tellraw @p [{text:"Chance = "},{score:{name:"#chance",objective:"mechanization.data"}}]
 execute if score #chance mechanization.data matches ..0 run return 0
 
 scoreboard players operation #neutron mechanization.data *= #chance mechanization.data
