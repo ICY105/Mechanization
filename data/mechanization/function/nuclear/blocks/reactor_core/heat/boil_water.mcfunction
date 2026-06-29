@@ -26,4 +26,10 @@ execute if score #level mechanization.data matches 0 run setblock ~ ~ ~ minecraf
 
 # transfer heat
 scoreboard players operation #heat_total mechanization.data += #heat mechanization.data
-execute if score #heat mechanization.data matches 1.. align xyz positioned ~0.5 ~0.5 ~0.5 summon marker run function mechanization:nuclear/blocks/reactor_core/steam_cloud/summon
+
+scoreboard players set #loop mechanization.data 15
+function mechanization:nuclear/blocks/reactor_core/heat/draw_steam
+
+scoreboard players operation #steam mechanization.data = #heat mechanization.data
+scoreboard players operation #steam mechanization.data *= #cons.10 mechanization.data
+execute if score #heat mechanization.data matches 1.. positioned ~ ~1 ~ align xyz as @n[tag=mechanization.steam_condenser,dx=0,dy=6,dz=0] run function mechanization:nuclear/blocks/steam_condenser/collect
