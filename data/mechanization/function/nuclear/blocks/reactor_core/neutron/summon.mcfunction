@@ -1,4 +1,5 @@
 
+# mechanization.data: distance traveled since last check
 # mechanization.time: lifetime in ticks
 # mechanization.fluid.in: fast flux
 # mechanization.fluid.out: thermal flux
@@ -27,4 +28,5 @@ scoreboard players operation @s mechanization.fluid.in = #flux mechanization.dat
 scoreboard players set @s mechanization.fluid.out 0
 
 # time alive
+scoreboard players set @s mechanization.data 0
 scoreboard players set @s mechanization.time 150

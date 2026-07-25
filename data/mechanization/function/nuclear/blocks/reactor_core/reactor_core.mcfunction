@@ -19,6 +19,7 @@ execute if score @s mechanization.data matches 609.. run function mechanization:
 
 execute if score #heat_total mechanization.data matches 1.. run playsound mechanization:nuclear.steam_boil block @a[distance=..24] ~ ~ ~ 1 1
 scoreboard players operation @s mechanization.data -= #heat_total mechanization.data
+scoreboard players remove @s mechanization.data 3
 execute unless score @s mechanization.data matches 20.. run scoreboard players set @s mechanization.data 20
 
 # heat display
