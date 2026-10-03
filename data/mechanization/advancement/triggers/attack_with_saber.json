@@ -4,11 +4,17 @@
       "trigger": "minecraft:player_hurt_entity",
       "conditions": {
         "player": {
-          "equipment": {
-            "mainhand": {
-              "predicates": {
-                "minecraft:custom_data": {
-                  "mechanization": {"id": "energy_saber"}
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "minecraft:equipment": {
+              "mainhand": {
+                "predicates": {
+                  "minecraft:custom_data": {
+                    "mechanization": {
+                      "id": "energy_saber"
+                    }
+                  }
                 }
               }
             }

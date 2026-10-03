@@ -1,12 +1,15 @@
-[
-  {
-    "function":"minecraft:set_item",
-    "item":"minecraft:poisonous_potato"
-  },
-  {
-    "function":"minecraft:set_components",
-    "components": {
-      "minecraft:item_model": "mechanization:base/gui/invisible"
+{
+  "type": "minecraft:sequence",
+  "functions": [
+    {
+      "type":"minecraft:set_item",
+      "item":"minecraft:poisonous_potato"
+    },
+    {
+      "type":"minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "mechanization:base/gui/invisible"
+      }
     }
-  }
-]
+  ]
+}

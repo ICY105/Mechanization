@@ -1,15 +1,15 @@
 {
   "pack": {
     "min_format": [
-      101,
+      121,
       0
     ],
     "max_format": [
-      102,
+      121,
       0
     ],
     "description": "Mechanization, by ImCoolYeah105",
-    "pack_format": 101
+    "pack_format": 121
   },
   "id": "mechanization"
 }
