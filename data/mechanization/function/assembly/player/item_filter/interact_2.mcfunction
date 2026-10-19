@@ -10,5 +10,5 @@ execute if entity @s[tag=mechanization.filtered] run data remove entity @s Item.
 tag @s remove mechanization.filtered
 execute if data entity @s Item.components."minecraft:custom_data".filter run tag @s add mechanization.filtered
 
-execute if entity @s[tag=!mechanization.filtered] run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:enchantment_glint_override": 0b}}
-execute if entity @s[tag=mechanization.filtered] run item modify entity @s contents {function:"minecraft:set_components",components:{"minecraft:enchantment_glint_override": 1b}}
+execute if entity @s[tag=!mechanization.filtered] run item modify entity @s contents {type:"minecraft:set_components",components:{"minecraft:enchantment_glint_override": 0b}}
+execute if entity @s[tag=mechanization.filtered] run item modify entity @s contents {type:"minecraft:set_components",components:{"minecraft:enchantment_glint_override": 1b}}

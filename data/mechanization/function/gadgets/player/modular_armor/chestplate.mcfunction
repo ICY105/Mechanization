@@ -6,7 +6,7 @@ scoreboard players operation #shield mechanization.data += #value mechanization.
 
 # apply damage
 execute store result score #damage mechanization.data run data get storage mechanization:temp list[-1].components."minecraft:damage"
-execute store result score #current_damage mechanization.data run data get storage mechanization:temp list[-1].components."minecraft:custom_data".mechanization.upgrades.current_durability 
+execute store result score #current_damage mechanization.data run data get storage mechanization:temp list[-1].components."minecraft:custom_data".mechanization.upgrades.current_durability
 scoreboard players operation #damage mechanization.data -= #current_damage mechanization.data
 execute if score #damage mechanization.data matches 1.. if entity @s[tag=player_action.elyra_flying] run function mechanization:gadgets/player/modular_armor/damage_elytra
 execute if score #damage mechanization.data matches 1.. if entity @s[tag=!player_action.elyra_flying] run function mechanization:gadgets/player/damage_upgrades

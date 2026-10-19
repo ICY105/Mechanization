@@ -31,7 +31,7 @@ scoreboard players operation #model mechanization.data /= #flux mechanization.da
 execute if score #model mechanization.data matches 17.. run scoreboard players set #model mechanization.data 16
 
 execute if score #flux mechanization.time matches 1000000 run scoreboard players set #model mechanization.data 0
-item modify block ~ ~ ~ container.5 {"function":"minecraft:set_custom_model_data","floats":{"values":[{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#model"},"score":"mechanization.data","scale":1}],"mode":"replace_all"}}
+item modify block ~ ~ ~ container.5 mechanization:set_custom_model_float
 
 # freeze hoppers
 execute if block ~ ~-1 ~ minecraft:hopper run data modify block ~ ~-1 ~ TransferCooldown set value 30

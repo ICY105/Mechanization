@@ -54,7 +54,7 @@ function #mechanization:machines/grinder_output
 item replace block ~ ~ ~ container.2 from block -30000000 0 3201 container.0
 execute store result score #recipe_count mechanization.data run data get block ~ ~ ~ Items[{Slot:2b}].count
 scoreboard players operation #output_count mechanization.data += #recipe_count mechanization.data
-item modify block ~ ~ ~ container.2 {"function":"minecraft:set_count","count":{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#output_count"},"score":"mechanization.data"}}
+item modify block ~ ~ ~ container.2 {"type":"minecraft:set_count","count":{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#output_count"},"score":"mechanization.data"}}
 
 item modify block ~ ~ ~ container.0 mechanization:decrement_count
 execute if score #ingot mechanization.data matches 1 run item modify block ~ ~ ~ container.0 mechanization:decrement_count

@@ -1,6 +1,6 @@
 
 item replace block -30000000 0 3201 container.0 from entity @s weapon.mainhand
-item modify block -30000000 0 3201 container.0 {"function":"minecraft:set_custom_model_data","value":6422201}
+item modify block -30000000 0 3201 container.0 {type:"minecraft:set_custom_model_data",floats:{values:[6422201],mode:"replace_all"}}
 
 data modify block -30000000 0 3201 Items[0].components."minecraft:custom_data".mechanization.has_spawner set value 1b
 data modify block -30000000 0 3201 Items[0].components."minecraft:custom_data".mechanization.spawner_data set from block ~ ~ ~

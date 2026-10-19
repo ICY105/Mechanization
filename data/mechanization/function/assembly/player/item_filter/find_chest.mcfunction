@@ -1,5 +1,5 @@
 
-execute if block ~ ~ ~ #mechanization:inv_27 run function mechanization:assembly/player/item_filter/apply_filter 
+execute if block ~ ~ ~ #mechanization:inv_27 run function mechanization:assembly/player/item_filter/apply_filter
 
 # loop
 scoreboard players remove #loop mechanization.data 1

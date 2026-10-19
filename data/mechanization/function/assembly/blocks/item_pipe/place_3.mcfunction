@@ -13,10 +13,11 @@ execute positioned ~ ~ ~1 if entity @s[distance=..0.1] run scoreboard players ad
 execute positioned ~1 ~ ~ if entity @s[distance=..0.1] run scoreboard players add @s mechanization.data 32
 execute positioned ~-1 ~ ~ if entity @s[distance=..0.1] run scoreboard players add @s mechanization.data 16
 
-item modify entity @s contents {"function":"minecraft:set_custom_model_data","floats":{"values":[{"type":"minecraft:score","target":{"type":"minecraft:context","target":"this"},"score":"mechanization.data","scale":1}],"mode":"replace_all"}}
+scoreboard players operation #model mechanization.data = @s mechanization.data
+item modify entity @s contents mechanization:set_custom_model_float
 
 execute if score #id mechanization.data matches 0.. run scoreboard players operation #predicate mechanization.data = @s mechanization.item_id
-execute if score #id mechanization.data matches 0.. as @e[type=minecraft:item_display,tag=mechanization.item_pipe,predicate=mechanization:matches_uuid,distance=0..] run scoreboard players operation @s mechanization.item_id = #id mechanization.data
-execute if score #id mechanization.data matches 0.. as @e[type=minecraft:item_frame,tag=mechanization.item_extractor,predicate=mechanization:matches_uuid,distance=0..] run scoreboard players operation @s mechanization.item_id = #id mechanization.data
-execute if score #id mechanization.data matches 0.. as @e[type=minecraft:item_frame,tag=mechanization.item_injector,predicate=mechanization:matches_uuid,distance=0..] run scoreboard players operation @s mechanization.item_id = #id mechanization.data
+execute if score #id mechanization.data matches 0.. as @e[type=minecraft:item_display,tag=mechanization.item_pipe,predicate=mechanization:matches_id,distance=0..] run scoreboard players operation @s mechanization.item_id = #id mechanization.data
+execute if score #id mechanization.data matches 0.. as @e[type=minecraft:item_frame,tag=mechanization.item_extractor,predicate=mechanization:matches_id,distance=0..] run scoreboard players operation @s mechanization.item_id = #id mechanization.data
+execute if score #id mechanization.data matches 0.. as @e[type=minecraft:item_frame,tag=mechanization.item_injector,predicate=mechanization:matches_id,distance=0..] run scoreboard players operation @s mechanization.item_id = #id mechanization.data
 execute if score #id mechanization.data matches -1 run scoreboard players operation #id mechanization.data = @s mechanization.item_id

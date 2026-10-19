@@ -17,7 +17,8 @@ setblock -30000000 1 3201 minecraft:yellow_shulker_box replace
 data remove block -30000000 1 3201 Items
 data modify block -30000000 1 3201 Items append from storage mechanization:temp obj.item
 execute unless data storage mechanization:temp obj.item.components."minecraft:custom_data" run data modify block -30000000 1 3201 Items[0].components."minecraft:custom_data" set value {}
-item modify block -30000000 1 3201 container.0 [{function:"minecraft:set_count",count:1},{function:"minecraft:set_components",components:{"minecraft:max_stack_size":2,"!minecraft:max_damage":{}}}]
+item modify block -30000000 1 3201 container.0 mechanization:set_count_to_1
+item modify block -30000000 1 3201 container.0 {type:"minecraft:set_components",components:{"minecraft:max_stack_size":2,"!minecraft:max_damage":{}}}
 
 # attempt to insert item, return if unsuccessful
 loot insert -30000000 0 3201 mine -30000000 1 3201 minecraft:debug_stick[minecraft:custom_data={drop_contents:1b}]

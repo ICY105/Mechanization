@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:set_custom_model_data",
+  "floats": {
+    "values": [
+      {
+        "type": "minecraft:from_int",
+        "input": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "#model"
+          },
+          "score": "mechanization.data",
+          "fallback": 0
+        }
+      }
+    ],
+    "mode": "replace_all"
+  }
+}

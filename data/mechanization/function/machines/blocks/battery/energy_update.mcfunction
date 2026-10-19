@@ -9,4 +9,4 @@ scoreboard players operation #model mechanization.data /= #max_storage mechaniza
 execute if score @s energy.storage matches 1.. run scoreboard players add #storage mechanization.data 1
 execute if score #model mechanization.data matches 9.. run scoreboard players set #model mechanization.data 8
 
-item modify entity @s contents {"function":"minecraft:set_custom_model_data","floats":{"values":[{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#model"},"score":"mechanization.data","scale":1}],"mode":"replace_all"}}
+item modify entity @s contents mechanization:set_custom_model_float

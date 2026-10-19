@@ -18,7 +18,7 @@ execute if score #dimension mechanization.data matches 0 positioned ~ ~1 ~ align
 execute if score #dimension mechanization.data matches 0 run return fail
 
 # trigger teleport
-item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422955}
+item modify entity @s contents {type:"minecraft:set_custom_model_data",floats:{values:[6422955],mode:"replace_all"}}
 scoreboard players add @s mechanization.time 1
 execute if score @s mechanization.time matches 1 run playsound minecraft:block.portal.trigger block @a[distance=..16] ~ ~ ~
 execute if score @s mechanization.time matches 5 run function mechanization:machines/blocks/teleporter/m.teleport_2 with entity @s item.components."minecraft:custom_data".dest

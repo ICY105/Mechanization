@@ -1,5 +1,4 @@
 
-
 data modify storage fluid:io input set value {input_slot:{},output_slot:{}}
 data modify storage fluid:io input.input_slot set from block ~ ~ ~ Items[{Slot:3b}]
 data modify storage fluid:io input.output_slot set from block ~ ~ ~ Items[{Slot:21b}]

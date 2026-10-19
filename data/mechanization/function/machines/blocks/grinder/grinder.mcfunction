@@ -24,8 +24,8 @@ execute if score @s mechanization.time matches 1.. if entity @s[tag=!mechanizati
 # ui
 function mechanization:base/utils/generate_energy_bar_ui
 
-execute if score @s mechanization.time matches 0 run item modify entity @s contents {"function": "minecraft:set_components","components": {"minecraft:custom_model_data": {"floats":[0]}}}
-execute if score @s mechanization.time matches 1.. run item modify entity @s contents {"function": "minecraft:set_components","components": {"minecraft:custom_model_data": {"floats":[1]}}}
+execute if score @s mechanization.time matches 0 run item modify entity @s contents {type:"minecraft:set_custom_model_data",floats:{values:[0],mode:"replace_all"}}
+execute if score @s mechanization.time matches 1.. run item modify entity @s contents {type:"minecraft:set_custom_model_data",floats:{values:[1],mode:"replace_all"}}
 
 #cleanup
 execute unless block ~ ~ ~ minecraft:furnace run function mechanization:base/utils/break_block/break_machine_t1

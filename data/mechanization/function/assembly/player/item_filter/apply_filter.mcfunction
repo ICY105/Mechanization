@@ -38,7 +38,7 @@ execute unless items block ~ ~ ~ container.26 * run item replace block ~ ~ ~ con
 setblock -30000000 0 3201 minecraft:yellow_shulker_box
 item replace block -30000000 0 3201 container.0 from entity @s weapon.mainhand
 data modify block -30000000 0 3201 Items[{Slot:0b}].components."minecraft:custom_data".mechanization.items set from block ~ ~ ~ Items
-item modify block -30000000 0 3201 container.0 {function:"minecraft:set_components",components:{"minecraft:enchantment_glint_override":1b}}
+item modify block -30000000 0 3201 container.0 {type:"minecraft:set_components",components:{"minecraft:enchantment_glint_override":1b}}
 item replace entity @s weapon.mainhand from block -30000000 0 3201 container.0
 
 # remove filler

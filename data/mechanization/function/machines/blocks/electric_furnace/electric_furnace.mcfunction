@@ -24,8 +24,8 @@ execute if score #active mechanization.data matches 1 if entity @s[tag=mechaniza
 function mechanization:base/utils/generate_energy_bar_ui
 execute if score #active mechanization.data matches 1 if block ~ ~ ~ minecraft:furnace[lit=false] run function mechanization:base/utils/set_furnace_lit
 
-execute if score #active mechanization.data matches 0 run item modify entity @s contents {"function": "minecraft:set_components","components": {"minecraft:custom_model_data": {"floats":[0]}}}
-execute if score #active mechanization.data matches 1 run item modify entity @s contents {"function": "minecraft:set_components","components": {"minecraft:custom_model_data": {"floats":[1]}}}
+execute if score #active mechanization.data matches 0 run item modify entity @s contents {type:"minecraft:set_custom_model_data",floats:{values:[0],mode:"replace_all"}}
+execute if score #active mechanization.data matches 1 run item modify entity @s contents {type:"minecraft:set_custom_model_data",floats:{values:[1],mode:"replace_all"}}
 execute if score #active mechanization.data matches 1 if entity @s[tag=!mechanization.muffled] if score #timer.100 mechanization.data matches 0..19 run playsound mechanization:machines.electric_furnace block @a[distance=..16] ~ ~ ~
 
 ## cleanup

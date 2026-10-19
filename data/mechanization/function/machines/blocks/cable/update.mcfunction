@@ -1,2 +1,3 @@
 
-item modify entity @s contents {"function":"minecraft:set_custom_model_data","floats":{"values":[{"type":"minecraft:score","target":{"type":"minecraft:context","target":"this"},"score":"energy.data","scale":1}],"mode":"replace_all"}}
+scoreboard players operation #model mechanization.data = @s energy.data
+item modify entity @s contents mechanization:set_custom_model_float

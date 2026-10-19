@@ -76,9 +76,9 @@ execute if score #success mechanization.data matches 3 run function mechanizatio
 
 
 # cleanup
-item modify block ~ ~ ~ container.0 {"function":"minecraft:set_count","count":{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#count.0"},"score":"mechanization.data"}}
-item modify block ~ ~ ~ container.9 {"function":"minecraft:set_count","count":{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#count.1"},"score":"mechanization.data"}}
-item modify block ~ ~ ~ container.18 {"function":"minecraft:set_count","count":{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#count.2"},"score":"mechanization.data"}}
+item modify block ~ ~ ~ container.0 {"type":"minecraft:set_count","count":{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#count.0"},"score":"mechanization.data"}}
+item modify block ~ ~ ~ container.9 {"type":"minecraft:set_count","count":{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#count.1"},"score":"mechanization.data"}}
+item modify block ~ ~ ~ container.18 {"type":"minecraft:set_count","count":{"type":"minecraft:score","target":{"type":"minecraft:fixed","name":"#count.2"},"score":"mechanization.data"}}
 scoreboard players operation @s fluid.storage.0 = #storage.0 mechanization.data
 scoreboard players operation @s fluid.storage.1 = #storage.1 mechanization.data
 scoreboard players operation @s fluid.storage.2 = #storage.2 mechanization.data

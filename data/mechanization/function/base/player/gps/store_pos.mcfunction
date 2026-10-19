@@ -12,7 +12,7 @@ execute store result storage mechanization:temp obj.x int 1 run scoreboard playe
 execute store result storage mechanization:temp obj.y int 1 run scoreboard players get #y mechanization.data
 execute store result storage mechanization:temp obj.z int 1 run scoreboard players get #z mechanization.data
 data modify storage mechanization:temp obj.dimension set from entity @s Dimension
-item modify entity @s weapon.mainhand {"function":"minecraft:copy_custom_data","source":{"type":"minecraft:storage","source":"mechanization:temp"},"ops":[{"source":"obj","target":"mechanization.pos","op":"merge"}]}
+item modify entity @s weapon.mainhand {"type":"minecraft:copy_custom_data","source":{"type":"minecraft:storage","source":"mechanization:temp"},"ops":[{"source":"obj","target":"mechanization.pos","op":"merge"}]}
 
 # set multimeter data
 function mechanization:base/utils/items/m.modify_lore {offset:2,lore:[{"translate":"text.mechanization.gps_set_pos","color":"gray","italic":false,"with":[{"score":{"name":"#x","objective":"mechanization.data"}},{"score":{"name":"#y","objective":"mechanization.data"}},{"score":{"name":"#z","objective":"mechanization.data"}},{"nbt":"obj.dimension","storage":"mechanization:temp"}]}]}

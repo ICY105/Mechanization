@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:int_value_check",
+  "value": {
+    "type": "minecraft:score",
+    "target": "this",
+    "score": "mechanization.data"
+  },
+  "test": {
+    "type": "minecraft:score",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "id"
+    },
+    "score": "player_action.data"
+  }
+}

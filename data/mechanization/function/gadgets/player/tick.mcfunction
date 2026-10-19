@@ -8,7 +8,7 @@ execute if score @s mechanization.firerate matches -59.. run scoreboard players 
 execute if score @s mechanization.weaponheat matches 1.. run function mechanization:gadgets/player/firearms/display_heat
 
 # armor
-execute if entity @s[tag=mechanization.in_flight] run function mechanization:gadgets/player/modular_armor/reset_flight 
+execute if entity @s[tag=mechanization.in_flight] run function mechanization:gadgets/player/modular_armor/reset_flight
 
 execute if items entity @s armor.* *[minecraft:custom_data~{mechanization:{upgrades:{}}}] run function mechanization:gadgets/player/modular_armor/tick
 

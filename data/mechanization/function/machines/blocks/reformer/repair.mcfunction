@@ -16,4 +16,4 @@ scoreboard players remove #damage mechanization.data 1
 execute if score #damage mechanization.data matches 1.. if entity @s[tag=mechanization.upgraded] run scoreboard players remove #damage mechanization.data 1
 execute store result block ~ ~ ~ Items[{Slot:12b}].components."minecraft:damage" int 1 run scoreboard players get #damage mechanization.data
 
-item modify entity @s contents {"function":"minecraft:set_custom_model_data","value":6422954}
+item modify entity @s contents {type:"minecraft:set_custom_model_data",floats:{values:[6422954],mode:"replace_all"}}

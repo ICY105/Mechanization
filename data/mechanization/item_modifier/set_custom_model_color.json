@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:set_custom_model_data",
+  "colors": {
+    "values": [
+      {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#color"
+        },
+        "score": "mechanization.data",
+        "fallback": 0
+      }
+    ],
+    "mode": "replace_all"
+  }
+}
